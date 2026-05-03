@@ -13,6 +13,13 @@ from mail_sovereignty.constants import (
     PROVIDER_KEYWORDS,
     SMTP_BANNER_KEYWORDS,
     LOCAL_ISP_ASNS,
+    ARUBA_KEYWORDS,
+    REGISTER_IT_KEYWORDS,
+    SEEWEB_KEYWORDS,
+    INFOCERT_KEYWORDS,
+    NAMIRIAL_KEYWORDS,
+    ITALIAN_REGIONAL_PUBLIC_KEYWORDS,
+    ITALIAN_PA_CONTRACTOR_PRIVATE_KEYWORDS,
 )
 
 
@@ -127,7 +134,14 @@ def classify(
     mx_display = ", ".join(mx_records[:2])
 
     # 1. Direct MX hostname match
-    local_providers = {"zone", "telia", "tet", "elkdata", "yandex"}
+    # Italian providers and aruba/register-it act like Telia: many comuni
+    # land on them as MX yet sign DKIM via a hyperscaler tenant (hybrid
+    # setups). Treat them as "local providers" so DKIM look-through fires.
+    local_providers = {
+        "zone", "telia", "tet", "elkdata", "yandex",
+        "aruba", "register-it", "seeweb", "infocert", "namirial",
+        "regional-public", "pa-contractor-private",
+    }
     for provider, keywords, label in [
         ("microsoft", MICROSOFT_KEYWORDS, "Microsoft"),
         ("google", GOOGLE_KEYWORDS, "Google"),
@@ -138,10 +152,19 @@ def classify(
         ("zoho", ZOHO_KEYWORDS, "Zoho"),
         ("elkdata", ELKDATA_KEYWORDS, "Elkdata"),
         ("yandex", YANDEX_KEYWORDS, "Yandex"),
+        # Italian providers (mxmap.it Phase 3)
+        ("aruba", ARUBA_KEYWORDS, "Aruba"),
+        ("register-it", REGISTER_IT_KEYWORDS, "Register.it"),
+        ("seeweb", SEEWEB_KEYWORDS, "Seeweb"),
+        ("infocert", INFOCERT_KEYWORDS, "InfoCert"),
+        ("namirial", NAMIRIAL_KEYWORDS, "Namirial"),
+        ("regional-public", ITALIAN_REGIONAL_PUBLIC_KEYWORDS, "Italian regional public ICT"),
+        ("pa-contractor-private", ITALIAN_PA_CONTRACTOR_PRIVATE_KEYWORDS, "Italian private PA contractor"),
     ]:
         if any(k in mx_blob for k in keywords):
             # For local providers, DKIM may reveal a cloud backend
-            # (e.g., Telia MX relaying to Microsoft 365)
+            # (e.g., Telia MX relaying to Microsoft 365; comune on Aruba MX
+            # but DKIM signed via *.onmicrosoft.com)
             if provider in local_providers:
                 dkim_provider = classify_from_dkim(dkim)
                 if dkim_provider and dkim_provider not in local_providers:
@@ -162,6 +185,13 @@ def classify(
             ("tet", TET_KEYWORDS, "TET"),
             ("aws", AWS_KEYWORDS, "AWS"),
             ("elkdata", ELKDATA_KEYWORDS, "Elkdata"),
+            ("aruba", ARUBA_KEYWORDS, "Aruba"),
+            ("register-it", REGISTER_IT_KEYWORDS, "Register.it"),
+            ("seeweb", SEEWEB_KEYWORDS, "Seeweb"),
+            ("infocert", INFOCERT_KEYWORDS, "InfoCert"),
+            ("namirial", NAMIRIAL_KEYWORDS, "Namirial"),
+            ("regional-public", ITALIAN_REGIONAL_PUBLIC_KEYWORDS, "Italian regional public ICT"),
+            ("pa-contractor-private", ITALIAN_PA_CONTRACTOR_PRIVATE_KEYWORDS, "Italian private PA contractor"),
         ]:
             if any(k in cname_blob for k in keywords):
                 cname_target = next(iter(mx_cnames.values()), "?")

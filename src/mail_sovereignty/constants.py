@@ -30,6 +30,44 @@ ELKDATA_KEYWORDS = ["elkdata.ee"]
 ZOHO_KEYWORDS = ["zoho.com", "zoho.eu", "zoho.in", "zohocorp.com"]
 YANDEX_KEYWORDS = ["yandex.net", "yandex.ru"]
 
+# Italian commercial providers (mxmap.it Phase 3 — see docs/countries/ITALY.md)
+ARUBA_KEYWORDS = [
+    "aruba.it",
+    "arubabusiness",
+    "aruba.cloud",
+    "arubapec",
+    "staff.aruba",
+    "arubacloud.com",
+]
+REGISTER_IT_KEYWORDS = ["register.it", "register-it"]
+SEEWEB_KEYWORDS = ["seeweb.it", "seeweb.com", "seeweb.cloud"]
+INFOCERT_KEYWORDS = ["infocert.it", "infocert.eu"]
+NAMIRIAL_KEYWORDS = ["namirial.com", "namirial.it"]
+
+# Italian publicly-owned regional ICT companies (società in-house). Analogous
+# to Germany's Vitako-affiliated providers (Dataport, AKDB, etc.). Many comuni
+# rely on these for email and IT infrastructure. See ITALY.md for ownership.
+ITALIAN_REGIONAL_PUBLIC_KEYWORDS = [
+    "lepida.it", "lepida.network", "lepida.net",   # Emilia-Romagna
+    "ariaspa.it",                                   # Lombardia
+    "csi.it", "csipiemonte.it",                     # Piemonte / Valle d'Aosta
+    "insiel.it",                                    # Friuli Venezia Giulia
+    "liguriadigitale.it",                           # Liguria
+    "puntozeroscarl.it", "umbriadigitale.it",       # Umbria (legacy domain)
+    "sardegnait.it",                                # Sardegna
+    "trentinodigitale.it",                          # Provincia Autonoma Trento
+    "siag.it", "provinz.bz.it",                     # Provincia Autonoma Bolzano
+    "pasubiotecnologia.it",                         # Vicenza/Verona/Padova
+    "sogei.it",                                     # Stato centrale (MEF)
+]
+
+# Italian private PA IT contractors (NOT in-house). Kept separate so the map
+# can distinguish public sovereign infrastructure from private outsourcers.
+ITALIAN_PA_CONTRACTOR_PRIVATE_KEYWORDS = [
+    "eng.it", "engineering.it",     # Engineering Ingegneria Informatica SpA
+    "almaviva.it", "almavivaitalia.it",  # Almaviva SpA
+]
+
 PROVIDER_KEYWORDS = {
     "microsoft": MICROSOFT_KEYWORDS,
     "google": GOOGLE_KEYWORDS,
@@ -40,6 +78,15 @@ PROVIDER_KEYWORDS = {
     "telia": TELIA_KEYWORDS,
     "tet": TET_KEYWORDS,
     "elkdata": ELKDATA_KEYWORDS,
+    # Italian commercial providers
+    "aruba": ARUBA_KEYWORDS,
+    "register-it": REGISTER_IT_KEYWORDS,
+    "seeweb": SEEWEB_KEYWORDS,
+    "infocert": INFOCERT_KEYWORDS,
+    "namirial": NAMIRIAL_KEYWORDS,
+    # Italian public/regional/contractor categories
+    "regional-public": ITALIAN_REGIONAL_PUBLIC_KEYWORDS,
+    "pa-contractor-private": ITALIAN_PA_CONTRACTOR_PRIVATE_KEYWORDS,
 }
 
 FOREIGN_SENDER_KEYWORDS = {
@@ -399,6 +446,26 @@ GATEWAY_KEYWORDS = {
     "anti-spam-premium": ["anti-spam-premium.com"],
     "suantispam": ["suantispam.com"],
     "spamhero": ["spamhero.net", "spamhero.com"],
+    # Italian PA software vendors / SaaS gateways (mxmap.it). These typically
+    # relay to a hyperscaler backend or self-hosted cluster — the look-through
+    # logic in classify.py finds the actual backend via SPF/autodiscover/DKIM.
+    "halley": ["halleylombardia.it", "halley.it", "halleynt.it", "halleyveneto.it"],
+    "ilger": ["ilger.com"],
+    "demosdata": ["demosdata.it"],
+    "epublic": ["epublic.it"],
+    "sitek": ["si-tek.net"],
+    "asmecal": ["asmecal.it"],
+    "asmecam": ["asmecam.it"],
+    "invallee": ["invallee.it"],
+    "cliocom": ["cliocom.it"],
+    "antispamsolution": ["antispamsolution.it"],
+    "carbonio": ["carboniocloud.com", "carbonio.com"],
+    "zimbraopen": ["zimbraopen.it"],
+    "gvcc": ["gvcc.net"],
+    "widestore": ["widestore.net"],
+    "libraesva": ["libraesva.com"],
+    "datalab-it": ["datalab.it"],
+    "iconto": ["iconto.it"],
 }
 
 # Local ISP ASNs (replaces SWISS_ISP_ASNS)
