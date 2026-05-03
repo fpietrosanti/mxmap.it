@@ -252,35 +252,36 @@ if (!CSS.supports('height', '100dvh')) {
 }
 
 const COLORS = {
-  // US hyperscalers (CLOUD Act)
-  'Microsoft 365':              '#E83838',
-  'Google Workspace':           '#FFAB96',
-  'AWS':                        '#FF7A5C',
-  // Italian commercial
-  'Aruba':                      '#F39C12',
-  'Register.it':                '#1E40AF',
-  'Seeweb':                     '#DC2626',
-  'InfoCert':                   '#065F46',
-  'Namirial':                   '#6B21A8',
-  'ISP italiano':               '#10B898',
-  'ISP locale':                 '#10B898',
+  // US hyperscalers (CLOUD Act) — red/orange for contrast vs Italian greens
+  'Microsoft 365':              '#D42E2E',
+  'Google Workspace':           '#FF6B6B',
+  'AWS':                        '#FF8C42',
+  // ITALIAN — green palette throughout. Sovereign/public is the bright
+  // Italian-flag green (#009246); commercial Italian providers are medium
+  // greens; self-hosted / consortium-shared / contractor are paler greens.
+  'IT pubblico (sovrano)':      '#009246', // Italian flag green
+  'Aruba':                      '#2E7D32',
+  'Register.it':                '#388E3C',
+  'Seeweb':                     '#43A047',
+  'InfoCert':                   '#1B5E20',
+  'Namirial':                   '#4CAF50',
+  'ISP italiano':               '#66BB6A',
+  'ISP locale':                 '#66BB6A',
+  'Self-hosted':                '#558B2F',
+  'Mail provinciale condivisa': '#7CB342',
+  'Contractor PA privato':      '#AED581',
+  // Non-Italian foreign senders (small share, kept distinct for honesty)
   'Zoho':                       '#7C3AED',
   'Yandex':                     '#FFCC00',
-  // Italian sovereign
-  'IT pubblico (sovrano)':      '#16A34A',
-  'Contractor PA privato':      '#FCD34D',
-  // Italian self-hosted / shared
-  'Self-hosted':                '#0E9680',
-  'Mail provinciale condivisa': '#14B8A6',
   // Backwards-compatible aliases (used by some upstream code paths)
-  'Microsoft':                  '#E83838',
-  'Google':                     '#FFAB96',
-  'Local Provider':             '#10B898',
+  'Microsoft':                  '#D42E2E',
+  'Google':                     '#FF6B6B',
+  'Local Provider':             '#66BB6A',
   'Sconosciuto':                '#BFBFBF',
   'Unknown':                    '#BFBFBF',
 };
 
-const DARK_TEXT = new Set(['Google Workspace', 'Google', 'AWS', 'Sconosciuto', 'Unknown', 'Yandex']);
+const DARK_TEXT = new Set(['Google Workspace', 'Google', 'AWS', 'Sconosciuto', 'Unknown', 'Yandex', 'Mail provinciale condivisa', 'Contractor PA privato', 'ISP italiano', 'ISP locale', 'Local Provider', 'Namirial']);
 
 const TIERS = {
   'USA (CLOUD Act)': ['Microsoft 365', 'Google Workspace', 'AWS'],
