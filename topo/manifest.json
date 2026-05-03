@@ -1,1 +1,3974 @@
-{"AD":{"levels":["region","district","municipality"],"files":{"region":"ad_municipality.topo.json","district":"ad_municipality.topo.json","municipality":"ad_municipality.topo.json"},"sizes":{"ad_municipality.topo.json":3721},"bbox":[1.4,42.4,1.7,42.6]},"AE":{"levels":["region","district","municipality"],"files":{"region":"ae_municipality.topo.json","district":"ae_municipality.topo.json","municipality":"ae_municipality.topo.json"},"sizes":{"ae_municipality.topo.json":26268},"bbox":[51.4,22.6,56.6,25.9]},"AF":{"levels":["region","district","municipality"],"files":{"region":"af_municipality.topo.json","district":"af_municipality.topo.json","municipality":"af_municipality.topo.json"},"sizes":{"af_municipality.topo.json":179122}},"AG":{"levels":["region","district","municipality"],"files":{"region":"ag_municipality.topo.json","district":"ag_municipality.topo.json","municipality":"ag_municipality.topo.json"},"sizes":{"ag_municipality.topo.json":39487}},"AL":{"levels":["region","district","municipality"],"files":{"district":"al_municipality.topo.json","municipality":"al_municipality.topo.json"},"sizes":{"al_municipality.topo.json":106570},"bbox":[19.3,39.6,21.0,42.5]},"AM":{"levels":["region","district","municipality"],"files":{"district":"am_municipality.topo.json","municipality":"am_municipality.topo.json"},"sizes":{"am_municipality.topo.json":14052},"bbox":[44.3,39.2,46.4,40.8]},"AO":{"levels":["region","district","municipality"],"files":{"region":"ao_region.topo.json","district":"ao_municipality.topo.json","municipality":"ao_municipality.topo.json"},"sizes":{"ao_municipality.topo.json":69078,"ao_region.topo.json":2219},"bbox":[13.0,-16.3,18.5,-8.7]},"AR":{"levels":["region","district","municipality"],"files":{"region":"ar_region.topo.json","district":"ar_municipality.topo.json","municipality":"ar_municipality.topo.json"},"sizes":{"ar_municipality.topo.json":714448,"ar_region.topo.json":210197},"bbox":[-75.7,-54.9,-53.6,-22.0]},"AT":{"levels":["region","district","municipality"],"files":{"region":"at_region.topo.json","district":"at_district.topo.json","municipality":"at_municipality.topo.json"},"sizes":{"at_region.topo.json":54045,"at_district.topo.json":209489,"at_municipality.topo.json":1079786},"bbox":[9.5,46.4,17.1,49.0]},"AU":{"levels":["region","district","municipality"],"files":{"region":"au_region.topo.json","district":"au_municipality.topo.json","municipality":"au_municipality.topo.json"},"sizes":{"au_region.topo.json":512884,"au_municipality.topo.json":2157872},"bbox":[112.9,-55.1,159.2,-9.1]},"AZ":{"levels":["region","district","municipality"],"files":{"region":"az_municipality.topo.json","district":"az_municipality.topo.json","municipality":"az_municipality.topo.json"},"sizes":{"az_municipality.topo.json":1026},"bbox":[46.0,39.5,46.1,40.1]},"BA":{"levels":["region","district","municipality"],"files":{"district":"ba_municipality.topo.json","municipality":"ba_municipality.topo.json","region":"ba_region.topo.json"},"sizes":{"ba_municipality.topo.json":340714,"ba_region.topo.json":81527},"bbox":[15.7,42.6,19.6,45.2]},"BB":{"levels":["region","district","municipality"],"files":{"region":"bb_municipality.topo.json","district":"bb_municipality.topo.json","municipality":"bb_municipality.topo.json"},"sizes":{"bb_municipality.topo.json":14246}},"BD":{"levels":["region","district","municipality"],"files":{"region":"bd_municipality.topo.json","district":"bd_municipality.topo.json","municipality":"bd_municipality.topo.json"},"sizes":{"bd_municipality.topo.json":96088},"bbox":[88.0,20.4,91.3,26.3]},"BE":{"levels":["region","district","municipality"],"files":{"region":"be_region.topo.json","district":"be_district.topo.json","municipality":"be_municipality.topo.json"},"sizes":{"be_region.topo.json":33016,"be_district.topo.json":92254,"be_municipality.topo.json":329182},"bbox":[2.5,49.5,6.3,51.5]},"BF":{"levels":["region","district","municipality"],"files":{"region":"bf_region.topo.json","district":"bf_municipality.topo.json","municipality":"bf_municipality.topo.json"},"sizes":{"bf_municipality.topo.json":594907,"bf_region.topo.json":17122},"bbox":[-5.5,9.4,2.1,15.0]},"BG":{"levels":["region","district","municipality"],"files":{"region":"bg_municipality.topo.json","district":"bg_municipality.topo.json","municipality":"bg_municipality.topo.json"},"sizes":{"bg_municipality.topo.json":219636},"bbox":[22.4,41.2,28.1,44.0]},"BH":{"levels":["region","district","municipality"],"files":{"region":"bh_municipality.topo.json","district":"bh_municipality.topo.json","municipality":"bh_municipality.topo.json"},"sizes":{"bh_municipality.topo.json":7460},"bbox":[50.3,25.5,50.9,26.6]},"BI":{"levels":["region","district","municipality"],"files":{"region":"bi_region.topo.json","district":"bi_municipality.topo.json","municipality":"bi_municipality.topo.json"},"sizes":{"bi_municipality.topo.json":31922,"bi_region.topo.json":2070},"bbox":[29.6,-3.4,30.8,-2.4]},"BJ":{"levels":["region","district","municipality"],"files":{"region":"bj_region.topo.json","district":"bj_municipality.topo.json","municipality":"bj_municipality.topo.json"},"sizes":{"bj_municipality.topo.json":89130,"bj_region.topo.json":4019},"bbox":[0.8,6.2,3.8,11.9]},"BN":{"levels":["region","district","municipality"],"files":{"region":"bn_municipality.topo.json","district":"bn_municipality.topo.json","municipality":"bn_municipality.topo.json"},"sizes":{"bn_municipality.topo.json":20301},"bbox":[114.1,4.5,115.1,5.0]},"BO":{"levels":["region","district","municipality"],"files":{"region":"bo_region.topo.json","district":"bo_municipality.topo.json","municipality":"bo_municipality.topo.json"},"sizes":{"bo_municipality.topo.json":569504,"bo_region.topo.json":49717},"bbox":[-69.6,-22.9,-57.6,-9.8]},"BR":{"levels":["region","district","municipality"],"files":{"region":"br_region.topo.json","district":"br_municipality.topo.json","municipality":"br_municipality.topo.json"},"sizes":{"br_municipality.topo.json":7845609,"br_region.topo.json":513691},"bbox":[-74.0,-33.8,-28.8,4.9]},"BT":{"levels":["region","district","municipality"],"files":{"region":"bt_municipality.topo.json","district":"bt_municipality.topo.json","municipality":"bt_municipality.topo.json"},"sizes":{"bt_municipality.topo.json":33529}},"BW":{"levels":["region","district","municipality"],"files":{"region":"bw_municipality.topo.json","district":"bw_municipality.topo.json","municipality":"bw_municipality.topo.json"},"sizes":{"bw_municipality.topo.json":68050},"bbox":[20.0,-26.9,28.0,-18.3]},"BY":{"levels":["region","district","municipality"],"files":{"district":"by_municipality.topo.json","municipality":"by_municipality.topo.json","region":"by_region.topo.json"},"sizes":{"by_municipality.topo.json":350889,"by_region.topo.json":7922},"bbox":[23.2,51.3,32.5,56.1]},"BZ":{"levels":["region","district","municipality"],"files":{"region":"bz_municipality.topo.json","district":"bz_municipality.topo.json","municipality":"bz_municipality.topo.json"},"sizes":{"bz_municipality.topo.json":16190},"bbox":[-89.2,15.9,-87.8,18.3]},"CA":{"levels":["region","district","municipality"],"files":{"region":"ca_region.topo.json","district":"ca_municipality.topo.json","municipality":"ca_municipality.topo.json"},"sizes":{"ca_municipality.topo.json":4782217,"ca_region.topo.json":148757},"bbox":[-141.0,41.7,-53.1,82.5]},"CD":{"levels":["region","district","municipality"],"files":{"region":"cd_municipality.topo.json","district":"cd_municipality.topo.json","municipality":"cd_municipality.topo.json"},"sizes":{"cd_municipality.topo.json":308523},"bbox":[12.0,-13.5,30.6,5.2]},"CF":{"levels":["region","district","municipality"],"files":{},"sizes":{}},"CG":{"levels":["region","district","municipality"],"files":{"region":"cg_region.topo.json","district":"cg_municipality.topo.json","municipality":"cg_municipality.topo.json"},"sizes":{"cg_municipality.topo.json":96839,"cg_region.topo.json":6074},"bbox":[11.2,-5.0,18.1,2.7]},"CI":{"levels":["region","district","municipality"],"files":{"region":"ci_municipality.topo.json","district":"ci_municipality.topo.json","municipality":"ci_municipality.topo.json"},"sizes":{"ci_municipality.topo.json":31460},"bbox":[-8.4,4.4,-2.7,10.5]},"CL":{"levels":["region","district","municipality"],"files":{"region":"cl_region.topo.json","district":"cl_municipality.topo.json","municipality":"cl_municipality.topo.json"},"sizes":{"cl_municipality.topo.json":1466297,"cl_region.topo.json":79403},"bbox":[-109.5,-56.5,-67.9,-18.0]},"CM":{"levels":["region","district","municipality"],"files":{"region":"cm_municipality.topo.json","district":"cm_municipality.topo.json","municipality":"cm_municipality.topo.json"},"sizes":{"cm_municipality.topo.json":216509},"bbox":[8.4,1.7,15.2,11.4]},"CN":{"levels":["region","district","municipality"],"files":{"region":"cn_municipality.topo.json","district":"cn_municipality.topo.json","municipality":"cn_municipality.topo.json"},"sizes":{"cn_municipality.topo.json":605867},"bbox":[73.5,8.7,131.3,53.3]},"CO":{"levels":["region","district","municipality"],"files":{"region":"co_region.topo.json","district":"co_municipality.topo.json","municipality":"co_municipality.topo.json"},"sizes":{"co_municipality.topo.json":2041492,"co_region.topo.json":48560},"bbox":[-81.6,-4.2,-67.0,11.8]},"CR":{"levels":["region","district","municipality"],"files":{"region":"cr_region.topo.json","district":"cr_municipality.topo.json","municipality":"cr_municipality.topo.json"},"sizes":{"cr_municipality.topo.json":217046,"cr_region.topo.json":8820},"bbox":[-87.1,5.5,-82.9,11.1]},"CU":{"levels":["region","district","municipality"],"files":{"region":"cu_region.topo.json","district":"cu_municipality.topo.json","municipality":"cu_municipality.topo.json"},"sizes":{"cu_municipality.topo.json":363100,"cu_region.topo.json":17223}},"CV":{"levels":["region","district","municipality"],"files":{"region":"cv_municipality.topo.json","district":"cv_municipality.topo.json","municipality":"cv_municipality.topo.json"},"sizes":{"cv_municipality.topo.json":85100},"bbox":[-25.4,14.8,-22.9,17.2]},"CY":{"levels":["region","district","municipality"],"files":{"region":"cy_municipality.topo.json","district":"cy_municipality.topo.json","municipality":"cy_municipality.topo.json"},"sizes":{"cy_municipality.topo.json":109982},"bbox":[32.3,34.6,34.1,35.2]},"CZ":{"levels":["region","district","municipality"],"files":{"region":"cz_region.topo.json","district":"cz_municipality.topo.json","municipality":"cz_municipality.topo.json"},"sizes":{"cz_region.topo.json":63280,"cz_municipality.topo.json":235323},"bbox":[12.1,48.6,18.6,51.0]},"DE":{"levels":["region","district","municipality"],"files":{"region":"de_region.topo.json","district":"de_district.topo.json","municipality":{"de_municipality_01.topo.json":[7.87,53.36,11.31,55.06],"de_municipality_02.topo.json":[8.1,53.4,10.33,54.03],"de_municipality_03.topo.json":[6.65,51.26,11.69,53.89],"de_municipality_04.topo.json":[8.48,53.01,8.99,53.6],"de_municipality_05.topo.json":[5.87,50.32,9.46,52.53],"de_municipality_06.topo.json":[7.77,49.4,10.24,51.66],"de_municipality_07.topo.json":[6.11,48.97,8.51,50.94],"de_municipality_08.topo.json":[7.51,47.53,10.5,49.79],"de_municipality_09.topo.json":[8.98,47.27,13.84,50.56],"de_municipality_10.topo.json":[6.36,49.11,7.4,49.64],"de_municipality_11.topo.json":[13.09,52.34,13.76,52.68],"de_municipality_12.topo.json":[11.27,51.36,14.77,53.56],"de_municipality_13.topo.json":[10.59,53.11,14.41,54.88],"de_municipality_14.topo.json":[11.87,50.17,15.04,51.69],"de_municipality_15.topo.json":[10.56,50.94,13.19,53.04],"de_municipality_16.topo.json":[9.88,50.2,12.65,51.65]}},"sizes":{"de_region.topo.json":63977,"de_municipality.topo.json":136813,"de_municipality_01.topo.json":409511,"de_municipality_02.topo.json":4956,"de_municipality_03.topo.json":762377,"de_municipality_04.topo.json":4047,"de_municipality_05.topo.json":365517,"de_municipality_06.topo.json":380453,"de_municipality_07.topo.json":741626,"de_municipality_08.topo.json":715902,"de_municipality_09.topo.json":1861961,"de_municipality_10.topo.json":31160,"de_municipality_11.topo.json":14829,"de_municipality_12.topo.json":277410,"de_municipality_13.topo.json":431683,"de_municipality_14.topo.json":258449,"de_municipality_15.topo.json":159646,"de_municipality_16.topo.json":240108,"de_district.topo.json":536494},"bbox":[5.9,47.3,15.0,55.1]},"DJ":{"levels":["region","district","municipality"],"files":{"region":"dj_municipality.topo.json","district":"dj_municipality.topo.json","municipality":"dj_municipality.topo.json"},"sizes":{"dj_municipality.topo.json":46082},"bbox":[41.8,10.9,43.2,12.4]},"DK":{"levels":["region","district","municipality"],"files":{"region":"dk_region.topo.json","district":"dk_region.topo.json","municipality":"dk_municipality.topo.json"},"sizes":{"dk_region.topo.json":34345,"dk_municipality.topo.json":89273},"bbox":[8.1,54.6,15.1,57.6]},"DM":{"levels":["region","district","municipality"],"files":{"region":"dm_municipality.topo.json","district":"dm_municipality.topo.json","municipality":"dm_municipality.topo.json"},"sizes":{"dm_municipality.topo.json":877}},"DO":{"levels":["region","district","municipality"],"files":{"region":"do_municipality.topo.json","district":"do_municipality.topo.json","municipality":"do_municipality.topo.json"},"sizes":{"do_municipality.topo.json":166077}},"DZ":{"levels":["region","district","municipality"],"files":{"region":"dz_region.topo.json","district":"dz_municipality.topo.json","municipality":"dz_municipality.topo.json"},"sizes":{"dz_municipality.topo.json":949620,"dz_region.topo.json":1446},"bbox":[-8.7,19.0,10.2,37.1]},"EC":{"levels":["region","district","municipality"],"files":{"region":"ec_region.topo.json","district":"ec_municipality.topo.json","municipality":"ec_municipality.topo.json"},"sizes":{"ec_municipality.topo.json":410212,"ec_region.topo.json":16638},"bbox":[-92.2,-5.0,-75.3,1.4]},"EE":{"levels":["region","district","municipality"],"files":{"region":"ee_region.topo.json","district":"ee_region.topo.json","municipality":"ee_municipality.topo.json"},"sizes":{"ee_region.topo.json":40303,"ee_municipality.topo.json":113781},"bbox":[21.8,57.5,28.2,59.7]},"EG":{"levels":["region","district","municipality"],"files":{"region":"eg_region.topo.json","district":"eg_municipality.topo.json","municipality":"eg_municipality.topo.json"},"sizes":{"eg_municipality.topo.json":80470,"eg_region.topo.json":1419},"bbox":[24.6,22.0,34.9,31.7]},"ER":{"levels":["region","district","municipality"],"files":{"region":"er_municipality.topo.json","district":"er_municipality.topo.json","municipality":"er_municipality.topo.json"},"sizes":{"er_municipality.topo.json":25758},"bbox":[36.4,12.4,40.7,17.5]},"ES":{"levels":["region","district","municipality"],"files":{"region":"es_region.topo.json","district":"es_municipality.topo.json","municipality":"es_municipality.topo.json"},"sizes":{"es_municipality.topo.json":4901763,"es_region.topo.json":361455}},"ET":{"levels":["region","district","municipality"],"files":{"region":"et_municipality.topo.json","district":"et_municipality.topo.json","municipality":"et_municipality.topo.json"},"sizes":{"et_municipality.topo.json":75207},"bbox":[33.0,3.4,42.3,14.4]},"FI":{"levels":["region","district","municipality"],"files":{"region":"fi_region.topo.json","district":"fi_region.topo.json","municipality":"fi_municipality.topo.json"},"sizes":{"fi_region.topo.json":8173,"fi_municipality.topo.json":76731},"bbox":[19.5,59.8,31.2,69.8]},"FJ":{"levels":["region","district","municipality"],"files":{"region":"fj_municipality.topo.json","district":"fj_municipality.topo.json","municipality":"fj_municipality.topo.json"},"sizes":{"fj_municipality.topo.json":26329},"bbox":[-180,-21.9,180.0,-15.7]},"FM":{"levels":["region","district","municipality"],"files":{"region":"fm_municipality.topo.json","district":"fm_municipality.topo.json","municipality":"fm_municipality.topo.json"},"sizes":{"fm_municipality.topo.json":11365}},"FR":{"levels":["region","district","municipality"],"files":{"region":"fr_region.topo.json","district":"fr_municipality.topo.json","municipality":"fr_municipality.topo.json"},"sizes":{"fr_region.topo.json":13679,"fr_municipality.topo.json":104259},"bbox":[-61.8,-21.4,55.7,51.3]},"GA":{"levels":["region","district","municipality"],"files":{"region":"ga_municipality.topo.json","district":"ga_municipality.topo.json","municipality":"ga_municipality.topo.json"},"sizes":{"ga_municipality.topo.json":178336},"bbox":[8.7,-4.0,14.4,2.3]},"GB":{"levels":["region","district","municipality"],"files":{"region":"gb_region.topo.json","district":"gb_district.topo.json","municipality":"gb_municipality.topo.json"},"sizes":{"gb_region.topo.json":81615,"gb_district.topo.json":94883,"gb_municipality.topo.json":299097},"bbox":[-88.4,42.9,1.7,60.8]},"GD":{"levels":["region","district","municipality"],"files":{"region":"gd_municipality.topo.json","district":"gd_municipality.topo.json","municipality":"gd_municipality.topo.json"},"sizes":{"gd_municipality.topo.json":20756}},"GE":{"levels":["region","district","municipality"],"files":{"district":"ge_municipality.topo.json","municipality":"ge_municipality.topo.json"},"sizes":{"ge_municipality.topo.json":166946},"bbox":[40.0,41.1,46.4,43.5]},"GH":{"levels":["region","district","municipality"],"files":{"region":"gh_region.topo.json","district":"gh_municipality.topo.json","municipality":"gh_municipality.topo.json"},"sizes":{"gh_municipality.topo.json":439668,"gh_region.topo.json":16654},"bbox":[-3.3,4.7,1.1,11.2]},"GL":{"levels":["region","district","municipality"],"files":{"region":"gl_municipality.topo.json","district":"gl_municipality.topo.json","municipality":"gl_municipality.topo.json"},"sizes":{"gl_municipality.topo.json":7198},"bbox":[-74.1,59.5,-41.2,76.6]},"GM":{"levels":["region","district","municipality"],"files":{"region":"gm_municipality.topo.json","district":"gm_municipality.topo.json","municipality":"gm_municipality.topo.json"},"sizes":{"gm_municipality.topo.json":20340},"bbox":[-16.6,13.2,-13.9,13.8]},"GN":{"levels":["region","district","municipality"],"files":{"region":"gn_region.topo.json","district":"gn_municipality.topo.json","municipality":"gn_municipality.topo.json"},"sizes":{"gn_municipality.topo.json":109109,"gn_region.topo.json":4864},"bbox":[-15.4,7.2,-7.7,12.4]},"GQ":{"levels":["region","district","municipality"],"files":{"region":"gq_region.topo.json","district":"gq_municipality.topo.json","municipality":"gq_municipality.topo.json"},"sizes":{"gq_municipality.topo.json":42778,"gq_region.topo.json":1879},"bbox":[5.6,-1.5,11.4,3.8]},"GR":{"levels":["region","district","municipality"],"files":{"district":"gr_municipality.topo.json","municipality":"gr_municipality.topo.json","region":"gr_region.topo.json"},"sizes":{"gr_municipality.topo.json":1688206,"gr_region.topo.json":61686},"bbox":[19.4,34.8,29.6,41.5]},"GT":{"levels":["region","district","municipality"],"files":{"region":"gt_region.topo.json","district":"gt_municipality.topo.json","municipality":"gt_municipality.topo.json"},"sizes":{"gt_municipality.topo.json":272557,"gt_region.topo.json":12824},"bbox":[-92.2,13.7,-88.5,17.8]},"GW":{"levels":["region","district","municipality"],"files":{"region":"gw_region.topo.json","district":"gw_municipality.topo.json","municipality":"gw_municipality.topo.json"},"sizes":{"gw_municipality.topo.json":66428,"gw_region.topo.json":3680},"bbox":[-16.7,10.9,-13.8,12.7]},"GY":{"levels":["region","district","municipality"],"files":{"region":"gy_municipality.topo.json","district":"gy_municipality.topo.json","municipality":"gy_municipality.topo.json"},"sizes":{"gy_municipality.topo.json":69089},"bbox":[-61.4,1.2,-57.5,7.7]},"HN":{"levels":["region","district","municipality"],"files":{"region":"hn_region.topo.json","district":"hn_municipality.topo.json","municipality":"hn_municipality.topo.json"},"sizes":{"hn_municipality.topo.json":359133,"hn_region.topo.json":12010},"bbox":[-89.4,13.0,-83.4,16.5]},"HR":{"levels":["region","district","municipality"],"files":{"district":"hr_municipality.topo.json","municipality":"hr_municipality.topo.json","region":"hr_region.topo.json"},"sizes":{"hr_municipality.topo.json":398390,"hr_region.topo.json":27407},"bbox":[13.4,42.4,19.3,46.5]},"HT":{"levels":["region","district","municipality"],"files":{"region":"ht_municipality.topo.json","district":"ht_municipality.topo.json","municipality":"ht_municipality.topo.json"},"sizes":{"ht_municipality.topo.json":19932}},"HU":{"levels":["region","district","municipality"],"files":{"district":"hu_municipality.topo.json","municipality":"hu_municipality.topo.json","region":"hu_region.topo.json"},"sizes":{"hu_municipality.topo.json":209644,"hu_region.topo.json":7570},"bbox":[16.1,45.7,22.8,48.6]},"ID":{"levels":["region","district","municipality"],"files":{"district":"id_municipality.topo.json","municipality":"id_municipality.topo.json","region":"id_region.topo.json"},"sizes":{"id_municipality.topo.json":4130572,"id_region.topo.json":165592},"bbox":[95.0,-11.0,141.0,6.1]},"IE":{"levels":["region","district","municipality"],"files":{"region":"ie_region.topo.json","district":"ie_municipality.topo.json","municipality":"ie_municipality.topo.json"},"sizes":{"ie_region.topo.json":198815,"ie_municipality.topo.json":478415},"bbox":[-10.7,51.4,-6.0,55.4]},"IL":{"levels":["region","district","municipality"],"files":{},"sizes":{}},"IN":{"levels":["region","district","municipality"],"files":{"region":"in_municipality.topo.json","district":"in_municipality.topo.json","municipality":"in_municipality.topo.json"},"sizes":{"in_municipality.topo.json":922696},"bbox":[68.2,6.8,95.2,34.5]},"IQ":{"levels":["region","district","municipality"],"files":{"region":"iq_municipality.topo.json","district":"iq_municipality.topo.json","municipality":"iq_municipality.topo.json"},"sizes":{"iq_municipality.topo.json":104418},"bbox":[38.8,29.1,47.7,37.3]},"IR":{"levels":["region","district","municipality"],"files":{"region":"ir_municipality.topo.json","district":"ir_municipality.topo.json","municipality":"ir_municipality.topo.json"},"sizes":{"ir_municipality.topo.json":237559},"bbox":[44.0,24.8,60.9,39.4]},"IS":{"levels":["region","district","municipality"],"files":{"region":"is_region.topo.json","district":"is_region.topo.json","municipality":"is_municipality.topo.json"},"sizes":{"is_region.topo.json":118631,"is_municipality.topo.json":297384},"bbox":[-24.5,63.3,-13.6,66.5]},"IT":{"levels":["region","district","municipality"],"files":{"region":"it_region.topo.json","district":"it_municipality.topo.json","municipality":"it_municipality.topo.json"},"sizes":{"it_region.topo.json":346748,"it_municipality.topo.json":221980},"bbox":[-75.4,-7.6,18.5,53.2]},"JM":{"levels":["region","district","municipality"],"files":{"region":"jm_municipality.topo.json","district":"jm_municipality.topo.json","municipality":"jm_municipality.topo.json"},"sizes":{"jm_municipality.topo.json":78990}},"JO":{"levels":["region","district","municipality"],"files":{"region":"jo_municipality.topo.json","district":"jo_municipality.topo.json","municipality":"jo_municipality.topo.json"},"sizes":{"jo_municipality.topo.json":48366},"bbox":[35.0,29.2,37.8,32.5]},"JP":{"levels":["region","district","municipality"],"files":{"region":"jp_region.topo.json","district":"jp_municipality.topo.json","municipality":"jp_municipality.topo.json"},"sizes":{"jp_municipality.topo.json":483415,"jp_region.topo.json":7520},"bbox":[122.7,20.2,153.8,43.7]},"KE":{"levels":["region","district","municipality"],"files":{"region":"ke_region.topo.json","district":"ke_municipality.topo.json","municipality":"ke_municipality.topo.json"},"sizes":{"ke_municipality.topo.json":102528,"ke_region.topo.json":4363},"bbox":[33.9,-4.8,41.6,4.4]},"KG":{"levels":["region","district","municipality"],"files":{"region":"kg_municipality.topo.json","district":"kg_municipality.topo.json","municipality":"kg_municipality.topo.json"},"sizes":{"kg_municipality.topo.json":66811},"bbox":[69.3,39.2,77.9,43.0]},"KH":{"levels":["region","district","municipality"],"files":{"region":"kh_municipality.topo.json","district":"kh_municipality.topo.json","municipality":"kh_municipality.topo.json"},"sizes":{"kh_municipality.topo.json":119766},"bbox":[102.3,9.4,107.6,14.4]},"KI":{"levels":["region","district","municipality"],"files":{"region":"ki_municipality.topo.json","district":"ki_municipality.topo.json","municipality":"ki_municipality.topo.json"},"sizes":{"ki_municipality.topo.json":4398}},"KM":{"levels":["region","district","municipality"],"files":{"region":"km_municipality.topo.json","district":"km_municipality.topo.json","municipality":"km_municipality.topo.json"},"sizes":{"km_municipality.topo.json":41977},"bbox":[43.2,-12.4,44.5,-11.4]},"KN":{"levels":["region","district","municipality"],"files":{"region":"kn_municipality.topo.json","district":"kn_municipality.topo.json","municipality":"kn_municipality.topo.json"},"sizes":{"kn_municipality.topo.json":14838}},"KP":{"levels":["region","district","municipality"],"files":{"region":"kp_municipality.topo.json","district":"kp_municipality.topo.json","municipality":"kp_municipality.topo.json"},"sizes":{"kp_municipality.topo.json":67287},"bbox":[124.1,37.6,130.5,42.8]},"KR":{"levels":["region","district","municipality"],"files":{"district":"kr_municipality.topo.json","municipality":"kr_municipality.topo.json","region":"kr_region.topo.json"},"sizes":{"kr_municipality.topo.json":332233,"kr_region.topo.json":11915},"bbox":[124.4,32.9,131.9,38.4]},"KW":{"levels":["region","district","municipality"],"files":{"region":"kw_municipality.topo.json","district":"kw_municipality.topo.json","municipality":"kw_municipality.topo.json"},"sizes":{"kw_municipality.topo.json":13444},"bbox":[46.6,28.5,48.6,30.0]},"KZ":{"levels":["region","district","municipality"],"files":{},"sizes":{}},"LA":{"levels":["region","district","municipality"],"files":{"region":"la_municipality.topo.json","district":"la_municipality.topo.json","municipality":"la_municipality.topo.json"},"sizes":{"la_municipality.topo.json":106721},"bbox":[100.1,13.9,107.5,21.2]},"LB":{"levels":["region","district","municipality"],"files":{"region":"lb_municipality.topo.json","district":"lb_municipality.topo.json","municipality":"lb_municipality.topo.json"},"sizes":{"lb_municipality.topo.json":45186},"bbox":[35.1,33.1,36.3,34.5]},"LI":{"levels":["region","district","municipality"],"files":{"region":"li_municipality.topo.json","district":"li_municipality.topo.json","municipality":"li_municipality.topo.json"},"sizes":{"li_municipality.topo.json":17094},"bbox":[9.5,47.0,9.6,47.3]},"LK":{"levels":["region","district","municipality"],"files":{"district":"lk_municipality.topo.json","municipality":"lk_municipality.topo.json"},"sizes":{"lk_municipality.topo.json":51111},"bbox":[79.4,5.7,82.0,9.6]},"LR":{"levels":["region","district","municipality"],"files":{"region":"lr_municipality.topo.json","district":"lr_municipality.topo.json","municipality":"lr_municipality.topo.json"},"sizes":{"lr_municipality.topo.json":68945},"bbox":[-11.5,4.4,-7.4,7.9]},"LS":{"levels":["region","district","municipality"],"files":{},"sizes":{}},"LT":{"levels":["region","district","municipality"],"files":{"region":"lt_region.topo.json","district":"lt_region.topo.json","municipality":"lt_municipality.topo.json"},"sizes":{"lt_region.topo.json":12049,"lt_municipality.topo.json":48482},"bbox":[21.0,53.9,26.7,56.4]},"LU":{"levels":["region","district","municipality"],"files":{"region":"lu_region.topo.json","district":"lu_region.topo.json","municipality":"lu_municipality.topo.json"},"sizes":{"lu_region.topo.json":15321,"lu_municipality.topo.json":69538},"bbox":[5.7,49.4,6.5,50.2]},"LV":{"levels":["region","district","municipality"],"files":{"region":"lv_region.topo.json","district":"lv_region.topo.json","municipality":"lv_municipality.topo.json"},"sizes":{"lv_region.topo.json":11518,"lv_municipality.topo.json":44876},"bbox":[21.0,55.7,28.1,58.0]},"LY":{"levels":["region","district","municipality"],"files":{"region":"ly_municipality.topo.json","district":"ly_municipality.topo.json","municipality":"ly_municipality.topo.json"},"sizes":{"ly_municipality.topo.json":50857},"bbox":[9.4,19.5,25.0,33.1]},"MA":{"levels":["region","district","municipality"],"files":{"region":"ma_municipality.topo.json","district":"ma_municipality.topo.json","municipality":"ma_municipality.topo.json"},"sizes":{"ma_municipality.topo.json":379365},"bbox":[-17.0,21.3,-1.2,35.9]},"MD":{"levels":["region","district","municipality"],"files":{"region":"md_municipality.topo.json","district":"md_municipality.topo.json","municipality":"md_municipality.topo.json"},"sizes":{"md_municipality.topo.json":92170},"bbox":[26.6,45.5,29.9,48.4]},"ME":{"levels":["region","district","municipality"],"files":{"region":"me_municipality.topo.json","district":"me_municipality.topo.json","municipality":"me_municipality.topo.json"},"sizes":{"me_municipality.topo.json":82527},"bbox":[18.4,41.8,20.1,43.3]},"MG":{"levels":["region","district","municipality"],"files":{"region":"mg_region.topo.json","district":"mg_municipality.topo.json","municipality":"mg_municipality.topo.json"},"sizes":{"mg_municipality.topo.json":303556,"mg_region.topo.json":10483},"bbox":[43.2,-25.6,50.0,-12.1]},"MH":{"levels":["region","district","municipality"],"files":{"region":"mh_municipality.topo.json","district":"mh_municipality.topo.json","municipality":"mh_municipality.topo.json"},"sizes":{"mh_municipality.topo.json":7557}},"MK":{"levels":["region","district","municipality"],"files":{"region":"mk_municipality.topo.json","district":"mk_municipality.topo.json","municipality":"mk_municipality.topo.json"},"sizes":{"mk_municipality.topo.json":131090},"bbox":[20.5,40.9,23.0,42.3]},"ML":{"levels":["region","district","municipality"],"files":{"region":"ml_region.topo.json","district":"ml_municipality.topo.json","municipality":"ml_municipality.topo.json"},"sizes":{"ml_municipality.topo.json":94398,"ml_region.topo.json":6301},"bbox":[-12.2,10.1,3.1,21.9]},"MM":{"levels":["region","district","municipality"],"files":{"region":"mm_municipality.topo.json","district":"mm_municipality.topo.json","municipality":"mm_municipality.topo.json"},"sizes":{"mm_municipality.topo.json":209260},"bbox":[92.2,9.3,101.1,28.1]},"MN":{"levels":["region","district","municipality"],"files":{"region":"mn_municipality.topo.json","district":"mn_municipality.topo.json","municipality":"mn_municipality.topo.json"},"sizes":{"mn_municipality.topo.json":91560},"bbox":[87.7,41.6,116.6,50.4]},"MR":{"levels":["region","district","municipality"],"files":{"region":"mr_municipality.topo.json","district":"mr_municipality.topo.json","municipality":"mr_municipality.topo.json"},"sizes":{"mr_municipality.topo.json":3602},"bbox":[-16.0,16.9,-15.9,18.2]},"MT":{"levels":["region","district","municipality"],"files":{"region":"mt_municipality.topo.json","district":"mt_municipality.topo.json","municipality":"mt_municipality.topo.json"},"sizes":{"mt_municipality.topo.json":66546},"bbox":[14.2,35.8,14.6,36.1]},"MU":{"levels":["region","district","municipality"],"files":{},"sizes":{}},"MV":{"levels":["region","district","municipality"],"files":{"region":"mv_municipality.topo.json","district":"mv_municipality.topo.json","municipality":"mv_municipality.topo.json"},"sizes":{"mv_municipality.topo.json":20576}},"MW":{"levels":["region","district","municipality"],"files":{"region":"mw_region.topo.json","district":"mw_municipality.topo.json","municipality":"mw_municipality.topo.json"},"sizes":{"mw_municipality.topo.json":141911,"mw_region.topo.json":7291},"bbox":[32.7,-17.1,35.9,-9.6]},"MY":{"levels":["region","district","municipality"],"files":{"region":"my_region.topo.json","district":"my_municipality.topo.json","municipality":"my_municipality.topo.json"},"sizes":{"my_region.topo.json":99601,"my_municipality.topo.json":264216},"bbox":[99.6,0.9,115.6,6.5]},"MZ":{"levels":["region","district","municipality"],"files":{"region":"mz_region.topo.json","district":"mz_municipality.topo.json","municipality":"mz_municipality.topo.json"},"sizes":{"mz_municipality.topo.json":222960,"mz_region.topo.json":9369},"bbox":[30.2,-26.9,40.8,-10.8]},"NA":{"levels":["region","district","municipality"],"files":{"region":"na_municipality.topo.json","district":"na_municipality.topo.json","municipality":"na_municipality.topo.json"},"sizes":{"na_municipality.topo.json":121953},"bbox":[11.7,-29.0,22.5,-17.4]},"NE":{"levels":["region","district","municipality"],"files":{"region":"ne_region.topo.json","district":"ne_municipality.topo.json","municipality":"ne_municipality.topo.json"},"sizes":{"ne_municipality.topo.json":53413,"ne_region.topo.json":2789},"bbox":[0.2,11.7,15.6,22.9]},"NG":{"levels":["region","district","municipality"],"files":{"region":"ng_region.topo.json","district":"ng_municipality.topo.json","municipality":"ng_municipality.topo.json"},"sizes":{"ng_municipality.topo.json":502918,"ng_region.topo.json":16212},"bbox":[2.7,4.3,14.5,13.9]},"NI":{"levels":["region","district","municipality"],"files":{"region":"ni_region.topo.json","district":"ni_municipality.topo.json","municipality":"ni_municipality.topo.json"},"sizes":{"ni_municipality.topo.json":401229,"ni_region.topo.json":14211},"bbox":[-87.9,10.7,-82.8,15.0]},"NL":{"levels":["region","district","municipality"],"files":{"region":"nl_region.topo.json","district":"nl_region.topo.json","municipality":"nl_municipality.topo.json"},"sizes":{"nl_region.topo.json":53072,"nl_municipality.topo.json":434289},"bbox":[3.3,50.8,7.2,53.5]},"NO":{"levels":["region","district","municipality"],"files":{"region":"no_region.topo.json","district":"no_region.topo.json","municipality":"no_municipality.topo.json"},"sizes":{"no_region.topo.json":23656,"no_municipality.topo.json":240941},"bbox":[4.1,57.8,31.2,71.4]},"NP":{"levels":["region","district","municipality"],"files":{"district":"np_municipality.topo.json","municipality":"np_municipality.topo.json"},"sizes":{"np_municipality.topo.json":147149},"bbox":[80.1,26.3,88.2,30.1]},"NR":{"levels":["region","district","municipality"],"files":{},"sizes":{}},"NZ":{"levels":["region","district","municipality"],"files":{"district":"nz_municipality.topo.json","municipality":"nz_municipality.topo.json","region":"nz_region.topo.json"},"sizes":{"nz_municipality.topo.json":646666,"nz_region.topo.json":2538},"bbox":[166.4,-47.3,178.6,-34.5]},"OM":{"levels":["region","district","municipality"],"files":{"region":"om_municipality.topo.json","district":"om_municipality.topo.json","municipality":"om_municipality.topo.json"},"sizes":{"om_municipality.topo.json":216126},"bbox":[52.0,16.7,59.7,26.5]},"PA":{"levels":["region","district","municipality"],"files":{"region":"pa_region.topo.json","district":"pa_municipality.topo.json","municipality":"pa_municipality.topo.json"},"sizes":{"pa_municipality.topo.json":372417,"pa_region.topo.json":24272},"bbox":[-83.1,7.2,-77.3,9.6]},"PE":{"levels":["region","district","municipality"],"files":{"region":"pe_region.topo.json","district":"pe_municipality.topo.json","municipality":"pe_municipality.topo.json"},"sizes":{"pe_municipality.topo.json":595251,"pe_region.topo.json":7121},"bbox":[-81.3,-18.4,-68.8,-0.6]},"PG":{"levels":["region","district","municipality"],"files":{"region":"pg_municipality.topo.json","district":"pg_municipality.topo.json","municipality":"pg_municipality.topo.json"},"sizes":{"pg_municipality.topo.json":42603},"bbox":[140.8,-11.9,159.3,-1.3]},"PH":{"levels":["region","district","municipality"],"files":{"district":"ph_municipality.topo.json","municipality":"ph_municipality.topo.json"},"sizes":{"ph_municipality.topo.json":118922},"bbox":[114.1,4.5,126.5,20.6]},"PK":{"levels":["region","district","municipality"],"files":{"region":"pk_municipality.topo.json","district":"pk_municipality.topo.json","municipality":"pk_municipality.topo.json"},"sizes":{"pk_municipality.topo.json":129801},"bbox":[60.9,23.4,74.9,36.9]},"PL":{"levels":["region","district","municipality"],"files":{"region":"pl_region.topo.json","district":"pl_municipality.topo.json","municipality":"pl_municipality.topo.json"},"sizes":{"pl_region.topo.json":92956,"pl_municipality.topo.json":768689},"bbox":[14.1,49.0,24.0,54.8]},"PS":{"levels":["region","district","municipality"],"files":{"region":"ps_municipality.topo.json","district":"ps_municipality.topo.json","municipality":"ps_municipality.topo.json"},"sizes":{"ps_municipality.topo.json":37611}},"PT":{"levels":["region","district","municipality"],"files":{"region":"pt_region.topo.json","district":"pt_municipality.topo.json","municipality":"pt_municipality.topo.json"},"sizes":{"pt_region.topo.json":78675,"pt_municipality.topo.json":406581},"bbox":[-31.3,30.0,-6.4,42.1]},"PW":{"levels":["region","district","municipality"],"files":{"region":"pw_municipality.topo.json","district":"pw_municipality.topo.json","municipality":"pw_municipality.topo.json"},"sizes":{"pw_municipality.topo.json":9225},"bbox":[130.9,2.6,134.9,8.0]},"PY":{"levels":["region","district","municipality"],"files":{"region":"py_region.topo.json","district":"py_municipality.topo.json","municipality":"py_municipality.topo.json"},"sizes":{"py_municipality.topo.json":373293,"py_region.topo.json":18070},"bbox":[-62.6,-27.4,-54.3,-20.1]},"QA":{"levels":["region","district","municipality"],"files":{"region":"qa_municipality.topo.json","district":"qa_municipality.topo.json","municipality":"qa_municipality.topo.json"},"sizes":{"qa_municipality.topo.json":61314},"bbox":[50.7,24.5,52.4,26.2]},"RO":{"levels":["region","district","municipality"],"files":{"district":"ro_municipality.topo.json","municipality":"ro_municipality.topo.json","region":"ro_region.topo.json"},"sizes":{"ro_municipality.topo.json":200472,"ro_region.topo.json":3372},"bbox":[20.3,43.6,29.0,48.0]},"RS":{"levels":["region","district","municipality"],"files":{"district":"rs_municipality.topo.json","municipality":"rs_municipality.topo.json","region":"rs_region.topo.json"},"sizes":{"rs_municipality.topo.json":342779,"rs_region.topo.json":20674},"bbox":[18.6,42.4,22.5,46.0]},"RW":{"levels":["region","district","municipality"],"files":{"region":"rw_region.topo.json","district":"rw_municipality.topo.json","municipality":"rw_municipality.topo.json"},"sizes":{"rw_municipality.topo.json":54983,"rw_region.topo.json":1316},"bbox":[28.9,-2.8,30.8,-1.4]},"SA":{"levels":["region","district","municipality"],"files":{"region":"sa_municipality.topo.json","district":"sa_municipality.topo.json","municipality":"sa_municipality.topo.json"},"sizes":{"sa_municipality.topo.json":257321},"bbox":[34.5,16.4,52.0,31.7]},"SB":{"levels":["region","district","municipality"],"files":{"region":"sb_municipality.topo.json","district":"sb_municipality.topo.json","municipality":"sb_municipality.topo.json"},"sizes":{"sb_municipality.topo.json":7136}},"SC":{"levels":["region","district","municipality"],"files":{"region":"sc_municipality.topo.json","district":"sc_municipality.topo.json","municipality":"sc_municipality.topo.json"},"sizes":{"sc_municipality.topo.json":33036},"bbox":[55.2,-4.8,55.9,-3.7]},"SD":{"levels":["region","district","municipality"],"files":{"region":"sd_municipality.topo.json","district":"sd_municipality.topo.json","municipality":"sd_municipality.topo.json"},"sizes":{"sd_municipality.topo.json":45068},"bbox":[21.8,6.6,37.0,22.0]},"SE":{"levels":["region","district","municipality"],"files":{"region":"se_region.topo.json","district":"se_region.topo.json","municipality":"se_municipality.topo.json"},"sizes":{"se_region.topo.json":8471,"se_municipality.topo.json":71216},"bbox":[11.1,55.3,23.9,68.2]},"SG":{"levels":["region","district","municipality"],"files":{"region":"sg_municipality.topo.json","district":"sg_municipality.topo.json","municipality":"sg_municipality.topo.json"},"sizes":{"sg_municipality.topo.json":45010}},"SI":{"levels":["region","district","municipality"],"files":{"region":"si_region.topo.json","district":"si_region.topo.json","municipality":"si_municipality.topo.json"},"sizes":{"si_region.topo.json":78690,"si_municipality.topo.json":202632},"bbox":[13.4,45.4,16.4,46.9]},"SK":{"levels":["region","district","municipality"],"files":{"region":"sk_region.topo.json","district":"sk_municipality.topo.json","municipality":"sk_municipality.topo.json"},"sizes":{"sk_region.topo.json":2434,"sk_municipality.topo.json":17917},"bbox":[16.9,47.8,22.4,49.5]},"SL":{"levels":["region","district","municipality"],"files":{"region":"sl_municipality.topo.json","district":"sl_municipality.topo.json","municipality":"sl_municipality.topo.json"},"sizes":{"sl_municipality.topo.json":15921},"bbox":[-13.1,7.2,-11.9,9.6]},"SM":{"levels":["region","district","municipality"],"files":{"region":"sm_municipality.topo.json","district":"sm_municipality.topo.json","municipality":"sm_municipality.topo.json"},"sizes":{"sm_municipality.topo.json":9526},"bbox":[12.4,43.9,12.5,44.0]},"SN":{"levels":["region","district","municipality"],"files":{},"sizes":{}},"SO":{"levels":["region","district","municipality"],"files":{"region":"so_municipality.topo.json","district":"so_municipality.topo.json","municipality":"so_municipality.topo.json"},"sizes":{"so_municipality.topo.json":5125},"bbox":[41.0,-1.8,49.8,7.6]},"SR":{"levels":["region","district","municipality"],"files":{"region":"sr_municipality.topo.json","district":"sr_municipality.topo.json","municipality":"sr_municipality.topo.json"},"sizes":{"sr_municipality.topo.json":51877},"bbox":[-58.1,1.8,-54.3,6.2]},"SS":{"levels":["region","district","municipality"],"files":{"region":"ss_municipality.topo.json","district":"ss_municipality.topo.json","municipality":"ss_municipality.topo.json"},"sizes":{"ss_municipality.topo.json":89130},"bbox":[23.4,3.5,35.0,10.3]},"ST":{"levels":["region","district","municipality"],"files":{"region":"st_region.topo.json","district":"st_municipality.topo.json","municipality":"st_municipality.topo.json"},"sizes":{"st_municipality.topo.json":22526,"st_region.topo.json":1443},"bbox":[6.5,-0.0,7.4,1.7]},"SV":{"levels":["region","district","municipality"],"files":{"region":"sv_region.topo.json","district":"sv_municipality.topo.json","municipality":"sv_municipality.topo.json"},"sizes":{"sv_municipality.topo.json":269647,"sv_region.topo.json":15623},"bbox":[-90.1,13.1,-87.7,14.4]},"SY":{"levels":["region","district","municipality"],"files":{"region":"sy_municipality.topo.json","district":"sy_municipality.topo.json","municipality":"sy_municipality.topo.json"},"sizes":{"sy_municipality.topo.json":142218}},"SZ":{"levels":["region","district","municipality"],"files":{"region":"sz_region.topo.json","district":"sz_municipality.topo.json","municipality":"sz_municipality.topo.json"},"sizes":{"sz_municipality.topo.json":33393,"sz_region.topo.json":1937},"bbox":[30.8,-27.3,32.1,-25.7]},"TD":{"levels":["region","district","municipality"],"files":{"region":"td_municipality.topo.json","district":"td_municipality.topo.json","municipality":"td_municipality.topo.json"},"sizes":{"td_municipality.topo.json":1150},"bbox":[21.2,12.8,21.7,13.0]},"TG":{"levels":["region","district","municipality"],"files":{"region":"tg_region.topo.json","district":"tg_municipality.topo.json","municipality":"tg_municipality.topo.json"},"sizes":{"tg_municipality.topo.json":32241,"tg_region.topo.json":2101},"bbox":[-0.1,7.9,1.4,10.9]},"TH":{"levels":["region","district","municipality"],"files":{"district":"th_municipality.topo.json","municipality":"th_municipality.topo.json"},"sizes":{"th_municipality.topo.json":1284852},"bbox":[97.2,5.6,105.1,20.1]},"TJ":{"levels":["region","district","municipality"],"files":{"region":"tj_municipality.topo.json","district":"tj_municipality.topo.json","municipality":"tj_municipality.topo.json"},"sizes":{"tj_municipality.topo.json":99897}},"TL":{"levels":["region","district","municipality"],"files":{"region":"tl_municipality.topo.json","district":"tl_municipality.topo.json","municipality":"tl_municipality.topo.json"},"sizes":{"tl_municipality.topo.json":101544},"bbox":[124.1,-9.5,127.3,-8.2]},"TM":{"levels":["region","district","municipality"],"files":{"region":"tm_municipality.topo.json","district":"tm_municipality.topo.json","municipality":"tm_municipality.topo.json"},"sizes":{"tm_municipality.topo.json":104072}},"TN":{"levels":["region","district","municipality"],"files":{"region":"tn_municipality.topo.json","district":"tn_municipality.topo.json","municipality":"tn_municipality.topo.json"},"sizes":{"tn_municipality.topo.json":1305690},"bbox":[7.5,30.2,11.6,37.5]},"TO":{"levels":["region","district","municipality"],"files":{"region":"to_municipality.topo.json","district":"to_municipality.topo.json","municipality":"to_municipality.topo.json"},"sizes":{"to_municipality.topo.json":3180},"bbox":[-176.4,-22.5,-173.5,-15.5]},"TR":{"levels":["region","district","municipality"],"files":{"district":"tr_municipality.topo.json","municipality":"tr_municipality.topo.json","region":"tr_region.topo.json"},"sizes":{"tr_municipality.topo.json":396884,"tr_region.topo.json":7900},"bbox":[23.6,35.3,44.5,42.1]},"TT":{"levels":["region","district","municipality"],"files":{"region":"tt_municipality.topo.json","district":"tt_municipality.topo.json","municipality":"tt_municipality.topo.json"},"sizes":{"tt_municipality.topo.json":48941}},"TV":{"levels":["region","district","municipality"],"files":{"region":"tv_municipality.topo.json","district":"tv_municipality.topo.json","municipality":"tv_municipality.topo.json"},"sizes":{"tv_municipality.topo.json":7526}},"TW":{"levels":["region","district","municipality"],"files":{"region":"tw_municipality.topo.json","district":"tw_municipality.topo.json","municipality":"tw_municipality.topo.json"},"sizes":{"tw_municipality.topo.json":152016},"bbox":[114.3,10.3,122.1,26.4]},"TZ":{"levels":["region","district","municipality"],"files":{"region":"tz_region.topo.json","district":"tz_municipality.topo.json","municipality":"tz_municipality.topo.json"},"sizes":{"tz_municipality.topo.json":538265,"tz_region.topo.json":18456},"bbox":[29.6,-11.8,40.4,-1.4]},"UA":{"levels":["region","district","municipality"],"files":{"region":"ua_region.topo.json","district":"ua_municipality.topo.json","municipality":"ua_municipality.topo.json"},"sizes":{"ua_region.topo.json":92759,"ua_municipality.topo.json":303916},"bbox":[22.1,44.2,39.1,52.3]},"UG":{"levels":["region","district","municipality"],"files":{"region":"ug_region.topo.json","district":"ug_municipality.topo.json","municipality":"ug_municipality.topo.json"},"sizes":{"ug_municipality.topo.json":295451,"ug_region.topo.json":8750},"bbox":[29.6,-1.5,34.9,4.1]},"UY":{"levels":["region","district","municipality"],"files":{"region":"uy_municipality.topo.json","district":"uy_municipality.topo.json","municipality":"uy_municipality.topo.json"},"sizes":{"uy_municipality.topo.json":128519},"bbox":[-58.5,-35.0,-53.3,-30.8]},"UZ":{"levels":["region","district","municipality"],"files":{"region":"uz_municipality.topo.json","district":"uz_municipality.topo.json","municipality":"uz_municipality.topo.json"},"sizes":{"uz_municipality.topo.json":76660},"bbox":[60.0,37.2,72.2,41.8]},"VC":{"levels":["region","district","municipality"],"files":{"region":"vc_municipality.topo.json","district":"vc_municipality.topo.json","municipality":"vc_municipality.topo.json"},"sizes":{"vc_municipality.topo.json":20026}},"VE":{"levels":["region","district","municipality"],"files":{"region":"ve_region.topo.json","district":"ve_municipality.topo.json","municipality":"ve_municipality.topo.json"},"sizes":{"ve_municipality.topo.json":1771820,"ve_region.topo.json":53326},"bbox":[-73.4,0.6,-60.2,15.7]},"VN":{"levels":["region","district","municipality"],"files":{"region":"vn_municipality.topo.json","district":"vn_municipality.topo.json","municipality":"vn_municipality.topo.json"},"sizes":{"vn_municipality.topo.json":338487},"bbox":[102.1,7.7,114.6,23.1]},"VU":{"levels":["region","district","municipality"],"files":{"region":"vu_municipality.topo.json","district":"vu_municipality.topo.json","municipality":"vu_municipality.topo.json"},"sizes":{"vu_municipality.topo.json":5376},"bbox":[166.3,-20.4,169.3,-14.1]},"WS":{"levels":["region","district","municipality"],"files":{"region":"ws_municipality.topo.json","district":"ws_municipality.topo.json","municipality":"ws_municipality.topo.json"},"sizes":{"ws_municipality.topo.json":32089},"bbox":[-172.8,-14.1,-171.4,-13.4]},"XK":{"levels":["region","district","municipality"],"files":{"region":"xk_municipality.topo.json","district":"xk_municipality.topo.json","municipality":"xk_municipality.topo.json"},"sizes":{"xk_municipality.topo.json":131345},"bbox":[20.0,41.9,21.7,43.1]},"YE":{"levels":["region","district","municipality"],"files":{"region":"ye_municipality.topo.json","district":"ye_municipality.topo.json","municipality":"ye_municipality.topo.json"},"sizes":{"ye_municipality.topo.json":57494}},"ZA":{"levels":["region","district","municipality"],"files":{"region":"za_municipality.topo.json","district":"za_municipality.topo.json","municipality":"za_municipality.topo.json"},"sizes":{"za_municipality.topo.json":629801},"bbox":[16.5,-47.0,38.0,-22.5]},"ZM":{"levels":["region","district","municipality"],"files":{"region":"zm_municipality.topo.json","district":"zm_municipality.topo.json","municipality":"zm_municipality.topo.json"},"sizes":{"zm_municipality.topo.json":182941},"bbox":[22.0,-18.1,33.7,-8.4]},"ZW":{"levels":["region","district","municipality"],"files":{"region":"zw_municipality.topo.json","district":"zw_municipality.topo.json","municipality":"zw_municipality.topo.json"},"sizes":{"zw_municipality.topo.json":63219},"bbox":[25.2,-22.4,33.0,-15.6]},"MX":{"levels":["region","district","municipality"],"files":{"region":"mx_region.topo.json","district":"mx_municipality.topo.json","municipality":"mx_municipality.topo.json"},"sizes":{"mx_region.topo.json":55130,"mx_municipality.topo.json":131739}},"RU":{"levels":["region","district","municipality"],"files":{"region":"ru_region.topo.json","district":"ru_municipality.topo.json","municipality":"ru_municipality.topo.json"},"sizes":{"ru_region.topo.json":352590,"ru_municipality.topo.json":624675}}}
+{
+  "AD": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "ad_municipality.topo.json",
+      "district": "ad_municipality.topo.json",
+      "municipality": "ad_municipality.topo.json"
+    },
+    "sizes": {
+      "ad_municipality.topo.json": 3721
+    },
+    "bbox": [
+      1.4,
+      42.4,
+      1.7,
+      42.6
+    ]
+  },
+  "AE": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "ae_municipality.topo.json",
+      "district": "ae_municipality.topo.json",
+      "municipality": "ae_municipality.topo.json"
+    },
+    "sizes": {
+      "ae_municipality.topo.json": 26268
+    },
+    "bbox": [
+      51.4,
+      22.6,
+      56.6,
+      25.9
+    ]
+  },
+  "AF": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "af_municipality.topo.json",
+      "district": "af_municipality.topo.json",
+      "municipality": "af_municipality.topo.json"
+    },
+    "sizes": {
+      "af_municipality.topo.json": 179122
+    }
+  },
+  "AG": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "ag_municipality.topo.json",
+      "district": "ag_municipality.topo.json",
+      "municipality": "ag_municipality.topo.json"
+    },
+    "sizes": {
+      "ag_municipality.topo.json": 39487
+    }
+  },
+  "AL": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "district": "al_municipality.topo.json",
+      "municipality": "al_municipality.topo.json"
+    },
+    "sizes": {
+      "al_municipality.topo.json": 106570
+    },
+    "bbox": [
+      19.3,
+      39.6,
+      21.0,
+      42.5
+    ]
+  },
+  "AM": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "district": "am_municipality.topo.json",
+      "municipality": "am_municipality.topo.json"
+    },
+    "sizes": {
+      "am_municipality.topo.json": 14052
+    },
+    "bbox": [
+      44.3,
+      39.2,
+      46.4,
+      40.8
+    ]
+  },
+  "AO": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "ao_region.topo.json",
+      "district": "ao_municipality.topo.json",
+      "municipality": "ao_municipality.topo.json"
+    },
+    "sizes": {
+      "ao_municipality.topo.json": 69078,
+      "ao_region.topo.json": 2219
+    },
+    "bbox": [
+      13.0,
+      -16.3,
+      18.5,
+      -8.7
+    ]
+  },
+  "AR": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "ar_region.topo.json",
+      "district": "ar_municipality.topo.json",
+      "municipality": "ar_municipality.topo.json"
+    },
+    "sizes": {
+      "ar_municipality.topo.json": 714448,
+      "ar_region.topo.json": 210197
+    },
+    "bbox": [
+      -75.7,
+      -54.9,
+      -53.6,
+      -22.0
+    ]
+  },
+  "AT": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "at_region.topo.json",
+      "district": "at_district.topo.json",
+      "municipality": "at_municipality.topo.json"
+    },
+    "sizes": {
+      "at_region.topo.json": 54045,
+      "at_district.topo.json": 209489,
+      "at_municipality.topo.json": 1079786
+    },
+    "bbox": [
+      9.5,
+      46.4,
+      17.1,
+      49.0
+    ]
+  },
+  "AU": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "au_region.topo.json",
+      "district": "au_municipality.topo.json",
+      "municipality": "au_municipality.topo.json"
+    },
+    "sizes": {
+      "au_region.topo.json": 512884,
+      "au_municipality.topo.json": 2157872
+    },
+    "bbox": [
+      112.9,
+      -55.1,
+      159.2,
+      -9.1
+    ]
+  },
+  "AZ": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "az_municipality.topo.json",
+      "district": "az_municipality.topo.json",
+      "municipality": "az_municipality.topo.json"
+    },
+    "sizes": {
+      "az_municipality.topo.json": 1026
+    },
+    "bbox": [
+      46.0,
+      39.5,
+      46.1,
+      40.1
+    ]
+  },
+  "BA": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "district": "ba_municipality.topo.json",
+      "municipality": "ba_municipality.topo.json",
+      "region": "ba_region.topo.json"
+    },
+    "sizes": {
+      "ba_municipality.topo.json": 340714,
+      "ba_region.topo.json": 81527
+    },
+    "bbox": [
+      15.7,
+      42.6,
+      19.6,
+      45.2
+    ]
+  },
+  "BB": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "bb_municipality.topo.json",
+      "district": "bb_municipality.topo.json",
+      "municipality": "bb_municipality.topo.json"
+    },
+    "sizes": {
+      "bb_municipality.topo.json": 14246
+    }
+  },
+  "BD": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "bd_municipality.topo.json",
+      "district": "bd_municipality.topo.json",
+      "municipality": "bd_municipality.topo.json"
+    },
+    "sizes": {
+      "bd_municipality.topo.json": 96088
+    },
+    "bbox": [
+      88.0,
+      20.4,
+      91.3,
+      26.3
+    ]
+  },
+  "BE": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "be_region.topo.json",
+      "district": "be_district.topo.json",
+      "municipality": "be_municipality.topo.json"
+    },
+    "sizes": {
+      "be_region.topo.json": 33016,
+      "be_district.topo.json": 92254,
+      "be_municipality.topo.json": 329182
+    },
+    "bbox": [
+      2.5,
+      49.5,
+      6.3,
+      51.5
+    ]
+  },
+  "BF": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "bf_region.topo.json",
+      "district": "bf_municipality.topo.json",
+      "municipality": "bf_municipality.topo.json"
+    },
+    "sizes": {
+      "bf_municipality.topo.json": 594907,
+      "bf_region.topo.json": 17122
+    },
+    "bbox": [
+      -5.5,
+      9.4,
+      2.1,
+      15.0
+    ]
+  },
+  "BG": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "bg_municipality.topo.json",
+      "district": "bg_municipality.topo.json",
+      "municipality": "bg_municipality.topo.json"
+    },
+    "sizes": {
+      "bg_municipality.topo.json": 219636
+    },
+    "bbox": [
+      22.4,
+      41.2,
+      28.1,
+      44.0
+    ]
+  },
+  "BH": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "bh_municipality.topo.json",
+      "district": "bh_municipality.topo.json",
+      "municipality": "bh_municipality.topo.json"
+    },
+    "sizes": {
+      "bh_municipality.topo.json": 7460
+    },
+    "bbox": [
+      50.3,
+      25.5,
+      50.9,
+      26.6
+    ]
+  },
+  "BI": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "bi_region.topo.json",
+      "district": "bi_municipality.topo.json",
+      "municipality": "bi_municipality.topo.json"
+    },
+    "sizes": {
+      "bi_municipality.topo.json": 31922,
+      "bi_region.topo.json": 2070
+    },
+    "bbox": [
+      29.6,
+      -3.4,
+      30.8,
+      -2.4
+    ]
+  },
+  "BJ": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "bj_region.topo.json",
+      "district": "bj_municipality.topo.json",
+      "municipality": "bj_municipality.topo.json"
+    },
+    "sizes": {
+      "bj_municipality.topo.json": 89130,
+      "bj_region.topo.json": 4019
+    },
+    "bbox": [
+      0.8,
+      6.2,
+      3.8,
+      11.9
+    ]
+  },
+  "BN": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "bn_municipality.topo.json",
+      "district": "bn_municipality.topo.json",
+      "municipality": "bn_municipality.topo.json"
+    },
+    "sizes": {
+      "bn_municipality.topo.json": 20301
+    },
+    "bbox": [
+      114.1,
+      4.5,
+      115.1,
+      5.0
+    ]
+  },
+  "BO": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "bo_region.topo.json",
+      "district": "bo_municipality.topo.json",
+      "municipality": "bo_municipality.topo.json"
+    },
+    "sizes": {
+      "bo_municipality.topo.json": 569504,
+      "bo_region.topo.json": 49717
+    },
+    "bbox": [
+      -69.6,
+      -22.9,
+      -57.6,
+      -9.8
+    ]
+  },
+  "BR": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "br_region.topo.json",
+      "district": "br_municipality.topo.json",
+      "municipality": "br_municipality.topo.json"
+    },
+    "sizes": {
+      "br_municipality.topo.json": 7845609,
+      "br_region.topo.json": 513691
+    },
+    "bbox": [
+      -74.0,
+      -33.8,
+      -28.8,
+      4.9
+    ]
+  },
+  "BT": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "bt_municipality.topo.json",
+      "district": "bt_municipality.topo.json",
+      "municipality": "bt_municipality.topo.json"
+    },
+    "sizes": {
+      "bt_municipality.topo.json": 33529
+    }
+  },
+  "BW": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "bw_municipality.topo.json",
+      "district": "bw_municipality.topo.json",
+      "municipality": "bw_municipality.topo.json"
+    },
+    "sizes": {
+      "bw_municipality.topo.json": 68050
+    },
+    "bbox": [
+      20.0,
+      -26.9,
+      28.0,
+      -18.3
+    ]
+  },
+  "BY": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "district": "by_municipality.topo.json",
+      "municipality": "by_municipality.topo.json",
+      "region": "by_region.topo.json"
+    },
+    "sizes": {
+      "by_municipality.topo.json": 350889,
+      "by_region.topo.json": 7922
+    },
+    "bbox": [
+      23.2,
+      51.3,
+      32.5,
+      56.1
+    ]
+  },
+  "BZ": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "bz_municipality.topo.json",
+      "district": "bz_municipality.topo.json",
+      "municipality": "bz_municipality.topo.json"
+    },
+    "sizes": {
+      "bz_municipality.topo.json": 16190
+    },
+    "bbox": [
+      -89.2,
+      15.9,
+      -87.8,
+      18.3
+    ]
+  },
+  "CA": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "ca_region.topo.json",
+      "district": "ca_municipality.topo.json",
+      "municipality": "ca_municipality.topo.json"
+    },
+    "sizes": {
+      "ca_municipality.topo.json": 4782217,
+      "ca_region.topo.json": 148757
+    },
+    "bbox": [
+      -141.0,
+      41.7,
+      -53.1,
+      82.5
+    ]
+  },
+  "CD": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "cd_municipality.topo.json",
+      "district": "cd_municipality.topo.json",
+      "municipality": "cd_municipality.topo.json"
+    },
+    "sizes": {
+      "cd_municipality.topo.json": 308523
+    },
+    "bbox": [
+      12.0,
+      -13.5,
+      30.6,
+      5.2
+    ]
+  },
+  "CF": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {},
+    "sizes": {}
+  },
+  "CG": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "cg_region.topo.json",
+      "district": "cg_municipality.topo.json",
+      "municipality": "cg_municipality.topo.json"
+    },
+    "sizes": {
+      "cg_municipality.topo.json": 96839,
+      "cg_region.topo.json": 6074
+    },
+    "bbox": [
+      11.2,
+      -5.0,
+      18.1,
+      2.7
+    ]
+  },
+  "CI": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "ci_municipality.topo.json",
+      "district": "ci_municipality.topo.json",
+      "municipality": "ci_municipality.topo.json"
+    },
+    "sizes": {
+      "ci_municipality.topo.json": 31460
+    },
+    "bbox": [
+      -8.4,
+      4.4,
+      -2.7,
+      10.5
+    ]
+  },
+  "CL": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "cl_region.topo.json",
+      "district": "cl_municipality.topo.json",
+      "municipality": "cl_municipality.topo.json"
+    },
+    "sizes": {
+      "cl_municipality.topo.json": 1466297,
+      "cl_region.topo.json": 79403
+    },
+    "bbox": [
+      -109.5,
+      -56.5,
+      -67.9,
+      -18.0
+    ]
+  },
+  "CM": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "cm_municipality.topo.json",
+      "district": "cm_municipality.topo.json",
+      "municipality": "cm_municipality.topo.json"
+    },
+    "sizes": {
+      "cm_municipality.topo.json": 216509
+    },
+    "bbox": [
+      8.4,
+      1.7,
+      15.2,
+      11.4
+    ]
+  },
+  "CN": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "cn_municipality.topo.json",
+      "district": "cn_municipality.topo.json",
+      "municipality": "cn_municipality.topo.json"
+    },
+    "sizes": {
+      "cn_municipality.topo.json": 605867
+    },
+    "bbox": [
+      73.5,
+      8.7,
+      131.3,
+      53.3
+    ]
+  },
+  "CO": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "co_region.topo.json",
+      "district": "co_municipality.topo.json",
+      "municipality": "co_municipality.topo.json"
+    },
+    "sizes": {
+      "co_municipality.topo.json": 2041492,
+      "co_region.topo.json": 48560
+    },
+    "bbox": [
+      -81.6,
+      -4.2,
+      -67.0,
+      11.8
+    ]
+  },
+  "CR": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "cr_region.topo.json",
+      "district": "cr_municipality.topo.json",
+      "municipality": "cr_municipality.topo.json"
+    },
+    "sizes": {
+      "cr_municipality.topo.json": 217046,
+      "cr_region.topo.json": 8820
+    },
+    "bbox": [
+      -87.1,
+      5.5,
+      -82.9,
+      11.1
+    ]
+  },
+  "CU": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "cu_region.topo.json",
+      "district": "cu_municipality.topo.json",
+      "municipality": "cu_municipality.topo.json"
+    },
+    "sizes": {
+      "cu_municipality.topo.json": 363100,
+      "cu_region.topo.json": 17223
+    }
+  },
+  "CV": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "cv_municipality.topo.json",
+      "district": "cv_municipality.topo.json",
+      "municipality": "cv_municipality.topo.json"
+    },
+    "sizes": {
+      "cv_municipality.topo.json": 85100
+    },
+    "bbox": [
+      -25.4,
+      14.8,
+      -22.9,
+      17.2
+    ]
+  },
+  "CY": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "cy_municipality.topo.json",
+      "district": "cy_municipality.topo.json",
+      "municipality": "cy_municipality.topo.json"
+    },
+    "sizes": {
+      "cy_municipality.topo.json": 109982
+    },
+    "bbox": [
+      32.3,
+      34.6,
+      34.1,
+      35.2
+    ]
+  },
+  "CZ": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "cz_region.topo.json",
+      "district": "cz_municipality.topo.json",
+      "municipality": "cz_municipality.topo.json"
+    },
+    "sizes": {
+      "cz_region.topo.json": 63280,
+      "cz_municipality.topo.json": 235323
+    },
+    "bbox": [
+      12.1,
+      48.6,
+      18.6,
+      51.0
+    ]
+  },
+  "DE": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "de_region.topo.json",
+      "district": "de_district.topo.json",
+      "municipality": {
+        "de_municipality_01.topo.json": [
+          7.87,
+          53.36,
+          11.31,
+          55.06
+        ],
+        "de_municipality_02.topo.json": [
+          8.1,
+          53.4,
+          10.33,
+          54.03
+        ],
+        "de_municipality_03.topo.json": [
+          6.65,
+          51.26,
+          11.69,
+          53.89
+        ],
+        "de_municipality_04.topo.json": [
+          8.48,
+          53.01,
+          8.99,
+          53.6
+        ],
+        "de_municipality_05.topo.json": [
+          5.87,
+          50.32,
+          9.46,
+          52.53
+        ],
+        "de_municipality_06.topo.json": [
+          7.77,
+          49.4,
+          10.24,
+          51.66
+        ],
+        "de_municipality_07.topo.json": [
+          6.11,
+          48.97,
+          8.51,
+          50.94
+        ],
+        "de_municipality_08.topo.json": [
+          7.51,
+          47.53,
+          10.5,
+          49.79
+        ],
+        "de_municipality_09.topo.json": [
+          8.98,
+          47.27,
+          13.84,
+          50.56
+        ],
+        "de_municipality_10.topo.json": [
+          6.36,
+          49.11,
+          7.4,
+          49.64
+        ],
+        "de_municipality_11.topo.json": [
+          13.09,
+          52.34,
+          13.76,
+          52.68
+        ],
+        "de_municipality_12.topo.json": [
+          11.27,
+          51.36,
+          14.77,
+          53.56
+        ],
+        "de_municipality_13.topo.json": [
+          10.59,
+          53.11,
+          14.41,
+          54.88
+        ],
+        "de_municipality_14.topo.json": [
+          11.87,
+          50.17,
+          15.04,
+          51.69
+        ],
+        "de_municipality_15.topo.json": [
+          10.56,
+          50.94,
+          13.19,
+          53.04
+        ],
+        "de_municipality_16.topo.json": [
+          9.88,
+          50.2,
+          12.65,
+          51.65
+        ]
+      }
+    },
+    "sizes": {
+      "de_region.topo.json": 63977,
+      "de_municipality.topo.json": 136813,
+      "de_municipality_01.topo.json": 409511,
+      "de_municipality_02.topo.json": 4956,
+      "de_municipality_03.topo.json": 762377,
+      "de_municipality_04.topo.json": 4047,
+      "de_municipality_05.topo.json": 365517,
+      "de_municipality_06.topo.json": 380453,
+      "de_municipality_07.topo.json": 741626,
+      "de_municipality_08.topo.json": 715902,
+      "de_municipality_09.topo.json": 1861961,
+      "de_municipality_10.topo.json": 31160,
+      "de_municipality_11.topo.json": 14829,
+      "de_municipality_12.topo.json": 277410,
+      "de_municipality_13.topo.json": 431683,
+      "de_municipality_14.topo.json": 258449,
+      "de_municipality_15.topo.json": 159646,
+      "de_municipality_16.topo.json": 240108,
+      "de_district.topo.json": 536494
+    },
+    "bbox": [
+      5.9,
+      47.3,
+      15.0,
+      55.1
+    ]
+  },
+  "DJ": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "dj_municipality.topo.json",
+      "district": "dj_municipality.topo.json",
+      "municipality": "dj_municipality.topo.json"
+    },
+    "sizes": {
+      "dj_municipality.topo.json": 46082
+    },
+    "bbox": [
+      41.8,
+      10.9,
+      43.2,
+      12.4
+    ]
+  },
+  "DK": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "dk_region.topo.json",
+      "district": "dk_region.topo.json",
+      "municipality": "dk_municipality.topo.json"
+    },
+    "sizes": {
+      "dk_region.topo.json": 34345,
+      "dk_municipality.topo.json": 89273
+    },
+    "bbox": [
+      8.1,
+      54.6,
+      15.1,
+      57.6
+    ]
+  },
+  "DM": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "dm_municipality.topo.json",
+      "district": "dm_municipality.topo.json",
+      "municipality": "dm_municipality.topo.json"
+    },
+    "sizes": {
+      "dm_municipality.topo.json": 877
+    }
+  },
+  "DO": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "do_municipality.topo.json",
+      "district": "do_municipality.topo.json",
+      "municipality": "do_municipality.topo.json"
+    },
+    "sizes": {
+      "do_municipality.topo.json": 166077
+    }
+  },
+  "DZ": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "dz_region.topo.json",
+      "district": "dz_municipality.topo.json",
+      "municipality": "dz_municipality.topo.json"
+    },
+    "sizes": {
+      "dz_municipality.topo.json": 949620,
+      "dz_region.topo.json": 1446
+    },
+    "bbox": [
+      -8.7,
+      19.0,
+      10.2,
+      37.1
+    ]
+  },
+  "EC": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "ec_region.topo.json",
+      "district": "ec_municipality.topo.json",
+      "municipality": "ec_municipality.topo.json"
+    },
+    "sizes": {
+      "ec_municipality.topo.json": 410212,
+      "ec_region.topo.json": 16638
+    },
+    "bbox": [
+      -92.2,
+      -5.0,
+      -75.3,
+      1.4
+    ]
+  },
+  "EE": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "ee_region.topo.json",
+      "district": "ee_region.topo.json",
+      "municipality": "ee_municipality.topo.json"
+    },
+    "sizes": {
+      "ee_region.topo.json": 40303,
+      "ee_municipality.topo.json": 113781
+    },
+    "bbox": [
+      21.8,
+      57.5,
+      28.2,
+      59.7
+    ]
+  },
+  "EG": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "eg_region.topo.json",
+      "district": "eg_municipality.topo.json",
+      "municipality": "eg_municipality.topo.json"
+    },
+    "sizes": {
+      "eg_municipality.topo.json": 80470,
+      "eg_region.topo.json": 1419
+    },
+    "bbox": [
+      24.6,
+      22.0,
+      34.9,
+      31.7
+    ]
+  },
+  "ER": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "er_municipality.topo.json",
+      "district": "er_municipality.topo.json",
+      "municipality": "er_municipality.topo.json"
+    },
+    "sizes": {
+      "er_municipality.topo.json": 25758
+    },
+    "bbox": [
+      36.4,
+      12.4,
+      40.7,
+      17.5
+    ]
+  },
+  "ES": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "es_region.topo.json",
+      "district": "es_municipality.topo.json",
+      "municipality": "es_municipality.topo.json"
+    },
+    "sizes": {
+      "es_municipality.topo.json": 4901763,
+      "es_region.topo.json": 361455
+    }
+  },
+  "ET": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "et_municipality.topo.json",
+      "district": "et_municipality.topo.json",
+      "municipality": "et_municipality.topo.json"
+    },
+    "sizes": {
+      "et_municipality.topo.json": 75207
+    },
+    "bbox": [
+      33.0,
+      3.4,
+      42.3,
+      14.4
+    ]
+  },
+  "FI": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "fi_region.topo.json",
+      "district": "fi_region.topo.json",
+      "municipality": "fi_municipality.topo.json"
+    },
+    "sizes": {
+      "fi_region.topo.json": 8173,
+      "fi_municipality.topo.json": 76731
+    },
+    "bbox": [
+      19.5,
+      59.8,
+      31.2,
+      69.8
+    ]
+  },
+  "FJ": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "fj_municipality.topo.json",
+      "district": "fj_municipality.topo.json",
+      "municipality": "fj_municipality.topo.json"
+    },
+    "sizes": {
+      "fj_municipality.topo.json": 26329
+    },
+    "bbox": [
+      -180,
+      -21.9,
+      180.0,
+      -15.7
+    ]
+  },
+  "FM": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "fm_municipality.topo.json",
+      "district": "fm_municipality.topo.json",
+      "municipality": "fm_municipality.topo.json"
+    },
+    "sizes": {
+      "fm_municipality.topo.json": 11365
+    }
+  },
+  "FR": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "fr_region.topo.json",
+      "district": "fr_municipality.topo.json",
+      "municipality": "fr_municipality.topo.json"
+    },
+    "sizes": {
+      "fr_region.topo.json": 13679,
+      "fr_municipality.topo.json": 104259
+    },
+    "bbox": [
+      -61.8,
+      -21.4,
+      55.7,
+      51.3
+    ]
+  },
+  "GA": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "ga_municipality.topo.json",
+      "district": "ga_municipality.topo.json",
+      "municipality": "ga_municipality.topo.json"
+    },
+    "sizes": {
+      "ga_municipality.topo.json": 178336
+    },
+    "bbox": [
+      8.7,
+      -4.0,
+      14.4,
+      2.3
+    ]
+  },
+  "GB": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "gb_region.topo.json",
+      "district": "gb_district.topo.json",
+      "municipality": "gb_municipality.topo.json"
+    },
+    "sizes": {
+      "gb_region.topo.json": 81615,
+      "gb_district.topo.json": 94883,
+      "gb_municipality.topo.json": 299097
+    },
+    "bbox": [
+      -88.4,
+      42.9,
+      1.7,
+      60.8
+    ]
+  },
+  "GD": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "gd_municipality.topo.json",
+      "district": "gd_municipality.topo.json",
+      "municipality": "gd_municipality.topo.json"
+    },
+    "sizes": {
+      "gd_municipality.topo.json": 20756
+    }
+  },
+  "GE": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "district": "ge_municipality.topo.json",
+      "municipality": "ge_municipality.topo.json"
+    },
+    "sizes": {
+      "ge_municipality.topo.json": 166946
+    },
+    "bbox": [
+      40.0,
+      41.1,
+      46.4,
+      43.5
+    ]
+  },
+  "GH": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "gh_region.topo.json",
+      "district": "gh_municipality.topo.json",
+      "municipality": "gh_municipality.topo.json"
+    },
+    "sizes": {
+      "gh_municipality.topo.json": 439668,
+      "gh_region.topo.json": 16654
+    },
+    "bbox": [
+      -3.3,
+      4.7,
+      1.1,
+      11.2
+    ]
+  },
+  "GL": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "gl_municipality.topo.json",
+      "district": "gl_municipality.topo.json",
+      "municipality": "gl_municipality.topo.json"
+    },
+    "sizes": {
+      "gl_municipality.topo.json": 7198
+    },
+    "bbox": [
+      -74.1,
+      59.5,
+      -41.2,
+      76.6
+    ]
+  },
+  "GM": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "gm_municipality.topo.json",
+      "district": "gm_municipality.topo.json",
+      "municipality": "gm_municipality.topo.json"
+    },
+    "sizes": {
+      "gm_municipality.topo.json": 20340
+    },
+    "bbox": [
+      -16.6,
+      13.2,
+      -13.9,
+      13.8
+    ]
+  },
+  "GN": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "gn_region.topo.json",
+      "district": "gn_municipality.topo.json",
+      "municipality": "gn_municipality.topo.json"
+    },
+    "sizes": {
+      "gn_municipality.topo.json": 109109,
+      "gn_region.topo.json": 4864
+    },
+    "bbox": [
+      -15.4,
+      7.2,
+      -7.7,
+      12.4
+    ]
+  },
+  "GQ": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "gq_region.topo.json",
+      "district": "gq_municipality.topo.json",
+      "municipality": "gq_municipality.topo.json"
+    },
+    "sizes": {
+      "gq_municipality.topo.json": 42778,
+      "gq_region.topo.json": 1879
+    },
+    "bbox": [
+      5.6,
+      -1.5,
+      11.4,
+      3.8
+    ]
+  },
+  "GR": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "district": "gr_municipality.topo.json",
+      "municipality": "gr_municipality.topo.json",
+      "region": "gr_region.topo.json"
+    },
+    "sizes": {
+      "gr_municipality.topo.json": 1688206,
+      "gr_region.topo.json": 61686
+    },
+    "bbox": [
+      19.4,
+      34.8,
+      29.6,
+      41.5
+    ]
+  },
+  "GT": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "gt_region.topo.json",
+      "district": "gt_municipality.topo.json",
+      "municipality": "gt_municipality.topo.json"
+    },
+    "sizes": {
+      "gt_municipality.topo.json": 272557,
+      "gt_region.topo.json": 12824
+    },
+    "bbox": [
+      -92.2,
+      13.7,
+      -88.5,
+      17.8
+    ]
+  },
+  "GW": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "gw_region.topo.json",
+      "district": "gw_municipality.topo.json",
+      "municipality": "gw_municipality.topo.json"
+    },
+    "sizes": {
+      "gw_municipality.topo.json": 66428,
+      "gw_region.topo.json": 3680
+    },
+    "bbox": [
+      -16.7,
+      10.9,
+      -13.8,
+      12.7
+    ]
+  },
+  "GY": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "gy_municipality.topo.json",
+      "district": "gy_municipality.topo.json",
+      "municipality": "gy_municipality.topo.json"
+    },
+    "sizes": {
+      "gy_municipality.topo.json": 69089
+    },
+    "bbox": [
+      -61.4,
+      1.2,
+      -57.5,
+      7.7
+    ]
+  },
+  "HN": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "hn_region.topo.json",
+      "district": "hn_municipality.topo.json",
+      "municipality": "hn_municipality.topo.json"
+    },
+    "sizes": {
+      "hn_municipality.topo.json": 359133,
+      "hn_region.topo.json": 12010
+    },
+    "bbox": [
+      -89.4,
+      13.0,
+      -83.4,
+      16.5
+    ]
+  },
+  "HR": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "district": "hr_municipality.topo.json",
+      "municipality": "hr_municipality.topo.json",
+      "region": "hr_region.topo.json"
+    },
+    "sizes": {
+      "hr_municipality.topo.json": 398390,
+      "hr_region.topo.json": 27407
+    },
+    "bbox": [
+      13.4,
+      42.4,
+      19.3,
+      46.5
+    ]
+  },
+  "HT": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "ht_municipality.topo.json",
+      "district": "ht_municipality.topo.json",
+      "municipality": "ht_municipality.topo.json"
+    },
+    "sizes": {
+      "ht_municipality.topo.json": 19932
+    }
+  },
+  "HU": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "district": "hu_municipality.topo.json",
+      "municipality": "hu_municipality.topo.json",
+      "region": "hu_region.topo.json"
+    },
+    "sizes": {
+      "hu_municipality.topo.json": 209644,
+      "hu_region.topo.json": 7570
+    },
+    "bbox": [
+      16.1,
+      45.7,
+      22.8,
+      48.6
+    ]
+  },
+  "ID": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "district": "id_municipality.topo.json",
+      "municipality": "id_municipality.topo.json",
+      "region": "id_region.topo.json"
+    },
+    "sizes": {
+      "id_municipality.topo.json": 4130572,
+      "id_region.topo.json": 165592
+    },
+    "bbox": [
+      95.0,
+      -11.0,
+      141.0,
+      6.1
+    ]
+  },
+  "IE": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "ie_region.topo.json",
+      "district": "ie_municipality.topo.json",
+      "municipality": "ie_municipality.topo.json"
+    },
+    "sizes": {
+      "ie_region.topo.json": 198815,
+      "ie_municipality.topo.json": 478415
+    },
+    "bbox": [
+      -10.7,
+      51.4,
+      -6.0,
+      55.4
+    ]
+  },
+  "IL": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {},
+    "sizes": {}
+  },
+  "IN": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "in_municipality.topo.json",
+      "district": "in_municipality.topo.json",
+      "municipality": "in_municipality.topo.json"
+    },
+    "sizes": {
+      "in_municipality.topo.json": 922696
+    },
+    "bbox": [
+      68.2,
+      6.8,
+      95.2,
+      34.5
+    ]
+  },
+  "IQ": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "iq_municipality.topo.json",
+      "district": "iq_municipality.topo.json",
+      "municipality": "iq_municipality.topo.json"
+    },
+    "sizes": {
+      "iq_municipality.topo.json": 104418
+    },
+    "bbox": [
+      38.8,
+      29.1,
+      47.7,
+      37.3
+    ]
+  },
+  "IR": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "ir_municipality.topo.json",
+      "district": "ir_municipality.topo.json",
+      "municipality": "ir_municipality.topo.json"
+    },
+    "sizes": {
+      "ir_municipality.topo.json": 237559
+    },
+    "bbox": [
+      44.0,
+      24.8,
+      60.9,
+      39.4
+    ]
+  },
+  "IS": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "is_region.topo.json",
+      "district": "is_region.topo.json",
+      "municipality": "is_municipality.topo.json"
+    },
+    "sizes": {
+      "is_region.topo.json": 118631,
+      "is_municipality.topo.json": 297384
+    },
+    "bbox": [
+      -24.5,
+      63.3,
+      -13.6,
+      66.5
+    ]
+  },
+  "IT": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "it_region.topo.json",
+      "district": "it_province.topo.json",
+      "municipality": "it_municipality.topo.json"
+    },
+    "sizes": {
+      "it_region.topo.json": 388827,
+      "it_province.topo.json": 656176,
+      "it_municipality.topo.json": 8002282
+    },
+    "bbox": [
+      6.6,
+      35.4,
+      18.6,
+      47.1
+    ]
+  },
+  "JM": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "jm_municipality.topo.json",
+      "district": "jm_municipality.topo.json",
+      "municipality": "jm_municipality.topo.json"
+    },
+    "sizes": {
+      "jm_municipality.topo.json": 78990
+    }
+  },
+  "JO": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "jo_municipality.topo.json",
+      "district": "jo_municipality.topo.json",
+      "municipality": "jo_municipality.topo.json"
+    },
+    "sizes": {
+      "jo_municipality.topo.json": 48366
+    },
+    "bbox": [
+      35.0,
+      29.2,
+      37.8,
+      32.5
+    ]
+  },
+  "JP": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "jp_region.topo.json",
+      "district": "jp_municipality.topo.json",
+      "municipality": "jp_municipality.topo.json"
+    },
+    "sizes": {
+      "jp_municipality.topo.json": 483415,
+      "jp_region.topo.json": 7520
+    },
+    "bbox": [
+      122.7,
+      20.2,
+      153.8,
+      43.7
+    ]
+  },
+  "KE": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "ke_region.topo.json",
+      "district": "ke_municipality.topo.json",
+      "municipality": "ke_municipality.topo.json"
+    },
+    "sizes": {
+      "ke_municipality.topo.json": 102528,
+      "ke_region.topo.json": 4363
+    },
+    "bbox": [
+      33.9,
+      -4.8,
+      41.6,
+      4.4
+    ]
+  },
+  "KG": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "kg_municipality.topo.json",
+      "district": "kg_municipality.topo.json",
+      "municipality": "kg_municipality.topo.json"
+    },
+    "sizes": {
+      "kg_municipality.topo.json": 66811
+    },
+    "bbox": [
+      69.3,
+      39.2,
+      77.9,
+      43.0
+    ]
+  },
+  "KH": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "kh_municipality.topo.json",
+      "district": "kh_municipality.topo.json",
+      "municipality": "kh_municipality.topo.json"
+    },
+    "sizes": {
+      "kh_municipality.topo.json": 119766
+    },
+    "bbox": [
+      102.3,
+      9.4,
+      107.6,
+      14.4
+    ]
+  },
+  "KI": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "ki_municipality.topo.json",
+      "district": "ki_municipality.topo.json",
+      "municipality": "ki_municipality.topo.json"
+    },
+    "sizes": {
+      "ki_municipality.topo.json": 4398
+    }
+  },
+  "KM": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "km_municipality.topo.json",
+      "district": "km_municipality.topo.json",
+      "municipality": "km_municipality.topo.json"
+    },
+    "sizes": {
+      "km_municipality.topo.json": 41977
+    },
+    "bbox": [
+      43.2,
+      -12.4,
+      44.5,
+      -11.4
+    ]
+  },
+  "KN": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "kn_municipality.topo.json",
+      "district": "kn_municipality.topo.json",
+      "municipality": "kn_municipality.topo.json"
+    },
+    "sizes": {
+      "kn_municipality.topo.json": 14838
+    }
+  },
+  "KP": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "kp_municipality.topo.json",
+      "district": "kp_municipality.topo.json",
+      "municipality": "kp_municipality.topo.json"
+    },
+    "sizes": {
+      "kp_municipality.topo.json": 67287
+    },
+    "bbox": [
+      124.1,
+      37.6,
+      130.5,
+      42.8
+    ]
+  },
+  "KR": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "district": "kr_municipality.topo.json",
+      "municipality": "kr_municipality.topo.json",
+      "region": "kr_region.topo.json"
+    },
+    "sizes": {
+      "kr_municipality.topo.json": 332233,
+      "kr_region.topo.json": 11915
+    },
+    "bbox": [
+      124.4,
+      32.9,
+      131.9,
+      38.4
+    ]
+  },
+  "KW": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "kw_municipality.topo.json",
+      "district": "kw_municipality.topo.json",
+      "municipality": "kw_municipality.topo.json"
+    },
+    "sizes": {
+      "kw_municipality.topo.json": 13444
+    },
+    "bbox": [
+      46.6,
+      28.5,
+      48.6,
+      30.0
+    ]
+  },
+  "KZ": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {},
+    "sizes": {}
+  },
+  "LA": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "la_municipality.topo.json",
+      "district": "la_municipality.topo.json",
+      "municipality": "la_municipality.topo.json"
+    },
+    "sizes": {
+      "la_municipality.topo.json": 106721
+    },
+    "bbox": [
+      100.1,
+      13.9,
+      107.5,
+      21.2
+    ]
+  },
+  "LB": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "lb_municipality.topo.json",
+      "district": "lb_municipality.topo.json",
+      "municipality": "lb_municipality.topo.json"
+    },
+    "sizes": {
+      "lb_municipality.topo.json": 45186
+    },
+    "bbox": [
+      35.1,
+      33.1,
+      36.3,
+      34.5
+    ]
+  },
+  "LI": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "li_municipality.topo.json",
+      "district": "li_municipality.topo.json",
+      "municipality": "li_municipality.topo.json"
+    },
+    "sizes": {
+      "li_municipality.topo.json": 17094
+    },
+    "bbox": [
+      9.5,
+      47.0,
+      9.6,
+      47.3
+    ]
+  },
+  "LK": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "district": "lk_municipality.topo.json",
+      "municipality": "lk_municipality.topo.json"
+    },
+    "sizes": {
+      "lk_municipality.topo.json": 51111
+    },
+    "bbox": [
+      79.4,
+      5.7,
+      82.0,
+      9.6
+    ]
+  },
+  "LR": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "lr_municipality.topo.json",
+      "district": "lr_municipality.topo.json",
+      "municipality": "lr_municipality.topo.json"
+    },
+    "sizes": {
+      "lr_municipality.topo.json": 68945
+    },
+    "bbox": [
+      -11.5,
+      4.4,
+      -7.4,
+      7.9
+    ]
+  },
+  "LS": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {},
+    "sizes": {}
+  },
+  "LT": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "lt_region.topo.json",
+      "district": "lt_region.topo.json",
+      "municipality": "lt_municipality.topo.json"
+    },
+    "sizes": {
+      "lt_region.topo.json": 12049,
+      "lt_municipality.topo.json": 48482
+    },
+    "bbox": [
+      21.0,
+      53.9,
+      26.7,
+      56.4
+    ]
+  },
+  "LU": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "lu_region.topo.json",
+      "district": "lu_region.topo.json",
+      "municipality": "lu_municipality.topo.json"
+    },
+    "sizes": {
+      "lu_region.topo.json": 15321,
+      "lu_municipality.topo.json": 69538
+    },
+    "bbox": [
+      5.7,
+      49.4,
+      6.5,
+      50.2
+    ]
+  },
+  "LV": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "lv_region.topo.json",
+      "district": "lv_region.topo.json",
+      "municipality": "lv_municipality.topo.json"
+    },
+    "sizes": {
+      "lv_region.topo.json": 11518,
+      "lv_municipality.topo.json": 44876
+    },
+    "bbox": [
+      21.0,
+      55.7,
+      28.1,
+      58.0
+    ]
+  },
+  "LY": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "ly_municipality.topo.json",
+      "district": "ly_municipality.topo.json",
+      "municipality": "ly_municipality.topo.json"
+    },
+    "sizes": {
+      "ly_municipality.topo.json": 50857
+    },
+    "bbox": [
+      9.4,
+      19.5,
+      25.0,
+      33.1
+    ]
+  },
+  "MA": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "ma_municipality.topo.json",
+      "district": "ma_municipality.topo.json",
+      "municipality": "ma_municipality.topo.json"
+    },
+    "sizes": {
+      "ma_municipality.topo.json": 379365
+    },
+    "bbox": [
+      -17.0,
+      21.3,
+      -1.2,
+      35.9
+    ]
+  },
+  "MD": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "md_municipality.topo.json",
+      "district": "md_municipality.topo.json",
+      "municipality": "md_municipality.topo.json"
+    },
+    "sizes": {
+      "md_municipality.topo.json": 92170
+    },
+    "bbox": [
+      26.6,
+      45.5,
+      29.9,
+      48.4
+    ]
+  },
+  "ME": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "me_municipality.topo.json",
+      "district": "me_municipality.topo.json",
+      "municipality": "me_municipality.topo.json"
+    },
+    "sizes": {
+      "me_municipality.topo.json": 82527
+    },
+    "bbox": [
+      18.4,
+      41.8,
+      20.1,
+      43.3
+    ]
+  },
+  "MG": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "mg_region.topo.json",
+      "district": "mg_municipality.topo.json",
+      "municipality": "mg_municipality.topo.json"
+    },
+    "sizes": {
+      "mg_municipality.topo.json": 303556,
+      "mg_region.topo.json": 10483
+    },
+    "bbox": [
+      43.2,
+      -25.6,
+      50.0,
+      -12.1
+    ]
+  },
+  "MH": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "mh_municipality.topo.json",
+      "district": "mh_municipality.topo.json",
+      "municipality": "mh_municipality.topo.json"
+    },
+    "sizes": {
+      "mh_municipality.topo.json": 7557
+    }
+  },
+  "MK": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "mk_municipality.topo.json",
+      "district": "mk_municipality.topo.json",
+      "municipality": "mk_municipality.topo.json"
+    },
+    "sizes": {
+      "mk_municipality.topo.json": 131090
+    },
+    "bbox": [
+      20.5,
+      40.9,
+      23.0,
+      42.3
+    ]
+  },
+  "ML": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "ml_region.topo.json",
+      "district": "ml_municipality.topo.json",
+      "municipality": "ml_municipality.topo.json"
+    },
+    "sizes": {
+      "ml_municipality.topo.json": 94398,
+      "ml_region.topo.json": 6301
+    },
+    "bbox": [
+      -12.2,
+      10.1,
+      3.1,
+      21.9
+    ]
+  },
+  "MM": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "mm_municipality.topo.json",
+      "district": "mm_municipality.topo.json",
+      "municipality": "mm_municipality.topo.json"
+    },
+    "sizes": {
+      "mm_municipality.topo.json": 209260
+    },
+    "bbox": [
+      92.2,
+      9.3,
+      101.1,
+      28.1
+    ]
+  },
+  "MN": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "mn_municipality.topo.json",
+      "district": "mn_municipality.topo.json",
+      "municipality": "mn_municipality.topo.json"
+    },
+    "sizes": {
+      "mn_municipality.topo.json": 91560
+    },
+    "bbox": [
+      87.7,
+      41.6,
+      116.6,
+      50.4
+    ]
+  },
+  "MR": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "mr_municipality.topo.json",
+      "district": "mr_municipality.topo.json",
+      "municipality": "mr_municipality.topo.json"
+    },
+    "sizes": {
+      "mr_municipality.topo.json": 3602
+    },
+    "bbox": [
+      -16.0,
+      16.9,
+      -15.9,
+      18.2
+    ]
+  },
+  "MT": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "mt_municipality.topo.json",
+      "district": "mt_municipality.topo.json",
+      "municipality": "mt_municipality.topo.json"
+    },
+    "sizes": {
+      "mt_municipality.topo.json": 66546
+    },
+    "bbox": [
+      14.2,
+      35.8,
+      14.6,
+      36.1
+    ]
+  },
+  "MU": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {},
+    "sizes": {}
+  },
+  "MV": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "mv_municipality.topo.json",
+      "district": "mv_municipality.topo.json",
+      "municipality": "mv_municipality.topo.json"
+    },
+    "sizes": {
+      "mv_municipality.topo.json": 20576
+    }
+  },
+  "MW": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "mw_region.topo.json",
+      "district": "mw_municipality.topo.json",
+      "municipality": "mw_municipality.topo.json"
+    },
+    "sizes": {
+      "mw_municipality.topo.json": 141911,
+      "mw_region.topo.json": 7291
+    },
+    "bbox": [
+      32.7,
+      -17.1,
+      35.9,
+      -9.6
+    ]
+  },
+  "MX": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "mx_region.topo.json",
+      "district": "mx_municipality.topo.json",
+      "municipality": "mx_municipality.topo.json"
+    },
+    "sizes": {
+      "mx_region.topo.json": 55130,
+      "mx_municipality.topo.json": 131739
+    }
+  },
+  "MY": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "my_region.topo.json",
+      "district": "my_municipality.topo.json",
+      "municipality": "my_municipality.topo.json"
+    },
+    "sizes": {
+      "my_region.topo.json": 99601,
+      "my_municipality.topo.json": 264216
+    },
+    "bbox": [
+      99.6,
+      0.9,
+      115.6,
+      6.5
+    ]
+  },
+  "MZ": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "mz_region.topo.json",
+      "district": "mz_municipality.topo.json",
+      "municipality": "mz_municipality.topo.json"
+    },
+    "sizes": {
+      "mz_municipality.topo.json": 222960,
+      "mz_region.topo.json": 9369
+    },
+    "bbox": [
+      30.2,
+      -26.9,
+      40.8,
+      -10.8
+    ]
+  },
+  "NA": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "na_municipality.topo.json",
+      "district": "na_municipality.topo.json",
+      "municipality": "na_municipality.topo.json"
+    },
+    "sizes": {
+      "na_municipality.topo.json": 121953
+    },
+    "bbox": [
+      11.7,
+      -29.0,
+      22.5,
+      -17.4
+    ]
+  },
+  "NE": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "ne_region.topo.json",
+      "district": "ne_municipality.topo.json",
+      "municipality": "ne_municipality.topo.json"
+    },
+    "sizes": {
+      "ne_municipality.topo.json": 53413,
+      "ne_region.topo.json": 2789
+    },
+    "bbox": [
+      0.2,
+      11.7,
+      15.6,
+      22.9
+    ]
+  },
+  "NG": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "ng_region.topo.json",
+      "district": "ng_municipality.topo.json",
+      "municipality": "ng_municipality.topo.json"
+    },
+    "sizes": {
+      "ng_municipality.topo.json": 502918,
+      "ng_region.topo.json": 16212
+    },
+    "bbox": [
+      2.7,
+      4.3,
+      14.5,
+      13.9
+    ]
+  },
+  "NI": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "ni_region.topo.json",
+      "district": "ni_municipality.topo.json",
+      "municipality": "ni_municipality.topo.json"
+    },
+    "sizes": {
+      "ni_municipality.topo.json": 401229,
+      "ni_region.topo.json": 14211
+    },
+    "bbox": [
+      -87.9,
+      10.7,
+      -82.8,
+      15.0
+    ]
+  },
+  "NL": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "nl_region.topo.json",
+      "district": "nl_region.topo.json",
+      "municipality": "nl_municipality.topo.json"
+    },
+    "sizes": {
+      "nl_region.topo.json": 53072,
+      "nl_municipality.topo.json": 434289
+    },
+    "bbox": [
+      3.3,
+      50.8,
+      7.2,
+      53.5
+    ]
+  },
+  "NO": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "no_region.topo.json",
+      "district": "no_region.topo.json",
+      "municipality": "no_municipality.topo.json"
+    },
+    "sizes": {
+      "no_region.topo.json": 23656,
+      "no_municipality.topo.json": 240941
+    },
+    "bbox": [
+      4.1,
+      57.8,
+      31.2,
+      71.4
+    ]
+  },
+  "NP": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "district": "np_municipality.topo.json",
+      "municipality": "np_municipality.topo.json"
+    },
+    "sizes": {
+      "np_municipality.topo.json": 147149
+    },
+    "bbox": [
+      80.1,
+      26.3,
+      88.2,
+      30.1
+    ]
+  },
+  "NR": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {},
+    "sizes": {}
+  },
+  "NZ": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "district": "nz_municipality.topo.json",
+      "municipality": "nz_municipality.topo.json",
+      "region": "nz_region.topo.json"
+    },
+    "sizes": {
+      "nz_municipality.topo.json": 646666,
+      "nz_region.topo.json": 2538
+    },
+    "bbox": [
+      166.4,
+      -47.3,
+      178.6,
+      -34.5
+    ]
+  },
+  "OM": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "om_municipality.topo.json",
+      "district": "om_municipality.topo.json",
+      "municipality": "om_municipality.topo.json"
+    },
+    "sizes": {
+      "om_municipality.topo.json": 216126
+    },
+    "bbox": [
+      52.0,
+      16.7,
+      59.7,
+      26.5
+    ]
+  },
+  "PA": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "pa_region.topo.json",
+      "district": "pa_municipality.topo.json",
+      "municipality": "pa_municipality.topo.json"
+    },
+    "sizes": {
+      "pa_municipality.topo.json": 372417,
+      "pa_region.topo.json": 24272
+    },
+    "bbox": [
+      -83.1,
+      7.2,
+      -77.3,
+      9.6
+    ]
+  },
+  "PE": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "pe_region.topo.json",
+      "district": "pe_municipality.topo.json",
+      "municipality": "pe_municipality.topo.json"
+    },
+    "sizes": {
+      "pe_municipality.topo.json": 595251,
+      "pe_region.topo.json": 7121
+    },
+    "bbox": [
+      -81.3,
+      -18.4,
+      -68.8,
+      -0.6
+    ]
+  },
+  "PG": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "pg_municipality.topo.json",
+      "district": "pg_municipality.topo.json",
+      "municipality": "pg_municipality.topo.json"
+    },
+    "sizes": {
+      "pg_municipality.topo.json": 42603
+    },
+    "bbox": [
+      140.8,
+      -11.9,
+      159.3,
+      -1.3
+    ]
+  },
+  "PH": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "district": "ph_municipality.topo.json",
+      "municipality": "ph_municipality.topo.json"
+    },
+    "sizes": {
+      "ph_municipality.topo.json": 118922
+    },
+    "bbox": [
+      114.1,
+      4.5,
+      126.5,
+      20.6
+    ]
+  },
+  "PK": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "pk_municipality.topo.json",
+      "district": "pk_municipality.topo.json",
+      "municipality": "pk_municipality.topo.json"
+    },
+    "sizes": {
+      "pk_municipality.topo.json": 129801
+    },
+    "bbox": [
+      60.9,
+      23.4,
+      74.9,
+      36.9
+    ]
+  },
+  "PL": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "pl_region.topo.json",
+      "district": "pl_municipality.topo.json",
+      "municipality": "pl_municipality.topo.json"
+    },
+    "sizes": {
+      "pl_region.topo.json": 92956,
+      "pl_municipality.topo.json": 768689
+    },
+    "bbox": [
+      14.1,
+      49.0,
+      24.0,
+      54.8
+    ]
+  },
+  "PS": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "ps_municipality.topo.json",
+      "district": "ps_municipality.topo.json",
+      "municipality": "ps_municipality.topo.json"
+    },
+    "sizes": {
+      "ps_municipality.topo.json": 37611
+    }
+  },
+  "PT": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "pt_region.topo.json",
+      "district": "pt_municipality.topo.json",
+      "municipality": "pt_municipality.topo.json"
+    },
+    "sizes": {
+      "pt_region.topo.json": 78675,
+      "pt_municipality.topo.json": 406581
+    },
+    "bbox": [
+      -31.3,
+      30.0,
+      -6.4,
+      42.1
+    ]
+  },
+  "PW": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "pw_municipality.topo.json",
+      "district": "pw_municipality.topo.json",
+      "municipality": "pw_municipality.topo.json"
+    },
+    "sizes": {
+      "pw_municipality.topo.json": 9225
+    },
+    "bbox": [
+      130.9,
+      2.6,
+      134.9,
+      8.0
+    ]
+  },
+  "PY": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "py_region.topo.json",
+      "district": "py_municipality.topo.json",
+      "municipality": "py_municipality.topo.json"
+    },
+    "sizes": {
+      "py_municipality.topo.json": 373293,
+      "py_region.topo.json": 18070
+    },
+    "bbox": [
+      -62.6,
+      -27.4,
+      -54.3,
+      -20.1
+    ]
+  },
+  "QA": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "qa_municipality.topo.json",
+      "district": "qa_municipality.topo.json",
+      "municipality": "qa_municipality.topo.json"
+    },
+    "sizes": {
+      "qa_municipality.topo.json": 61314
+    },
+    "bbox": [
+      50.7,
+      24.5,
+      52.4,
+      26.2
+    ]
+  },
+  "RO": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "district": "ro_municipality.topo.json",
+      "municipality": "ro_municipality.topo.json",
+      "region": "ro_region.topo.json"
+    },
+    "sizes": {
+      "ro_municipality.topo.json": 200472,
+      "ro_region.topo.json": 3372
+    },
+    "bbox": [
+      20.3,
+      43.6,
+      29.0,
+      48.0
+    ]
+  },
+  "RS": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "district": "rs_municipality.topo.json",
+      "municipality": "rs_municipality.topo.json",
+      "region": "rs_region.topo.json"
+    },
+    "sizes": {
+      "rs_municipality.topo.json": 342779,
+      "rs_region.topo.json": 20674
+    },
+    "bbox": [
+      18.6,
+      42.4,
+      22.5,
+      46.0
+    ]
+  },
+  "RU": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "ru_region.topo.json",
+      "district": "ru_municipality.topo.json",
+      "municipality": "ru_municipality.topo.json"
+    },
+    "sizes": {
+      "ru_region.topo.json": 352590,
+      "ru_municipality.topo.json": 624675
+    }
+  },
+  "RW": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "rw_region.topo.json",
+      "district": "rw_municipality.topo.json",
+      "municipality": "rw_municipality.topo.json"
+    },
+    "sizes": {
+      "rw_municipality.topo.json": 54983,
+      "rw_region.topo.json": 1316
+    },
+    "bbox": [
+      28.9,
+      -2.8,
+      30.8,
+      -1.4
+    ]
+  },
+  "SA": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "sa_municipality.topo.json",
+      "district": "sa_municipality.topo.json",
+      "municipality": "sa_municipality.topo.json"
+    },
+    "sizes": {
+      "sa_municipality.topo.json": 257321
+    },
+    "bbox": [
+      34.5,
+      16.4,
+      52.0,
+      31.7
+    ]
+  },
+  "SB": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "sb_municipality.topo.json",
+      "district": "sb_municipality.topo.json",
+      "municipality": "sb_municipality.topo.json"
+    },
+    "sizes": {
+      "sb_municipality.topo.json": 7136
+    }
+  },
+  "SC": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "sc_municipality.topo.json",
+      "district": "sc_municipality.topo.json",
+      "municipality": "sc_municipality.topo.json"
+    },
+    "sizes": {
+      "sc_municipality.topo.json": 33036
+    },
+    "bbox": [
+      55.2,
+      -4.8,
+      55.9,
+      -3.7
+    ]
+  },
+  "SD": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "sd_municipality.topo.json",
+      "district": "sd_municipality.topo.json",
+      "municipality": "sd_municipality.topo.json"
+    },
+    "sizes": {
+      "sd_municipality.topo.json": 45068
+    },
+    "bbox": [
+      21.8,
+      6.6,
+      37.0,
+      22.0
+    ]
+  },
+  "SE": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "se_region.topo.json",
+      "district": "se_region.topo.json",
+      "municipality": "se_municipality.topo.json"
+    },
+    "sizes": {
+      "se_region.topo.json": 8471,
+      "se_municipality.topo.json": 71216
+    },
+    "bbox": [
+      11.1,
+      55.3,
+      23.9,
+      68.2
+    ]
+  },
+  "SG": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "sg_municipality.topo.json",
+      "district": "sg_municipality.topo.json",
+      "municipality": "sg_municipality.topo.json"
+    },
+    "sizes": {
+      "sg_municipality.topo.json": 45010
+    }
+  },
+  "SI": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "si_region.topo.json",
+      "district": "si_region.topo.json",
+      "municipality": "si_municipality.topo.json"
+    },
+    "sizes": {
+      "si_region.topo.json": 78690,
+      "si_municipality.topo.json": 202632
+    },
+    "bbox": [
+      13.4,
+      45.4,
+      16.4,
+      46.9
+    ]
+  },
+  "SK": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "sk_region.topo.json",
+      "district": "sk_municipality.topo.json",
+      "municipality": "sk_municipality.topo.json"
+    },
+    "sizes": {
+      "sk_region.topo.json": 2434,
+      "sk_municipality.topo.json": 17917
+    },
+    "bbox": [
+      16.9,
+      47.8,
+      22.4,
+      49.5
+    ]
+  },
+  "SL": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "sl_municipality.topo.json",
+      "district": "sl_municipality.topo.json",
+      "municipality": "sl_municipality.topo.json"
+    },
+    "sizes": {
+      "sl_municipality.topo.json": 15921
+    },
+    "bbox": [
+      -13.1,
+      7.2,
+      -11.9,
+      9.6
+    ]
+  },
+  "SM": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "sm_municipality.topo.json",
+      "district": "sm_municipality.topo.json",
+      "municipality": "sm_municipality.topo.json"
+    },
+    "sizes": {
+      "sm_municipality.topo.json": 9526
+    },
+    "bbox": [
+      12.4,
+      43.9,
+      12.5,
+      44.0
+    ]
+  },
+  "SN": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {},
+    "sizes": {}
+  },
+  "SO": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "so_municipality.topo.json",
+      "district": "so_municipality.topo.json",
+      "municipality": "so_municipality.topo.json"
+    },
+    "sizes": {
+      "so_municipality.topo.json": 5125
+    },
+    "bbox": [
+      41.0,
+      -1.8,
+      49.8,
+      7.6
+    ]
+  },
+  "SR": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "sr_municipality.topo.json",
+      "district": "sr_municipality.topo.json",
+      "municipality": "sr_municipality.topo.json"
+    },
+    "sizes": {
+      "sr_municipality.topo.json": 51877
+    },
+    "bbox": [
+      -58.1,
+      1.8,
+      -54.3,
+      6.2
+    ]
+  },
+  "SS": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "ss_municipality.topo.json",
+      "district": "ss_municipality.topo.json",
+      "municipality": "ss_municipality.topo.json"
+    },
+    "sizes": {
+      "ss_municipality.topo.json": 89130
+    },
+    "bbox": [
+      23.4,
+      3.5,
+      35.0,
+      10.3
+    ]
+  },
+  "ST": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "st_region.topo.json",
+      "district": "st_municipality.topo.json",
+      "municipality": "st_municipality.topo.json"
+    },
+    "sizes": {
+      "st_municipality.topo.json": 22526,
+      "st_region.topo.json": 1443
+    },
+    "bbox": [
+      6.5,
+      -0.0,
+      7.4,
+      1.7
+    ]
+  },
+  "SV": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "sv_region.topo.json",
+      "district": "sv_municipality.topo.json",
+      "municipality": "sv_municipality.topo.json"
+    },
+    "sizes": {
+      "sv_municipality.topo.json": 269647,
+      "sv_region.topo.json": 15623
+    },
+    "bbox": [
+      -90.1,
+      13.1,
+      -87.7,
+      14.4
+    ]
+  },
+  "SY": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "sy_municipality.topo.json",
+      "district": "sy_municipality.topo.json",
+      "municipality": "sy_municipality.topo.json"
+    },
+    "sizes": {
+      "sy_municipality.topo.json": 142218
+    }
+  },
+  "SZ": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "sz_region.topo.json",
+      "district": "sz_municipality.topo.json",
+      "municipality": "sz_municipality.topo.json"
+    },
+    "sizes": {
+      "sz_municipality.topo.json": 33393,
+      "sz_region.topo.json": 1937
+    },
+    "bbox": [
+      30.8,
+      -27.3,
+      32.1,
+      -25.7
+    ]
+  },
+  "TD": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "td_municipality.topo.json",
+      "district": "td_municipality.topo.json",
+      "municipality": "td_municipality.topo.json"
+    },
+    "sizes": {
+      "td_municipality.topo.json": 1150
+    },
+    "bbox": [
+      21.2,
+      12.8,
+      21.7,
+      13.0
+    ]
+  },
+  "TG": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "tg_region.topo.json",
+      "district": "tg_municipality.topo.json",
+      "municipality": "tg_municipality.topo.json"
+    },
+    "sizes": {
+      "tg_municipality.topo.json": 32241,
+      "tg_region.topo.json": 2101
+    },
+    "bbox": [
+      -0.1,
+      7.9,
+      1.4,
+      10.9
+    ]
+  },
+  "TH": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "district": "th_municipality.topo.json",
+      "municipality": "th_municipality.topo.json"
+    },
+    "sizes": {
+      "th_municipality.topo.json": 1284852
+    },
+    "bbox": [
+      97.2,
+      5.6,
+      105.1,
+      20.1
+    ]
+  },
+  "TJ": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "tj_municipality.topo.json",
+      "district": "tj_municipality.topo.json",
+      "municipality": "tj_municipality.topo.json"
+    },
+    "sizes": {
+      "tj_municipality.topo.json": 99897
+    }
+  },
+  "TL": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "tl_municipality.topo.json",
+      "district": "tl_municipality.topo.json",
+      "municipality": "tl_municipality.topo.json"
+    },
+    "sizes": {
+      "tl_municipality.topo.json": 101544
+    },
+    "bbox": [
+      124.1,
+      -9.5,
+      127.3,
+      -8.2
+    ]
+  },
+  "TM": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "tm_municipality.topo.json",
+      "district": "tm_municipality.topo.json",
+      "municipality": "tm_municipality.topo.json"
+    },
+    "sizes": {
+      "tm_municipality.topo.json": 104072
+    }
+  },
+  "TN": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "tn_municipality.topo.json",
+      "district": "tn_municipality.topo.json",
+      "municipality": "tn_municipality.topo.json"
+    },
+    "sizes": {
+      "tn_municipality.topo.json": 1305690
+    },
+    "bbox": [
+      7.5,
+      30.2,
+      11.6,
+      37.5
+    ]
+  },
+  "TO": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "to_municipality.topo.json",
+      "district": "to_municipality.topo.json",
+      "municipality": "to_municipality.topo.json"
+    },
+    "sizes": {
+      "to_municipality.topo.json": 3180
+    },
+    "bbox": [
+      -176.4,
+      -22.5,
+      -173.5,
+      -15.5
+    ]
+  },
+  "TR": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "district": "tr_municipality.topo.json",
+      "municipality": "tr_municipality.topo.json",
+      "region": "tr_region.topo.json"
+    },
+    "sizes": {
+      "tr_municipality.topo.json": 396884,
+      "tr_region.topo.json": 7900
+    },
+    "bbox": [
+      23.6,
+      35.3,
+      44.5,
+      42.1
+    ]
+  },
+  "TT": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "tt_municipality.topo.json",
+      "district": "tt_municipality.topo.json",
+      "municipality": "tt_municipality.topo.json"
+    },
+    "sizes": {
+      "tt_municipality.topo.json": 48941
+    }
+  },
+  "TV": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "tv_municipality.topo.json",
+      "district": "tv_municipality.topo.json",
+      "municipality": "tv_municipality.topo.json"
+    },
+    "sizes": {
+      "tv_municipality.topo.json": 7526
+    }
+  },
+  "TW": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "tw_municipality.topo.json",
+      "district": "tw_municipality.topo.json",
+      "municipality": "tw_municipality.topo.json"
+    },
+    "sizes": {
+      "tw_municipality.topo.json": 152016
+    },
+    "bbox": [
+      114.3,
+      10.3,
+      122.1,
+      26.4
+    ]
+  },
+  "TZ": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "tz_region.topo.json",
+      "district": "tz_municipality.topo.json",
+      "municipality": "tz_municipality.topo.json"
+    },
+    "sizes": {
+      "tz_municipality.topo.json": 538265,
+      "tz_region.topo.json": 18456
+    },
+    "bbox": [
+      29.6,
+      -11.8,
+      40.4,
+      -1.4
+    ]
+  },
+  "UA": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "ua_region.topo.json",
+      "district": "ua_municipality.topo.json",
+      "municipality": "ua_municipality.topo.json"
+    },
+    "sizes": {
+      "ua_region.topo.json": 92759,
+      "ua_municipality.topo.json": 303916
+    },
+    "bbox": [
+      22.1,
+      44.2,
+      39.1,
+      52.3
+    ]
+  },
+  "UG": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "ug_region.topo.json",
+      "district": "ug_municipality.topo.json",
+      "municipality": "ug_municipality.topo.json"
+    },
+    "sizes": {
+      "ug_municipality.topo.json": 295451,
+      "ug_region.topo.json": 8750
+    },
+    "bbox": [
+      29.6,
+      -1.5,
+      34.9,
+      4.1
+    ]
+  },
+  "UY": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "uy_municipality.topo.json",
+      "district": "uy_municipality.topo.json",
+      "municipality": "uy_municipality.topo.json"
+    },
+    "sizes": {
+      "uy_municipality.topo.json": 128519
+    },
+    "bbox": [
+      -58.5,
+      -35.0,
+      -53.3,
+      -30.8
+    ]
+  },
+  "UZ": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "uz_municipality.topo.json",
+      "district": "uz_municipality.topo.json",
+      "municipality": "uz_municipality.topo.json"
+    },
+    "sizes": {
+      "uz_municipality.topo.json": 76660
+    },
+    "bbox": [
+      60.0,
+      37.2,
+      72.2,
+      41.8
+    ]
+  },
+  "VC": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "vc_municipality.topo.json",
+      "district": "vc_municipality.topo.json",
+      "municipality": "vc_municipality.topo.json"
+    },
+    "sizes": {
+      "vc_municipality.topo.json": 20026
+    }
+  },
+  "VE": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "ve_region.topo.json",
+      "district": "ve_municipality.topo.json",
+      "municipality": "ve_municipality.topo.json"
+    },
+    "sizes": {
+      "ve_municipality.topo.json": 1771820,
+      "ve_region.topo.json": 53326
+    },
+    "bbox": [
+      -73.4,
+      0.6,
+      -60.2,
+      15.7
+    ]
+  },
+  "VN": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "vn_municipality.topo.json",
+      "district": "vn_municipality.topo.json",
+      "municipality": "vn_municipality.topo.json"
+    },
+    "sizes": {
+      "vn_municipality.topo.json": 338487
+    },
+    "bbox": [
+      102.1,
+      7.7,
+      114.6,
+      23.1
+    ]
+  },
+  "VU": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "vu_municipality.topo.json",
+      "district": "vu_municipality.topo.json",
+      "municipality": "vu_municipality.topo.json"
+    },
+    "sizes": {
+      "vu_municipality.topo.json": 5376
+    },
+    "bbox": [
+      166.3,
+      -20.4,
+      169.3,
+      -14.1
+    ]
+  },
+  "WS": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "ws_municipality.topo.json",
+      "district": "ws_municipality.topo.json",
+      "municipality": "ws_municipality.topo.json"
+    },
+    "sizes": {
+      "ws_municipality.topo.json": 32089
+    },
+    "bbox": [
+      -172.8,
+      -14.1,
+      -171.4,
+      -13.4
+    ]
+  },
+  "XK": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "xk_municipality.topo.json",
+      "district": "xk_municipality.topo.json",
+      "municipality": "xk_municipality.topo.json"
+    },
+    "sizes": {
+      "xk_municipality.topo.json": 131345
+    },
+    "bbox": [
+      20.0,
+      41.9,
+      21.7,
+      43.1
+    ]
+  },
+  "YE": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "ye_municipality.topo.json",
+      "district": "ye_municipality.topo.json",
+      "municipality": "ye_municipality.topo.json"
+    },
+    "sizes": {
+      "ye_municipality.topo.json": 57494
+    }
+  },
+  "ZA": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "za_municipality.topo.json",
+      "district": "za_municipality.topo.json",
+      "municipality": "za_municipality.topo.json"
+    },
+    "sizes": {
+      "za_municipality.topo.json": 629801
+    },
+    "bbox": [
+      16.5,
+      -47.0,
+      38.0,
+      -22.5
+    ]
+  },
+  "ZM": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "zm_municipality.topo.json",
+      "district": "zm_municipality.topo.json",
+      "municipality": "zm_municipality.topo.json"
+    },
+    "sizes": {
+      "zm_municipality.topo.json": 182941
+    },
+    "bbox": [
+      22.0,
+      -18.1,
+      33.7,
+      -8.4
+    ]
+  },
+  "ZW": {
+    "levels": [
+      "region",
+      "district",
+      "municipality"
+    ],
+    "files": {
+      "region": "zw_municipality.topo.json",
+      "district": "zw_municipality.topo.json",
+      "municipality": "zw_municipality.topo.json"
+    },
+    "sizes": {
+      "zw_municipality.topo.json": 63219
+    },
+    "bbox": [
+      25.2,
+      -22.4,
+      33.0,
+      -15.6
+    ]
+  }
+}
