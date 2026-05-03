@@ -1,0 +1,548 @@
+{
+  "summary": {
+    "corrected_with_mx": 23,
+    "suggested_no_mx": 2,
+    "same_as_current": 10,
+    "no_wikidata_website": 2
+  },
+  "rows": [
+    {
+      "key": "IT-COM-001161",
+      "id": "IT-COM-001161",
+      "name": "Comune di Montanaro",
+      "istat": "001161",
+      "current_domain": "comune.montanaro.to.it",
+      "wd_qid": "Q9489",
+      "wd_name": "Montanaro",
+      "suggested_domain": "comune.montanaro.to.it",
+      "current_pipeline_reason": "homepage fetched but no emails extracted",
+      "mx_ok": null,
+      "mx_records": []
+    },
+    {
+      "key": "IT-COM-003025",
+      "id": "IT-COM-003025",
+      "name": "Comune di Borgo Ticino",
+      "istat": "003025",
+      "current_domain": "comuneborgoticino.no.it",
+      "wd_qid": "Q22098",
+      "wd_name": "Borgo Ticino",
+      "suggested_domain": "comuneborgoticino.it",
+      "current_pipeline_reason": "primary domain DNS failure (comuneborgoticino.no.it), no fallback",
+      "mx_ok": true,
+      "mx_records": [
+        "le.epublic.it",
+        "mail.epublic.it"
+      ]
+    },
+    {
+      "key": "IT-COM-009051",
+      "id": "IT-COM-009051",
+      "name": "Comune di Pontinvrea",
+      "istat": "009051",
+      "current_domain": "comune.pontinvrea.sv.it",
+      "wd_qid": "Q271169",
+      "wd_name": "Pontinvrea",
+      "suggested_domain": "comunedipontinvrea.it",
+      "current_pipeline_reason": "primary domain DNS failure (comune.pontinvrea.sv.it), no fallback",
+      "mx_ok": true,
+      "mx_records": [
+        "eracle.si-tek.net",
+        "mail.comunedipontinvrea.it"
+      ]
+    },
+    {
+      "key": "IT-COM-047024",
+      "id": "IT-COM-047024",
+      "name": "Comune di San Marcello Piteglio",
+      "istat": "047024",
+      "current_domain": "comune-sanmarcellopiteglio.info",
+      "wd_qid": "Q28090981",
+      "wd_name": "San Marcello Piteglio",
+      "suggested_domain": "comune.sanmarcellopiteglio.pt.it",
+      "current_pipeline_reason": "homepage unreachable (http_fail); no scrape candidate",
+      "mx_ok": false,
+      "mx_records": []
+    },
+    {
+      "key": "IT-COM-054031",
+      "id": "IT-COM-054031",
+      "name": "Comune di Monteleone di Spoleto",
+      "istat": "054031",
+      "current_domain": "comune.monteleone-di-spoleto.pg.it",
+      "wd_qid": "Q20483",
+      "wd_name": "Monteleone di Spoleto",
+      "suggested_domain": "comune.monteleonedispoleto.pg.it",
+      "current_pipeline_reason": "primary domain DNS failure (comune.monteleone-di-spoleto.pg.it), no fallback",
+      "mx_ok": true,
+      "mx_records": [
+        "mail.register.it"
+      ]
+    },
+    {
+      "key": "IT-COM-059021",
+      "id": "IT-COM-059021",
+      "name": "Comune di Roccagorga",
+      "istat": "059021",
+      "current_domain": "comuneroccagorga.it",
+      "wd_qid": "Q128161",
+      "wd_name": "Roccagorga",
+      "suggested_domain": "comuneroccagorga.it",
+      "current_pipeline_reason": "primary domain DNS failure (comuneroccagorga.it), no fallback",
+      "mx_ok": null,
+      "mx_records": []
+    },
+    {
+      "key": "IT-COM-061044",
+      "id": "IT-COM-061044",
+      "name": "Comune di Letino",
+      "istat": "061044",
+      "current_domain": "letino.gov.it",
+      "wd_qid": "Q58666",
+      "wd_name": "Letino",
+      "suggested_domain": "comune.letino.ce.it",
+      "current_pipeline_reason": "primary domain DNS failure (letino.gov.it), no fallback",
+      "mx_ok": true,
+      "mx_records": [
+        "mx.comune.letino.ce.it"
+      ]
+    },
+    {
+      "key": "IT-COM-061070",
+      "id": "IT-COM-061070",
+      "name": "Comune di Roccamonfina",
+      "istat": "061070",
+      "current_domain": "roccamonfina.asmenet.it",
+      "wd_qid": "Q58824",
+      "wd_name": "Roccamonfina",
+      "suggested_domain": "comune.roccamonfina.ce.it",
+      "current_pipeline_reason": "homepage fetched but no emails extracted",
+      "mx_ok": true,
+      "mx_records": [
+        "mail.asmecam.it"
+      ]
+    },
+    {
+      "key": "IT-COM-062016",
+      "id": "IT-COM-062016",
+      "name": "Comune di Castelfranco In Miscano",
+      "istat": "062016",
+      "current_domain": "comune.castefrancoinmiscano.bn.it",
+      "wd_qid": "Q55887",
+      "wd_name": "Castelfranco in Miscano",
+      "suggested_domain": "comune.castelfrancoinmiscano.bn.it",
+      "current_pipeline_reason": "primary domain DNS failure (comune.castefrancoinmiscano.bn.it), no fallback",
+      "mx_ok": true,
+      "mx_records": [
+        "mail.asmecam.it"
+      ]
+    },
+    {
+      "key": "IT-COM-063067",
+      "id": "IT-COM-063067",
+      "name": "Comune di San Giorgio a Cremano",
+      "istat": "063067",
+      "current_domain": "comune.sangiorgioacremano.na.it",
+      "wd_qid": "Q72497",
+      "wd_name": "San Giorgio a Cremano",
+      "suggested_domain": "e-cremano.it",
+      "current_pipeline_reason": "homepage fetched but no emails extracted",
+      "mx_ok": true,
+      "mx_records": [
+        "mx.e-cremano.it"
+      ]
+    },
+    {
+      "key": "IT-COM-063070",
+      "id": "IT-COM-063070",
+      "name": "Comune di San Sebastiano al Vesuvio",
+      "istat": "063070",
+      "current_domain": "comunesansebastiano.it",
+      "wd_qid": "Q72527",
+      "wd_name": "San Sebastiano al Vesuvio",
+      "suggested_domain": "comunesansebastiano.it",
+      "current_pipeline_reason": "primary domain DNS failure (comunesansebastiano.it), no fallback",
+      "mx_ok": null,
+      "mx_records": []
+    },
+    {
+      "key": "IT-COM-064040",
+      "id": "IT-COM-064040",
+      "name": "Comune di Guardia Lombardi",
+      "istat": "064040",
+      "current_domain": "comuneguardialombardi.gov.it",
+      "wd_qid": "Q55042",
+      "wd_name": "Guardia Lombardi",
+      "suggested_domain": "comune.guardialombardi.av.it",
+      "current_pipeline_reason": "primary domain DNS failure (comuneguardialombardi.gov.it), no fallback",
+      "mx_ok": true,
+      "mx_records": [
+        "mx.comune.guardialombardi.av.it"
+      ]
+    },
+    {
+      "key": "IT-COM-064093",
+      "id": "IT-COM-064093",
+      "name": "Comune di Santa Paolina",
+      "istat": "064093",
+      "current_domain": "comunesantapaolina.gov.it",
+      "wd_qid": "Q55106",
+      "wd_name": "Santa Paolina",
+      "suggested_domain": "comunesantapaolina.gov.it",
+      "current_pipeline_reason": "primary domain DNS failure (comunesantapaolina.gov.it), no fallback",
+      "mx_ok": null,
+      "mx_records": []
+    },
+    {
+      "key": "IT-COM-064115",
+      "id": "IT-COM-064115",
+      "name": "Comune di Vallesaccarda",
+      "istat": "064115",
+      "current_domain": "comune.vallesaccarda.av.it",
+      "wd_qid": "Q55136",
+      "wd_name": "Vallesaccarda",
+      "suggested_domain": "comune-vallesaccarda.it",
+      "current_pipeline_reason": "homepage fetched but no emails extracted",
+      "mx_ok": true,
+      "mx_records": [
+        "mx.comune-vallesaccarda.it"
+      ]
+    },
+    {
+      "key": "IT-COM-065032",
+      "id": "IT-COM-065032",
+      "name": "Comune di Castelnuovo Cilento",
+      "istat": "065032",
+      "current_domain": "castelnuovocilento.eu",
+      "wd_qid": "Q80787",
+      "wd_name": "Castelnuovo Cilento",
+      "suggested_domain": "",
+      "current_pipeline_reason": "homepage fetched but no emails extracted",
+      "mx_ok": null,
+      "mx_records": []
+    },
+    {
+      "key": "IT-COM-065058",
+      "id": "IT-COM-065058",
+      "name": "Comune di Giungano",
+      "istat": "065058",
+      "current_domain": "comune.giungano.sa.it",
+      "wd_qid": "Q80969",
+      "wd_name": "Giungano",
+      "suggested_domain": "comune.giungano.sa.it",
+      "current_pipeline_reason": "homepage fetched but no emails extracted",
+      "mx_ok": null,
+      "mx_records": []
+    },
+    {
+      "key": "IT-COM-065096",
+      "id": "IT-COM-065096",
+      "name": "Comune di Pisciotta",
+      "istat": "065096",
+      "current_domain": "pisciotta.comune.sa.it",
+      "wd_qid": "Q81330",
+      "wd_name": "Pisciotta",
+      "suggested_domain": "pisciotta.net",
+      "current_pipeline_reason": "primary domain DNS failure (pisciotta.comune.sa.it), no fallback",
+      "mx_ok": false,
+      "mx_records": []
+    },
+    {
+      "key": "IT-COM-065101",
+      "id": "IT-COM-065101",
+      "name": "Comune di Postiglione",
+      "istat": "065101",
+      "current_domain": "postiglione.gov.it",
+      "wd_qid": "Q81349",
+      "wd_name": "Postiglione",
+      "suggested_domain": "comunepostiglionesa.it",
+      "current_pipeline_reason": "primary domain DNS failure (postiglione.gov.it), no fallback",
+      "mx_ok": true,
+      "mx_records": [
+        "mx.comunepostiglionesa.it"
+      ]
+    },
+    {
+      "key": "IT-COM-065145",
+      "id": "IT-COM-065145",
+      "name": "Comune di Stio",
+      "istat": "065145",
+      "current_domain": "comune.stio.sa.gov.it",
+      "wd_qid": "Q81723",
+      "wd_name": "Stio",
+      "suggested_domain": "comune.stio.sa.it",
+      "current_pipeline_reason": "primary domain DNS failure (comune.stio.sa.gov.it), no fallback",
+      "mx_ok": true,
+      "mx_records": [
+        "comune-stio-sa-it.mail.protection.outlook.com"
+      ]
+    },
+    {
+      "key": "IT-COM-067015",
+      "id": "IT-COM-067015",
+      "name": "Comune di Cellino Attanasio",
+      "istat": "067015",
+      "current_domain": "comunecellinoattanasio.te.it",
+      "wd_qid": "Q51437",
+      "wd_name": "Cellino Attanasio",
+      "suggested_domain": "comune.cellinoattanasio.te.it",
+      "current_pipeline_reason": "primary domain DNS failure (comunecellinoattanasio.te.it), no fallback",
+      "mx_ok": true,
+      "mx_records": [
+        "mail.register.it"
+      ]
+    },
+    {
+      "key": "IT-COM-067025",
+      "id": "IT-COM-067025",
+      "name": "Azienda Speciale Consortile Ambito Sociale Tordino",
+      "istat": "067025",
+      "current_domain": "ambitosocialetordino.it",
+      "wd_qid": "Q51450",
+      "wd_name": "Giulianova",
+      "suggested_domain": "comune.giulianova.te.it",
+      "current_pipeline_reason": "primary domain DNS failure (ambitosocialetordino.it), no fallback",
+      "mx_ok": true,
+      "mx_records": [
+        "mx-01-eu-west-1.prod.hydra.sophos.com",
+        "mx-02-eu-west-1.prod.hydra.sophos.com"
+      ]
+    },
+    {
+      "key": "IT-COM-068046",
+      "id": "IT-COM-068046",
+      "name": "Comune di Villa Celiera",
+      "istat": "068046",
+      "current_domain": "ww.comune.villaceliera.pe.it",
+      "wd_qid": "Q51413",
+      "wd_name": "Villa Celiera",
+      "suggested_domain": "comune.villaceliera.pe.it",
+      "current_pipeline_reason": "primary domain DNS failure (ww.comune.villaceliera.pe.it), no fallback",
+      "mx_ok": true,
+      "mx_records": [
+        "mail.comune.villaceliera.pe.it"
+      ]
+    },
+    {
+      "key": "IT-COM-069050",
+      "id": "IT-COM-069050",
+      "name": "Comune di Miglianico",
+      "istat": "069050",
+      "current_domain": "miglianico.gov.it",
+      "wd_qid": "Q51248",
+      "wd_name": "Miglianico",
+      "suggested_domain": "comune.miglianico.ch.it",
+      "current_pipeline_reason": "primary domain DNS failure (miglianico.gov.it), no fallback",
+      "mx_ok": true,
+      "mx_records": [
+        "alt1.aspmx.l.google.com",
+        "alt2.aspmx.l.google.com",
+        "alt3.aspmx.l.google.com",
+        "alt4.aspmx.l.google.com",
+        "aspmx.l.google.com"
+      ]
+    },
+    {
+      "key": "IT-COM-076075",
+      "id": "IT-COM-076075",
+      "name": "Comune di San Costantino Albanese",
+      "istat": "076075",
+      "current_domain": "comunesancostantinoalbanese.it",
+      "wd_qid": "Q52661",
+      "wd_name": "San Costantino Albanese",
+      "suggested_domain": "comunesancostantinoalbanese.it",
+      "current_pipeline_reason": "primary domain DNS failure (comunesancostantinoalbanese.it), no fallback",
+      "mx_ok": null,
+      "mx_records": []
+    },
+    {
+      "key": "IT-COM-078014",
+      "id": "IT-COM-078014",
+      "name": "Comune di Belsito",
+      "istat": "078014",
+      "current_domain": "belsito.asmenet.it",
+      "wd_qid": "Q53837",
+      "wd_name": "Belsito",
+      "suggested_domain": "belsito.asmenet.it",
+      "current_pipeline_reason": "homepage fetched but no emails extracted",
+      "mx_ok": null,
+      "mx_records": []
+    },
+    {
+      "key": "IT-COM-078132",
+      "id": "IT-COM-078132",
+      "name": "Comune di Santa Maria del Cedro",
+      "istat": "078132",
+      "current_domain": "santamariadelcedro.asmenet.it",
+      "wd_qid": "Q53990",
+      "wd_name": "Santa Maria del Cedro",
+      "suggested_domain": "comune.santamariadelcedro.cs.it",
+      "current_pipeline_reason": "homepage fetched but no emails extracted",
+      "mx_ok": true,
+      "mx_records": [
+        "mail.asmecal.it"
+      ]
+    },
+    {
+      "key": "IT-COM-079077",
+      "id": "IT-COM-079077",
+      "name": "Comune di Miglierina",
+      "istat": "079077",
+      "current_domain": "miglierina.asmenet.it",
+      "wd_qid": "Q53655",
+      "wd_name": "Miglierina",
+      "suggested_domain": "comune.miglierina.cz.it",
+      "current_pipeline_reason": "homepage fetched but no emails extracted",
+      "mx_ok": true,
+      "mx_records": [
+        "mail.asmecal.it"
+      ]
+    },
+    {
+      "key": "IT-COM-080075",
+      "id": "IT-COM-080075",
+      "name": "Comune di San Pietro di Carida'",
+      "istat": "080075",
+      "current_domain": "sanpietrodicarida.asmenet.it",
+      "wd_qid": "Q54651",
+      "wd_name": "San Pietro di Caridà",
+      "suggested_domain": "sanpietrodicarida.asmenet.it",
+      "current_pipeline_reason": "homepage fetched but no emails extracted",
+      "mx_ok": null,
+      "mx_records": []
+    },
+    {
+      "key": "IT-COM-080087",
+      "id": "IT-COM-080087",
+      "name": "Comune di Serrata",
+      "istat": "080087",
+      "current_domain": "comune.serrata.it",
+      "wd_qid": "Q54669",
+      "wd_name": "Serrata",
+      "suggested_domain": "comune.serrata.rc.it",
+      "current_pipeline_reason": "primary domain DNS failure (comune.serrata.it), no fallback",
+      "mx_ok": true,
+      "mx_records": [
+        "mail.asmecal.it"
+      ]
+    },
+    {
+      "key": "IT-COM-080097",
+      "id": "IT-COM-080097",
+      "name": "Comune di San Ferdinando",
+      "istat": "080097",
+      "current_domain": "comunesanferdinando.rc.it",
+      "wd_qid": "Q54646",
+      "wd_name": "San Ferdinando",
+      "suggested_domain": "comune.sanferdinando.rc.it",
+      "current_pipeline_reason": "primary domain DNS failure (comunesanferdinando.rc.it), no fallback",
+      "mx_ok": true,
+      "mx_records": [
+        "mail.asmecal.it"
+      ]
+    },
+    {
+      "key": "IT-COM-082008",
+      "id": "IT-COM-082008",
+      "name": "Comune di Baucina",
+      "istat": "082008",
+      "current_domain": "egov.comune.baucina.pa.it",
+      "wd_qid": "Q491593",
+      "wd_name": "Baucina",
+      "suggested_domain": "comune.baucina.pa.it",
+      "current_pipeline_reason": "homepage fetched but no emails extracted",
+      "mx_ok": true,
+      "mx_records": [
+        "mx.comune.baucina.pa.it"
+      ]
+    },
+    {
+      "key": "IT-COM-083054",
+      "id": "IT-COM-083054",
+      "name": "Comune di Monforte San Giorgio",
+      "istat": "083054",
+      "current_domain": "monfortesangiorgio.me.it",
+      "wd_qid": "Q496925",
+      "wd_name": "Monforte San Giorgio",
+      "suggested_domain": "comune.monfortesangiorgio.me.it",
+      "current_pipeline_reason": "primary domain DNS failure (monfortesangiorgio.me.it), no fallback",
+      "mx_ok": true,
+      "mx_records": [
+        "in.arubabusiness.it"
+      ]
+    },
+    {
+      "key": "IT-COM-090020",
+      "id": "IT-COM-090020",
+      "name": "Comune di Burgos",
+      "istat": "090020",
+      "current_domain": "comuneburgos.gov.it",
+      "wd_qid": "",
+      "wd_name": "",
+      "suggested_domain": "",
+      "current_pipeline_reason": "primary domain DNS failure (comuneburgos.gov.it), no fallback",
+      "mx_ok": null,
+      "mx_records": []
+    },
+    {
+      "key": "IT-COM-096012",
+      "id": "IT-COM-096012",
+      "name": "Comune di Candelo",
+      "istat": "096012",
+      "current_domain": "comune.candelo.bi.it",
+      "wd_qid": "Q18040",
+      "wd_name": "Candelo",
+      "suggested_domain": "comune.candelo.bi.it",
+      "current_pipeline_reason": "homepage fetched but no emails extracted",
+      "mx_ok": null,
+      "mx_records": []
+    },
+    {
+      "key": "IT-COM-096057",
+      "id": "IT-COM-096057",
+      "name": "Comune di Sala Biellese",
+      "istat": "096057",
+      "current_domain": "comune.salabiellese.bi.it",
+      "wd_qid": "Q18158",
+      "wd_name": "Sala Biellese",
+      "suggested_domain": "comune.salabiellese.bi.it",
+      "current_pipeline_reason": "homepage fetched but no emails extracted",
+      "mx_ok": null,
+      "mx_records": []
+    },
+    {
+      "key": "IT-COM-098021",
+      "id": "IT-COM-098021",
+      "name": "Comune di Cornegliano Laudense",
+      "istat": "098021",
+      "current_domain": "comune.cornegliano.laudense.lo.it",
+      "wd_qid": "Q42382",
+      "wd_name": "Cornegliano Laudense",
+      "suggested_domain": "comune.cornegliano-laudense.lo.it",
+      "current_pipeline_reason": "primary domain DNS failure (comune.cornegliano.laudense.lo.it), no fallback",
+      "mx_ok": true,
+      "mx_records": [
+        "alt1.aspmx.l.google.com",
+        "alt2.aspmx.l.google.com",
+        "alt3.aspmx.l.google.com",
+        "alt4.aspmx.l.google.com",
+        "aspmx.l.google.com"
+      ]
+    },
+    {
+      "key": "IT-COM-102048",
+      "id": "IT-COM-102048",
+      "name": "Comune di Zaccanopoli",
+      "istat": "102048",
+      "current_domain": "zaccanopolicomune.it",
+      "wd_qid": "Q54751",
+      "wd_name": "Zaccanopoli",
+      "suggested_domain": "comune.zaccanopoli.vv.it",
+      "current_pipeline_reason": "primary domain DNS failure (zaccanopolicomune.it), no fallback",
+      "mx_ok": true,
+      "mx_records": [
+        "mail.asmecal.it"
+      ]
+    }
+  ]
+}

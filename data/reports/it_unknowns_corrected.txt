@@ -1,0 +1,243 @@
+==============================================================================================================
+Wrong vs corrected websites — IT unknowns auto-suggestion via Wikidata P856 (37 entries)
+==============================================================================================================
+
+Outcome categories:
+  corrected_with_mx          23
+  same_as_current            10
+  suggested_no_mx             2
+  no_wikidata_website         2
+
+==============================================================================================================
+### CORRECTED_WITH_MX (23 entries)
+==============================================================================================================
+
+These have a different Wikidata-listed website AND that website has MX records.
+Strong candidates to overwrite the IndicePA domain in seed data.
+
+  IT-COM-003025  Comune di Borgo Ticino  (ISTAT 003025, Wikidata Q22098)
+    current (IndicePA)   : comuneborgoticino.no.it
+    suggested (Wikidata) : comuneborgoticino.it
+    MX on suggested      : le.epublic.it, mail.epublic.it
+    pipeline reason      : primary domain DNS failure (comuneborgoticino.no.it), no fallback
+
+  IT-COM-009051  Comune di Pontinvrea  (ISTAT 009051, Wikidata Q271169)
+    current (IndicePA)   : comune.pontinvrea.sv.it
+    suggested (Wikidata) : comunedipontinvrea.it
+    MX on suggested      : eracle.si-tek.net, mail.comunedipontinvrea.it
+    pipeline reason      : primary domain DNS failure (comune.pontinvrea.sv.it), no fallback
+
+  IT-COM-054031  Comune di Monteleone di Spoleto  (ISTAT 054031, Wikidata Q20483)
+    current (IndicePA)   : comune.monteleone-di-spoleto.pg.it
+    suggested (Wikidata) : comune.monteleonedispoleto.pg.it
+    MX on suggested      : mail.register.it
+    pipeline reason      : primary domain DNS failure (comune.monteleone-di-spoleto.pg.it), no fallback
+
+  IT-COM-061044  Comune di Letino  (ISTAT 061044, Wikidata Q58666)
+    current (IndicePA)   : letino.gov.it
+    suggested (Wikidata) : comune.letino.ce.it
+    MX on suggested      : mx.comune.letino.ce.it
+    pipeline reason      : primary domain DNS failure (letino.gov.it), no fallback
+
+  IT-COM-061070  Comune di Roccamonfina  (ISTAT 061070, Wikidata Q58824)
+    current (IndicePA)   : roccamonfina.asmenet.it
+    suggested (Wikidata) : comune.roccamonfina.ce.it
+    MX on suggested      : mail.asmecam.it
+    pipeline reason      : homepage fetched but no emails extracted
+
+  IT-COM-062016  Comune di Castelfranco In Miscano  (ISTAT 062016, Wikidata Q55887)
+    current (IndicePA)   : comune.castefrancoinmiscano.bn.it
+    suggested (Wikidata) : comune.castelfrancoinmiscano.bn.it
+    MX on suggested      : mail.asmecam.it
+    pipeline reason      : primary domain DNS failure (comune.castefrancoinmiscano.bn.it), no fallback
+
+  IT-COM-063067  Comune di San Giorgio a Cremano  (ISTAT 063067, Wikidata Q72497)
+    current (IndicePA)   : comune.sangiorgioacremano.na.it
+    suggested (Wikidata) : e-cremano.it
+    MX on suggested      : mx.e-cremano.it
+    pipeline reason      : homepage fetched but no emails extracted
+
+  IT-COM-064040  Comune di Guardia Lombardi  (ISTAT 064040, Wikidata Q55042)
+    current (IndicePA)   : comuneguardialombardi.gov.it
+    suggested (Wikidata) : comune.guardialombardi.av.it
+    MX on suggested      : mx.comune.guardialombardi.av.it
+    pipeline reason      : primary domain DNS failure (comuneguardialombardi.gov.it), no fallback
+
+  IT-COM-064115  Comune di Vallesaccarda  (ISTAT 064115, Wikidata Q55136)
+    current (IndicePA)   : comune.vallesaccarda.av.it
+    suggested (Wikidata) : comune-vallesaccarda.it
+    MX on suggested      : mx.comune-vallesaccarda.it
+    pipeline reason      : homepage fetched but no emails extracted
+
+  IT-COM-065101  Comune di Postiglione  (ISTAT 065101, Wikidata Q81349)
+    current (IndicePA)   : postiglione.gov.it
+    suggested (Wikidata) : comunepostiglionesa.it
+    MX on suggested      : mx.comunepostiglionesa.it
+    pipeline reason      : primary domain DNS failure (postiglione.gov.it), no fallback
+
+  IT-COM-065145  Comune di Stio  (ISTAT 065145, Wikidata Q81723)
+    current (IndicePA)   : comune.stio.sa.gov.it
+    suggested (Wikidata) : comune.stio.sa.it
+    MX on suggested      : comune-stio-sa-it.mail.protection.outlook.com
+    pipeline reason      : primary domain DNS failure (comune.stio.sa.gov.it), no fallback
+
+  IT-COM-067015  Comune di Cellino Attanasio  (ISTAT 067015, Wikidata Q51437)
+    current (IndicePA)   : comunecellinoattanasio.te.it
+    suggested (Wikidata) : comune.cellinoattanasio.te.it
+    MX on suggested      : mail.register.it
+    pipeline reason      : primary domain DNS failure (comunecellinoattanasio.te.it), no fallback
+
+  IT-COM-067025  Azienda Speciale Consortile Ambito Sociale Tordino  (ISTAT 067025, Wikidata Q51450)
+    current (IndicePA)   : ambitosocialetordino.it
+    suggested (Wikidata) : comune.giulianova.te.it
+    MX on suggested      : mx-01-eu-west-1.prod.hydra.sophos.com, mx-02-eu-west-1.prod.hydra.sophos.com
+    pipeline reason      : primary domain DNS failure (ambitosocialetordino.it), no fallback
+
+  IT-COM-068046  Comune di Villa Celiera  (ISTAT 068046, Wikidata Q51413)
+    current (IndicePA)   : ww.comune.villaceliera.pe.it
+    suggested (Wikidata) : comune.villaceliera.pe.it
+    MX on suggested      : mail.comune.villaceliera.pe.it
+    pipeline reason      : primary domain DNS failure (ww.comune.villaceliera.pe.it), no fallback
+
+  IT-COM-069050  Comune di Miglianico  (ISTAT 069050, Wikidata Q51248)
+    current (IndicePA)   : miglianico.gov.it
+    suggested (Wikidata) : comune.miglianico.ch.it
+    MX on suggested      : alt1.aspmx.l.google.com, alt2.aspmx.l.google.com, alt3.aspmx.l.google.com
+    pipeline reason      : primary domain DNS failure (miglianico.gov.it), no fallback
+
+  IT-COM-078132  Comune di Santa Maria del Cedro  (ISTAT 078132, Wikidata Q53990)
+    current (IndicePA)   : santamariadelcedro.asmenet.it
+    suggested (Wikidata) : comune.santamariadelcedro.cs.it
+    MX on suggested      : mail.asmecal.it
+    pipeline reason      : homepage fetched but no emails extracted
+
+  IT-COM-079077  Comune di Miglierina  (ISTAT 079077, Wikidata Q53655)
+    current (IndicePA)   : miglierina.asmenet.it
+    suggested (Wikidata) : comune.miglierina.cz.it
+    MX on suggested      : mail.asmecal.it
+    pipeline reason      : homepage fetched but no emails extracted
+
+  IT-COM-080087  Comune di Serrata  (ISTAT 080087, Wikidata Q54669)
+    current (IndicePA)   : comune.serrata.it
+    suggested (Wikidata) : comune.serrata.rc.it
+    MX on suggested      : mail.asmecal.it
+    pipeline reason      : primary domain DNS failure (comune.serrata.it), no fallback
+
+  IT-COM-080097  Comune di San Ferdinando  (ISTAT 080097, Wikidata Q54646)
+    current (IndicePA)   : comunesanferdinando.rc.it
+    suggested (Wikidata) : comune.sanferdinando.rc.it
+    MX on suggested      : mail.asmecal.it
+    pipeline reason      : primary domain DNS failure (comunesanferdinando.rc.it), no fallback
+
+  IT-COM-082008  Comune di Baucina  (ISTAT 082008, Wikidata Q491593)
+    current (IndicePA)   : egov.comune.baucina.pa.it
+    suggested (Wikidata) : comune.baucina.pa.it
+    MX on suggested      : mx.comune.baucina.pa.it
+    pipeline reason      : homepage fetched but no emails extracted
+
+  IT-COM-083054  Comune di Monforte San Giorgio  (ISTAT 083054, Wikidata Q496925)
+    current (IndicePA)   : monfortesangiorgio.me.it
+    suggested (Wikidata) : comune.monfortesangiorgio.me.it
+    MX on suggested      : in.arubabusiness.it
+    pipeline reason      : primary domain DNS failure (monfortesangiorgio.me.it), no fallback
+
+  IT-COM-098021  Comune di Cornegliano Laudense  (ISTAT 098021, Wikidata Q42382)
+    current (IndicePA)   : comune.cornegliano.laudense.lo.it
+    suggested (Wikidata) : comune.cornegliano-laudense.lo.it
+    MX on suggested      : alt1.aspmx.l.google.com, alt2.aspmx.l.google.com, alt3.aspmx.l.google.com
+    pipeline reason      : primary domain DNS failure (comune.cornegliano.laudense.lo.it), no fallback
+
+  IT-COM-102048  Comune di Zaccanopoli  (ISTAT 102048, Wikidata Q54751)
+    current (IndicePA)   : zaccanopolicomune.it
+    suggested (Wikidata) : comune.zaccanopoli.vv.it
+    MX on suggested      : mail.asmecal.it
+    pipeline reason      : primary domain DNS failure (zaccanopolicomune.it), no fallback
+
+==============================================================================================================
+### SUGGESTED_NO_MX (2 entries)
+==============================================================================================================
+
+Wikidata suggests a different website but it has no MX. May still be the correct site
+(no email there) or may itself be stale.
+
+  IT-COM-047024  Comune di San Marcello Piteglio  (ISTAT 047024, Wikidata Q28090981)
+    current (IndicePA)   : comune-sanmarcellopiteglio.info
+    suggested (Wikidata) : comune.sanmarcellopiteglio.pt.it
+    pipeline reason      : homepage unreachable (http_fail); no scrape candidate
+
+  IT-COM-065096  Comune di Pisciotta  (ISTAT 065096, Wikidata Q81330)
+    current (IndicePA)   : pisciotta.comune.sa.it
+    suggested (Wikidata) : pisciotta.net
+    pipeline reason      : primary domain DNS failure (pisciotta.comune.sa.it), no fallback
+
+==============================================================================================================
+### SAME_AS_CURRENT (10 entries)
+==============================================================================================================
+
+Wikidata agrees with IndicePA's stale domain — Wikidata isn't more current here.
+
+  IT-COM-001161  Comune di Montanaro  (ISTAT 001161, Wikidata Q9489)
+    current (IndicePA)   : comune.montanaro.to.it
+    suggested (Wikidata) : comune.montanaro.to.it
+    pipeline reason      : homepage fetched but no emails extracted
+
+  IT-COM-059021  Comune di Roccagorga  (ISTAT 059021, Wikidata Q128161)
+    current (IndicePA)   : comuneroccagorga.it
+    suggested (Wikidata) : comuneroccagorga.it
+    pipeline reason      : primary domain DNS failure (comuneroccagorga.it), no fallback
+
+  IT-COM-063070  Comune di San Sebastiano al Vesuvio  (ISTAT 063070, Wikidata Q72527)
+    current (IndicePA)   : comunesansebastiano.it
+    suggested (Wikidata) : comunesansebastiano.it
+    pipeline reason      : primary domain DNS failure (comunesansebastiano.it), no fallback
+
+  IT-COM-064093  Comune di Santa Paolina  (ISTAT 064093, Wikidata Q55106)
+    current (IndicePA)   : comunesantapaolina.gov.it
+    suggested (Wikidata) : comunesantapaolina.gov.it
+    pipeline reason      : primary domain DNS failure (comunesantapaolina.gov.it), no fallback
+
+  IT-COM-065058  Comune di Giungano  (ISTAT 065058, Wikidata Q80969)
+    current (IndicePA)   : comune.giungano.sa.it
+    suggested (Wikidata) : comune.giungano.sa.it
+    pipeline reason      : homepage fetched but no emails extracted
+
+  IT-COM-076075  Comune di San Costantino Albanese  (ISTAT 076075, Wikidata Q52661)
+    current (IndicePA)   : comunesancostantinoalbanese.it
+    suggested (Wikidata) : comunesancostantinoalbanese.it
+    pipeline reason      : primary domain DNS failure (comunesancostantinoalbanese.it), no fallback
+
+  IT-COM-078014  Comune di Belsito  (ISTAT 078014, Wikidata Q53837)
+    current (IndicePA)   : belsito.asmenet.it
+    suggested (Wikidata) : belsito.asmenet.it
+    pipeline reason      : homepage fetched but no emails extracted
+
+  IT-COM-080075  Comune di San Pietro di Carida'  (ISTAT 080075, Wikidata Q54651)
+    current (IndicePA)   : sanpietrodicarida.asmenet.it
+    suggested (Wikidata) : sanpietrodicarida.asmenet.it
+    pipeline reason      : homepage fetched but no emails extracted
+
+  IT-COM-096012  Comune di Candelo  (ISTAT 096012, Wikidata Q18040)
+    current (IndicePA)   : comune.candelo.bi.it
+    suggested (Wikidata) : comune.candelo.bi.it
+    pipeline reason      : homepage fetched but no emails extracted
+
+  IT-COM-096057  Comune di Sala Biellese  (ISTAT 096057, Wikidata Q18158)
+    current (IndicePA)   : comune.salabiellese.bi.it
+    suggested (Wikidata) : comune.salabiellese.bi.it
+    pipeline reason      : homepage fetched but no emails extracted
+
+==============================================================================================================
+### NO_WIKIDATA_WEBSITE (2 entries)
+==============================================================================================================
+
+Wikidata has no P856 for this comune — manual web search needed.
+
+  IT-COM-065032  Comune di Castelnuovo Cilento  (ISTAT 065032, Wikidata Q80787)
+    current (IndicePA)   : castelnuovocilento.eu
+    suggested (Wikidata) : (none)
+    pipeline reason      : homepage fetched but no emails extracted
+
+  IT-COM-090020  Comune di Burgos  (ISTAT 090020, Wikidata )
+    current (IndicePA)   : comuneburgos.gov.it
+    suggested (Wikidata) : (none)
+    pipeline reason      : primary domain DNS failure (comuneburgos.gov.it), no fallback
