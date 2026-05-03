@@ -112,6 +112,36 @@ PAGE_SIZE = 5000  # CKAN datastore_search limit
 USER_AGENT = "mxmap.it-indicepa-fetcher/0.1 (+https://github.com/fpietrosanti/mxmap.it)"
 
 
+# Manual domain overrides — applied at seed-build time when IndicePA's
+# Sito_istituzionale is wrong (typo, defunct .gov.it migration, missing
+# subdomain, etc.) and the standard recovery flow (domain_fallbacks,
+# Wikidata P856, homepage scrape, search-engine fallback) doesn't fix it.
+#
+# Keyed by Codice_IPA (lowercase). Value is the corrected bare hostname
+# (no scheme, no path, no leading "www."). The pipeline runs full mxmap
+# classify() against the corrected domain — same MX checking path as the
+# original. This is the canonical place to record persistent IndicePA
+# data-quality fixes; keep one comment per override explaining why.
+IT_MANUAL_DOMAIN_OVERRIDES: dict[str, str] = {
+    # San Marcello Piteglio (PT) — IndicePA lists comune-sanmarcellopiteglio.info
+    # which has no MX; the working comune site is on .it.
+    "cdsmpi":  "comunesanmarcellopiteglio.it",
+    # Roccagorga (LT) — IndicePA's `comuneroccagorga.it` is DNS-defunct;
+    # the comune uses the standard provincial-prefixed pattern.
+    "c_h413":  "comune.roccagorga.lt.it",
+    # Giungano (SA) — IndicePA's `comune.giungano.sa.it` has no MX; the
+    # working email host is `comunegiungano.sa.it` (no dot before giungano).
+    "c_e060":  "comunegiungano.sa.it",
+    # Pisciotta (SA) — IndicePA's `pisciotta.comune.sa.it` is DNS-defunct;
+    # the working comune site is on the standard pattern.
+    "c_g707":  "comune.pisciotta.sa.it",
+    # Sala Biellese (BI) — IndicePA lists `comune.salabiellese.bi.it` (no MX);
+    # email is hosted on the Provincia Tecnologica Biellese consortium at
+    # ptb.provincia.biella.it.
+    "c_h681":  "ptb.provincia.biella.it",
+}
+
+
 def http_get_json(url: str, *, retries: int = 3, sleep_s: float = 2.0) -> dict[str, Any]:
     """GET a JSON URL with simple retry on transient failures."""
     last_err: Exception | None = None
@@ -327,6 +357,18 @@ def transform(
     if not is_territorial(name, codice_categoria):
         return None
     domain = extract_domain(row.get("Sito_istituzionale"))
+
+    # Manual override hook — applies when IndicePA's Sito_istituzionale is
+    # wrong/defunct and the recovery flow can't reach the right domain.
+    # See IT_MANUAL_DOMAIN_OVERRIDES at the top of this file.
+    codice_ipa_for_override = (row.get("Codice_IPA") or "").strip().lower()
+    domain_override_source: str | None = None
+    if codice_ipa_for_override in IT_MANUAL_DOMAIN_OVERRIDES:
+        override = IT_MANUAL_DOMAIN_OVERRIDES[codice_ipa_for_override]
+        if override and HOSTNAME_RE.match(override.lower()):
+            domain = override.lower()
+            domain_override_source = "manual_override"
+
     if not domain:
         return None
     prefix, _label = LEVEL_MAP[codice_categoria]
@@ -347,7 +389,7 @@ def transform(
 
     domain_fallbacks = extract_domain_fallbacks(row, domain)
 
-    return {
+    seed: dict[str, Any] = {
         "id": entity_id,
         "name": name,
         "country": "IT",
@@ -369,6 +411,9 @@ def transform(
         "ipa_codice_istat": codice_istat_str,
         "ipa_codice_comune_istat": codice_comune_istat_str,
     }
+    if domain_override_source:
+        seed["domain_override_source"] = domain_override_source
+    return seed
 
 
 def main() -> int:
