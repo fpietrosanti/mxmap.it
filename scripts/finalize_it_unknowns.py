@@ -2,23 +2,32 @@
 """Final pass for IT entries still classified as `unknown` after preprocess
 + recover_it_unknowns + reclassify_it_provincial.
 
-Two strategies, applied in order per remaining unknown:
+Four strategies, applied in order per remaining unknown. The first to yield
+a working domain (with MX) wins. The original `domain` field is preserved
+(audit trail of the IndicePA value); `domain_used` records the recovery
+domain that actually worked, and full mxmap classify() runs against it —
+so the typo / migration / wrong-domain fix flows through the standard MX
+pipeline rather than a hardcoded override.
 
-1. **RUPAR Piemonte / CSI Piemonte special case** —
-   If the entry's IndicePA record has any Mail{n} on `cert.ruparpiemonte.it`
-   (a publicly-owned regional PEC infrastructure run by CSI Piemonte for
-   Piemonte comuni), classify as `regional-public` with reason noting the
-   regional sovereign infrastructure dependency. Per user direction in the
-   pipeline review session.
+  S1. PEC publicly-owned infrastructure (RUPAR Piemonte, ASMEPEC):
+      If the IndicePA record has any Mail{n} on cert.ruparpiemonte.it
+      (CSI Piemonte, sovereign regional ICT), classify as regional-public.
+      Same treatment for asmepec.it (ASMEL — consortium owned by comuni).
 
-2. **Homepage email-scrape fallback** —
-   For all other unresolved entries: fetch the comune's primary website
-   homepage (single GET, polite User-Agent, 10s timeout). If DNS resolution
-   itself fails → KO (mark with reason "primary domain DNS failure, no
-   fallback"). If the page is fetched, regex-extract email addresses,
-   filter out third-party junk (iubenda, cookiebot, etc.), and try each
-   email's domain via mxmap's lookup_mx. First domain with MX wins, full
-   classify() runs against it. If no email yields MX → mark as KO.
+  S2. Wikidata P856 correction:
+      Query Wikidata for the comune's official website by ISTAT 6-digit
+      code. If it differs from IndicePA's domain AND has MX, use it.
+      Catches typos (castefranco -> castelfranco, ww. -> www.) and
+      defunct *.gov.it migrations to comune.{name}.{prov}.it.
+
+  S3. Homepage scrape on the IndicePA primary domain:
+      If the primary domain resolves, fetch https://{domain}/, extract
+      emails, try each email's domain via MX. First with MX wins.
+
+  S4. Search-engine + scrape fallback:
+      If S1-S3 all fail, query DuckDuckGo for "comune di {name} sito
+      ufficiale", fetch the top candidate URLs whose hostname looks
+      like a comune site, scrape for emails, MX-test, classify.
 
 Idempotent via the existing `domain_used` field. Re-runs skip already-
 recovered entries.
@@ -36,6 +45,7 @@ import urllib.parse
 import urllib.request
 from collections import Counter
 from pathlib import Path
+from urllib.parse import urlparse
 
 import httpx
 
@@ -59,7 +69,12 @@ DATA = ROOT / "data"
 
 CKAN_BASE = "https://indicepa.gov.it/ipa-dati/api/3/action"
 RESOURCE_ID = "d09adf99-dc10-4349-8c53-27b1e5aa97b6"
-USER_AGENT = "mxmap.it/0.1 (+https://github.com/fpietrosanti/mxmap.it)"
+
+SPARQL_URL = "https://query.wikidata.org/sparql"
+
+DDG_HTML_URL = "https://html.duckduckgo.com/html/"
+
+USER_AGENT = "mxmap.it/0.2 (+https://github.com/fpietrosanti/mxmap.it)"
 
 CONCURRENCY_DNS = 10
 CONCURRENCY_HTTP = 8
@@ -72,8 +87,27 @@ EMAIL_BLOCKLIST = frozenset({
     "example.com", "example.it", "test.it", "domain.com",
     "localhost", "yourcompany.com",
     "sitiwp.com", "designerthemes.com", "templatemonster.com",
-    "elegantthemes.com",
+    "elegantthemes.com", "linkedin.com", "facebook.com", "twitter.com",
+    "instagram.com", "youtube.com", "tiktok.com",
 })
+
+# When DDG returns multiple URLs, we discard hosts on these properties.
+SEARCH_RESULT_HOST_BLOCKLIST = frozenset({
+    "wikipedia.org", "it.wikipedia.org", "en.wikipedia.org", "wikidata.org",
+    "facebook.com", "instagram.com", "twitter.com", "youtube.com",
+    "linkedin.com", "tripadvisor.it", "tripadvisor.com",
+    "tuttitalia.it", "comuni-italiani.it", "italia.indettaglio.it",
+    "italymap.com",
+})
+
+# Italian regional/consortium PEC domains owned by comuni or sovereign
+# regional ICT — when an entry has only PEC mail and one of these is the
+# host, we classify the entry as `regional-public` with reason crediting
+# the consortium. ANY pure-PEC entry on these domains qualifies.
+PUBLIC_PEC_DOMAINS = {
+    "cert.ruparpiemonte.it":  "RUPAR Piemonte / CSI Piemonte (publicly-owned regional ICT)",
+    "asmepec.it":             "ASMEPEC (ASMEL — consortium owned by Italian comuni)",
+}
 
 
 def fetch_ipa_record(codice_ipa: str) -> dict | None:
@@ -93,16 +127,76 @@ def fetch_ipa_record(codice_ipa: str) -> dict | None:
     return records[0] if records else None
 
 
-def detect_rupar_piemonte(raw: dict) -> bool:
-    """Return True if any Mail{1..5} is on cert.ruparpiemonte.it (any case)."""
+def detect_public_pec(raw: dict) -> tuple[str | None, str | None]:
+    """If any Mail{n} is on a public PEC infrastructure domain, return
+    (matched_domain, evidence_string). Otherwise (None, None)."""
     for n in range(1, 6):
         addr = (raw.get(f"Mail{n}") or "").strip().lower()
         if not addr or "@" not in addr:
             continue
         host = addr.rsplit("@", 1)[1].rstrip(".")
-        if host == "cert.ruparpiemonte.it" or host.endswith(".cert.ruparpiemonte.it"):
-            return True
-    return False
+        for pec_domain, evidence in PUBLIC_PEC_DOMAINS.items():
+            if host == pec_domain or host.endswith(f".{pec_domain}"):
+                return pec_domain, evidence
+    return None, None
+
+
+def fetch_wikidata_websites(istat_codes: list[str]) -> dict[str, str]:
+    """Batch-query Wikidata for ISTAT-keyed comune websites (P856).
+
+    Returns {istat_code: hostname}. Comuni with no P856 are absent.
+    """
+    if not istat_codes:
+        return {}
+    values_block = " ".join(f'"{c}"' for c in istat_codes)
+    query = f"""
+SELECT ?istat ?website WHERE {{
+  VALUES ?istat {{ {values_block} }}
+  ?item wdt:P635 ?istat ;
+        wdt:P17 wd:Q38 ;
+        wdt:P856 ?website .
+}}
+"""
+    url = f"{SPARQL_URL}?{urllib.parse.urlencode({'query': query, 'format': 'json'})}"
+    req = urllib.request.Request(
+        url,
+        headers={"User-Agent": USER_AGENT, "Accept": "application/sparql-results+json"},
+    )
+    out: dict[str, str] = {}
+    try:
+        with urllib.request.urlopen(req, timeout=120) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+        for r in data.get("results", {}).get("bindings", []):
+            istat = r["istat"]["value"]
+            website = r.get("website", {}).get("value", "")
+            if not website:
+                continue
+            host = hostname_of(website)
+            if host and istat not in out:
+                out[istat] = host
+    except Exception as e:
+        print(f"  Wikidata batch query error: {e!r}")
+    return out
+
+
+def hostname_of(url: str) -> str:
+    if not url:
+        return ""
+    try:
+        h = urlparse(url if "://" in url else f"https://{url}").hostname or ""
+    except Exception:
+        return ""
+    h = h.lower().rstrip(".")
+    if h.startswith("www."):
+        h = h[4:]
+    return h
+
+
+HOSTNAME_RE = re.compile(r"^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?(?:\.[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)+$")
+
+
+def looks_like_valid_host(h: str) -> bool:
+    return bool(h) and bool(HOSTNAME_RE.match(h))
 
 
 async def classify_domain(domain: str) -> dict | None:
@@ -157,14 +251,13 @@ async def classify_domain(domain: str) -> dict | None:
 
 
 async def fetch_homepage(client: httpx.AsyncClient, domain: str) -> tuple[str | None, str]:
-    """Try https://domain/ first, fall back to http://. Return (text, status)
+    """Try https://domain/, fall back to http://. Return (text, status)
     where status is 'ok' / 'dns_fail' / 'http_fail' / 'empty'."""
     for scheme in ("https", "http"):
         url = f"{scheme}://{domain}/"
         try:
             r = await client.get(url, follow_redirects=True, timeout=10.0)
         except httpx.ConnectError as e:
-            # Distinguish DNS failure (NXDOMAIN, no IP) from connection refused.
             msg = str(e).lower()
             if "name" in msg or "resolve" in msg or "dns" in msg or "nodename" in msg or "getaddrinfo" in msg:
                 return None, "dns_fail"
@@ -182,10 +275,9 @@ async def fetch_homepage(client: httpx.AsyncClient, domain: str) -> tuple[str | 
 
 
 def extract_emails(html: str, primary_domain: str) -> list[str]:
-    """Pull email addresses out of the HTML, filter junk vendors, and order by
-    relevance: same registrable domain as primary_domain first, then everything
-    else."""
-    primary_reg = ".".join(primary_domain.lower().split(".")[-2:])
+    """Pull email addresses from HTML, filter junk, prefer same-registrable
+    domain as primary_domain."""
+    primary_reg = ".".join((primary_domain or "").lower().split(".")[-2:])
     candidates = set(EMAIL_RE.findall(html or ""))
     same_dom: list[str] = []
     other: list[str] = []
@@ -194,14 +286,8 @@ def extract_emails(html: str, primary_domain: str) -> list[str]:
         if "@" not in addr:
             continue
         host = addr.rsplit("@", 1)[1]
-        # Block third-party vendors
         host_reg = ".".join(host.split(".")[-2:])
         if host_reg in EMAIL_BLOCKLIST:
-            continue
-        # Heuristic skip: privacy/dpo/cookie role on third-party infrastructure
-        local = addr.split("@", 1)[0]
-        if local in {"webmaster", "admin"} and host_reg not in {primary_reg}:
-            other.append(addr)
             continue
         if host == primary_domain or host.endswith(f".{primary_domain}") or host_reg == primary_reg:
             same_dom.append(addr)
@@ -210,77 +296,196 @@ def extract_emails(html: str, primary_domain: str) -> list[str]:
     return same_dom + other
 
 
+def parse_ddg_html(html: str) -> list[str]:
+    """Extract result hostnames from a DuckDuckGo HTML page."""
+    if not html:
+        return []
+    # DDG wraps URLs as href="/l/?uddg=ENCODED&..." — extract the uddg=
+    # parameter and decode, OR direct hrefs starting with http(s)://.
+    urls: list[str] = []
+    seen: set[str] = set()
+    # Direct hrefs
+    for m in re.finditer(r'href="(https?://[^"]+)"', html):
+        url = m.group(1)
+        if url in seen:
+            continue
+        seen.add(url)
+        urls.append(url)
+    # DDG redirect format
+    for m in re.finditer(r'href="//duckduckgo\.com/l/\?uddg=([^&"]+)', html):
+        try:
+            url = urllib.parse.unquote(m.group(1))
+        except Exception:
+            continue
+        if url not in seen:
+            seen.add(url)
+            urls.append(url)
+    return urls
+
+
+async def search_for_comune_website(
+    client: httpx.AsyncClient,
+    name: str,
+    primary_domain: str,
+) -> list[str]:
+    """Query DuckDuckGo for "{name} sito ufficiale" and return candidate
+    hostnames (filtered)."""
+    query = f"{name} sito ufficiale"
+    try:
+        r = await client.post(DDG_HTML_URL, data={"q": query}, timeout=15.0,
+                              follow_redirects=True)
+    except Exception as e:
+        print(f"    DDG error for {name!r}: {e!r}")
+        return []
+    if r.status_code >= 400 or not r.text:
+        return []
+    urls = parse_ddg_html(r.text)
+    primary_reg = ".".join((primary_domain or "").lower().split(".")[-2:])
+    hosts: list[str] = []
+    seen: set[str] = set()
+    for url in urls[:30]:
+        h = hostname_of(url)
+        if not h or not looks_like_valid_host(h):
+            continue
+        if h in seen:
+            continue
+        h_reg = ".".join(h.split(".")[-2:])
+        if h_reg in SEARCH_RESULT_HOST_BLOCKLIST or h in SEARCH_RESULT_HOST_BLOCKLIST:
+            continue
+        # Prefer hostnames containing "comune" OR matching the primary's
+        # registrable suffix (e.g. *.<prov>.it for the comune's province).
+        seen.add(h)
+        hosts.append(h)
+    # Re-rank: comune-named first, then same-registrable, then rest.
+    def score(h: str) -> int:
+        s = 0
+        if "comune" in h or "municipio" in h or "citta" in h:
+            s += 10
+        h_reg = ".".join(h.split(".")[-2:])
+        if h_reg == primary_reg:
+            s += 5
+        if h.endswith(".it"):
+            s += 1
+        return -s
+    hosts.sort(key=score)
+    return hosts[:6]
+
+
+async def try_domain_for_classify(domain: str, dns_sem: asyncio.Semaphore) -> dict | None:
+    async with dns_sem:
+        try:
+            return await classify_domain(domain)
+        except Exception:
+            return None
+
+
+async def try_scrape_for_email_mx(
+    client: httpx.AsyncClient,
+    target_host: str,
+    primary_domain: str,
+    http_sem: asyncio.Semaphore,
+    dns_sem: asyncio.Semaphore,
+) -> tuple[dict | None, str | None, str | None, list[str]]:
+    """Fetch homepage of target_host; extract emails; MX-test each. Return
+    (classification, email_used, host_used, tried_hosts)."""
+    async with http_sem:
+        text, status = await fetch_homepage(client, target_host)
+    if not text:
+        return None, None, None, []
+    emails = extract_emails(text, primary_domain)
+    if not emails:
+        return None, None, None, []
+    tried: list[str] = []
+    for addr in emails[:6]:
+        host = addr.rsplit("@", 1)[1]
+        tried.append(host)
+        result = await try_domain_for_classify(host, dns_sem)
+        if result:
+            return result, addr, host, tried
+    return None, None, None, tried
+
+
 async def finalize_one(
     key: str,
     entry: dict,
     seed_entry: dict,
+    raw: dict | None,
+    wd_corrections: dict[str, str],
     client: httpx.AsyncClient,
     dns_sem: asyncio.Semaphore,
     http_sem: asyncio.Semaphore,
 ) -> tuple[str, dict, str]:
-    """Run the two strategies. Returns (key, mutation_dict, status)."""
+    """Try the four strategies; return (key, mutation_dict, status)."""
     primary = (entry.get("domain") or "").strip().lower()
-    codice_ipa = seed_entry.get("ipa_codice_ipa")
-    raw = fetch_ipa_record(codice_ipa) if codice_ipa else None
+    name = seed_entry.get("name") or entry.get("name") or ""
+    istat = (seed_entry.get("ipa_codice_comune_istat") or "").zfill(6)
 
-    # Strategy 1: cert.ruparpiemonte.it special case.
-    if raw and detect_rupar_piemonte(raw):
-        async with dns_sem:
-            try:
-                result = await classify_domain("ruparpiemonte.it")
-            except Exception:
-                result = None
-        # We set the entry to regional-public regardless of MX result, but
-        # if MX is found we use the actual classification too.
-        mutation = {
-            "domain_used": "ruparpiemonte.it",
-            "provider": "regional-public",
-            "reason": "PEC on cert.ruparpiemonte.it -> RUPAR Piemonte / CSI Piemonte (publicly-owned regional ICT)",
-            "rupar_piemonte": True,
-        }
+    # S1 — PEC publicly-owned (RUPAR Piemonte / ASMEPEC)
+    if raw:
+        matched, evidence = detect_public_pec(raw)
+        if matched:
+            return key, {
+                "domain_used": matched.split(".")[-2] + ".it" if matched.endswith(".it") else matched,
+                "provider": "regional-public",
+                "reason": f"only-PEC entry on {matched} -> {evidence}",
+                "public_pec_match": matched,
+            }, "public_pec"
+
+    # S2 — Wikidata P856 correction
+    wd_host = wd_corrections.get(istat)
+    if wd_host and wd_host != primary:
+        result = await try_domain_for_classify(wd_host, dns_sem)
         if result:
-            for k, v in result.items():
-                if k != "provider" and k != "reason":
-                    mutation[k] = v
-        return key, mutation, "rupar"
+            mutation = {
+                "domain_used": wd_host,
+                "domain_correction_source": "wikidata_p856",
+            }
+            mutation.update(result)
+            return key, mutation, "wikidata"
 
-    # Strategy 2: scrape the homepage for emails, try each email's domain.
-    if not primary:
-        return key, {"reason": "no primary domain"}, "no_primary"
-    async with http_sem:
-        text, fetch_status = await fetch_homepage(client, primary)
-    if fetch_status == "dns_fail":
-        return key, {"reason": f"primary domain DNS failure ({primary}), no fallback"}, "dns_fail"
-    if not text:
-        return key, {"reason": f"homepage unreachable ({fetch_status}); no scrape candidate"}, fetch_status
-
-    emails = extract_emails(text, primary)
-    if not emails:
-        return key, {"reason": "homepage fetched but no emails extracted"}, "no_email"
-
-    # Try each email's domain via DNS
-    async with dns_sem:
-        tried = []
-        for addr in emails[:6]:  # up to first 6 candidates
-            host = addr.rsplit("@", 1)[1]
-            tried.append(host)
-            try:
-                result = await classify_domain(host)
-            except Exception:
-                continue
-            if result is None:
-                continue
+    # S3 — Homepage scrape on primary domain
+    if primary:
+        result, addr, host, tried = await try_scrape_for_email_mx(
+            client, primary, primary, http_sem, dns_sem,
+        )
+        if result:
             mutation = {
                 "domain_used": host,
                 "scraped_email": addr,
                 "scrape_tried_hosts": tried,
+                "domain_correction_source": "homepage_scrape_primary",
             }
             mutation.update(result)
-            return key, mutation, "scraped"
-    return key, {
-        "reason": f"scraped {len(emails)} emails, none have MX (tried {', '.join(tried[:6])})",
-        "scrape_tried_hosts": tried,
-    }, "scrape_no_mx"
+            return key, mutation, "scrape_primary"
+
+    # S4 — Search-engine fallback
+    candidates = await search_for_comune_website(client, name, primary)
+    if candidates:
+        for cand in candidates:
+            if cand == primary:
+                continue
+            result, addr, host, tried = await try_scrape_for_email_mx(
+                client, cand, primary, http_sem, dns_sem,
+            )
+            if result:
+                mutation = {
+                    "domain_used": host,
+                    "scraped_email": addr,
+                    "scrape_tried_hosts": tried,
+                    "search_engine_winner": cand,
+                    "search_engine_candidates": candidates,
+                    "domain_correction_source": "search_engine",
+                }
+                mutation.update(result)
+                return key, mutation, "search_engine"
+        # S4 ran but found no working candidate
+        return key, {
+            "reason": f"search engine returned {len(candidates)} candidates; none yielded MX",
+            "search_engine_candidates": candidates,
+        }, "search_no_mx"
+
+    # All strategies failed
+    return key, {"reason": "all strategies exhausted (S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"}, "all_failed"
 
 
 async def main_async() -> int:
@@ -290,6 +495,7 @@ async def main_async() -> int:
     data = json.loads(data_path.read_text(encoding="utf-8"))
     muns = data["municipalities"]
 
+    # Identify candidates
     candidates: list[tuple[str, dict, dict]] = []
     for key, entry in muns.items():
         if entry.get("country") != "IT":
@@ -304,9 +510,24 @@ async def main_async() -> int:
             continue
         candidates.append((key, entry, seed_entry))
 
-    print(f"Found {len(candidates)} IT entries still unknown after recovery+provincial passes")
+    print(f"Found {len(candidates)} IT entries still unknown")
     if not candidates:
         return 0
+
+    # Pre-fetch IndicePA records (for S1 PEC detection)
+    print(f"Pre-fetching IndicePA records for {len(candidates)} candidates...")
+    raw_by_key: dict[str, dict | None] = {}
+    for k, e, s in candidates:
+        codice_ipa = s.get("ipa_codice_ipa")
+        raw_by_key[k] = fetch_ipa_record(codice_ipa) if codice_ipa else None
+        time.sleep(0.05)
+
+    # Pre-fetch Wikidata corrections (single batched SPARQL query)
+    print("Batch-querying Wikidata P856 for all candidate ISTAT codes...")
+    istat_codes = sorted({(s.get("ipa_codice_comune_istat") or "").zfill(6)
+                           for _, _, s in candidates if s.get("ipa_codice_comune_istat")})
+    wd_corrections = fetch_wikidata_websites(istat_codes)
+    print(f"  Wikidata returned {len(wd_corrections)} entries with P856")
 
     dns_sem = asyncio.Semaphore(CONCURRENCY_DNS)
     http_sem = asyncio.Semaphore(CONCURRENCY_HTTP)
@@ -316,11 +537,12 @@ async def main_async() -> int:
 
     async with httpx.AsyncClient(
         headers={"User-Agent": USER_AGENT},
-        verify=False,  # PA sites occasionally have self-signed certs; we just want emails
-        max_redirects=3,
+        verify=False,  # PA sites occasionally have self-signed certs
+        max_redirects=4,
     ) as client:
         tasks = [
-            finalize_one(k, e, s, client, dns_sem, http_sem)
+            finalize_one(k, e, s, raw_by_key.get(k), wd_corrections,
+                         client, dns_sem, http_sem)
             for k, e, s in candidates
         ]
         n_done = 0
@@ -331,14 +553,15 @@ async def main_async() -> int:
             entry = muns[key]
             for k, v in mutation.items():
                 entry[k] = v
-            if status in ("rupar", "scraped"):
+            if status in ("public_pec", "wikidata", "scrape_primary", "search_engine"):
                 provider_counter[entry.get("provider", "?")] += 1
-            if n_done % 10 == 0:
+            if n_done % 5 == 0:
                 print(f"  [{n_done}/{len(candidates)}] {dict(status_counter)}")
 
     counts: Counter[str] = Counter(v.get("provider", "unknown") for v in muns.values())
     data["counts"] = dict(counts)
-    data_path.write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    data_path.write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")),
+                         encoding="utf-8")
 
     print()
     print("=== Status breakdown ===")

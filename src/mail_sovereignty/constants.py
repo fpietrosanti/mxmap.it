@@ -59,6 +59,14 @@ ITALIAN_REGIONAL_PUBLIC_KEYWORDS = [
     "siag.it", "provinz.bz.it",                     # Provincia Autonoma Bolzano
     "pasubiotecnologia.it",                         # Vicenza/Verona/Padova
     "sogei.it",                                     # Stato centrale (MEF)
+    # ASMEL family — national association of Italian comuni; the regional
+    # branches (ASMECAL Calabria, ASMECAM Campania) and shared services
+    # (ASMENET website hosting, ASMEPEC certified email) are publicly-owned
+    # consortium infrastructure, not third-party vendors.
+    "asmel.it", "asmenet.it", "asmepec.it",
+    "asmecal.it", "asmecam.it",
+    # Mountain-community consortium serving South Tyrol comuni (Gemeindenverband)
+    "gvcc.net",
 ]
 
 # Italian private PA IT contractors (NOT in-house). Kept separate so the map
@@ -449,19 +457,19 @@ GATEWAY_KEYWORDS = {
     # Italian PA software vendors / SaaS gateways (mxmap.it). These typically
     # relay to a hyperscaler backend or self-hosted cluster — the look-through
     # logic in classify.py finds the actual backend via SPF/autodiscover/DKIM.
+    # NOTE: ASMECAL/ASMECAM/ASMENET/ASMEPEC and GVCC moved to
+    # ITALIAN_REGIONAL_PUBLIC_KEYWORDS (those are publicly-owned consortia
+    # of comuni, not third-party vendors).
     "halley": ["halleylombardia.it", "halley.it", "halleynt.it", "halleyveneto.it"],
     "ilger": ["ilger.com"],
     "demosdata": ["demosdata.it"],
     "epublic": ["epublic.it"],
     "sitek": ["si-tek.net"],
-    "asmecal": ["asmecal.it"],
-    "asmecam": ["asmecam.it"],
     "invallee": ["invallee.it"],
     "cliocom": ["cliocom.it"],
     "antispamsolution": ["antispamsolution.it"],
     "carbonio": ["carboniocloud.com", "carbonio.com"],
     "zimbraopen": ["zimbraopen.it"],
-    "gvcc": ["gvcc.net"],
     "widestore": ["widestore.net"],
     "libraesva": ["libraesva.com"],
     "datalab-it": ["datalab.it"],
