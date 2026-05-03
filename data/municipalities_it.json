@@ -42668,13 +42668,14 @@
     "name": "Comune di Giungano",
     "country": "IT",
     "region": null,
-    "domain": "comune.giungano.sa.it",
+    "domain": "comunegiungano.sa.it",
     "osm_relation_id": 40476,
     "domain_fallbacks": [],
     "ipa_codice_ipa": "c_e060",
     "ipa_codice_categoria": "L6",
     "ipa_codice_istat": "114294",
-    "ipa_codice_comune_istat": "065058"
+    "ipa_codice_comune_istat": "065058",
+    "domain_override_source": "manual_override"
   },
   {
     "id": "IT-COM-075033",
@@ -69410,13 +69411,14 @@
     "name": "Comune di Pisciotta",
     "country": "IT",
     "region": null,
-    "domain": "pisciotta.comune.sa.it",
+    "domain": "comune.pisciotta.sa.it",
     "osm_relation_id": 40275,
     "domain_fallbacks": [],
     "ipa_codice_ipa": "c_g707",
     "ipa_codice_categoria": "L6",
     "ipa_codice_istat": "10701156",
-    "ipa_codice_comune_istat": "065096"
+    "ipa_codice_comune_istat": "065096",
+    "domain_override_source": "manual_override"
   },
   {
     "id": "IT-COM-017143",
@@ -76245,13 +76247,14 @@
     "name": "Comune di Roccagorga",
     "country": "IT",
     "region": null,
-    "domain": "comuneroccagorga.it",
+    "domain": "comune.roccagorga.lt.it",
     "osm_relation_id": 41340,
     "domain_fallbacks": [],
     "ipa_codice_ipa": "c_h413",
     "ipa_codice_categoria": "L6",
     "ipa_codice_istat": "12538776",
-    "ipa_codice_comune_istat": "059021"
+    "ipa_codice_comune_istat": "059021",
+    "domain_override_source": "manual_override"
   },
   {
     "id": "IT-COM-006147",
@@ -78899,13 +78902,14 @@
     "name": "Comune di Sala Biellese",
     "country": "IT",
     "region": null,
-    "domain": "comune.salabiellese.bi.it",
+    "domain": "ptb.provincia.biella.it",
     "osm_relation_id": 45172,
     "domain_fallbacks": [],
     "ipa_codice_ipa": "c_h681",
     "ipa_codice_categoria": "L6",
     "ipa_codice_istat": "12534245",
-    "ipa_codice_comune_istat": "096057"
+    "ipa_codice_comune_istat": "096057",
+    "domain_override_source": "manual_override"
   },
   {
     "id": "IT-COM-034031",
@@ -106075,13 +106079,14 @@
     "name": "Comune di San Marcello Piteglio",
     "country": "IT",
     "region": null,
-    "domain": "comune-sanmarcellopiteglio.info",
+    "domain": "comunesanmarcellopiteglio.it",
     "osm_relation_id": 42846,
     "domain_fallbacks": [],
     "ipa_codice_ipa": "cdsmpi",
     "ipa_codice_categoria": "L6",
     "ipa_codice_istat": "31046752",
-    "ipa_codice_comune_istat": "047024"
+    "ipa_codice_comune_istat": "047024",
+    "domain_override_source": "manual_override"
   },
   {
     "id": "IT-COM-079129",
