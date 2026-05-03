@@ -26,7 +26,49 @@ mxmap.it shows only Italy, in **Italian primary / English secondary**. The codeb
 ## Repo
 - Origin: `https://github.com/fpietrosanti/mxmap.it`
 - Upstream reference: `https://github.com/livenson/mxmap` (Baltic fork, used as starting point)
-- Branch strategy: work on `italy` branch initially.
+- Branch: `main` (single-branch fork; no `italy` branch).
+
+## Reproducible end-to-end pipeline
+
+The whole Italian build is wired up as a single shell script. Run it from a
+fresh clone — every artifact below regenerates from public sources.
+
+```bash
+git clone https://github.com/fpietrosanti/mxmap.it.git mxmap
+cd mxmap
+curl -LsSf https://astral.sh/uv/install.sh | sh    # install uv if missing
+uv sync                                             # install Python + deps
+./scripts/run_it_pipeline.sh                        # ~15 min cold, ~3 min warm
+```
+
+What `run_it_pipeline.sh` does, in order:
+
+| # | Script | What | Public inputs |
+|---|---|---|---|
+| 1 | `scripts/build_istat_osm_crosswalk.py` | Wikidata SPARQL → ISTAT / IPA → OSM relation_id (1 query, ~5s) | Wikidata Query Service |
+| 2 | `scripts/fetch_indicepa.py` | IndicePA CKAN JSON → `data/municipalities_it.json` (~8 K territorial PAs, drops PEC + consorzi); also emits `domain_fallbacks` from non-PEC email fields | IndicePA `enti` dataset |
+| 3 | `uv run preprocess IT` | mxmap DNS-based MX/SPF/CNAME/ASN/DKIM/autodiscover/MS365-tenant lookup + classification | DNS (system, Google, Cloudflare); Microsoft `getuserrealm.srf` |
+| 4 | `scripts/recover_it_unknowns.py` | For each entry classified as Unknown, retry against `domain_fallbacks` (non-PEC email-derived hostnames). E.g. `comune.albianodivrea.to.it` (no MX) → recover via `albiano.divrea@ruparpiemonte.it` → MX classification on `ruparpiemonte.it`. **Never uses PEC.** | DNS |
+| 5 | `scripts/reclassify_it_provincial.py` | Detect `XX.it` provincial-shared MX pattern; for each, look-through the *comune's own* DKIM / autodiscover / MS365 tenant to find the actual backend behind the provincial gateway. If a hyperscaler is found → reclassify with reason "via provincial gateway XX.it". Else → label `provincial-shared`. | DNS, Microsoft `getuserrealm.srf` |
+| 6 | `uv run postprocess IT` | Manual overrides + SMTP banner check (scrape step inert for IT — we don't scrape) | DNS, port 25 |
+| 7 | `uv run validate` | Confidence scoring + quality gate | (offline) |
+| 8 | `scripts/report_it_per_province.py` | Per-provincia + per-regione provider distribution → `data/reports/it_per_province.{txt,json}` | (offline) |
+| ✱ | `scripts/fetch_it_boundaries.py` | Overpass at admin_level 4/6/8 → `topo/it_{region,province,municipality}.topo.json` + manifest update. Skip with `SKIP_TOPO=1` (only needed when boundaries change). | Overpass API |
+
+Re-running is idempotent. The DNS cache is stored under `data/dns_cache/it.json`
+and reused across runs (7-day TTL); recover-unknowns is keyed off the
+`domain_used` field so already-recovered entries are skipped; provincial
+reclassification is keyed off `provincial_gateway`.
+
+### Server-deployed reproducibility
+
+The same pipeline runs unchanged on the deployment box (`51.158.36.151`,
+SSH user `mxmap.it`, `~/mxmap`). All steps are network-bound and parallel-safe.
+
+```bash
+ssh mxmap.it@51.158.36.151
+cd ~/mxmap && git pull --ff-only && ./scripts/run_it_pipeline.sh
+```
 
 ## Phase 1: Seed data
 

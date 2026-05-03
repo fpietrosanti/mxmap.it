@@ -182,6 +182,37 @@ def extract_domain(sito: str | None) -> str | None:
     return host
 
 
+def extract_domain_fallbacks(row: dict[str, Any], primary_domain: str | None) -> list[str]:
+    """Extract non-PEC email-derived domains for use when the primary website
+    domain has no MX. Order: Mail1 first, Mail5 last. Dedupes, excludes primary.
+
+    PEC domains are NEVER included (per docs/countries/ITALY.md). Italian PEC
+    is dominated by 5-6 providers and doesn't represent the office email
+    infrastructure we want to classify.
+    """
+    out: list[str] = []
+    seen: set[str] = set()
+    if primary_domain:
+        seen.add(primary_domain.lower().lstrip("www."))
+    for n in range(1, 6):
+        addr = (row.get(f"Mail{n}") or "").strip()
+        kind = (row.get(f"Tipo_Mail{n}") or "").strip().lower()
+        if not addr or kind == "pec":
+            continue
+        if "@" not in addr:
+            continue
+        host = addr.rsplit("@", 1)[1].strip().lower().rstrip(".")
+        if host.startswith("www."):
+            host = host[4:]
+        if not host or not HOSTNAME_RE.match(host):
+            continue
+        if host in seen:
+            continue
+        seen.add(host)
+        out.append(host)
+    return out
+
+
 def is_territorial(name: str, codice_categoria: str) -> bool:
     """Return True only for territorial entities at the right level.
 
@@ -314,6 +345,8 @@ def transform(
         codice_comune_istat=codice_comune_istat_str,
     )
 
+    domain_fallbacks = extract_domain_fallbacks(row, domain)
+
     return {
         "id": entity_id,
         "name": name,
@@ -323,6 +356,12 @@ def transform(
         "region": None,
         "domain": domain,
         "osm_relation_id": osm_id,
+        # mxmap.it Italian extension: ordered list of non-PEC email-derived
+        # hostnames. Used by scripts/recover_it_unknowns.py when primary domain
+        # has no MX (e.g., comune.albianodivrea.to.it has no MX, but Mail2 is
+        # albiano.divrea@ruparpiemonte.it — recovery picks up ruparpiemonte.it).
+        # NEVER includes PEC domains.
+        "domain_fallbacks": domain_fallbacks,
         # IndicePA bookkeeping (kept for downstream joins / audits — mxmap will
         # ignore unknown keys)
         "ipa_codice_ipa": codice_ipa,
