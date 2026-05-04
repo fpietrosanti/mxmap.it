@@ -67,7 +67,12 @@ PROVIDER_DISPLAY = {
     "elkdata": "Provider Italiano",
     # Italian publicly-owned consortium / regional ICT
     "regional-public": "Cloud Italiano",
-    "pa-contractor-private": "Contractor PA privato",
+    # Italian PA private contractors (Engineering, Almaviva) — aggregated into
+    # the citizen-facing "Provider Italiano" bucket because, from a CLOUD-Act
+    # / digital-sovereignty perspective, they are Italian-jurisdiction private
+    # companies just like Aruba/Register. The technical classification stays
+    # distinct in data.json for auditing/reporting.
+    "pa-contractor-private": "Provider Italiano",
     # Self-hosted (renamed)
     "independent": "Infrastruttura autonoma",
     # Provincial-shared
@@ -88,7 +93,6 @@ COLORS = {
     "Provider Italiano": "#2E7D32",      # commercial Italian
     "Infrastruttura autonoma": "#558B2F",
     "Mail provinciale condivisa": "#7CB342",
-    "Contractor PA privato": "#AED581",
     # Foreign minor
     "Zoho": "#7C3AED",
     "Yandex": "#FFCC00",
@@ -258,7 +262,7 @@ def main():
         print("Error: data.json not found")
         sys.exit(1)
 
-    with open(data_path) as f:
+    with open(data_path, encoding="utf-8") as f:
         raw = json.load(f)
 
     munis = raw.get("municipalities", {})
@@ -284,7 +288,7 @@ def main():
     # Write region-level aggregations (lightweight, loaded first)
     regions_out = ROOT / "data-regions.json"
     regions_data = build_region_data(munis, generated)
-    with open(regions_out, "w") as f:
+    with open(regions_out, "w", encoding="utf-8") as f:
         json.dump(regions_data, f, separators=(",", ":"), ensure_ascii=False)
     print(f"  data-regions.json: {regions_out.stat().st_size:,} bytes")
 
@@ -308,7 +312,7 @@ def main():
     total_country_size = 0
     for cc, entries in by_country.items():
         cc_path = summary_dir / f"{cc.lower()}.json"
-        with open(cc_path, "w") as f:
+        with open(cc_path, "w", encoding="utf-8") as f:
             json.dump(entries, f, separators=(",", ":"), ensure_ascii=False)
         total_country_size += cc_path.stat().st_size
     print(f"  data/summary/*.json: {len(by_country)} files, {total_country_size:,} bytes total")
@@ -319,13 +323,13 @@ def main():
         "generated": generated,
         "municipalities": summary_munis,
     }
-    with open(summary_out, "w") as f:
+    with open(summary_out, "w", encoding="utf-8") as f:
         json.dump(summary_data, f, separators=(",", ":"), ensure_ascii=False)
     print(f"  data-summary.json: {summary_out.stat().st_size:,} bytes")
 
     # Write detail
     detail_out = ROOT / "data-detail.json"
-    with open(detail_out, "w") as f:
+    with open(detail_out, "w", encoding="utf-8") as f:
         json.dump(detail_munis, f, separators=(",", ":"), ensure_ascii=False)
     print(f"  data-detail.json:  {detail_out.stat().st_size:,} bytes")
 
