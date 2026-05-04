@@ -2,20 +2,35 @@
 """Reclassify Italian entries whose MX is on a 2-letter province SLD (XX.it).
 
 The XX.it naming pattern is widely used in Italian PA for provincial-shared
-mail infrastructure (e.g., comune.alessandria.al.it has MX on something.al.it,
+mail infrastructure (comune.alessandria.al.it has MX on something.al.it,
 where al.it is a Provincia di Alessandria shared mail server).
 
-This is a *naming convention*, not a provider — the actual backend behind the
-provincial mail server may still be Microsoft 365, Google Workspace, Aruba, or
-self-hosted. So for each entry whose MX matches XX.it (with XX in the valid
-Italian province code set), we re-run a focused look-through against the
-*comune's own* DKIM / SPF / autodiscover / MS365-tenant to find the true backend.
+The provincial server's *own* backend determines the comune's true provider
+— a comune relayed via al.it that is itself on Microsoft 365 IS on Microsoft
+365 (US jurisdiction); a comune via a self-hosted province IS on sovereign
+public infrastructure (Cloud Italiano, since the provincia is itself a
+public administration).
 
-If a hyperscaler tenant is found → reclassify as that provider, reason notes
-the provincial gateway. Otherwise → label as `provincial-shared` with the
-province code in the reason.
+This script consumes data/it_provincial_backends.json (built by
+scripts/probe_it_provincial_backends.py — runs full mxmap classify() against
+each XX.it domain) and propagates the probed backend down to each comune
+that uses that province's mail. Falls back to comune-domain look-through
+(DKIM / autodiscover / MS365 tenant) when the probe cache is missing.
 
-Pipeline position: runs AFTER preprocess + recover_it_unknowns.
+Strategy per entry whose first MX matches XX.it (XX in the valid set):
+  1. Read provincial_backends[XX].provider from the probe cache
+     - hyperscaler (microsoft/google/aws) -> reclassify as that hyperscaler
+     - aruba/register-it/seeweb/infocert/namirial/local-isp -> Provider Italiano
+       (display label collapses these via providerDisplayMap in index.html)
+     - independent / regional-public / no MX on XX.it -> regional-public
+       (the provincia is a public administration, so its own infrastructure
+        is sovereign-by-construction)
+  2. If probe cache is missing for this XX, fall back to look-through on
+     the comune's own domain (legacy behaviour).
+  3. Always annotate the entry with `provincial_gateway: XX` and a reason
+     string mentioning the gateway, whatever the final provider is.
+
+Pipeline position: AFTER probe_it_provincial_backends + recover_it_unknowns.
 
 Usage: uv run python3 scripts/reclassify_it_provincial.py
 """
@@ -146,14 +161,14 @@ async def look_through(domain: str) -> tuple[str | None, str]:
     return None, "no DKIM/autodiscover/tenant/TXT signal"
 
 
-async def reclassify_one(
+async def reclassify_one_lookthrough(
     key: str,
     entry: dict,
     province_code: str,
     sem: asyncio.Semaphore,
 ) -> tuple[str, str | None, str, str]:
-    """Try the look-through. Return (key, new_provider_or_None_for_provincial,
-    evidence, province_code)."""
+    """Legacy fallback: comune-side look-through when the province probe
+    cache lacks an entry for this code."""
     domain = entry.get("domain")
     if not domain:
         return key, None, "no primary domain", province_code
@@ -165,11 +180,54 @@ async def reclassify_one(
     return key, provider, evidence, province_code
 
 
+# Categorisation of the probed backend into the final provider tag.
+def map_probed_provider(probed: dict | None) -> tuple[str | None, str]:
+    """Map the probed backend on XX.it -> final provider tag for the comune
+    + a short evidence string. Returns (provider_or_None, evidence)."""
+    if probed is None:
+        # XX.it has no MX or wasn't probed — comune is on provincial public
+        # infrastructure, conservatively tag as regional-public.
+        return "regional-public", "no MX on XX.it; province is public administration"
+    p = probed.get("provider", "")
+    reason = probed.get("reason", "")
+    if p in {"microsoft", "google", "aws"}:
+        return p, f"XX.it backend = {p} ({reason})"
+    if p in {"aruba", "register-it", "seeweb", "infocert", "namirial",
+             "local-isp", "telia", "tet", "zone", "elkdata", "zoho", "yandex"}:
+        # Italian commercial provider via province — collapses to
+        # 'Provider Italiano' display label (providerDisplayMap in index.html).
+        return p, f"XX.it backend = {p} ({reason})"
+    if p in {"regional-public", "pa-contractor-private"}:
+        return p, f"XX.it backend = {p} ({reason})"
+    if p == "independent":
+        # XX.it is self-hosted by the province itself. Provincia is a
+        # public administration, so this IS sovereign infrastructure ->
+        # regional-public.
+        return "regional-public", f"XX.it self-hosted by provincia ({reason})"
+    if p == "unknown":
+        # Probe couldn't classify — tag as regional-public since province is public
+        return "regional-public", f"XX.it backend unknown; province is public administration"
+    return None, f"unrecognised probed provider: {p!r}"
+
+
 async def main_async() -> int:
     data_path = ROOT / "data.json"
     with open(data_path, encoding="utf-8") as f:
         data = json.load(f)
     muns = data["municipalities"]
+
+    # Load the per-province backend probe cache (if present)
+    probe_path = DATA / "it_provincial_backends.json"
+    by_province: dict[str, dict | None] = {}
+    if probe_path.exists():
+        probe_doc = json.loads(probe_path.read_text(encoding="utf-8"))
+        by_province = probe_doc.get("by_province_code", {})
+        print(f"Loaded probe cache: {len(by_province)} provinces "
+              f"({sum(1 for v in by_province.values() if v) } with MX)")
+    else:
+        print(f"WARNING: {probe_path} missing — falling back to comune-side "
+              f"look-through. Run scripts/probe_it_provincial_backends.py first "
+              f"for accurate backend attribution.")
 
     candidates: list[tuple[str, dict, str]] = []
     for key, entry in muns.items():
@@ -190,38 +248,55 @@ async def main_async() -> int:
     if not candidates:
         return 0
 
-    sem = asyncio.Semaphore(CONCURRENCY)
-    tasks = [reclassify_one(k, e, p, sem) for k, e, p in candidates]
-
     province_distribution: Counter[str] = Counter()
     backend_found: Counter[str] = Counter()
-    no_backend = 0
+    fallback_lookthrough_keys: list[tuple[str, dict, str]] = []
     n_done = 0
 
-    for coro in asyncio.as_completed(tasks):
-        key, provider, evidence, province_code = await coro
-        n_done += 1
-        entry = muns[key]
+    # Phase A — apply the probe cache (synchronous, fast).
+    for key, entry, province_code in candidates:
         province_distribution[province_code] += 1
         entry["provincial_gateway"] = province_code
-        if provider:
-            entry["provider"] = provider
-            entry["reason"] = (
-                f"via provincial gateway {province_code}.it; {evidence}"
-            )
-            backend_found[provider] += 1
-        else:
-            entry["provider"] = "provincial-shared"
-            entry["reason"] = (
-                f"shared mail on provincia {province_code}; "
-                f"no hyperscaler backend detected ({evidence})"
-            )
-            no_backend += 1
-        if n_done % 50 == 0:
-            print(
-                f"  [{n_done}/{len(candidates)}] backend_found="
-                f"{sum(backend_found.values())}  provincial_only={no_backend}"
-            )
+        if province_code in by_province:
+            probed = by_province[province_code]
+            provider, evidence = map_probed_provider(probed)
+            if provider:
+                entry["provider"] = provider
+                entry["reason"] = (
+                    f"via provincial gateway {province_code}.it; {evidence}"
+                )
+                backend_found[provider] += 1
+                n_done += 1
+                continue
+        # No probe entry for this XX — queue legacy look-through
+        fallback_lookthrough_keys.append((key, entry, province_code))
+
+    # Phase B — legacy comune-side look-through for the residue.
+    if fallback_lookthrough_keys:
+        print(f"Probe cache missing {len(fallback_lookthrough_keys)} province codes; "
+              f"falling back to comune-side look-through")
+        sem = asyncio.Semaphore(CONCURRENCY)
+        tasks = [reclassify_one_lookthrough(k, e, p, sem)
+                 for k, e, p in fallback_lookthrough_keys]
+        for coro in asyncio.as_completed(tasks):
+            key, provider, evidence, province_code = await coro
+            n_done += 1
+            entry = muns[key]
+            if provider:
+                entry["provider"] = provider
+                entry["reason"] = (
+                    f"via provincial gateway {province_code}.it; {evidence}"
+                )
+                backend_found[provider] += 1
+            else:
+                # As per the new policy: when nothing is found, the comune
+                # is on the provincia's own infrastructure -> regional-public
+                entry["provider"] = "regional-public"
+                entry["reason"] = (
+                    f"via provincial gateway {province_code}.it; "
+                    f"no hyperscaler signal — provincia is public administration"
+                )
+                backend_found["regional-public"] += 1
 
     # Recompute counts
     counts: Counter[str] = Counter(v.get("provider", "unknown") for v in muns.values())

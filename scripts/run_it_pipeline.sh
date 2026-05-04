@@ -58,7 +58,11 @@ echo "[4/8] Recover Unknown-MX entries via IndicePA non-PEC email fallbacks"
 PYTHONUNBUFFERED=1 uv run python3 scripts/recover_it_unknowns.py
 
 echo ""
-echo "[5/9] Reclassify provincial-shared (XX.it) via comune look-through"
+echo "[5a/9] Probe each XX.it provincial domain for its actual mail backend"
+PYTHONUNBUFFERED=1 uv run python3 scripts/probe_it_provincial_backends.py
+
+echo ""
+echo "[5b/9] Reclassify provincial-shared comuni using the probed backends"
 PYTHONUNBUFFERED=1 uv run python3 scripts/reclassify_it_provincial.py
 
 echo ""
