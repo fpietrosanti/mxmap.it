@@ -229,20 +229,23 @@ async def main_async() -> int:
               f"look-through. Run scripts/probe_it_provincial_backends.py first "
               f"for accurate backend attribution.")
 
-    # Selection policy (allowing idempotent re-run after probe cache changes):
-    # an entry becomes a candidate when ALL of:
-    #   - country = IT
-    #   - first MX matches XX.it (XX in valid Italian province codes)
-    #   - provider is NOT already a hyperscaler (those are correctly attributed
-    #     by preprocess regardless of the gateway)
-    # Note: provincial-shared / independent / local-isp / pa-contractor-private
-    # / regional-public ARE re-processed so that policy updates flow into them.
-    skip_providers = {"microsoft", "google", "aws"}
+    # Selection policy: only reprocess entries that don't yet have a definitive
+    # provider attribution. Specifically:
+    #   - 'provincial-shared'  : legacy from previous reclassify, needs new probe
+    #   - 'independent'        : preprocess fell through to self-hosted; if MX is
+    #                            on XX.it we now know it's actually provincial
+    #   - 'unknown'            : preprocess gave up; provincial-attribution may help
+    # All OTHER providers (microsoft/google/aws/aruba/register-it/seeweb/infocert/
+    # namirial/local-isp/regional-public/pa-contractor-private/zoho/yandex) are
+    # left alone — their attribution came from preprocess MX-keyword matching or
+    # ASN matching, which is already trustworthy. Reprocessing them would only
+    # mis-flip correctly-classified entries.
+    candidate_providers = {"provincial-shared", "independent", "unknown"}
     candidates: list[tuple[str, dict, str]] = []
     for key, entry in muns.items():
         if entry.get("country") != "IT":
             continue
-        if entry.get("provider") in skip_providers:
+        if entry.get("provider") not in candidate_providers:
             continue
         province_code = detect_province(entry)
         if not province_code:
