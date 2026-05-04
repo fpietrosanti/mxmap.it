@@ -51,30 +51,57 @@ DETAIL_FIELDS = {
 
 
 PROVIDER_DISPLAY = {
-    "microsoft": "Microsoft",
-    "google": "Google",
+    "microsoft": "Microsoft 365",
+    "google": "Google Workspace",
     "aws": "AWS",
-    "telia": "Local Provider",
-    "tet": "Local Provider",
-    "zone": "Local Provider",
-    "elkdata": "Local Provider",
-    "local-isp": "Local Provider",
-    "zoho": "Local Provider",
-    "yandex": "Local Provider",
-    "independent": "Self-hosted",
-    "unknown": "Unknown",
+    # Italian commercial — accorpati in 'Provider Italiano' (mxmap.it citizen UI)
+    "aruba": "Provider Italiano",
+    "register-it": "Provider Italiano",
+    "seeweb": "Provider Italiano",
+    "infocert": "Provider Italiano",
+    "namirial": "Provider Italiano",
+    "local-isp": "Provider Italiano",
+    "telia": "Provider Italiano",
+    "tet": "Provider Italiano",
+    "zone": "Provider Italiano",
+    "elkdata": "Provider Italiano",
+    # Italian publicly-owned consortium / regional ICT
+    "regional-public": "Cloud Italiano",
+    "pa-contractor-private": "Contractor PA privato",
+    # Self-hosted (renamed)
+    "independent": "Infrastruttura autonoma",
+    # Provincial-shared
+    "provincial-shared": "Mail provinciale condivisa",
+    # Foreign minor
+    "zoho": "Zoho",
+    "yandex": "Yandex",
+    "unknown": "Sconosciuto",
 }
 
 COLORS = {
-    "Microsoft": "#E83838",
-    "Google": "#FFAB96",
-    "AWS": "#FF7A5C",
-    "Local Provider": "#10B898",
-    "Self-hosted": "#0E9680",
+    # USA hyperscalers
+    "Microsoft 365": "#D42E2E",
+    "Google Workspace": "#FF6B6B",
+    "AWS": "#FF8C42",
+    # Italian palette — green family
+    "Cloud Italiano": "#009246",         # Italian flag green (sovereign)
+    "Provider Italiano": "#2E7D32",      # commercial Italian
+    "Infrastruttura autonoma": "#558B2F",
+    "Mail provinciale condivisa": "#7CB342",
+    "Contractor PA privato": "#AED581",
+    # Foreign minor
+    "Zoho": "#7C3AED",
+    "Yandex": "#FFCC00",
+    # Backwards-compatible aliases
+    "Microsoft": "#D42E2E",
+    "Google": "#FF6B6B",
+    "Local Provider": "#2E7D32",
+    "Self-hosted": "#558B2F",
+    "Sconosciuto": "#BFBFBF",
     "Unknown": "#BFBFBF",
 }
 
-US_PROVIDERS = {"Microsoft", "Google", "AWS"}
+US_PROVIDERS = {"Microsoft 365", "Google Workspace", "AWS", "Microsoft", "Google"}
 
 
 def hex_to_rgb(h: str) -> tuple[int, int, int]:
@@ -116,6 +143,7 @@ def build_region_data(munis: dict, generated: str) -> dict:
     for bfs, m in munis.items():
         cc = m.get("country", "")
         region = m.get("canton", "") or ""
+        district = m.get("district", "") or ""
         raw_provider = m.get("provider", "unknown")
         provider = PROVIDER_DISPLAY.get(raw_provider, raw_provider)
         pop = m.get("population", 0) or 0
@@ -136,6 +164,7 @@ def build_region_data(munis: dict, generated: str) -> dict:
                 "popTotal": 0,
                 "gateway_count": 0,
                 "regions": {},
+                "districts": {},
             }
         cd = countries[cc]
         cd["total"] += 1
@@ -161,8 +190,44 @@ def build_region_data(munis: dict, generated: str) -> dict:
         if has_gateway:
             rd["gateway_count"] += 1
 
-    # Compute blended colors: population-weighted if available, count-based as fallback
+        # District-level aggregation (for IT province polygons / GB districts)
+        if district:
+            cd.setdefault("districts", {})
+            if district not in cd["districts"]:
+                cd["districts"][district] = {
+                    "count": 0,
+                    "providers": {},
+                    "popProviders": {},
+                    "popTotal": 0,
+                    "gateway_count": 0,
+                }
+            dd = cd["districts"][district]
+            dd["count"] += 1
+            dd["providers"][provider] = dd["providers"].get(provider, 0) + 1
+            dd["popProviders"][provider] = dd["popProviders"].get(provider, 0) + pop
+            dd["popTotal"] += pop
+            if has_gateway:
+                dd["gateway_count"] += 1
+
+    # Compute blended colors + dominant for each region & district
     for cc, cd in countries.items():
+        for region_name, rd in cd.get("regions", {}).items():
+            if rd["popTotal"] > rd["count"]:
+                rd["blendedColor"] = blend_provider_colors(rd["popProviders"], rd["popTotal"])
+            else:
+                rd["blendedColor"] = blend_provider_colors(rd["providers"], rd["count"])
+            top = sorted(rd["providers"].items(), key=lambda kv: -kv[1])
+            rd["dominant"] = top[0][0] if top else "Unknown"
+            rd["dominance"] = (top[0][1] / rd["count"]) if (top and rd["count"]) else 0.0
+        for district_name, dd in cd.get("districts", {}).items():
+            if dd["popTotal"] > dd["count"]:
+                dd["blendedColor"] = blend_provider_colors(dd["popProviders"], dd["popTotal"])
+            else:
+                dd["blendedColor"] = blend_provider_colors(dd["providers"], dd["count"])
+            top = sorted(dd["providers"].items(), key=lambda kv: -kv[1])
+            dd["dominant"] = top[0][0] if top else "Unknown"
+            dd["dominance"] = (top[0][1] / dd["count"]) if (top and dd["count"]) else 0.0
+        # Country-level blended color
         if cd["popTotal"] > cd["total"]:
             cd["blendedColor"] = blend_provider_colors(cd["popProviders"], cd["popTotal"])
         else:

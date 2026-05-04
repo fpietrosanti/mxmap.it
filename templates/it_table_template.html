@@ -164,7 +164,8 @@
 </main>
 
 <script>
-const TABLE_JSON_URL = './data/reports/it_pa_centrale_table.json';
+// Path is relative to /templates/. Server stores the JSON at /data/reports/.
+const TABLE_JSON_URL = '../data/reports/it_pa_centrale_table.json';
 
 let allRows = [];
 let sortKey = 'ipa_categoria_label';

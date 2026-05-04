@@ -238,6 +238,7 @@
       <button class="country-btn active" data-country="IT">IT</button>
     </div>
     <div class="level-toggle">
+      <a class="level-btn" href="templates/it_table_template.html" style="text-decoration:none">PA Centrale</a>
       <button class="level-btn active" data-level="region">Regioni</button>
       <button class="level-btn" data-level="district">Province</button>
       <button class="level-btn" data-level="municipality">Comuni</button>
@@ -696,16 +697,22 @@ function getGroupKey(m, fileLevelName) {
 }
 
 function computeAggregation(cc, fileLevelName) {
-  // Fast path: use pre-computed region data before summary is loaded
+  // Fast path: use pre-computed region/district data before summary is loaded
   if (!summaryLoaded && regionData) {
     const cd = regionData.countries[cc];
     if (!cd) return {};
     const result = {};
-    for (const rname of Object.keys(cd.regions)) {
-      const r = cd.regions[rname];
+    // Pick which slice of pre-computed data to use, based on the level
+    // we're rendering. Districts may be absent for countries that didn't
+    // emit a district-level aggregation -> fall back to regions.
+    var groupSet = (fileLevelName === 'district' && cd.districts && Object.keys(cd.districts).length > 0)
+      ? cd.districts
+      : cd.regions;
+    for (const gname of Object.keys(groupSet)) {
+      const r = groupSet[gname];
       const sorted = Object.entries(r.providers).sort((a,b) => b[1]-a[1]);
-      result[rname] = {
-        name: rname,
+      result[gname] = {
+        name: gname,
         municipalities: [],
         providers: r.providers,
         popProviders: r.popProviders || {},
