@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--
+  TABLE TEMPLATE — riusabile per ogni cluster IndicePA che non beneficia
+  di una rappresentazione cartografica (PA Centrale, Ordini, Cultura,
+  Trasporti, …).
+
+  Consuma data/reports/it_<cluster>_table.json prodotto da
+  scripts/report_it_by_cluster.py. La sorgente JSON è una lista di righe:
+    {id, name, ipa_categoria, ipa_categoria_label, domain, provider,
+     provider_display, sovereignty, reason, ipa_codice_ipa}
+
+  Per produrre la tabella di un cluster diverso, basta cambiare la
+  costante TABLE_JSON_URL e (opzionale) i metadati in <header>.
+-->
+<title>MXmap.it — PA Centrale (Sovranità email)</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #f8f9fb; color: #1a1a2e; line-height: 1.45;
+  }
+  header.brand {
+    background: #1a1a2e; color: #fff; padding: 14px 24px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .brand h1 { font-size: 17px; font-weight: 700; }
+  .brand .sep { color: #888; margin: 0 10px; }
+  .brand .tagline { font-size: 13px; color: #a0a0b0; }
+  .brand a { color: #fff; text-decoration: none; }
+
+  main { max-width: 1200px; margin: 0 auto; padding: 22px 18px 60px; }
+
+  h2 { font-size: 22px; margin-bottom: 6px; }
+  .description { color: #555; font-size: 13px; margin-bottom: 18px; max-width: 800px; }
+
+  .summary {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px; margin: 18px 0 22px;
+  }
+  .summary-card {
+    background: #fff; border: 1px solid #e2e4e8; border-radius: 6px;
+    padding: 12px 14px;
+  }
+  .summary-card .n { font-size: 22px; font-weight: 700; color: #1a1a2e; }
+  .summary-card .label {
+    font-size: 11px; color: #777; text-transform: uppercase;
+    letter-spacing: 0.4px; margin-top: 4px;
+  }
+  .summary-card.usa .n { color: #D42E2E; }
+  .summary-card.italia .n { color: #009246; }
+
+  .controls {
+    display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 14px;
+    align-items: center;
+  }
+  .controls input[type="search"] {
+    padding: 7px 10px; font-size: 13px; border: 1px solid #ccc;
+    border-radius: 4px; min-width: 240px;
+  }
+  .controls select {
+    padding: 6px 8px; font-size: 13px; border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .controls .filter-chip {
+    display: inline-block; padding: 4px 10px; font-size: 12px;
+    border: 1px solid #ddd; border-radius: 12px; cursor: pointer; background: #fff;
+  }
+  .controls .filter-chip.active { background: #1a1a2e; color: #fff; border-color: #1a1a2e; }
+
+  table {
+    width: 100%; border-collapse: collapse; background: #fff;
+    border: 1px solid #e2e4e8; border-radius: 6px; overflow: hidden;
+    font-size: 13px;
+  }
+  thead th {
+    background: #f1f3f6; text-align: left; padding: 10px 12px;
+    font-weight: 600; color: #444; border-bottom: 1px solid #e2e4e8;
+    cursor: pointer; user-select: none;
+  }
+  thead th.sort-asc::after  { content: ' ▴'; color: #1a1a2e; }
+  thead th.sort-desc::after { content: ' ▾'; color: #1a1a2e; }
+  tbody tr { border-bottom: 1px solid #f0f0f3; }
+  tbody tr:hover { background: #fafbfd; }
+  tbody td { padding: 9px 12px; vertical-align: top; }
+
+  .badge {
+    display: inline-block; padding: 2px 9px; border-radius: 11px;
+    font-size: 11px; font-weight: 600; white-space: nowrap;
+  }
+  .badge.usa     { background: #FCE4E4; color: #B71C1C; }
+  .badge.italia  { background: #E8F5E9; color: #1B5E20; }
+  .badge.sovrano { background: #C8E6C9; color: #006623; }
+  .badge.unknown { background: #ECEFF1; color: #607D8B; }
+
+  .domain { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; }
+  .reason { font-size: 11px; color: #666; max-width: 320px; }
+
+  footer { margin-top: 24px; font-size: 12px; color: #777; text-align: center; }
+  footer a { color: #2563eb; text-decoration: none; }
+
+  @media (max-width: 720px) {
+    .reason { display: none; }
+    .controls { flex-direction: column; align-items: stretch; }
+  }
+</style>
+</head>
+<body>
+
+<header class="brand">
+  <div>
+    <a href="./"><h1 style="display:inline">MXmap.it</h1></a>
+    <span class="sep">|</span>
+    <span class="tagline">PA Centrale — Sovranità email</span>
+  </div>
+  <div><a href="./" class="tagline">← Mappa comuni</a></div>
+</header>
+
+<main>
+  <h2 id="cluster-title">PA Centrale</h2>
+  <p class="description" id="cluster-description">
+    Presidenza del Consiglio, Ministeri, Avvocatura dello Stato, Organi Costituzionali,
+    Autorità Amministrative Indipendenti, Agenzie Fiscali, Forze di Polizia ad ordinamento
+    civile/militare, Aziende dello Stato ad ordinamento autonomo. Tutti enti di rango
+    nazionale, sede prevalente a Roma — rappresentazione tabellare.
+  </p>
+
+  <div class="summary" id="summary"></div>
+
+  <div class="controls">
+    <input id="q" type="search" placeholder="Cerca nome o dominio…" autocomplete="off">
+    <select id="filter-categoria">
+      <option value="">Tutte le categorie</option>
+    </select>
+    <select id="filter-provider">
+      <option value="">Tutti i provider</option>
+    </select>
+  </div>
+
+  <table id="tbl">
+    <thead>
+      <tr>
+        <th data-key="ipa_categoria_label">Categoria</th>
+        <th data-key="name">Ente</th>
+        <th data-key="domain">Dominio</th>
+        <th data-key="provider_display">Provider email</th>
+        <th data-key="sovereignty">Sovranità</th>
+        <th data-key="reason">Evidenza</th>
+      </tr>
+    </thead>
+    <tbody id="tbody">
+      <tr><td colspan="6" style="text-align:center;color:#999;padding:24px">Caricamento…</td></tr>
+    </tbody>
+  </table>
+
+  <footer>
+    Fonte: <a href="https://indicepa.gov.it/ipa-dati/dataset/enti" target="_blank" rel="noopener">IndicePA (AgID)</a>
+    + analisi DNS pubblica.
+    Codice e dati: <a href="https://github.com/fpietrosanti/mxmap.it" target="_blank" rel="noopener">github.com/fpietrosanti/mxmap.it</a>.
+  </footer>
+</main>
+
+<script>
+const TABLE_JSON_URL = './data/reports/it_pa_centrale_table.json';
+
+let allRows = [];
+let sortKey = 'ipa_categoria_label';
+let sortDir = 'asc';
+
+function sovereigntyClass(s) {
+  if (!s) return 'unknown';
+  if (s.includes('USA')) return 'usa';
+  if (s.includes('Cloud sovrano')) return 'sovrano';
+  if (s.includes('🇮🇹')) return 'italia';
+  return 'unknown';
+}
+
+function buildSummary(rows) {
+  const total = rows.length;
+  const usa = rows.filter(r => r.provider === 'microsoft' || r.provider === 'google' || r.provider === 'aws').length;
+  const sovrano = rows.filter(r => r.provider === 'regional-public').length;
+  const italia = total - usa - rows.filter(r => r.provider === 'unknown').length;
+  const summary = document.getElementById('summary');
+  summary.innerHTML =
+    '<div class="summary-card"><div class="n">' + total + '</div><div class="label">Enti totali</div></div>' +
+    '<div class="summary-card usa"><div class="n">' + usa + ' <small style="font-size:14px;color:#888">(' + ((usa / total) * 100).toFixed(0) + '%)</small></div><div class="label">🇺🇸 USA (CLOUD Act)</div></div>' +
+    '<div class="summary-card italia"><div class="n">' + italia + ' <small style="font-size:14px;color:#888">(' + ((italia / total) * 100).toFixed(0) + '%)</small></div><div class="label">🇮🇹 Italia (qualunque)</div></div>' +
+    '<div class="summary-card"><div class="n">' + sovrano + '</div><div class="label">di cui Cloud sovrano</div></div>';
+}
+
+function populateFilter(selectId, key, rows) {
+  const el = document.getElementById(selectId);
+  const seen = new Set();
+  rows.forEach(r => { if (r[key]) seen.add(r[key]); });
+  Array.from(seen).sort().forEach(v => {
+    const opt = document.createElement('option');
+    opt.value = v;
+    opt.textContent = v;
+    el.appendChild(opt);
+  });
+}
+
+function applyFilters() {
+  const q = document.getElementById('q').value.trim().toLowerCase();
+  const fc = document.getElementById('filter-categoria').value;
+  const fp = document.getElementById('filter-provider').value;
+  let rows = allRows.filter(r => {
+    if (fc && r.ipa_categoria_label !== fc) return false;
+    if (fp && r.provider_display !== fp) return false;
+    if (q && !((r.name || '').toLowerCase().includes(q) || (r.domain || '').toLowerCase().includes(q))) return false;
+    return true;
+  });
+  rows.sort((a, b) => {
+    const av = (a[sortKey] || '').toString().toLowerCase();
+    const bv = (b[sortKey] || '').toString().toLowerCase();
+    if (av === bv) return 0;
+    return (av < bv ? -1 : 1) * (sortDir === 'asc' ? 1 : -1);
+  });
+  render(rows);
+}
+
+function render(rows) {
+  const tbody = document.getElementById('tbody');
+  if (rows.length === 0) {
+    tbody.innerHTML = '<tr><td colspan="6" style="text-align:center;color:#999;padding:24px">Nessun risultato.</td></tr>';
+    return;
+  }
+  tbody.innerHTML = rows.map(r => {
+    const sovClass = sovereigntyClass(r.sovereignty);
+    return '<tr>' +
+      '<td>' + (r.ipa_categoria_label || '') + '</td>' +
+      '<td>' + escapeHtml(r.name || '') + '</td>' +
+      '<td><span class="domain">' + escapeHtml(r.domain || '') + '</span></td>' +
+      '<td>' + escapeHtml(r.provider_display || '') + '</td>' +
+      '<td><span class="badge ' + sovClass + '">' + escapeHtml(r.sovereignty || '') + '</span></td>' +
+      '<td><span class="reason">' + escapeHtml(r.reason || '') + '</span></td>' +
+    '</tr>';
+  }).join('');
+  document.querySelectorAll('thead th').forEach(th => {
+    th.classList.remove('sort-asc', 'sort-desc');
+    if (th.dataset.key === sortKey) th.classList.add('sort-' + sortDir);
+  });
+}
+
+function escapeHtml(s) {
+  const div = document.createElement('span');
+  div.textContent = s;
+  return div.innerHTML;
+}
+
+document.querySelectorAll('thead th').forEach(th => {
+  th.addEventListener('click', () => {
+    const k = th.dataset.key;
+    if (sortKey === k) sortDir = (sortDir === 'asc' ? 'desc' : 'asc');
+    else { sortKey = k; sortDir = 'asc'; }
+    applyFilters();
+  });
+});
+['q', 'filter-categoria', 'filter-provider'].forEach(id => {
+  document.getElementById(id).addEventListener('input', applyFilters);
+});
+
+fetch(TABLE_JSON_URL)
+  .then(r => r.json())
+  .then(doc => {
+    allRows = doc.rows || [];
+    populateFilter('filter-categoria', 'ipa_categoria_label', allRows);
+    populateFilter('filter-provider', 'provider_display', allRows);
+    buildSummary(allRows);
+    applyFilters();
+  })
+  .catch(e => {
+    document.getElementById('tbody').innerHTML =
+      '<tr><td colspan="6" style="color:#c00;padding:24px;text-align:center">Errore caricamento dati: ' + e.message + '</td></tr>';
+  });
+</script>
+
+</body>
+</html>

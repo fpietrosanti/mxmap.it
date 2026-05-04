@@ -52,10 +52,11 @@ run_step "reclassify_it_provincial"     uv run python3 scripts/reclassify_it_pro
 run_step "finalize_it_unknowns"         uv run python3 scripts/finalize_it_unknowns.py
 run_step "report_it_per_province"       uv run python3 scripts/report_it_per_province.py
 run_step "report_it_by_category"        uv run python3 scripts/report_it_by_category.py
+run_step "report_it_by_cluster"         uv run python3 scripts/report_it_by_cluster.py
 run_step "build_frontend"               uv run python3 scripts/build_frontend.py
 
 log "=== chain complete; committing artifacts ==="
-git add data.json data/dns_cache/ data/municipalities_it.json data/it_provincial_backends.json data/reports/ data-summary.json data-detail.json data-regions.json data/summary/ 2>>"$LOG" || true
+git add data.json data/dns_cache/ data/municipalities_it.json data/it_provincial_backends.json data/it_citizen_clusters.json data/reports/ data-summary.json data-detail.json data-regions.json data/summary/ 2>>"$LOG" || true
 
 if git diff --cached --quiet; then
   log "no new changes to commit"

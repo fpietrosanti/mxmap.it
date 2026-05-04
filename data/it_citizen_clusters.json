@@ -1,0 +1,118 @@
+{
+  "_comment": "Canonical citizen-friendly clustering of IndicePA Codice_Categoria. The aim is to group ~50 IPA categories into cluster names a citizen would recognise. Per cluster: 'visualization' = map (geographic) | table (sortable list) | both. Used by scripts/report_it_by_cluster.py and the frontend cluster filter.",
+  "version": 1,
+  "clusters": {
+    "territoriale": {
+      "label_it": "Enti territoriali",
+      "label_en": "Territorial entities",
+      "description_it": "Regioni, Province, Città Metropolitane e Comuni — i tre livelli amministrativi geografici della Repubblica italiana.",
+      "categories": ["L4", "L5", "L45", "L6"],
+      "visualization": "map",
+      "default_visible": true
+    },
+    "istruzione": {
+      "label_it": "Istruzione",
+      "label_en": "Education",
+      "description_it": "Scuole statali di ogni ordine e grado, università pubbliche, istituzioni AFAM (alta formazione artistica/musicale/coreutica), enti per il diritto allo studio universitario, consorzi interuniversitari di ricerca.",
+      "categories": ["L33", "L17", "L43", "L15", "L28"],
+      "visualization": "map",
+      "rationale": "L33 ha ~8.000 entità con distribuzione comunale; valutare se la mappa rende leggibile o se serve una zoom-aware visualization. L17/L43 sono pochi — possono coabitare nella stessa mappa con icone diverse o uno switch."
+    },
+    "sanita": {
+      "label_it": "Sanità",
+      "label_en": "Healthcare",
+      "description_it": "Aziende Sanitarie Locali (ASL), Aziende Ospedaliere, Policlinici universitari, IRCCS, agenzie regionali sanitarie, istituti zooprofilattici sperimentali.",
+      "categories": ["L7", "L8", "L22", "C12"],
+      "visualization": "map",
+      "rationale": "ASL coprono territori provinciali; ospedali/AO sono punti. Una mappa con poligoni-ASL + marker-AO funziona bene."
+    },
+    "pa_centrale": {
+      "label_it": "PA Centrale",
+      "label_en": "Central public administration",
+      "description_it": "Presidenza del Consiglio, Ministeri, Avvocatura dello Stato, Organi Costituzionali (Camera, Senato, Corte Costituzionale, CSM, Corte dei Conti, Consiglio di Stato, CNEL), Autorità Amministrative Indipendenti (Garante Privacy, ANAC, AGCOM, AGCM, IVASS, …), Agenzie Fiscali (Agenzia Entrate, Dogane, Demanio, Monopoli), Forze di Polizia ad ordinamento civile/militare, Aziende dello Stato ad ordinamento autonomo.",
+      "categories": ["C1", "C2", "C5", "C10", "C11", "L46"],
+      "visualization": "table",
+      "rationale": "Quasi tutte hanno sede a Roma — una mappa sarebbe inutile. Tabella ordinabile/filtrabile è la rappresentazione naturale."
+    },
+    "ordini_camere": {
+      "label_it": "Ordini professionali e Camere",
+      "label_en": "Professional orders & chambers",
+      "description_it": "Federazioni nazionali, ordini, collegi e consigli professionali (Avvocati, Medici, Ingegneri, ecc.), Camere di Commercio Industria Artigianato e Agricoltura, Automobile Club federati ACI.",
+      "categories": ["C14", "L35", "C13"],
+      "visualization": "table",
+      "rationale": "Distribuzione capillare ma non interessante geograficamente; la tabella ordinata per categoria + provincia è più informativa."
+    },
+    "welfare_sociale": {
+      "label_it": "Welfare e politiche sociali",
+      "label_en": "Welfare & social policy",
+      "description_it": "Aziende Pubbliche di Servizi alla Persona (ex-IPAB), Aziende e Consorzi per l'Edilizia Residenziale Pubblica.",
+      "categories": ["L34", "L39"],
+      "visualization": "table",
+      "rationale": "Pochi enti, distribuiti nelle regioni. Tabella per ora; mappa successiva se servono visualizzazioni territoriali specifiche."
+    },
+    "ambiente_territorio": {
+      "label_it": "Ambiente e Territorio",
+      "label_en": "Environment & Territory",
+      "description_it": "Parchi nazionali e regionali, autorità di bacino, consorzi sviluppo industriale, enti di regolazione servizi idrici e rifiuti.",
+      "categories": ["L38", "L40", "L42", "L44"],
+      "visualization": "both",
+      "rationale": "Parchi e bacini hanno polygon-shape; consorzi industriali sono punti. Possibile mappa con confini parchi + tabella per il resto."
+    },
+    "cultura": {
+      "label_it": "Cultura",
+      "label_en": "Culture",
+      "description_it": "Teatri stabili a iniziativa pubblica, Fondazioni Lirico-Sinfoniche, Enti pubblici servizi assistenziali ricreativi e culturali.",
+      "categories": ["L31", "L16", "C7"],
+      "visualization": "table"
+    },
+    "ricerca": {
+      "label_it": "Ricerca",
+      "label_en": "Research",
+      "description_it": "Enti e istituzioni di ricerca pubblici (CNR, INFN, INAF, ENEA, INRiM, OGS, ISTAT, ISS, ecc.), agenzie ed enti regionali per sviluppo agricolo, agenzie regionali per le erogazioni in agricoltura.",
+      "categories": ["C8", "L13", "L21"],
+      "visualization": "table"
+    },
+    "trasporti_porti": {
+      "label_it": "Trasporti e Porti",
+      "label_en": "Transport & Ports",
+      "description_it": "Autorità di Sistema Portuale.",
+      "categories": ["L11"],
+      "visualization": "table"
+    },
+    "consorzi_unioni_locali": {
+      "label_it": "Consorzi e Unioni di enti locali",
+      "label_en": "Local consortia & sub-municipal",
+      "description_it": "Unioni di Comuni, Consorzi tra Amministrazioni Locali, Comunità Montane, Consorzi di Bacino Imbrifero Montano, altri Enti Locali, Commissari Straordinari Governativi, Agenzie Regionali e Provinciali per la Rappresentanza Negoziale.",
+      "categories": ["L18", "L36", "L12", "L24", "L1", "L47", "L20"],
+      "visualization": "table"
+    },
+    "agenzie_regionali": {
+      "label_it": "Agenzie regionali (formazione, lavoro, turismo)",
+      "label_en": "Regional agencies",
+      "description_it": "Agenzie ed Enti Regionali per la Formazione/Ricerca/Ambiente, Agenzie ed Enti Regionali del Lavoro, Agenzie ed Enti per il Turismo.",
+      "categories": ["L2", "L19", "L10"],
+      "visualization": "table"
+    },
+    "gestori_pubblici_servizi": {
+      "label_it": "Gestori di pubblici servizi",
+      "label_en": "Public-service operators",
+      "description_it": "Gestori di Pubblici Servizi (utility, trasporto, etc.), Società in Conto Economico Consolidato, Enti Pubblici Non Economici.",
+      "categories": ["L37", "S01", "S01G", "C3"],
+      "visualization": "table"
+    },
+    "stazioni_appaltanti": {
+      "label_it": "Stazioni Appaltanti (procurement)",
+      "label_en": "Procurement entities",
+      "description_it": "Stazioni Appaltanti, Stazioni Appaltanti Gestori di Pubblici Servizi.",
+      "categories": ["SA", "SAG"],
+      "visualization": "table"
+    },
+    "previdenza_assistenza": {
+      "label_it": "Previdenza e Assistenza Sociale",
+      "label_en": "Pension & social security",
+      "description_it": "Enti di Previdenza ed Assistenza Sociale (privati e pubblici) in Conto Economico Consolidato.",
+      "categories": ["C16", "C17"],
+      "visualization": "table"
+    }
+  }
+}
