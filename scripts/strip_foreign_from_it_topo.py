@@ -95,7 +95,8 @@ def load_seed_comune_names() -> set[str]:
 
 
 def filter_topo(topo_path: Path, allowlist: set[str], *, trust_country_tag: bool = False,
-                allow_country_iso: str = "IT", strict_allowlist: bool = False) -> tuple[int, int]:
+                allow_country_iso: str = "IT", strict_allowlist: bool = False,
+                foreign_denylist: set[str] | None = None) -> tuple[int, int]:
     """Filter geometries.
 
     Strategy:
@@ -124,6 +125,14 @@ def filter_topo(topo_path: Path, allowlist: set[str], *, trust_country_tag: bool
             props = f.get("properties") or {}
             name = (props.get("name") or "").strip()
             country = (props.get("country") or props.get("ISO3166-1") or "").strip().upper()
+            # foreign_denylist: explicit DROP regardless of country tag. Used
+            # to remove known cross-border features (e.g. Haute-Savoie) that
+            # come back from Overpass with country=IT due to annotate_geojson
+            # blanket-labelling.
+            if foreign_denylist and name in foreign_denylist:
+                total_removed += 1
+                removed_names.append(f"{name} [denylist]")
+                continue
             # strict_allowlist: ignore the country tag entirely, only the name
             # allowlist matters. Used for L4 where annotate_geojson labels every
             # feature country=IT (including cross-border foreign relations like
@@ -180,30 +189,24 @@ def main() -> int:
     filter_topo(TOPO_DIR / "it_region.topo.json", IT_REGION_NAMES, strict_allowlist=True)
 
     province_names = load_seed_province_names()
-    # Augment seed-province allowlist with the topo-bilingual variants we
-    # use in fetch_indicepa.py ISTAT3_TO_TOPO_NAME_MANUAL (Friuli bilingual,
-    # Sardegna historical pre-2016 names). These don't appear in the seed
-    # because seed.district mirrors the topo `name` tag, but the allowlist
-    # is computed from seed `name` (without the "Provincia di " prefix
-    # stripping logic). Adding them explicitly makes strip_foreign keep
-    # these polygons reliably.
-    province_names_topo = province_names | {
-        "Udine / Udin / Videm",
-        "Gorizia / Gurize / Gorica",
-        "Aristanis/Oristano",
-        "Casteddu/Cagliari",
-        "Tàttari/Sassari",
-        "Pordenone / Pordenon",
-        "Nuoro",
-        "Gallura Nord-Est Sardegna",
-        "Ogliastra",
-        "Medio Campidano",
-        "Sulcis Iglesiente",
+    # L6 (province) cannot use strict_allowlist because the seed-derived
+    # province name set doesn't reliably match topo's bilingual / dialect
+    # names ("Tàttari/Sassari", "Udine / Udin / Videm", "Verbano-Cusio-Ossola",
+    # etc.). Instead, fall back to country-tag check (trust_country_tag=True)
+    # and explicitly DROP a hand-curated denylist of known cross-border
+    # foreign relations Overpass returns for ISO3166-1=IT. This is reproducible
+    # and minimal-risk.
+    FOREIGN_PROVINCE_DENYLIST = {
+        "Haute-Savoie",   # France — borders Valle d'Aosta
+        # Add others here if discovered (e.g. Schwyz, Kanton Tessin if they
+        # leak in from Swiss border).
     }
-    print(f"\n[L6 province] strict allowlist of {len(province_names_topo)} Italian provinces "
-          f"(strips foreign cross-border features like Haute-Savoie):")
-    filter_topo(TOPO_DIR / "it_province.topo.json", province_names_topo,
-                strict_allowlist=True)
+    print(f"\n[L6 province] keeping all features with country=IT, "
+          f"dropping foreign denylist: {sorted(FOREIGN_PROVINCE_DENYLIST)}")
+    filter_topo(TOPO_DIR / "it_province.topo.json",
+                province_names | FOREIGN_PROVINCE_DENYLIST,  # allowlist used for fallback
+                trust_country_tag=True,
+                foreign_denylist=FOREIGN_PROVINCE_DENYLIST)
 
     # admin_level=8 (comuni) — too many entries to enumerate; rely on country tag
     # which annotate_geojson sets to "IT". Foreign comuni from cross-border
