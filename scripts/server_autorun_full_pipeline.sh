@@ -30,7 +30,8 @@ export PATH="$HOME/.local/bin:$PATH"
 log "=== server_autorun started ==="
 
 # 1) Wait for any preprocess in flight (user-launched). This survives.
-while pgrep -af "uv run preprocess IT" > /dev/null 2>&1; do
+# Use [u] trick to avoid pgrep matching its own command line in argv.
+while pgrep -af "[u]v run preprocess IT" > /dev/null 2>&1; do
   log "waiting for preprocess to finish..."
   sleep 60
 done
