@@ -26,11 +26,22 @@
   header.brand {
     background: #1a1a2e; color: #fff; padding: 14px 24px;
     display: flex; align-items: center; justify-content: space-between;
+    flex-wrap: wrap; gap: 12px;
   }
   .brand h1 { font-size: 17px; font-weight: 700; }
   .brand .sep { color: #888; margin: 0 10px; }
   .brand .tagline { font-size: 13px; color: #a0a0b0; }
   .brand a { color: #fff; text-decoration: none; }
+
+  /* Overlay menu — same logical levels as the main map's segmented control */
+  .level-menu { display: flex; gap: 0; background: #2a2a44; border-radius: 6px; overflow: hidden; }
+  .level-menu a {
+    padding: 7px 14px; font-size: 13px; color: #d0d0e0; text-decoration: none;
+    border-right: 1px solid #1a1a2e; transition: background 0.15s;
+  }
+  .level-menu a:last-child { border-right: none; }
+  .level-menu a:hover { background: #36365a; color: #fff; }
+  .level-menu a.active { background: #009246; color: #fff; font-weight: 600; }
 
   main { max-width: 1200px; margin: 0 auto; padding: 22px 18px 60px; }
 
@@ -112,11 +123,16 @@
 
 <header class="brand">
   <div>
-    <a href="./"><h1 style="display:inline">MXmap.it</h1></a>
+    <a href="../"><h1 style="display:inline">MXmap.it</h1></a>
     <span class="sep">|</span>
-    <span class="tagline">PA Centrale — Sovranità email</span>
+    <span class="tagline">Sovranità email della PA italiana</span>
   </div>
-  <div><a href="./" class="tagline">← Mappa comuni</a></div>
+  <nav class="level-menu" aria-label="Livello amministrativo">
+    <a href="./it_table_template.html" class="active">PA Centrale</a>
+    <a href="../#level=region">Regioni</a>
+    <a href="../#level=district">Province</a>
+    <a href="../#level=municipality">Comuni</a>
+  </nav>
 </header>
 
 <main>
