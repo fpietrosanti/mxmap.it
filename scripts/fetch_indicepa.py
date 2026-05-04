@@ -293,6 +293,52 @@ IT_MANUAL_DOMAIN_OVERRIDES: dict[str, str] = {
     # email is hosted on the Provincia Tecnologica Biellese consortium at
     # ptb.provincia.biella.it.
     "c_h681":  "ptb.provincia.biella.it",
+    # ASL n.3 di Nuoro — IndicePA lists `asl3nuoro.it` (no MX); the working
+    # domain is `aslnuoro.it` with MX on mx01/mx02.sardegnasalute.it (Sardegna
+    # regional health IT — sovereign infrastructure).
+    "7t093cg4": "aslnuoro.it",
+    # Ordine Architetti Biella — IndicePA lists `bi.archiworld.it` (no MX);
+    # working subdomain is `biella.archiworld.it` with MX on
+    # mx1/mx2-cnappc.innovazionedigitale.it (CNAPPC national architects council
+    # infrastructure on Italian provider innovazionedigitale.it).
+    "oda_096": "biella.archiworld.it",
+    # Ordine Dottori Agronomi/Forestali Ascoli Piceno — IndicePA lists
+    # `agronomiforestali.ap.it` (no MX); the working email is on the national
+    # CONAF domain `conaf.it` with MX on efa.conaf.it (self-hosted).
+    "odad_044": "conaf.it",
+    # Comune di Castelnuovo Cilento (SA) — IndicePA lists `castelnuovocilento.eu`
+    # (no MX); the comune actually uses `castelnuovoutc@virgilio.it` so the
+    # mail domain is virgilio.it (Italiaonline — Italian commercial provider).
+    "c_c231": "virgilio.it",
+    # Agenzia Sviluppo Sociale ed Economico Provincia Autonoma Bolzano —
+    # IndicePA lists `asse.provincia.bz.it` (no MX); main provincia.bz.it
+    # has MX on pphosted.com (ProofPoint gateway — backend resolved by
+    # gateway look-through downstream).
+    "alsse_vi": "provincia.bz.it",
+    # Collegio Periti Agrari Nuoro — IndicePA lists `peritiagrarinuoro.it`
+    # (no MX); office uses `peritiagrari@tiscali.it`, mail domain tiscali.it
+    # (Italiaonline / Tiscali — Italian commercial provider).
+    "cpan": "tiscali.it",
+    # Scuole professionali Provincia Autonoma di Bolzano — IndicePA lists
+    # subdomain-specific hostnames (no MX); the actual mail domain shared by
+    # all the South Tyrol vocational schools is `schule.suedtirol.it`
+    # (MX on pphosted.com / ProofPoint, same backend as provincia.bz.it).
+    "spcgg":  "schule.suedtirol.it",  # Scuola Comm/Grafica Gutenberg
+    "spledb": "schule.suedtirol.it",  # Scuola Econ. Domestica Asiago/Egna/Bolzano (haslach)
+    # Scuola Professionale Artigianato/Industria Luigi Einaudi — Bolzano IT
+    # vocational school. Italian-language counterpart to schule.suedtirol.it;
+    # mail domain `scuola.alto-adige.it` (MX pphosted.com — same ProofPoint
+    # backend as provincia.bz.it).
+    "sppai": "scuola.alto-adige.it",
+    # Universita' Agraria di Civitella di Licenza — IndicePA lists
+    # `agrariacivitella.it` (no MX); office uses `uniagrariacivcesi@gmail.com`
+    # so the mail provider is Google (personal gmail.com — note: NOT Workspace,
+    # this is genuinely a free Google account used institutionally).
+    "uacl": "gmail.com",
+    # ASP Maria Cristina di Savoia (Foggia) — IndicePA lists
+    # `aspmariacristinadisavoia.it` (no MX); office uses
+    # `aspmcdisavoiafoggia@gmail.com`, so mail is on personal gmail.com.
+    "apspmcs": "gmail.com",
 }
 
 
