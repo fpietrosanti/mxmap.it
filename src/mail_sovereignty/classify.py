@@ -20,6 +20,7 @@ from mail_sovereignty.constants import (
     NAMIRIAL_KEYWORDS,
     ITALIAN_REGIONAL_PUBLIC_KEYWORDS,
     ITALIAN_PA_CONTRACTOR_PRIVATE_KEYWORDS,
+    ITALIAN_PROVIDER_ASN_OVERRIDES,
 )
 
 
@@ -271,6 +272,19 @@ def classify(
                     f"MX ({mx_display}) is local gateway; "
                     f"DKIM reveals {dkim_provider} backend"
                 )
+
+        # 4b. Italian-provider ASN override — when MX is on a known Italian
+        # provider's AS but the hostname didn't match the keyword (custom
+        # subdomains like mail.comune.foo.it on Aruba AS31034). Apply BEFORE
+        # the generic local-isp classification so we get a specific label.
+        if mx_asns:
+            for asn in sorted(mx_asns):
+                if asn in ITALIAN_PROVIDER_ASN_OVERRIDES:
+                    provider = ITALIAN_PROVIDER_ASN_OVERRIDES[asn]
+                    return provider, (
+                        f"MX ({mx_display}) on AS{asn} ({LOCAL_ISP_ASNS.get(asn, '?')}) "
+                        f"-> {provider} (ASN-based override)"
+                    )
 
         is_local_isp = bool(mx_asns and mx_asns & LOCAL_ISP_ASNS.keys())
 

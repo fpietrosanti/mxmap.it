@@ -67,6 +67,11 @@ ITALIAN_REGIONAL_PUBLIC_KEYWORDS = [
     "asmecal.it", "asmecam.it",
     # Mountain-community consortium serving South Tyrol comuni (Gemeindenverband)
     "gvcc.net",
+    # MIUR national-state infrastructure for schools (sovrano statale)
+    "edu.it", "istruzione.it", "miur.it", "pubblica.istruzione.it",
+    # Regional in-house infrastructure additional (gap-analysis discoveries)
+    "basilicata.it",  # Regione Basilicata
+    "tix.it",         # Trentino IT Exchange — used by PA Trentino-Alto Adige
 ]
 
 # Italian private PA IT contractors (NOT in-house). Kept separate so the map
@@ -474,6 +479,35 @@ GATEWAY_KEYWORDS = {
     "libraesva": ["libraesva.com"],
     "datalab-it": ["datalab.it"],
     "iconto": ["iconto.it"],
+    # Gap-analysis additions (mxmap.it post-launch): private Italian PA SaaS
+    # gateways found in the "independent" residue.
+    "gecomail": ["gecomail.net", "gecom.it"],          # 432 entries
+    "vianova": ["vianova.it", "vi-pa.cloud"],          # 47+32 entries
+    "leonet": ["leonet.it"],                           # 49 entries
+    "omitech": ["omitech.it"],                         # 20 entries
+    "a2asmartcity": ["a2asmartcity.it"],               # 26 entries
+    "naquadria": ["naquadria.it"],
+    "host-it": ["host.it"],                            # 105 entries (Italian hosting)
+    "interhost": ["interhost.it"],
+    "cbsolt": ["cbsolt.net"],                          # 49 entries
+}
+
+# ASN-based provider override: when an MX hostname doesn't match any of the
+# keyword-based provider rules above, but the MX server's IP belongs to a
+# specific known Italian provider's autonomous system, classify as that
+# provider rather than the generic local-isp bucket. Important for Aruba
+# AS31034 where many comuni use custom MX hostnames (mail.comune.foo.it)
+# that resolve to Aruba IPs but don't carry "aruba" in the hostname.
+#
+# Format: ASN -> internal provider tag (matches PROVIDER_KEYWORDS keys)
+ITALIAN_PROVIDER_ASN_OVERRIDES: dict[int, str] = {
+    31034: "aruba",         # Aruba SpA — primary AS
+    12637: "aruba",          # Aruba SpA — secondary
+    62076: "aruba",          # Aruba SpA — additional
+    39729: "register-it",    # Register.it / Dada
+    35369: "seeweb",          # Seeweb
+    49367: "seeweb",          # Seeweb alt
+    39257: "infocert",        # InfoCert
 }
 
 # Local ISP ASNs (replaces SWISS_ISP_ASNS)

@@ -539,6 +539,7 @@ def transform(
         if not is_territorial(name, codice_categoria):
             return None
     domain = extract_domain(row.get("Sito_istituzionale"))
+    domain_source = "sito_istituzionale" if domain else None
 
     # Manual override hook — applies when IndicePA's Sito_istituzionale is
     # wrong/defunct and the recovery flow can't reach the right domain.
@@ -549,7 +550,19 @@ def transform(
         override = IT_MANUAL_DOMAIN_OVERRIDES[codice_ipa_for_override]
         if override and HOSTNAME_RE.match(override.lower()):
             domain = override.lower()
+            domain_source = "manual_override"
             domain_override_source = "manual_override"
+
+    # Email-fallback at seed-time: if Sito_istituzionale is missing/invalid,
+    # derive the primary domain from the first non-PEC Mail{1..5} entry. This
+    # mirrors the recover_it_unknowns logic but applied BEFORE the seed drop,
+    # so ~1,000 enti that have only an email (no website) still enter the
+    # MX-classification pipeline. PEC domains are NEVER used (per ITALY.md).
+    if not domain:
+        fb = extract_domain_fallbacks(row, primary_domain=None)
+        if fb:
+            domain = fb[0]
+            domain_source = "email_non_pec_fallback"
 
     if not domain:
         return None
@@ -614,6 +627,8 @@ def transform(
         "ipa_codice_istat": codice_istat_str,
         "ipa_codice_comune_istat": codice_comune_istat_str,
     }
+    if domain_source:
+        seed["domain_source"] = domain_source
     if domain_override_source:
         seed["domain_override_source"] = domain_override_source
     return seed
