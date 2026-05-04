@@ -80,41 +80,86 @@ ITALIAN_PROVINCE_CODES = sorted({
 CONCURRENCY = 10
 
 
-async def probe_domain(domain: str) -> dict | None:
-    """Run full mxmap classify() against a single domain. Returns None if no MX."""
-    mx_records = await lookup_mx(domain)
-    if not mx_records:
-        return None
+async def probe_domain(domain: str) -> dict:
+    """Probe an XX.it provincial domain for hyperscaler signals.
+
+    The bare XX.it usually has NO MX records (provincial mail is on
+    subdomains like mail.al.it). What we DO have on XX.it itself:
+      - Microsoft 365 tenant (via getuserrealm.srf)
+      - DKIM CNAMEs (selector1/2._domainkey.XX.it -> *.onmicrosoft.com etc.)
+      - Autodiscover SRV/CNAME pointing to a hyperscaler
+      - SPF record listing authorised senders (often the backend)
+      - TXT verification tokens (MS=, google-site-verification=)
+
+    These signals exist INDEPENDENT of MX, and they tell us the province's
+    own mail backend. We then propagate this down to every comune whose MX
+    is a subdomain of this XX.it.
+    """
+    # Best-effort MX (some province domains DO have MX, e.g., al.it might)
+    try:
+        mx_records = await lookup_mx(domain)
+    except Exception:
+        mx_records = []
+
     spf_task = asyncio.create_task(lookup_spf(domain))
     txt_task = asyncio.create_task(lookup_txt(domain))
-    cname_task = asyncio.create_task(resolve_mx_cnames(mx_records))
-    asn_task = asyncio.create_task(resolve_mx_asns(mx_records))
-    country_task = asyncio.create_task(resolve_mx_countries(mx_records))
     autodiscover_task = asyncio.create_task(lookup_autodiscover(domain))
     dkim_task = asyncio.create_task(lookup_dkim(domain))
     tenant_task = asyncio.create_task(lookup_tenant(domain))
 
+    cname_task = asyncio.create_task(resolve_mx_cnames(mx_records)) if mx_records else None
+    asn_task = asyncio.create_task(resolve_mx_asns(mx_records)) if mx_records else None
+    country_task = asyncio.create_task(resolve_mx_countries(mx_records)) if mx_records else None
+
     spf_record = await spf_task
     _spf_raw, txt_verifications = await txt_task
-    mx_cnames = await cname_task
-    mx_asns = await asn_task
-    mx_countries = await country_task
     autodiscover = await autodiscover_task
     dkim = await dkim_task
     tenant = await tenant_task
+    mx_cnames = (await cname_task) if cname_task else {}
+    mx_asns = (await asn_task) if asn_task else set()
+    mx_countries = (await country_task) if country_task else set()
     resolved_spf = await resolve_spf_includes(spf_record) if spf_record else None
 
-    provider, reason = classify(
-        mx_records=mx_records,
-        spf_record=spf_record,
-        mx_cnames=mx_cnames,
-        mx_asns=mx_asns,
-        resolved_spf=resolved_spf,
-        autodiscover=autodiscover,
-        dkim=dkim,
-        txt_verifications=txt_verifications,
-        tenant=tenant,
-    )
+    if mx_records:
+        provider, reason = classify(
+            mx_records=mx_records,
+            spf_record=spf_record,
+            mx_cnames=mx_cnames,
+            mx_asns=mx_asns,
+            resolved_spf=resolved_spf,
+            autodiscover=autodiscover,
+            dkim=dkim,
+            txt_verifications=txt_verifications,
+            tenant=tenant,
+        )
+    else:
+        # No MX on XX.it — derive provider from tenant / DKIM / autodiscover / TXT.
+        # These signals tell us the province's mail backend even without MX.
+        provider = None
+        reason = None
+        # Microsoft signal
+        if tenant:
+            provider, reason = "microsoft", f"MS365 tenant on {domain} ({tenant})"
+        elif "microsoft" in (txt_verifications or {}):
+            provider, reason = "microsoft", f"MS= verification token on {domain}"
+        elif dkim:
+            blob = " ".join((dkim or {}).values()).lower()
+            if "onmicrosoft.com" in blob:
+                provider, reason = "microsoft", f"DKIM signs via *.onmicrosoft.com on {domain}"
+            elif "google" in blob or "googlemail" in blob:
+                provider, reason = "google", f"DKIM signs via Google on {domain}"
+            elif "aruba" in blob:
+                provider, reason = "aruba", f"DKIM signs via Aruba on {domain}"
+        if provider is None:
+            # Google verification token (rare without DKIM)
+            if "google" in (txt_verifications or {}):
+                provider, reason = "google", f"google-site-verification on {domain}"
+            else:
+                # No hyperscaler signal at all on the province domain.
+                # Province self-hosts (or has no email at the bare-domain level).
+                provider, reason = "independent", f"no hyperscaler signal on bare {domain}"
+
     return {
         "provider": provider,
         "reason": reason,
