@@ -312,6 +312,39 @@ def istat_to_province_name(codice_comune_istat: str | None) -> str | None:
 # original. This is the canonical place to record persistent IndicePA
 # data-quality fixes; keep one comment per override explaining why.
 IT_PEC_ENRICHMENT_PATH = ROOT / "data" / "enrichment_pec_only.json"
+IT_MANUAL_LLM_ENRICHMENT_PATH = ROOT / "data" / "manual_llm_enrichment.json"
+
+
+def load_manual_llm_enrichment() -> dict[str, str]:
+    """Load data/manual_llm_enrichment.json (Tier-3 manual LLM enrichment).
+
+    This file is hand-produced by feeding scripts/generate_llm_enrichment_prompt.py
+    output into a Claude Code session, then saving the JSON response. The file is
+    committed to the repo and treated as part of the software's enriched dataset:
+    generation is non-reproducible (LLM-mediated, possibly with human curation),
+    but consumption is fully deterministic (loaded verbatim on every fetch).
+
+    Schema: {codice_ipa_lowercase: {"domain": "...", "confidence": "high|medium|low",
+                                    "rationale": "..."}}
+    Returns {codice_ipa: domain} only for entries with a syntactically valid hostname.
+    """
+    if not IT_MANUAL_LLM_ENRICHMENT_PATH.exists():
+        return {}
+    try:
+        d = json.loads(IT_MANUAL_LLM_ENRICHMENT_PATH.read_text(encoding="utf-8"))
+    except Exception as e:
+        print(f"WARNING: cannot parse {IT_MANUAL_LLM_ENRICHMENT_PATH}: {e!r}")
+        return {}
+    out: dict[str, str] = {}
+    for k, entry in d.items():
+        if not isinstance(entry, dict):
+            continue
+        host = (entry.get("domain") or "").strip().lower()
+        if host.startswith("www."):
+            host = host[4:]
+        if host and HOSTNAME_RE.match(host):
+            out[k.strip().lower()] = host
+    return out
 
 
 def load_pec_enrichment() -> dict[str, str]:
@@ -664,16 +697,21 @@ def transform(
     codice_ipa_for_override = (row.get("Codice_IPA") or "").strip().lower()
     domain_override_source: str | None = None
     if codice_ipa_for_override in IT_MANUAL_DOMAIN_OVERRIDES:
+        # Tier 1 — hardcoded human-verified manual overrides (highest priority).
         override = IT_MANUAL_DOMAIN_OVERRIDES[codice_ipa_for_override]
         if override and HOSTNAME_RE.match(override.lower()):
             domain = override.lower()
             domain_source = "manual_override"
             domain_override_source = "manual_override"
+    elif codice_ipa_for_override in _MANUAL_LLM_ENRICHMENT:
+        # Tier 2 — manual LLM enrichment (committed JSON, human-curated).
+        # See scripts/generate_llm_enrichment_prompt.py for the workflow.
+        domain = _MANUAL_LLM_ENRICHMENT[codice_ipa_for_override]
+        domain_source = "manual_llm_enrichment"
+        domain_override_source = "manual_llm_enrichment"
     elif codice_ipa_for_override in _PEC_ENRICHMENT:
-        # PEC-only enrichment (V1.2): for enti with no Sito_istituzionale and
-        # only PEC emails, scripts/enrich_pec_only.py discovers the real
-        # website via Wikidata P856 + DuckDuckGo. Applied here as second-tier
-        # override (after manual but before email-fallback).
+        # Tier 3 — automated PEC-only enrichment (Wikidata + DuckDuckGo).
+        # Applied for enti with no Sito_istituzionale and only PEC emails.
         domain = _PEC_ENRICHMENT[codice_ipa_for_override]
         domain_source = "pec_enrichment"
         domain_override_source = "pec_enrichment"
@@ -792,11 +830,15 @@ def main() -> int:
     entries: list[dict[str, Any]] = []
     seen_ids: set[str] = set()
 
-    global _PEC_ENRICHMENT
+    global _PEC_ENRICHMENT, _MANUAL_LLM_ENRICHMENT
     _PEC_ENRICHMENT = load_pec_enrichment()
     if _PEC_ENRICHMENT:
         print(f"Loaded {len(_PEC_ENRICHMENT)} PEC-only enrichments from "
               f"{IT_PEC_ENRICHMENT_PATH.name}")
+    _MANUAL_LLM_ENRICHMENT = load_manual_llm_enrichment()
+    if _MANUAL_LLM_ENRICHMENT:
+        print(f"Loaded {len(_MANUAL_LLM_ENRICHMENT)} manual-LLM enrichments "
+              f"from {IT_MANUAL_LLM_ENRICHMENT_PATH.name}")
 
     crosswalk = load_crosswalk()
     if crosswalk is None:
