@@ -71,20 +71,22 @@ GOOD_TLD_RE = re.compile(r"\.(it|gov\.it|edu\.it|eu|com|org|net)$", re.IGNORECAS
 
 
 def http_get(url: str, *, headers: dict[str, str] | None = None,
-             retries: int = 3, sleep_s: float = 2.0,
-             data: bytes | None = None) -> str:
-    """GET (or POST when data set) with simple retry on transient failures."""
+             retries: int = 2, sleep_s: float = 1.0,
+             data: bytes | None = None, timeout: int = 15) -> str:
+    """GET (or POST when data set) with simple retry on transient failures.
+    Aggressive timeout (15s default) so a single hung mirror doesn't stall
+    the loop indefinitely."""
     last_err: Exception | None = None
     for attempt in range(1, retries + 1):
         try:
             req = urllib.request.Request(url, data=data,
                                          headers={"User-Agent": USER_AGENT, **(headers or {})})
-            with urllib.request.urlopen(req, timeout=60) as resp:
+            with urllib.request.urlopen(req, timeout=timeout) as resp:
                 return resp.read().decode("utf-8", errors="replace")
         except Exception as e:
             last_err = e
             if attempt < retries:
-                time.sleep(sleep_s); sleep_s *= 1.7
+                time.sleep(sleep_s); sleep_s *= 1.5
     raise RuntimeError(f"GET {url} failed after {retries} attempts: {last_err}")
 
 
@@ -188,42 +190,85 @@ def _extract_host(url: str) -> str | None:
     return host
 
 
-# ---------- Tier 2: DuckDuckGo HTML ----------
+# ---------- Tier 2: Wikipedia opensearch + page parse ----------
 
-DDG_RESULT_RE = re.compile(r'<a[^>]+class="result__a"[^>]+href="([^"]+)"', re.IGNORECASE)
+EXTERNAL_LINK_RE = re.compile(r'\[(https?://[^\s\]]+)', re.IGNORECASE)
+INFOBOX_WEBSITE_RE = re.compile(
+    r"\|\s*(?:sito[\s_]?(?:web|internet|ufficiale)|website)\s*=\s*\[?(https?://\S+|[a-z0-9][a-z0-9.-]+\.[a-z]{2,})",
+    re.IGNORECASE,
+)
 
 
-def duckduckgo_lookup(query: str) -> str | None:
-    """Scrape DuckDuckGo HTML SERP and return the first plausible Italian PA
-    domain (prefer .gov.it / .it that isn't a known PEC provider)."""
-    url = "https://html.duckduckgo.com/html/"
-    body = (f"q={urllib.parse.quote(query)}").encode("ascii")
+def wikipedia_opensearch(query: str) -> str | None:
+    """Use Italian Wikipedia opensearch API to find a likely page title for
+    the query. Returns title or None."""
+    api = ("https://it.wikipedia.org/w/api.php"
+           f"?action=opensearch&format=json&limit=1&search={urllib.parse.quote(query)}")
     try:
-        resp = http_get(url, headers={"Content-Type": "application/x-www-form-urlencoded"},
-                        data=body)
+        body = http_get(api)
     except RuntimeError:
         return None
-    candidates: list[str] = []
-    for m in DDG_RESULT_RE.finditer(resp):
-        target = unescape(m.group(1))
-        # DDG wraps results: //duckduckgo.com/l/?uddg=<url>
-        if "uddg=" in target:
-            target = urllib.parse.unquote(target.split("uddg=", 1)[1].split("&", 1)[0])
-        host = _extract_host(target)
+    try:
+        d = json.loads(body)
+    except Exception:
+        return None
+    titles = d[1] if isinstance(d, list) and len(d) > 1 else []
+    return titles[0] if titles else None
+
+
+def wikipedia_page_website(title: str) -> str | None:
+    """Fetch the Italian Wikipedia article wikitext and extract the
+    "sito web|website" infobox parameter or first http://... external link
+    that looks like an Italian PA domain."""
+    api = ("https://it.wikipedia.org/w/api.php"
+           "?action=query&format=json&prop=revisions&rvslots=main&rvprop=content"
+           f"&titles={urllib.parse.quote(title)}")
+    try:
+        body = http_get(api)
+        d = json.loads(body)
+    except Exception:
+        return None
+    pages = d.get("query", {}).get("pages", {})
+    text = ""
+    for _pid, p in pages.items():
+        revs = p.get("revisions", [])
+        if revs and "slots" in revs[0]:
+            text = revs[0]["slots"]["main"].get("*", "")
+            break
+    if not text:
+        return None
+    # Try infobox |sito web= / |website= first
+    m = INFOBOX_WEBSITE_RE.search(text)
+    if m:
+        host = _extract_host(m.group(1))
+        if host and host not in SKIP_PEC_PROVIDER_HOSTS and GOOD_TLD_RE.search(host):
+            return host
+    # Fall back: scan external links for plausible PA domain
+    for m in EXTERNAL_LINK_RE.finditer(text):
+        host = _extract_host(m.group(1))
         if not host:
             continue
         if host in SKIP_PEC_PROVIDER_HOSTS:
             continue
-        if any(host.endswith(s) or host == s.lstrip(".") for s in
-               (".facebook.com", ".instagram.com", ".linkedin.com", ".wikipedia.org",
-                ".indicepa.gov.it", "indicepa.gov.it")):
+        if any(host.endswith(s) for s in
+               (".facebook.com", ".instagram.com", ".linkedin.com",
+                ".wikipedia.org", ".wikidata.org", ".commons.wikimedia.org",
+                ".youtube.com", ".twitter.com", "x.com",
+                ".indicepa.gov.it", "indicepa.gov.it",
+                ".google.com", "maps.google.com")):
             continue
         if not GOOD_TLD_RE.search(host):
             continue
-        candidates.append(host)
-        if len(candidates) >= 3:
-            break
-    return candidates[0] if candidates else None
+        return host
+    return None
+
+
+def wikipedia_lookup(name: str) -> str | None:
+    """Combined: opensearch -> page -> website. None if nothing found."""
+    title = wikipedia_opensearch(name)
+    if not title:
+        return None
+    return wikipedia_page_website(title)
 
 
 # ---------- Verification: MX lookup ----------
@@ -249,16 +294,15 @@ def enrich_one(row: dict[str, Any]) -> dict[str, Any] | None:
     if not codice_ipa or not name:
         return None
 
-    # Tier 1
+    # Tier 1: Wikidata
     host = wikidata_lookup_by_ipa(codice_ipa)
     src = "wikidata" if host else None
 
-    # Tier 2
+    # Tier 2: IT Wikipedia opensearch + page parse (replaces DDG which is
+    # rate-limited / IP-blocked from the Scaleway server)
     if not host:
-        host = duckduckgo_lookup(f'"{name}" sito ufficiale')
-        src = "duckduckgo" if host else None
-        if host:
-            time.sleep(random.uniform(2.0, 4.0))  # be polite to DDG
+        host = wikipedia_lookup(name)
+        src = "wikipedia" if host else None
 
     if not host:
         return None
@@ -307,11 +351,11 @@ def main() -> int:
             res = None
         if res:
             enriched[codice_ipa] = res
-            if res["source"] == "wikidata":  n_wd += 1
-            else:                            n_ddg += 1
+            if res["source"] == "wikidata":   n_wd += 1
+            else:                             n_ddg += 1  # now wikipedia
             print(f"  [{i}/{len(candidates)}] {codice_ipa}  {res['name'][:40]:<40} "
                   f"-> {res['domain']:<35}  [{res['source']}]"
-                  f"{' MX✓' if res['verified_mx'] else ' MX✗'}")
+                  f"{' MX✓' if res['verified_mx'] else ' MX✗'}", flush=True)
         else:
             n_fail += 1
             if i % 25 == 0:
