@@ -63,6 +63,43 @@ def overpass_query(rel_id: int, *, timeout: int = 30) -> dict | None:
     return None
 
 
+def stitch_rings(lines: list[list[list[float]]]) -> list[list[list[float]]]:
+    """Stitch unordered way segments into closed rings.
+
+    Each input is an open polyline [[lon,lat], ...]. Endpoints from the same
+    Overpass response are byte-identical, so plain == on point lists is
+    reliable. We greedily merge segments at either end of the current ring
+    (4 directions), then start a new ring when no segment connects.
+
+    Improvements over the naive version: tries to extend at BOTH ring[0] AND
+    ring[-1] (4 cases instead of 2), correctly handling complex multi-island
+    boundaries (Aosta, Sauris, Sardegna 2016 splits, Friuli bilingual comuni).
+    """
+    rings: list[list[list[float]]] = []
+    remaining = [ln[:] for ln in lines]
+    while remaining:
+        ring = remaining.pop(0)
+        while ring[0] != ring[-1]:
+            extended = False
+            for i, ln in enumerate(remaining):
+                # extend forward (append at end)
+                if ln[0] == ring[-1]:
+                    ring.extend(ln[1:]); remaining.pop(i); extended = True; break
+                if ln[-1] == ring[-1]:
+                    ring.extend(reversed(ln[:-1])); remaining.pop(i); extended = True; break
+                # extend backward (prepend at start)
+                if ln[-1] == ring[0]:
+                    ring = ln + ring[1:]; remaining.pop(i); extended = True; break
+                if ln[0] == ring[0]:
+                    ring = list(reversed(ln)) + ring[1:]; remaining.pop(i); extended = True; break
+            if not extended:
+                break  # disjoint piece; force-close + start new ring
+        if ring[0] != ring[-1]:
+            ring.append(ring[0])
+        rings.append(ring)
+    return rings
+
+
 def overpass_to_polygon(elements: list[dict], rel_id: int, name: str) -> dict | None:
     rel = next((e for e in elements
                 if e.get("type") == "relation" and e.get("id") == rel_id), None)
@@ -80,22 +117,9 @@ def overpass_to_polygon(elements: list[dict], rel_id: int, name: str) -> dict | 
             outer_lines.append(coords)
     if not outer_lines:
         return None
-    # Close any open lines + assemble naive polygon
-    rings = []
-    remaining = outer_lines[:]
-    while remaining:
-        ring = remaining.pop(0)[:]
-        progress = True
-        while progress and ring[0] != ring[-1] and remaining:
-            progress = False
-            for i, ln in enumerate(remaining):
-                if ln[0] == ring[-1]:
-                    ring.extend(ln[1:]); remaining.pop(i); progress = True; break
-                if ln[-1] == ring[-1]:
-                    ring.extend(list(reversed(ln))[1:]); remaining.pop(i); progress = True; break
-        if ring[0] != ring[-1]:
-            ring.append(ring[0])
-        rings.append(ring)
+    rings = stitch_rings(outer_lines)
+    if not rings:
+        return None
     return {
         "type": "MultiPolygon" if len(rings) > 1 else "Polygon",
         "id": f"relation/{rel_id}",

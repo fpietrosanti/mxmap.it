@@ -117,25 +117,28 @@ def overpass_to_geojson(elements: list[dict], rel_id: int, name: str) -> dict:
     if not outer_lines:
         raise RuntimeError(f"No outer ways resolved for relation {rel_id}")
 
-    # Stitch lines into closed rings (greedy join by endpoint match).
+    # Stitch lines into closed rings using bi-directional greedy match.
+    # Tries to merge at BOTH ring[-1] AND ring[0]; when nothing connects,
+    # close current ring and start a fresh one (multi-island handling).
     rings: list[list[list[float]]] = []
-    remaining = outer_lines[:]
+    remaining = [ln[:] for ln in outer_lines]
     while remaining:
-        ring = remaining.pop(0)[:]
-        progress = True
-        while progress and ring[0] != ring[-1]:
-            progress = False
+        ring = remaining.pop(0)
+        while ring[0] != ring[-1]:
+            extended = False
             for i, ln in enumerate(remaining):
                 if ln[0] == ring[-1]:
-                    ring.extend(ln[1:]); remaining.pop(i); progress = True; break
+                    ring.extend(ln[1:]); remaining.pop(i); extended = True; break
                 if ln[-1] == ring[-1]:
-                    ring.extend(list(reversed(ln))[1:]); remaining.pop(i); progress = True; break
+                    ring.extend(reversed(ln[:-1])); remaining.pop(i); extended = True; break
                 if ln[-1] == ring[0]:
-                    ring = ln[:-1] + ring; remaining.pop(i); progress = True; break
+                    ring = ln + ring[1:]; remaining.pop(i); extended = True; break
                 if ln[0] == ring[0]:
-                    ring = list(reversed(ln))[:-1] + ring; remaining.pop(i); progress = True; break
+                    ring = list(reversed(ln)) + ring[1:]; remaining.pop(i); extended = True; break
+            if not extended:
+                break
         if ring[0] != ring[-1]:
-            ring.append(ring[0])  # force-close
+            ring.append(ring[0])
         rings.append(ring)
 
     return {
