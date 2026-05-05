@@ -37,10 +37,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 TOPO_PROVINCE = ROOT / "topo" / "it_province.topo.json"
 
-# Each entry: (osm_relation_id, name to write into properties.name)
+# Each entry: (osm_relation_id, name to write into properties.name).
+# OSM relation IDs verified via Wikidata P402 (2026-05).
 EXTRA_PROVINCES = [
-    (35394,   "Valle d'Aosta / Vallée d'Aoste"),
-    (8829893, "Sud Sardegna"),
+    (42004,    "Valle d'Aosta / Vallée d'Aoste"),  # Wikidata Q1280, P402=42004
+    (17135059, "Sud Sardegna"),                    # Wikidata Q23498165, P402=17135059
 ]
 
 OVERPASS_MIRRORS = [
