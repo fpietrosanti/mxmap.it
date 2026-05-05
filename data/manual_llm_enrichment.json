@@ -1,0 +1,102 @@
+{
+  "bgk42ke5": {
+    "domain": "rai.it",
+    "confidence": "high",
+    "rationale": "RAI - national public broadcaster, official site rai.it (Wikipedia, RAI corporate site)"
+  },
+  "3jgcanob": {
+    "domain": "infratelitalia.it",
+    "confidence": "high",
+    "rationale": "Infratel Italia S.p.A. - official site infratelitalia.it; institutional emails @infratelitalia.it (e.g. info@infratelitalia.it)"
+  },
+  "2sh4yo8c": {
+    "domain": "afolmet.it",
+    "confidence": "high",
+    "rationale": "AFOL Metropolitana - official site afolmet.it; institutional emails @afolmet.it (matches PEC pattern segreteriagenerale@pec.afolmet.it)"
+  },
+  "pd0ajk0l": {
+    "domain": "amt.genova.it",
+    "confidence": "high",
+    "rationale": "AMT Genova (Azienda Mobilita' e Trasporti) - official site amt.genova.it; matches PEC amt.spa@pec.amt.genova.it"
+  },
+  "ufh3ssbu": {
+    "domain": "fitet.org",
+    "confidence": "high",
+    "rationale": "Federazione Italiana Tennistavolo - official site fitet.org; institutional emails @fitet.org (matches PEC acquisti@pec.fitet.org)"
+  },
+  "f2o7ptm8": {
+    "domain": "almalaurea.it",
+    "confidence": "high",
+    "rationale": "Consorzio Interuniversitario AlmaLaurea - official site almalaurea.it (matches PEC consorzio@pec.almalaurea.it)"
+  },
+  "qq0nbr5f": {
+    "domain": "insula.it",
+    "confidence": "high",
+    "rationale": "Insula S.p.A. (societa' strumentale del Comune di Venezia) - official site insula.it"
+  },
+  "wcoal29s": {
+    "domain": "casaverdi.it",
+    "confidence": "high",
+    "rationale": "Casa di Riposo per Musicisti - Fondazione Giuseppe Verdi - official site casaverdi.it (Wikipedia, official site)"
+  },
+  "erdu2byw": {
+    "domain": "casaverdi.it",
+    "confidence": "high",
+    "rationale": "Casa dei Musicisti (entity at same Piazza Buonarroti 29 address as Fondazione G. Verdi); shared institutional site casaverdi.it"
+  },
+  "jkqjkagq": {
+    "domain": "museodellashoah.it",
+    "confidence": "high",
+    "rationale": "Fondazione Museo della Shoah - official site museodellashoah.it (Wikipedia)"
+  },
+  "b4lub3pe": {
+    "domain": "seaambiente-spa.it",
+    "confidence": "high",
+    "rationale": "SEA Ambiente S.p.A. (Viareggio) - official site seaambiente-spa.it (RetiAmbiente group)"
+  },
+  "6006vsss": {
+    "domain": "sistemaambientelucca.it",
+    "confidence": "high",
+    "rationale": "Sistema Ambiente S.p.A. (Lucca) - official site sistemaambientelucca.it; institutional email infoa@sistemaambientelucca.it"
+  },
+  "rspa": {
+    "domain": "retiambiente.it",
+    "confidence": "high",
+    "rationale": "Retiambiente S.p.A. (Tuscany regional waste holding) - official site retiambiente.it"
+  },
+  "th8f7atc": {
+    "domain": "cervinospa.com",
+    "confidence": "high",
+    "rationale": "Cervino S.p.A. (Breuil-Cervinia ski lifts) - institutional email info@cervinospa.com (per official regulations PDF and contact pages)"
+  },
+  "xn8s2hnm": {
+    "domain": "rometechnopole.it",
+    "confidence": "high",
+    "rationale": "Fondazione Rome Technopole - official site rometechnopole.it"
+  },
+  "ccsrl": {
+    "domain": "casacivitabagnoregio.it",
+    "confidence": "high",
+    "rationale": "Casa Civita S.r.l. (in-house Comune di Bagnoregio) - official site casacivitabagnoregio.it"
+  },
+  "njhfhque": {
+    "domain": "caloreverde.it",
+    "confidence": "high",
+    "rationale": "Calore Verde S.r.l. (Ormea, teleriscaldamento) - official site caloreverde.it (P.IVA 02799890047 matches; sede Ormea CAP 12078)"
+  },
+  "k1jycpmr": {
+    "domain": "asmterni.it",
+    "confidence": "high",
+    "rationale": "ASM Terni S.p.A. - official site asmterni.it; institutional email info@asmterni.it"
+  },
+  "735id71u": {
+    "domain": "astemlodi.it",
+    "confidence": "high",
+    "rationale": "ASTEM S.p.A. (Lodi) - official site astemlodi.it; institutional email amministrazione@astemlodi.it"
+  },
+  "vy6e7tce": {
+    "domain": "maabpuglia.it",
+    "confidence": "high",
+    "rationale": "Mercato Agricolo Alimentare Bari (MAAB scrl) - official site maabpuglia.it; institutional email info@maabpuglia.it"
+  }
+}

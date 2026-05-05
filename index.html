@@ -224,6 +224,9 @@
     <div class="info-card">
       <h3>Open source &amp; dati aperti</h3>
       <p>Ispirato da <a href="https://mxmap.ch" target="_blank" rel="noopener">mxmap.ch</a>. Codice e dati su <a href="https://github.com/fpietrosanti/mxmap.it" target="_blank" rel="noopener">GitHub</a>. Fonti: <a href="https://indicepa.gov.it/ipa-dati/dataset/enti" target="_blank" rel="noopener">IndicePA (AgID)</a>, <a href="https://www.wikidata.org/" target="_blank" rel="noopener">Wikidata</a>, <a href="https://www.openstreetmap.org/" target="_blank" rel="noopener">OpenStreetMap</a>.</p>
+      <h4 style="margin-top:14px;font-size:13px;color:#444">Trasparenza dataset</h4>
+      <p id="funnel-sentence" style="margin-bottom:8px"><em>Caricamento…</em></p>
+      <table id="funnel-table" style="border-collapse:collapse;font-size:12px;width:100%;max-width:560px"></table>
     </div>
   </div>
 </section>
@@ -1739,6 +1742,25 @@ async function loadData() {
 
   regionData = await regionsRes.json();
   manifest = await manifestRes.json();
+
+  // Pipeline funnel transparency report — populates the
+  // "Open source & dati aperti" info card. Background-fetch (don't await
+  // beyond the assignment of the global), so a missing/slow file doesn't
+  // block map rendering.
+  fetch('data/it_pipeline_funnel.json').then(r => r.ok ? r.json() : null).then(funnel => {
+    if (!funnel) return;
+    const sent = document.getElementById('funnel-sentence');
+    if (sent) sent.textContent = funnel.summary_sentence || '';
+    const tbl = document.getElementById('funnel-table');
+    if (tbl) {
+      const rows = (funnel.stages || []).map(s =>
+        `<tr><td style="padding:3px 8px;border-bottom:1px solid #eee">${s.label}</td>` +
+        `<td style="padding:3px 8px;border-bottom:1px solid #eee;text-align:right;font-variant-numeric:tabular-nums">${s.count.toLocaleString('it-IT')}</td>` +
+        `<td style="padding:3px 8px;border-bottom:1px solid #eee;text-align:right;color:#777;font-variant-numeric:tabular-nums">${s.pct.toFixed(2)}%</td></tr>`
+      ).join('');
+      tbl.innerHTML = rows;
+    }
+  }).catch(() => {});
 
   // Inject IT 'istruzione' synthetic level: same topo as comuni, but the
   // choropleth is data-driven by cd.istruzione_by_osm (built by
