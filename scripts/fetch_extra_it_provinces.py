@@ -160,29 +160,69 @@ def overpass_to_geojson(elements: list[dict], rel_id: int, name: str) -> dict:
     }
 
 
+def _quantize_ring(ring: list[list[float]], transform: dict) -> list[list[int]]:
+    sx, sy = transform["scale"]
+    tx, ty = transform["translate"]
+    abs_pts = [[round((p[0] - tx) / sx), round((p[1] - ty) / sy)] for p in ring]
+    out = [abs_pts[0][:]]
+    for i in range(1, len(abs_pts)):
+        out.append([abs_pts[i][0] - abs_pts[i-1][0],
+                    abs_pts[i][1] - abs_pts[i-1][1]])
+    return out
+
+
 def topojson_inject_geometry(topo: dict, feature: dict) -> None:
-    """Append a GeoJSON Feature into the first object's geometries list of an
-    existing TopoJSON. NOTE: this writes raw lat/lng coordinates rather than
-    quantized arcs, which is non-canonical TopoJSON but works because Leaflet
-    consumes the geometries via topojson-client's `feature()` which handles
-    both arcs and inline coordinates. For full correctness re-run mapshaper
-    on the merged topo, but for 2 extra polygons this is acceptable."""
+    """Append a GeoJSON Feature into the first object's geometries list of
+    an existing TopoJSON, encoded as proper TopoJSON arcs (quantized + delta-
+    encoded if topo.transform is present). Inline `coordinates` is invalid
+    TopoJSON and is silently dropped by topojson-client — using this format
+    previously caused the injected provinces (Valle d'Aosta + Sud Sardegna)
+    to be invisible on the map."""
     objs = topo.get("objects", {})
     if not objs:
         raise RuntimeError("topo has no objects")
     obj_name = next(iter(objs))
     geoms = objs[obj_name].setdefault("geometries", [])
-    # Skip if already present (idempotent re-run)
     target_id = feature["id"]
+    # Idempotent: drop any existing entry with this id (and any legacy
+    # inline-coords variant that was buggy).
     geoms[:] = [g for g in geoms if g.get("id") != target_id]
-    # Inject as an inline-coords geometry. TopoJSON spec allows "coordinates"
-    # on Polygon/MultiPolygon geometries even outside arcs.
-    geoms.append({
-        "type": feature["geometry"]["type"],
-        "id": target_id,
-        "properties": feature["properties"],
-        "coordinates": feature["geometry"]["coordinates"],
-    })
+
+    transform = topo.get("transform")
+    arcs = topo.setdefault("arcs", [])
+
+    geom_type = feature["geometry"]["type"]
+    coords = feature["geometry"]["coordinates"]
+    # Normalize to list-of-rings (Polygon: 1 polygon; MultiPolygon: many)
+    if geom_type == "Polygon":
+        polys = [coords]
+    else:
+        polys = coords
+    # Each polygon is [outer_ring, hole_ring, ...]; here we only handle outer.
+    poly_arcs = []
+    for poly in polys:
+        ring_arcs = []
+        for ring in poly:
+            arc = _quantize_ring(ring, transform) if transform else [p[:] for p in ring]
+            arcs.append(arc)
+            ring_arcs.append(len(arcs) - 1)
+        poly_arcs.append([[idx] for idx in ring_arcs])
+
+    if geom_type == "Polygon":
+        new_geom = {
+            "type": "Polygon",
+            "id": target_id,
+            "properties": feature["properties"],
+            "arcs": poly_arcs[0],
+        }
+    else:
+        new_geom = {
+            "type": "MultiPolygon",
+            "id": target_id,
+            "properties": feature["properties"],
+            "arcs": poly_arcs,
+        }
+    geoms.append(new_geom)
 
 
 def main() -> int:

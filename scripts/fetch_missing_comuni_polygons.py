@@ -100,7 +100,8 @@ def stitch_rings(lines: list[list[list[float]]]) -> list[list[list[float]]]:
     return rings
 
 
-def overpass_to_polygon(elements: list[dict], rel_id: int, name: str) -> dict | None:
+def overpass_to_rings(elements: list[dict], rel_id: int) -> list[list[list[float]]] | None:
+    """Pull raw outer rings (each [[lon,lat],...]) from an Overpass relation."""
     rel = next((e for e in elements
                 if e.get("type") == "relation" and e.get("id") == rel_id), None)
     if rel is None:
@@ -118,14 +119,62 @@ def overpass_to_polygon(elements: list[dict], rel_id: int, name: str) -> dict | 
     if not outer_lines:
         return None
     rings = stitch_rings(outer_lines)
-    if not rings:
-        return None
-    return {
-        "type": "MultiPolygon" if len(rings) > 1 else "Polygon",
-        "id": f"relation/{rel_id}",
-        "properties": {"name": name, "country": "IT", "osm_id": rel_id},
-        "coordinates": [[ring] for ring in rings] if len(rings) > 1 else [rings[0]],
-    }
+    return rings or None
+
+
+def quantize_ring(ring: list[list[float]], transform: dict) -> list[list[int]]:
+    """Convert raw [lon,lat] ring to TopoJSON quantized + delta-encoded arc.
+
+    TopoJSON spec: each arc is a sequence of [x, y] pairs where the first
+    pair is absolute (in quantized integer space), and subsequent pairs are
+    delta-encoded relative to the previous pair. Quantization uses the
+    topology's transform: x_q = round((lon - translate[0]) / scale[0]).
+    """
+    sx, sy = transform["scale"]
+    tx, ty = transform["translate"]
+    abs_pts = [[round((p[0] - tx) / sx), round((p[1] - ty) / sy)] for p in ring]
+    out = [abs_pts[0][:]]
+    for i in range(1, len(abs_pts)):
+        out.append([abs_pts[i][0] - abs_pts[i-1][0],
+                    abs_pts[i][1] - abs_pts[i-1][1]])
+    return out
+
+
+def append_polygon_to_topo(topo: dict, rel_id: int, name: str,
+                            rings: list[list[list[float]]]) -> None:
+    """Inject a Polygon/MultiPolygon feature into the first object's geometries
+    list, encoded as TopoJSON arcs (quantized + delta-encoded) so topojson-client
+    renders it correctly. Mixing inline `coordinates` with arc-based geometries
+    in the same topology breaks rendering."""
+    transform = topo.get("transform")
+    arcs = topo.setdefault("arcs", [])
+    obj_name = next(iter(topo.get("objects", {})))
+    geoms = topo["objects"][obj_name].setdefault("geometries", [])
+
+    geom_arcs: list[list[int]] = []  # one entry per ring, each = list of arc indexes
+    for ring in rings:
+        if transform:
+            arc = quantize_ring(ring, transform)
+        else:
+            arc = [p[:] for p in ring]  # raw coords (no transform)
+        arcs.append(arc)
+        geom_arcs.append([len(arcs) - 1])
+
+    if len(rings) > 1:
+        geom = {
+            "type": "MultiPolygon",
+            "id": f"relation/{rel_id}",
+            "properties": {"name": name, "country": "IT", "osm_id": rel_id},
+            "arcs": [[ga] for ga in geom_arcs],  # MultiPolygon: list of polygons, each = list of rings
+        }
+    else:
+        geom = {
+            "type": "Polygon",
+            "id": f"relation/{rel_id}",
+            "properties": {"name": name, "country": "IT", "osm_id": rel_id},
+            "arcs": geom_arcs,  # Polygon: list of rings
+        }
+    geoms.append(geom)
 
 
 def main() -> int:
@@ -141,18 +190,33 @@ def main() -> int:
     seed = json.loads(SEED.read_text(encoding="utf-8"))
     topo = json.loads(TOPO.read_text(encoding="utf-8"))
 
-    # Collect existing osm_ids in topo
+    # Collect existing osm_ids in topo. ALSO purge any features that use the
+    # invalid inline `coordinates` schema (legacy bug — TopoJSON requires
+    # `arcs`, the inline form is silently dropped by topojson-client and
+    # invisible on the map). They get re-fetched below in the proper
+    # quantized-arcs format.
     obj_name = next(iter(topo.get("objects", {})))
     geoms = topo["objects"][obj_name].setdefault("geometries", [])
-    existing_osm = set()
+    existing_osm: set[int] = set()
+    purged = 0
+    valid_geoms: list[dict] = []
     for g in geoms:
         gid = g.get("id", "")
+        # Drop legacy inline-coordinates features
+        if "coordinates" in g and "arcs" not in g:
+            purged += 1
+            continue
+        valid_geoms.append(g)
         if isinstance(gid, str) and gid.startswith("relation/"):
             try:
                 existing_osm.add(int(gid.split("/", 1)[1]))
             except ValueError:
                 pass
-    print(f"  topo has {len(existing_osm)} relation features (out of {len(geoms)} total)")
+    if purged:
+        topo["objects"][obj_name]["geometries"] = valid_geoms
+        geoms = valid_geoms
+        print(f"  PURGED {purged} legacy inline-coordinate features (will re-fetch as arcs)")
+    print(f"  topo has {len(existing_osm)} valid relation features (out of {len(geoms)} total)")
 
     # Collect needed osm_ids from seed
     needed: list[tuple[int, str]] = []
@@ -192,20 +256,20 @@ def main() -> int:
             print("FETCH FAIL")
             failed += 1
             continue
-        feat = overpass_to_polygon(data.get("elements", []), rel_id, name)
-        if not feat:
+        rings = overpass_to_rings(data.get("elements", []), rel_id)
+        if not rings:
             print("PARSE FAIL")
             failed += 1
             continue
-        geoms.append(feat)
+        append_polygon_to_topo(topo, rel_id, name, rings)
         existing_osm.add(rel_id)
         fetched += 1
-        print(f"OK ({feat['type']})")
-        # Periodic checkpoint write — protects against process kill mid-run
+        kind = "MultiPolygon" if len(rings) > 1 else "Polygon"
+        print(f"OK ({kind}, {len(rings)} ring{'s' if len(rings)>1 else ''})")
         if i % 20 == 0:
             TOPO.write_text(json.dumps(topo, ensure_ascii=False, separators=(",", ":")),
                             encoding="utf-8")
-        time.sleep(1.2)  # be polite to Overpass
+        time.sleep(1.2)
 
     TOPO.write_text(json.dumps(topo, ensure_ascii=False, separators=(",", ":")),
                     encoding="utf-8")
