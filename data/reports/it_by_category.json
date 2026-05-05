@@ -1,14 +1,14 @@
 {
-  "total": 22824,
+  "total": 22947,
   "aggregate": {
-    "microsoft": 4442,
-    "independent": 3773,
-    "local-isp": 956,
-    "aruba": 5324,
-    "google": 6460,
+    "microsoft": 4464,
+    "independent": 3802,
+    "local-isp": 966,
+    "aruba": 5374,
+    "google": 6464,
     "seeweb": 80,
-    "register-it": 680,
-    "regional-public": 1084,
+    "register-it": 684,
+    "regional-public": 1088,
     "aws": 10,
     "zoho": 2,
     "unknown": 12,
@@ -70,8 +70,8 @@
       "providers": {
         "aruba": 808,
         "microsoft": 229,
-        "google": 120,
-        "local-isp": 222,
+        "google": 119,
+        "local-isp": 223,
         "independent": 356,
         "seeweb": 23,
         "regional-public": 18,
@@ -167,19 +167,45 @@
     },
     "L6": {
       "label": "Comuni",
-      "n": 7883,
+      "n": 7975,
       "providers": {
-        "microsoft": 1292,
-        "aruba": 2460,
-        "regional-public": 900,
-        "independent": 1941,
-        "local-isp": 198,
-        "register-it": 429,
-        "google": 630,
+        "microsoft": 1298,
+        "aruba": 2508,
+        "regional-public": 903,
+        "independent": 1966,
+        "local-isp": 201,
+        "register-it": 431,
+        "google": 635,
         "zoho": 2,
         "unknown": 2,
         "aws": 2,
         "seeweb": 27
+      }
+    },
+    "L4": {
+      "label": "Regioni e Prov. Autonome",
+      "n": 52,
+      "providers": {
+        "microsoft": 26,
+        "register-it": 2,
+        "local-isp": 7,
+        "aruba": 2,
+        "independent": 7,
+        "regional-public": 2,
+        "google": 6
+      }
+    },
+    "L5": {
+      "label": "Province",
+      "n": 89,
+      "providers": {
+        "microsoft": 39,
+        "independent": 11,
+        "google": 15,
+        "aruba": 10,
+        "local-isp": 8,
+        "register-it": 1,
+        "regional-public": 5
       }
     },
     "L1": {
@@ -383,9 +409,9 @@
     },
     "L33": {
       "label": "Istituti Istruzione Statale",
-      "n": 8169,
+      "n": 8168,
       "providers": {
-        "google": 4907,
+        "google": 4906,
         "aruba": 824,
         "independent": 648,
         "microsoft": 1509,
@@ -568,30 +594,6 @@
         "independent": 14,
         "google": 11,
         "aruba": 7
-      }
-    },
-    "L5": {
-      "label": "Province",
-      "n": 87,
-      "providers": {
-        "independent": 10,
-        "microsoft": 38,
-        "google": 15,
-        "aruba": 10,
-        "local-isp": 8,
-        "register-it": 1,
-        "regional-public": 5
-      }
-    },
-    "L4": {
-      "label": "Regioni e Prov. Autonome",
-      "n": 22,
-      "providers": {
-        "independent": 4,
-        "microsoft": 11,
-        "google": 5,
-        "local-isp": 1,
-        "regional-public": 1
       }
     },
     "S01": {

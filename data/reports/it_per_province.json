@@ -3,7 +3,7 @@
   "comuni_analyzed": 7883,
   "aggregate": {
     "microsoft": 1292,
-    "google": 630,
+    "google": 629,
     "aruba": 2460,
     "register-it": 429,
     "seeweb": 27,
@@ -13,7 +13,7 @@
     "pa-contractor-private": 0,
     "provincial-shared": 0,
     "local-isp": 198,
-    "independent": 1941,
+    "independent": 1942,
     "aws": 2,
     "unknown": 2,
     "zoho": 2
@@ -261,10 +261,10 @@
     "022": {
       "n": 166,
       "providers": {
-        "google": 123,
+        "google": 122,
         "aruba": 6,
         "microsoft": 18,
-        "independent": 16,
+        "independent": 17,
         "local-isp": 2,
         "register-it": 1
       }
@@ -1391,9 +1391,9 @@
       "providers": {
         "regional-public": 108,
         "microsoft": 24,
-        "google": 123,
+        "google": 122,
         "aruba": 6,
-        "independent": 16,
+        "independent": 17,
         "local-isp": 2,
         "register-it": 1
       }

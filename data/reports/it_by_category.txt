@@ -1,46 +1,48 @@
 ====================================================================================================
 IT public administrations — provider distribution by IndicePA category
 ====================================================================================================
-Total classified IT entries: 22824
+Total classified IT entries: 22947
 Distinct IPA categories:     53
 
 === Aggregate across ALL Italian PA categories ===
-  microsoft                   4442  ( 19.5%)
-  google                      6460  ( 28.3%)
+  microsoft                   4464  ( 19.5%)
+  google                      6464  ( 28.2%)
   aws                           10  (  0.0%)
-  aruba                       5324  ( 23.3%)
-  register-it                  680  (  3.0%)
-  seeweb                        80  (  0.4%)
-  regional-public             1084  (  4.7%)
+  aruba                       5374  ( 23.4%)
+  register-it                  684  (  3.0%)
+  seeweb                        80  (  0.3%)
+  regional-public             1088  (  4.7%)
   pa-contractor-private          1  (  0.0%)
-  local-isp                    956  (  4.2%)
-  independent                 3773  ( 16.5%)
+  local-isp                    966  (  4.2%)
+  independent                 3802  ( 16.6%)
   zoho                           2  (  0.0%)
   unknown                       12  (  0.1%)
 
 === USA vs Italy ===
-  USA hyperscalers:     10912  ( 47.8%)
-  Italy / EU / IT:      11898  ( 52.1%)
+  USA hyperscalers:     10938  ( 47.7%)
+  Italy / EU / IT:      11995  ( 52.3%)
 
 ====================================================================================================
 # Territorial (Tier 1)
 ====================================================================================================
 
-  L4    Regioni e Prov. Autonome                 N=   22   USA share=72.7%
-      microsoft                    11  ( 50.0%)
-      google                        5  ( 22.7%)
-      regional-public               1  (  4.5%)
-      local-isp                     1  (  4.5%)
-      independent                   4  ( 18.2%)
+  L4    Regioni e Prov. Autonome                 N=   52   USA share=61.5%
+      microsoft                    26  ( 50.0%)
+      google                        6  ( 11.5%)
+      aruba                         2  (  3.8%)
+      register-it                   2  (  3.8%)
+      regional-public               2  (  3.8%)
+      local-isp                     7  ( 13.5%)
+      independent                   7  ( 13.5%)
 
-  L5    Province                                 N=   87   USA share=60.9%
-      microsoft                    38  ( 43.7%)
-      google                       15  ( 17.2%)
-      aruba                        10  ( 11.5%)
+  L5    Province                                 N=   89   USA share=60.7%
+      microsoft                    39  ( 43.8%)
+      google                       15  ( 16.9%)
+      aruba                        10  ( 11.2%)
       register-it                   1  (  1.1%)
-      regional-public               5  (  5.7%)
-      local-isp                     8  (  9.2%)
-      independent                  10  ( 11.5%)
+      regional-public               5  (  5.6%)
+      local-isp                     8  (  9.0%)
+      independent                  11  ( 12.4%)
 
   L45   Città Metropolitane                      N=   15   USA share=73.3%
       microsoft                     8  ( 53.3%)
@@ -48,16 +50,16 @@ Distinct IPA categories:     53
       regional-public               3  ( 20.0%)
       local-isp                     1  (  6.7%)
 
-  L6    Comuni                                   N= 7883   USA share=24.4%
-      microsoft                  1292  ( 16.4%)
-      google                      630  (  8.0%)
+  L6    Comuni                                   N= 7975   USA share=24.3%
+      microsoft                  1298  ( 16.3%)
+      google                      635  (  8.0%)
       aws                           2  (  0.0%)
-      aruba                      2460  ( 31.2%)
-      register-it                 429  (  5.4%)
+      aruba                      2508  ( 31.4%)
+      register-it                 431  (  5.4%)
       seeweb                       27  (  0.3%)
-      regional-public             900  ( 11.4%)
-      local-isp                   198  (  2.5%)
-      independent                1941  ( 24.6%)
+      regional-public             903  ( 11.3%)
+      local-isp                   201  (  2.5%)
+      independent                1966  ( 24.7%)
       zoho                          2  (  0.0%)
       unknown                       2  (  0.0%)
 
@@ -65,9 +67,9 @@ Distinct IPA categories:     53
 # Education
 ====================================================================================================
 
-  L33   Istituti Istruzione Statale              N= 8169   USA share=78.5%
+  L33   Istituti Istruzione Statale              N= 8168   USA share=78.5%
       microsoft                  1509  ( 18.5%)
-      google                     4907  ( 60.1%)
+      google                     4906  ( 60.1%)
       aruba                       824  ( 10.1%)
       register-it                  26  (  0.3%)
       seeweb                        5  (  0.1%)
@@ -174,15 +176,15 @@ Distinct IPA categories:     53
 # Professional orders / Chambers
 ====================================================================================================
 
-  C14   Federazioni/Ordini/Collegi               N= 1843   USA share=19.1%
+  C14   Federazioni/Ordini/Collegi               N= 1843   USA share=19.0%
       microsoft                   229  ( 12.4%)
-      google                      120  (  6.5%)
+      google                      119  (  6.5%)
       aws                           3  (  0.2%)
       aruba                       808  ( 43.8%)
       register-it                  64  (  3.5%)
       seeweb                       23  (  1.2%)
       regional-public              18  (  1.0%)
-      local-isp                   222  ( 12.0%)
+      local-isp                   223  ( 12.1%)
       independent                 356  ( 19.3%)
 
   L35   Camere di Commercio                      N=   82   USA share=72.0%
