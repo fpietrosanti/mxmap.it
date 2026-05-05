@@ -1722,17 +1722,48 @@ async function loadData() {
   if (toggleBtn) toggleBtn.addEventListener('click', toggleLegend);
 
   updateLegend = function () {
+    // V1.5: per-level legend filter. The legend's denominator + per-provider
+    // counts depend on currentLevel:
+    //   - 'region'       -> count regions by dominant provider (~20 IT)
+    //   - 'district'     -> count provinces by dominant provider (~107 IT)
+    //   - 'municipality' -> count individual comuni by their provider
+    // For region/district we read from regionData.countries[cc].regions/.districts
+    // and bucket each group by its dominant provider so the legend reflects the
+    // polygon-level view the user is currently on.
     const counts = {};
     let total = 0, gwCount = 0;
+    const levelNoun = (
+      currentLevel === 'region'   ? 'regioni' :
+      currentLevel === 'district' ? 'province' :
+                                    'enti'
+    );
 
-    if (summaryLoaded && dnsData) {
+    if (currentLevel !== 'municipality' && regionData) {
+      // Aggregate-level legend: count groups (regions or provinces) by dominant provider.
+      for (const cc of COUNTRY_LIST) {
+        if (!activeCountries.has(cc)) continue;
+        const cd = regionData.countries[cc];
+        if (!cd) continue;
+        const groupSet = (currentLevel === 'district' && cd.districts && Object.keys(cd.districts).length > 0)
+          ? cd.districts : cd.regions;
+        if (!groupSet) continue;
+        for (const gname of Object.keys(groupSet)) {
+          const g = groupSet[gname];
+          let dom = g.dominant;
+          if (!dom && g.providers) {
+            const e = Object.entries(g.providers).sort((a,b) => b[1]-a[1]);
+            dom = e[0] ? e[0][0] : null;
+          }
+          if (!dom) continue;
+          counts[dom] = (counts[dom] || 0) + 1;
+          total++;
+          if ((g.gateway_count || 0) > 0) gwCount++;
+        }
+      }
+    } else if (summaryLoaded && dnsData) {
+      // Municipality-level legend: count individual entities by their provider.
       for (const m of dnsData.municipalities) {
         if (!activeCountries.has(m.country)) continue;
-        // Map raw provider value (microsoft/google/aruba/...) -> display name
-        // (Microsoft 365 / Google Workspace / Provider Italiano / ...) so the
-        // legendGroupHtml lookups below match. Without this map, the only
-        // raw-name == display-name match is "aws" == "AWS" — hence the bug
-        // where the legend showed only AWS at region-level after summary load.
         const raw = m.classification.provider;
         const p = providerDisplayMap[raw] || raw;
         counts[p] = (counts[p] || 0) + 1;
@@ -1740,6 +1771,7 @@ async function loadData() {
         if (hasLocalGateway(m)) gwCount++;
       }
     } else if (regionData) {
+      // Fallback before summary-load on municipality level: country totals.
       for (const cc of COUNTRY_LIST) {
         if (!activeCountries.has(cc)) continue;
         var cd = regionData.countries[cc];
@@ -1762,7 +1794,7 @@ async function loadData() {
         legendGroupHtml('Italia — Infrastruttura autonoma', ['Infrastruttura autonoma', 'Mail provinciale condivisa'], counts) +
         legendGroupHtml('Altro', ['Zoho', 'Yandex', 'Sconosciuto'], counts) +
         (gwCount > 0 ? `<div style="margin-top:8px;font-size:11px;color:#795548">\u{1F6E1}\uFE0F = gateway locale, mailbox USA (${gwCount})</div>` : '') +
-        `<div style="margin-top:4px;font-size:11px;color:#999">${total} enti</div>`;
+        `<div style="margin-top:4px;font-size:11px;color:#999">${total} ${levelNoun}</div>`;
     }
   };
   updateLegend();
