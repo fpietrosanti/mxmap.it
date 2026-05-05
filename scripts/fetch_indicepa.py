@@ -311,6 +311,35 @@ def istat_to_province_name(codice_comune_istat: str | None) -> str | None:
 # classify() against the corrected domain — same MX checking path as the
 # original. This is the canonical place to record persistent IndicePA
 # data-quality fixes; keep one comment per override explaining why.
+IT_PEC_ENRICHMENT_PATH = ROOT / "data" / "enrichment_pec_only.json"
+
+
+def load_pec_enrichment() -> dict[str, str]:
+    """Load data/enrichment_pec_only.json (produced by scripts/enrich_pec_only.py)
+    as a {codice_ipa_lower: domain} map. Skips entries where the discovered
+    domain failed MX verification (verified_mx == False).
+
+    Returns empty dict if the file doesn't exist (enrichment hasn't been run).
+    """
+    if not IT_PEC_ENRICHMENT_PATH.exists():
+        return {}
+    try:
+        d = json.loads(IT_PEC_ENRICHMENT_PATH.read_text(encoding="utf-8"))
+    except Exception as e:
+        print(f"WARNING: cannot parse {IT_PEC_ENRICHMENT_PATH}: {e!r}")
+        return {}
+    out: dict[str, str] = {}
+    for k, entry in d.items():
+        if not isinstance(entry, dict):
+            continue
+        if not entry.get("verified_mx"):
+            continue  # skip enrichments that didn't have MX records
+        host = (entry.get("domain") or "").strip().lower()
+        if host and HOSTNAME_RE.match(host):
+            out[k.strip().lower()] = host
+    return out
+
+
 IT_MANUAL_DOMAIN_OVERRIDES: dict[str, str] = {
     # San Marcello Piteglio (PT) — IndicePA lists comune-sanmarcellopiteglio.info
     # which has no MX; the working comune site is on .it.
@@ -640,6 +669,14 @@ def transform(
             domain = override.lower()
             domain_source = "manual_override"
             domain_override_source = "manual_override"
+    elif codice_ipa_for_override in _PEC_ENRICHMENT:
+        # PEC-only enrichment (V1.2): for enti with no Sito_istituzionale and
+        # only PEC emails, scripts/enrich_pec_only.py discovers the real
+        # website via Wikidata P856 + DuckDuckGo. Applied here as second-tier
+        # override (after manual but before email-fallback).
+        domain = _PEC_ENRICHMENT[codice_ipa_for_override]
+        domain_source = "pec_enrichment"
+        domain_override_source = "pec_enrichment"
 
     # Email-fallback at seed-time: if Sito_istituzionale is missing/invalid,
     # derive the primary domain from the first non-PEC Mail{1..5} entry.
@@ -754,6 +791,12 @@ def main() -> int:
     kept_counts: dict[str, int] = {}
     entries: list[dict[str, Any]] = []
     seen_ids: set[str] = set()
+
+    global _PEC_ENRICHMENT
+    _PEC_ENRICHMENT = load_pec_enrichment()
+    if _PEC_ENRICHMENT:
+        print(f"Loaded {len(_PEC_ENRICHMENT)} PEC-only enrichments from "
+              f"{IT_PEC_ENRICHMENT_PATH.name}")
 
     crosswalk = load_crosswalk()
     if crosswalk is None:
