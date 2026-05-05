@@ -1,0 +1,51 @@
+{
+  "generated": "2026-05-05T15:06:17Z",
+  "indicepa_total": 23684,
+  "in_seed": 22988,
+  "coverage_pct": 97.06,
+  "in_liquidazione": 79,
+  "unmapped_residual": 617,
+  "stages": [
+    {
+      "label": "validati al primo tentativo (Sito_istituzionale + MX)",
+      "count": 22575,
+      "pct": 95.32
+    },
+    {
+      "label": "recuperati via override hardcoded",
+      "count": 16,
+      "pct": 0.07
+    },
+    {
+      "label": "recuperati via enrichment LLM manuale (Tier-3 Claude Code)",
+      "count": 22,
+      "pct": 0.09
+    },
+    {
+      "label": "recuperati via enrichment automatico (Wikidata + Wikipedia)",
+      "count": 19,
+      "pct": 0.08
+    },
+    {
+      "label": "recuperati via fallback email non-PEC",
+      "count": 232,
+      "pct": 0.98
+    },
+    {
+      "label": "recuperati come consorzi/unioni miscategorizzati (V1.1)",
+      "count": 124,
+      "pct": 0.52
+    },
+    {
+      "label": "esclusi: enti in liquidazione",
+      "count": 79,
+      "pct": 0.33
+    },
+    {
+      "label": "non mappati (solo PEC, nessun sito né email non-PEC)",
+      "count": 617,
+      "pct": 2.61
+    }
+  ],
+  "summary_sentence": "Su 23684 enti IndicePA, 22988 (97.06%) sono mappati nel seed e classificati via DNS; 79 sono esclusi perché in liquidazione; 617 restano non mappati (solo PEC, senza sito né email non-PEC)."
+}

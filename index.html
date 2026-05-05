@@ -19,6 +19,14 @@
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; display: flex; flex-direction: column; height: 100dvh; overflow: hidden; }
 
+  /* Italy-only branding: desaturate + lighten the world tile layer so
+     surrounding countries (France, Slovenia, Austria, Tunisia, Malta, …)
+     fade into the background. Italian polygons stay vivid on top. */
+  .leaflet-tile.foreign-faded {
+    filter: saturate(0) brightness(1.08) contrast(0.85) opacity(0.55);
+  }
+  .leaflet-container { background: #f4f4f4; }
+
   #header {
     background: #1a1a2e; color: #fff; height: 44px; padding: 0 16px;
     display: flex; align-items: center; justify-content: space-between; flex-shrink: 0;
@@ -428,25 +436,37 @@ let muniByOsm = {};   // "relation/12345" -> municipality
 let muniByName = {};   // lowercase name -> municipality
 
 // --- Map ---
+// Italy-only viewport. maxBounds clamps panning so the user can't scroll
+// out to France/Switzerland/etc. Surrounding countries are masked by a
+// white overlay layer painted on top of the tile layer (added later when
+// the IT region topo loads — gives a clean Italy-only silhouette).
+const IT_BOUNDS = L.latLngBounds([35.2, 6.3], [47.3, 19.0]);
 const map = L.map('map', {
   center: [42.5, 12.5],
   zoom: 6,
   minZoom: 5,
   maxZoom: 14,
+  maxBounds: IT_BOUNDS,
+  maxBoundsViscosity: 1.0,
   renderer: L.canvas()
 });
 window._map = map; // expose for debugging
 
+// Use grayscale, label-free tiles so foreign countries fade into the
+// background; the Italian polygons stay vivid on top. CSS filter (further
+// down in <style>) desaturates them.
 L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png', {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/">CARTO</a>',
   subdomains: 'abcd',
-  maxZoom: 19
+  maxZoom: 19,
+  className: 'foreign-faded',
 }).addTo(map);
 
 L.tileLayer('https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png', {
   subdomains: 'abcd',
   maxZoom: 19,
-  pane: 'shadowPane'
+  pane: 'shadowPane',
+  className: 'foreign-faded',
 }).addTo(map);
 
 var resizeTimer;
@@ -1748,10 +1768,13 @@ async function loadData() {
   // beyond the assignment of the global), so a missing/slow file doesn't
   // block map rendering.
   fetch('data/it_pipeline_funnel.json').then(r => r.ok ? r.json() : null).then(funnel => {
-    if (!funnel) return;
     const sent = document.getElementById('funnel-sentence');
-    if (sent) sent.textContent = funnel.summary_sentence || '';
     const tbl = document.getElementById('funnel-table');
+    if (!funnel) {
+      if (sent) sent.innerHTML = '<em>Funnel non ancora generato — verrà popolato al prossimo run della pipeline.</em>';
+      return;
+    }
+    if (sent) sent.textContent = funnel.summary_sentence || '';
     if (tbl) {
       const rows = (funnel.stages || []).map(s =>
         `<tr><td style="padding:3px 8px;border-bottom:1px solid #eee">${s.label}</td>` +
@@ -1760,7 +1783,10 @@ async function loadData() {
       ).join('');
       tbl.innerHTML = rows;
     }
-  }).catch(() => {});
+  }).catch(err => {
+    const sent = document.getElementById('funnel-sentence');
+    if (sent) sent.innerHTML = '<em>Errore caricamento funnel.</em>';
+  });
 
   // Inject IT 'istruzione' synthetic level: same topo as comuni, but the
   // choropleth is data-driven by cd.istruzione_by_osm (built by
