@@ -1,17 +1,17 @@
 {
-  "total": 22947,
+  "total": 22966,
   "aggregate": {
-    "microsoft": 4464,
-    "independent": 3802,
-    "local-isp": 966,
-    "aruba": 5374,
-    "google": 6464,
+    "microsoft": 4470,
+    "independent": 3801,
+    "local-isp": 967,
+    "aruba": 5377,
+    "google": 6470,
     "seeweb": 80,
-    "register-it": 684,
-    "regional-public": 1088,
+    "register-it": 687,
+    "regional-public": 1090,
     "aws": 10,
     "zoho": 2,
-    "unknown": 12,
+    "unknown": 11,
     "pa-contractor-private": 1
   },
   "per_category": {
@@ -167,19 +167,19 @@
     },
     "L6": {
       "label": "Comuni",
-      "n": 7975,
+      "n": 7980,
       "providers": {
-        "microsoft": 1298,
-        "aruba": 2508,
-        "regional-public": 903,
-        "independent": 1966,
+        "microsoft": 1299,
+        "aruba": 2510,
+        "regional-public": 905,
+        "independent": 1964,
         "local-isp": 201,
-        "register-it": 431,
-        "google": 635,
+        "register-it": 432,
+        "google": 637,
         "zoho": 2,
-        "unknown": 2,
         "aws": 2,
-        "seeweb": 27
+        "seeweb": 27,
+        "unknown": 1
       }
     },
     "L4": {
@@ -248,11 +248,11 @@
     },
     "L12": {
       "label": "Comunità Montane",
-      "n": 169,
+      "n": 171,
       "providers": {
         "seeweb": 2,
         "google": 26,
-        "microsoft": 27,
+        "microsoft": 29,
         "independent": 47,
         "regional-public": 5,
         "register-it": 11,
@@ -413,8 +413,8 @@
       "providers": {
         "google": 4906,
         "aruba": 824,
-        "independent": 648,
-        "microsoft": 1509,
+        "independent": 649,
+        "microsoft": 1508,
         "local-isp": 247,
         "seeweb": 5,
         "regional-public": 3,
@@ -451,29 +451,29 @@
     },
     "L36": {
       "label": "Consorzi Amm.ni Locali",
-      "n": 180,
+      "n": 181,
       "providers": {
+        "register-it": 11,
         "independent": 53,
         "aruba": 56,
         "microsoft": 31,
         "regional-public": 6,
         "local-isp": 8,
         "google": 14,
-        "unknown": 2,
-        "register-it": 10
+        "unknown": 2
       }
     },
     "L37": {
       "label": "Gestori Pubblici Servizi",
-      "n": 984,
+      "n": 986,
       "providers": {
         "google": 114,
         "independent": 139,
         "aruba": 277,
-        "microsoft": 335,
+        "microsoft": 336,
         "local-isp": 64,
         "seeweb": 7,
-        "register-it": 35,
+        "register-it": 36,
         "regional-public": 7,
         "unknown": 3,
         "aws": 2,
@@ -619,14 +619,14 @@
     },
     "SA": {
       "label": "Stazioni Appaltanti",
-      "n": 445,
+      "n": 454,
       "providers": {
-        "microsoft": 163,
+        "google": 65,
+        "aruba": 119,
+        "microsoft": 166,
         "register-it": 22,
         "independent": 53,
-        "google": 61,
-        "aruba": 118,
-        "local-isp": 22,
+        "local-isp": 23,
         "seeweb": 1,
         "regional-public": 3,
         "aws": 2
