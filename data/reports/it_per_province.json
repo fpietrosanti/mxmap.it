@@ -25,11 +25,12 @@
         "microsoft": 35,
         "aruba": 67,
         "regional-public": 17,
-        "independent": 158,
+        "independent": 157,
         "local-isp": 12,
         "register-it": 10,
         "google": 12,
-        "zoho": 1
+        "zoho": 1,
+        "unknown": 1
       }
     },
     "002": {
@@ -114,12 +115,12 @@
       "n": 69,
       "providers": {
         "microsoft": 9,
-        "independent": 20,
+        "independent": 21,
         "local-isp": 7,
         "regional-public": 7,
         "aruba": 18,
         "register-it": 1,
-        "google": 7
+        "google": 6
       }
     },
     "010": {
@@ -193,10 +194,10 @@
     "016": {
       "n": 243,
       "providers": {
-        "independent": 35,
+        "independent": 36,
         "register-it": 56,
         "microsoft": 110,
-        "aruba": 31,
+        "aruba": 30,
         "google": 6,
         "regional-public": 2,
         "local-isp": 3
@@ -260,10 +261,10 @@
     "022": {
       "n": 166,
       "providers": {
-        "google": 122,
+        "google": 123,
         "aruba": 6,
         "microsoft": 18,
-        "independent": 17,
+        "independent": 16,
         "local-isp": 2,
         "register-it": 1
       }
@@ -397,9 +398,9 @@
     "035": {
       "n": 42,
       "providers": {
-        "aruba": 5,
+        "aruba": 4,
         "microsoft": 8,
-        "independent": 13,
+        "independent": 14,
         "regional-public": 13,
         "google": 2,
         "local-isp": 1
@@ -707,11 +708,11 @@
     "064": {
       "n": 118,
       "providers": {
-        "aruba": 75,
+        "aruba": 76,
         "regional-public": 29,
         "local-isp": 5,
         "register-it": 2,
-        "independent": 6,
+        "independent": 5,
         "microsoft": 1
       }
     },
@@ -1051,10 +1052,9 @@
     "096": {
       "n": 74,
       "providers": {
-        "independent": 46,
+        "independent": 47,
         "microsoft": 9,
         "aruba": 7,
-        "unknown": 1,
         "regional-public": 9,
         "register-it": 2
       }
@@ -1159,11 +1159,11 @@
     "111": {
       "n": 106,
       "providers": {
-        "aruba": 69,
+        "aruba": 70,
         "microsoft": 15,
         "local-isp": 7,
         "seeweb": 1,
-        "independent": 6,
+        "independent": 5,
         "google": 5,
         "regional-public": 3
       }
@@ -1224,12 +1224,12 @@
     "Campania": {
       "n": 549,
       "providers": {
-        "aruba": 349,
+        "aruba": 350,
         "register-it": 20,
         "regional-public": 101,
         "microsoft": 32,
         "seeweb": 3,
-        "independent": 23,
+        "independent": 22,
         "local-isp": 13,
         "google": 8
       }
@@ -1239,9 +1239,9 @@
       "providers": {
         "register-it": 7,
         "regional-public": 69,
-        "aruba": 19,
+        "aruba": 18,
         "local-isp": 11,
-        "independent": 64,
+        "independent": 65,
         "microsoft": 79,
         "google": 79
       }
@@ -1273,8 +1273,8 @@
     "Liguria": {
       "n": 234,
       "providers": {
-        "independent": 58,
-        "google": 17,
+        "independent": 59,
+        "google": 16,
         "aruba": 55,
         "local-isp": 17,
         "register-it": 41,
@@ -1285,8 +1285,8 @@
     "Lombardia": {
       "n": 1500,
       "providers": {
-        "independent": 384,
-        "aruba": 232,
+        "independent": 385,
+        "aruba": 231,
         "microsoft": 522,
         "register-it": 120,
         "regional-public": 51,
@@ -1331,8 +1331,8 @@
         "register-it": 42,
         "google": 27,
         "zoho": 1,
-        "aws": 1,
-        "unknown": 1
+        "unknown": 1,
+        "aws": 1
       }
     },
     "Puglia": {
@@ -1350,9 +1350,9 @@
     "Sardigna/Sardegna": {
       "n": 371,
       "providers": {
-        "independent": 19,
+        "independent": 18,
         "microsoft": 39,
-        "aruba": 242,
+        "aruba": 243,
         "regional-public": 27,
         "local-isp": 18,
         "google": 25,
@@ -1390,9 +1390,9 @@
       "providers": {
         "regional-public": 108,
         "microsoft": 24,
-        "google": 122,
+        "google": 123,
         "aruba": 6,
-        "independent": 17,
+        "independent": 16,
         "local-isp": 2,
         "register-it": 1
       }

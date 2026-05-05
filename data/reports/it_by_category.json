@@ -1,10 +1,10 @@
 {
-  "total": 22966,
+  "total": 22988,
   "aggregate": {
-    "microsoft": 4470,
-    "independent": 3801,
-    "local-isp": 967,
-    "aruba": 5377,
+    "microsoft": 4481,
+    "independent": 3804,
+    "local-isp": 971,
+    "aruba": 5381,
     "google": 6470,
     "seeweb": 80,
     "register-it": 687,
@@ -177,9 +177,9 @@
         "register-it": 432,
         "google": 637,
         "zoho": 2,
+        "unknown": 1,
         "aws": 2,
-        "seeweb": 27,
-        "unknown": 1
+        "seeweb": 27
       }
     },
     "L4": {
@@ -335,11 +335,11 @@
     },
     "L2": {
       "label": "Agenzie Reg. Formazione/Ricerca",
-      "n": 32,
+      "n": 33,
       "providers": {
+        "microsoft": 18,
         "local-isp": 2,
         "independent": 5,
-        "microsoft": 17,
         "regional-public": 2,
         "aruba": 3,
         "google": 3
@@ -465,13 +465,13 @@
     },
     "L37": {
       "label": "Gestori Pubblici Servizi",
-      "n": 986,
+      "n": 992,
       "providers": {
-        "google": 114,
+        "google": 113,
         "independent": 139,
-        "aruba": 277,
-        "microsoft": 336,
-        "local-isp": 64,
+        "aruba": 278,
+        "microsoft": 341,
+        "local-isp": 65,
         "seeweb": 7,
         "register-it": 36,
         "regional-public": 7,
@@ -598,11 +598,11 @@
     },
     "S01": {
       "label": "Soc. Conto Econ. Consolidato",
-      "n": 127,
+      "n": 128,
       "providers": {
         "google": 14,
         "microsoft": 54,
-        "aruba": 27,
+        "aruba": 28,
         "independent": 18,
         "local-isp": 9,
         "regional-public": 4,
@@ -619,14 +619,14 @@
     },
     "SA": {
       "label": "Stazioni Appaltanti",
-      "n": 454,
+      "n": 465,
       "providers": {
-        "google": 65,
-        "aruba": 119,
-        "microsoft": 166,
+        "google": 66,
+        "aruba": 121,
+        "microsoft": 171,
         "register-it": 22,
-        "independent": 53,
-        "local-isp": 23,
+        "independent": 55,
+        "local-isp": 24,
         "seeweb": 1,
         "regional-public": 3,
         "aws": 2
@@ -634,15 +634,15 @@
     },
     "SAG": {
       "label": "Stazioni Appaltanti GPS",
-      "n": 133,
+      "n": 136,
       "providers": {
         "aruba": 33,
         "register-it": 2,
-        "independent": 21,
+        "independent": 22,
         "microsoft": 52,
         "google": 15,
         "seeweb": 2,
-        "local-isp": 7,
+        "local-isp": 9,
         "regional-public": 1
       }
     }

@@ -1,26 +1,26 @@
 ====================================================================================================
 IT public administrations — provider distribution by IndicePA category
 ====================================================================================================
-Total classified IT entries: 22966
+Total classified IT entries: 22988
 Distinct IPA categories:     53
 
 === Aggregate across ALL Italian PA categories ===
-  microsoft                   4470  ( 19.5%)
-  google                      6470  ( 28.2%)
+  microsoft                   4481  ( 19.5%)
+  google                      6470  ( 28.1%)
   aws                           10  (  0.0%)
-  aruba                       5377  ( 23.4%)
+  aruba                       5381  ( 23.4%)
   register-it                  687  (  3.0%)
   seeweb                        80  (  0.3%)
   regional-public             1090  (  4.7%)
   pa-contractor-private          1  (  0.0%)
-  local-isp                    967  (  4.2%)
-  independent                 3801  ( 16.6%)
+  local-isp                    971  (  4.2%)
+  independent                 3804  ( 16.5%)
   zoho                           2  (  0.0%)
   unknown                       11  (  0.0%)
 
 === USA vs Italy ===
-  USA hyperscalers:     10950  ( 47.7%)
-  Italy / EU / IT:      12003  ( 52.3%)
+  USA hyperscalers:     10961  ( 47.7%)
+  Italy / EU / IT:      12014  ( 52.3%)
 
 ====================================================================================================
 # Territorial (Tier 1)
@@ -398,27 +398,27 @@ Distinct IPA categories:     53
 # Public services / SOEs
 ====================================================================================================
 
-  L37   Gestori Pubblici Servizi                 N=  986   USA share=45.8%
-      microsoft                   336  ( 34.1%)
-      google                      114  ( 11.6%)
+  L37   Gestori Pubblici Servizi                 N=  992   USA share=46.0%
+      microsoft                   341  ( 34.4%)
+      google                      113  ( 11.4%)
       aws                           2  (  0.2%)
-      aruba                       277  ( 28.1%)
-      register-it                  36  (  3.7%)
+      aruba                       278  ( 28.0%)
+      register-it                  36  (  3.6%)
       seeweb                        7  (  0.7%)
       regional-public               7  (  0.7%)
       pa-contractor-private         1  (  0.1%)
-      local-isp                    64  (  6.5%)
-      independent                 139  ( 14.1%)
+      local-isp                    65  (  6.6%)
+      independent                 139  ( 14.0%)
       unknown                       3  (  0.3%)
 
-  S01   Soc. Conto Econ. Consolidato             N=  127   USA share=53.5%
-      microsoft                    54  ( 42.5%)
-      google                       14  ( 11.0%)
-      aruba                        27  ( 21.3%)
+  S01   Soc. Conto Econ. Consolidato             N=  128   USA share=53.1%
+      microsoft                    54  ( 42.2%)
+      google                       14  ( 10.9%)
+      aruba                        28  ( 21.9%)
       register-it                   1  (  0.8%)
       regional-public               4  (  3.1%)
-      local-isp                     9  (  7.1%)
-      independent                  18  ( 14.2%)
+      local-isp                     9  (  7.0%)
+      independent                  18  ( 14.1%)
 
   S01G  Gestori Pubblici Servizi (S01G)          N=    4   USA share=100.0%
       microsoft                     2  ( 50.0%)
@@ -438,13 +438,13 @@ Distinct IPA categories:     53
 # Agencies (regional)
 ====================================================================================================
 
-  L2    Agenzie Reg. Formazione/Ricerca          N=   32   USA share=62.5%
-      microsoft                    17  ( 53.1%)
-      google                        3  (  9.4%)
-      aruba                         3  (  9.4%)
-      regional-public               2  (  6.2%)
-      local-isp                     2  (  6.2%)
-      independent                   5  ( 15.6%)
+  L2    Agenzie Reg. Formazione/Ricerca          N=   33   USA share=63.6%
+      microsoft                    18  ( 54.5%)
+      google                        3  (  9.1%)
+      aruba                         3  (  9.1%)
+      regional-public               2  (  6.1%)
+      local-isp                     2  (  6.1%)
+      independent                   5  ( 15.2%)
 
   L19   Agenzie Reg. Lavoro                      N=   13   USA share=46.2%
       microsoft                     2  ( 15.4%)
@@ -465,26 +465,26 @@ Distinct IPA categories:     53
 # Procurement (Stazioni Appaltanti)
 ====================================================================================================
 
-  SA    Stazioni Appaltanti                      N=  454   USA share=51.3%
-      microsoft                   166  ( 36.6%)
-      google                       65  ( 14.3%)
+  SA    Stazioni Appaltanti                      N=  465   USA share=51.4%
+      microsoft                   171  ( 36.8%)
+      google                       66  ( 14.2%)
       aws                           2  (  0.4%)
-      aruba                       119  ( 26.2%)
-      register-it                  22  (  4.8%)
+      aruba                       121  ( 26.0%)
+      register-it                  22  (  4.7%)
       seeweb                        1  (  0.2%)
-      regional-public               3  (  0.7%)
-      local-isp                    23  (  5.1%)
-      independent                  53  ( 11.7%)
+      regional-public               3  (  0.6%)
+      local-isp                    24  (  5.2%)
+      independent                  55  ( 11.8%)
 
-  SAG   Stazioni Appaltanti GPS                  N=  133   USA share=50.4%
-      microsoft                    52  ( 39.1%)
-      google                       15  ( 11.3%)
-      aruba                        33  ( 24.8%)
+  SAG   Stazioni Appaltanti GPS                  N=  136   USA share=49.3%
+      microsoft                    52  ( 38.2%)
+      google                       15  ( 11.0%)
+      aruba                        33  ( 24.3%)
       register-it                   2  (  1.5%)
       seeweb                        2  (  1.5%)
-      regional-public               1  (  0.8%)
-      local-isp                     7  (  5.3%)
-      independent                  21  ( 15.8%)
+      regional-public               1  (  0.7%)
+      local-isp                     9  (  6.6%)
+      independent                  22  ( 16.2%)
 
 ====================================================================================================
 # Pension / Social security
