@@ -54,12 +54,14 @@ USER_AGENT = "mxmap.it-extra-provinces/0.1 (+https://github.com/fpietrosanti/mxm
 
 def overpass_query(rel_id: int, *, timeout: int = 90) -> dict:
     """Fetch full geometry of a single OSM relation, rotating mirrors on
-    failure. Returns the parsed JSON response."""
+    failure. Returns the parsed JSON response.
+
+    Uses `out geom` so each member way comes with inline lat/lon coordinates
+    on its `geometry` field — no need for separate node lookup. Simpler and
+    more reliable than the `>;out skel qt;` recursion pattern."""
     q = f"""[out:json][timeout:{timeout}];
 relation({rel_id});
-out body;
->;
-out skel qt;"""
+out geom;"""
     last_err: Exception | None = None
     for url in OVERPASS_MIRRORS:
         try:
@@ -80,36 +82,34 @@ out skel qt;"""
 
 
 def overpass_to_geojson(elements: list[dict], rel_id: int, name: str) -> dict:
-    """Convert an Overpass relation result (relation + ways + nodes) into a
-    minimal GeoJSON Feature with multipolygon geometry. Only handles the
-    outer/inner ring case, sufficient for admin boundary relations."""
-    nodes_by_id: dict[int, tuple[float, float]] = {}
-    ways_by_id: dict[int, list[int]] = {}
+    """Convert an Overpass relation result (with `out geom` inline coords)
+    into a minimal GeoJSON Feature with multipolygon geometry. Each way
+    member has a `geometry` field of [{lat, lon}, ...] from `out geom`."""
     rel: dict | None = None
     for el in elements:
-        if el["type"] == "node":
-            nodes_by_id[el["id"]] = (el["lon"], el["lat"])
-        elif el["type"] == "way":
-            ways_by_id[el["id"]] = el.get("nodes", [])
-        elif el["type"] == "relation" and el["id"] == rel_id:
+        if el.get("type") == "relation" and el.get("id") == rel_id:
             rel = el
+            break
     if rel is None:
-        raise RuntimeError(f"Relation {rel_id} not found in Overpass result")
+        # Fallback: use first relation in the result
+        for el in elements:
+            if el.get("type") == "relation":
+                rel = el
+                break
+    if rel is None:
+        raise RuntimeError(f"Relation {rel_id} not found in Overpass result "
+                           f"(got {len(elements)} elements, types: "
+                           f"{set(e.get('type') for e in elements)})")
 
-    # Build outer rings by stitching way geometries together (best-effort).
-    # For simplicity we keep each outer way as its own LineString and let
-    # mapshaper post-process into clean polygons during topo merge.
+    # Pull outer ring geometries directly from each member way's `geometry`.
     outer_lines: list[list[list[float]]] = []
     for member in rel.get("members", []):
         if member.get("type") != "way":
             continue
         if member.get("role") not in ("outer", "", None):
             continue
-        coords = []
-        for nid in ways_by_id.get(member["ref"], []):
-            ll = nodes_by_id.get(nid)
-            if ll:
-                coords.append(list(ll))
+        geom = member.get("geometry") or []
+        coords = [[pt["lon"], pt["lat"]] for pt in geom if "lat" in pt and "lon" in pt]
         if len(coords) >= 2:
             outer_lines.append(coords)
 
