@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--
+  RICERCA ENTE — searchable, filterable browse of the entire mxmap.it
+  dataset (~22.967 IndicePA enti). Consumes dist/mxmap_it_dataset.json
+  (the same file offered as public download). Auto-updates each pipeline
+  run.
+-->
+<title>MXmap.it — Ricerca Ente</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #f8f9fb; color: #1a1a2e; line-height: 1.45;
+  }
+  header.brand {
+    background: #1a1a2e; color: #fff; padding: 14px 24px;
+    display: flex; align-items: center; justify-content: space-between;
+    flex-wrap: wrap; gap: 12px;
+  }
+  .brand h1 { font-size: 17px; font-weight: 700; }
+  .brand .sep { color: #888; margin: 0 10px; }
+  .brand .tagline { font-size: 13px; color: #a0a0b0; }
+  .brand a { color: #fff; text-decoration: none; }
+  .level-menu { display: flex; gap: 0; background: #2a2a44; border-radius: 6px; overflow: hidden; }
+  .level-menu a {
+    padding: 7px 14px; font-size: 13px; color: #d0d0e0; text-decoration: none;
+    border-right: 1px solid #1a1a2e; transition: background 0.15s;
+  }
+  .level-menu a:last-child { border-right: none; }
+  .level-menu a:hover { background: #36365a; color: #fff; }
+  .level-menu a.active { background: #009246; color: #fff; font-weight: 600; }
+
+  main { max-width: 1400px; margin: 0 auto; padding: 18px 14px 60px; }
+  h2 { font-size: 22px; margin-bottom: 6px; }
+  .description { color: #555; font-size: 13px; margin-bottom: 14px; max-width: 900px; }
+
+  .download-bar {
+    background: #fff; border: 1px solid #e2e4e8; border-radius: 6px;
+    padding: 10px 14px; margin: 8px 0 14px; font-size: 13px;
+    display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+  }
+  .download-bar strong { color: #1a1a2e; }
+  .download-bar a { color: #009246; text-decoration: none; padding: 4px 10px;
+                    border: 1px solid #cce8d6; border-radius: 4px; background: #f0faf3;
+                    transition: background 0.1s; }
+  .download-bar a:hover { background: #009246; color: #fff; border-color: #009246; }
+  .download-bar .lic { color: #999; font-size: 11px; margin-left: auto; }
+
+  .summary {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px; margin: 8px 0 16px;
+  }
+  .summary-card {
+    background: #fff; border: 1px solid #e2e4e8; border-radius: 6px;
+    padding: 10px 12px;
+  }
+  .summary-card .n { font-size: 20px; font-weight: 700; color: #1a1a2e; }
+  .summary-card .label {
+    font-size: 11px; color: #777; text-transform: uppercase;
+    letter-spacing: 0.4px; margin-top: 4px;
+  }
+  .summary-card.usa .n { color: #D42E2E; }
+  .summary-card.italia .n { color: #009246; }
+
+  .controls {
+    display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 8px; margin-bottom: 12px;
+  }
+  .controls input, .controls select {
+    padding: 7px 9px; font-size: 13px; border: 1px solid #ccc;
+    border-radius: 4px; background: #fff;
+  }
+  .controls input:focus, .controls select:focus { outline: 2px solid #009246; outline-offset: -1px; }
+
+  .meta-row { font-size: 12px; color: #666; margin-bottom: 8px; display: flex; gap: 14px; }
+  .meta-row .reset { color: #2563eb; cursor: pointer; }
+
+  table {
+    width: 100%; border-collapse: collapse; background: #fff;
+    border: 1px solid #e2e4e8; border-radius: 6px; overflow: hidden;
+    font-size: 12.5px;
+  }
+  thead th {
+    background: #f1f3f6; text-align: left; padding: 8px 10px;
+    font-weight: 600; color: #444; border-bottom: 1px solid #e2e4e8;
+    cursor: pointer; user-select: none; position: sticky; top: 0;
+  }
+  thead th.sort-asc::after  { content: ' ▴'; color: #1a1a2e; }
+  thead th.sort-desc::after { content: ' ▾'; color: #1a1a2e; }
+  tbody tr { border-bottom: 1px solid #f0f0f3; }
+  tbody tr:hover { background: #fafbfd; }
+  tbody td { padding: 7px 10px; vertical-align: top; }
+
+  .badge {
+    display: inline-block; padding: 2px 8px; border-radius: 11px;
+    font-size: 11px; font-weight: 600; white-space: nowrap;
+  }
+  .badge.usa     { background: #FCE4E4; color: #B71C1C; }
+  .badge.italia  { background: #E8F5E9; color: #1B5E20; }
+  .badge.sovrano { background: #C8E6C9; color: #006623; }
+  .badge.indep   { background: #DCEDC8; color: #33691E; }
+  .badge.unknown { background: #ECEFF1; color: #607D8B; }
+
+  .domain { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11.5px; }
+  .ipa-code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; color: #888; }
+  .reason { font-size: 11px; color: #666; max-width: 320px; }
+  .pagination { margin: 14px 0; text-align: center; font-size: 12px; }
+  .pagination button { padding: 5px 10px; margin: 0 2px; border: 1px solid #ccc;
+                       background: #fff; border-radius: 3px; cursor: pointer; }
+  .pagination button:disabled { opacity: 0.4; cursor: default; }
+  .pagination button.active { background: #009246; color: #fff; border-color: #009246; }
+
+  footer { margin-top: 24px; font-size: 12px; color: #777; text-align: center; }
+  footer a { color: #2563eb; text-decoration: none; }
+
+  @media (max-width: 980px) {
+    .controls { grid-template-columns: 1fr 1fr; }
+    .reason { display: none; }
+  }
+  @media (max-width: 600px) {
+    .controls { grid-template-columns: 1fr; }
+    .download-bar { flex-direction: column; align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
+
+<header class="brand">
+  <div>
+    <a href="../"><h1 style="display:inline">MXmap.it</h1></a>
+    <span class="sep">|</span>
+    <span class="tagline">Sovranità Digitale della Posta Elettronica nella PA italiana</span>
+  </div>
+  <nav class="level-menu" aria-label="Sezioni">
+    <a href="./it_search_template.html" class="active">Ricerca Ente</a>
+    <a href="./it_table_template.html">PA Centrale</a>
+    <a href="../#level=region">Regioni</a>
+    <a href="../#level=district">Province</a>
+    <a href="../#level=municipality">Comuni</a>
+    <a href="../#level=istruzione">Scuole</a>
+  </nav>
+</header>
+
+<main>
+  <h2>Ricerca Ente</h2>
+  <p class="description">
+    Cerca tra tutti gli enti pubblici italiani analizzati. Ogni riga è un ente IndicePA
+    con il suo provider di posta elettronica classificato via DNS pubblico (MX, SPF,
+    DKIM, autodiscover, ASN). Filtra per nome, codice IPA, categoria, provider,
+    sovranità, regione, provincia. Usa direttamente i bottoni di download per scaricare
+    l'intero dataset.
+  </p>
+
+  <div class="download-bar">
+    <strong>Scarica il dataset completo:</strong>
+    <a href="../dist/mxmap_it_dataset.csv"  download>📊 CSV</a>
+    <a href="../dist/mxmap_it_dataset.xlsx" download>📑 Excel</a>
+    <a href="../dist/mxmap_it_dataset.json" download>{ } JSON</a>
+    <span class="lic">Licenza dati: ODbL-1.0 + CC-BY-4.0 · Codice: MIT</span>
+  </div>
+
+  <div class="summary" id="summary"></div>
+
+  <div class="controls">
+    <input id="q" type="search" placeholder="Cerca nome / codice IPA / dominio…" autocomplete="off">
+    <select id="filter-categoria"><option value="">Tutte le categorie</option></select>
+    <select id="filter-cluster"><option value="">Tutti i cluster</option></select>
+    <select id="filter-provider"><option value="">Tutti i provider</option></select>
+    <select id="filter-sovereignty"><option value="">Tutte le sovranità</option></select>
+    <select id="filter-regione"><option value="">Tutte le regioni</option></select>
+  </div>
+
+  <div class="meta-row">
+    <span id="result-count">…</span>
+    <span class="reset" id="reset-filters">Reimposta filtri</span>
+  </div>
+
+  <table id="tbl">
+    <thead>
+      <tr>
+        <th data-key="codice_ipa">Codice IPA</th>
+        <th data-key="categoria_label">Categoria</th>
+        <th data-key="denominazione">Ente</th>
+        <th data-key="provincia">Provincia</th>
+        <th data-key="domain_used">Dominio</th>
+        <th data-key="provider_display">Provider</th>
+        <th data-key="sovereignty_bucket">Sovranità</th>
+        <th data-key="classification_reason">Evidenza</th>
+      </tr>
+    </thead>
+    <tbody id="tbody">
+      <tr><td colspan="8" style="text-align:center;color:#999;padding:24px">Caricamento…</td></tr>
+    </tbody>
+  </table>
+
+  <div class="pagination" id="pagination"></div>
+
+  <footer>
+    Fonte: <a href="https://indicepa.gov.it/ipa-dati/dataset/enti" target="_blank" rel="noopener">IndicePA (AgID)</a>
+    + analisi DNS pubblica · Aggiornato a ogni run della pipeline.
+    Codice e dati: <a href="https://github.com/fpietrosanti/mxmap.it" target="_blank" rel="noopener">github.com/fpietrosanti/mxmap.it</a>.
+  </footer>
+</main>
+
+<script>
+const DATASET_URL = '../dist/mxmap_it_dataset.json';
+const PAGE_SIZE = 100;
+
+let allRows = [];
+let filteredRows = [];
+let sortKey = 'denominazione';
+let sortDir = 'asc';
+let currentPage = 1;
+
+function escapeHtml(s) {
+  const div = document.createElement('span');
+  div.textContent = s == null ? '' : s;
+  return div.innerHTML;
+}
+
+function sovereigntyClass(s) {
+  if (!s) return 'unknown';
+  if (s.includes('USA')) return 'usa';
+  if (s.includes('Cloud sovrano')) return 'sovrano';
+  if (s.includes('Provider commerciali')) return 'italia';
+  if (s.includes('Infrastruttura autonoma')) return 'indep';
+  return 'unknown';
+}
+
+function buildSummary(rows) {
+  const total = rows.length;
+  const c = (pred) => rows.filter(pred).length;
+  const usa     = c(r => r.sovereignty_bucket && r.sovereignty_bucket.includes('USA'));
+  const sovrano = c(r => r.sovereignty_bucket && r.sovereignty_bucket.includes('Cloud sovrano'));
+  const provIt  = c(r => r.sovereignty_bucket && r.sovereignty_bucket.includes('Provider commerciali'));
+  const indep   = c(r => r.sovereignty_bucket && r.sovereignty_bucket.includes('Infrastruttura autonoma'));
+  const fmtPct  = (n) => total > 0 ? ` <small style="font-size:13px;color:#888">(${(n/total*100).toFixed(1)}%)</small>` : '';
+  document.getElementById('summary').innerHTML =
+    `<div class="summary-card"><div class="n">${total.toLocaleString('it-IT')}</div><div class="label">Enti totali</div></div>` +
+    `<div class="summary-card usa"><div class="n">${usa.toLocaleString('it-IT')}${fmtPct(usa)}</div><div class="label">🇺🇸 USA (CLOUD Act)</div></div>` +
+    `<div class="summary-card italia"><div class="n">${sovrano.toLocaleString('it-IT')}${fmtPct(sovrano)}</div><div class="label">🇮🇹 Cloud sovrano</div></div>` +
+    `<div class="summary-card italia"><div class="n">${provIt.toLocaleString('it-IT')}${fmtPct(provIt)}</div><div class="label">🇮🇹 Provider Italiano</div></div>` +
+    `<div class="summary-card italia"><div class="n">${indep.toLocaleString('it-IT')}${fmtPct(indep)}</div><div class="label">🇮🇹 Infrastruttura autonoma</div></div>`;
+}
+
+function populateFilter(selectId, key, rows) {
+  const el = document.getElementById(selectId);
+  // preserve current selection
+  const cur = el.value;
+  while (el.options.length > 1) el.remove(1);
+  const seen = new Set();
+  rows.forEach(r => { if (r[key]) seen.add(r[key]); });
+  Array.from(seen).sort((a, b) => a.localeCompare(b, 'it')).forEach(v => {
+    const opt = document.createElement('option');
+    opt.value = v; opt.textContent = v;
+    el.appendChild(opt);
+  });
+  if (cur) el.value = cur;
+}
+
+function applyFilters() {
+  const q  = document.getElementById('q').value.trim().toLowerCase();
+  const fc = document.getElementById('filter-categoria').value;
+  const fk = document.getElementById('filter-cluster').value;
+  const fp = document.getElementById('filter-provider').value;
+  const fs = document.getElementById('filter-sovereignty').value;
+  const fr = document.getElementById('filter-regione').value;
+
+  filteredRows = allRows.filter(r => {
+    if (fc && r.categoria_label !== fc) return false;
+    if (fk && r.cluster_label !== fk) return false;
+    if (fp && r.provider_display !== fp) return false;
+    if (fs && r.sovereignty_bucket !== fs) return false;
+    if (fr && r.regione !== fr) return false;
+    if (q) {
+      const hay = `${r.denominazione} ${r.codice_ipa} ${r.domain_used} ${r.sito_istituzionale}`.toLowerCase();
+      if (!hay.includes(q)) return false;
+    }
+    return true;
+  });
+
+  filteredRows.sort((a, b) => {
+    const av = (a[sortKey] || '').toString().toLowerCase();
+    const bv = (b[sortKey] || '').toString().toLowerCase();
+    if (av === bv) return 0;
+    return (av < bv ? -1 : 1) * (sortDir === 'asc' ? 1 : -1);
+  });
+
+  currentPage = 1;
+  render();
+}
+
+function render() {
+  const tbody = document.getElementById('tbody');
+  const cnt = document.getElementById('result-count');
+
+  cnt.textContent = filteredRows.length === allRows.length
+    ? `${allRows.length.toLocaleString('it-IT')} enti totali`
+    : `${filteredRows.length.toLocaleString('it-IT')} risultati su ${allRows.length.toLocaleString('it-IT')}`;
+
+  if (filteredRows.length === 0) {
+    tbody.innerHTML = '<tr><td colspan="8" style="text-align:center;color:#999;padding:24px">Nessun risultato.</td></tr>';
+    document.getElementById('pagination').innerHTML = '';
+    return;
+  }
+
+  const totalPages = Math.ceil(filteredRows.length / PAGE_SIZE);
+  if (currentPage > totalPages) currentPage = totalPages;
+  const start = (currentPage - 1) * PAGE_SIZE;
+  const slice = filteredRows.slice(start, start + PAGE_SIZE);
+
+  tbody.innerHTML = slice.map(r => {
+    const sovClass = sovereigntyClass(r.sovereignty_bucket);
+    const ipaUrl = r.ipa_url ? `<a href="${escapeHtml(r.ipa_url)}" target="_blank" rel="noopener" class="ipa-code">${escapeHtml(r.codice_ipa)}</a>` : `<span class="ipa-code">${escapeHtml(r.codice_ipa)}</span>`;
+    return '<tr>' +
+      '<td>' + ipaUrl + '</td>' +
+      '<td>' + escapeHtml(r.categoria_label || r.codice_categoria || '') + '</td>' +
+      '<td>' + escapeHtml(r.denominazione || '') + '</td>' +
+      '<td>' + escapeHtml(r.provincia || '') + '</td>' +
+      '<td><span class="domain">' + escapeHtml(r.domain_used || '') + '</span></td>' +
+      '<td>' + escapeHtml(r.provider_display || '') + '</td>' +
+      '<td><span class="badge ' + sovClass + '">' + escapeHtml(r.sovereignty_bucket || '') + '</span></td>' +
+      '<td><span class="reason">' + escapeHtml(r.classification_reason || '') + '</span></td>' +
+    '</tr>';
+  }).join('');
+
+  document.querySelectorAll('thead th').forEach(th => {
+    th.classList.remove('sort-asc', 'sort-desc');
+    if (th.dataset.key === sortKey) th.classList.add('sort-' + sortDir);
+  });
+
+  // Pagination
+  const pg = document.getElementById('pagination');
+  if (totalPages <= 1) { pg.innerHTML = ''; return; }
+  let html = '';
+  html += `<button ${currentPage===1 ? 'disabled' : ''} data-page="${currentPage-1}">‹ prec</button>`;
+  // Show 1..2..[current-2..current+2]..penult..last
+  const showSet = new Set([1, 2, totalPages-1, totalPages,
+                           currentPage-2, currentPage-1, currentPage,
+                           currentPage+1, currentPage+2]);
+  let lastShown = 0;
+  for (let p = 1; p <= totalPages; p++) {
+    if (!showSet.has(p)) continue;
+    if (p > lastShown + 1) html += '<span style="margin:0 4px;color:#999">…</span>';
+    html += `<button ${p===currentPage ? 'class="active"' : ''} data-page="${p}">${p}</button>`;
+    lastShown = p;
+  }
+  html += `<button ${currentPage===totalPages ? 'disabled' : ''} data-page="${currentPage+1}">succ ›</button>`;
+  pg.innerHTML = html;
+  pg.querySelectorAll('button[data-page]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      currentPage = parseInt(btn.dataset.page, 10);
+      render();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
+}
+
+document.querySelectorAll('thead th').forEach(th => {
+  th.addEventListener('click', () => {
+    const k = th.dataset.key;
+    if (sortKey === k) sortDir = (sortDir === 'asc' ? 'desc' : 'asc');
+    else { sortKey = k; sortDir = 'asc'; }
+    applyFilters();
+  });
+});
+['q', 'filter-categoria', 'filter-cluster', 'filter-provider',
+ 'filter-sovereignty', 'filter-regione'].forEach(id => {
+  document.getElementById(id).addEventListener('input', applyFilters);
+});
+document.getElementById('reset-filters').addEventListener('click', () => {
+  ['q', 'filter-categoria', 'filter-cluster', 'filter-provider',
+   'filter-sovereignty', 'filter-regione'].forEach(id => {
+    document.getElementById(id).value = '';
+  });
+  applyFilters();
+});
+
+fetch(DATASET_URL)
+  .then(r => r.ok ? r.json() : Promise.reject(new Error('HTTP ' + r.status)))
+  .then(doc => {
+    allRows = doc.rows || [];
+    populateFilter('filter-categoria',   'categoria_label',    allRows);
+    populateFilter('filter-cluster',     'cluster_label',      allRows);
+    populateFilter('filter-provider',    'provider_display',   allRows);
+    populateFilter('filter-sovereignty', 'sovereignty_bucket', allRows);
+    populateFilter('filter-regione',     'regione',            allRows);
+    buildSummary(allRows);
+    applyFilters();
+  })
+  .catch(e => {
+    document.getElementById('tbody').innerHTML =
+      '<tr><td colspan="8" style="color:#c00;padding:24px;text-align:center">' +
+      'Errore caricamento dataset: ' + escapeHtml(e.message) + '<br><br>' +
+      'Il file <code>dist/mxmap_it_dataset.json</code> verrà generato al prossimo run della pipeline. ' +
+      'Riprova fra qualche minuto.</td></tr>';
+  });
+</script>
+
+</body>
+</html>
