@@ -12,9 +12,11 @@ __pycache__/
 .Python
 build/
 develop-eggs/
-dist/
-# allow the public-download dataset under dist/ (built by
-# scripts/build_public_dataset.py, deployed via GitHub Pages)
+# Keep dist/ tracked but only for the curated public dataset files
+# (built by scripts/build_public_dataset.py, deployed via GitHub Pages).
+# The directory itself MUST NOT be ignored at directory level — git won't
+# descend into it to evaluate file-level exceptions.
+dist/*
 !dist/mxmap_it_dataset.csv
 !dist/mxmap_it_dataset.json
 !dist/mxmap_it_dataset.xlsx
