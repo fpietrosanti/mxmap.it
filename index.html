@@ -82,7 +82,7 @@
   .popup-load-btn { padding: 4px 12px; font-size: 11px; cursor: pointer; background: #4a90d9; color: #fff; border: none; border-radius: 3px; margin-top: 4px; }
   .popup-load-btn:hover { background: #3a7bc0; }
   .popup-load-btn:disabled { background: #aaa; cursor: wait; }
-  .popup-muni-list { max-height: 350px; overflow-y: auto; font-size: 11px; }
+  .popup-muni-list { max-height: 200px; overflow-y: auto; font-size: 11px; }
   .popup-muni-row { padding: 3px 0; border-bottom: 1px solid #f0f0f0; }
   .popup-muni-row:last-child { border-bottom: none; }
   .popup-muni-detail { display: none; padding: 4px 4px 4px 16px; font-size: 10px; background: #fafafa; border-radius: 3px; margin-top: 2px; }
@@ -452,17 +452,24 @@ let muniByName = {};   // lowercase name -> municipality
 
 // --- Map ---
 // Italy-only viewport. maxBounds clamps panning so the user can't scroll
-// out to France/Switzerland/etc. Surrounding countries are masked by a
-// white overlay layer painted on top of the tile layer (added later when
-// the IT region topo loads — gives a clean Italy-only silhouette).
-const IT_BOUNDS = L.latLngBounds([35.2, 6.3], [47.3, 19.0]);
+// far out to France/Switzerland/etc., but with viscosity below 1.0 so
+// Leaflet's autoPan (used when opening popups near the viewport edge —
+// e.g. clicking Venezia at the top of the map) can still shift the map
+// far enough to fit the popup. Bounds are also extended ~3° beyond the
+// Italian bbox so autoPan has breathing room without hitting the wall.
+//
+// Earlier setting `maxBoundsViscosity: 1.0` + tight bbox produced a bug
+// where popups opened near the bbox edge had their top clipped behind
+// the brand bar: autoPan tried to shift the map down to make room but
+// the hard-viscous bound refused, so the popup stayed off-viewport.
+const IT_BOUNDS = L.latLngBounds([33.0, 4.0], [50.0, 21.0]);
 const map = L.map('map', {
   center: [42.5, 12.5],
   zoom: 6,
   minZoom: 5,
   maxZoom: 14,
   maxBounds: IT_BOUNDS,
-  maxBoundsViscosity: 1.0,
+  maxBoundsViscosity: 0.0,  // soft bound: lets autoPan work, user pan rubber-bands
   renderer: L.canvas()
 });
 window._map = map; // expose for debugging
@@ -1269,33 +1276,29 @@ async function renderCountryLayer(cc) {
           // when the user clicks an entity in the north of Italy / near the
           // top edge of the visible map area). Content inside the popup
           // becomes scrollable instead.
-          // 60vh cap = popup never larger than ~60% of viewport, so autoPan
-          // can always fit it without clipping. Internal content scrolls.
-          // Resize-safe via getter (innerHeight re-evaluated on each open).
-          get maxHeight() { return Math.max(220, Math.floor(window.innerHeight * 0.6)); },
+          // No outer maxHeight on Leaflet popup — combined with autoPan,
+          // Leaflet's clip-on-overflow logic produced top-of-popup hidden
+          // above the viewport when the click was near the top of the map.
+          // Instead, the .popup-muni-list inside is bounded (max-height
+          // 200px in CSS) keeping the whole popup small enough (~410px)
+          // that autoPan always fits it under the brand bar (60px).
           autoPan: true,
           autoPanPaddingTopLeft: [20, 60],
           autoPanPaddingBottomRight: [20, 20],
-          // keepInView MUST be false: combined with autoPan it creates an
-          // infinite loop on popup open (autoPan moves the map -> 'move'
-          // event -> keepInView repositions popup -> autoPan moves again
-          // -> visible flicker). autoPan-once-on-open is sufficient.
           keepInView: false,
         });
       } else if (m) {
         layer.bindPopup(function () { return buildPopup(m); }, {
           maxWidth: 400,
-          // 60vh cap = popup never larger than ~60% of viewport, so autoPan
-          // can always fit it without clipping. Internal content scrolls.
-          // Resize-safe via getter (innerHeight re-evaluated on each open).
-          get maxHeight() { return Math.max(220, Math.floor(window.innerHeight * 0.6)); },
+          // No outer maxHeight on Leaflet popup — combined with autoPan,
+          // Leaflet's clip-on-overflow logic produced top-of-popup hidden
+          // above the viewport when the click was near the top of the map.
+          // Instead, the .popup-muni-list inside is bounded (max-height
+          // 200px in CSS) keeping the whole popup small enough (~410px)
+          // that autoPan always fits it under the brand bar (60px).
           autoPan: true,
           autoPanPaddingTopLeft: [20, 60],
           autoPanPaddingBottomRight: [20, 20],
-          // keepInView MUST be false: combined with autoPan it creates an
-          // infinite loop on popup open (autoPan moves the map -> 'move'
-          // event -> keepInView repositions popup -> autoPan moves again
-          // -> visible flicker). autoPan-once-on-open is sufficient.
           keepInView: false,
         });
       }
