@@ -71,7 +71,23 @@ DATASETS = {
         ],
     },
     "uo": {
-        "url": "https://indicepa.gov.it/ipa-dati/dataset/61f6f6cd-4dba-44e5-928e-cfa3625ad32f/resource/b0aa1f6c-f135-4c8a-b416-396fed4e1a5d/download/unita-organizzative.txt",
+        # UO is only published as XLSX; fall back to CKAN datastore_search
+        # API (paginated) and synthesize a TSV cache in the same column
+        # shape as AOO so the parser path below is uniform.
+        "ckan_resource_id": "b0aa1f6c-f135-4c8a-b416-396fed4e1a5d",
+        "ckan_total_estimate": 130000,
+        "ckan_field_map": {
+            "Codice_IPA": "cod_amm",
+            "Codice_uni_uo": "cod_ou",
+            "Descrizione_uo": "des_ou",
+            "Mail_responsabile": "mail_resp",
+            "Mail1": "mail1",
+            "Tipo_Mail1": "tipo_mail1",
+            "Mail2": "mail2",
+            "Tipo_Mail2": "tipo_mail2",
+            "Mail3": "mail3",
+            "Tipo_Mail3": "tipo_mail3",
+        },
         "key_field": "cod_amm",
         "id_field": "cod_ou",
         "name_field": "des_ou",
@@ -97,6 +113,45 @@ def download_if_needed(name: str, url: str) -> Path:
         data = r.read()
     out.write_bytes(data)
     print(f"    saved {out} ({out.stat().st_size:,} bytes)")
+    return out
+
+
+def synthesize_tsv_from_ckan(name: str, resource_id: str,
+                              field_map: dict, page_size: int = 32000) -> Path:
+    """Pull `resource_id` via CKAN datastore_search (paginated), rename
+    the columns through `field_map`, and write a TSV at RAW/{name}.txt
+    with the same shape as the TXT downloads. Idempotent — caches."""
+    out = RAW / f"{name}.txt"
+    if out.exists() and out.stat().st_size > 0:
+        return out
+    print(f"  Pulling {name} via CKAN datastore_search (paginated)…")
+    base = ("https://indicepa.gov.it/ipa-dati/api/3/action/datastore_search"
+            f"?resource_id={resource_id}")
+    offset = 0
+    rows: list[dict] = []
+    while True:
+        url = f"{base}&limit={page_size}&offset={offset}"
+        req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+        with urllib.request.urlopen(req, timeout=300) as r:
+            payload = json.loads(r.read())
+        recs = payload["result"]["records"]
+        if not recs:
+            break
+        rows.extend(recs)
+        offset += len(recs)
+        print(f"    fetched {len(rows):,} / total≈{payload['result'].get('total','?')}")
+        if len(recs) < page_size:
+            break
+    # Write TSV in target column shape
+    cols = list(field_map.values())
+    with open(out, "w", encoding="utf-8", newline="") as f:
+        f.write("\t".join(cols) + "\n")
+        for rec in rows:
+            f.write("\t".join(
+                str(rec.get(src, "") or "").replace("\t", " ").replace("\n", " ")
+                for src in field_map.keys()
+            ) + "\n")
+    print(f"    saved {out} ({out.stat().st_size:,} bytes, {len(rows):,} rows)")
     return out
 
 
@@ -144,7 +199,13 @@ def main() -> int:
     for name, ds in DATASETS.items():
         if args.refresh:
             (RAW / f"{name}.txt").unlink(missing_ok=True)
-        files[name] = download_if_needed(name, ds["url"])
+        if "url" in ds:
+            files[name] = download_if_needed(name, ds["url"])
+        elif "ckan_resource_id" in ds:
+            files[name] = synthesize_tsv_from_ckan(
+                name, ds["ckan_resource_id"], ds["ckan_field_map"])
+        else:
+            raise ValueError(f"dataset {name} has no source")
 
     # Step 2: build a map codice_ipa -> ente_domain (from seed)
     seed_path = DATA / "municipalities_it.json"
