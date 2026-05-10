@@ -97,20 +97,34 @@ async def classify_domain(domain: str) -> dict | None:
     }
 
 
-# Categorie IndicePA che identificano scuole statali — la dirigenza usa
-# istituzionalmente il tenant centrale MIUR (istruzione.it) per la propria
-# casella di posta. Esponiamo questa dipendenza con un provider tag distinto.
+# Regola STRETTA per il provider tag `istruzione-miur-tenant`:
+#   1. categoria IndicePA == "L33" (Istituzioni Scolastiche statali) — UNICA
+#      forma accettata. Nessun match per prefisso codice_ipa: se IndicePA
+#      non l'ha categorizzato L33, non è una scuola per noi.
+#   2. fallback domain == "istruzione.it" esatto.
+#   3. DKIM su istruzione.it punta a `miuristruzione.onmicrosoft.com` —
+#      prova crittografica che il tenant è effettivamente MIM e non una
+#      organizzazione omonima. Se la DKIM non matcha, NON taggare:
+#      meglio `unknown` di una classificazione fuorviante.
 SCHOOL_CATEGORIE = {"L33"}
+MIUR_TENANT_HOST = "miuristruzione.onmicrosoft.com"
 
 
-def _is_school(seed_entry: dict) -> bool:
-    cat = (seed_entry.get("ipa_codice_categoria") or "").upper()
-    if cat in SCHOOL_CATEGORIE:
-        return True
-    ipa = (seed_entry.get("ipa_codice_ipa") or "").lower()
-    return any(ipa.startswith(p) for p in (
-        "ists", "cpia", "ic", "iis", "idis", "icim", "icp_", "icsg",
-        "icsm", "icsp", "iisa", "iiss", "lic", "cdsd", "cdpv", "cdsbs"))
+def _is_school_categoria(seed_entry: dict) -> bool:
+    """Solo categoria IndicePA L33. Niente euristiche su codice_ipa."""
+    return (seed_entry.get("ipa_codice_categoria") or "").upper() in SCHOOL_CATEGORIE
+
+
+def _result_is_miur_tenant(result: dict) -> bool:
+    """Verifica DKIM-based: il record DKIM di istruzione.it deve puntare
+    al tenant MIM. Senza questa prova, NON accettare la classificazione."""
+    dkim = result.get("dkim") or {}
+    if not isinstance(dkim, dict):
+        return False
+    for v in dkim.values():
+        if isinstance(v, str) and MIUR_TENANT_HOST in v.lower():
+            return True
+    return False
 
 
 async def recover_one(seed_entry: dict, sem: asyncio.Semaphore) -> tuple[str, dict | None, str | None, list]:
@@ -124,20 +138,18 @@ async def recover_one(seed_entry: dict, sem: asyncio.Semaphore) -> tuple[str, di
         return eid, None, None, rejected
     primary = (seed_entry.get("domain") or "").lower()
     codice_ipa = (seed_entry.get("ipa_codice_ipa") or "").lower()
-    is_school = _is_school(seed_entry)
+    is_school_cat = _is_school_categoria(seed_entry)
 
     async with sem:
         for fb in fallbacks:
             ok, reason = is_legit_email_domain(fb, primary, codice_ipa=codice_ipa)
-            # Special exception: state schools (L33) using MIM's central
-            # tenant (istruzione.it) is a real institutional dependency,
-            # not a misattribution. Accept the fallback BUT tag with the
-            # dedicated `istruzione-miur-tenant` provider to keep it
-            # distinguishable from schools running their own tenants.
-            school_miur = (
-                fb.lower() == "istruzione.it" and is_school
+            # Eccezione per scuole statali sul tenant centrale MIM:
+            # categoria L33 + fallback esatto "istruzione.it". La conferma
+            # finale arriva DOPO classify_domain, sulla DKIM evidence.
+            school_miur_candidate = (
+                fb.lower() == "istruzione.it" and is_school_cat
             )
-            if not ok and not school_miur:
+            if not ok and not school_miur_candidate:
                 rejected.append((fb, reason))
                 continue
             try:
@@ -147,11 +159,20 @@ async def recover_one(seed_entry: dict, sem: asyncio.Semaphore) -> tuple[str, di
                 continue
             if result is None:
                 continue
-            if school_miur:
+            if school_miur_candidate:
+                # Conferma DKIM obbligatoria — senza prova del tenant MIM
+                # non taggare. Meglio lasciare unknown.
+                if not _result_is_miur_tenant(result):
+                    rejected.append((
+                        fb,
+                        f"miur_tenant_unverified:dkim_does_not_target_{MIUR_TENANT_HOST}"
+                    ))
+                    continue
                 result["provider"] = "istruzione-miur-tenant"
                 result["reason"] = (
-                    "Scuola statale: posta dei dirigenti sul tenant "
-                    "centrale MIM (istruzione.it / miuristruzione.onmicrosoft.com)"
+                    "Scuola statale (categoria IndicePA L33): posta dei "
+                    "dirigenti sul tenant centrale MIM "
+                    f"(istruzione.it → {MIUR_TENANT_HOST}, prova DKIM)"
                 )
                 result["miur_tenant_dependency"] = True
             else:
