@@ -76,40 +76,71 @@ PA_SHARED_PLATFORMS_NATIONAL = {
 }
 
 # LOCAL-ONLY: platforms operated BY a regional/provincial entity FOR
-# the local PAs in its jurisdiction. Accepted only when the ente looks
-# like a local PA (comune / provincia / regione / asl / etc.), and
-# only when the ente is in (or could plausibly belong to) the same
-# region as the platform — enforced via meaningful-label intersection.
-# Reject for national centrali / .gov.it ministries.
-PA_SHARED_PLATFORMS_LOCAL_ONLY = {
+# the local PAs in its jurisdiction. Each maps to its region key. The
+# ente is accepted only when (a) it looks like a local PA, AND (b) it
+# resides in that region (province code or region label in domain).
+PA_SHARED_PLATFORMS_LOCAL_BY_REGION = {
     # Regional in-house IT
-    "lepida.it", "lepida.net",                      # Emilia-Romagna
-    "ariaspa.it", "aria.lombardia.it",              # Lombardia
-    "ruparpiemonte.it", "csi.it",                   # Piemonte
-    "insiel.it", "insiel.net",                      # FVG
-    "regione.emilia-romagna.it",
-    "regione.lombardia.it",
-    "regione.toscana.it",
-    "regione.liguria.it",
-    "regione.veneto.it",
-    "regione.lazio.it",
-    "regione.campania.it",
-    "regione.sardegna.it",
-    "regione.fvg.it",
-    "regione.marche.it",
-    "regione.umbria.it",
-    "regione.abruzzo.it",
-    "regione.molise.it",
-    "regione.basilicata.it",
-    "regione.calabria.it",
-    "regione.sicilia.it",
-    "regione.puglia.it",
-    "regione.vda.it",
+    "lepida.it":                  "emilia-romagna",
+    "lepida.net":                 "emilia-romagna",
+    "ariaspa.it":                 "lombardia",
+    "aria.lombardia.it":          "lombardia",
+    "ruparpiemonte.it":           "piemonte",
+    "csi.it":                     "piemonte",
+    "insiel.it":                  "friuli-venezia-giulia",
+    "insiel.net":                 "friuli-venezia-giulia",
+    "regione.emilia-romagna.it":  "emilia-romagna",
+    "regione.lombardia.it":       "lombardia",
+    "regione.toscana.it":         "toscana",
+    "regione.liguria.it":         "liguria",
+    "regione.veneto.it":          "veneto",
+    "regione.lazio.it":           "lazio",
+    "regione.campania.it":        "campania",
+    "regione.sardegna.it":        "sardegna",
+    "regione.fvg.it":             "friuli-venezia-giulia",
+    "regione.marche.it":          "marche",
+    "regione.umbria.it":          "umbria",
+    "regione.abruzzo.it":         "abruzzo",
+    "regione.molise.it":          "molise",
+    "regione.basilicata.it":      "basilicata",
+    "regione.calabria.it":        "calabria",
+    "regione.sicilia.it":         "sicilia",
+    "regione.puglia.it":          "puglia",
+    "regione.vda.it":             "valle-d-aosta",
     # South Tyrol Gemeindenverband + schools
-    "gvcc.net",
-    "schule.suedtirol.it", "scuola.alto-adige.it",
+    "gvcc.net":                   "bolzano",
+    "schule.suedtirol.it":        "bolzano",
+    "scuola.alto-adige.it":       "bolzano",
     # Trentino IT Exchange
-    "tix.it",
+    "tix.it":                     "trento",
+}
+PA_SHARED_PLATFORMS_LOCAL_ONLY = set(PA_SHARED_PLATFORMS_LOCAL_BY_REGION)
+
+# Province codes (lowercase ISO 3166-2:IT minus the IT- prefix) per region.
+# Used to test "is this ente in the platform's region?".
+REGION_PROVINCES: dict[str, set[str]] = {
+    "piemonte":               {"al","at","bi","cn","no","to","vb","vc"},
+    "valle-d-aosta":          {"ao", "vda", "aosta"},
+    "lombardia":              {"bg","bs","co","cr","lc","lo","mn","mi","mb","pv","so","va"},
+    "trentino-alto-adige":    {"tn","bz"},
+    "trento":                 {"tn"},
+    "bolzano":                {"bz", "suedtirol", "alto-adige", "altoadige"},
+    "veneto":                 {"bl","pd","ro","tv","ve","vi","vr"},
+    "friuli-venezia-giulia":  {"go","pn","ts","ud","fvg"},
+    "liguria":                {"ge","im","sp","sv"},
+    "emilia-romagna":         {"bo","fc","fe","mo","pc","pr","ra","re","rn"},
+    "toscana":                {"ar","fi","gr","li","lu","ms","pi","po","pt","si"},
+    "umbria":                 {"pg","tr"},
+    "marche":                 {"an","ap","fm","mc","pu"},
+    "lazio":                  {"fr","lt","ri","rm","vt"},
+    "abruzzo":                {"aq","ch","pe","te"},
+    "molise":                 {"cb","is"},
+    "campania":               {"av","bn","ce","na","sa"},
+    "puglia":                 {"ba","br","bt","fg","le","ta"},
+    "basilicata":             {"mt","pz"},
+    "calabria":               {"cs","cz","kr","rc","vv"},
+    "sicilia":                {"ag","cl","ct","en","me","pa","rg","sr","tp"},
+    "sardegna":               {"ca","ci","nu","or","og","ot","ss","su","vs","md","sardegna"},
 }
 
 # Back-compat alias
@@ -140,6 +171,79 @@ PEC_PROVIDERS = {
 def _domain_endswith(host: str, base: str) -> bool:
     """True if host == base or host has base as a strict suffix component."""
     return host == base or host.endswith("." + base)
+
+
+# Provincia → capoluogo name → province-code (lowercase, no spaces).
+# Used to resolve domains like comune.bologna.it (no province label) into
+# their region. 107 capoluoghi (the 110 minus duplicates from BAT).
+CAPOLUOGO_PROVINCE = {
+    # Piemonte
+    "torino":"to","alessandria":"al","asti":"at","biella":"bi","cuneo":"cn",
+    "novara":"no","verbania":"vb","vercelli":"vc",
+    # Valle d'Aosta
+    "aosta":"ao",
+    # Lombardia
+    "milano":"mi","bergamo":"bg","brescia":"bs","como":"co","cremona":"cr",
+    "lecco":"lc","lodi":"lo","mantova":"mn","monza":"mb","pavia":"pv",
+    "sondrio":"so","varese":"va",
+    # Trentino-Alto Adige / Sudtirol
+    "trento":"tn","bolzano":"bz","bozen":"bz",
+    # Veneto
+    "venezia":"ve","belluno":"bl","padova":"pd","rovigo":"ro","treviso":"tv",
+    "verona":"vr","vicenza":"vi",
+    # FVG
+    "trieste":"ts","gorizia":"go","pordenone":"pn","udine":"ud",
+    # Liguria
+    "genova":"ge","imperia":"im","laspezia":"sp","spezia":"sp","savona":"sv",
+    # Emilia-Romagna
+    "bologna":"bo","ferrara":"fe","forli":"fc","modena":"mo","piacenza":"pc",
+    "parma":"pr","ravenna":"ra","reggioemilia":"re","rimini":"rn",
+    # Toscana
+    "firenze":"fi","arezzo":"ar","grosseto":"gr","livorno":"li","lucca":"lu",
+    "massa":"ms","pisa":"pi","prato":"po","pistoia":"pt","siena":"si",
+    # Umbria
+    "perugia":"pg","terni":"tr",
+    # Marche
+    "ancona":"an","ascolipiceno":"ap","fermo":"fm","macerata":"mc","pesaro":"pu",
+    # Lazio
+    "roma":"rm","frosinone":"fr","latina":"lt","rieti":"ri","viterbo":"vt",
+    # Abruzzo
+    "laquila":"aq","chieti":"ch","pescara":"pe","teramo":"te",
+    # Molise
+    "campobasso":"cb","isernia":"is",
+    # Campania
+    "napoli":"na","avellino":"av","benevento":"bn","caserta":"ce","salerno":"sa",
+    # Puglia
+    "bari":"ba","brindisi":"br","barletta":"bt","foggia":"fg","lecce":"le","taranto":"ta",
+    # Basilicata
+    "potenza":"pz","matera":"mt",
+    # Calabria
+    "catanzaro":"cz","cosenza":"cs","crotone":"kr","reggiocalabria":"rc","vibovalentia":"vv",
+    # Sicilia
+    "palermo":"pa","agrigento":"ag","caltanissetta":"cl","catania":"ct","enna":"en",
+    "messina":"me","ragusa":"rg","siracusa":"sr","trapani":"tp",
+    # Sardegna
+    "cagliari":"ca","nuoro":"nu","oristano":"or","sassari":"ss",
+}
+
+
+def _ente_in_region(ente_domain: str, region: str) -> bool:
+    """True if `ente_domain` indicates the ente is in `region`. Checks
+    (1) any label is a province code of that region; (2) the region key
+    or an alias label is present; (3) any label is a known capoluogo
+    whose province belongs to that region."""
+    if not ente_domain or not region:
+        return False
+    parts = ente_domain.lower().split(".")
+    markers = REGION_PROVINCES.get(region, set()) | {region}
+    if any(p in markers for p in parts):
+        return True
+    region_provs = REGION_PROVINCES.get(region, set())
+    for p in parts:
+        prov = CAPOLUOGO_PROVINCE.get(p)
+        if prov and prov in region_provs:
+            return True
+    return False
 
 
 def is_local_pa_domain(d: str) -> bool:
@@ -233,20 +337,13 @@ def is_legit_email_domain(
             break
     if matched_local_plat:
         if is_local_pa_domain(e):
-            # Local PA — the platform is legitimately offered to it.
-            # Region-pair check: also require the platform's
-            # meaningful-label set to intersect the ente's, so we
-            # don't accept regione.lombardia.it for a Sicily comune.
-            plat_labels = meaningful_labels(matched_local_plat)
-            ente_labels_q = meaningful_labels(e)
-            if not plat_labels or (plat_labels & ente_labels_q):
+            # Local PA — the platform is offered to it; require region match.
+            region = PA_SHARED_PLATFORMS_LOCAL_BY_REGION.get(matched_local_plat)
+            if region and _ente_in_region(e, region):
                 return True, f"pa_shared_local:{matched_local_plat}"
-            # else: fall through — the platform region doesn't match
-            # the ente region, so try the remaining rules (none of
-            # which will fire for cross-region cases) → unrelated.
+            # else: fall through — platform region doesn't match ente region.
         # else (national ente): fall through to remaining rules; if
-        # none accept, this becomes "unrelated" and the regional
-        # platform is rejected — which is the desired Min-Interno fix.
+        # none accept, this becomes a region-out-of-scope reject.
 
     # 5. Subdomain relationship (one is descendant of the other)
     if _domain_endswith(s, e) or _domain_endswith(e, s):
