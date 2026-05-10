@@ -28,39 +28,52 @@ def main():
             "document.getElementById('map-loading').style.display === 'none'",
             timeout=30000,
         )
+        # Take a "before" screenshot of Comuni first to compare
+        page.click("button[data-level='municipality']")
+        time.sleep(4)
+        page.screenshot(path="C:/temp/istruzione_test_before_comuni.png", full_page=False)
         # Switch to Scuole
         page.click("button[data-level='istruzione']")
         # Give time for: loadSummaryData, marker build, polygon hide
-        time.sleep(6)
+        time.sleep(8)
+        page.screenshot(path="C:/temp/istruzione_test_after_scuole.png", full_page=False)
+        # Pan the map to test that polygons stay hidden after moveend
+        page.evaluate("window._map.panBy([100, 100])")
+        time.sleep(3)
+        page.screenshot(path="C:/temp/istruzione_test_after_pan.png", full_page=False)
 
         # B. Cluster-numbers absence: no .marker-cluster elements
         cluster_count = page.evaluate(
             "(() => document.querySelectorAll('.marker-cluster').length)()"
         )
-        # C. Country polygon layers removed from map. Detect by walking
-        #    map._layers and counting GeoJSON FeatureGroups that contain
-        #    Polygon/MultiPolygon sub-layers (= the choropleth).
-        polygons_on_map = page.evaluate("""
+        # C. Walk every map._layers entry, count individual Polygon /
+        #    MultiPolygon SUB-layers across all parents. This is more
+        #    robust than `instanceof L.GeoJSON` (which apparently misses
+        #    them in canvas-renderer mode where the L.GeoJSON wrapper
+        #    is bypassed).
+        layer_inventory = page.evaluate("""
           (() => {
-            var n = 0;
-            window._map.eachLayer(function(layer) {
-              if (typeof layer.eachLayer !== 'function') return;
-              if (layer instanceof L.LayerGroup && !(layer instanceof L.GeoJSON)) {
-                // skip pure layergroups (markers, dominance markers)
-              }
-              if (layer instanceof L.GeoJSON) {
-                var hasPoly = false;
-                layer.eachLayer(function(s) {
-                  if (s.feature && s.feature.geometry &&
-                      (s.feature.geometry.type === 'Polygon' ||
-                       s.feature.geometry.type === 'MultiPolygon')) hasPoly = true;
-                });
-                if (hasPoly) n++;
-              }
-            });
-            return n;
+            var inv = { polygons: 0, multipolygons: 0, circle_markers: 0,
+                        layergroup_count: 0, geojson_count: 0,
+                        layer_types: {} };
+            // Walk map._layers (raw)
+            var raw = window._map._layers || {};
+            for (var id in raw) {
+              var l = raw[id];
+              var ctor = (l && l.constructor && l.constructor.name) || '?';
+              inv.layer_types[ctor] = (inv.layer_types[ctor] || 0) + 1;
+              if (l instanceof L.Polygon)         inv.polygons++;
+              if (l instanceof L.CircleMarker)    inv.circle_markers++;
+              if (l instanceof L.LayerGroup)      inv.layergroup_count++;
+              if (L.GeoJSON && l instanceof L.GeoJSON) inv.geojson_count++;
+              if (l && l.feature && l.feature.geometry &&
+                  l.feature.geometry.type === 'MultiPolygon') inv.multipolygons++;
+            }
+            return inv;
           })()
         """)
+        polygons_on_map = layer_inventory["polygons"] + layer_inventory["multipolygons"]
+        print(f"  Layer inventory: {layer_inventory}")
         # Markers visible — count CircleMarker layers
         marker_count = page.evaluate("""
           (() => {

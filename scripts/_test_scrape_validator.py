@@ -60,6 +60,33 @@ CASES = [
      "same city -> 'lecce' shared label"),
     ("aslroma1.it",                  "asl-roma1.it",              False,
      "hyphenation typo — limit acknowledged, manual override needed"),
+
+    # === PA-shared platform SCOPE rules ===
+    # Regional platforms must NOT be accepted for national centrali / .gov.it
+    ("regione.vda.it",               "interno.gov.it",            False,
+     "BUG: regione.vda.it whitelisted for Min Interno — out-of-scope"),
+    ("regione.lombardia.it",         "salute.gov.it",             False,
+     "regional platform vs national ministry — out-of-scope"),
+    ("lepida.it",                    "interno.gov.it",            False,
+     "Lepida (ER regional) vs Min Interno — out-of-scope"),
+    ("ariaspa.it",                   "mef.gov.it",                False,
+     "ARIA (Lombardia regional) vs MEF — out-of-scope"),
+    ("ruparpiemonte.it",             "difesa.it",                 False,
+     "RUPAR Piemonte vs Min Difesa (national) — out-of-scope"),
+    # Cross-region: regional platform accepted only for that region's local PA
+    ("regione.lombardia.it",         "comune.palermo.it",         False,
+     "Lombardia platform vs Palermo comune — wrong region"),
+    ("lepida.it",                    "comune.milano.it",          False,
+     "Lepida (ER) vs Milano (Lombardia) — wrong region"),
+    ("regione.vda.it",               "comune.aosta.vda.it",       True,
+     "regione.vda.it for Aosta comune — same region OK"),
+    # National platforms remain accepted for all PA
+    ("garr.it",                      "interno.gov.it",            True,
+     "GARR (national research net) accepted for ministry"),
+    ("asmel.it",                     "comune.foo.it",             True,
+     "ASMEL national consortium for any comune"),
+    ("sogei.it",                     "agenziaentrate.gov.it",     True,
+     "Sogei accepted for AdE (national)"),
 ]
 
 

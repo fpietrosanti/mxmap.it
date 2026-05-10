@@ -424,14 +424,31 @@ async def finalize_one(
     seed_entry: dict,
     raw: dict | None,
     wd_corrections: dict[str, str],
+    aoo_uo_ext: dict[str, list[str]],
     client: httpx.AsyncClient,
     dns_sem: asyncio.Semaphore,
     http_sem: asyncio.Semaphore,
 ) -> tuple[str, dict, str]:
-    """Try the four strategies; return (key, mutation_dict, status)."""
+    """Try the strategies in order; return (key, mutation_dict, status)."""
     primary = (entry.get("domain") or "").strip().lower()
     name = seed_entry.get("name") or entry.get("name") or ""
     istat = (seed_entry.get("ipa_codice_comune_istat") or "").zfill(6)
+    codice_ipa = (seed_entry.get("ipa_codice_ipa") or "").strip().lower()
+
+    # S0 — IndicePA AOO/UO non-PEC enrichment (Tier-6, is_legit-validated
+    # at harvest time). Highest-confidence signal; no scraping involved.
+    if codice_ipa and codice_ipa in aoo_uo_ext:
+        for cand in aoo_uo_ext[codice_ipa]:
+            if cand == primary:
+                continue
+            result = await try_domain_for_classify(cand, dns_sem)
+            if result:
+                mutation = {
+                    "domain_used": cand,
+                    "domain_correction_source": "indicepa_aoo_uo_tier6",
+                }
+                mutation.update(result)
+                return key, mutation, "aoo_uo_tier6"
 
     # S1 — PEC publicly-owned (RUPAR Piemonte / ASMEPEC)
     if raw:
@@ -498,12 +515,28 @@ async def finalize_one(
         }, "search_no_mx"
 
     # All strategies failed
-    return key, {"reason": "all strategies exhausted (S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"}, "all_failed"
+    return key, {"reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"}, "all_failed"
+
+
+def load_aoo_uo_extension() -> dict[str, list[str]]:
+    """Load AOO/UO Tier-6 enrichment (codice_ipa_lower -> [non-PEC domains]).
+    Each domain has been is_legit-validated at harvest time."""
+    p = DATA / "indicepa_extended_emails.json"
+    if not p.exists():
+        print(f"  WARN: {p} missing — Tier-6 (S0) skipped. "
+              f"Run scripts/enrich_from_aoo_uo.py first.")
+        return {}
+    d = json.loads(p.read_text(encoding="utf-8"))
+    return {k.lower(): (v.get("non_pec_domains") or [])
+            for k, v in d.get("by_ipa", {}).items()
+            if v.get("non_pec_domains")}
 
 
 async def main_async() -> int:
     seed = json.loads((DATA / "municipalities_it.json").read_text(encoding="utf-8"))
     seed_by_id = {e["id"]: e for e in seed}
+    aoo_uo_ext = load_aoo_uo_extension()
+    print(f"Loaded {len(aoo_uo_ext)} enti with Tier-6 AOO/UO domains")
     data_path = ROOT / "data.json"
     data = json.loads(data_path.read_text(encoding="utf-8"))
     muns = data["municipalities"]
@@ -555,7 +588,7 @@ async def main_async() -> int:
     ) as client:
         tasks = [
             finalize_one(k, e, s, raw_by_key.get(k), wd_corrections,
-                         client, dns_sem, http_sem)
+                         aoo_uo_ext, client, dns_sem, http_sem)
             for k, e, s in candidates
         ]
         n_done = 0
