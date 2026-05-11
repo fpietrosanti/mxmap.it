@@ -160,8 +160,6 @@ async def recover_one(seed_entry: dict, sem: asyncio.Semaphore) -> tuple[str, di
             if result is None:
                 continue
             if school_miur_candidate:
-                # Conferma DKIM obbligatoria — senza prova del tenant MIM
-                # non taggare. Meglio lasciare unknown.
                 if not _result_is_miur_tenant(result):
                     rejected.append((
                         fb,
@@ -175,8 +173,12 @@ async def recover_one(seed_entry: dict, sem: asyncio.Semaphore) -> tuple[str, di
                     f"(istruzione.it → {MIUR_TENANT_HOST}, prova DKIM)"
                 )
                 result["miur_tenant_dependency"] = True
+                result["mx_discovery_method"] = "istruzione_miur_tenant"
+                result["mx_discovery_evidence"] = f"dkim:{MIUR_TENANT_HOST}"
             else:
                 result["recovery_legit_reason"] = reason
+                result["mx_discovery_method"] = "domain_fallback"
+                result["mx_discovery_evidence"] = fb
             return eid, result, fb, rejected
     return eid, None, None, rejected
 

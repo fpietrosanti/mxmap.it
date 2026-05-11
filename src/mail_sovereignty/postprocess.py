@@ -211,6 +211,8 @@ async def process_unknown(
                 m["provider"] = provider
                 m["reason"] = reason
                 m["domain"] = email_domain
+                m["mx_discovery_method"] = "homepage_scrape"
+                m["mx_discovery_evidence"] = email_domain
                 if spf_resolved and spf_resolved != spf:
                     m["spf_resolved"] = spf_resolved
                 if gateway:
@@ -517,6 +519,10 @@ async def run(data_path: Path) -> None:
                 m["spf"] = spf
                 m["provider"] = provider
                 m["reason"] = reason
+                # DNS retry on the entry's seed domain — same provenance
+                # as the first preprocess pass would have produced.
+                m["mx_discovery_method"] = "seed_primary_mx"
+                m["mx_discovery_evidence"] = m.get("domain", "")
                 if spf_resolved and spf_resolved != spf:
                     m["spf_resolved"] = spf_resolved
                 if gateway:

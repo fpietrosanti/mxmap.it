@@ -899,6 +899,30 @@ async def scan_municipality(
             entry["txt_verifications"] = txt_verifications
         if tenant:
             entry["tenant"] = tenant
+
+        # MX discovery provenance — see src/mail_sovereignty/mx_discovery.py.
+        # Map the seed's domain_source (set by fetch_indicepa per ente) to
+        # the canonical taxonomy tag. If MX wasn't found here, the entry
+        # may be promoted later by recover/finalize/postprocess, which
+        # will overwrite these two fields with their own method tag.
+        seed_source = m.get("domain_source") or ""
+        if mx:
+            # Map fetch_indicepa.py seed.domain_source values to the canonical
+            # mx_discovery_method taxonomy (see src/mail_sovereignty/mx_discovery.py).
+            seed_to_method = {
+                "sito_istituzionale":       "seed_primary_mx",
+                "manual_override":          "manual_override",
+                "manual_llm_enrichment":    "manual_llm_enrichment",
+                "pec_enrichment":           "pec_only_enrichment",
+                "email_non_pec_fallback":   "domain_fallback",
+                "aoo_uo_email_fallback":    "aoo_uo_tier6",
+                "name_guess":               "domain_guess",
+            }
+            method = seed_to_method.get(seed_source, "seed_primary_mx" if domain else "unknown")
+            entry["mx_discovery_method"] = method
+            entry["mx_discovery_evidence"] = domain
+        else:
+            entry["mx_discovery_method"] = "unknown"
         return entry
 
 

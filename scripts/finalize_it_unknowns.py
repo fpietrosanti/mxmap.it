@@ -446,6 +446,8 @@ async def finalize_one(
                 mutation = {
                     "domain_used": cand,
                     "domain_correction_source": "indicepa_aoo_uo_tier6",
+                    "mx_discovery_method": "aoo_uo_tier6",
+                    "mx_discovery_evidence": cand,
                 }
                 mutation.update(result)
                 return key, mutation, "aoo_uo_tier6"
@@ -459,6 +461,8 @@ async def finalize_one(
                 "provider": "regional-public",
                 "reason": f"only-PEC entry on {matched} -> {evidence}",
                 "public_pec_match": matched,
+                "mx_discovery_method": "public_pec_inference",
+                "mx_discovery_evidence": matched,
             }, "public_pec"
 
     # S2 — Wikidata P856 correction
@@ -469,6 +473,8 @@ async def finalize_one(
             mutation = {
                 "domain_used": wd_host,
                 "domain_correction_source": "wikidata_p856",
+                "mx_discovery_method": "wikidata_p856",
+                "mx_discovery_evidence": wd_host,
             }
             mutation.update(result)
             return key, mutation, "wikidata"
@@ -484,6 +490,8 @@ async def finalize_one(
                 "scraped_email": addr,
                 "scrape_tried_hosts": tried,
                 "domain_correction_source": "homepage_scrape_primary",
+                "mx_discovery_method": "homepage_scrape",
+                "mx_discovery_evidence": addr,
             }
             mutation.update(result)
             return key, mutation, "scrape_primary"
@@ -505,6 +513,8 @@ async def finalize_one(
                     "search_engine_winner": cand,
                     "search_engine_candidates": candidates,
                     "domain_correction_source": "search_engine",
+                    "mx_discovery_method": "search_engine_scrape",
+                    "mx_discovery_evidence": addr,
                 }
                 mutation.update(result)
                 return key, mutation, "search_engine"

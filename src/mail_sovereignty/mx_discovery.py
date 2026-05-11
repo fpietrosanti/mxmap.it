@@ -134,5 +134,21 @@ def infer_method_from_entry(entry: dict) -> tuple[str, str | None]:
     if entry.get("provider") == "unknown":
         return "unknown", None
     if entry.get("mx"):
+        # Heuristic: a provider was set without any audit field. The most
+        # common case is preprocess having found MX directly on the
+        # seed's primary domain.
         return "seed_primary_mx", entry.get("domain")
     return "unknown", None
+
+
+# Mapping fetch_indicepa.py seed.domain_source -> taxonomy tag. Re-used
+# by preprocess.py. Kept here so both sides import the same source of truth.
+SEED_SOURCE_TO_METHOD = {
+    "sito_istituzionale":       "seed_primary_mx",
+    "manual_override":          "manual_override",
+    "manual_llm_enrichment":    "manual_llm_enrichment",
+    "pec_enrichment":           "pec_only_enrichment",
+    "email_non_pec_fallback":   "domain_fallback",
+    "aoo_uo_email_fallback":    "aoo_uo_tier6",
+    "name_guess":               "domain_guess",
+}
