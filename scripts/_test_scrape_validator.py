@@ -63,6 +63,26 @@ CASES = [
     ("aslroma1.it",                  "asl-roma1.it",              True,
      "hyphenation typo — risolto da fuzzy DL=1 (rule 6.5)"),
 
+    # === Rule 6.6: label concatenation match ===
+    # Pattern ACI provinciali (~13 enti) e ordini professionali
+    ("aciarezzo.it",                 "arezzo.aci.it",             True,
+     "aciarezzo = arezzo + aci (ACI Arezzo)"),
+    ("acibologna.com",               "bologna.aci.it",            True,
+     "acibologna = bologna + aci"),
+    ("acicuneo.it",                  "cuneo.aci.it",              True,
+     "acicuneo = cuneo + aci"),
+    ("aciroma.it",                   "roma.aci.it",               True,
+     "aciroma = roma + aci"),
+    ("ordineingegnerilatina.it",     "ordineingegneri.latina.it", True,
+     "concat: ordineingegneri + latina"),
+    # Controlli negativi: la regola NON deve catturare cross-tenant
+    ("comune.roma.it",               "interno.gov.it",            False,
+     "concat NON deve salvare: interno ha un solo label significativo"),
+    ("istruzione.it",                "liceostampacchia.edu.it",   False,
+     "concat NON deve salvare: liceostampacchia non contiene istruzione"),
+    ("acipalermo.it",                "interno.gov.it",            False,
+     "concat NON deve dare false positive cross-tenant"),
+
     # === PA-shared platform SCOPE rules ===
     # Regional platforms must NOT be accepted for national centrali / .gov.it
     ("regione.vda.it",               "interno.gov.it",            False,

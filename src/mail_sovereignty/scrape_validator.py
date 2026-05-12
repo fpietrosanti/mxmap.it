@@ -299,6 +299,52 @@ FUZZY_MAX_DISTANCE = 1
 FUZZY_MIN_LEN = 6
 
 
+def _label_concatenation_match(s_labels: set[str], e_labels: set[str]) -> tuple[bool, str]:
+    """Vero se un label significativo del candidato (lunghezza >= 5)
+    CONTIENE come substring 2 o più label significativi dell'ente
+    (ciascuno >= 3 caratteri), e la copertura totale (non sovrapposta)
+    è >= 80% della lunghezza del label candidato.
+
+    Cattura il pattern molto comune in IndicePA:
+      seed (Sito_istituzionale): arezzo.aci.it  -> labels {arezzo, aci}
+      candidato (email/scrape):  aciarezzo.it   -> label  {aciarezzo}
+      → 'aciarezzo' contiene 'arezzo'+'aci' che coprono 9/9 caratteri (100%)
+      → match.
+
+    Non cattura coincidenze: 'comune.roma.it' (labels {roma}) vs 'somali.it'
+    (labels {somali}) — 'somali' contiene 'roma' ? No (rom non si trova).
+    Inoltre richiede 2+ label dell'ente, quindi single-label cross-tenant
+    non passano (es. comune.roma.it vs interno.gov.it).
+    """
+    cand_labels = [l for l in s_labels if len(l) >= 5]
+    ente_labels_lst = [l for l in e_labels if len(l) >= 3]
+    if not cand_labels or len(ente_labels_lst) < 2:
+        return False, ""
+    for c in cand_labels:
+        # trova tutti i label dell'ente presenti come substring in c
+        covers = [e for e in ente_labels_lst if e in c]
+        if len(covers) < 2:
+            continue
+        # ordina per lunghezza decrescente per coprire prima
+        covers.sort(key=len, reverse=True)
+        covered = [False] * len(c)
+        used = []
+        for e in covers:
+            idx = c.find(e)
+            if idx < 0:
+                continue
+            # accetta solo se la nuova substring non è completamente
+            # già coperta (evita di contare "aci" dentro "aci-something")
+            if all(covered[i] for i in range(idx, idx + len(e))):
+                continue
+            for i in range(idx, idx + len(e)):
+                covered[i] = True
+            used.append(e)
+        if len(used) >= 2 and (sum(covered) / len(c)) >= 0.80:
+            return True, f"{c}={'+'.join(used)}"
+    return False, ""
+
+
 def _fuzzy_label_match(s_labels: set[str], e_labels: set[str]) -> tuple[bool, str]:
     """True se esiste una coppia (lbl_s, lbl_e) con DL <= FUZZY_MAX_DISTANCE
     e entrambi i label di lunghezza >= FUZZY_MIN_LEN. Ritorna anche la
@@ -408,6 +454,18 @@ def is_legit_email_domain(
     fuzzy_ok, pair = _fuzzy_label_match(s_labels, e_labels)
     if fuzzy_ok:
         return True, f"fuzzy_match:{pair}"
+
+    # 6.6 Label concatenation: un singolo label del candidato contiene
+    #     2+ label dell'ente come substring, con copertura non-sovrapposta
+    #     >= 80%. Cattura pattern come:
+    #       arezzo.aci.it (ente) ↔ aciarezzo.it (candidato)
+    #         → aciarezzo = arezzo + aci (cov 100%)
+    #     Recupera ~16 enti C13/C14 (ACI provinciali + ordini professionali)
+    #     che il pattern shared_label non trova perché un lato è un singolo
+    #     label concatenato.
+    concat_ok, concat_pair = _label_concatenation_match(s_labels, e_labels)
+    if concat_ok:
+        return True, f"label_concat:{concat_pair}"
 
     if matched_local_plat:
         return False, f"pa_shared_platform_out_of_scope:{matched_local_plat}"
