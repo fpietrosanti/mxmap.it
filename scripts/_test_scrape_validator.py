@@ -60,8 +60,8 @@ CASES = [
      "two different comuni — 'comune' is noise prefix, no shared identity"),
     ("provincia.lecce.it",           "comune.lecce.it",           True,
      "same city -> 'lecce' shared label"),
-    ("aslroma1.it",                  "asl-roma1.it",              False,
-     "hyphenation typo — limit acknowledged, manual override needed"),
+    ("aslroma1.it",                  "asl-roma1.it",              True,
+     "hyphenation typo — risolto da fuzzy DL=1 (rule 6.5)"),
 
     # === PA-shared platform SCOPE rules ===
     # Regional platforms must NOT be accepted for national centrali / .gov.it
@@ -105,10 +105,6 @@ CASES = [
      "fuzzy NON deve salvare cross-tenant (label brevi)"),
     ("comune.noma.it",               "comune.roma.it",            False,
      "label brevi (roma/noma) NON devono matchare fuzzy"),
-    # Controllo: aslroma1 vs asl-roma1 — i label non sono >= 6 char dopo rimozione
-    # del hyphen/digit, quindi resta REJECT (è una limitazione conosciuta)
-    ("aslroma1.it",                  "asl-roma1.it",              False,
-     "hyphenation: limitazione DL=1 — non risolve (richiede normalizzazione)"),
 ]
 
 
