@@ -271,6 +271,49 @@ def is_local_pa_domain(d: str) -> bool:
     return False
 
 
+def _damerau_levenshtein(s1: str, s2: str) -> int:
+    """Distanza Damerau-Levenshtein (sostituzione/inserimento/eliminazione/
+    trasposizione adiacenti) — usata per la rule 6.5 fuzzy.
+    """
+    if s1 == s2:
+        return 0
+    len1, len2 = len(s1), len(s2)
+    if not len1: return len2
+    if not len2: return len1
+    d = [[0] * (len2 + 1) for _ in range(len1 + 1)]
+    for i in range(len1 + 1): d[i][0] = i
+    for j in range(len2 + 1): d[0][j] = j
+    for i in range(1, len1 + 1):
+        for j in range(1, len2 + 1):
+            cost = 0 if s1[i-1] == s2[j-1] else 1
+            d[i][j] = min(d[i-1][j] + 1, d[i][j-1] + 1, d[i-1][j-1] + cost)
+            if (i > 1 and j > 1 and s1[i-1] == s2[j-2] and s1[i-2] == s2[j-1]):
+                d[i][j] = min(d[i][j], d[i-2][j-2] + cost)
+    return d[len1][len2]
+
+
+# Soglia conservativa fuzzy: 1 modifica (typo singolo, char extra/mancante,
+# trasposizione adiacente). Solo su label di almeno 6 caratteri per evitare
+# che parole brevi (es. "roma" / "noma") generino falsi positivi.
+FUZZY_MAX_DISTANCE = 1
+FUZZY_MIN_LEN = 6
+
+
+def _fuzzy_label_match(s_labels: set[str], e_labels: set[str]) -> tuple[bool, str]:
+    """True se esiste una coppia (lbl_s, lbl_e) con DL <= FUZZY_MAX_DISTANCE
+    e entrambi i label di lunghezza >= FUZZY_MIN_LEN. Ritorna anche la
+    coppia per audit/reason."""
+    sl = {l for l in s_labels if len(l) >= FUZZY_MIN_LEN}
+    el = {l for l in e_labels if len(l) >= FUZZY_MIN_LEN}
+    if not sl or not el:
+        return False, ""
+    for a in sl:
+        for b in el:
+            if _damerau_levenshtein(a, b) <= FUZZY_MAX_DISTANCE:
+                return True, f"{a}~{b}"
+    return False, ""
+
+
 def meaningful_labels(domain: str) -> set[str]:
     """Extract the identity-bearing labels of a domain.
 
@@ -355,6 +398,16 @@ def is_legit_email_domain(
     common = s_labels & e_labels
     if common:
         return True, "shared_label:" + ",".join(sorted(common))
+
+    # 6.5 Fuzzy match (Damerau-Levenshtein <= 1) sui label significativi
+    #     lunghi almeno 6 caratteri. Cattura typo singoli (sostituzione,
+    #     inserimento, cancellazione, trasposizione adiacente) come:
+    #       consorfarm.it ↔ consofarm.it
+    #       consorziolagodibracciano.it ↔ consorziolagodibraciano.it
+    #     Conservativo: NON cattura coppie brevi (roma/noma) né distanze >1.
+    fuzzy_ok, pair = _fuzzy_label_match(s_labels, e_labels)
+    if fuzzy_ok:
+        return True, f"fuzzy_match:{pair}"
 
     if matched_local_plat:
         return False, f"pa_shared_platform_out_of_scope:{matched_local_plat}"

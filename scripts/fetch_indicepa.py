@@ -551,6 +551,70 @@ def extract_domain(sito: str | None) -> str | None:
     return host
 
 
+# Stop-tokens del nome ente — parole strutturali che NON portano identità.
+# Usate da _email_fallback_gate() per estrarre i token significativi del
+# nome ufficiale IndicePA e verificare se intersecano i label del dominio
+# candidato. Tenuto qui (non in scrape_validator) perché è specifico alle
+# convenzioni di naming IndicePA + lingua italiana.
+_NAME_NOISE = {
+    "di","del","della","dello","dei","delle","degli","da","dal","dalla",
+    "in","con","su","per","tra","fra","ed","e","a","al","alla","i","la",
+    "il","lo","gli","le","l","d","de",
+    "comune","comuni","provincia","provincie","regione","municipio",
+    "citta","metropolitana","ministero","istituto","istituzione",
+    "scuola","scuole","liceo","circolo","didattico","ordine","collegio",
+    "federazione","azienda","agenzia","ente","consorzio","unione",
+    "consiglio","commissione","autorita","direzione","centro",
+    "ufficio","servizio","stato","statale","nazionale","italiana","italiano",
+    "polo","amministrazione","professione","comprensivo","superiore",
+    "secondaria","primaria","generale","direzione",
+}
+
+
+def _name_tokens(name: str) -> set[str]:
+    """Token significativi del nome ente: lowercase, no diacritici, len>=5."""
+    if not name:
+        return set()
+    import unicodedata, re as _re
+    n = unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode().lower()
+    parts = _re.split(r"[\s\.,;:'\"\-\(\)\/\d]+", n)
+    return {p for p in parts if p and p not in _NAME_NOISE and len(p) >= 5}
+
+
+def _email_fallback_gate(candidate_dom: str, ente_name: str) -> bool:
+    """Decide if `candidate_dom` (un dominio non-PEC estratto da Mail* del
+    record IndicePA) può essere accettato come dominio PRIMARIO dell'ente
+    quando manca il Sito_istituzionale.
+
+    Regola: scartiamo se PEC; altrimenti accettiamo solo se un token
+    significativo del nome ente è uguale a / contenuto in / contiene un
+    meaningful_label del dominio. Niente fuzzy qui — l'is_legit completo
+    con fuzzy gira in recover_it_unknowns sui domain_fallbacks; qui ci
+    serve essere conservativi al massimo perché alimentiamo il SEED, da
+    cui il dominio si propaga ovunque.
+    """
+    from mail_sovereignty.scrape_validator import meaningful_labels, PEC_PROVIDERS
+    s = (candidate_dom or "").lower().strip().rstrip(".")
+    if not s:
+        return False
+    for pec in PEC_PROVIDERS:
+        if s == pec or s.endswith("." + pec):
+            return False
+    nt = _name_tokens(ente_name)
+    if not nt:
+        return False
+    dl = {l for l in meaningful_labels(s) if len(l) >= 5}
+    if not dl:
+        return False
+    if nt & dl:
+        return True
+    for nts in nt:
+        for lbl in dl:
+            if (len(nts) > 4 and nts in lbl) or (len(lbl) > 4 and lbl in nts):
+                return True
+    return False
+
+
 def extract_domain_fallbacks(row: dict[str, Any], primary_domain: str | None) -> list[str]:
     """Extract non-PEC email-derived domains for use when the primary website
     domain has no MX. Order: Mail1 first, Mail5 last. Dedupes, excludes primary.
@@ -741,14 +805,18 @@ def transform(
 
     # Email-fallback at seed-time: if Sito_istituzionale is missing/invalid,
     # derive the primary domain from the first non-PEC Mail{1..5} entry.
-    # This mirrors the recover_it_unknowns logic but applied BEFORE the seed
-    # drop, so enti that have only an email (no website) still enter the
-    # MX-classification pipeline.
+    # GATED by name-token check: il 72% di questo path produceva storicamente
+    # misattribuzioni (gmail/libero/virgilio dell'impiegato, oppure dominio
+    # di altro ente). Accettiamo solo se ALMENO UN token significativo del
+    # nome ente intersecta (o è substring di) un meaningful_label del dominio
+    # candidato. Vedi scripts/_test_email_non_pec_fallback_gating.py.
     if not domain:
         fb = extract_domain_fallbacks(row, primary_domain=None)
-        if fb:
-            domain = fb[0]
-            domain_source = "email_non_pec_fallback"
+        for cand in fb:
+            if _email_fallback_gate(cand, row.get("Denominazione_ente", "")):
+                domain = cand
+                domain_source = "email_non_pec_fallback"
+                break
 
     # Tier 6 — AOO+UO derived non-PEC emails (passed through is_legit).
     # Only fires when nothing above gave us a domain. Most useful for PA

@@ -89,6 +89,26 @@ CASES = [
      "ASMEL national consortium for any comune"),
     ("sogei.it",                     "agenziaentrate.gov.it",     True,
      "Sogei accepted for AdE (national)"),
+
+    # === Rule 6.5: fuzzy DL <= 1 sui label lunghi >= 6 caratteri ===
+    # Tutti casi REALI dal report cleanup_invalid_mx_attributions.
+    ("consofarm.it",                 "consorfarm.it",             True,
+     "typo singolo: consofarm ↔ consorfarm"),
+    ("consorziolagodibracciano.it",  "consorziolagodibraciano.it", True,
+     "typo singolo: bracciano ↔ braciano (Consorzio Lago di Bracciano)"),
+    ("casediripososolero.it",        "casadiripososolero.it",     True,
+     "1-char diff: casedi ↔ casadi"),
+    ("comunitamontanativoli.org",    "comunitamontantivoli.org",  True,
+     "typo singolo: comunitamontana ↔ comunitamontant"),
+    # Controlli negativi: brevi non devono matchare con DL=1
+    ("comune.roma.it",               "interno.gov.it",            False,
+     "fuzzy NON deve salvare cross-tenant (label brevi)"),
+    ("comune.noma.it",               "comune.roma.it",            False,
+     "label brevi (roma/noma) NON devono matchare fuzzy"),
+    # Controllo: aslroma1 vs asl-roma1 — i label non sono >= 6 char dopo rimozione
+    # del hyphen/digit, quindi resta REJECT (è una limitazione conosciuta)
+    ("aslroma1.it",                  "asl-roma1.it",              False,
+     "hyphenation: limitazione DL=1 — non risolve (richiede normalizzazione)"),
 ]
 
 
