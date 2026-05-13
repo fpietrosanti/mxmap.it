@@ -562,16 +562,55 @@ async def run(data_path: Path) -> None:
             f"\nSMTP banner check: {len(smtp_candidates)} entries, "
             f"{len(mx_host_to_bfs)} unique MX hosts..."
         )
+        # Watchdog: per-host timeout (10s) + global stage budget (10 min).
+        # Senza questi, un singolo MX che accetta TCP ma non risponde mai
+        # al banner SMTP poteva tenere bloccato indefinitamente uno slot
+        # del semaforo (visto in produzione: 57 minuti, CPU 0.4%).
+        import time as _t
+        SMTP_BANNER_TIMEOUT_PER_HOST = 10.0
+        SMTP_BANNER_STAGE_BUDGET = 600.0   # 10 minuti totali
         smtp_semaphore = asyncio.Semaphore(CONCURRENCY_SMTP)
+        smtp_start = _t.monotonic()
+        smtp_done = 0
+        smtp_total = len(mx_host_to_bfs)
+        smtp_budget_exhausted = False
+        smtp_lock = asyncio.Lock()
 
         async def _fetch_banner(mx_host: str) -> tuple[str, dict[str, str]]:
+            nonlocal smtp_done, smtp_budget_exhausted
+            if smtp_budget_exhausted:
+                return mx_host, {}
             async with smtp_semaphore:
-                res = await fetch_smtp_banner(mx_host)
+                if _t.monotonic() - smtp_start >= SMTP_BANNER_STAGE_BUDGET:
+                    smtp_budget_exhausted = True
+                    return mx_host, {}
+                try:
+                    res = await asyncio.wait_for(
+                        fetch_smtp_banner(mx_host),
+                        timeout=SMTP_BANNER_TIMEOUT_PER_HOST,
+                    )
+                except asyncio.TimeoutError:
+                    res = {}
+                except Exception:
+                    res = {}
+                # heartbeat every 50 hosts
+                async with smtp_lock:
+                    smtp_done += 1
+                    if smtp_done % 50 == 0 or smtp_done == smtp_total:
+                        elapsed = int(_t.monotonic() - smtp_start)
+                        print(f"  SMTP banner: {smtp_done}/{smtp_total} ({elapsed}s)")
                 return mx_host, res
 
-        banner_results = await asyncio.gather(
-            *[_fetch_banner(host) for host in mx_host_to_bfs]
-        )
+        # Hard ceiling on the whole gather() in case the budget logic above
+        # somehow misses (defence-in-depth).
+        try:
+            banner_results = await asyncio.wait_for(
+                asyncio.gather(*[_fetch_banner(host) for host in mx_host_to_bfs]),
+                timeout=SMTP_BANNER_STAGE_BUDGET + 30,
+            )
+        except asyncio.TimeoutError:
+            print(f"  SMTP banner stage hit hard ceiling — proceeding with partial results")
+            banner_results = []
 
         smtp_reclassified = 0
         for mx_host, result in banner_results:
