@@ -1,5 +1,17 @@
 name: Nightly data update
-# Runs preprocess (DNS) + postprocess (overrides, SMTP) + validate + deploy
+# Pipeline notturna:
+#   IT-specific:
+#     fetch_indicepa --include-others (refresh seed da IndicePA)
+#     enrich_from_aoo_uo (Tier-6 non-PEC, validato is_legit)
+#     preprocess IT (DNS lookups)
+#     postprocess (overrides + SMTP banner + scrape gated)
+#     recover_it_unknowns (fallback IndicePA gated)
+#     finalize_it_unknowns (S0 Tier-6 + Wikidata + scrape gated + DDG)
+#     cleanup_invalid_mx_attributions (purga cross-tenant)
+#     backfill_mx_discovery (provenance taxonomy)
+#     aggregate_istruzione_per_comune (mappa scuole)
+#   Common:
+#     validate + build_frontend + build_public_dataset + commit + deploy
 
 on:
   schedule:
@@ -25,6 +37,20 @@ jobs:
       - uses: astral-sh/setup-uv@v7
       - run: uv python install 3.13
       - run: uv sync
+
+      # --- IT seed refresh: rebuild data/municipalities_it.json from IndicePA ---
+      # --include-others è obbligatorio per non perdere scuole/ministeri/ordini
+      # (senza flag scrive solo comuni/province/regioni).
+      - name: Refresh IT seed from IndicePA
+        run: uv run python3 scripts/fetch_indicepa.py --include-others
+
+      # --- Tier-6 AOO/UO enrichment: domini non-PEC dai dataset ausiliari ---
+      # Cache su data/indicepa_raw/. Daily usa cache, weekly --refresh
+      # manuale se vuoi re-scaricare gli 8MB+12MB.
+      - name: Enrich IT seed with AOO/UO non-PEC (Tier-6)
+        continue-on-error: true
+        run: uv run python3 scripts/enrich_from_aoo_uo.py
+
       - name: Preprocess (small + medium countries)
         run: |
           # Countries with <1000 municipalities — scan every night
@@ -45,8 +71,9 @@ jobs:
           uv run preprocess $SMALL
       - name: Preprocess large countries (rotating)
         run: |
-          # Countries with >=1000 municipalities rotate on a 3-day cycle
-          # (excludes DE which has its own rotation below)
+          # Countries with >=1000 municipalities rotate on a 3-day cycle.
+          # Esclusi: DE (rotazione 3-statestate-per-night sotto) e IT
+          # (preprocess dedicato daily, vedi step successivo).
           DAY_OF_YEAR=$(date +%-j)
           LARGE=$(uv run python3 -c "
           import json
@@ -54,7 +81,7 @@ jobs:
           from pathlib import Path
           large = []
           for cc, fname in sorted(SEED_FILES.items()):
-              if cc == 'DE': continue
+              if cc in ('DE', 'IT'): continue
               p = Path('data') / fname
               if p.exists():
                   n = len(json.load(open(p)))
@@ -70,6 +97,12 @@ jobs:
           if [ -n "$LARGE" ]; then
             uv run preprocess $LARGE
           fi
+
+      # --- IT preprocess (daily, full) ---
+      # 22,935 enti, DNS cache caldo → ~5-8 min, freddo ~30 min.
+      # Sostituisce la rotazione perchè IT è il focus primario del progetto.
+      - name: Preprocess IT (daily, full)
+        run: uv run preprocess IT
       - name: Preprocess DE (rotating 3 states per night)
         run: |
           DAY=$(date +%j)
@@ -81,6 +114,24 @@ jobs:
             uv run preprocess "DE:$S"
           done
       - run: uv run postprocess
+
+      # --- IT recovery chain: applica solo agli enti IT con provider=unknown ---
+      # Ordine importante: recover (fallback IndicePA) → finalize (Tier-6 +
+      # Wikidata + scrape + DDG) → cleanup (purga cross-tenant) → backfill
+      # (provenance taxonomy) → aggregate (mappa scuole).
+      - name: Recover IT unknowns (domain_fallbacks gated by is_legit)
+        run: uv run python3 scripts/recover_it_unknowns.py
+      - name: Finalize IT unknowns (Tier-6 S0 + Wikidata + scrape + DDG)
+        continue-on-error: true
+        run: uv run python3 scripts/finalize_it_unknowns.py
+      - name: Cleanup invalid MX attributions (cross-tenant)
+        run: uv run python3 scripts/cleanup_invalid_mx_attributions.py
+      - name: Backfill mx_discovery_method taxonomy
+        run: uv run python3 scripts/backfill_mx_discovery.py
+      - name: Aggregate istruzione per comune (mappa scuole)
+        continue-on-error: true
+        run: uv run python3 scripts/aggregate_istruzione_per_comune.py
+
       - name: Validate data quality
         id: validate
         continue-on-error: true
@@ -97,7 +148,9 @@ jobs:
           git diff --quiet data.json && exit 0
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data.json data-regions.json data-summary.json data-detail.json data/summary/ dist/ validation_report.json validation_report.csv data/dns_cache/
+          git add data.json data-regions.json data-summary.json data-detail.json data/summary/ dist/ validation_report.json validation_report.csv data/dns_cache/ \
+                  data/municipalities_it.json data/indicepa_extended_emails.json data/it_istruzione_by_comune.json \
+                  data/reports/cleanup_invalid_mx_attributions.json data/reports/recover_it_unknowns_rejections.json data/reports/mx_discovery_stats.json
           git commit -m "chore: nightly data update"
           git pull --rebase
           git push
