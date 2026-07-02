@@ -1983,14 +1983,13 @@
     },
     "IT-C14-GB6QL6FQ": {
       "name": "Ordine dei Dottori Agronomi e dei Dottori Forestali della Provincia di Pescara",
-      "provider": "local-isp",
-      "domain": "conaf.it",
-      "confidence": 85,
+      "provider": "unknown",
+      "domain": "ordinepescara.conaf.it",
+      "confidence": 15,
       "flags": [
-        "multiple_mx",
-        "spf_strict",
-        "independent_mx_with_cloud_spf",
-        "provider_classified"
+        "no_mx",
+        "no_spf",
+        "provider_unknown"
       ]
     },
     "IT-C14-HEC71H2H": {
@@ -9577,12 +9576,11 @@
     },
     "IT-C14-cpipr_vi": {
       "name": "Ordine dei Periti Industriali e dei Periti Industriali Laureati della Provincia di Vicenza",
-      "provider": "google",
-      "domain": "periti-industriali.vi.it",
-      "confidence": 93,
+      "provider": "aruba",
+      "domain": "pec.cnpi.it",
+      "confidence": 90,
       "flags": [
-        "multiple_mx",
-        "spf_softfail",
+        "spf_strict",
         "mx_spf_match",
         "provider_classified"
       ]
@@ -10978,7 +10976,7 @@
     "IT-C14-dfsr": {
       "name": "Ordine Dei Dottori Agronomi e Dei Dottori Forestali della Provincia di Siracusa",
       "provider": "local-isp",
-      "domain": "conaf.it",
+      "domain": "ordinesiracusa.conaf.it",
       "confidence": 85,
       "flags": [
         "multiple_mx",
@@ -11060,7 +11058,7 @@
     "IT-C14-fodaf": {
       "name": "Federazione Interregionale Degli Ordini Dei Dottori Agronomi e Dottori Forestali del Piemonte e della Valle D'Aosta",
       "provider": "local-isp",
-      "domain": "conaf.it",
+      "domain": "fodafpiemonte-valledaosta.conaf.it",
       "confidence": 85,
       "flags": [
         "multiple_mx",
@@ -11142,7 +11140,7 @@
     "IT-C14-frtopdad": {
       "name": "Federazione Regionale Toscana Degli Ordini Provinciali Dottori Agronomi e Dottori Forestali",
       "provider": "local-isp",
-      "domain": "conaf.it",
+      "domain": "fodaftoscana.conaf.it",
       "confidence": 85,
       "flags": [
         "multiple_mx",
@@ -12972,7 +12970,7 @@
     "IT-C14-odad_075": {
       "name": "Ordine Dottori Agronomi e Dottori Forestali Di Lecce",
       "provider": "local-isp",
-      "domain": "conaf.it",
+      "domain": "ordinelecce.conaf.it",
       "confidence": 85,
       "flags": [
         "multiple_mx",
@@ -12995,7 +12993,7 @@
     "IT-C14-odadfa": {
       "name": "Ordine Dei Dottori Agronomi e Dottori Forestali della Provincia di Avellino",
       "provider": "local-isp",
-      "domain": "conaf.it",
+      "domain": "ordineavellino.conaf.it",
       "confidence": 85,
       "flags": [
         "multiple_mx",
@@ -13007,7 +13005,7 @@
     "IT-C14-odadfb": {
       "name": "Ordine Dottori Agronomi e Dottori Forestali di Brescia",
       "provider": "local-isp",
-      "domain": "conaf.it",
+      "domain": "ordinebrescia.conaf.it",
       "confidence": 85,
       "flags": [
         "multiple_mx",
@@ -13065,7 +13063,7 @@
     "IT-C14-odadfcs": {
       "name": "Ordine Dottori Agronomi e Dottori Forestali di Cosenza",
       "provider": "local-isp",
-      "domain": "conaf.it",
+      "domain": "ordinecosenza.conaf.it",
       "confidence": 85,
       "flags": [
         "multiple_mx",
@@ -13302,7 +13300,7 @@
     "IT-C14-odafbn": {
       "name": "Ordine Dei Dottori Agronomi e Dottori Forestali della Provincia di Benevento",
       "provider": "local-isp",
-      "domain": "conaf.it",
+      "domain": "ordinebenevento.conaf.it",
       "confidence": 85,
       "flags": [
         "multiple_mx",
@@ -13313,14 +13311,13 @@
     },
     "IT-C14-odafbr": {
       "name": "Ordine Dei Dottori Agronomi e Dei Dottori Forestali della Provincia di Brindisi",
-      "provider": "local-isp",
-      "domain": "conaf.it",
-      "confidence": 85,
+      "provider": "unknown",
+      "domain": "ordinebrindisi.conaf.it",
+      "confidence": 15,
       "flags": [
-        "multiple_mx",
-        "spf_strict",
-        "independent_mx_with_cloud_spf",
-        "provider_classified"
+        "no_mx",
+        "no_spf",
+        "provider_unknown"
       ]
     },
     "IT-C14-odafce": {
@@ -13338,7 +13335,7 @@
     "IT-C14-odafcn": {
       "name": "Ordine Dottori Agronomi e Dottori Forestali Provincia di Cuneo",
       "provider": "local-isp",
-      "domain": "conaf.it",
+      "domain": "ordinecuneo.conaf.it",
       "confidence": 85,
       "flags": [
         "multiple_mx",
@@ -13440,7 +13437,7 @@
     "IT-C14-odafpte": {
       "name": "Ordine Dei Dottori Agronomi e Dottori Forestali della Provincia di Teramo",
       "provider": "local-isp",
-      "domain": "conaf.it",
+      "domain": "ordineteramo.conaf.it",
       "confidence": 85,
       "flags": [
         "multiple_mx",
@@ -14950,12 +14947,13 @@
     },
     "IT-C14-odcec_br": {
       "name": "Ordine dei Dottori Commercialisti e degli Esperti Contabili di Brindisi",
-      "provider": "local-isp",
-      "domain": "odcecbrindisi.it",
-      "confidence": 50,
+      "provider": "unknown",
+      "domain": "brindisi.commercialisti.it",
+      "confidence": 15,
       "flags": [
+        "no_mx",
         "no_spf",
-        "provider_classified"
+        "provider_unknown"
       ]
     },
     "IT-C14-odcec_cb": {
@@ -15614,7 +15612,7 @@
     "IT-C14-oddadal": {
       "name": "Ordine Dei Dottori Agronomi e Dei Dottori Forestali di Alessandria",
       "provider": "local-isp",
-      "domain": "conaf.it",
+      "domain": "ordinealessandria.conaf.it",
       "confidence": 85,
       "flags": [
         "multiple_mx",
@@ -15650,7 +15648,7 @@
     "IT-C14-oddadfa": {
       "name": "Ordine Dei Dottori Agronomi e Dei Dottori Forestali di Aosta",
       "provider": "local-isp",
-      "domain": "conaf.it",
+      "domain": "ordineaosta.conaf.it",
       "confidence": 85,
       "flags": [
         "multiple_mx",
@@ -15685,7 +15683,7 @@
     "IT-C14-oddadfg": {
       "name": "Ordine Dei Dottori Agronomi e Dei Dottori Forestali della Provincia di Grosseto",
       "provider": "local-isp",
-      "domain": "conaf.it",
+      "domain": "ordinegrosseto.conaf.it",
       "confidence": 85,
       "flags": [
         "multiple_mx",
@@ -15766,7 +15764,7 @@
     "IT-C14-oddadfvg": {
       "name": "Ordine Dei Dottori Agronomi e Dei Dottori Forestali del Friuli Venezia Giulia",
       "provider": "local-isp",
-      "domain": "conaf.it",
+      "domain": "ordinefriulivg.conaf.it",
       "confidence": 85,
       "flags": [
         "multiple_mx",
@@ -15800,7 +15798,7 @@
     "IT-C14-oddadvb": {
       "name": "Ordine Dei Dottori Agronomi e Dei Dottori Forestali Delle Province di Vercelli e Biella",
       "provider": "local-isp",
-      "domain": "conaf.it",
+      "domain": "ordinevercellibiella.conaf.it",
       "confidence": 85,
       "flags": [
         "multiple_mx",
@@ -16698,7 +16696,7 @@
     "IT-C14-odfcolcs": {
       "name": "Ordine dei Dottori Agronomi e dei Dottori Forestali delle Province di Como Lecco e Sondrio",
       "provider": "local-isp",
-      "domain": "conaf.it",
+      "domain": "ordinecomoleccosondrio.conaf.it",
       "confidence": 85,
       "flags": [
         "multiple_mx",
@@ -16960,14 +16958,13 @@
     },
     "IT-C14-odft": {
       "name": "Ordine Dei Dottori Agronomi e Dei Dottori Forestali della Provincia di Torino",
-      "provider": "local-isp",
-      "domain": "conaf.it",
-      "confidence": 85,
+      "provider": "unknown",
+      "domain": "ordinetorino.conaf.it",
+      "confidence": 15,
       "flags": [
-        "multiple_mx",
-        "spf_strict",
-        "independent_mx_with_cloud_spf",
-        "provider_classified"
+        "no_mx",
+        "no_spf",
+        "provider_unknown"
       ]
     },
     "IT-C14-odg_015": {
@@ -21205,7 +21202,7 @@
     "IT-C14-ordadfdl": {
       "name": "Ordine Dei Dottori Agronomi e Dottori Forestali della Liguria",
       "provider": "local-isp",
-      "domain": "conaf.it",
+      "domain": "ordineliguria.conaf.it",
       "confidence": 85,
       "flags": [
         "multiple_mx",
@@ -21227,7 +21224,7 @@
     "IT-C14-ordafm": {
       "name": "Ordine Regionale Dei Dottori Agronomi e Dei Dottori Forestali Delle Marche",
       "provider": "local-isp",
-      "domain": "conaf.it",
+      "domain": "ordinemarche.conaf.it",
       "confidence": 85,
       "flags": [
         "multiple_mx",
@@ -30787,13 +30784,13 @@
     },
     "IT-COM-003058": {
       "name": "Comune di Cureggio",
-      "provider": "independent",
-      "domain": "cert.ruparpiemonte.it",
-      "confidence": 80,
+      "provider": "unknown",
+      "domain": "comune.cureggio.no.it",
+      "confidence": 15,
       "flags": [
-        "spf_strict",
-        "independent_mx_with_cloud_spf",
-        "provider_classified"
+        "no_mx",
+        "no_spf",
+        "provider_unknown"
       ]
     },
     "IT-COM-003060": {
@@ -81613,12 +81610,14 @@
     },
     "IT-COM-058122": {
       "name": "Comune di Fonte Nuova",
-      "provider": "independent",
-      "domain": "cert.fonte-nuova.it",
-      "confidence": 50,
+      "provider": "microsoft",
+      "domain": "comune.fontenuova.rm.it",
+      "confidence": 95,
       "flags": [
-        "no_spf",
-        "provider_classified"
+        "spf_strict",
+        "mx_spf_match",
+        "provider_classified",
+        "autodiscover_confirms"
       ]
     },
     "IT-COM-059001": {
@@ -90359,12 +90358,13 @@
     },
     "IT-COM-066093": {
       "name": "Comune di Scanno",
-      "provider": "aruba",
+      "provider": "unknown",
       "domain": "comune.scanno.aq.it",
-      "confidence": 68,
+      "confidence": 15,
       "flags": [
-        "spf_softfail",
-        "provider_classified"
+        "no_mx",
+        "no_spf",
+        "provider_unknown"
       ]
     },
     "IT-COM-066094": {
@@ -100075,11 +100075,12 @@
       "name": "Comune di Cropani",
       "provider": "regional-public",
       "domain": "cropani.asmenet.it",
-      "confidence": 88,
+      "confidence": 93,
       "flags": [
         "spf_softfail",
         "mx_spf_match",
-        "provider_classified"
+        "provider_classified",
+        "autodiscover_confirms"
       ]
     },
     "IT-COM-079039": {
@@ -111430,10 +111431,11 @@
       "name": "Comune di Zungri",
       "provider": "regional-public",
       "domain": "zungri.asmenet.it",
-      "confidence": 50,
+      "confidence": 55,
       "flags": [
         "no_spf",
-        "provider_classified"
+        "provider_classified",
+        "autodiscover_confirms"
       ]
     },
     "IT-COM-103001": {
@@ -130834,11 +130836,10 @@
     },
     "IT-L18-udcmc_": {
       "name": "Unione Dei Comuni Montani del Casentino",
-      "provider": "independent",
-      "domain": "postacert.toscana.it",
-      "confidence": 90,
+      "provider": "regional-public",
+      "domain": "uc.casentino.toscana.it",
+      "confidence": 85,
       "flags": [
-        "spf_strict",
         "mx_spf_match",
         "provider_classified"
       ]
@@ -132653,7 +132654,7 @@
     },
     "IT-L18-union_no": {
       "name": "UNIONE NOVARESE 2000",
-      "provider": "independent",
+      "provider": "microsoft",
       "domain": "unionenovarese2000.it",
       "confidence": 85,
       "flags": [
@@ -162723,13 +162724,13 @@
     },
     "IT-L33-istsc_boic82800e": {
       "name": "ISTITUTO COMPRENSIVO - IC DI OZZANO DELL'EMILIA",
-      "provider": "google",
-      "domain": "icozzano.istruzioneer.it",
-      "confidence": 93,
+      "provider": "istruzione-miur-tenant",
+      "domain": "icozzano.edu.it",
+      "confidence": 80,
       "flags": [
-        "multiple_mx",
-        "spf_softfail",
+        "spf_strict",
         "mx_spf_match",
+        "multi_provider_spf:brevo+microsoft+regional-public",
         "provider_classified"
       ]
     },
@@ -173871,13 +173872,13 @@
     },
     "IT-L33-istsc_fepc01000e": {
       "name": "LICEO CLASSICO - LC LICEO GINNASIO 'G.CEVOLANI'",
-      "provider": "google",
-      "domain": "liceocevolani.it",
-      "confidence": 93,
+      "provider": "istruzione-miur-tenant",
+      "domain": "liceocevolani.edu.it",
+      "confidence": 80,
       "flags": [
-        "multiple_mx",
-        "spf_softfail",
+        "spf_strict",
         "mx_spf_match",
+        "multi_provider_spf:brevo+microsoft+regional-public",
         "provider_classified"
       ]
     },

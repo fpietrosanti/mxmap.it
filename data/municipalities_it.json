@@ -84717,7 +84717,7 @@
     "domain": "comune.priero.cn.it",
     "osm_relation_id": 43054,
     "domain_fallbacks": [
-      "vallinrete.org"
+      "comunedipriero.org"
     ],
     "ipa_codice_ipa": "c_h059",
     "ipa_codice_categoria": "L6",
@@ -137153,9 +137153,11 @@
     "country": "IT",
     "region": null,
     "district": null,
-    "domain": "periti-industriali.vi.it",
+    "domain": "ordine-vicenza.cnpi.eu",
     "osm_relation_id": null,
-    "domain_fallbacks": [],
+    "domain_fallbacks": [
+      "periti-industriali.vi.it"
+    ],
     "ipa_codice_ipa": "cpipr_vi",
     "ipa_codice_categoria": "C14",
     "ipa_codice_istat": null,
@@ -142804,7 +142806,7 @@
     "domain": "ordinereggiocalabria.conaf.it",
     "osm_relation_id": null,
     "domain_fallbacks": [
-      "tiscali.it"
+      "gmail.com"
     ],
     "ipa_codice_ipa": "odafrc",
     "ipa_codice_categoria": "C14",
@@ -144856,7 +144858,7 @@
     "country": "IT",
     "region": null,
     "district": null,
-    "domain": "odcecbrindisi.it",
+    "domain": "brindisi.commercialisti.it",
     "osm_relation_id": null,
     "domain_fallbacks": [
       "virgilio.it"
