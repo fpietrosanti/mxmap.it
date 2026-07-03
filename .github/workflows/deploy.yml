@@ -37,8 +37,11 @@ jobs:
       - uses: astral-sh/setup-uv@v7
       - run: uv python install 3.13
       - run: uv sync
+      # --no-domain-aliases: vedi nota in nightly.yml. Dimezza i file (~53k→~31k)
+      # per un sync di Pages affidabile; gli alias /dominio/ sono canonical→ente e
+      # non erano nel sitemap.
       - name: Build per-entity & area SEO pages + sitemap index (#15)
-        run: uv run python3 scripts/build_entity_pages.py --country IT
+        run: uv run python3 scripts/build_entity_pages.py --country IT --no-domain-aliases
       - uses: actions/upload-pages-artifact@v4
         with:
           path: .

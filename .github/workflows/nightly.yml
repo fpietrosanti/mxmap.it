@@ -204,8 +204,12 @@ jobs:
       # figli). I file finiscono SOLO nell'artifact Pages (git-ignored). È il
       # generatore unico dei sitemap: <lastmod> da kpi.json:generated_at, quindi
       # rigenerato a ogni run e "manutenuto nel tempo". DOPO build_kpi.
+      # --no-domain-aliases: NON generare le ~22k pagine /dominio/ (reindirizzamenti
+      # canonical→ente, NON nel sitemap, valore SEO ~nullo). Dimezza il numero di
+      # file (~53k→~31k) e rende affidabile il sync di GitHub Pages, che a 53k file
+      # falliva a intermittenza in "syncing_files" (2026-07-03). Reversibile.
       - name: Build per-entity & area SEO pages + sitemap index (#15)
-        run: uv run python3 scripts/build_entity_pages.py --country IT
+        run: uv run python3 scripts/build_entity_pages.py --country IT --no-domain-aliases
       # --- Storicizzazione (F1) — DISATTIVATA finché non risolviamo le anomalie.
       # Il run #1 ufficiale dello storico dev'essere il primo scan su dati "da
       # rollout" (anomalie risolte), non un run sporco. Per attivarla: togliere
