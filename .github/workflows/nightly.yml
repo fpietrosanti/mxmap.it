@@ -376,7 +376,7 @@ jobs:
       cancel-in-progress: true
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url || steps.deploy_try1.outputs.page_url }}
     steps:
       # DEPLOY DISACCOPPIATO DAL GIT. Pubblichiamo l'artifact Pages costruito
       # DENTRO il job update-data (step "Upload Pages artifact"), NON un
@@ -386,5 +386,18 @@ jobs:
       # aggiornamento del sito. Ora il sito si aggiorna SEMPRE coi dati appena
       # costruiti nel run, indipendentemente dall'esito del commit git.
       # Regola di progetto: CLAUDE.md §"CRITICAL: Nightly must never break".
+      #
+      # RETRY del deploy: actions/deploy-pages può fallire con "Deployment failed,
+      # try again later" — transiente lato GitHub Pages, aggravato dai ~53k file
+      # #15 da sincronizzare (fase "syncing_files"). È un errore RETRIABLE: 1º
+      # tentativo best-effort, poi un 2º dopo una pausa. Così la nightly
+      # (unattended, 07:00) si auto-guarisce invece di richiedere un re-run manuale.
+      - id: deploy_try1
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+      - name: Attesa prima del retry (transiente Pages)
+        if: steps.deploy_try1.outcome == 'failure'
+        run: 'echo "deploy-pages fallito (transiente): retry tra 45s..."; sleep 45'
       - id: deployment
+        if: steps.deploy_try1.outcome == 'failure'
         uses: actions/deploy-pages@v4

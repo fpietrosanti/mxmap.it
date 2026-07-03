@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url || steps.deploy_try1.outputs.page_url }}
     steps:
       - uses: actions/checkout@v6
       # IMPORTANTE: GitHub Pages DEVE restare in modalità "GitHub Actions"
@@ -42,5 +42,15 @@ jobs:
       - uses: actions/upload-pages-artifact@v4
         with:
           path: .
+      # RETRY: deploy-pages può fallire con "Deployment failed, try again later"
+      # (transiente Pages durante il sync dei ~53k file). 1º tentativo best-effort,
+      # poi un 2º dopo una pausa → self-healing del transiente.
+      - id: deploy_try1
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+      - name: Attesa prima del retry (transiente Pages)
+        if: steps.deploy_try1.outcome == 'failure'
+        run: 'echo "deploy-pages fallito (transiente): retry tra 45s..."; sleep 45'
       - id: deployment
+        if: steps.deploy_try1.outcome == 'failure'
         uses: actions/deploy-pages@v4
