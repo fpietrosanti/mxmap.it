@@ -168810,7 +168810,9 @@
     "district": null,
     "domain": "teatroliricodicagliari.it",
     "osm_relation_id": null,
-    "domain_fallbacks": [],
+    "domain_fallbacks": [
+      "pec.teatroliricodicagliari.it"
+    ],
     "ipa_codice_ipa": "tlc",
     "ipa_codice_categoria": "L16",
     "ipa_codice_istat": "23842",
@@ -266210,7 +266212,7 @@
     "country": "IT",
     "region": null,
     "district": null,
-    "domain": "iisragusakiyoharaparlatore.gov.it",
+    "domain": "iisragusakiyoharaparlatore.edu.it",
     "osm_relation_id": null,
     "domain_fallbacks": [
       "istruzione.it"
@@ -297739,7 +297741,7 @@
     "country": "IT",
     "region": null,
     "district": null,
-    "domain": "majoranatorino.gov.it",
+    "domain": "majoranatorino.edu.it",
     "osm_relation_id": null,
     "domain_fallbacks": [
       "istruzione.it"
@@ -335078,6 +335080,21 @@
     "domain_source": "sito_istituzionale"
   },
   {
+    "id": "IT-L37-DC1YEL1Q",
+    "name": "FERROTRAMVIARIA S.p.A.",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "ferrotramviaria.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "DC1YEL1Q",
+    "ipa_codice_categoria": "L37",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "058091",
+    "domain_source": "sito_istituzionale"
+  },
+  {
     "id": "IT-L37-deas",
     "name": "Distribuzione Elettrica Adriatica Spa",
     "country": "IT",
@@ -363609,21 +363626,6 @@
     "ipa_codice_categoria": "SAG",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "028055",
-    "domain_source": "sito_istituzionale"
-  },
-  {
-    "id": "IT-SAG-DC1YEL1Q",
-    "name": "FERROTRAMVIARIA S.p.A.",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "ferrovienordbarese.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [],
-    "ipa_codice_ipa": "DC1YEL1Q",
-    "ipa_codice_categoria": "SAG",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "058091",
     "domain_source": "sito_istituzionale"
   },
   {
