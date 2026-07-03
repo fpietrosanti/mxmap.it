@@ -380,7 +380,7 @@ jobs:
       cancel-in-progress: true
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url || steps.deploy_try1.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url || steps.deploy_try2.outputs.page_url || steps.deploy_try1.outputs.page_url }}
     steps:
       # DEPLOY DISACCOPPIATO DAL GIT. Pubblichiamo l'artifact Pages costruito
       # DENTRO il job update-data (step "Upload Pages artifact"), NON un
@@ -391,17 +391,23 @@ jobs:
       # costruiti nel run, indipendentemente dall'esito del commit git.
       # Regola di progetto: CLAUDE.md §"CRITICAL: Nightly must never break".
       #
-      # RETRY del deploy: actions/deploy-pages può fallire con "Deployment failed,
-      # try again later" — transiente lato GitHub Pages, aggravato dai ~53k file
-      # #15 da sincronizzare (fase "syncing_files"). È un errore RETRIABLE: 1º
-      # tentativo best-effort, poi un 2º dopo una pausa. Così la nightly
-      # (unattended, 07:00) si auto-guarisce invece di richiedere un re-run manuale.
+      # RETRY del deploy: actions/deploy-pages ri-sincronizza TUTTI i ~31k file a
+      # ogni deploy (full-snapshot, nessun incrementale) e può fallire con
+      # "Deployment failed, try again later" — transiente infra RETRIABLE (fase
+      # "syncing_files"). 3 tentativi con backoff (30s, 90s): la nightly unattended
+      # (07:00) si auto-guarisce anche nelle finestre in cui Pages è degradato,
+      # invece di richiedere un re-run manuale.
       - id: deploy_try1
         uses: actions/deploy-pages@v4
         continue-on-error: true
-      - name: Attesa prima del retry (transiente Pages)
+      - if: steps.deploy_try1.outcome == 'failure'
+        run: 'echo "deploy 1/3 fallito (transiente): retry tra 30s..."; sleep 30'
+      - id: deploy_try2
         if: steps.deploy_try1.outcome == 'failure'
-        run: 'echo "deploy-pages fallito (transiente): retry tra 45s..."; sleep 45'
+        uses: actions/deploy-pages@v4
+        continue-on-error: true
+      - if: steps.deploy_try1.outcome == 'failure' && steps.deploy_try2.outcome == 'failure'
+        run: 'echo "deploy 2/3 fallito (transiente): retry tra 90s..."; sleep 90'
       - id: deployment
-        if: steps.deploy_try1.outcome == 'failure'
+        if: steps.deploy_try1.outcome == 'failure' && steps.deploy_try2.outcome == 'failure'
         uses: actions/deploy-pages@v4
