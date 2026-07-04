@@ -168810,9 +168810,7 @@
     "district": null,
     "domain": "teatroliricodicagliari.it",
     "osm_relation_id": null,
-    "domain_fallbacks": [
-      "pec.teatroliricodicagliari.it"
-    ],
+    "domain_fallbacks": [],
     "ipa_codice_ipa": "tlc",
     "ipa_codice_categoria": "L16",
     "ipa_codice_istat": "23842",

@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-07-03T08:17:01Z",
+  "generated_at": "2026-07-04T07:57:26Z",
   "run_id": null,
   "license": "CC BY-SA 4.0",
   "source": "https://github.com/mxmap-it/mxmap.it",
   "totals": {
     "n_entities": 22878,
-    "n_with_mx": 22261,
-    "coverage_pct": 97.3
+    "n_with_mx": 22239,
+    "coverage_pct": 97.21
   },
   "indices": {
-    "isd": 51.5,
-    "cloud_act_pct": 47.94,
-    "n_classified": 22261
+    "isd": 51.47,
+    "cloud_act_pct": 47.97,
+    "n_classified": 22239
   },
   "sovereignty": {
     "extra_eu": {
-      "count": 10673,
-      "pct": 46.7,
+      "count": 10670,
+      "pct": 46.6,
       "label": "Extra-UE (CLOUD Act)"
     },
     "eu_non_it": {
@@ -25,51 +25,51 @@
       "label": "Europeo (non italiano)"
     },
     "it": {
-      "count": 11465,
-      "pct": 50.1,
+      "count": 11446,
+      "pct": 50.0,
       "label": "Italiano"
     },
     "unknown": {
-      "count": 617,
-      "pct": 2.7,
+      "count": 639,
+      "pct": 2.8,
       "label": "Sconosciuto"
     }
   },
   "top_providers": [
     {
       "name": "Provider Italiano",
-      "count": 7485,
+      "count": 7477,
       "pct": 32.7,
       "sovereignty": "it"
     },
     {
       "name": "Google Workspace",
-      "count": 6400,
+      "count": 6398,
       "pct": 28.0,
       "sovereignty": "extra_eu"
     },
     {
       "name": "Microsoft 365",
-      "count": 4264,
+      "count": 4263,
       "pct": 18.6,
       "sovereignty": "extra_eu"
     },
     {
       "name": "Infrastruttura autonoma",
-      "count": 3044,
+      "count": 3036,
       "pct": 13.3,
       "sovereignty": "it"
     },
     {
       "name": "Cloud Italiano",
-      "count": 936,
+      "count": 933,
       "pct": 4.1,
       "sovereignty": "it"
     },
     {
       "name": "Sconosciuto",
-      "count": 617,
-      "pct": 2.7,
+      "count": 639,
+      "pct": 2.8,
       "sovereignty": "unknown"
     },
     {
@@ -107,13 +107,13 @@
     {
       "cluster": "Ordini professionali e Camere",
       "n_entities": 2015,
-      "usa_pct": 22.3,
+      "usa_pct": 22.2,
       "dominant_provider": "Provider Italiano"
     },
     {
       "cluster": "Consorzi e Unioni di enti locali",
       "n_entities": 1427,
-      "usa_pct": 24.5,
+      "usa_pct": 24.4,
       "dominant_provider": "Provider Italiano"
     },
     {
@@ -184,7 +184,7 @@
     }
   ],
   "confidence": {
-    "mean": 0.8502,
-    "high_pct": 91.6
+    "mean": 0.8494,
+    "high_pct": 91.5
   }
 }
