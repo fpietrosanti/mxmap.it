@@ -79,7 +79,6 @@ IT-L34-csaasb,Centro Socio Assistenziale Anziani Sciacca Baratta,unknown,casadir
 IT-L1-cfpbk,Centro di Formazione Professionale Brunico,unknown,bruneck.berufsschule.it,15,no_mx; no_spf; provider_unknown
 IT-L1-sppictb,Centro di formazione professionale Christian Josef Tschuggmall Bressanone,unknown,tschuggmall.berufsschule.it,15,no_mx; no_spf; provider_unknown
 IT-L1-sppaea,Centro di formazione professionale Emma Hellenstainer gastronomia e culinaria Bressanone,unknown,hellenstainer.berufsschule.it,15,no_mx; no_spf; provider_unknown
-IT-L1-spps,Centro di formazione professionale Silandro - Berufsbildungszentrum Schlanders,unknown,schlanders.berufsbildungszentrum.it,15,no_mx; no_spf; provider_unknown
 IT-L37-cspac,Cep S.P.A - Consorzio Enti Pubblici -,unknown,cepspa.eu,15,no_mx; no_spf; provider_unknown
 IT-CONS-cisigs,Cisis Centro Interregionale per I Sistemi Informatici Geografici e Statistici,unknown,cisis.it,15,no_mx; no_spf; provider_unknown
 IT-C14-crdmi,Co.Re.Di. Commissione Amministrativa Regionale di Disciplina,unknown,coredilombardia.portaleamministrazionetrasparente.it,15,no_mx; no_spf; provider_unknown
@@ -161,7 +160,6 @@ IT-COM-067021,Comune di Corropoli,unknown,comune.corropoli.te.it,15,no_mx; no_sp
 IT-COM-057026,Comune di Cottanello,unknown,comune.cottanello.it,15,no_mx; no_spf; provider_unknown
 IT-COM-096021,Comune di Crevacuore,unknown,comune.crevacuore.bi.it,15,no_mx; no_spf; provider_unknown
 IT-COM-067023,Comune di Crognaleto,unknown,comune.crognaleto.te.it,15,no_mx; no_spf; provider_unknown
-IT-COM-003058,Comune di Cureggio,unknown,comune.cureggio.no.it,15,no_mx; no_spf; provider_unknown
 IT-COM-069029,Comune di Dogliola,unknown,dogliola.it,15,no_mx; no_spf; provider_unknown
 IT-COM-025018,Comune di Domegge di Cadore,unknown,comune.domeggedicadore.bl.it,15,no_mx; no_spf; provider_unknown
 IT-COM-060032,Comune di Falvaterra,unknown,falvaterra.workmm.com,15,no_mx; no_spf; provider_unknown
@@ -218,7 +216,6 @@ IT-COM-096054,Comune di Roppolo,unknown,comune.roppolo.bi.it,15,no_mx; no_spf; p
 IT-COM-058093,Comune di Sacrofano,unknown,comune.sacrofano.rm.it,15,no_mx; no_spf; provider_unknown
 IT-COM-081018,Comune di Salemi,unknown,comune.salemi.trapani.it,15,no_mx; no_spf; provider_unknown
 IT-COM-004201,Comune di Saliceto,unknown,comunesaliceto.it,15,no_mx; no_spf; provider_unknown
-IT-COM-001234,Comune di Salza di Pinerolo,unknown,comune.salzadipinerolo.to.it,15,no_mx; no_spf; provider_unknown
 IT-COM-076075,Comune di San Costantino Albanese,unknown,comunesancostantinoalbanese.it,15,no_mx; no_spf; provider_unknown
 IT-COM-102033,Comune di San Costantino Calabro,unknown,comune.sancostantino.vv.it,15,no_mx; no_spf; provider_unknown
 IT-COM-063067,Comune di San Giorgio a Cremano,unknown,comune.sangiorgioacremano.na.it,15,no_mx; no_spf; provider_unknown
@@ -233,7 +230,6 @@ IT-COM-026075,Comune di Santa Lucia di Piave,unknown,comune.santaluciadipiave.tv
 IT-COM-064093,Comune di Santa Paolina,unknown,comunesantapaolina.gov.it,15,no_mx; no_spf; provider_unknown
 IT-COM-004212,Comune di Santa Vittoria d' Alba,unknown,comune.santavittoriadalba.cn.it,15,no_mx; no_spf; provider_unknown
 IT-COM-114044,Comune di Sarule,unknown,comune.sarule.nu.it,15,no_mx; no_spf; provider_unknown
-IT-COM-066093,Comune di Scanno,unknown,comune.scanno.aq.it,15,no_mx; no_spf; provider_unknown
 IT-COM-001262,Comune di Sciolze,unknown,comune.sciolze.to.it,15,no_mx; no_spf; provider_unknown
 IT-COM-066097,Comune di Secinaro,unknown,secinaro.comnet-ra.it,15,no_mx; no_spf; provider_unknown
 IT-COM-011028,Comune di Sesta Godano,unknown,comunesestagodano.sp.it,15,no_mx; no_spf; provider_unknown
@@ -456,6 +452,7 @@ IT-C14-oclpal,Ordine Consulenti del Lavoro Palermo,unknown,consulentidellavoro.p
 IT-C14-odap_094,Ordine Degli Architetti Paesaggisti Pianificatori e Conservatori  della Provincia di Isernia,unknown,is.archiworld.it,15,no_mx; no_spf; provider_unknown
 IT-C14-odap_055,Ordine Degli Architetti Pianificatori Paesaggisti e Conservatori della Provincia di Terni,unknown,ordinearchitettiterni.it,15,no_mx; no_spf; provider_unknown
 IT-C14-odafrc,Ordine Dei Dott. Agronomi e Dei Dott. Forestali della Provincia di Reggio Calabria,unknown,ordinereggiocalabria.conaf.it,15,no_mx; no_spf; provider_unknown
+IT-C14-odafbr,Ordine Dei Dottori Agronomi e Dei Dottori Forestali della Provincia di Brindisi,unknown,ordinebrindisi.conaf.it,15,no_mx; no_spf; provider_unknown
 IT-C14-odadfc,Ordine Dei Dottori Agronomi e Dei Dottori Forestali della Provincia di Cremona,unknown,ordinecremona.conaf.it,15,no_mx; no_spf; provider_unknown
 IT-C14-odda_077,Ordine Dei Dottori Agronomi e Dei Dottori Forestali della Provincia di Matera,unknown,ordinematera.conaf.it,15,no_mx; no_spf; provider_unknown
 IT-C14-oddadnu,Ordine Dei Dottori Agronomi e Dei Dottori Forestali della Provincia di Nuoro,unknown,ordinenuoro.conaf.it,15,no_mx; no_spf; provider_unknown
@@ -463,6 +460,7 @@ IT-C14-oddafpo,Ordine Dei Dottori Agronomi e Dei Dottori Forestali della Provinc
 IT-C14-oddadfpd,Ordine Dei Dottori Agronomi e Dei Dottori Forestali della Provincia di Padova,unknown,ordinepadova.conaf.it,15,no_mx; no_spf; provider_unknown
 IT-C14-odadfr,Ordine Dei Dottori Agronomi e Dei Dottori Forestali della Provincia di Ravenna,unknown,ordineravenna.conaf.it,15,no_mx; no_spf; provider_unknown
 IT-C14-odafsi,Ordine Dei Dottori Agronomi e Dei Dottori Forestali della Provincia di Siena,unknown,ordinesiena.conaf.it,15,no_mx; no_spf; provider_unknown
+IT-C14-odft,Ordine Dei Dottori Agronomi e Dei Dottori Forestali della Provincia di Torino,unknown,ordinetorino.conaf.it,15,no_mx; no_spf; provider_unknown
 IT-C14-odadfmi,Ordine Dei Dottori Agronomi e Dei Dottori Forestali di Milano,unknown,ordinemilano.conaf.it,15,no_mx; no_spf; provider_unknown
 IT-C14-odafpo,Ordine Dei Dottori Agronomi e Dei Dottori Forestali di Prato,unknown,ordineprato.conaf.it,15,no_mx; no_spf; provider_unknown
 IT-C14-oddaflt,Ordine Dei Dottori Agronomi e Dottori Forestali della Provincia di Latina,unknown,ordinelatina.conaf.it,15,no_mx; no_spf; provider_unknown
@@ -496,6 +494,7 @@ IT-C14-opdd_081,Ordine Provinciale Dei Dottori Agronomi e Dei Dottori Forestali 
 IT-C14-opmv_093,Ordine Provinciale dei Medici Veterinari di Pordenone,unknown,ordineveterinaripordenone.org,15,no_mx; no_spf; provider_unknown
 IT-C14-odar,Ordine degli Avvocati di Roma,unknown,ordineavvocatiroma.it,15,no_mx; no_spf; provider_unknown
 IT-C14-ORCHRAGU,Ordine dei Chimici della Provincia di Ragusa,unknown,ordinechimiciragusa.it,15,no_mx; no_spf; provider_unknown
+IT-C14-GB6QL6FQ,Ordine dei Dottori Agronomi e dei Dottori Forestali della Provincia di Pescara,unknown,ordinepescara.conaf.it,15,no_mx; no_spf; provider_unknown
 IT-C14-QLLQHCH2,Ordine dei Dottori Agronomi e dei Dottori Forestali della Provincia di Vibo Valentia,unknown,ordinevibovalentia.conaf.it,15,no_mx; no_spf; provider_unknown
 IT-C14-odafva,Ordine dei Dottori Agronomi e dei Dottori Forestali di Varese,unknown,ordinevarese.conaf.it,15,no_mx; no_spf; provider_unknown
 IT-C14-oddcd_09,Ordine dei Dottori Commercialisti e degli Esperti Contabili di  Siracusa,unknown,siracusa.commercialisti.it,15,no_mx; no_spf; provider_unknown
@@ -906,6 +905,7 @@ IT-COM-048018,Comune di Firenzuola,independent,comune.firenzuola.fi.it,50,no_spf
 IT-COM-002057,Comune di Fobello,independent,comune.fobello.vc.it,50,no_spf; provider_classified
 IT-COM-083023,Comune di Fondachelli Fantina,aruba,comune.fondachellifantina.me.it,50,no_spf; provider_classified
 IT-COM-010024,Comune di Fontanigorda,independent,comune.fontanigorda.ge.it,50,no_spf; provider_classified
+IT-COM-058122,Comune di Fonte Nuova,independent,cert.fonte-nuova.it,50,no_spf; provider_classified
 IT-COM-002059,Comune di Formigliana,local-isp,comune.formigliana.vc.it,50,no_spf; provider_classified
 IT-COM-083024,Comune di Forza D'Agro',aruba,comune.forzadagro.me.it,50,no_spf; provider_classified
 IT-COM-004090,Comune di Frabosa Soprana,independent,comune.frabosasoprana.cn.it,50,no_spf; provider_classified
@@ -1475,6 +1475,7 @@ IT-L18-ucta,Unione Comuni Terre Astiane,register-it,terreastiane.at.it,50,no_spf
 IT-L18-udcdc_at,Unione Dei Colli Divini nel Cuore del Monferrato,register-it,unionecollidivini.at.it,50,no_spf; provider_classified
 IT-L18-udcag_ot,Unione Dei Comuni Alta Gallura,register-it,unionedeicomunialtagallura.it,50,no_spf; provider_classified
 IT-L18-ca_065,Unione Dei Comuni Alto Cilento,microsoft,unionecomunialtocilento.sa.it,50,no_spf; provider_classified
+IT-L18-udcac,Unione Dei Comuni Antico Clanis,independent,unioneanticoclanis.it,50,no_spf; provider_classified
 IT-L18-udcbm_,Unione Dei Comuni Belvedereo Morro D'Alba San Marcello,independent,unionecomunibelvedereomorrodalbasanmarcello.it,50,no_spf; provider_classified; provider_via_gateway_spf
 IT-L18-udcctm,Unione Dei Comuni Cinque Terre del Monferrato,aruba,unionecinqueterredelmonferrato.it,50,no_spf; provider_classified
 IT-L18-udci_088,Unione Dei Comuni Ibleide,independent,unioneibleide.it,50,no_spf; provider_classified
@@ -4211,6 +4212,7 @@ IT-COM-001197,Comune di Poirino,register-it,comune.poirino.to.it,68,spf_softfail
 IT-COM-017145,Comune di Polpenazze del Garda,register-it,comune.polpenazzedelgarda.bs.it,68,spf_softfail; provider_classified
 IT-COM-016168,Comune di Ponte Nossa,register-it,comune.pontenossa.bg.it,68,spf_softfail; provider_classified
 IT-COM-033037,Comune di Pontenure,independent,comune.pontenure.pc.it,68,spf_softfail; provider_classified; provider_via_gateway_spf
+IT-COM-008046,Comune di Pornassio,aruba,pec.pornassio.org,68,spf_softfail; provider_classified
 IT-COM-010044,Comune di Portofino,register-it,comune.portofino.genova.it,68,spf_softfail; provider_classified
 IT-COM-038019,Comune di Portomaggiore,aruba,comune.portomaggiore.fe.it,68,spf_softfail; independent_mx_with_cloud_spf; multi_provider_spf:aruba+google; provider_classified
 IT-COM-019077,Comune di Pozzaglio ed Uniti,register-it,comune.pozzaglio.cr.it,68,spf_softfail; provider_classified
@@ -4276,6 +4278,7 @@ IT-COM-066091,Comune di Santo Stefano di Sessanio,register-it,comunesantostefano
 IT-COM-026078,Comune di Sarmede,register-it,comune.sarmede.tv.it,68,spf_softfail; provider_classified
 IT-COM-018146,Comune di Sartirana Lomellina,register-it,comune.sartiranalomellina.pv.it,68,spf_softfail; provider_classified
 IT-COM-065138,Comune di Scala,register-it,comune.scala.sa.it,68,spf_softfail; provider_classified
+IT-COM-066093,Comune di Scanno,aruba,comune.scanno.aq.it,68,spf_softfail; provider_classified
 IT-COM-053023,Comune di Scansano,register-it,comune.scansano.gr.it,68,spf_softfail; provider_classified
 IT-COM-008057,Comune di Seborga,register-it,comune.seborga.im.it,68,spf_softfail; provider_classified
 IT-COM-118050,Comune di Senorbi',aruba,pec.comune.senorbi.ca.it,68,spf_softfail; provider_classified
@@ -4513,7 +4516,6 @@ IT-C3-usaop,Ufficio del Soggetto Attuatore O.P.C.M.,register-it,comune.sangiulia
 IT-L18-unarb,Unione Arberia,regional-public,comunesandemetriocorone.it,68,spf_softfail; provider_classified
 IT-L18-ucltv_0,Unione Comuni Lombarda Terre Viscontee Basso Pavese,register-it,unionecomuniterreviscontee.it,68,spf_softfail; provider_classified
 IT-L18-udc,Unione Dei Casali,regional-public,unionedeicasali.asmenet.it,68,spf_softfail; provider_classified
-IT-L18-udcac,Unione Dei Comuni Antico Clanis,regional-public,unioneanticoclanis.it,68,spf_softfail; provider_classified
 IT-L18-udccs,Unione Dei Comuni Costa del Sinis Terra Dei Giganti,aruba,pec.unionesinisgiganti.it,68,spf_softfail; provider_classified
 IT-L18-ucvd,Unione Dei Comuni Montani Alta Val D'Arda,independent,comune.castellarquato.pc.it,68,spf_softfail; provider_classified; provider_via_gateway_spf
 IT-L18-udcdb,Unione Dei Comuni del Beigua,register-it,unionecomunibeigua.sv.it,68,spf_softfail; provider_classified
@@ -5657,7 +5659,6 @@ IT-COM-065098,Comune di Pollica,aruba,comune.pollica.sa.it,78,spf_softfail; inde
 IT-COM-020043,Comune di Pomponesco,aruba,comune.pomponesco.mn.it,78,spf_softfail; independent_mx_with_cloud_spf; provider_classified
 IT-COM-115049,Comune di Pompu,aruba,comune.pompu.or.it,78,spf_softfail; independent_mx_with_cloud_spf; provider_classified
 IT-COM-062054,Comune di Pontelandolfo,aruba,comune.pontelandolfo.bn.it,78,spf_softfail; independent_mx_with_cloud_spf; provider_classified
-IT-COM-008046,Comune di Pornassio,aruba,comune.pornassio.im.it,78,spf_softfail; independent_mx_with_cloud_spf; provider_classified
 IT-COM-061062,Comune di Portico di Caserta,aruba,comune.porticodicaserta.ce.it,78,spf_softfail; independent_mx_with_cloud_spf; provider_classified
 IT-COM-043042,Comune di Porto Recanati,aruba,comune.porto-recanati.mc.it,78,spf_softfail; independent_mx_with_cloud_spf; provider_classified
 IT-COM-012114,Comune di Porto Valtravaglia,aruba,comune.portovaltravaglia.va.it,78,spf_softfail; independent_mx_with_cloud_spf; provider_classified
@@ -6169,6 +6170,7 @@ IT-COM-051016,Comune di Civitella In Val di Chiana,aruba,civichiana.it,80,spf_st
 IT-COM-001089,Comune di Coazze,aruba,comune.coazze.to.it,80,spf_strict; independent_mx_with_cloud_spf; provider_classified
 IT-COM-041069,Comune di Colli al Metauro,regional-public,comune.collialmetauro.pu.it,80,spf_strict; independent_mx_with_cloud_spf; provider_classified
 IT-COM-018053,Comune di Copiano,independent,comune.copiano.pv.it,80,spf_strict; independent_mx_with_cloud_spf; provider_classified
+IT-COM-003058,Comune di Cureggio,independent,cert.ruparpiemonte.it,80,spf_strict; independent_mx_with_cloud_spf; provider_classified
 IT-COM-017067,Comune di Desenzano del Garda,microsoft,comune.desenzano.brescia.it,80,spf_strict; independent_mx_with_cloud_spf; provider_classified; provider_via_gateway_spf
 IT-COM-001100,Comune di Exilles,aruba,comune.exilles.to.it,80,spf_strict; independent_mx_with_cloud_spf; provider_classified
 IT-COM-006068,Comune di Felizzano,independent,comune.felizzano.al.it,80,spf_strict; independent_mx_with_cloud_spf; provider_classified; provider_via_gateway_spf
@@ -6220,6 +6222,7 @@ IT-COM-015189,Comune di Rozzano,aruba,comune.rozzano.mi.it,80,spf_strict; indepe
 IT-COM-039016,Comune di Russi,independent,comune.russi.ra.it,80,spf_strict; independent_mx_with_cloud_spf; provider_classified; provider_via_gateway_spf
 IT-COM-020054,Comune di Sabbioneta,local-isp,comune.sabbioneta.mn.it,80,spf_strict; independent_mx_with_cloud_spf; provider_classified
 IT-COM-001232,Comune di Salbertrand,aruba,comune.salbertrand.to.it,80,spf_strict; independent_mx_with_cloud_spf; provider_classified
+IT-COM-001234,Comune di Salza di Pinerolo,independent,cert.ruparpiemonte.it,80,spf_strict; independent_mx_with_cloud_spf; provider_classified
 IT-COM-103061,Comune di San Bernardino Verbano,independent,cert.ruparpiemonte.it,80,spf_strict; independent_mx_with_cloud_spf; provider_classified
 IT-COM-001239,Comune di San Didero,aruba,comune.sandidero.to.it,80,spf_strict; independent_mx_with_cloud_spf; provider_classified
 IT-COM-027033,Comune di San Dona' di Piave,microsoft,sandonadipiave.net,80,spf_strict; independent_mx_with_cloud_spf; provider_classified; provider_via_gateway_spf
@@ -6937,7 +6940,6 @@ IT-L33-istsc_enis00600q,ISTRUZIONE SECONDARIA SUPERIORE - ALESSANDRO VOLTA,istru
 IT-L33-istsc_leis00600n,ISTRUZIONE SECONDARIA SUPERIORE - ANTONIO MEUCCI CASARANO,google,iisameucci.edu.it,80,spf_strict; mx_spf_match; multi_provider_spf:aruba+google; provider_classified
 IT-L33-istsc_tois00600e,ISTRUZIONE SECONDARIA SUPERIORE - C. UBERTINI,istruzione-miur-tenant,iisubertini.gov.it,80,spf_strict; mx_spf_match; multi_provider_spf:brevo+microsoft+regional-public; provider_classified
 IT-L33-istsc_miis00400v,ISTRUZIONE SECONDARIA SUPERIORE - CARLO CATTANEO,istruzione-miur-tenant,iiscattaneomilano.it,80,spf_strict; mx_spf_match; multi_provider_spf:brevo+microsoft+regional-public; provider_classified
-IT-L33-istsc_cnis01100d,ISTRUZIONE SECONDARIA SUPERIORE - CEVA - 'G. BARUFFI',istruzione-miur-tenant,barufficevaormea.edu.it,80,spf_strict; mx_spf_match; multi_provider_spf:brevo+microsoft+regional-public; provider_classified
 IT-L33-istsc_vais003001,ISTRUZIONE SECONDARIA SUPERIORE - CITTA' DI LUINO - CARLO VOLONTE',istruzione-miur-tenant,isisluino.edu.it,80,spf_strict; mx_spf_match; multi_provider_spf:brevo+microsoft+regional-public; provider_classified
 IT-L33-istsc_cnis00300e,ISTRUZIONE SECONDARIA SUPERIORE - CUNEO - 'S.GRANDIS',istruzione-miur-tenant,grandiscuneo.edu.it,80,spf_strict; mx_spf_match; multi_provider_spf:brevo+microsoft+regional-public; provider_classified
 IT-L33-istsc_miis01400d,ISTRUZIONE SECONDARIA SUPERIORE - E.ALESSANDRINI,istruzione-miur-tenant,iisalessandrini.it,80,spf_strict; mx_spf_match; multi_provider_spf:brevo+microsoft+regional-public; provider_classified
@@ -7645,7 +7647,7 @@ IT-COM-116002,Comune di Barisardo,aruba,comunedibarisardo.it,83,spf_softfail; in
 IT-COM-083006,Comune di Basico',aruba,comune.basico.me.it,83,spf_softfail; independent_mx_with_cloud_spf; provider_classified; autodiscover_confirms
 IT-COM-056005,Comune di Bassano Romano,aruba,comune.bassanoromano.vt.it,83,spf_softfail; independent_mx_with_cloud_spf; provider_classified; autodiscover_confirms
 IT-COM-004014,Comune di Bastia Mondovi,aruba,comune.bastiamondovi.cn.it,83,spf_softfail; independent_mx_with_cloud_spf; provider_classified; autodiscover_confirms
-IT-COM-082008,Comune di Baucina,aruba,egov.comune.baucina.pa.it,83,spf_softfail; independent_mx_with_cloud_spf; provider_classified; autodiscover_confirms
+IT-COM-082008,Comune di Baucina,aruba,comune.baucina.pa.it,83,spf_softfail; independent_mx_with_cloud_spf; provider_classified; autodiscover_confirms
 IT-COM-115013,Comune di Bauladu,aruba,comune.bauladu.or.it,83,spf_softfail; independent_mx_with_cloud_spf; provider_classified; autodiscover_confirms
 IT-COM-076012,Comune di Bella,aruba,comune.bella.pz.it,83,spf_softfail; independent_mx_with_cloud_spf; provider_classified; autodiscover_confirms
 IT-COM-061007,Comune di Bellona,aruba,comune.bellona.ce.it,83,spf_softfail; independent_mx_with_cloud_spf; provider_classified; autodiscover_confirms
@@ -10335,7 +10337,7 @@ IT-L34-vslsssp,Villa Serena Lonigo Servizi Sociali e Sociosanitari alla Persona,
 IT-L12-xcmla_fr,XIX Comunita' Montana L'Arco Degli Aurunci,aruba,comunitamontanaxixaurunciinweb.it,83,spf_softfail; independent_mx_with_cloud_spf; provider_classified; autodiscover_confirms
 IT-L12-xcma,Xvii Comunita' Montana Monti Aurunci,aruba,comunitamontanamontiaurunci.it,83,spf_softfail; independent_mx_with_cloud_spf; provider_classified; autodiscover_confirms
 IT-L37-9LSXXA51,amgas spa,aruba,amgasfoggiaweb.it,83,spf_softfail; independent_mx_with_cloud_spf; provider_classified; autodiscover_confirms
-IT-L34-XQZEJ3XC,arciconfraternita sant'angelo dei rossi,aruba,arciconfraternitadeiross.altervista.org,83,spf_softfail; independent_mx_with_cloud_spf; provider_classified; autodiscover_confirms
+IT-L34-XQZEJ3XC,arciconfraternita sant'angelo dei rossi,aruba,arciconfraternitadeirossi.it,83,spf_softfail; independent_mx_with_cloud_spf; provider_classified; autodiscover_confirms
 IT-L7-au12ve,azienda ULSS n. 3 Serenissima,google,aulss3.veneto.it,83,multiple_mx; spf_softfail; mx_spf_match; multi_provider_spf:aws+google; provider_classified
 IT-L37-P5ZGMQSC,caf fenalca srl,aruba,fenalca.it,83,spf_softfail; independent_mx_with_cloud_spf; provider_classified; autodiscover_confirms
 IT-COM-081025,comune di misiliscemi,aruba,comune.misiliscemi.tp.it,83,spf_softfail; independent_mx_with_cloud_spf; provider_classified; autodiscover_confirms
@@ -10353,7 +10355,7 @@ IT-SA-1K9JKE4Y,AMIU Genova SPA,aruba,amiu.genova.it,85,multiple_mx; spf_strict; 
 IT-L37-IABEGIZH,AS Retigas Srl,microsoft,asretigas.it,85,spf_strict; independent_mx_with_cloud_spf; provider_classified; provider_via_gateway_spf; autodiscover_confirms
 IT-SA-WKVIWXRE,ASEC TRADE SRL,local-isp,asectrade.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
 IT-L37-S9QYWRKQ,ASM AZIENDA SPECIALE MULTISERVIZI SRL,independent,asmmagenta.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
-IT-L37-EIORHA02,AZIENDA CASA EMILIA ROMAGNA DI PARMA,independent,aziendacasapr.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified; autodiscover_suggests:microsoft
+IT-L37-EIORHA02,AZIENDA CASA EMILIA ROMAGNA DI PARMA,independent,aziendacasapr.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified; smtp_suggests:microsoft; autodiscover_suggests:microsoft
 IT-L37-B61JSA6E,AZIENDA MULTISERVIZI CASALESE SPA,microsoft,amcasale.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified; provider_via_gateway_spf
 IT-L37-QFAZCUD0,AZIENDA SOCIALE COMUNI INSIEME A.S.C.I.,microsoft,aziendasocialecomuniinsieme.it,85,spf_strict; mx_spf_match; multi_provider_spf:aruba+microsoft; provider_classified; autodiscover_confirms
 IT-SA-3JN4ZMWH,AZIENDA SPECIALE CASA DI RIPOSO DON MOSCHETTA,microsoft,donmoschetta.it,85,spf_strict; independent_mx_with_cloud_spf; provider_classified; provider_via_gateway_spf; autodiscover_confirms
@@ -10804,10 +10806,10 @@ IT-SAG-HYMPZXYI,FAI- FONDO PER L'AMBIENTE ITALIANO ETS,microsoft,fondoambiente.i
 IT-L37-DC1YEL1Q,FERROTRAMVIARIA S.p.A.,microsoft,ferrotramviaria.it,85,spf_strict; mx_spf_match; multi_provider_spf:aws+microsoft; provider_classified; autodiscover_confirms
 IT-C8-VAK61RW0,FONDAZIONE IMPRESE E COMPETENZE PER IL MADE IN ITALY,local-isp,mimit.gov.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
 IT-L37-YL2YG67N,"FONDAZIONE ISTITUTO TECNICO SUPERIORE ""NUOVE TECNOLOGIE PER IL MADE IN ITALY"" COMPARTO AGROALIMENTARE E VITIVINICOLO",microsoft,itsagroalimentareveneto.it,85,spf_strict; independent_mx_with_cloud_spf; provider_classified; provider_via_gateway_spf; autodiscover_confirms
-IT-C14-fodaf,Federazione Interregionale Degli Ordini Dei Dottori Agronomi e Dottori Forestali del Piemonte e della Valle D'Aosta,local-isp,conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
+IT-C14-fodaf,Federazione Interregionale Degli Ordini Dei Dottori Agronomi e Dottori Forestali del Piemonte e della Valle D'Aosta,local-isp,fodafpiemonte-valledaosta.conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
 IT-C14-frodafs,Federazione Regionale Degli Ordini Dei Dottori Agronomi e Dei Dottori Forestali della Sicilia,local-isp,federazionesicilia.conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
 IT-C14-frdod,Federazione Regionale Degli Ordini Dei Dottori Agronomi e Dottori Forestali Delle Lombardia,local-isp,fodaflombardia.conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
-IT-C14-frtopdad,Federazione Regionale Toscana Degli Ordini Provinciali Dottori Agronomi e Dottori Forestali,local-isp,conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
+IT-C14-frtopdad,Federazione Regionale Toscana Degli Ordini Provinciali Dottori Agronomi e Dottori Forestali,local-isp,fodaftoscana.conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
 IT-S01-fllse,Finanziaria Ligure per Lo Sviluppo Economico S.P.A.,microsoft,filse.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified; provider_via_gateway_spf
 IT-L31-ftsu,Fondazione Teatro Stabile dell'Umbria,aruba,teatrostabile.umbria.it,85,mx_spf_match; provider_classified
 IT-L37-A9OYQOCS,GEAT SRL,independent,geat.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified; autodiscover_suggests:microsoft
@@ -11471,19 +11473,17 @@ IT-C14-odat_110,Ordine Degli Avvocati di Trani,aruba,ordineavvocatitrani.it,85,s
 IT-C14-odav,Ordine Degli Avvocati di Vicenza,microsoft,ordineavvocati.vicenza.it,85,spf_strict; mx_spf_match; multi_provider_spf:aruba+microsoft; provider_classified; autodiscover_confirms
 IT-C14-odip_048,Ordine Degli Ingegneri della Provincia di Firenze,microsoft,ordineingegneri.fi.it,85,spf_strict; mx_spf_match; multi_provider_spf:aruba+microsoft; provider_classified; autodiscover_confirms
 IT-C14-odppt,Ordine Degli Psicologi della Provincia di Trento,microsoft,ordinepsicologi.tn.it,85,spf_strict; mx_spf_match; multi_provider_spf:aruba+aws+microsoft; provider_classified; autodiscover_confirms
-IT-C14-oddadvb,Ordine Dei Dottori Agronomi e Dei Dottori Forestali Delle Province di Vercelli e Biella,local-isp,conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
-IT-C14-oddadfvg,Ordine Dei Dottori Agronomi e Dei Dottori Forestali del Friuli Venezia Giulia,local-isp,conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
-IT-C14-odafbr,Ordine Dei Dottori Agronomi e Dei Dottori Forestali della Provincia di Brindisi,local-isp,conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
-IT-C14-oddadfg,Ordine Dei Dottori Agronomi e Dei Dottori Forestali della Provincia di Grosseto,local-isp,conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
-IT-C14-dfsr,Ordine Dei Dottori Agronomi e Dei Dottori Forestali della Provincia di Siracusa,local-isp,conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
-IT-C14-odft,Ordine Dei Dottori Agronomi e Dei Dottori Forestali della Provincia di Torino,local-isp,conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
-IT-C14-oddadal,Ordine Dei Dottori Agronomi e Dei Dottori Forestali di Alessandria,local-isp,conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
-IT-C14-oddadfa,Ordine Dei Dottori Agronomi e Dei Dottori Forestali di Aosta,local-isp,conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
+IT-C14-oddadvb,Ordine Dei Dottori Agronomi e Dei Dottori Forestali Delle Province di Vercelli e Biella,local-isp,ordinevercellibiella.conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
+IT-C14-oddadfvg,Ordine Dei Dottori Agronomi e Dei Dottori Forestali del Friuli Venezia Giulia,local-isp,ordinefriulivg.conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
+IT-C14-oddadfg,Ordine Dei Dottori Agronomi e Dei Dottori Forestali della Provincia di Grosseto,local-isp,ordinegrosseto.conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
+IT-C14-dfsr,Ordine Dei Dottori Agronomi e Dei Dottori Forestali della Provincia di Siracusa,local-isp,ordinesiracusa.conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
+IT-C14-oddadal,Ordine Dei Dottori Agronomi e Dei Dottori Forestali di Alessandria,local-isp,ordinealessandria.conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
+IT-C14-oddadfa,Ordine Dei Dottori Agronomi e Dei Dottori Forestali di Aosta,local-isp,ordineaosta.conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
 IT-C14-oddadfro,Ordine Dei Dottori Agronomi e Dei Dottori Forestali di Rovigo,local-isp,ordinerovigo.conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
-IT-C14-ordadfdl,Ordine Dei Dottori Agronomi e Dottori Forestali della Liguria,local-isp,conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
-IT-C14-odadfa,Ordine Dei Dottori Agronomi e Dottori Forestali della Provincia di Avellino,local-isp,conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
-IT-C14-odafbn,Ordine Dei Dottori Agronomi e Dottori Forestali della Provincia di Benevento,local-isp,conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
-IT-C14-odafpte,Ordine Dei Dottori Agronomi e Dottori Forestali della Provincia di Teramo,local-isp,conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
+IT-C14-ordadfdl,Ordine Dei Dottori Agronomi e Dottori Forestali della Liguria,local-isp,ordineliguria.conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
+IT-C14-odadfa,Ordine Dei Dottori Agronomi e Dottori Forestali della Provincia di Avellino,local-isp,ordineavellino.conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
+IT-C14-odafbn,Ordine Dei Dottori Agronomi e Dottori Forestali della Provincia di Benevento,local-isp,ordinebenevento.conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
+IT-C14-odafpte,Ordine Dei Dottori Agronomi e Dottori Forestali della Provincia di Teramo,local-isp,ordineteramo.conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
 IT-C14-odad_044,Ordine Dei Dottori Agronomi e Dottori Forestali di Ascoli Piceno,local-isp,conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
 IT-C14-oddcd_1,Ordine Dei Dottori Commercialisti e Degli Esperti Contabili di Mantova,microsoft,dottoricommercialistimantova.it,85,spf_strict; mx_spf_match; multi_provider_spf:brevo+microsoft+ovh; provider_classified; autodiscover_confirms
 IT-C14-odfpg,Ordine Dei Farmacisti della Provincia di Genova,independent,ordinefarmacistigenova.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified; autodiscover_suggests:microsoft
@@ -11493,24 +11493,23 @@ IT-C14-odmc_052,Ordine Dei Medici Chirurghi e Odontoiatri di Siena,microsoft,omc
 IT-C14-omvpc,Ordine Dei Medici Veterinari della Provincia di Chieti,aruba,ordinemediciveterinarichieti.it,85,spf_strict; independent_mx_with_cloud_spf; provider_classified; autodiscover_confirms
 IT-C14-odmvpto,Ordine Dei Medici Veterinari della Provincia di Torino,aruba,veterinaritorino.it,85,spf_strict; independent_mx_with_cloud_spf; provider_classified; autodiscover_confirms
 IT-C14-odm_015,Ordine Dei Medici Veterinari di Milano,microsoft,ordinevetmilano.it,85,spf_strict; mx_spf_match; multi_provider_spf:microsoft+ovh; provider_classified; autodiscover_confirms
-IT-C14-odad_075,Ordine Dottori Agronomi e Dottori Forestali Di Lecce,local-isp,conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
-IT-C14-odafcn,Ordine Dottori Agronomi e Dottori Forestali Provincia di Cuneo,local-isp,conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
-IT-C14-odadfb,Ordine Dottori Agronomi e Dottori Forestali di Brescia,local-isp,conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
-IT-C14-odadfcs,Ordine Dottori Agronomi e Dottori Forestali di Cosenza,local-isp,conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
+IT-C14-odad_075,Ordine Dottori Agronomi e Dottori Forestali Di Lecce,local-isp,ordinelecce.conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
+IT-C14-odafcn,Ordine Dottori Agronomi e Dottori Forestali Provincia di Cuneo,local-isp,ordinecuneo.conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
+IT-C14-odadfb,Ordine Dottori Agronomi e Dottori Forestali di Brescia,local-isp,ordinebrescia.conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
+IT-C14-odadfcs,Ordine Dottori Agronomi e Dottori Forestali di Cosenza,local-isp,ordinecosenza.conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
 IT-C14-odaff,Ordine Dottori Agronomi e Dottori Forestali di Frosinone,local-isp,newordinefrosinone.conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
 IT-C14-omop_042,Ordine Medici Chirurghi Odontoiatri della Provincia di Ancona,microsoft,ordinemedici.ancona.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified; provider_via_gateway_spf
 IT-C14-opdm_055,Ordine Provinciale Dei Medici Chirurghi e Degli Odontoiatri di Terni,microsoft,ordinemediciterni.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified; provider_via_gateway_spf
 IT-C14-opmcolc,Ordine Provinciale dei Medici Chirurghi e degli Odontoiatri di Lecco,microsoft,omceolecco.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified; provider_via_gateway_spf
 IT-C14-orch_tos,Ordine Regionale Dei Chimici E Dei Fisici Della Toscana,microsoft,chimicifisicitoscana.it,85,spf_strict; mx_spf_match; multi_provider_spf:aruba+microsoft; provider_classified; autodiscover_confirms
-IT-C14-ordafm,Ordine Regionale Dei Dottori Agronomi e Dei Dottori Forestali Delle Marche,local-isp,conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
+IT-C14-ordafm,Ordine Regionale Dei Dottori Agronomi e Dei Dottori Forestali Delle Marche,local-isp,ordinemarche.conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
 IT-C14-odapp_mi,Ordine degli Architetti Pianificatori Paesaggisti e Conservatori della Provincia di Milano,local-isp,ordinearchitetti.mi.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
 IT-C14-oappc_sa,Ordine degli Architetti Pianificatori Paesaggisti e Conservatori della Provincia di Salerno,aruba,architettisalerno.it,85,spf_strict; independent_mx_with_cloud_spf; provider_classified; autodiscover_confirms
 IT-C14-odappcpt,Ordine degli Architetti Pianificatori Paesaggisti e Conservatori della Provincia di Torino,microsoft,oato.it,85,spf_strict; mx_spf_match; multi_provider_spf:google+mailjet+microsoft; provider_classified; autodiscover_confirms
 IT-C14-ordav_pr,Ordine degli Avvocati di Parma,aruba,ordineavvocatiparma.it,85,multiple_mx; spf_strict; mx_spf_match; multi_provider_spf:aruba+microsoft; provider_classified
 IT-C14-odipv_ve,Ordine degli Ingegneri della Città Metropolitana di Venezia,microsoft,ordineingegneri.ve.it,85,spf_strict; mx_spf_match; multi_provider_spf:aws+brevo+mailchimp+microsoft; provider_classified; autodiscover_confirms
 IT-C14-opl,Ordine degli Psicologi della Regione Lombardia,google,opl.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified; provider_via_gateway_spf
-IT-C14-GB6QL6FQ,Ordine dei Dottori Agronomi e dei Dottori Forestali della Provincia di Pescara,local-isp,conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
-IT-C14-odfcolcs,Ordine dei Dottori Agronomi e dei Dottori Forestali delle Province di Como Lecco e Sondrio,local-isp,conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
+IT-C14-odfcolcs,Ordine dei Dottori Agronomi e dei Dottori Forestali delle Province di Como Lecco e Sondrio,local-isp,ordinecomoleccosondrio.conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
 IT-C14-odcen,Ordine dei Dottori Commercialisti e degli Esperti Contabili di Novara,independent,commercialistinovara.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
 IT-C14-orfap_im,Ordine dei Farmacisti della Provincia di Imperia,local-isp,ordinefarmimperia.it,85,mx_spf_match; provider_classified
 IT-C14-ofpt_tv,Ordine dei Farmacisti della Provincia di Treviso,microsoft,ordinefarmacistitreviso.it,85,spf_strict; mx_spf_match; multi_provider_spf:aruba+microsoft; provider_classified; autodiscover_confirms
@@ -11583,6 +11582,7 @@ IT-L18-ucg,Unione Comuni Garfagnana,regional-public,ucgarfagnana.lu.it,85,mx_spf
 IT-L18-ucc_003,Unione Comuni del Cusio,independent,unionecomunidelcusio.it,85,mx_spf_match; provider_classified; provider_via_gateway_spf
 IT-L18-udcc_082,Unione Dei Comuni Corvo Eleuterio,local-isp,unionedeicomunicorvoeleuterio.pa.it,85,mx_spf_match; provider_classified
 IT-L18-udcma,Unione Dei Comuni Montani Amiata Grossetana,regional-public,uc-amiata.gr.it,85,mx_spf_match; provider_classified
+IT-L18-udcmc_,Unione Dei Comuni Montani del Casentino,regional-public,uc.casentino.toscana.it,85,mx_spf_match; provider_classified
 IT-L18-udctdno,Unione Dei Comuni Terre D'Acque,independent,unioneterredacque.it,85,mx_spf_match; provider_classified; provider_via_gateway_spf
 IT-L18-udctp_,Unione Dei Comuni Terre di Pianura,microsoft,terredipianura.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified; provider_via_gateway_spf
 IT-L18-udctd,Unione Dei Comuni di Terre D'Acqua,regional-public,terredacqua.net,85,mx_spf_match; provider_classified
@@ -15439,7 +15439,6 @@ IT-L18-udcabc,Unione Dei Comuni Alto Biferno,aruba,unionecomunialtobiferno.it,90
 IT-L18-udcab_0,Unione Dei Comuni Alto Bradano,regional-public,unionecomunialtobradano.it,90,spf_strict; mx_spf_match; provider_classified
 IT-L18-udci_015,Unione Dei Comuni I Fontanili,google,unioneifontanili.it,90,spf_strict; mx_spf_match; provider_classified
 IT-L18-udcmmos,Unione Dei Comuni Montani Media Ossola,independent,unionemediaossola.it,90,multiple_mx; mx_spf_match; provider_classified; provider_via_gateway_spf
-IT-L18-udcmc_,Unione Dei Comuni Montani del Casentino,independent,postacert.toscana.it,90,spf_strict; mx_spf_match; provider_classified
 IT-L18-udcne_01,Unione Dei Comuni Nord Est Torino,google,unionenet.it,90,multiple_mx; mx_spf_match; provider_classified; provider_via_gateway_spf
 IT-L18-udcrg,Unione Dei Comuni Riviera di Gallura,aruba,unionerivieradigallura.it,90,spf_strict; mx_spf_match; provider_classified
 IT-L18-udcvcb,Unione Dei Comuni Val Camastra Basento,regional-public,comune.calvello.pz.it,90,spf_strict; mx_spf_match; provider_classified
@@ -18445,6 +18444,7 @@ IT-L33-istsc_cbis007006,ISTRUZIONE SECONDARIA SUPERIORE - BOIANO,google,iissboja
 IT-L33-istsc_miis044009,ISTRUZIONE SECONDARIA SUPERIORE - C. DELL'ACQUA,google,isdellacqua.edu.it,93,multiple_mx; spf_softfail; mx_spf_match; provider_classified
 IT-L33-istsc_alis00700d,ISTRUZIONE SECONDARIA SUPERIORE - CARLO BARLETTI,google,barlettiovada.edu.it,93,multiple_mx; spf_softfail; mx_spf_match; provider_classified
 IT-L33-istsc_pzis01700r,ISTRUZIONE SECONDARIA SUPERIORE - CARLO LEVI,google,isisantarcangelo.edu.it,93,multiple_mx; spf_softfail; mx_spf_match; provider_classified
+IT-L33-istsc_cnis01100d,ISTRUZIONE SECONDARIA SUPERIORE - CEVA - 'G. BARUFFI',google,barufficevaormea.it,93,multiple_mx; spf_softfail; mx_spf_match; provider_classified
 IT-L33-istsc_miis05100c,ISTRUZIONE SECONDARIA SUPERIORE - CLAUDIO VARALLI,google,iisvaralli.edu.it,93,multiple_mx; spf_softfail; mx_spf_match; provider_classified
 IT-L33-istsc_udis007003,ISTRUZIONE SECONDARIA SUPERIORE - D'AQUILEIA,google,paolinodaquileia.edu.it,93,multiple_mx; spf_softfail; mx_spf_match; provider_classified
 IT-L33-istsc_udis006007,ISTRUZIONE SECONDARIA SUPERIORE - D'ARONCO,google,daronco.edu.it,93,multiple_mx; spf_softfail; mx_spf_match; provider_classified
@@ -19851,6 +19851,7 @@ IT-L34-cssa,Centro Servizi Socio Sanitari e Residenziali Male' A.P.S.P.,microsof
 IT-L34-cra_026,"Centro Servizi alla Persona ""Domenico Sartor""",microsoft,centroanzianisartor.it,95,spf_strict; mx_spf_match; provider_classified; autodiscover_confirms
 IT-L34-csaamb,Centro Servizi per Anziani Anna Moretti Bonora,microsoft,csabonora.it,95,spf_strict; mx_spf_match; provider_classified; autodiscover_confirms
 IT-L2-az_lmbrg,Centro di Sperimentazione Laimburg,microsoft,laimburg.it,95,spf_strict; mx_spf_match; provider_classified; autodiscover_confirms
+IT-L1-spps,Centro di formazione professionale Silandro - Berufsbildungszentrum Schlanders,regional-public,schlanders.berufsbildungszentrum.it,95,multiple_mx; spf_strict; mx_spf_match; provider_classified
 IT-L33-cpiabs,Centro istruzione Adulti di Gavardo,microsoft,cpiagavardo.edu.it,95,spf_strict; mx_spf_match; provider_classified; autodiscover_confirms
 IT-L1-c_cl,Centro per la Formazione Permanente e l'Aggiornamento del Personale del Servizio Sanitario-Cefpas,google,cefpas.it,95,multiple_mx; spf_strict; mx_spf_match; provider_classified
 IT-L33-cdcd_075,Circolo Didattico Circolo Didattico di Surbo,microsoft,circolodidatticoampolo.edu.it,95,spf_strict; mx_spf_match; provider_classified; autodiscover_confirms
@@ -20406,7 +20407,6 @@ IT-COM-098026,Comune di Fombio,microsoft,comune.fombio.lo.it,95,spf_strict; mx_s
 IT-COM-007028,Comune di Fontainemore,independent,comune.fontainemore.ao.it,95,multiple_mx; spf_strict; mx_spf_match; provider_classified; provider_via_gateway_spf
 IT-COM-034015,Comune di Fontanellato,local-isp,comune.fontanellato.pr.it,95,multiple_mx; spf_strict; mx_spf_match; provider_classified
 IT-COM-028038,Comune di Fontaniva,microsoft,comune.fontaniva.pd.it,95,spf_strict; mx_spf_match; provider_classified; autodiscover_confirms
-IT-COM-058122,Comune di Fonte Nuova,microsoft,comune.fontenuova.rm.it,95,spf_strict; mx_spf_match; provider_classified; autodiscover_confirms
 IT-COM-016102,Comune di Fonteno,google,comune.fonteno.bg.it,95,multiple_mx; spf_strict; mx_spf_match; provider_classified; provider_via_gateway_spf
 IT-COM-034016,Comune di Fontevivo,local-isp,comune.fontevivo.pr.it,95,multiple_mx; spf_strict; mx_spf_match; provider_classified
 IT-COM-115023,Comune di Fordongianus,google,comune.fordongianus.or.it,95,multiple_mx; spf_strict; mx_spf_match; provider_classified; provider_via_gateway_spf
