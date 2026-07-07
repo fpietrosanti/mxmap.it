@@ -21,6 +21,8 @@ nav.crumbs .sep{opacity:.5;margin:0 6px}
 h1{font-size:25px;line-height:1.25;margin:.2em 0 .15em}
 .sub{color:var(--muted);font-size:15px;margin:0 0 16px}
 .sub code{background:#eef1f4;padding:1px 6px;border-radius:5px;font-size:14px}
+.lead{font-size:15.5px;color:#2a2f36;line-height:1.62;margin:10px 0 4px;max-width:720px}
+.lead code{background:#eef1f4;padding:1px 6px;border-radius:5px;font-size:14px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
   padding:16px 18px;margin:14px 0;box-shadow:0 1px 2px rgba(0,0,0,.03)}
 .card h2{font-size:15px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);margin:0 0 10px}

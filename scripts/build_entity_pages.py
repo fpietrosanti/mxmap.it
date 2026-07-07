@@ -259,6 +259,54 @@ def status_dot(e):
 # --------------------------------------------------------------------------- #
 #  Entity page
 # --------------------------------------------------------------------------- #
+def verdict_prose(e, nearby):
+    """Frase-verdetto in linguaggio naturale, unica per ente (anti thin-content).
+
+    Intreccia nome, categoria, sede, provider, implicazione di sovranità, Paese
+    degli MX, affidabilità e un confronto locale coi vicini: ogni scheda ha così
+    contenuto testuale unico, non solo tabelle di dati.
+    """
+    name = e.get("name") or "L'ente"
+    _, clabel = P.cluster_of(e.get("bfs"))
+    comune, sigla, regione = e.get("comune"), e.get("provincia"), e.get("regione")
+    pdisp = provider_disp(e)
+    b4 = sov4(e)
+    domain = e.get("domain") or ""
+    conf = confidence(e)
+    countries = ", ".join(e.get("mx_countries") or [])
+    loc = (
+        f" con sede a {esc(comune)} ({esc(sigla)}), in {esc(regione)},"
+        if comune
+        else ""
+    )
+    dom = f" (dominio <code>{esc(domain)}</code>)" if domain else ""
+    sov = {
+        "it": "un provider sotto <strong>giurisdizione italiana</strong>: la posta resta nel perimetro di sovranità nazionale.",
+        "extra_eu": "un provider <strong>extra-UE soggetto al CLOUD Act</strong> statunitense: i dati possono essere accessibili ad autorità estere.",
+        "eu_non_it": "un provider <strong>europeo ma non italiano</strong>: fuori dalla giurisdizione USA, ma non sovrano italiano.",
+        "unknown": "un provider <strong>non determinato</strong>: il dato è segnalato come anomalia da verificare.",
+    }.get(b4, "un provider da classificare.")
+    mxc = f" (record MX in {esc(countries)})" if countries else ""
+    confp = (
+        f" Il dato è stato determinato tramite analisi DNS{mxc}, con un'affidabilità stimata del <strong>{int((conf or 0) * 100)}%</strong>."
+        if conf is not None
+        else ""
+    )
+    localp = ""
+    if nearby:
+        pool = [n for n, _ in nearby]
+        sov_it = sum(1 for n in pool if sov4(n) == "it")
+        localp = (
+            f" Tra gli enti pubblici territorialmente vicini, <strong>{sov_it} su {len(pool)}</strong> "
+            "affidano la posta a un provider sovrano italiano."
+        )
+    return (
+        f'<p class="lead">{esc(name)} è un ente pubblico italiano (categoria: {esc(clabel)}){loc} '
+        f"la cui posta elettronica{dom} è gestita tramite <strong>{esc(pdisp)}</strong>, {sov}"
+        f"{confp}{localp}</p>"
+    )
+
+
 def entity_page(e, detail, path, nearby):
     name = e.get("name") or "Ente"
     domain = e.get("domain") or ""
@@ -390,6 +438,7 @@ def entity_page(e, detail, path, nearby):
         + (f" · <code>{esc(domain)}</code>" if domain else "")
         + (f" · {esc(comune)} ({esc(sigla)}), {esc(regione)}" if comune else "")
         + "</p>"
+        + verdict_prose(e, nearby)
         + (report if emph else verdict)
         + (verdict if emph else evidence)
         + (evidence if emph else reli)
