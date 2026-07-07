@@ -47,6 +47,9 @@ TG_GROUP = "https://t.me/+Ot-M_g0dkh1kMGI0"
 SOV4_LABELS = K.SOV4_LABELS
 NEARBY_N = 8
 LOWCONF = 0.60
+# Brand pubblico visibile. "MxMap Italia / MxMap.it" resta come alternateName SEO
+# + dominio (mxmap.it), non come nome visibile.
+BRAND = "Osservatorio Nazionale Sovranità Digitale"
 
 
 def esc(x: object) -> str:
@@ -145,8 +148,9 @@ def shell(
     *, title, description, canonical, body, keywords=None, jsonld=None, og_title=None
 ):
     kw = keywords or (
-        "MxMap Italia, MXMap Italia, sovranità digitale, posta elettronica PA, "
-        "provider email pubblica amministrazione, CLOUD Act, IndicePA, analisi DNS"
+        "Osservatorio Nazionale Sovranità Digitale, MxMap Italia, MXMap Italia, "
+        "sovranità digitale, posta elettronica PA, provider email pubblica "
+        "amministrazione, CLOUD Act, IndicePA, analisi DNS"
     )
     jl = ""
     if jsonld:
@@ -165,10 +169,10 @@ def shell(
 <meta name="keywords" content="{esc(kw)}">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="{esc(canonical)}">
-<meta name="application-name" content="MxMap Italia">
+<meta name="application-name" content="{BRAND}">
 <meta property="og:type" content="article">
 <meta property="og:locale" content="it_IT">
-<meta property="og:site_name" content="MxMap Italia">
+<meta property="og:site_name" content="{BRAND}">
 <meta property="og:title" content="{esc(og_title or title)}">
 <meta property="og:description" content="{esc(description)}">
 <meta property="og:image" content="{OG_IMAGE}">
@@ -179,7 +183,7 @@ def shell(
 {jl}
 </head>
 <body>
-<header class="site"><div class="wrap"><a href="/">MxMap <span style="font-weight:400">Italia</span></a><span class="tag">Sovranità digitale della PA</span></div></header>
+<header class="site"><div class="wrap"><a href="/">{BRAND}</a><span class="tag">Posta elettronica della PA</span></div></header>
 <main class="wrap">
 {body}
 {footer()}
@@ -219,7 +223,7 @@ def report_block(e, page_url, emphasised):
         f"— inviato da {page_url}",
     ]
     gh = f"{GH_NEW}?title={quote(title)}&body={quote(chr(10).join(lines))}&labels=segnalazione-dato"
-    tgtext = f'Possibile errore su MxMap Italia — {name} ({domain}), classificato "{pdisp}". {page_url}'
+    tgtext = f'Possibile errore sull\'Osservatorio Nazionale Sovranità Digitale — {name} ({domain}), classificato "{pdisp}". {page_url}'
     tg = f"https://t.me/share/url?url={quote(BASE)}&text={quote(tgtext)}"
     cls = "report card anom" if emphasised else "report card"
     head = "Aiutaci a risolvere l'anomalia" if emphasised else "Riporta un errore"
@@ -325,7 +329,7 @@ def entity_page(e, detail, path, nearby):
     desc = (
         f"{name}: provider email {pdisp}, sovranità «{b6}»"
         + (f", dominio {domain}" if domain else "")
-        + f". Affidabilità {int((conf or 0) * 100)}%. Classificazione via analisi DNS (MX, SPF, DKIM) — MxMap Italia."
+        + f". Affidabilità {int((conf or 0) * 100)}%. Classificazione via analisi DNS (MX, SPF, DKIM) — Osservatorio Nazionale Sovranità Digitale."
     )
 
     # --- verdict ---
@@ -585,7 +589,8 @@ def hub_page(
         description=desc or sub,
         canonical=canonical,
         body=body,
-        keywords="MxMap Italia, sovranità digitale, PA, " + h1,
+        keywords="Osservatorio Nazionale Sovranità Digitale, MxMap Italia, sovranità digitale, PA, "
+        + h1,
     )
 
 
@@ -601,10 +606,10 @@ def alias_page(domain, entity_path, entity_name):
     # canonical points at the entity page so search engines consolidate.
     return shell(
         title=f"{domain} — Sovranità digitale della posta ({entity_name})",
-        description=f"Provider email e sovranità digitale del dominio {domain} ({entity_name}). MxMap Italia.",
+        description=f"Provider email e sovranità digitale del dominio {domain} ({entity_name}). Osservatorio Nazionale Sovranità Digitale.",
         canonical=canonical,
         body=body,
-        og_title=f"{domain} — MxMap Italia",
+        og_title=f"{domain} — Osservatorio Nazionale Sovranità Digitale",
     )
 
 
@@ -811,7 +816,7 @@ def main():
         out_dir,
         "/aree/",
         hub_page(
-            title="Aree geografiche — Sovranità digitale della PA italiana | MxMap Italia",
+            title="Aree geografiche — Sovranità digitale della PA italiana | Osservatorio Nazionale Sovranità Digitale",
             h1="Sovranità digitale per area",
             sub="Esplora la sovranità digitale della posta elettronica della PA italiana per regione, provincia e comune.",
             canonical=f"{BASE}/aree/",
@@ -830,7 +835,7 @@ def main():
             out_dir,
             path,
             hub_page(
-                title=f"{clabel} — Sovranità digitale | MxMap Italia",
+                title=f"{clabel} — Sovranità digitale | Osservatorio Nazionale Sovranità Digitale",
                 h1=clabel,
                 sub=f"Sovranità digitale della posta elettronica della categoria «{clabel}» nella PA italiana.",
                 canonical=BASE + path,
@@ -848,7 +853,7 @@ def main():
         out_dir,
         "/categoria/",
         hub_page(
-            title="Categorie di enti — Sovranità digitale della PA | MxMap Italia",
+            title="Categorie di enti — Sovranità digitale della PA | Osservatorio Nazionale Sovranità Digitale",
             h1="Sovranità digitale per categoria",
             sub="La sovranità digitale della posta elettronica per tipologia di ente pubblico italiano.",
             canonical=f"{BASE}/categoria/",

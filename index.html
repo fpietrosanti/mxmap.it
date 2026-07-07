@@ -8,11 +8,11 @@
 <link rel="preconnect" href="https://b.basemaps.cartocdn.com" crossorigin>
 <link rel="preconnect" href="https://c.basemaps.cartocdn.com" crossorigin>
 <link rel="preconnect" href="https://d.basemaps.cartocdn.com" crossorigin>
-<title>MxMap.it — Sovranità digitale della posta elettronica della PA italiana</title>
-<meta name="description" content="MxMap Italia — Osservatorio sulla Sovranità Digitale della Posta Elettronica della Pubblica Amministrazione Italiana. Mappa interattiva di ~23.000 enti pubblici italiani (comuni, province, regioni, ministeri, scuole, ASL, università, ordini professionali) con il provider email reale classificato via analisi DNS (MX, SPF, CNAME, DKIM). Espone la dipendenza della PA italiana da hyperscaler statunitensi soggetti al CLOUD Act.">
-<meta name="keywords" content="MxMap Italia, MXMap Italia, MxMap.it, sovranità digitale, sovranità digitale Italia, posta elettronica PA, provider email pubblica amministrazione, email PA italiana, CLOUD Act, IndicePA, analisi DNS, record MX, mappa PA italiana, dati aperti PA, Osservatorio Sovranità Digitale">
-<meta name="application-name" content="MxMap Italia">
-<meta name="author" content="MxMap Italia · Osservatorio Nazionale Sovranità Digitale">
+<title>Osservatorio Nazionale Sovranità Digitale — Posta elettronica della PA italiana</title>
+<meta name="description" content="Osservatorio Nazionale Sovranità Digitale: la sovranità digitale della posta elettronica della Pubblica Amministrazione Italiana. Mappa interattiva di ~23.000 enti pubblici italiani (comuni, province, regioni, ministeri, scuole, ASL, università, ordini professionali) con il provider email reale classificato via analisi DNS (MX, SPF, CNAME, DKIM). Espone la dipendenza della PA italiana da hyperscaler statunitensi soggetti al CLOUD Act.">
+<meta name="keywords" content="Osservatorio Nazionale Sovranità Digitale, MxMap Italia, MXMap Italia, MxMap.it, sovranità digitale, sovranità digitale Italia, posta elettronica PA, provider email pubblica amministrazione, email PA italiana, CLOUD Act, IndicePA, analisi DNS, record MX, mappa PA italiana, dati aperti PA">
+<meta name="application-name" content="Osservatorio Nazionale Sovranità Digitale">
+<meta name="author" content="Osservatorio Nazionale Sovranità Digitale">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <link rel="canonical" href="https://mxmap.it/">
 <link rel="sitemap" type="application/xml" href="/sitemap.xml">
@@ -24,8 +24,8 @@
 <meta name="theme-color" content="#0066CC">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="it_IT">
-<meta property="og:site_name" content="MxMap.it">
-<meta property="og:title" content="MxMap.it — Sovranità digitale della posta elettronica della PA italiana">
+<meta property="og:site_name" content="Osservatorio Nazionale Sovranità Digitale">
+<meta property="og:title" content="Osservatorio Nazionale Sovranità Digitale — Posta elettronica della PA italiana">
 <meta property="og:description" content="Mappa di ~23.000 enti pubblici italiani con il provider email reale (analisi DNS). Quota di PA su provider USA soggetti al CLOUD Act. Dati aperti CC BY-SA 4.0.">
 <meta property="og:image" content="https://mxmap.it/brand/og-image.png">
     <meta property="og:image:width" content="1200">
@@ -41,8 +41,8 @@
     {
       "@type": "WebSite",
       "@id": "https://mxmap.it/#website",
-      "name": "MxMap.it",
-      "alternateName": ["MxMap Italia", "MXMap Italia", "MX Map Italia"],
+      "name": "Osservatorio Nazionale Sovranità Digitale",
+      "alternateName": ["MxMap Italia", "MXMap Italia", "MxMap.it", "MX Map Italia"],
       "url": "https://mxmap.it/",
       "inLanguage": "it-IT",
       "description": "Osservatorio sulla sovranità digitale della posta elettronica della Pubblica Amministrazione italiana: il provider email reale di ~23.000 enti pubblici, classificato via analisi DNS.",
@@ -51,8 +51,8 @@
     {
       "@type": "Organization",
       "@id": "https://mxmap.it/#org",
-      "name": "MxMap Italia",
-      "alternateName": "MxMap.it",
+      "name": "Osservatorio Nazionale Sovranità Digitale",
+      "alternateName": ["MxMap Italia", "MxMap.it"],
       "url": "https://mxmap.it/",
       "logo": "https://mxmap.it/brand/icon-512.png",
       "sameAs": [
@@ -64,7 +64,7 @@
     {
       "@type": "Dataset",
       "@id": "https://mxmap.it/#dataset",
-      "name": "MxMap Italia — Sovranità digitale della posta elettronica della PA italiana",
+      "name": "Sovranità digitale della posta elettronica della PA italiana — Osservatorio Nazionale Sovranità Digitale",
       "alternateName": "MxMap Italia dataset",
       "description": "Classificazione del provider email reale di ~23.000 enti della Pubblica Amministrazione italiana (comuni, province, regioni, ministeri, scuole, ASL, università, ordini professionali) tramite analisi DNS (MX, SPF, CNAME, DKIM). Espone la quota di PA su provider statunitensi soggetti al CLOUD Act e l'Indice di Sovranità Digitale.",
       "url": "https://mxmap.it/",
@@ -111,7 +111,8 @@
     display: flex; align-items: center; justify-content: space-between; flex-shrink: 0;
   }
   .header-left { display: flex; align-items: center; gap: 10px; min-width: 0; }
-  .brand { font-size: 17px; font-weight: 700; white-space: nowrap; margin: 0; }
+  .brand { font-size: 15px; font-weight: 700; white-space: nowrap; margin: 0; overflow: hidden; text-overflow: ellipsis; line-height: 1.15; }
+  @media (max-width: 560px) { .brand { font-size: 12.5px; white-space: normal; } }
   .separator { color: #555; font-size: 15px; }
   .tagline { color: #a0a0b0; font-size: 13px; white-space: nowrap; }
   .header-right { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
@@ -331,12 +332,12 @@
 <header id="header">
   <div class="header-left">
     <img src="brand/favicon.svg" width="26" height="26" alt="" aria-hidden="true" style="flex-shrink:0">
-    <h1 class="brand">MxMap<span style="color:#0066CC">.it</span></h1>
+    <h1 class="brand">Osservatorio Nazionale <span style="color:#0066CC">Sovranità Digitale</span></h1>
     <span class="beta-wrap" tabindex="0" role="button" aria-expanded="false" aria-label="Stato del progetto: versione beta — tocca per i dettagli">
       <span class="beta-badge">BETA</span>
       <span class="beta-tip" role="tooltip">
         <span class="arr"></span>
-        <strong>Progetto in evoluzione.</strong> MxMap.it è un <em>work in progress</em> in costante sviluppo. La <strong>prima scansione ufficiale</strong> — da cui partirà la misurazione quotidiana — <strong>non è ancora partita</strong>.<br><br>
+        <strong>Progetto in evoluzione.</strong> L'Osservatorio Nazionale Sovranità Digitale è un <em>work in progress</em> in costante sviluppo. La <strong>prima scansione ufficiale</strong> — da cui partirà la misurazione quotidiana — <strong>non è ancora partita</strong>.<br><br>
         Aiutaci a completare la roadmap: <a href="https://github.com/mxmap-it/mxmap.it/issues" target="_blank" rel="noopener">collabora su GitHub Issues</a> e <a href="https://t.me/+Ot-M_g0dkh1kMGI0" target="_blank" rel="noopener">unisciti al canale Telegram</a>.
       </span>
     </span>
@@ -1255,7 +1256,7 @@ function reportErrorHTML(d) {
   var body = L.filter(function (x) { return x !== null; }).join('\n');
   var gh = 'https://github.com/mxmap-it/mxmap.it/issues/new?title=' +
     encodeURIComponent(title) + '&body=' + encodeURIComponent(body);
-  var tgText = 'Possibile errore su MxMap.it — ' + d.name + ' (' + d.domain +
+  var tgText = 'Possibile errore sull\'Osservatorio Nazionale Sovranità Digitale — ' + d.name + ' (' + d.domain +
     '), classificato "' + (d.provider || '—') + '". ' + page;
   var tg = 'https://t.me/share/url?url=' + encodeURIComponent('https://mxmap.it') +
     '&text=' + encodeURIComponent(tgText);
