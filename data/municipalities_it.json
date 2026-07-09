@@ -102602,9 +102602,7 @@
     "district": "Salerno",
     "domain": "comune.serramezzana.sa.it",
     "osm_relation_id": 40378,
-    "domain_fallbacks": [
-      "oneonline.it"
-    ],
+    "domain_fallbacks": [],
     "ipa_codice_ipa": "c_i648",
     "ipa_codice_categoria": "L6",
     "ipa_codice_istat": "11140014",
@@ -203078,7 +203076,7 @@
     "country": "IT",
     "region": null,
     "district": null,
-    "domain": "iccrispi.edu.it",
+    "domain": "trasparenza-pa.net",
     "osm_relation_id": null,
     "domain_fallbacks": [
       "istruzione.it"
@@ -315455,7 +315453,7 @@
   },
   {
     "id": "IT-L33-R49LHIG0",
-    "name": "SECONDO PRIMO IC ORIA",
+    "name": "ISTITUTO COMPRENSIVO FEDERICO II",
     "country": "IT",
     "region": null,
     "district": null,
@@ -338871,6 +338869,21 @@
     "domain_source": "sito_istituzionale"
   },
   {
+    "id": "IT-L37-NDPQ0OCC",
+    "name": "AZIENDA SPECIALE SERVIZI PUBBLICI",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "asspcardano.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "NDPQ0OCC",
+    "ipa_codice_categoria": "L37",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "012032",
+    "domain_source": "sito_istituzionale"
+  },
+  {
     "id": "IT-L37-NE69EELY",
     "name": "Amag Reti Gas S.p.A.",
     "country": "IT",
@@ -342010,6 +342023,21 @@
     "ipa_codice_categoria": "L37",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "080055",
+    "domain_source": "sito_istituzionale"
+  },
+  {
+    "id": "IT-L37-V7Y5GF6H",
+    "name": "Società Trasporti Novaresi srl",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "stnnet.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "V7Y5GF6H",
+    "ipa_codice_categoria": "L37",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "003106",
     "domain_source": "sito_istituzionale"
   },
   {
