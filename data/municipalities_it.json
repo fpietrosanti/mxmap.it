@@ -357174,6 +357174,21 @@
     "domain_source": "sito_istituzionale"
   },
   {
+    "id": "IT-SA-8D20RCTE",
+    "name": "Azienda Speciale A.Co.S. - Agenzia per il controllo e la qualità dei servizi pubblici locali e strumentali di Roma Capitale",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "agenzia.roma.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "8D20RCTE",
+    "ipa_codice_categoria": "SA",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "058091",
+    "domain_source": "sito_istituzionale"
+  },
+  {
     "id": "IT-SA-8DLHBH1N",
     "name": "broni stradella pubblica srl",
     "country": "IT",

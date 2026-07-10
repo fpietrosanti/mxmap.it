@@ -119,6 +119,7 @@ IT-L1-cslpad,Commissario Straordinario per La Progettazione Affidamento e La Rea
 IT-L1-cslpl,Commissario Straordinario per La Progettazione L Affidamento e La Realizzazione Dei Lavori di Adeguamento del Depuratori di Napoli Est,unknown,commissariostraordinariodepuratori.it,15,no_mx; no_spf; provider_unknown
 IT-C3-cslri,Commissario Straordinario per La Realizzazione dell'Intervento Schema Idrico Basento - Bradano Tronco di Acerenza - Distribuzione Iii Lotto,unknown,schemaidricobasentobradanotroncodiacerenza.it,15,no_mx; no_spf; provider_unknown
 IT-L47-cslssaq,Commissario Straordinario per La Sicurezza del Sistema Idrico del Gran Sasso,unknown,commissario.gransasso.gov.it,15,no_mx; no_spf; provider_unknown
+IT-L47-Y8HVSDZK,Commissario Straordinario per Palazzo Fienga,unknown,osservacantieri.mit.gov.it,15,no_mx; no_spf; provider_unknown
 IT-L47-PIE3TAEE,Commissario Straordinario per la Sicurezza antisismica e il ripristino della funzionalità della A24 e A25,unknown,commissario.a24-a25.gov.it,15,no_mx; no_spf; provider_unknown
 IT-COM-057003,Comune di Antrodoco,unknown,comune.antrodoco.ri.it,15,no_mx; no_spf; provider_unknown
 IT-COM-115006,Comune di Arborea,unknown,comune.arborea.or.it,15,no_mx; no_spf; provider_unknown
@@ -155,7 +156,6 @@ IT-COM-057022,Comune di Colli sul Velino,unknown,comune.collisulvelino.ri.it,15,
 IT-COM-067021,Comune di Corropoli,unknown,comune.corropoli.te.it,15,no_mx; no_spf; provider_unknown
 IT-COM-096021,Comune di Crevacuore,unknown,comune.crevacuore.bi.it,15,no_mx; no_spf; provider_unknown
 IT-COM-067023,Comune di Crognaleto,unknown,comune.crognaleto.te.it,15,no_mx; no_spf; provider_unknown
-IT-COM-003058,Comune di Cureggio,unknown,comune.cureggio.no.it,15,no_mx; no_spf; provider_unknown
 IT-COM-069029,Comune di Dogliola,unknown,dogliola.it,15,no_mx; no_spf; provider_unknown
 IT-COM-025018,Comune di Domegge di Cadore,unknown,comune.domeggedicadore.bl.it,15,no_mx; no_spf; provider_unknown
 IT-COM-060032,Comune di Falvaterra,unknown,falvaterra.workmm.com,15,no_mx; no_spf; provider_unknown
@@ -206,12 +206,12 @@ IT-COM-035033,Comune di Reggio Emilia,unknown,comune.reggioemilia.it,15,no_mx; n
 IT-COM-102030,Comune di Ricadi,unknown,comunericadi.gov.it,15,no_mx; no_spf; provider_unknown
 IT-COM-069072,Comune di Ripa Teatina,unknown,comuneripateatina.gov.it,15,no_mx; no_spf; provider_unknown
 IT-COM-059023,Comune di Roccasecca Dei Volsci,unknown,comune.roccaseccadeivolsci.lt.it,15,no_mx; no_spf; provider_unknown
-IT-COM-001223,Comune di Romano Canavese,unknown,comune.romanocanavese.to.it,15,no_mx; no_spf; provider_unknown
 IT-COM-022157,Comune di Ronchi Valsugana,unknown,comune.ronchi.tn.it,15,no_mx; no_spf; provider_unknown
 IT-COM-096054,Comune di Roppolo,unknown,comune.roppolo.bi.it,15,no_mx; no_spf; provider_unknown
 IT-COM-058093,Comune di Sacrofano,unknown,comune.sacrofano.rm.it,15,no_mx; no_spf; provider_unknown
 IT-COM-081018,Comune di Salemi,unknown,comune.salemi.trapani.it,15,no_mx; no_spf; provider_unknown
 IT-COM-004201,Comune di Saliceto,unknown,comunesaliceto.it,15,no_mx; no_spf; provider_unknown
+IT-COM-001234,Comune di Salza di Pinerolo,unknown,comune.salzadipinerolo.to.it,15,no_mx; no_spf; provider_unknown
 IT-COM-076075,Comune di San Costantino Albanese,unknown,comunesancostantinoalbanese.it,15,no_mx; no_spf; provider_unknown
 IT-COM-102033,Comune di San Costantino Calabro,unknown,comune.sancostantino.vv.it,15,no_mx; no_spf; provider_unknown
 IT-COM-063067,Comune di San Giorgio a Cremano,unknown,comune.sangiorgioacremano.na.it,15,no_mx; no_spf; provider_unknown
@@ -223,10 +223,8 @@ IT-COM-063070,Comune di San Sebastiano al Vesuvio,unknown,comunesansebastiano.it
 IT-COM-023079,Comune di San Zeno di Montagna,unknown,comunesanzenodimontagna.it,15,no_mx; no_spf; provider_unknown
 IT-COM-084037,Comune di Santa Elisabetta,unknown,comune.santaelisabetta.ag.it,15,no_mx; no_spf; provider_unknown
 IT-COM-026075,Comune di Santa Lucia di Piave,unknown,comune.santaluciadipiave.tv.it,15,no_mx; no_spf; provider_unknown
-IT-COM-064093,Comune di Santa Paolina,unknown,comunesantapaolina.gov.it,15,no_mx; no_spf; provider_unknown
 IT-COM-004212,Comune di Santa Vittoria d' Alba,unknown,comune.santavittoriadalba.cn.it,15,no_mx; no_spf; provider_unknown
 IT-COM-114044,Comune di Sarule,unknown,comune.sarule.nu.it,15,no_mx; no_spf; provider_unknown
-IT-COM-066093,Comune di Scanno,unknown,comune.scanno.aq.it,15,no_mx; no_spf; provider_unknown
 IT-COM-001262,Comune di Sciolze,unknown,comune.sciolze.to.it,15,no_mx; no_spf; provider_unknown
 IT-COM-066097,Comune di Secinaro,unknown,secinaro.comnet-ra.it,15,no_mx; no_spf; provider_unknown
 IT-COM-011028,Comune di Sesta Godano,unknown,comunesestagodano.sp.it,15,no_mx; no_spf; provider_unknown
@@ -451,6 +449,7 @@ IT-C14-odafrc,Ordine Dei Dott. Agronomi e Dei Dott. Forestali della Provincia di
 IT-C14-odadfc,Ordine Dei Dottori Agronomi e Dei Dottori Forestali della Provincia di Cremona,unknown,ordinecremona.conaf.it,15,no_mx; no_spf; provider_unknown
 IT-C14-odda_077,Ordine Dei Dottori Agronomi e Dei Dottori Forestali della Provincia di Matera,unknown,ordinematera.conaf.it,15,no_mx; no_spf; provider_unknown
 IT-C14-oddadnu,Ordine Dei Dottori Agronomi e Dei Dottori Forestali della Provincia di Nuoro,unknown,ordinenuoro.conaf.it,15,no_mx; no_spf; provider_unknown
+IT-C14-oddafpo,Ordine Dei Dottori Agronomi e Dei Dottori Forestali della Provincia di Oristano,unknown,ordineoristano.conaf.it,15,no_mx; no_spf; provider_unknown
 IT-C14-oddadfpd,Ordine Dei Dottori Agronomi e Dei Dottori Forestali della Provincia di Padova,unknown,ordinepadova.conaf.it,15,no_mx; no_spf; provider_unknown
 IT-C14-odadfr,Ordine Dei Dottori Agronomi e Dei Dottori Forestali della Provincia di Ravenna,unknown,ordineravenna.conaf.it,15,no_mx; no_spf; provider_unknown
 IT-C14-odafsi,Ordine Dei Dottori Agronomi e Dei Dottori Forestali della Provincia di Siena,unknown,ordinesiena.conaf.it,15,no_mx; no_spf; provider_unknown
@@ -2502,7 +2501,7 @@ IT-CONS-cvval,Consorzio Valmastallone Valsesia,independent,consorziovalmastallon
 IT-SA-RM7V19PV,Consorzio Venezia Nuova,independent,mosevenezia.eu,55,multiple_mx; no_spf; provider_classified
 IT-SA-GMBRXP8Q,Consorzio delle Residenze Reali Sabaude,regional-public,lavenaria.it,55,multiple_mx; no_spf; provider_classified
 IT-CONS-cdmps,Consorzio di Metanizazzazione Pre-Serre,regional-public,consorziopreserre.it,55,no_spf; provider_classified; autodiscover_confirms
-IT-L37-csidv_44,"Consorzio di Sviluppo Industriale Delle Valli del Tronto, dell'Aso e del Tesino",microsoft,picenoconsind.com,55,multiple_mx; no_spf; provider_classified; provider_via_gateway_spf
+IT-L37-csidv_44,"Consorzio di Sviluppo Industriale Delle Valli del Tronto, dell'Aso e del Tesino",google,picenoconsind.com,55,multiple_mx; no_spf; provider_classified; provider_via_gateway_spf
 IT-L42-clasi_0,Consorzio per L'Area di Sviluppo Industriale della Provincia di Agrigento in Liquidazione,aruba,irsapsicilia.it,55,no_spf; provider_classified; autodiscover_confirms
 IT-L38-clgpp,Consorzio per La Gestione Provvisoria del Parco Naturale Regionale Dune Costiere,independent,parcodunecostiere.org,55,multiple_mx; no_spf; provider_classified; provider_via_gateway_spf
 IT-L36-cliat_,Consorzio per l'Igiene dell'Ambiente e del Territorio,independent,consorziociat.it,55,multiple_mx; no_spf; provider_classified; provider_via_gateway_spf
@@ -4212,12 +4211,14 @@ IT-COM-016252,Comune di Sant'Omobono Terme,register-it,comune.santomobonoterme.b
 IT-COM-078129,Comune di Santa Caterina Albanese,regional-public,santacaterinaalbanese.asmenet.it,68,spf_softfail; provider_classified
 IT-COM-042043,Comune di Santa Maria Nuova,register-it,comune.santamarianuova.an.it,68,spf_softfail; provider_classified
 IT-COM-087047,Comune di Santa Maria di Licodia,aruba,comune.santamariadilicodia.ct.it,68,spf_softfail; provider_classified
+IT-COM-064093,Comune di Santa Paolina,register-it,comunesantapaolina.gov.it,68,spf_softfail; provider_classified
 IT-COM-109036,Comune di Santa Vittoria in Matenano,register-it,svittoria.it,68,spf_softfail; provider_classified
 IT-COM-011026,Comune di Santo Stefano di Magra,register-it,comune.santostefanodimagra.sp.it,68,spf_softfail; provider_classified
 IT-COM-066091,Comune di Santo Stefano di Sessanio,register-it,comunesantostefanodisessanio.aq.it,68,spf_softfail; provider_classified
 IT-COM-026078,Comune di Sarmede,register-it,comune.sarmede.tv.it,68,spf_softfail; provider_classified
 IT-COM-018146,Comune di Sartirana Lomellina,register-it,comune.sartiranalomellina.pv.it,68,spf_softfail; provider_classified
 IT-COM-065138,Comune di Scala,register-it,comune.scala.sa.it,68,spf_softfail; provider_classified
+IT-COM-066093,Comune di Scanno,aruba,comune.scanno.aq.it,68,spf_softfail; provider_classified
 IT-COM-053023,Comune di Scansano,register-it,comune.scansano.gr.it,68,spf_softfail; provider_classified
 IT-COM-008057,Comune di Seborga,register-it,comune.seborga.im.it,68,spf_softfail; provider_classified
 IT-COM-118050,Comune di Senorbi',aruba,pec.comune.senorbi.ca.it,68,spf_softfail; provider_classified
@@ -4736,6 +4737,7 @@ IT-L34-acs,Asp Citta' di Siena,aruba,asp.siena.it,73,spf_softfail; independent_m
 IT-L34-aimms_mi,Asp Istituti Milanesi Martinitt e Stelline e Pio Albergo Trivulzio di Milano,google,iltrivulzio.it,73,multiple_mx; spf_softfail; provider_classified
 IT-SA-adios,Associazione D'Irrigazione Ovest Sesia,local-isp,ovestsesia.it,73,multiple_mx; spf_softfail; independent_mx_with_cloud_spf; multi_provider_spf:microsoft+zoho; provider_classified
 IT-L8-asstcr,Azienda Socio Sanitaria Territoriale di Cremona,microsoft,asst-cremona.it,73,multiple_mx; spf_softfail; independent_mx_with_cloud_spf; multi_provider_spf:aruba+microsoft; provider_classified; provider_via_gateway_spf
+IT-SA-8D20RCTE,Azienda Speciale A.Co.S. - Agenzia per il controllo e la qualità dei servizi pubblici locali e strumentali di Roma Capitale,google,agenzia.roma.it,73,multiple_mx; spf_softfail; provider_classified
 IT-L34-apads,Azienda di Servizi alla Persona del Distretto di Parma,register-it,asp.parma.it,73,multiple_mx; spf_softfail; provider_classified
 IT-SA-5QRGRGTP,BORSA MERCI TELEMATICA ITALIANA SCPA,google,bmti.it,73,multiple_mx; spf_softfail; provider_classified
 IT-SA-7176DSEB,CAMERA ARBITRALE DI MILANO S.R.L. SOCIETA' BENEFIT,google,camera-arbitrale.it,73,multiple_mx; spf_softfail; provider_classified
@@ -4979,7 +4981,7 @@ IT-L33-istsc_vbis00100x,ISTRUZIONE SECONDARIA SUPERIORE - IS 'GOBETTI',google,li
 IT-L33-istsc_pcis001003,ISTRUZIONE SECONDARIA SUPERIORE - IS ALESSANDRO VOLTA,google,polovolta.edu.it,73,multiple_mx; spf_softfail; provider_classified
 IT-L33-istsc_nais013007,ISTRUZIONE SECONDARIA SUPERIORE - IS POLISP. DON L. MILANI -GRAGNANO,google,donmilanigragnano.edu.it,73,multiple_mx; spf_softfail; provider_classified
 IT-L33-istsc_blis00600e,ISTRUZIONE SECONDARIA SUPERIORE - ISTITUTO ISTRUZIONE SUPERIORE FOLLADOR,google,follador.edu.it,73,multiple_mx; spf_softfail; provider_classified
-IT-L33-istsc_tris00100e,ISTRUZIONE SECONDARIA SUPERIORE - NARNI I.I.S. SC. MAG. GEOM. GANDHI,google,gandhinarni.it,73,multiple_mx; spf_softfail; provider_classified
+IT-L33-istsc_tris00100e,ISTRUZIONE SECONDARIA SUPERIORE - NARNI I.I.S. SC. MAG. GEOM. GANDHI,google,gandhinarni.edu.it,73,multiple_mx; spf_softfail; provider_classified
 IT-L33-istsc_tois03900t,ISTRUZIONE SECONDARIA SUPERIORE - P. MARTINETTI,google,iismartinetti.edu.it,73,multiple_mx; spf_softfail; provider_classified
 IT-L33-istsc_rmis06100g,ISTRUZIONE SECONDARIA SUPERIORE - VIA DOMIZIA LUCILLA,google,domizialucilla.edu.it,73,multiple_mx; spf_softfail; provider_classified
 IT-L33-istsc_rmis00400b,ISTRUZIONE SECONDARIA SUPERIORE - VIA PEDEMONTANA,google,professionalepalestrina.edu.it,73,multiple_mx; spf_softfail; provider_classified
@@ -6108,6 +6110,7 @@ IT-COM-051016,Comune di Civitella In Val di Chiana,aruba,civichiana.it,80,spf_st
 IT-COM-001089,Comune di Coazze,aruba,comune.coazze.to.it,80,spf_strict; independent_mx_with_cloud_spf; provider_classified
 IT-COM-041069,Comune di Colli al Metauro,regional-public,comune.collialmetauro.pu.it,80,spf_strict; independent_mx_with_cloud_spf; provider_classified
 IT-COM-018053,Comune di Copiano,independent,comune.copiano.pv.it,80,spf_strict; independent_mx_with_cloud_spf; provider_classified
+IT-COM-003058,Comune di Cureggio,independent,cert.ruparpiemonte.it,80,spf_strict; independent_mx_with_cloud_spf; provider_classified
 IT-COM-017067,Comune di Desenzano del Garda,microsoft,comune.desenzano.brescia.it,80,spf_strict; independent_mx_with_cloud_spf; provider_classified; provider_via_gateway_spf
 IT-COM-001100,Comune di Exilles,aruba,comune.exilles.to.it,80,spf_strict; independent_mx_with_cloud_spf; provider_classified
 IT-COM-006068,Comune di Felizzano,independent,comune.felizzano.al.it,80,spf_strict; independent_mx_with_cloud_spf; provider_classified; provider_via_gateway_spf
@@ -6158,7 +6161,6 @@ IT-COM-015189,Comune di Rozzano,aruba,comune.rozzano.mi.it,80,spf_strict; indepe
 IT-COM-039016,Comune di Russi,independent,comune.russi.ra.it,80,spf_strict; independent_mx_with_cloud_spf; provider_classified; provider_via_gateway_spf
 IT-COM-020054,Comune di Sabbioneta,local-isp,comune.sabbioneta.mn.it,80,spf_strict; independent_mx_with_cloud_spf; provider_classified
 IT-COM-001232,Comune di Salbertrand,aruba,comune.salbertrand.to.it,80,spf_strict; independent_mx_with_cloud_spf; provider_classified
-IT-COM-001234,Comune di Salza di Pinerolo,independent,cert.ruparpiemonte.it,80,spf_strict; independent_mx_with_cloud_spf; provider_classified
 IT-COM-103061,Comune di San Bernardino Verbano,independent,cert.ruparpiemonte.it,80,spf_strict; independent_mx_with_cloud_spf; provider_classified
 IT-COM-001239,Comune di San Didero,aruba,comune.sandidero.to.it,80,spf_strict; independent_mx_with_cloud_spf; provider_classified
 IT-COM-027033,Comune di San Dona' di Piave,microsoft,sandonadipiave.net,80,spf_strict; independent_mx_with_cloud_spf; provider_classified; provider_via_gateway_spf
@@ -7583,7 +7585,7 @@ IT-COM-116002,Comune di Barisardo,aruba,comunedibarisardo.it,83,spf_softfail; in
 IT-COM-083006,Comune di Basico',aruba,comune.basico.me.it,83,spf_softfail; independent_mx_with_cloud_spf; provider_classified; autodiscover_confirms
 IT-COM-056005,Comune di Bassano Romano,aruba,comune.bassanoromano.vt.it,83,spf_softfail; independent_mx_with_cloud_spf; provider_classified; autodiscover_confirms
 IT-COM-004014,Comune di Bastia Mondovi,aruba,comune.bastiamondovi.cn.it,83,spf_softfail; independent_mx_with_cloud_spf; provider_classified; autodiscover_confirms
-IT-COM-082008,Comune di Baucina,aruba,egov.comune.baucina.pa.it,83,spf_softfail; independent_mx_with_cloud_spf; provider_classified; autodiscover_confirms
+IT-COM-082008,Comune di Baucina,aruba,comune.baucina.pa.it,83,spf_softfail; independent_mx_with_cloud_spf; provider_classified; autodiscover_confirms
 IT-COM-115013,Comune di Bauladu,aruba,comune.bauladu.or.it,83,spf_softfail; independent_mx_with_cloud_spf; provider_classified; autodiscover_confirms
 IT-COM-076012,Comune di Bella,aruba,comune.bella.pz.it,83,spf_softfail; independent_mx_with_cloud_spf; provider_classified; autodiscover_confirms
 IT-COM-061007,Comune di Bellona,aruba,comune.bellona.ce.it,83,spf_softfail; independent_mx_with_cloud_spf; provider_classified; autodiscover_confirms
@@ -10382,7 +10384,6 @@ IT-CONS-cogesa,Co.Ge.Sa. Consorzio Gestione Servizi Socio Assistenziali,aruba,co
 IT-C14-calcz,Collegio Degli Agrotecnici e Degli Agrotecnici Laureati Cz-Kr-Vv,local-isp,collegioagrotecnicicatanzaro.it,85,mx_spf_match; provider_classified
 IT-C14-cgglp_bs,Collegio dei Geometri e dei Geometri Laureati della Provincia di Brescia,aruba,collegio.geometri.bs.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
 IT-C14-cggl_049,Collegio dei Geometri e dei Geometri Laureati della Provincia di Livorno,local-isp,collegio.geometri.li.it,85,mx_spf_match; provider_classified
-IT-L47-Y8HVSDZK,Commissario Straordinario per Palazzo Fienga,local-isp,mit.gov.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
 IT-L47-FIB31K6N,"Commissario ad acta art. 3, comma 3, D.L.150_2020",independent,regione.calabria.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified; autodiscover_suggests:microsoft
 IT-L47-XH1AK0UQ,Commissario delegato Regione Autonoma Valle Aosta emergenza alluvione giugno 2024 - OCDPC 1094-2024,microsoft,regione.vda.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified; provider_via_gateway_spf
 IT-L47-VYZBNAXJ,Commissario delegato Regione Autonoma Valle d'Aosta emergenza aprile 2025 - OCDPC 1155-2025,microsoft,regione.vda.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified; provider_via_gateway_spf
@@ -11405,7 +11406,6 @@ IT-C14-oddadvb,Ordine Dei Dottori Agronomi e Dei Dottori Forestali Delle Provinc
 IT-C14-oddadfvg,Ordine Dei Dottori Agronomi e Dei Dottori Forestali del Friuli Venezia Giulia,local-isp,conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
 IT-C14-odafbr,Ordine Dei Dottori Agronomi e Dei Dottori Forestali della Provincia di Brindisi,local-isp,conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
 IT-C14-oddadfg,Ordine Dei Dottori Agronomi e Dei Dottori Forestali della Provincia di Grosseto,local-isp,conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
-IT-C14-oddafpo,Ordine Dei Dottori Agronomi e Dei Dottori Forestali della Provincia di Oristano,local-isp,ordineoristano.conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
 IT-C14-dfsr,Ordine Dei Dottori Agronomi e Dei Dottori Forestali della Provincia di Siracusa,local-isp,conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
 IT-C14-odft,Ordine Dei Dottori Agronomi e Dei Dottori Forestali della Provincia di Torino,local-isp,conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
 IT-C14-oddadal,Ordine Dei Dottori Agronomi e Dei Dottori Forestali di Alessandria,local-isp,conaf.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified
@@ -16600,6 +16600,7 @@ IT-COM-097072,Comune di Rogeno,google,comune.rogeno.lc.it,93,multiple_mx; spf_so
 IT-COM-080068,Comune di Roghudi,google,comune.roghudi.rc.it,93,multiple_mx; spf_softfail; mx_spf_match; provider_classified; provider_via_gateway_spf
 IT-COM-078105,Comune di Rogliano,regional-public,comune.rogliano.cs.it,93,spf_softfail; mx_spf_match; provider_classified; autodiscover_confirms
 IT-COM-065110,Comune di Romagnano al Monte,regional-public,comune.romagnanoalmonte.sa.it,93,spf_softfail; mx_spf_match; provider_classified; autodiscover_confirms
+IT-COM-001223,Comune di Romano Canavese,independent,comune.romanocanavese.to.it,93,multiple_mx; spf_softfail; mx_spf_match; provider_classified
 IT-COM-024086,Comune di Romano D'Ezzelino,microsoft,comune.romano.vi.it,93,multiple_mx; spf_softfail; mx_spf_match; provider_classified; provider_via_gateway_spf
 IT-COM-031015,Comune di Romans d'Isonzo,independent,comune.romans.go.it,93,multiple_mx; spf_softfail; mx_spf_match; provider_classified; provider_via_gateway_spf
 IT-COM-022155,Comune di Romeno,google,comune.romeno.tn.it,93,multiple_mx; spf_softfail; mx_spf_match; provider_classified

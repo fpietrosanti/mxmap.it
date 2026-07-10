@@ -50,27 +50,27 @@
    "cluster": "territorial",
    "label": "Enti territoriali (Comuni, Province, Città metrop., Regioni)",
    "n": 8004,
-   "n_classified": 7870,
-   "isd": 73.81,
-   "cloud_act_pct": 25.86,
+   "n_classified": 7873,
+   "isd": 73.82,
+   "cloud_act_pct": 25.85,
    "sovereignty": [
     {
      "bucket": "Italia — Cloud sovrano",
      "group": "ITA",
      "count": 753,
-     "pct": 9.57
+     "pct": 9.56
     },
     {
      "bucket": "Italia — Provider commerciali",
      "group": "ITA",
-     "count": 3241,
-     "pct": 41.18
+     "count": 3243,
+     "pct": 41.19
     },
     {
      "bucket": "Italia — Infrastruttura autonoma",
      "group": "ITA",
-     "count": 1815,
-     "pct": 23.06
+     "count": 1816,
+     "pct": 23.07
     },
     {
      "bucket": "Altri provider esteri",
@@ -82,13 +82,13 @@
      "bucket": "USA (CLOUD Act)",
      "group": "EST",
      "count": 2035,
-     "pct": 25.86
+     "pct": 25.85
     },
     {
      "bucket": "Sconosciuto",
      "group": "ND",
-     "count": 134,
-     "pct": 1.67
+     "count": 131,
+     "pct": 1.64
     }
    ]
   },
@@ -96,9 +96,9 @@
    "cluster": "orders",
    "label": "Ordini professionali, Camere di commercio, ACI",
    "n": 2015,
-   "n_classified": 1910,
-   "isd": 73.66,
-   "cloud_act_pct": 23.72,
+   "n_classified": 1909,
+   "isd": 73.65,
+   "cloud_act_pct": 23.73,
    "sovereignty": [
     {
      "bucket": "Italia — Cloud sovrano",
@@ -109,8 +109,8 @@
     {
      "bucket": "Italia — Provider commerciali",
      "group": "ITA",
-     "count": 1202,
-     "pct": 62.93
+     "count": 1201,
+     "pct": 62.91
     },
     {
      "bucket": "Italia — Infrastruttura autonoma",
@@ -128,13 +128,13 @@
      "bucket": "USA (CLOUD Act)",
      "group": "EST",
      "count": 453,
-     "pct": 23.72
+     "pct": 23.73
     },
     {
      "bucket": "Sconosciuto",
      "group": "ND",
-     "count": 105,
-     "pct": 5.21
+     "count": 106,
+     "pct": 5.26
     }
    ]
   },
@@ -142,27 +142,27 @@
    "cluster": "consortia",
    "label": "Consorzi, Unioni di Comuni, Comunità montane",
    "n": 1427,
-   "n_classified": 1241,
-   "isd": 71.64,
-   "cloud_act_pct": 28.12,
+   "n_classified": 1240,
+   "isd": 71.61,
+   "cloud_act_pct": 28.15,
    "sovereignty": [
     {
      "bucket": "Italia — Cloud sovrano",
      "group": "ITA",
      "count": 103,
-     "pct": 8.3
+     "pct": 8.31
     },
     {
      "bucket": "Italia — Provider commerciali",
      "group": "ITA",
-     "count": 552,
-     "pct": 44.48
+     "count": 551,
+     "pct": 44.44
     },
     {
      "bucket": "Italia — Infrastruttura autonoma",
      "group": "ITA",
      "count": 234,
-     "pct": 18.86
+     "pct": 18.87
     },
     {
      "bucket": "Altri provider esteri",
@@ -174,13 +174,13 @@
      "bucket": "USA (CLOUD Act)",
      "group": "EST",
      "count": 349,
-     "pct": 28.12
+     "pct": 28.15
     },
     {
      "bucket": "Sconosciuto",
      "group": "ND",
-     "count": 186,
-     "pct": 13.03
+     "count": 187,
+     "pct": 13.1
     }
    ]
   },
@@ -233,10 +233,10 @@
   {
    "cluster": "procurement",
    "label": "Stazioni appaltanti",
-   "n": 606,
-   "n_classified": 592,
-   "isd": 48.65,
-   "cloud_act_pct": 50.51,
+   "n": 607,
+   "n_classified": 593,
+   "isd": 48.57,
+   "cloud_act_pct": 50.59,
    "sovereignty": [
     {
      "bucket": "Italia — Cloud sovrano",
@@ -248,13 +248,13 @@
      "bucket": "Italia — Provider commerciali",
      "group": "ITA",
      "count": 224,
-     "pct": 37.84
+     "pct": 37.77
     },
     {
      "bucket": "Italia — Infrastruttura autonoma",
      "group": "ITA",
      "count": 62,
-     "pct": 10.47
+     "pct": 10.46
     },
     {
      "bucket": "Altri provider esteri",
@@ -265,8 +265,8 @@
     {
      "bucket": "USA (CLOUD Act)",
      "group": "EST",
-     "count": 299,
-     "pct": 50.51
+     "count": 300,
+     "pct": 50.59
     },
     {
      "bucket": "Sconosciuto",
@@ -691,5 +691,5 @@
    ]
   }
  ],
- "generated": "2026-07-09T07:48:13Z"
+ "generated": "2026-07-10T07:46:01Z"
 }

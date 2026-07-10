@@ -1,5 +1,5 @@
 {
-  "n_purged": 504,
+  "n_purged": 505,
   "items": [
     {
       "id": "IT-C1-m_pi",
@@ -5214,6 +5214,17 @@
       "old_mx": "comune-roma-it.mail.protection.outlook.com",
       "old_provider": "microsoft",
       "old_reason": "MX record (comune-roma-it.mail.protection.outlook.com) matches Microsoft"
+    },
+    {
+      "id": "IT-L47-Y8HVSDZK",
+      "name": "Commissario Straordinario per Palazzo Fienga",
+      "codice_ipa": "y8hvsdzk",
+      "seed_domain": "osservacantieri.mit.gov.it",
+      "claimed_domain": "comune.napoli.it",
+      "reject_reason": "unrelated",
+      "old_mx": "comune-napoli-it.mail.protection.outlook.com",
+      "old_provider": "microsoft",
+      "old_reason": "MX record (comune-napoli-it.mail.protection.outlook.com) matches Microsoft"
     },
     {
       "id": "IT-L47-ZV54FPZU",
