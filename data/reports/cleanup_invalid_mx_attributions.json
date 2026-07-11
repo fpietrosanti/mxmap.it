@@ -1,5 +1,5 @@
 {
-  "n_purged": 505,
+  "n_purged": 506,
   "items": [
     {
       "id": "IT-C1-m_pi",
@@ -5280,6 +5280,17 @@
       "old_mx": "comune-laquila-it.mail.protection.outlook.com",
       "old_provider": "microsoft",
       "old_reason": "MX record (comune-laquila-it.mail.protection.outlook.com) matches Microsoft"
+    },
+    {
+      "id": "IT-L47-iprccs",
+      "name": "Il Presidente della Regione Campania Commissario Straordinario Ex Art. 11,comma 18, L.887-84",
+      "codice_ipa": "iprccs",
+      "seed_domain": "commissarioflegrei.gov.it",
+      "claimed_domain": "comune.roma.it",
+      "reject_reason": "unrelated",
+      "old_mx": "comune-roma-it.mail.protection.outlook.com",
+      "old_provider": "microsoft",
+      "old_reason": "MX record (comune-roma-it.mail.protection.outlook.com) matches Microsoft"
     },
     {
       "id": "IT-L47-ocdpc619",

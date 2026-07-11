@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-07-10T08:32:10Z",
+  "generated_at": "2026-07-11T07:12:07Z",
   "run_id": null,
   "license": "CC BY-SA 4.0",
   "source": "https://github.com/mxmap-it/mxmap.it",
   "totals": {
-    "n_entities": 22881,
-    "n_with_mx": 22262,
-    "coverage_pct": 97.29
+    "n_entities": 22883,
+    "n_with_mx": 22261,
+    "coverage_pct": 97.28
   },
   "indices": {
     "isd": 51.45,
     "cloud_act_pct": 47.99,
-    "n_classified": 22262
+    "n_classified": 22261
   },
   "sovereignty": {
     "extra_eu": {
@@ -25,12 +25,12 @@
       "label": "Europeo (non italiano)"
     },
     "it": {
-      "count": 11454,
+      "count": 11453,
       "pct": 50.1,
       "label": "Italiano"
     },
     "unknown": {
-      "count": 619,
+      "count": 622,
       "pct": 2.7,
       "label": "Sconosciuto"
     }
@@ -62,13 +62,13 @@
     },
     {
       "name": "Cloud Italiano",
-      "count": 935,
+      "count": 934,
       "pct": 4.1,
       "sovereignty": "it"
     },
     {
       "name": "Sconosciuto",
-      "count": 619,
+      "count": 622,
       "pct": 2.7,
       "sovereignty": "unknown"
     },
@@ -113,19 +113,19 @@
     {
       "cluster": "Consorzi e Unioni di enti locali",
       "n_entities": 1427,
-      "usa_pct": 24.5,
+      "usa_pct": 24.4,
       "dominant_provider": "Provider Italiano"
     },
     {
       "cluster": "Gestori di pubblici servizi",
-      "n_entities": 1133,
+      "n_entities": 1134,
       "usa_pct": 46.3,
       "dominant_provider": "Microsoft 365"
     },
     {
       "cluster": "Stazioni Appaltanti",
-      "n_entities": 607,
-      "usa_pct": 49.4,
+      "n_entities": 608,
+      "usa_pct": 49.3,
       "dominant_provider": "Microsoft 365"
     },
     {
@@ -137,7 +137,7 @@
     {
       "cluster": "Ambiente e Territorio",
       "n_entities": 272,
-      "usa_pct": 27.6,
+      "usa_pct": 27.9,
       "dominant_provider": "Provider Italiano"
     },
     {
@@ -184,7 +184,7 @@
     }
   ],
   "confidence": {
-    "mean": 0.8503,
+    "mean": 0.8502,
     "high_pct": 91.5
   }
 }
