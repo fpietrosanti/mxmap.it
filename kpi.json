@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-07-11T07:12:07Z",
+  "generated_at": "2026-07-12T07:19:20Z",
   "run_id": null,
   "license": "CC BY-SA 4.0",
   "source": "https://github.com/mxmap-it/mxmap.it",
   "totals": {
-    "n_entities": 22883,
-    "n_with_mx": 22261,
-    "coverage_pct": 97.28
+    "n_entities": 22884,
+    "n_with_mx": 22259,
+    "coverage_pct": 97.27
   },
   "indices": {
-    "isd": 51.45,
+    "isd": 51.44,
     "cloud_act_pct": 47.99,
-    "n_classified": 22261
+    "n_classified": 22259
   },
   "sovereignty": {
     "extra_eu": {
@@ -25,12 +25,12 @@
       "label": "Europeo (non italiano)"
     },
     "it": {
-      "count": 11453,
-      "pct": 50.1,
+      "count": 11451,
+      "pct": 50.0,
       "label": "Italiano"
     },
     "unknown": {
-      "count": 622,
+      "count": 625,
       "pct": 2.7,
       "label": "Sconosciuto"
     }
@@ -38,8 +38,8 @@
   "top_providers": [
     {
       "name": "Provider Italiano",
-      "count": 7474,
-      "pct": 32.7,
+      "count": 7471,
+      "pct": 32.6,
       "sovereignty": "it"
     },
     {
@@ -56,7 +56,7 @@
     },
     {
       "name": "Infrastruttura autonoma",
-      "count": 3045,
+      "count": 3046,
       "pct": 13.3,
       "sovereignty": "it"
     },
@@ -68,7 +68,7 @@
     },
     {
       "name": "Sconosciuto",
-      "count": 622,
+      "count": 625,
       "pct": 2.7,
       "sovereignty": "unknown"
     },
@@ -130,8 +130,8 @@
     },
     {
       "cluster": "Welfare e politiche sociali",
-      "n_entities": 463,
-      "usa_pct": 28.3,
+      "n_entities": 464,
+      "usa_pct": 28.2,
       "dominant_provider": "Provider Italiano"
     },
     {
@@ -184,7 +184,7 @@
     }
   ],
   "confidence": {
-    "mean": 0.8502,
+    "mean": 0.85,
     "high_pct": 91.5
   }
 }

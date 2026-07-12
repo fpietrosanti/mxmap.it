@@ -168451,7 +168451,9 @@
     "district": null,
     "domain": "ersupalermo.it",
     "osm_relation_id": null,
-    "domain_fallbacks": [],
+    "domain_fallbacks": [
+      "pec.ersupalermo.it"
+    ],
     "ipa_codice_ipa": "ep_pa",
     "ipa_codice_categoria": "L15",
     "ipa_codice_istat": "709656",
@@ -324017,6 +324019,21 @@
     "ipa_codice_categoria": "L34",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "086011",
+    "domain_source": "sito_istituzionale"
+  },
+  {
+    "id": "IT-L34-ZS8300DA",
+    "name": "CASA DI RIPOSO MONS. LORENZO CRICO - FOSSALUNGA",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "ipabcrico.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "ZS8300DA",
+    "ipa_codice_categoria": "L34",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "026089",
     "domain_source": "sito_istituzionale"
   },
   {

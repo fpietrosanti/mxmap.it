@@ -1,14 +1,14 @@
 {
- "n_entities": 22883,
- "n_classified": 22261,
- "coverage_pct": 97.28,
- "mean_confidence": 0.8502,
- "isd": 51.45,
+ "n_entities": 22884,
+ "n_classified": 22259,
+ "coverage_pct": 97.27,
+ "mean_confidence": 0.85,
+ "isd": 51.44,
  "headline": {
-  "isd": 51.45,
+  "isd": 51.44,
   "cloud_act_pct": 47.99,
-  "coverage_pct": 97.28,
-  "n_entities": 22883
+  "coverage_pct": 97.27,
+  "n_entities": 22884
  },
  "sovereignty": [
   {
@@ -20,13 +20,13 @@
   {
    "bucket": "Italia — Provider commerciali",
    "group": "ITA",
-   "count": 7474,
-   "pct": 33.57
+   "count": 7471,
+   "pct": 33.56
   },
   {
    "bucket": "Italia — Infrastruttura autonoma",
    "group": "ITA",
-   "count": 3045,
+   "count": 3046,
    "pct": 13.68
   },
   {
@@ -44,20 +44,20 @@
   {
    "bucket": "Sconosciuto",
    "group": "ND",
-   "count": 622,
-   "pct": 2.72
+   "count": 625,
+   "pct": 2.73
   }
  ],
  "jurisdiction": [
   {
    "key": "domestic",
-   "count": 10561,
-   "pct": 46.15
+   "count": 10563,
+   "pct": 46.16
   },
   {
    "key": "foreign",
-   "count": 11379,
-   "pct": 49.73
+   "count": 11375,
+   "pct": 49.71
   },
   {
    "key": "mixed",
@@ -66,8 +66,8 @@
   },
   {
    "key": "unknown",
-   "count": 691,
-   "pct": 3.02
+   "count": 694,
+   "pct": 3.03
   }
  ],
  "providers": [
@@ -75,12 +75,12 @@
    "provider": "google",
    "display": "Google Workspace",
    "count": 6410,
-   "pct": 28.79
+   "pct": 28.8
   },
   {
    "provider": "aruba",
    "display": "Provider Italiano",
-   "count": 5164,
+   "count": 5165,
    "pct": 23.2
   },
   {
@@ -92,14 +92,14 @@
   {
    "provider": "independent",
    "display": "Infrastruttura autonoma",
-   "count": 3045,
+   "count": 3046,
    "pct": 13.68
   },
   {
    "provider": "local-isp",
    "display": "Provider Italiano",
-   "count": 1566,
-   "pct": 7.03
+   "count": 1562,
+   "pct": 7.02
   },
   {
    "provider": "regional-public",
@@ -122,8 +122,8 @@
   {
    "provider": "unknown",
    "display": "Sconosciuto",
-   "count": 622,
-   "pct": 2.72
+   "count": 625,
+   "pct": 2.73
   },
   {
    "provider": "seeweb",
@@ -181,14 +181,14 @@
   }
  ],
  "market": {
-  "top3_pct": 67.23,
-  "hhi": 1878.1
+  "top3_pct": 67.24,
+  "hhi": 1878.6
  },
  "confidence_bands": [
   {
    "band": "alta",
-   "count": 20943,
-   "pct": 91.52
+   "count": 20941,
+   "pct": 91.51
   },
   {
    "band": "media",
@@ -197,16 +197,16 @@
   },
   {
    "band": "bassa",
-   "count": 622,
-   "pct": 2.72
+   "count": 625,
+   "pct": 2.73
   }
  ],
  "signals": {
-  "mx_pct": 97.28,
-  "spf_pct": 87.62,
+  "mx_pct": 97.27,
+  "spf_pct": 87.61,
   "dkim_pct": 10.45,
   "gateway_pct": 15.19
  },
- "generated": "2026-07-11T06:23:41Z",
+ "generated": "2026-07-12T06:42:27Z",
  "country": "IT"
 }
