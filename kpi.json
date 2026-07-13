@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-07-12T07:19:20Z",
+  "generated_at": "2026-07-13T07:40:46Z",
   "run_id": null,
   "license": "CC BY-SA 4.0",
   "source": "https://github.com/mxmap-it/mxmap.it",
   "totals": {
     "n_entities": 22884,
-    "n_with_mx": 22259,
-    "coverage_pct": 97.27
+    "n_with_mx": 22264,
+    "coverage_pct": 97.29
   },
   "indices": {
-    "isd": 51.44,
-    "cloud_act_pct": 47.99,
-    "n_classified": 22259
+    "isd": 51.46,
+    "cloud_act_pct": 47.98,
+    "n_classified": 22264
   },
   "sovereignty": {
     "extra_eu": {
-      "count": 10685,
+      "count": 10684,
       "pct": 46.7,
       "label": "Extra-UE (CLOUD Act)"
     },
@@ -25,12 +25,12 @@
       "label": "Europeo (non italiano)"
     },
     "it": {
-      "count": 11451,
-      "pct": 50.0,
+      "count": 11457,
+      "pct": 50.1,
       "label": "Italiano"
     },
     "unknown": {
-      "count": 625,
+      "count": 620,
       "pct": 2.7,
       "label": "Sconosciuto"
     }
@@ -38,37 +38,37 @@
   "top_providers": [
     {
       "name": "Provider Italiano",
-      "count": 7471,
-      "pct": 32.6,
+      "count": 7476,
+      "pct": 32.7,
       "sovereignty": "it"
     },
     {
       "name": "Google Workspace",
-      "count": 6410,
+      "count": 6411,
       "pct": 28.0,
       "sovereignty": "extra_eu"
     },
     {
       "name": "Microsoft 365",
-      "count": 4266,
+      "count": 4264,
       "pct": 18.6,
       "sovereignty": "extra_eu"
     },
     {
       "name": "Infrastruttura autonoma",
-      "count": 3046,
+      "count": 3048,
       "pct": 13.3,
       "sovereignty": "it"
     },
     {
       "name": "Cloud Italiano",
-      "count": 934,
+      "count": 933,
       "pct": 4.1,
       "sovereignty": "it"
     },
     {
       "name": "Sconosciuto",
-      "count": 625,
+      "count": 620,
       "pct": 2.7,
       "sovereignty": "unknown"
     },
@@ -95,7 +95,7 @@
     {
       "cluster": "Istruzione",
       "n_entities": 8341,
-      "usa_pct": 77.6,
+      "usa_pct": 77.5,
       "dominant_provider": "Google Workspace"
     },
     {
@@ -184,7 +184,7 @@
     }
   ],
   "confidence": {
-    "mean": 0.85,
+    "mean": 0.8502,
     "high_pct": 91.5
   }
 }

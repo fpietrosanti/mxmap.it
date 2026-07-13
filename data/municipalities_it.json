@@ -168451,9 +168451,7 @@
     "district": null,
     "domain": "ersupalermo.it",
     "osm_relation_id": null,
-    "domain_fallbacks": [
-      "pec.ersupalermo.it"
-    ],
+    "domain_fallbacks": [],
     "ipa_codice_ipa": "ep_pa",
     "ipa_codice_categoria": "L15",
     "ipa_codice_istat": "709656",
