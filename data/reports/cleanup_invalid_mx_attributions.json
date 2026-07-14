@@ -1,5 +1,5 @@
 {
-  "n_purged": 506,
+  "n_purged": 505,
   "items": [
     {
       "id": "IT-C1-m_pi",
@@ -4081,17 +4081,6 @@
       "old_mx": "cloudscan12.ilger.com",
       "old_provider": "independent",
       "old_reason": "MX is ilger gateway; backend provider unknown"
-    },
-    {
-      "id": "IT-L34-oprdm",
-      "name": "Opere Pie Riunite Devoto Marini Sivori",
-      "codice_ipa": "oprdm",
-      "seed_domain": "operepielavagna.it",
-      "claimed_domain": "comune.lavagna.ge.it",
-      "reject_reason": "unrelated",
-      "old_mx": "mail.comune.lavagna.ge.it",
-      "old_provider": "local-isp",
-      "old_reason": "MX (mail.comune.lavagna.ge.it, mailin2.publinet.it) hosted on Local ISP (Fastweb (IT), CZNIC/Coolhousing (CZ))"
     },
     {
       "id": "IT-L34-opst",
