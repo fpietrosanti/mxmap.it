@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-07-14 06:57 UTC",
+ "generated_at": "2026-07-15 07:37 UTC",
  "country": "IT",
- "total_entities": 22885,
- "anomalies_total": 727,
- "anomalies_pct": 3.18,
+ "total_entities": 22884,
+ "anomalies_total": 722,
+ "anomalies_pct": 3.16,
  "by_type": {
-  "no_mx": 618,
-  "low_confidence": 76,
+  "no_mx": 620,
+  "low_confidence": 69,
   "geo_unknown": 69
  },
  "by_type_label": {
@@ -15,12 +15,12 @@
   "low_confidence": "Bassa confidenza (<0,60)"
  },
  "by_provider": {
-  "unknown": 618,
-  "independent": 103,
+  "unknown": 620,
+  "independent": 96,
   "microsoft": 4,
   "google": 2
  },
- "classified_but_anomalous": 109,
+ "classified_but_anomalous": 102,
  "entries": [
   {
    "name": "ISTITUTO COMPRENSIVO  SANTE GIUFFRIDA - DON LA MELA",
@@ -141,7 +141,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Agenzia Regionale per Il Lavoro",
@@ -1252,7 +1252,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Collegio Delle Ostetriche della Provincia di Mantova",
@@ -1323,17 +1323,6 @@
   {
    "name": "Commissario Straordinario per La Sicurezza del Sistema Idrico del Gran Sasso",
    "domain": "commissario.gransasso.gov.it",
-   "provider": "unknown",
-   "confidence": 0.0,
-   "anomaly": [
-    "no_mx"
-   ],
-   "mx": null,
-   "reason": "cleared by is_legit gate: unrelated"
-  },
-  {
-   "name": "Il Presidente della Regione Campania Commissario Straordinario Ex Art. 11,comma 18, L.887-84",
-   "domain": "commissarioflegrei.gov.it",
    "provider": "unknown",
    "confidence": 0.0,
    "anomaly": [
@@ -1637,7 +1626,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Comune di Corropoli",
@@ -1736,7 +1725,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 5 candidates; none yielded MX"
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Comune di Lapedona",
@@ -1747,7 +1736,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Comune di Loano",
@@ -1769,7 +1758,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 6 candidates; none yielded MX"
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Comune di Maenza",
@@ -1791,7 +1780,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Comune di Marrubiu",
@@ -1824,7 +1813,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Comune di Melfi",
@@ -1868,7 +1857,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Comune di Omignano",
@@ -2011,11 +2000,22 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Comune di Roccasecca Dei Volsci",
    "domain": "comune.roccaseccadeivolsci.lt.it",
+   "provider": "unknown",
+   "confidence": 0.0,
+   "anomaly": [
+    "no_mx"
+   ],
+   "mx": null,
+   "reason": "search engine returned 1 candidates; none yielded MX"
+  },
+  {
+   "name": "Comune di Romano Canavese",
+   "domain": "comune.romanocanavese.to.it",
    "provider": "unknown",
    "confidence": 0.0,
    "anomaly": [
@@ -2132,7 +2132,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 1 candidates; none yielded MX"
+   "reason": "search engine returned 6 candidates; none yielded MX"
   },
   {
    "name": "Comune di Santa Elisabetta",
@@ -2154,7 +2154,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 1 candidates; none yielded MX"
+   "reason": "search engine returned 6 candidates; none yielded MX"
   },
   {
    "name": "Comune di Santa Vittoria d' Alba",
@@ -2187,7 +2187,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 6 candidates; none yielded MX"
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Comune di Solesino",
@@ -2286,7 +2286,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 1 candidates; none yielded MX"
+   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
   },
   {
    "name": "Comune di Tre Ville",
@@ -2308,7 +2308,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 5 candidates; none yielded MX"
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Comune di Tusa",
@@ -2374,7 +2374,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 1 candidates; none yielded MX"
+   "reason": "search engine returned 5 candidates; none yielded MX"
   },
   {
    "name": "Comune di Zungoli",
@@ -2605,7 +2605,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Comune di Picciano",
@@ -2682,7 +2682,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 1 candidates; none yielded MX"
+   "reason": "search engine returned 4 candidates; none yielded MX"
   },
   {
    "name": "Comune di San Sebastiano al Vesuvio",
@@ -2693,7 +2693,18 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 6 candidates; none yielded MX"
+   "reason": "search engine returned 1 candidates; none yielded MX"
+  },
+  {
+   "name": "Comune di Santa Paolina",
+   "domain": "comunesantapaolina.gov.it",
+   "provider": "unknown",
+   "confidence": 0.0,
+   "anomaly": [
+    "no_mx"
+   ],
+   "mx": null,
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Comune di San Zeno di Montagna",
@@ -2704,7 +2715,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 1 candidates; none yielded MX"
+   "reason": "search engine returned 6 candidates; none yielded MX"
   },
   {
    "name": "Comune di Sesta Godano",
@@ -2727,6 +2738,17 @@
    ],
    "mx": null,
    "reason": "cleared by is_legit gate: unrelated"
+  },
+  {
+   "name": "Comune di Termini Imerese",
+   "domain": "comuneterminiimerese.pa.it",
+   "provider": "unknown",
+   "confidence": 0.0,
+   "anomaly": [
+    "no_mx"
+   ],
+   "mx": null,
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Comune di Zocca",
@@ -3155,7 +3177,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Consorzio Intercomunale del Montefeltro",
@@ -3573,7 +3595,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Consorzio Acquedotto Intercomunale del Peschiera",
@@ -3771,7 +3793,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Istituto Comprensivo Bolzano 4 - Oltrisarco",
@@ -4652,17 +4674,6 @@
    ],
    "mx": null,
    "reason": "cleared by is_legit gate: unrelated"
-  },
-  {
-   "name": "Ordine Dei Dottori Agronomi e Dei Dottori Forestali della Provincia di Oristano",
-   "domain": "ordineoristano.conaf.it",
-   "provider": "unknown",
-   "confidence": 0.0,
-   "anomaly": [
-    "no_mx"
-   ],
-   "mx": null,
-   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Ordine Interprovinciale Professione Ostetrica Ascoli Piceno e Fermo",
@@ -5597,7 +5608,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 1 candidates; none yielded MX"
+   "reason": "search engine returned 4 candidates; none yielded MX"
   },
   {
    "name": "Agenzia Regionale Conservatoria Delle Coste della Sardegna",
@@ -5982,7 +5993,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Schulsprengel Tschoegglberg",
@@ -6059,7 +6070,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 1 candidates; none yielded MX"
+   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
   },
   {
    "name": "Unione di Comuni Lombarda Terra Dei Gonzaga",
@@ -6301,7 +6312,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Unione Dei Cinque Reali Siti",
@@ -6312,7 +6323,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Unione di Comunita' Collinare Roero Tartufo Ed Arneis",
@@ -6521,7 +6532,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Unione di Comuni Lombarda di Lomello e Galliavola",
@@ -6555,6 +6566,17 @@
    ],
    "mx": null,
    "reason": "cleared by is_legit gate: unrelated"
+  },
+  {
+   "name": "Unione Dei Comuni Costa del Sinis Terra Dei Giganti",
+   "domain": "unionesinisgiganti.it",
+   "provider": "unknown",
+   "confidence": 0.0,
+   "anomaly": [
+    "no_mx"
+   ],
+   "mx": null,
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Unione Dei Comuni Terra di Leuca",
@@ -6697,7 +6719,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 5 candidates; none yielded MX"
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Unione Comuni Vette Dei Nebrodi",
@@ -7325,17 +7347,6 @@
    "reason": "MX (mail.comune.vocca.vc.it) is self-hosted"
   },
   {
-   "name": "Comune di Lettopalena",
-   "domain": "comunelettopalena.it",
-   "provider": "independent",
-   "confidence": 0.5,
-   "anomaly": [
-    "low_confidence"
-   ],
-   "mx": "mx.comunelettopalena.it",
-   "reason": "riclassificato da aws: segnale cloud (tenant/DKIM) presente ma MX in entrata self-hosted domestico (il tenant cloud riflette uso Teams/Share"
-  },
-  {
    "name": "Consiglio di Bacino Dolomiti Bellunesi",
    "domain": "consigliobacinoidrico.belluno.it",
    "provider": "independent",
@@ -7392,47 +7403,25 @@
    "reason": "MX (mail.fvgstrade.it) is self-hosted"
   },
   {
-   "name": "Istituto Comprensivo N.1 di San Lazzaro",
-   "domain": "ic1sanlazzarodisavena.edu.it",
+   "name": "Comune di Grumello Cremonese ed Uniti",
+   "domain": "grumellocremonese.it",
    "provider": "independent",
    "confidence": 0.5,
    "anomaly": [
     "low_confidence"
    ],
-   "mx": "mx.ic1sanlazzarodisavena.edu.it",
+   "mx": "mx.grumellocremonese.it",
    "reason": "riclassificato da aws: segnale cloud (tenant/DKIM) presente ma MX in entrata self-hosted domestico (il tenant cloud riflette uso Teams/Share"
   },
   {
-   "name": "ISTITUTO COMPRENSIVO ARZANO IC 2 DE FILIPPO VICO",
-   "domain": "ic2defilippovico.edu.it",
+   "name": "Istituto Comprensivo Brigata Sassari",
+   "domain": "icbrigatasassari.edu.it",
    "provider": "independent",
    "confidence": 0.5,
    "anomaly": [
     "low_confidence"
    ],
-   "mx": "mx.ic2defilippovico.edu.it",
-   "reason": "riclassificato da aws: segnale cloud (tenant/DKIM) presente ma MX in entrata self-hosted domestico (il tenant cloud riflette uso Teams/Share"
-  },
-  {
-   "name": "ISTITUTO COMPRENSIVO - IC MODIGLIANA",
-   "domain": "icmodigliana.edu.it",
-   "provider": "independent",
-   "confidence": 0.5,
-   "anomaly": [
-    "low_confidence"
-   ],
-   "mx": "mx.icmodigliana.edu.it",
-   "reason": "riclassificato da aws: segnale cloud (tenant/DKIM) presente ma MX in entrata self-hosted domestico (il tenant cloud riflette uso Teams/Share"
-  },
-  {
-   "name": "Istituto Comprensivo David SASSOLI",
-   "domain": "icsassoli.edu.it",
-   "provider": "independent",
-   "confidence": 0.5,
-   "anomaly": [
-    "low_confidence"
-   ],
-   "mx": "mx.icsassoli.edu.it",
+   "mx": "mx.icbrigatasassari.edu.it",
    "reason": "riclassificato da aws: segnale cloud (tenant/DKIM) presente ma MX in entrata self-hosted domestico (il tenant cloud riflette uso Teams/Share"
   },
   {
@@ -7482,17 +7471,6 @@
    "reason": "riclassificato da aws: segnale cloud (tenant/DKIM) presente ma MX in entrata self-hosted domestico (il tenant cloud riflette uso Teams/Share"
   },
   {
-   "name": "Pio Istituto Zirafa Sacro Cuore di Gesu' Ipab",
-   "domain": "istitutozirafa.it",
-   "provider": "independent",
-   "confidence": 0.5,
-   "anomaly": [
-    "low_confidence"
-   ],
-   "mx": "mx.istitutozirafa.it",
-   "reason": "riclassificato da aws: segnale cloud (tenant/DKIM) presente ma MX in entrata self-hosted domestico (il tenant cloud riflette uso Teams/Share"
-  },
-  {
    "name": "ITS PER LE NUOVE TECNOLOGIE PER IL MADE IN ITALY EMPORIUM DEL GOLFO",
    "domain": "itsemporiumdelgolfo.it",
    "provider": "independent",
@@ -7514,17 +7492,6 @@
    ],
    "mx": "mail.gecomail.net",
    "reason": "MX is gecomail gateway; backend provider unknown"
-  },
-  {
-   "name": "LICEO SCIENTIFICO - L. S. A. VOLTA REGGIO CAL.",
-   "domain": "lsvolta.it",
-   "provider": "independent",
-   "confidence": 0.5,
-   "anomaly": [
-    "low_confidence"
-   ],
-   "mx": "mx.lsvolta.it",
-   "reason": "riclassificato da aws: segnale cloud (tenant/DKIM) presente ma MX in entrata self-hosted domestico (il tenant cloud riflette uso Teams/Share"
   },
   {
    "name": "ISTITUTO MAGISTRALE - I. GONZAGA",
@@ -7571,25 +7538,14 @@
    "reason": "MX (mail.rarodevelop.net) is self-hosted"
   },
   {
-   "name": "Ordine Degli Assistenti Sociali Molise",
-   "domain": "oasmolise.it",
+   "name": "Ordine Degli Avvocati di Civitavecchia",
+   "domain": "ordineavvocaticivitavecchia.it",
    "provider": "independent",
    "confidence": 0.5,
    "anomaly": [
     "low_confidence"
    ],
-   "mx": "mx.oasmolise.it",
-   "reason": "riclassificato da aws: segnale cloud (tenant/DKIM) presente ma MX in entrata self-hosted domestico (il tenant cloud riflette uso Teams/Share"
-  },
-  {
-   "name": "Ordine Professioni Infermieristiche Caltanissetta",
-   "domain": "opicaltanissetta.it",
-   "provider": "independent",
-   "confidence": 0.5,
-   "anomaly": [
-    "low_confidence"
-   ],
-   "mx": "mx.opicaltanissetta.it",
+   "mx": "mx.ordineavvocaticivitavecchia.it",
    "reason": "riclassificato da aws: segnale cloud (tenant/DKIM) presente ma MX in entrata self-hosted domestico (il tenant cloud riflette uso Teams/Share"
   },
   {
@@ -7669,17 +7625,6 @@
    ],
    "mx": "mbox.provincia.padova.it",
    "reason": "MX (mbox.provincia.padova.it) is self-hosted"
-  },
-  {
-   "name": "Unione Regionale Delle Camere di Commercio, Industria, Artigianato, Agricoltura della Toscana",
-   "domain": "unioncamere-toscana.it",
-   "provider": "independent",
-   "confidence": 0.5,
-   "anomaly": [
-    "low_confidence"
-   ],
-   "mx": "mx.unioncamere-toscana.it",
-   "reason": "riclassificato da aws: segnale cloud (tenant/DKIM) presente ma MX in entrata self-hosted domestico (il tenant cloud riflette uso Teams/Share"
   },
   {
    "name": "Unione Dei Comuni Antico Clanis",

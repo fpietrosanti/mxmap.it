@@ -51637,7 +51637,9 @@
     "district": "Cremona",
     "domain": "grumellocremonese.it",
     "osm_relation_id": 44393,
-    "domain_fallbacks": [],
+    "domain_fallbacks": [
+      "comune.grumellocremoneseeduniti.cr.it"
+    ],
     "ipa_codice_ipa": "c_e217",
     "ipa_codice_categoria": "L6",
     "ipa_codice_istat": "59804",
@@ -230125,7 +230127,7 @@
   },
   {
     "id": "IT-L33-istsc_ctis001009",
-    "name": "ISTRUZIONE SECONDARIA SUPERIORE - IS MICHELE AMARI",
+    "name": "IIS \"Amari Rizzo Pantano\"",
     "country": "IT",
     "region": null,
     "district": null,
@@ -350129,21 +350131,6 @@
     "ipa_codice_categoria": "L47",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "087015",
-    "domain_source": "sito_istituzionale"
-  },
-  {
-    "id": "IT-L47-iprccs",
-    "name": "Il Presidente della Regione Campania Commissario Straordinario Ex Art. 11,comma 18, L.887-84",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "commissarioflegrei.gov.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [],
-    "ipa_codice_ipa": "iprccs",
-    "ipa_codice_categoria": "L47",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "058091",
     "domain_source": "sito_istituzionale"
   },
   {
