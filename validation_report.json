@@ -1,5 +1,5 @@
 {
-  "total": 22884,
+  "total": 22885,
   "average_score": 80.7,
   "high_confidence_pct": 73.7,
   "quality_passed": false,
@@ -15853,14 +15853,13 @@
     },
     "IT-C14-oddafpo": {
       "name": "Ordine Dei Dottori Agronomi e Dei Dottori Forestali della Provincia di Oristano",
-      "provider": "local-isp",
+      "provider": "unknown",
       "domain": "ordineoristano.conaf.it",
-      "confidence": 85,
+      "confidence": 15,
       "flags": [
-        "multiple_mx",
-        "spf_strict",
-        "independent_mx_with_cloud_spf",
-        "provider_classified"
+        "no_mx",
+        "no_spf",
+        "provider_unknown"
       ]
     },
     "IT-C14-oddafvi": {
@@ -22275,12 +22274,11 @@
     },
     "IT-C14-oring_bg": {
       "name": "Ordine degli Ingegneri della Provincia di Bergamo",
-      "provider": "ovh",
-      "domain": "ordineingegneri.bergamo.it",
-      "confidence": 95,
+      "provider": "local-isp",
+      "domain": "bergamo.ordingegneri.it",
+      "confidence": 88,
       "flags": [
-        "multiple_mx",
-        "spf_strict",
+        "spf_softfail",
         "mx_spf_match",
         "provider_classified"
       ]
@@ -28391,13 +28389,14 @@
     },
     "IT-COM-001223": {
       "name": "Comune di Romano Canavese",
-      "provider": "unknown",
+      "provider": "independent",
       "domain": "comune.romanocanavese.to.it",
-      "confidence": 15,
+      "confidence": 93,
       "flags": [
-        "no_mx",
-        "no_spf",
-        "provider_unknown"
+        "multiple_mx",
+        "spf_softfail",
+        "mx_spf_match",
+        "provider_classified"
       ]
     },
     "IT-COM-001224": {
@@ -30795,13 +30794,13 @@
     },
     "IT-COM-003058": {
       "name": "Comune di Cureggio",
-      "provider": "independent",
-      "domain": "cert.ruparpiemonte.it",
-      "confidence": 80,
+      "provider": "unknown",
+      "domain": "comune.cureggio.no.it",
+      "confidence": 15,
       "flags": [
-        "spf_strict",
-        "independent_mx_with_cloud_spf",
-        "provider_classified"
+        "no_mx",
+        "no_spf",
+        "provider_unknown"
       ]
     },
     "IT-COM-003060": {
@@ -90387,12 +90386,13 @@
     },
     "IT-COM-066093": {
       "name": "Comune di Scanno",
-      "provider": "aruba",
+      "provider": "unknown",
       "domain": "comune.scanno.aq.it",
-      "confidence": 68,
+      "confidence": 15,
       "flags": [
-        "spf_softfail",
-        "provider_classified"
+        "no_mx",
+        "no_spf",
+        "provider_unknown"
       ]
     },
     "IT-COM-066094": {
@@ -102382,7 +102382,7 @@
     "IT-COM-082008": {
       "name": "Comune di Baucina",
       "provider": "aruba",
-      "domain": "comune.baucina.pa.it",
+      "domain": "egov.comune.baucina.pa.it",
       "confidence": 83,
       "flags": [
         "spf_softfail",
@@ -117556,13 +117556,11 @@
     "IT-COM-118050": {
       "name": "Comune di Senorbi'",
       "provider": "aruba",
-      "domain": "comune.senorbi.su.it",
-      "confidence": 83,
+      "domain": "pec.comune.senorbi.ca.it",
+      "confidence": 68,
       "flags": [
         "spf_softfail",
-        "independent_mx_with_cloud_spf",
-        "provider_classified",
-        "autodiscover_confirms"
+        "provider_classified"
       ]
     },
     "IT-COM-118051": {
@@ -122076,11 +122074,10 @@
     "IT-L1-azcv": {
       "name": "Azienda Calabria Verde",
       "provider": "aruba",
-      "domain": "calabriaverde.regione.calabria.it",
-      "confidence": 78,
+      "domain": "pec.calabriaverde.eu",
+      "confidence": 50,
       "flags": [
-        "spf_softfail",
-        "independent_mx_with_cloud_spf",
+        "no_spf",
         "provider_classified"
       ]
     },
@@ -217971,13 +217968,12 @@
     },
     "IT-L33-istsc_topc01000c": {
       "name": "LICEO CLASSICO - LC C. CAVOUR",
-      "provider": "istruzione-miur-tenant",
+      "provider": "google",
       "domain": "lcavour.edu.it",
-      "confidence": 80,
+      "confidence": 55,
       "flags": [
-        "spf_strict",
-        "mx_spf_match",
-        "multi_provider_spf:brevo+microsoft+regional-public",
+        "multiple_mx",
+        "no_spf",
         "provider_classified"
       ]
     },
@@ -237087,7 +237083,7 @@
     "IT-L37-219TJPHO": {
       "name": "Croce Rossa Italiana - Comitato di Latina - Organizzazione di Volontariato",
       "provider": "google",
-      "domain": "cri.it",
+      "domain": "latina.cri.it",
       "confidence": 93,
       "flags": [
         "multiple_mx",
@@ -239173,7 +239169,7 @@
     "IT-L37-F21ME6OU": {
       "name": "FLEGREA LAVORO SPA",
       "provider": "local-isp",
-      "domain": "flegrealavoro.com",
+      "domain": "flegrealavoro.portaletrasparenza.net",
       "confidence": 88,
       "flags": [
         "spf_softfail",
@@ -240733,6 +240729,17 @@
         "independent_mx_with_cloud_spf",
         "provider_classified",
         "autodiscover_confirms"
+      ]
+    },
+    "IT-L37-P8Q7W3MX": {
+      "name": "BENTLEY SOA S.P.A.",
+      "provider": "aruba",
+      "domain": "bentleysoa.com",
+      "confidence": 90,
+      "flags": [
+        "spf_strict",
+        "mx_spf_match",
+        "provider_classified"
       ]
     },
     "IT-L37-P9RZK6PI": {
@@ -242340,7 +242347,7 @@
     "IT-L37-ZV7OSJOH": {
       "name": "UNILAV SCPA",
       "provider": "aruba",
-      "domain": "unilavspa.it",
+      "domain": "unilavspa.portaletrasparenza.net",
       "confidence": 83,
       "flags": [
         "spf_softfail",
@@ -243462,7 +243469,7 @@
     "IT-L37-asaspa": {
       "name": "PLURES S.P.A.",
       "provider": "microsoft",
-      "domain": "aliaserviziambientali.it",
+      "domain": "plures.aliaserviziambientali.it",
       "confidence": 95,
       "flags": [
         "spf_strict",
@@ -256625,7 +256632,7 @@
       ]
     },
     "IT-L8-os_sant": {
-      "name": "AZIENDA OSPEDALIERO-UNIVERSITARIA \"SS.ANTONIO E BIAGIO E C.ARRIGO\" ALESSANDRIA",
+      "name": "IRCCS-AOU SS.Antonio e Biagio e Cesare Arrigo",
       "provider": "microsoft",
       "domain": "ospedale.al.it",
       "confidence": 95,
@@ -260944,12 +260951,14 @@
     },
     "IT-SA-ADZ4T32G": {
       "name": "PORT MOBILITY S.p.A. con Socio Unico",
-      "provider": "aruba",
-      "domain": "pec.portmobility.it",
-      "confidence": 68,
+      "provider": "microsoft",
+      "domain": "civitavecchia.portmobility.it",
+      "confidence": 95,
       "flags": [
-        "spf_softfail",
-        "provider_classified"
+        "spf_strict",
+        "mx_spf_match",
+        "provider_classified",
+        "autodiscover_confirms"
       ]
     },
     "IT-SA-AKP3SCHD": {

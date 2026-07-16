@@ -154754,7 +154754,7 @@
     "country": "IT",
     "region": null,
     "district": null,
-    "domain": "ordineingegneri.bergamo.it",
+    "domain": "bergamo.ordingegneri.it",
     "osm_relation_id": null,
     "domain_fallbacks": [],
     "ipa_codice_ipa": "oring_bg",
@@ -339413,6 +339413,21 @@
     "domain_source": "sito_istituzionale"
   },
   {
+    "id": "IT-L37-P8Q7W3MX",
+    "name": "BENTLEY SOA S.P.A.",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "bentleysoa.com",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "P8Q7W3MX",
+    "ipa_codice_categoria": "L37",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "004078",
+    "domain_source": "sito_istituzionale"
+  },
+  {
     "id": "IT-L37-P9RZK6PI",
     "name": "GLOBAL SERVICE S.R.L.",
     "country": "IT",
@@ -353631,7 +353646,7 @@
   },
   {
     "id": "IT-L8-os_sant",
-    "name": "AZIENDA OSPEDALIERO-UNIVERSITARIA \"SS.ANTONIO E BIAGIO E C.ARRIGO\" ALESSANDRIA",
+    "name": "IRCCS-AOU SS.Antonio e Biagio e Cesare Arrigo",
     "country": "IT",
     "region": null,
     "district": null,

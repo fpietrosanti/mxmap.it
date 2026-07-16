@@ -1,36 +1,36 @@
 {
-  "generated_at": "2026-07-15T07:37:48Z",
+  "generated_at": "2026-07-16T07:17:18Z",
   "run_id": null,
   "license": "CC BY-SA 4.0",
   "source": "https://github.com/mxmap-it/mxmap.it",
   "totals": {
-    "n_entities": 22884,
-    "n_with_mx": 22264,
-    "coverage_pct": 97.29
+    "n_entities": 22885,
+    "n_with_mx": 22263,
+    "coverage_pct": 97.28
   },
   "indices": {
-    "isd": 51.41,
-    "cloud_act_pct": 48.04,
-    "n_classified": 22264
+    "isd": 51.4,
+    "cloud_act_pct": 48.05,
+    "n_classified": 22263
   },
   "sovereignty": {
     "extra_eu": {
-      "count": 10698,
-      "pct": 46.7,
+      "count": 10699,
+      "pct": 46.8,
       "label": "Extra-UE (CLOUD Act)"
     },
     "eu_non_it": {
-      "count": 121,
+      "count": 120,
       "pct": 0.5,
       "label": "Europeo (non italiano)"
     },
     "it": {
-      "count": 11445,
+      "count": 11444,
       "pct": 50.0,
       "label": "Italiano"
     },
     "unknown": {
-      "count": 620,
+      "count": 622,
       "pct": 2.7,
       "label": "Sconosciuto"
     }
@@ -38,13 +38,13 @@
   "top_providers": [
     {
       "name": "Provider Italiano",
-      "count": 7472,
-      "pct": 32.7,
+      "count": 7471,
+      "pct": 32.6,
       "sovereignty": "it"
     },
     {
       "name": "Google Workspace",
-      "count": 6418,
+      "count": 6419,
       "pct": 28.0,
       "sovereignty": "extra_eu"
     },
@@ -68,13 +68,13 @@
     },
     {
       "name": "Sconosciuto",
-      "count": 620,
+      "count": 622,
       "pct": 2.7,
       "sovereignty": "unknown"
     },
     {
       "name": "Provider europeo",
-      "count": 121,
+      "count": 120,
       "pct": 0.5,
       "sovereignty": "eu_non_it"
     },
@@ -118,14 +118,14 @@
     },
     {
       "cluster": "Gestori di pubblici servizi",
-      "n_entities": 1132,
-      "usa_pct": 46.4,
+      "n_entities": 1133,
+      "usa_pct": 46.3,
       "dominant_provider": "Microsoft 365"
     },
     {
       "cluster": "Stazioni Appaltanti",
       "n_entities": 610,
-      "usa_pct": 49.2,
+      "usa_pct": 49.3,
       "dominant_provider": "Microsoft 365"
     },
     {
@@ -184,7 +184,7 @@
     }
   ],
   "confidence": {
-    "mean": 0.8504,
+    "mean": 0.8503,
     "high_pct": 91.6
   }
 }
