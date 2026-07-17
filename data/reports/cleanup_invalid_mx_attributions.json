@@ -1,5 +1,5 @@
 {
-  "n_purged": 504,
+  "n_purged": 505,
   "items": [
     {
       "id": "IT-C1-m_pi",
@@ -768,8 +768,8 @@
       "claimed_domain": "comune.pistoia.it",
       "reject_reason": "unrelated",
       "old_mx": "mx-01-eu-west-1.prod.hydra.sophos.com",
-      "old_provider": "independent",
-      "old_reason": "MX is sophos gateway; backend provider unknown"
+      "old_provider": "microsoft",
+      "old_reason": "MX is sophos gateway; MS365 tenant detected (Managed)"
     },
     {
       "id": "IT-C14-odafrc",
@@ -1954,6 +1954,17 @@
       "codice_ipa": "asbucdo",
       "seed_domain": "comunedobbiaco.bz.it",
       "claimed_domain": "comune.dobbiaco.bz.it",
+      "reject_reason": "unrelated",
+      "old_mx": "es1.gvcc.net",
+      "old_provider": "regional-public",
+      "old_reason": "MX record (es1.gvcc.net, es2.gvcc.net) matches Italian regional public ICT"
+    },
+    {
+      "id": "IT-L1-asbucry",
+      "name": "Amministrazione Separata Beni Usi Civici Oris",
+      "codice_ipa": "asbucry",
+      "seed_domain": "data.gvcc.net",
+      "claimed_domain": "gemeinde.laas.bz.it",
       "reject_reason": "unrelated",
       "old_mx": "es1.gvcc.net",
       "old_provider": "regional-public",

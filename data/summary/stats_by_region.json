@@ -93,9 +93,9 @@
   {
    "regione": "Piemonte",
    "n": 2272,
-   "n_classified": 2218,
-   "isd": 66.5,
-   "cloud_act_pct": 33.23,
+   "n_classified": 2219,
+   "isd": 66.52,
+   "cloud_act_pct": 33.21,
    "sovereignty": [
     {
      "bucket": "Italia — Cloud sovrano",
@@ -107,13 +107,13 @@
      "bucket": "Italia — Provider commerciali",
      "group": "ITA",
      "count": 620,
-     "pct": 27.95
+     "pct": 27.94
     },
     {
      "bucket": "Italia — Infrastruttura autonoma",
      "group": "ITA",
-     "count": 814,
-     "pct": 36.7
+     "count": 815,
+     "pct": 36.73
     },
     {
      "bucket": "Altri provider esteri",
@@ -125,13 +125,13 @@
      "bucket": "USA (CLOUD Act)",
      "group": "EST",
      "count": 737,
-     "pct": 33.23
+     "pct": 33.21
     },
     {
      "bucket": "Sconosciuto",
      "group": "ND",
-     "count": 54,
-     "pct": 2.38
+     "count": 53,
+     "pct": 2.33
     }
    ]
   },
@@ -183,9 +183,9 @@
   {
    "regione": "Abruzzo",
    "n": 706,
-   "n_classified": 668,
-   "isd": 65.27,
-   "cloud_act_pct": 33.53,
+   "n_classified": 669,
+   "isd": 65.32,
+   "cloud_act_pct": 33.48,
    "sovereignty": [
     {
      "bucket": "Italia — Cloud sovrano",
@@ -196,14 +196,14 @@
     {
      "bucket": "Italia — Provider commerciali",
      "group": "ITA",
-     "count": 387,
-     "pct": 57.93
+     "count": 388,
+     "pct": 58.0
     },
     {
      "bucket": "Italia — Infrastruttura autonoma",
      "group": "ITA",
      "count": 49,
-     "pct": 7.34
+     "pct": 7.32
     },
     {
      "bucket": "Altri provider esteri",
@@ -215,13 +215,13 @@
      "bucket": "USA (CLOUD Act)",
      "group": "EST",
      "count": 224,
-     "pct": 33.53
+     "pct": 33.48
     },
     {
      "bucket": "Sconosciuto",
      "group": "ND",
-     "count": 38,
-     "pct": 5.38
+     "count": 37,
+     "pct": 5.24
     }
    ]
   },
@@ -274,8 +274,8 @@
    "regione": "Sardegna",
    "n": 906,
    "n_classified": 876,
-   "isd": 62.1,
-   "cloud_act_pct": 37.1,
+   "isd": 62.21,
+   "cloud_act_pct": 36.99,
    "sovereignty": [
     {
      "bucket": "Italia — Cloud sovrano",
@@ -286,8 +286,8 @@
     {
      "bucket": "Italia — Provider commerciali",
      "group": "ITA",
-     "count": 451,
-     "pct": 51.48
+     "count": 452,
+     "pct": 51.6
     },
     {
      "bucket": "Italia — Infrastruttura autonoma",
@@ -304,8 +304,8 @@
     {
      "bucket": "USA (CLOUD Act)",
      "group": "EST",
-     "count": 325,
-     "pct": 37.1
+     "count": 324,
+     "pct": 36.99
     },
     {
      "bucket": "Sconosciuto",
@@ -499,8 +499,8 @@
    "regione": "Lazio",
    "n": 1806,
    "n_classified": 1739,
-   "isd": 49.4,
-   "cloud_act_pct": 50.09,
+   "isd": 49.45,
+   "cloud_act_pct": 50.03,
    "sovereignty": [
     {
      "bucket": "Italia — Cloud sovrano",
@@ -511,8 +511,8 @@
     {
      "bucket": "Italia — Provider commerciali",
      "group": "ITA",
-     "count": 762,
-     "pct": 43.82
+     "count": 763,
+     "pct": 43.88
     },
     {
      "bucket": "Italia — Infrastruttura autonoma",
@@ -529,8 +529,8 @@
     {
      "bucket": "USA (CLOUD Act)",
      "group": "EST",
-     "count": 871,
-     "pct": 50.09
+     "count": 870,
+     "pct": 50.03
     },
     {
      "bucket": "Sconosciuto",
@@ -640,8 +640,8 @@
     {
      "bucket": "Italia — Cloud sovrano",
      "group": "ITA",
-     "count": 99,
-     "pct": 8.52
+     "count": 100,
+     "pct": 8.61
     },
     {
      "bucket": "Italia — Provider commerciali",
@@ -652,8 +652,8 @@
     {
      "bucket": "Italia — Infrastruttura autonoma",
      "group": "ITA",
-     "count": 110,
-     "pct": 9.47
+     "count": 109,
+     "pct": 9.38
     },
     {
      "bucket": "Altri provider esteri",
@@ -679,8 +679,8 @@
    "regione": "Puglia",
    "n": 1216,
    "n_classified": 1185,
-   "isd": 44.64,
-   "cloud_act_pct": 54.6,
+   "isd": 44.56,
+   "cloud_act_pct": 54.68,
    "sovereignty": [
     {
      "bucket": "Italia — Cloud sovrano",
@@ -697,8 +697,8 @@
     {
      "bucket": "Italia — Infrastruttura autonoma",
      "group": "ITA",
-     "count": 146,
-     "pct": 12.32
+     "count": 145,
+     "pct": 12.24
     },
     {
      "bucket": "Altri provider esteri",
@@ -709,8 +709,8 @@
     {
      "bucket": "USA (CLOUD Act)",
      "group": "EST",
-     "count": 647,
-     "pct": 54.6
+     "count": 648,
+     "pct": 54.68
     },
     {
      "bucket": "Sconosciuto",
@@ -768,45 +768,45 @@
   {
    "regione": "Trentino-Alto Adige",
    "n": 889,
-   "n_classified": 840,
-   "isd": 40.48,
-   "cloud_act_pct": 56.07,
+   "n_classified": 839,
+   "isd": 40.41,
+   "cloud_act_pct": 56.14,
    "sovereignty": [
     {
      "bucket": "Italia — Cloud sovrano",
      "group": "ITA",
-     "count": 171,
-     "pct": 20.36
+     "count": 170,
+     "pct": 20.26
     },
     {
      "bucket": "Italia — Provider commerciali",
      "group": "ITA",
      "count": 119,
-     "pct": 14.17
+     "pct": 14.18
     },
     {
      "bucket": "Italia — Infrastruttura autonoma",
      "group": "ITA",
      "count": 50,
-     "pct": 5.95
+     "pct": 5.96
     },
     {
      "bucket": "Altri provider esteri",
      "group": "EST",
      "count": 29,
-     "pct": 3.45
+     "pct": 3.46
     },
     {
      "bucket": "USA (CLOUD Act)",
      "group": "EST",
      "count": 471,
-     "pct": 56.07
+     "pct": 56.14
     },
     {
      "bucket": "Sconosciuto",
      "group": "ND",
-     "count": 49,
-     "pct": 5.51
+     "count": 50,
+     "pct": 5.62
     }
    ]
   },
@@ -906,8 +906,8 @@
    "macroarea": "Isole",
    "n": 2680,
    "n_classified": 2564,
-   "isd": 58.93,
-   "cloud_act_pct": 40.6,
+   "isd": 58.97,
+   "cloud_act_pct": 40.56,
    "sovereignty": [
     {
      "bucket": "Italia — Cloud sovrano",
@@ -918,8 +918,8 @@
     {
      "bucket": "Italia — Provider commerciali",
      "group": "ITA",
-     "count": 1262,
-     "pct": 49.22
+     "count": 1263,
+     "pct": 49.26
     },
     {
      "bucket": "Italia — Infrastruttura autonoma",
@@ -936,8 +936,8 @@
     {
      "bucket": "USA (CLOUD Act)",
      "group": "EST",
-     "count": 1041,
-     "pct": 40.6
+     "count": 1040,
+     "pct": 40.56
     },
     {
      "bucket": "Sconosciuto",
@@ -950,9 +950,9 @@
   {
    "macroarea": "Sud",
    "n": 5370,
-   "n_classified": 5212,
-   "isd": 57.14,
-   "cloud_act_pct": 42.36,
+   "n_classified": 5213,
+   "isd": 57.13,
+   "cloud_act_pct": 42.37,
    "sovereignty": [
     {
      "bucket": "Italia — Cloud sovrano",
@@ -963,14 +963,14 @@
     {
      "bucket": "Italia — Provider commerciali",
      "group": "ITA",
-     "count": 2088,
-     "pct": 40.06
+     "count": 2089,
+     "pct": 40.07
     },
     {
      "bucket": "Italia — Infrastruttura autonoma",
      "group": "ITA",
-     "count": 425,
-     "pct": 8.15
+     "count": 424,
+     "pct": 8.13
     },
     {
      "bucket": "Altri provider esteri",
@@ -981,14 +981,14 @@
     {
      "bucket": "USA (CLOUD Act)",
      "group": "EST",
-     "count": 2208,
-     "pct": 42.36
+     "count": 2209,
+     "pct": 42.37
     },
     {
      "bucket": "Sconosciuto",
      "group": "ND",
-     "count": 158,
-     "pct": 2.94
+     "count": 157,
+     "pct": 2.92
     }
    ]
   },
@@ -996,26 +996,26 @@
    "macroarea": "Centro",
    "n": 4018,
    "n_classified": 3912,
-   "isd": 49.57,
-   "cloud_act_pct": 49.8,
+   "isd": 49.59,
+   "cloud_act_pct": 49.77,
    "sovereignty": [
     {
      "bucket": "Italia — Cloud sovrano",
      "group": "ITA",
-     "count": 148,
-     "pct": 3.78
+     "count": 149,
+     "pct": 3.81
     },
     {
      "bucket": "Italia — Provider commerciali",
      "group": "ITA",
-     "count": 1497,
-     "pct": 38.27
+     "count": 1498,
+     "pct": 38.29
     },
     {
      "bucket": "Italia — Infrastruttura autonoma",
      "group": "ITA",
-     "count": 294,
-     "pct": 7.52
+     "count": 293,
+     "pct": 7.49
     },
     {
      "bucket": "Altri provider esteri",
@@ -1026,8 +1026,8 @@
     {
      "bucket": "USA (CLOUD Act)",
      "group": "EST",
-     "count": 1948,
-     "pct": 49.8
+     "count": 1947,
+     "pct": 49.77
     },
     {
      "bucket": "Sconosciuto",
@@ -1047,8 +1047,8 @@
     {
      "bucket": "Italia — Cloud sovrano",
      "group": "ITA",
-     "count": 317,
-     "pct": 3.0
+     "count": 316,
+     "pct": 2.99
     },
     {
      "bucket": "Italia — Provider commerciali",
@@ -1059,8 +1059,8 @@
     {
      "bucket": "Italia — Infrastruttura autonoma",
      "group": "ITA",
-     "count": 2075,
-     "pct": 19.62
+     "count": 2076,
+     "pct": 19.63
     },
     {
      "bucket": "Altri provider esteri",
@@ -1083,5 +1083,5 @@
    ]
   }
  ],
- "generated": "2026-07-16T06:28:48Z"
+ "generated": "2026-07-17T06:26:05Z"
 }

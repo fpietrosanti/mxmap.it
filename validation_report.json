@@ -14005,7 +14005,7 @@
     "IT-C14-odapcn": {
       "name": "Ordine Degli Architetti, Pianificatori, Paesaggisti e Conservatori di Napoli e Provincia",
       "provider": "local-isp",
-      "domain": "napoli.archiworld.it",
+      "domain": "na.archiworld.it",
       "confidence": 95,
       "flags": [
         "multiple_mx",
@@ -22366,11 +22366,11 @@
     },
     "IT-C14-oring_go": {
       "name": "Ordine degli Ingegneri della Provincia di Gorizia",
-      "provider": "register-it",
-      "domain": "ordineingegneri.go.it",
-      "confidence": 90,
+      "provider": "local-isp",
+      "domain": "gorizia.ordingegneri.it",
+      "confidence": 88,
       "flags": [
-        "spf_strict",
+        "spf_softfail",
         "mx_spf_match",
         "provider_classified"
       ]
@@ -30794,13 +30794,13 @@
     },
     "IT-COM-003058": {
       "name": "Comune di Cureggio",
-      "provider": "unknown",
-      "domain": "comune.cureggio.no.it",
-      "confidence": 15,
+      "provider": "independent",
+      "domain": "cert.ruparpiemonte.it",
+      "confidence": 80,
       "flags": [
-        "no_mx",
-        "no_spf",
-        "provider_unknown"
+        "spf_strict",
+        "independent_mx_with_cloud_spf",
+        "provider_classified"
       ]
     },
     "IT-COM-003060": {
@@ -34837,7 +34837,7 @@
     "IT-COM-005042": {
       "name": "Comune di Cocconato",
       "provider": "aruba",
-      "domain": "cocconato.info",
+      "domain": "comune.cocconato.at.it",
       "confidence": 83,
       "flags": [
         "spf_softfail",
@@ -35713,7 +35713,7 @@
     "IT-COM-006002": {
       "name": "Comune di Albera Ligure",
       "provider": "independent",
-      "domain": "cert.ruparpiemonte.it",
+      "domain": "comune.alberaligure.al.it",
       "confidence": 80,
       "flags": [
         "spf_strict",
@@ -90386,13 +90386,12 @@
     },
     "IT-COM-066093": {
       "name": "Comune di Scanno",
-      "provider": "unknown",
+      "provider": "aruba",
       "domain": "comune.scanno.aq.it",
-      "confidence": 15,
+      "confidence": 68,
       "flags": [
-        "no_mx",
-        "no_spf",
-        "provider_unknown"
+        "spf_softfail",
+        "provider_classified"
       ]
     },
     "IT-COM-066094": {
@@ -102382,7 +102381,7 @@
     "IT-COM-082008": {
       "name": "Comune di Baucina",
       "provider": "aruba",
-      "domain": "egov.comune.baucina.pa.it",
+      "domain": "comune.baucina.pa.it",
       "confidence": 83,
       "flags": [
         "spf_softfail",
@@ -120991,14 +120990,13 @@
     },
     "IT-L1-asbucry": {
       "name": "Amministrazione Separata Beni Usi Civici Oris",
-      "provider": "regional-public",
-      "domain": "gvcc.net",
-      "confidence": 95,
+      "provider": "unknown",
+      "domain": "data.gvcc.net",
+      "confidence": 15,
       "flags": [
-        "multiple_mx",
-        "spf_strict",
-        "mx_spf_match",
-        "provider_classified"
+        "no_mx",
+        "no_spf",
+        "provider_unknown"
       ]
     },
     "IT-L1-asbucsc": {
@@ -122074,10 +122072,11 @@
     "IT-L1-azcv": {
       "name": "Azienda Calabria Verde",
       "provider": "aruba",
-      "domain": "pec.calabriaverde.eu",
-      "confidence": 50,
+      "domain": "calabriaverde.regione.calabria.it",
+      "confidence": 78,
       "flags": [
-        "no_spf",
+        "spf_softfail",
+        "independent_mx_with_cloud_spf",
         "provider_classified"
       ]
     },
@@ -131015,11 +131014,10 @@
     },
     "IT-L18-udcmc_": {
       "name": "Unione Dei Comuni Montani del Casentino",
-      "provider": "independent",
-      "domain": "postacert.toscana.it",
-      "confidence": 90,
+      "provider": "regional-public",
+      "domain": "uc.casentino.toscana.it",
+      "confidence": 85,
       "flags": [
-        "spf_strict",
         "mx_spf_match",
         "provider_classified"
       ]
@@ -138896,7 +138894,7 @@
     },
     "IT-L33-YK1L9R2T": {
       "name": "Istituto di Istruzione Secondaria Superiore Mons. A. Bello - G. Salvemini",
-      "provider": "independent",
+      "provider": "google",
       "domain": "iissbellosalvemini.edu.it",
       "confidence": 85,
       "flags": [
@@ -166478,13 +166476,11 @@
     },
     "IT-L33-istsc_capm04000n": {
       "name": "ISTITUTO MAGISTRALE - 'C.BAUDI DI VESME' IGLESIAS",
-      "provider": "istruzione-miur-tenant",
-      "domain": "liceobaudidivesme.gov.it",
-      "confidence": 80,
+      "provider": "local-isp",
+      "domain": "liceobaudidivesme.edu.it",
+      "confidence": 50,
       "flags": [
-        "spf_strict",
-        "mx_spf_match",
-        "multi_provider_spf:brevo+microsoft+regional-public",
+        "no_spf",
         "provider_classified"
       ]
     },
@@ -194787,13 +194783,13 @@
     },
     "IT-L33-istsc_oric81900n": {
       "name": "ISTITUTO COMPRENSIVO - I.C. MOGORO",
-      "provider": "istruzione-miur-tenant",
-      "domain": "icmogoro.it",
-      "confidence": 80,
+      "provider": "google",
+      "domain": "icmogoro.edu.it",
+      "confidence": 93,
       "flags": [
-        "spf_strict",
+        "multiple_mx",
+        "spf_softfail",
         "mx_spf_match",
-        "multi_provider_spf:brevo+microsoft+regional-public",
         "provider_classified"
       ]
     },
@@ -199235,13 +199231,11 @@
     },
     "IT-L33-istsc_pgpc07000g": {
       "name": "LICEO CLASSICO - ' PROPERZIO'",
-      "provider": "istruzione-miur-tenant",
+      "provider": "google",
       "domain": "liceoassisi.it",
-      "confidence": 80,
+      "confidence": 50,
       "flags": [
-        "spf_strict",
-        "mx_spf_match",
-        "multi_provider_spf:brevo+microsoft+regional-public",
+        "no_spf",
         "provider_classified"
       ]
     },
@@ -243469,7 +243463,7 @@
     "IT-L37-asaspa": {
       "name": "PLURES S.P.A.",
       "provider": "microsoft",
-      "domain": "plures.aliaserviziambientali.it",
+      "domain": "aliaserviziambientali.it",
       "confidence": 95,
       "flags": [
         "spf_strict",
@@ -260951,14 +260945,12 @@
     },
     "IT-SA-ADZ4T32G": {
       "name": "PORT MOBILITY S.p.A. con Socio Unico",
-      "provider": "microsoft",
-      "domain": "civitavecchia.portmobility.it",
-      "confidence": 95,
+      "provider": "aruba",
+      "domain": "pec.portmobility.it",
+      "confidence": 68,
       "flags": [
-        "spf_strict",
-        "mx_spf_match",
-        "provider_classified",
-        "autodiscover_confirms"
+        "spf_softfail",
+        "provider_classified"
       ]
     },
     "IT-SA-AKP3SCHD": {

@@ -1,22 +1,22 @@
 {
-  "generated_at": "2026-07-16T07:17:18Z",
+  "generated_at": "2026-07-17T07:04:37Z",
   "run_id": null,
   "license": "CC BY-SA 4.0",
   "source": "https://github.com/mxmap-it/mxmap.it",
   "totals": {
     "n_entities": 22885,
-    "n_with_mx": 22263,
-    "coverage_pct": 97.28
+    "n_with_mx": 22264,
+    "coverage_pct": 97.29
   },
   "indices": {
-    "isd": 51.4,
-    "cloud_act_pct": 48.05,
-    "n_classified": 22263
+    "isd": 51.41,
+    "cloud_act_pct": 48.04,
+    "n_classified": 22264
   },
   "sovereignty": {
     "extra_eu": {
-      "count": 10699,
-      "pct": 46.8,
+      "count": 10698,
+      "pct": 46.7,
       "label": "Extra-UE (CLOUD Act)"
     },
     "eu_non_it": {
@@ -25,12 +25,12 @@
       "label": "Europeo (non italiano)"
     },
     "it": {
-      "count": 11444,
+      "count": 11446,
       "pct": 50.0,
       "label": "Italiano"
     },
     "unknown": {
-      "count": 622,
+      "count": 621,
       "pct": 2.7,
       "label": "Sconosciuto"
     }
@@ -38,25 +38,25 @@
   "top_providers": [
     {
       "name": "Provider Italiano",
-      "count": 7471,
-      "pct": 32.6,
+      "count": 7474,
+      "pct": 32.7,
       "sovereignty": "it"
     },
     {
       "name": "Google Workspace",
-      "count": 6419,
-      "pct": 28.0,
+      "count": 6422,
+      "pct": 28.1,
       "sovereignty": "extra_eu"
     },
     {
       "name": "Microsoft 365",
-      "count": 4271,
-      "pct": 18.7,
+      "count": 4267,
+      "pct": 18.6,
       "sovereignty": "extra_eu"
     },
     {
       "name": "Infrastruttura autonoma",
-      "count": 3040,
+      "count": 3039,
       "pct": 13.3,
       "sovereignty": "it"
     },
@@ -68,7 +68,7 @@
     },
     {
       "name": "Sconosciuto",
-      "count": 622,
+      "count": 621,
       "pct": 2.7,
       "sovereignty": "unknown"
     },
@@ -125,7 +125,7 @@
     {
       "cluster": "Stazioni Appaltanti",
       "n_entities": 610,
-      "usa_pct": 49.3,
+      "usa_pct": 49.2,
       "dominant_provider": "Microsoft 365"
     },
     {

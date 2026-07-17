@@ -133205,7 +133205,9 @@
     "district": null,
     "domain": "consiglionotarilereggioemilia.it",
     "osm_relation_id": null,
-    "domain_fallbacks": [],
+    "domain_fallbacks": [
+      "notariato.it"
+    ],
     "ipa_codice_ipa": "cnre_035",
     "ipa_codice_categoria": "C14",
     "ipa_codice_istat": null,
@@ -154878,9 +154880,11 @@
     "country": "IT",
     "region": null,
     "district": null,
-    "domain": "ordineingegneri.go.it",
+    "domain": "gorizia.ordingegneri.it",
     "osm_relation_id": null,
-    "domain_fallbacks": [],
+    "domain_fallbacks": [
+      "ordineingegneri.go.it"
+    ],
     "ipa_codice_ipa": "oring_go",
     "ipa_codice_categoria": "C14",
     "ipa_codice_istat": null,
@@ -220596,7 +220600,7 @@
     "country": "IT",
     "region": null,
     "district": null,
-    "domain": "liceobaudidivesme.gov.it",
+    "domain": "liceobaudidivesme.edu.it",
     "osm_relation_id": null,
     "domain_fallbacks": [
       "istruzione.it"
@@ -263590,7 +263594,7 @@
     "country": "IT",
     "region": null,
     "district": null,
-    "domain": "icmogoro.it",
+    "domain": "icmogoro.edu.it",
     "osm_relation_id": null,
     "domain_fallbacks": [
       "istruzione.it"
