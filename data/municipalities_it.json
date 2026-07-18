@@ -171161,21 +171161,6 @@
     "domain_source": "sito_istituzionale"
   },
   {
-    "id": "IT-L18-ucaa",
-    "name": "Unione Comuni Alto Alcantara",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "unionecomunialtoalcantara.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [],
-    "ipa_codice_ipa": "ucaa",
-    "ipa_codice_categoria": "L18",
-    "ipa_codice_istat": "22315237",
-    "ipa_codice_comune_istat": "083053",
-    "domain_source": "sito_istituzionale"
-  },
-  {
     "id": "IT-L18-ucaba",
     "name": "Unione di Comuni Aro 2 Barletta Andria Trani",
     "country": "IT",
