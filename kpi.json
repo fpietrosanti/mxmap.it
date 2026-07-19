@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-07-18T06:59:13Z",
+  "generated_at": "2026-07-19T07:18:00Z",
   "run_id": null,
   "license": "CC BY-SA 4.0",
   "source": "https://github.com/mxmap-it/mxmap.it",
   "totals": {
     "n_entities": 22884,
-    "n_with_mx": 22260,
-    "coverage_pct": 97.27
+    "n_with_mx": 22263,
+    "coverage_pct": 97.29
   },
   "indices": {
-    "isd": 51.38,
-    "cloud_act_pct": 48.07,
-    "n_classified": 22260
+    "isd": 51.4,
+    "cloud_act_pct": 48.05,
+    "n_classified": 22263
   },
   "sovereignty": {
     "extra_eu": {
-      "count": 10702,
+      "count": 10700,
       "pct": 46.8,
       "label": "Extra-UE (CLOUD Act)"
     },
@@ -25,12 +25,12 @@
       "label": "Europeo (non italiano)"
     },
     "it": {
-      "count": 11438,
+      "count": 11443,
       "pct": 50.0,
       "label": "Italiano"
     },
     "unknown": {
-      "count": 624,
+      "count": 621,
       "pct": 2.7,
       "label": "Sconosciuto"
     }
@@ -38,19 +38,19 @@
   "top_providers": [
     {
       "name": "Provider Italiano",
-      "count": 7467,
-      "pct": 32.6,
+      "count": 7472,
+      "pct": 32.7,
       "sovereignty": "it"
     },
     {
       "name": "Google Workspace",
-      "count": 6420,
+      "count": 6421,
       "pct": 28.1,
       "sovereignty": "extra_eu"
     },
     {
       "name": "Microsoft 365",
-      "count": 4273,
+      "count": 4270,
       "pct": 18.7,
       "sovereignty": "extra_eu"
     },
@@ -68,7 +68,7 @@
     },
     {
       "name": "Sconosciuto",
-      "count": 624,
+      "count": 621,
       "pct": 2.7,
       "sovereignty": "unknown"
     },
@@ -113,7 +113,7 @@
     {
       "cluster": "Consorzi e Unioni di enti locali",
       "n_entities": 1425,
-      "usa_pct": 24.5,
+      "usa_pct": 24.4,
       "dominant_provider": "Provider Italiano"
     },
     {
@@ -125,7 +125,7 @@
     {
       "cluster": "Stazioni Appaltanti",
       "n_entities": 610,
-      "usa_pct": 49.5,
+      "usa_pct": 49.3,
       "dominant_provider": "Microsoft 365"
     },
     {
@@ -184,7 +184,7 @@
     }
   ],
   "confidence": {
-    "mean": 0.8502,
+    "mean": 0.8503,
     "high_pct": 91.6
   }
 }

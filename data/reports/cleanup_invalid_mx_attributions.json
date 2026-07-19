@@ -1,5 +1,5 @@
 {
-  "n_purged": 506,
+  "n_purged": 503,
   "items": [
     {
       "id": "IT-C1-m_pi",
@@ -44,17 +44,6 @@
       "old_mx": "comune-catanzaro-it.mail.protection.outlook.com",
       "old_provider": "microsoft",
       "old_reason": "MX record (comune-catanzaro-it.mail.protection.outlook.com) matches Microsoft"
-    },
-    {
-      "id": "IT-C14-GB6QL6FQ",
-      "name": "Ordine dei Dottori Agronomi e dei Dottori Forestali della Provincia di Pescara",
-      "codice_ipa": "gb6ql6fq",
-      "seed_domain": "ordinepescara.conaf.it",
-      "claimed_domain": "comune.pescara.it",
-      "reject_reason": "unrelated",
-      "old_mx": "mx1.hc1174-38.eu.iphmx.com",
-      "old_provider": "microsoft",
-      "old_reason": "MX is cisco-ironport gateway; MS365 tenant detected (Managed)"
     },
     {
       "id": "IT-C14-M1GDRYTZ",
@@ -739,17 +728,6 @@
       "old_reason": "MX is sophos gateway; MS365 tenant detected (Managed)"
     },
     {
-      "id": "IT-C14-odafbr",
-      "name": "Ordine Dei Dottori Agronomi e Dei Dottori Forestali della Provincia di Brindisi",
-      "codice_ipa": "odafbr",
-      "seed_domain": "ordinebrindisi.conaf.it",
-      "claimed_domain": "comune.ostuni.br.it",
-      "reject_reason": "unrelated",
-      "old_mx": "mx.zimbraopen.it",
-      "old_provider": "independent",
-      "old_reason": "MX is zimbraopen gateway; backend provider unknown"
-    },
-    {
       "id": "IT-C14-odafna",
       "name": "Federazione Regionale Degli Ordini Dei Dottori Agronomi e Dei Dottori Forestali della Campania",
       "codice_ipa": "odafna",
@@ -957,17 +935,6 @@
       "old_mx": "comune-vicenza.esvacloud.com",
       "old_provider": "microsoft",
       "old_reason": "MX is libraesva gateway; TXT verification proves microsoft tenant"
-    },
-    {
-      "id": "IT-C14-odft",
-      "name": "Ordine Dei Dottori Agronomi e Dei Dottori Forestali della Provincia di Torino",
-      "codice_ipa": "odft",
-      "seed_domain": "ordinetorino.conaf.it",
-      "claimed_domain": "comune.torino.it",
-      "reject_reason": "unrelated",
-      "old_mx": "comune-torino-it.mail.protection.outlook.com",
-      "old_provider": "microsoft",
-      "old_reason": "MX record (comune-torino-it.mail.protection.outlook.com) matches Microsoft"
     },
     {
       "id": "IT-C14-odmcd",
@@ -2459,11 +2426,11 @@
       "name": "Comunita' Montana Argentina Armea",
       "codice_ipa": "cmaa",
       "seed_domain": "liquidazioniccmm.liguria.it",
-      "claimed_domain": "taggia.it",
+      "claimed_domain": "comune.taggia.im.it",
       "reject_reason": "unrelated",
-      "old_mx": "mx.taggia.it",
-      "old_provider": "aruba",
-      "old_reason": "MX (mx.taggia.it) on AS31034 (Aruba.it (IT)) -> aruba (ASN-based override)"
+      "old_mx": "comune-taggia-im-it.mail.protection.outlook.com",
+      "old_provider": "microsoft",
+      "old_reason": "MX record (comune-taggia-im-it.mail.protection.outlook.com) matches Microsoft"
     },
     {
       "id": "IT-L12-CMAMSZ",
