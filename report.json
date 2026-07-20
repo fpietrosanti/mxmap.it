@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-19T07:18:01Z",
+  "generated_at": "2026-07-20T07:49:09Z",
   "run_id": null,
   "edition": "luglio 2026",
   "title": "Stato della sovranità digitale della posta elettronica della PA italiana",
@@ -86,7 +86,7 @@
       "top_providers": [
         {
           "name": "Provider Italiano",
-          "count": 7472,
+          "count": 7473,
           "pct": 32.7,
           "sovereignty": "it"
         },
@@ -104,7 +104,7 @@
         },
         {
           "name": "Infrastruttura autonoma",
-          "count": 3037,
+          "count": 3036,
           "pct": 13.3,
           "sovereignty": "it"
         },
@@ -163,7 +163,7 @@
       ],
       "market": {
         "top3_pct": 67.3,
-        "hhi": 1880.3
+        "hhi": 1880.4
       }
     },
     {
@@ -186,8 +186,8 @@
         {
           "cluster": "Ordini professionali, Camere di commercio, ACI",
           "n_entities": 2015,
-          "usa_pct": 23.73,
-          "isd": 73.76
+          "usa_pct": 23.72,
+          "isd": 73.77
         },
         {
           "cluster": "Consorzi, Unioni di Comuni, Comunità montane",
@@ -302,8 +302,8 @@
         {
           "regione": "Piemonte",
           "n": 2272,
-          "isd": 66.46,
-          "usa_pct": 33.27
+          "isd": 66.44,
+          "usa_pct": 33.29
         },
         {
           "regione": "Calabria",
@@ -326,8 +326,8 @@
         {
           "regione": "Sardegna",
           "n": 906,
-          "isd": 62.21,
-          "usa_pct": 36.99
+          "isd": 62.26,
+          "usa_pct": 36.94
         },
         {
           "regione": "Sicilia",
@@ -412,8 +412,8 @@
         {
           "macroarea": "Isole",
           "n": 2679,
-          "isd": 58.97,
-          "usa_pct": 40.56
+          "isd": 58.99,
+          "usa_pct": 40.55
         },
         {
           "macroarea": "Sud",
@@ -464,7 +464,7 @@
       "title": "Metodologia, limiti e dati aperti",
       "kind": "methodology",
       "coverage_pct": 97.29,
-      "mean_confidence": 0.8503,
+      "mean_confidence": 0.8504,
       "limits": "IndicePA non è una base dati pulita da cui inferire in modo immediato e senza rielaborazioni i domini email (non-PEC) degli enti: la bonifica continua è una dipendenza funzionale core, tracciata in mxmap.it#2.",
       "license": "CC BY-SA 4.0"
     }

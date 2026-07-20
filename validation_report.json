@@ -14005,7 +14005,7 @@
     "IT-C14-odapcn": {
       "name": "Ordine Degli Architetti, Pianificatori, Paesaggisti e Conservatori di Napoli e Provincia",
       "provider": "local-isp",
-      "domain": "napoli.archiworld.it",
+      "domain": "na.archiworld.it",
       "confidence": 95,
       "flags": [
         "multiple_mx",
@@ -15853,13 +15853,14 @@
     },
     "IT-C14-oddafpo": {
       "name": "Ordine Dei Dottori Agronomi e Dei Dottori Forestali della Provincia di Oristano",
-      "provider": "unknown",
+      "provider": "local-isp",
       "domain": "ordineoristano.conaf.it",
-      "confidence": 15,
+      "confidence": 85,
       "flags": [
-        "no_mx",
-        "no_spf",
-        "provider_unknown"
+        "multiple_mx",
+        "spf_strict",
+        "independent_mx_with_cloud_spf",
+        "provider_classified"
       ]
     },
     "IT-C14-oddafvi": {
@@ -28389,14 +28390,13 @@
     },
     "IT-COM-001223": {
       "name": "Comune di Romano Canavese",
-      "provider": "independent",
+      "provider": "unknown",
       "domain": "comune.romanocanavese.to.it",
-      "confidence": 93,
+      "confidence": 15,
       "flags": [
-        "multiple_mx",
-        "spf_softfail",
-        "mx_spf_match",
-        "provider_classified"
+        "no_mx",
+        "no_spf",
+        "provider_unknown"
       ]
     },
     "IT-COM-001224": {
@@ -102382,7 +102382,7 @@
     "IT-COM-082008": {
       "name": "Comune di Baucina",
       "provider": "aruba",
-      "domain": "egov.comune.baucina.pa.it",
+      "domain": "comune.baucina.pa.it",
       "confidence": 83,
       "flags": [
         "spf_softfail",
@@ -122074,11 +122074,10 @@
     "IT-L1-azcv": {
       "name": "Azienda Calabria Verde",
       "provider": "aruba",
-      "domain": "calabriaverde.regione.calabria.it",
-      "confidence": 78,
+      "domain": "pec.calabriaverde.eu",
+      "confidence": 50,
       "flags": [
-        "spf_softfail",
-        "independent_mx_with_cloud_spf",
+        "no_spf",
         "provider_classified"
       ]
     },
@@ -200123,13 +200122,13 @@
     },
     "IT-L33-istsc_pnic82800x": {
       "name": "ISTITUTO COMPRENSIVO - IC MANIAGO",
-      "provider": "google",
-      "domain": "icmaniago.it",
-      "confidence": 53,
+      "provider": "istruzione-miur-tenant",
+      "domain": "icmaniago.edu.it",
+      "confidence": 80,
       "flags": [
-        "multiple_mx",
-        "spf_softfail",
-        "mx_spf_mismatch",
+        "spf_strict",
+        "mx_spf_match",
+        "multi_provider_spf:brevo+microsoft+regional-public",
         "provider_classified"
       ]
     },
@@ -210811,13 +210810,13 @@
     },
     "IT-L33-istsc_rmtf15000d": {
       "name": "ISTITUTO TECNICO INDUSTRIALE - STANISLAO CANNIZZARO COLLEFERRO",
-      "provider": "istruzione-miur-tenant",
-      "domain": "itiscannizzarocolleferro.edu.it",
-      "confidence": 80,
+      "provider": "google",
+      "domain": "itiscannizzarocolleferro.it",
+      "confidence": 93,
       "flags": [
-        "spf_strict",
+        "multiple_mx",
+        "spf_softfail",
         "mx_spf_match",
-        "multi_provider_spf:brevo+microsoft+regional-public",
         "provider_classified"
       ]
     },
@@ -237068,7 +237067,7 @@
     "IT-L37-219TJPHO": {
       "name": "Croce Rossa Italiana - Comitato di Latina - Organizzazione di Volontariato",
       "provider": "google",
-      "domain": "latina.cri.it",
+      "domain": "cri.it",
       "confidence": 93,
       "flags": [
         "multiple_mx",
@@ -239154,7 +239153,7 @@
     "IT-L37-F21ME6OU": {
       "name": "FLEGREA LAVORO SPA",
       "provider": "local-isp",
-      "domain": "flegrealavoro.portaletrasparenza.net",
+      "domain": "flegrealavoro.com",
       "confidence": 88,
       "flags": [
         "spf_softfail",
@@ -242332,7 +242331,7 @@
     "IT-L37-ZV7OSJOH": {
       "name": "UNILAV SCPA",
       "provider": "aruba",
-      "domain": "unilavspa.portaletrasparenza.net",
+      "domain": "unilavspa.it",
       "confidence": 83,
       "flags": [
         "spf_softfail",
@@ -243454,7 +243453,7 @@
     "IT-L37-asaspa": {
       "name": "PLURES S.P.A.",
       "provider": "microsoft",
-      "domain": "plures.aliaserviziambientali.it",
+      "domain": "aliaserviziambientali.it",
       "confidence": 95,
       "flags": [
         "spf_strict",

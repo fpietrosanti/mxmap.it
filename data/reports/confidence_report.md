@@ -9,8 +9,8 @@ Livelli di confidenza della classificazione email, analitici e aggregati. Metodo
 | fascia | enti | % |
 |---|---:|---:|
 | 0.90-1.00 (molto alta) | 17345 | 75.8% |
-| 0.80-0.89 (alta) | 3610 | 15.8% |
-| 0.60-0.79 (media) | 1239 | 5.4% |
+| 0.80-0.89 (alta) | 3611 | 15.8% |
+| 0.60-0.79 (media) | 1238 | 5.4% |
 | 0.01-0.59 (bassa) | 69 | 0.3% |
 | 0.00 (nulla / unknown) | 621 | 2.7% |
 
@@ -21,8 +21,8 @@ Livelli di confidenza della classificazione email, analitici e aggregati. Metodo
 | google | 6421 | 0.879 | 0.80 | 0.92 |
 | aruba | 5162 | 0.896 | 0.80 | 0.92 |
 | microsoft | 3400 | 0.928 | 0.80 | 0.96 |
-| independent | 3037 | 0.720 | 0.50 | 0.80 |
-| local-isp | 1566 | 0.892 | 0.80 | 0.92 |
+| independent | 3036 | 0.720 | 0.50 | 0.80 |
+| local-isp | 1567 | 0.892 | 0.80 | 0.92 |
 | regional-public | 934 | 0.894 | 0.80 | 0.90 |
 | istruzione-miur-tenant | 870 | 0.960 | 0.96 | 0.96 |
 | register-it | 666 | 0.890 | 0.80 | 0.90 |
@@ -42,9 +42,9 @@ Livelli di confidenza della classificazione email, analitici e aggregati. Metodo
 | regola | enti | % |
 |---|---:|---:|
 | `mx_spf` | 17345 | 75.8% |
-| `mx_only` | 1881 | 8.2% |
+| `mx_only` | 1882 | 8.2% |
 | `dom_mx_spf` | 1729 | 7.6% |
-| `frgn_mx_spf` | 983 | 4.3% |
+| `frgn_mx_spf` | 982 | 4.3% |
 | `no_mx` | 621 | 2.7% |
 | `dom_mx_only` | 256 | 1.1% |
 | `frgn_mx_only` | 69 | 0.3% |

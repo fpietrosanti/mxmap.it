@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-19T07:18:00Z",
+  "generated_at": "2026-07-20T07:49:08Z",
   "run_id": null,
   "license": "CC BY-SA 4.0",
   "source": "https://github.com/mxmap-it/mxmap.it",
@@ -38,7 +38,7 @@
   "top_providers": [
     {
       "name": "Provider Italiano",
-      "count": 7472,
+      "count": 7473,
       "pct": 32.7,
       "sovereignty": "it"
     },
@@ -56,7 +56,7 @@
     },
     {
       "name": "Infrastruttura autonoma",
-      "count": 3037,
+      "count": 3036,
       "pct": 13.3,
       "sovereignty": "it"
     },
@@ -184,7 +184,7 @@
     }
   ],
   "confidence": {
-    "mean": 0.8503,
+    "mean": 0.8504,
     "high_pct": 91.6
   }
 }

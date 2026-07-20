@@ -2,7 +2,7 @@
  "n_entities": 22884,
  "n_classified": 22263,
  "coverage_pct": 97.29,
- "mean_confidence": 0.8503,
+ "mean_confidence": 0.8504,
  "isd": 51.4,
  "headline": {
   "isd": 51.4,
@@ -20,13 +20,13 @@
   {
    "bucket": "Italia — Provider commerciali",
    "group": "ITA",
-   "count": 7472,
-   "pct": 33.56
+   "count": 7473,
+   "pct": 33.57
   },
   {
    "bucket": "Italia — Infrastruttura autonoma",
    "group": "ITA",
-   "count": 3037,
+   "count": 3036,
    "pct": 13.64
   },
   {
@@ -92,14 +92,14 @@
   {
    "provider": "independent",
    "display": "Infrastruttura autonoma",
-   "count": 3037,
+   "count": 3036,
    "pct": 13.64
   },
   {
    "provider": "local-isp",
    "display": "Provider Italiano",
-   "count": 1566,
-   "pct": 7.03
+   "count": 1567,
+   "pct": 7.04
   },
   {
    "provider": "regional-public",
@@ -182,18 +182,18 @@
  ],
  "market": {
   "top3_pct": 67.3,
-  "hhi": 1880.3
+  "hhi": 1880.4
  },
  "confidence_bands": [
   {
    "band": "alta",
-   "count": 20955,
+   "count": 20956,
    "pct": 91.57
   },
   {
    "band": "media",
-   "count": 1308,
-   "pct": 5.72
+   "count": 1307,
+   "pct": 5.71
   },
   {
    "band": "bassa",
@@ -203,10 +203,10 @@
  ],
  "signals": {
   "mx_pct": 97.29,
-  "spf_pct": 87.65,
+  "spf_pct": 87.64,
   "dkim_pct": 10.44,
   "gateway_pct": 15.18
  },
- "generated": "2026-07-19T06:38:59Z",
+ "generated": "2026-07-20T06:58:28Z",
  "country": "IT"
 }
