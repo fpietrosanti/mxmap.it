@@ -124964,6 +124964,21 @@
     "domain_source": "sito_istituzionale"
   },
   {
+    "id": "IT-COM-013256",
+    "name": "Comune di Uggiate con Ronago",
+    "country": "IT",
+    "region": "Lombardia",
+    "district": "Como",
+    "domain": "comune.uggiateconronago.co.it",
+    "osm_relation_id": 46227,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "XURJPVZN",
+    "ipa_codice_categoria": "L6",
+    "ipa_codice_istat": "34680790",
+    "ipa_codice_comune_istat": "013256",
+    "domain_source": "sito_istituzionale"
+  },
+  {
     "id": "IT-C1-avvst",
     "name": "Avvocatura dello Stato",
     "country": "IT",
@@ -215683,7 +215698,7 @@
     "country": "IT",
     "region": null,
     "district": null,
-    "domain": "iccspt.gov.it",
+    "domain": "iccspt.edu.it",
     "osm_relation_id": null,
     "domain_fallbacks": [
       "istruzione.it"
@@ -332132,6 +332147,21 @@
     "ipa_codice_categoria": "L37",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "027029",
+    "domain_source": "sito_istituzionale"
+  },
+  {
+    "id": "IT-L37-ASYRO3N9",
+    "name": "FIORENZUOLA PATRIMONIO SRL",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "fiorenzuolapatrimonio.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "ASYRO3N9",
+    "ipa_codice_categoria": "L37",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "033021",
     "domain_source": "sito_istituzionale"
   },
   {

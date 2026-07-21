@@ -204,11 +204,11 @@
       "name": "Collegio Dei Periti Agrari e Dei Periti Agrari Laureati Delle Province di Ascoli Piceno - Pescara e Teramo",
       "codice_ipa": "cdpappt",
       "seed_domain": "peritiagrariascolipescarateramo.it",
-      "claimed_domain": "comune.teramo.it",
+      "claimed_domain": "abruzzoturismo.it",
       "reject_reason": "unrelated",
-      "old_mx": "mx-01-eu-west-1.prod.hydra.sophos.com",
+      "old_mx": "abruzzoturismo-it.mail.protection.outlook.com",
       "old_provider": "microsoft",
-      "old_reason": "MX is sophos gateway; MS365 tenant detected (Managed)"
+      "old_reason": "MX record (abruzzoturismo-it.mail.protection.outlook.com) matches Microsoft"
     },
     {
       "id": "IT-C14-cdpatr",
@@ -479,11 +479,11 @@
       "name": "Consiglio Provinciale Consulenti del Lavoro di Teramo",
       "codice_ipa": "cpclt",
       "seed_domain": "consulentidellavoroteramo.com",
-      "claimed_domain": "comune.teramo.it",
+      "claimed_domain": "abruzzoturismo.it",
       "reject_reason": "unrelated",
-      "old_mx": "mx-01-eu-west-1.prod.hydra.sophos.com",
+      "old_mx": "abruzzoturismo-it.mail.protection.outlook.com",
       "old_provider": "microsoft",
-      "old_reason": "MX is sophos gateway; MS365 tenant detected (Managed)"
+      "old_reason": "MX record (abruzzoturismo-it.mail.protection.outlook.com) matches Microsoft"
     },
     {
       "id": "IT-C14-cpdad_9",
@@ -512,11 +512,11 @@
       "name": "Collegio Provinciale Delle Ostetriche della Provincia di Teramo",
       "codice_ipa": "cpdopte",
       "seed_domain": "collegioostetricheteramo.it",
-      "claimed_domain": "comune.teramo.it",
+      "claimed_domain": "abruzzoturismo.it",
       "reject_reason": "unrelated",
-      "old_mx": "mx-01-eu-west-1.prod.hydra.sophos.com",
+      "old_mx": "abruzzoturismo-it.mail.protection.outlook.com",
       "old_provider": "microsoft",
-      "old_reason": "MX is sophos gateway; MS365 tenant detected (Managed)"
+      "old_reason": "MX record (abruzzoturismo-it.mail.protection.outlook.com) matches Microsoft"
     },
     {
       "id": "IT-C14-cpdpa_cb",
@@ -4109,11 +4109,11 @@
       "name": "Unione Regionale Delle Camere di Commercio, Industria, Artigianato e Agricoltura dell'Abruzzo",
       "codice_ipa": "urdcca",
       "seed_domain": "unioncamereabruzzo.it",
-      "claimed_domain": "comune.teramo.it",
+      "claimed_domain": "abruzzoturismo.it",
       "reject_reason": "unrelated",
-      "old_mx": "mx-01-eu-west-1.prod.hydra.sophos.com",
+      "old_mx": "abruzzoturismo-it.mail.protection.outlook.com",
       "old_provider": "microsoft",
-      "old_reason": "MX is sophos gateway; MS365 tenant detected (Managed)"
+      "old_reason": "MX record (abruzzoturismo-it.mail.protection.outlook.com) matches Microsoft"
     },
     {
       "id": "IT-L36-VTH34HOV",

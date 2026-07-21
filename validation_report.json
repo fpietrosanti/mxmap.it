@@ -1,5 +1,5 @@
 {
-  "total": 22884,
+  "total": 22886,
   "average_score": 80.7,
   "high_confidence_pct": 73.7,
   "quality_passed": false,
@@ -14005,7 +14005,7 @@
     "IT-C14-odapcn": {
       "name": "Ordine Degli Architetti, Pianificatori, Paesaggisti e Conservatori di Napoli e Provincia",
       "provider": "local-isp",
-      "domain": "na.archiworld.it",
+      "domain": "napoli.archiworld.it",
       "confidence": 95,
       "flags": [
         "multiple_mx",
@@ -35713,7 +35713,7 @@
     "IT-COM-006002": {
       "name": "Comune di Albera Ligure",
       "provider": "independent",
-      "domain": "comune.alberaligure.al.it",
+      "domain": "cert.ruparpiemonte.it",
       "confidence": 80,
       "flags": [
         "spf_strict",
@@ -44883,6 +44883,18 @@
         "independent_mx_with_cloud_spf",
         "provider_classified",
         "provider_via_gateway_spf",
+        "autodiscover_confirms"
+      ]
+    },
+    "IT-COM-013256": {
+      "name": "Comune di Uggiate con Ronago",
+      "provider": "aruba",
+      "domain": "comune.uggiateconronago.co.it",
+      "confidence": 83,
+      "flags": [
+        "spf_softfail",
+        "independent_mx_with_cloud_spf",
+        "provider_classified",
         "autodiscover_confirms"
       ]
     },
@@ -102382,7 +102394,7 @@
     "IT-COM-082008": {
       "name": "Comune di Baucina",
       "provider": "aruba",
-      "domain": "comune.baucina.pa.it",
+      "domain": "egov.comune.baucina.pa.it",
       "confidence": 83,
       "flags": [
         "spf_softfail",
@@ -117945,7 +117957,7 @@
     "IT-COM-119013": {
       "name": "Comune di Nuxis",
       "provider": "microsoft",
-      "domain": "comune.nuxis.su.it",
+      "domain": "comune.nuxis.ci.it",
       "confidence": 95,
       "flags": [
         "spf_strict",
@@ -122074,10 +122086,11 @@
     "IT-L1-azcv": {
       "name": "Azienda Calabria Verde",
       "provider": "aruba",
-      "domain": "pec.calabriaverde.eu",
-      "confidence": 50,
+      "domain": "calabriaverde.regione.calabria.it",
+      "confidence": 78,
       "flags": [
-        "no_spf",
+        "spf_softfail",
+        "independent_mx_with_cloud_spf",
         "provider_classified"
       ]
     },
@@ -131004,10 +131017,11 @@
     },
     "IT-L18-udcmc_": {
       "name": "Unione Dei Comuni Montani del Casentino",
-      "provider": "regional-public",
-      "domain": "uc.casentino.toscana.it",
-      "confidence": 85,
+      "provider": "independent",
+      "domain": "postacert.toscana.it",
+      "confidence": 90,
       "flags": [
+        "spf_strict",
         "mx_spf_match",
         "provider_classified"
       ]
@@ -137881,11 +137895,13 @@
     },
     "IT-L33-OOQELDXU": {
       "name": "ISTITUTO COMPRENSIVO STATALE \"E. DE AMICIS\"",
-      "provider": "independent",
+      "provider": "istruzione-miur-tenant",
       "domain": "deamicisfg.edu.it",
-      "confidence": 50,
+      "confidence": 80,
       "flags": [
-        "no_spf",
+        "spf_strict",
+        "mx_spf_match",
+        "multi_provider_spf:brevo+microsoft+regional-public",
         "provider_classified"
       ]
     },
@@ -163243,7 +163259,7 @@
     "IT-L33-istsc_boic86500d": {
       "name": "ISTITUTO COMPRENSIVO - I.C. DI CASTEL SAN PIETRO TERME",
       "provider": "istruzione-miur-tenant",
-      "domain": "iccspt.gov.it",
+      "domain": "iccspt.edu.it",
       "confidence": 80,
       "flags": [
         "spf_strict",
@@ -200122,13 +200138,13 @@
     },
     "IT-L33-istsc_pnic82800x": {
       "name": "ISTITUTO COMPRENSIVO - IC MANIAGO",
-      "provider": "istruzione-miur-tenant",
-      "domain": "icmaniago.edu.it",
-      "confidence": 80,
+      "provider": "google",
+      "domain": "icmaniago.it",
+      "confidence": 53,
       "flags": [
-        "spf_strict",
-        "mx_spf_match",
-        "multi_provider_spf:brevo+microsoft+regional-public",
+        "multiple_mx",
+        "spf_softfail",
+        "mx_spf_mismatch",
         "provider_classified"
       ]
     },
@@ -227002,13 +227018,13 @@
     },
     "IT-L33-itetbg": {
       "name": "Istituto Tecnico Economico Tecnologico Bramante-Genga",
-      "provider": "istruzione-miur-tenant",
-      "domain": "itbramantegenga.edu.it",
-      "confidence": 80,
+      "provider": "google",
+      "domain": "itbramantegenga.it",
+      "confidence": 93,
       "flags": [
-        "spf_strict",
+        "multiple_mx",
+        "spf_softfail",
         "mx_spf_match",
-        "multi_provider_spf:brevo+microsoft+regional-public",
         "provider_classified"
       ]
     },
@@ -237067,7 +237083,7 @@
     "IT-L37-219TJPHO": {
       "name": "Croce Rossa Italiana - Comitato di Latina - Organizzazione di Volontariato",
       "provider": "google",
-      "domain": "cri.it",
+      "domain": "latina.cri.it",
       "confidence": 93,
       "flags": [
         "multiple_mx",
@@ -238444,6 +238460,18 @@
       "flags": [
         "spf_strict",
         "mx_spf_match",
+        "provider_classified",
+        "autodiscover_confirms"
+      ]
+    },
+    "IT-L37-ASYRO3N9": {
+      "name": "FIORENZUOLA PATRIMONIO SRL",
+      "provider": "aruba",
+      "domain": "fiorenzuolapatrimonio.it",
+      "confidence": 83,
+      "flags": [
+        "spf_softfail",
+        "independent_mx_with_cloud_spf",
         "provider_classified",
         "autodiscover_confirms"
       ]
