@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-07-21T07:32:56Z",
+  "generated_at": "2026-07-22T07:31:06Z",
   "run_id": null,
   "license": "CC BY-SA 4.0",
   "source": "https://github.com/mxmap-it/mxmap.it",
   "totals": {
-    "n_entities": 22886,
-    "n_with_mx": 22265,
-    "coverage_pct": 97.29
+    "n_entities": 22887,
+    "n_with_mx": 22268,
+    "coverage_pct": 97.3
   },
   "indices": {
-    "isd": 51.4,
+    "isd": 51.41,
     "cloud_act_pct": 48.05,
-    "n_classified": 22265
+    "n_classified": 22268
   },
   "sovereignty": {
     "extra_eu": {
@@ -25,12 +25,12 @@
       "label": "Europeo (non italiano)"
     },
     "it": {
-      "count": 11444,
+      "count": 11447,
       "pct": 50.0,
       "label": "Italiano"
     },
     "unknown": {
-      "count": 621,
+      "count": 619,
       "pct": 2.7,
       "label": "Sconosciuto"
     }
@@ -38,7 +38,7 @@
   "top_providers": [
     {
       "name": "Provider Italiano",
-      "count": 7475,
+      "count": 7477,
       "pct": 32.7,
       "sovereignty": "it"
     },
@@ -50,7 +50,7 @@
     },
     {
       "name": "Microsoft 365",
-      "count": 4269,
+      "count": 4270,
       "pct": 18.7,
       "sovereignty": "extra_eu"
     },
@@ -62,13 +62,13 @@
     },
     {
       "name": "Cloud Italiano",
-      "count": 933,
+      "count": 934,
       "pct": 4.1,
       "sovereignty": "it"
     },
     {
       "name": "Sconosciuto",
-      "count": 621,
+      "count": 619,
       "pct": 2.7,
       "sovereignty": "unknown"
     },
@@ -80,7 +80,7 @@
     },
     {
       "name": "AWS",
-      "count": 7,
+      "count": 6,
       "pct": 0.0,
       "sovereignty": "extra_eu"
     },
@@ -118,14 +118,14 @@
     },
     {
       "cluster": "Gestori di pubblici servizi",
-      "n_entities": 1134,
+      "n_entities": 1135,
       "usa_pct": 46.3,
       "dominant_provider": "Microsoft 365"
     },
     {
       "cluster": "Stazioni Appaltanti",
       "n_entities": 610,
-      "usa_pct": 49.3,
+      "usa_pct": 49.2,
       "dominant_provider": "Microsoft 365"
     },
     {
@@ -149,7 +149,7 @@
     {
       "cluster": "Previdenza e Assistenza Sociale",
       "n_entities": 143,
-      "usa_pct": 48.3,
+      "usa_pct": 47.6,
       "dominant_provider": "Microsoft 365"
     },
     {
@@ -167,7 +167,7 @@
     {
       "cluster": "PA Centrale",
       "n_entities": 52,
-      "usa_pct": 65.4,
+      "usa_pct": 67.3,
       "dominant_provider": "Microsoft 365"
     },
     {

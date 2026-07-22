@@ -214778,7 +214778,7 @@
     "country": "IT",
     "region": null,
     "district": null,
-    "domain": "ddcastelsanpietro.gov.it",
+    "domain": "ddcastelsanpietro.edu.it",
     "osm_relation_id": null,
     "domain_fallbacks": [
       "istruzione.it"
@@ -342029,6 +342029,21 @@
     "ipa_codice_categoria": "L37",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "018110",
+    "domain_source": "sito_istituzionale"
+  },
+  {
+    "id": "IT-L37-V22ARJHU",
+    "name": "AZIENDA SPECIALE MULTISERVIZI NARNI",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "aspemnarni.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "V22ARJHU",
+    "ipa_codice_categoria": "L37",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "055022",
     "domain_source": "sito_istituzionale"
   },
   {
