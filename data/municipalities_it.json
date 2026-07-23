@@ -130885,7 +130885,7 @@
   },
   {
     "id": "IT-C14-cidockv",
-    "name": "Collegio Interprovinciale Delle Ostetriche di Cz-Kr-Vv",
+    "name": "Ordine della Professione di Ostetrica delle Province di Catanzaro, Cosenza, Crotone e Vibo Valentia",
     "country": "IT",
     "region": null,
     "district": null,
@@ -262861,7 +262861,7 @@
     "country": "IT",
     "region": null,
     "district": null,
-    "domain": "icsorodelitala.gov.it",
+    "domain": "icsorodelitala.edu.it",
     "osm_relation_id": null,
     "domain_fallbacks": [
       "istruzione.it"
@@ -283928,23 +283928,6 @@
     "domain_source": "sito_istituzionale"
   },
   {
-    "id": "IT-L33-istsc_rmic8en004",
-    "name": "Istituto Comprensivo Alberto Sordi",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "icalbertosordi.edu.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [
-      "istruzione.it"
-    ],
-    "ipa_codice_ipa": "istsc_rmic8en004",
-    "ipa_codice_categoria": "L33",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "058091",
-    "domain_source": "sito_istituzionale"
-  },
-  {
     "id": "IT-L33-istsc_rmic8eq00g",
     "name": "ISTITUTO COMPRENSIVO - IC VIA BELFORTE DEL CHIENTI",
     "country": "IT",
@@ -293115,7 +293098,7 @@
     "country": "IT",
     "region": null,
     "district": null,
-    "domain": "comprensivo1portotorres.gov.it",
+    "domain": "comprensivo1portotorres.edu.it",
     "osm_relation_id": null,
     "domain_fallbacks": [
       "istruzione.it"
@@ -339988,6 +339971,21 @@
     "ipa_codice_categoria": "L37",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "041044",
+    "domain_source": "sito_istituzionale"
+  },
+  {
+    "id": "IT-L37-QMRDVVGD",
+    "name": "Angelo Pescarini Scuola Arti e Mestieri s.c.a.r.l.",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "scuolapescarini.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "QMRDVVGD",
+    "ipa_codice_categoria": "L37",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "039014",
     "domain_source": "sito_istituzionale"
   },
   {

@@ -1,5 +1,5 @@
 {
-  "n_purged": 503,
+  "n_purged": 505,
   "items": [
     {
       "id": "IT-C1-m_pi",
@@ -255,6 +255,17 @@
       "old_reason": "MX record (alt1.aspmx.l.google.com, alt2.aspmx.l.google.com) matches Google"
     },
     {
+      "id": "IT-C14-cdpid_ax",
+      "name": "Collegio Dei Periti Industriali e Dei Periti Industriali Laureati della Provincia di Potenza",
+      "codice_ipa": "cdpid_ax",
+      "seed_domain": "perindpotenza.it",
+      "claimed_domain": "comune.potenza.it",
+      "reject_reason": "unrelated",
+      "old_mx": "alt1.aspmx.l.google.com",
+      "old_provider": "google",
+      "old_reason": "MX record (alt1.aspmx.l.google.com, alt2.aspmx.l.google.com) matches Google"
+    },
+    {
       "id": "IT-C14-cdtsrfg",
       "name": "Ordine dei Tecnici Sanitari di Radiologia Medica e delle Professioni Sanitarie Tecniche, della Riabilitazione e della Prevenzione della Provincia di Foggia",
       "codice_ipa": "cdtsrfg",
@@ -289,7 +300,7 @@
     },
     {
       "id": "IT-C14-cidockv",
-      "name": "Collegio Interprovinciale Delle Ostetriche di Cz-Kr-Vv",
+      "name": "Ordine della Professione di Ostetrica delle Province di Catanzaro, Cosenza, Crotone e Vibo Valentia",
       "codice_ipa": "cidockv",
       "seed_domain": "ostetriche-czkrvv.it",
       "claimed_domain": "comune.catanzaro.it",
@@ -528,6 +539,17 @@
       "old_mx": "mail.comune.campobasso.it",
       "old_provider": "local-isp",
       "old_reason": "MX (mail.comune.campobasso.it) hosted on Local ISP (Vodafone Italia (IT))"
+    },
+    {
+      "id": "IT-C14-cpi_051",
+      "name": "Collegio Dei Periti Industriali e Dei Periti Industriali Laureati della Provincia di Arezzo",
+      "codice_ipa": "cpi_051",
+      "seed_domain": "peritiarezzo.com",
+      "claimed_domain": "comune.arezzo.it",
+      "reject_reason": "unrelated",
+      "old_mx": "smtp.google.com",
+      "old_provider": "google",
+      "old_reason": "MX record (smtp.google.com) matches Google"
     },
     {
       "id": "IT-C14-cpipi_fe",
