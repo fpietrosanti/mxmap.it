@@ -1,5 +1,5 @@
 {
-  "total": 22887,
+  "total": 22888,
   "average_score": 80.7,
   "high_confidence_pct": 73.7,
   "quality_passed": false,
@@ -13992,7 +13992,7 @@
     "IT-C14-odapcn": {
       "name": "Ordine Degli Architetti, Pianificatori, Paesaggisti e Conservatori di Napoli e Provincia",
       "provider": "local-isp",
-      "domain": "na.archiworld.it",
+      "domain": "napoli.archiworld.it",
       "confidence": 95,
       "flags": [
         "multiple_mx",
@@ -20583,7 +20583,7 @@
     },
     "IT-C14-opdmc_0": {
       "name": "Ordine Provinciale Dei Medici Chirurghi e Degli Odontoiatri di Ravenna",
-      "provider": "independent",
+      "provider": "google",
       "domain": "omceo-ra.it",
       "confidence": 95,
       "flags": [
@@ -30773,13 +30773,13 @@
     },
     "IT-COM-003058": {
       "name": "Comune di Cureggio",
-      "provider": "unknown",
-      "domain": "comune.cureggio.no.it",
-      "confidence": 15,
+      "provider": "independent",
+      "domain": "cert.ruparpiemonte.it",
+      "confidence": 80,
       "flags": [
-        "no_mx",
-        "no_spf",
-        "provider_unknown"
+        "spf_strict",
+        "independent_mx_with_cloud_spf",
+        "provider_classified"
       ]
     },
     "IT-COM-003060": {
@@ -46777,7 +46777,7 @@
     },
     "IT-COM-015166": {
       "name": "Comune di Paderno Dugnano",
-      "provider": "microsoft",
+      "provider": "google",
       "domain": "comune.paderno-dugnano.mi.it",
       "confidence": 95,
       "flags": [
@@ -90380,13 +90380,12 @@
     },
     "IT-COM-066093": {
       "name": "Comune di Scanno",
-      "provider": "unknown",
+      "provider": "aruba",
       "domain": "comune.scanno.aq.it",
-      "confidence": 15,
+      "confidence": 68,
       "flags": [
-        "no_mx",
-        "no_spf",
-        "provider_unknown"
+        "spf_softfail",
+        "provider_classified"
       ]
     },
     "IT-COM-066094": {
@@ -102376,7 +102375,7 @@
     "IT-COM-082008": {
       "name": "Comune di Baucina",
       "provider": "aruba",
-      "domain": "egov.comune.baucina.pa.it",
+      "domain": "comune.baucina.pa.it",
       "confidence": 83,
       "flags": [
         "spf_softfail",
@@ -122072,10 +122071,11 @@
     "IT-L1-azcv": {
       "name": "Azienda Calabria Verde",
       "provider": "aruba",
-      "domain": "pec.calabriaverde.eu",
-      "confidence": 50,
+      "domain": "calabriaverde.regione.calabria.it",
+      "confidence": 78,
       "flags": [
-        "no_spf",
+        "spf_softfail",
+        "independent_mx_with_cloud_spf",
         "provider_classified"
       ]
     },
@@ -130998,11 +130998,10 @@
     },
     "IT-L18-udcmc_": {
       "name": "Unione Dei Comuni Montani del Casentino",
-      "provider": "independent",
-      "domain": "postacert.toscana.it",
-      "confidence": 90,
+      "provider": "regional-public",
+      "domain": "uc.casentino.toscana.it",
+      "confidence": 85,
       "flags": [
-        "spf_strict",
         "mx_spf_match",
         "provider_classified"
       ]
@@ -174041,13 +174040,13 @@
     },
     "IT-L33-istsc_fepc01000e": {
       "name": "LICEO CLASSICO - LC LICEO GINNASIO 'G.CEVOLANI'",
-      "provider": "google",
-      "domain": "liceocevolani.it",
-      "confidence": 93,
+      "provider": "istruzione-miur-tenant",
+      "domain": "liceocevolani.edu.it",
+      "confidence": 80,
       "flags": [
-        "multiple_mx",
-        "spf_softfail",
+        "spf_strict",
         "mx_spf_match",
+        "multi_provider_spf:brevo+microsoft+regional-public",
         "provider_classified"
       ]
     },
@@ -192623,7 +192622,7 @@
       ]
     },
     "IT-L33-istsc_nais08700r": {
-      "name": "Istituto Statale di Istruzione Superiore M. Pagano - Bernini",
+      "name": "I.S. MARIO PAGANO",
       "provider": "microsoft",
       "domain": "ispagano.edu.it",
       "confidence": 95,
@@ -196970,7 +196969,7 @@
     "IT-L33-istsc_pcps02000t": {
       "name": "LICEO SCIENTIFICO - LS LORENZO RESPIGHI",
       "provider": "google",
-      "domain": "liceorespighi.it",
+      "domain": "liceorespighi.edu.it",
       "confidence": 93,
       "flags": [
         "multiple_mx",
@@ -198862,13 +198861,13 @@
     },
     "IT-L33-istsc_pgic82200q": {
       "name": "ISTITUTO COMPRENSIVO - ISTITUTO COMPRENSIVO SIGILLO",
-      "provider": "google",
-      "domain": "icsigillo.it",
-      "confidence": 53,
+      "provider": "istruzione-miur-tenant",
+      "domain": "icsigillo.edu.it",
+      "confidence": 80,
       "flags": [
-        "multiple_mx",
-        "spf_softfail",
-        "mx_spf_mismatch",
+        "spf_strict",
+        "mx_spf_match",
+        "multi_provider_spf:brevo+microsoft+regional-public",
         "provider_classified"
       ]
     },
@@ -210791,13 +210790,13 @@
     },
     "IT-L33-istsc_rmtf15000d": {
       "name": "ISTITUTO TECNICO INDUSTRIALE - STANISLAO CANNIZZARO COLLEFERRO",
-      "provider": "google",
-      "domain": "itiscannizzarocolleferro.it",
-      "confidence": 93,
+      "provider": "istruzione-miur-tenant",
+      "domain": "itiscannizzarocolleferro.edu.it",
+      "confidence": 80,
       "flags": [
-        "multiple_mx",
-        "spf_softfail",
+        "spf_strict",
         "mx_spf_match",
+        "multi_provider_spf:brevo+microsoft+regional-public",
         "provider_classified"
       ]
     },
@@ -229580,7 +229579,7 @@
     },
     "IT-L34-apspcdr": {
       "name": "Azienda Pubblica di Servizi alla Persona Citta di Riva",
-      "provider": "independent",
+      "provider": "microsoft",
       "domain": "csarivadelgarda.com",
       "confidence": 95,
       "flags": [
@@ -239141,7 +239140,7 @@
     "IT-L37-F21ME6OU": {
       "name": "FLEGREA LAVORO SPA",
       "provider": "local-isp",
-      "domain": "flegrealavoro.com",
+      "domain": "flegrealavoro.portaletrasparenza.net",
       "confidence": 88,
       "flags": [
         "spf_softfail",
@@ -239931,6 +239930,18 @@
         "spf_strict",
         "mx_spf_match",
         "provider_classified"
+      ]
+    },
+    "IT-L37-KDFHDR2R": {
+      "name": "Sistema Formazione Professionale Viterbo",
+      "provider": "aruba",
+      "domain": "asfpviterbo.it",
+      "confidence": 83,
+      "flags": [
+        "spf_softfail",
+        "independent_mx_with_cloud_spf",
+        "provider_classified",
+        "autodiscover_confirms"
       ]
     },
     "IT-L37-KDPADR44": {
@@ -242342,7 +242353,7 @@
     "IT-L37-ZV7OSJOH": {
       "name": "UNILAV SCPA",
       "provider": "aruba",
-      "domain": "unilavspa.it",
+      "domain": "unilavspa.portaletrasparenza.net",
       "confidence": 83,
       "flags": [
         "spf_softfail",
@@ -243946,6 +243957,17 @@
       "name": "Azienda Territoriale per i Servizi alla Persona",
       "provider": "independent",
       "domain": "tecumserviziallapersona.it",
+      "confidence": 88,
+      "flags": [
+        "spf_softfail",
+        "mx_spf_match",
+        "provider_classified"
+      ]
+    },
+    "IT-L37-atlero": {
+      "name": "Azienda Territoriale per L'Edilizia Residenziale Pubblica della Provincia di Roma",
+      "provider": "local-isp",
+      "domain": "aterprovinciadiroma.it",
       "confidence": 88,
       "flags": [
         "spf_softfail",
@@ -250562,17 +250584,6 @@
         "independent_mx_with_cloud_spf",
         "provider_classified",
         "autodiscover_confirms"
-      ]
-    },
-    "IT-L39-atlero": {
-      "name": "Azienda Territoriale per L'Edilizia Residenziale Pubblica della Provincia di Roma",
-      "provider": "local-isp",
-      "domain": "aterprovinciadiroma.it",
-      "confidence": 88,
-      "flags": [
-        "spf_softfail",
-        "mx_spf_match",
-        "provider_classified"
       ]
     },
     "IT-L39-iacp_": {

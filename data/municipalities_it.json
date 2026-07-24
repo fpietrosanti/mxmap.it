@@ -260360,7 +260360,7 @@
   },
   {
     "id": "IT-L33-istsc_nais08700r",
-    "name": "Istituto Statale di Istruzione Superiore M. Pagano - Bernini",
+    "name": "I.S. MARIO PAGANO",
     "country": "IT",
     "region": null,
     "district": null,
@@ -332208,6 +332208,21 @@
     "domain_source": "sito_istituzionale"
   },
   {
+    "id": "IT-L37-atlero",
+    "name": "Azienda Territoriale per L'Edilizia Residenziale Pubblica della Provincia di Roma",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "aterprovinciadiroma.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "atlero",
+    "ipa_codice_categoria": "L37",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "058091",
+    "domain_source": "sito_istituzionale"
+  },
+  {
     "id": "IT-L37-atmsp",
     "name": "Azienda Trasporti Messina S.P.A.",
     "country": "IT",
@@ -337828,6 +337843,21 @@
     "ipa_codice_categoria": "L37",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "016170",
+    "domain_source": "sito_istituzionale"
+  },
+  {
+    "id": "IT-L37-KDFHDR2R",
+    "name": "Sistema Formazione Professionale Viterbo",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "asfpviterbo.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "KDFHDR2R",
+    "ipa_codice_categoria": "L37",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "056059",
     "domain_source": "sito_istituzionale"
   },
   {
@@ -345849,21 +345879,6 @@
     "ipa_codice_categoria": "L39",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "079023",
-    "domain_source": "sito_istituzionale"
-  },
-  {
-    "id": "IT-L39-atlero",
-    "name": "Azienda Territoriale per L'Edilizia Residenziale Pubblica della Provincia di Roma",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "aterprovinciadiroma.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [],
-    "ipa_codice_ipa": "atlero",
-    "ipa_codice_categoria": "L39",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "058091",
     "domain_source": "sito_istituzionale"
   },
   {
