@@ -4739,8 +4739,8 @@
       "claimed_domain": "comune.imola.bo.it",
       "reject_reason": "unrelated",
       "old_mx": "mx.cittametropolitana.bo.it",
-      "old_provider": "regional-public",
-      "old_reason": "MX (mx.cittametropolitana.bo.it) on AS31638 (?) -> regional-public (ASN-based override)"
+      "old_provider": "independent",
+      "old_reason": "MX (mx.cittametropolitana.bo.it) is self-hosted"
     },
     {
       "id": "IT-L37-dser",
@@ -4981,8 +4981,8 @@
       "claimed_domain": "comune.anzoladellemilia.bo.it",
       "reject_reason": "unrelated",
       "old_mx": "mx.cittametropolitana.bo.it",
-      "old_provider": "regional-public",
-      "old_reason": "MX (mx.cittametropolitana.bo.it) on AS31638 (?) -> regional-public (ASN-based override)"
+      "old_provider": "independent",
+      "old_reason": "MX (mx.cittametropolitana.bo.it) is self-hosted"
     },
     {
       "id": "IT-L37-vspa",

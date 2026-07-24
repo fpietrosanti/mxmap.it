@@ -364934,5 +364934,50 @@
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "027013",
     "domain_source": "sito_istituzionale"
+  },
+  {
+    "id": "IT-C1-esercito",
+    "name": "Esercito Italiano",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "esercito.difesa.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "esercito",
+    "ipa_codice_categoria": "C1",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "058091",
+    "domain_source": "manual_addition"
+  },
+  {
+    "id": "IT-C1-marina_militare",
+    "name": "Marina Militare",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "marina.difesa.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "marina_militare",
+    "ipa_codice_categoria": "C1",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "058091",
+    "domain_source": "manual_addition"
+  },
+  {
+    "id": "IT-C1-aeronautica_militare",
+    "name": "Aeronautica Militare",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "aeronautica.difesa.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "aeronautica_militare",
+    "ipa_codice_categoria": "C1",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "058091",
+    "domain_source": "manual_addition"
   }
 ]
