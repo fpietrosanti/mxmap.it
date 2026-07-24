@@ -1,6 +1,7 @@
 from mail_sovereignty.classify import (
     classify,
     classify_from_autodiscover,
+    classify_from_dkim,
     classify_from_mx,
     classify_from_smtp_banner,
     classify_from_spf,
@@ -8,6 +9,7 @@ from mail_sovereignty.classify import (
     detect_gateway,
     spf_mentions_providers,
 )
+from mail_sovereignty.constants import GOOGLE_DKIM_TXT_MARKER
 
 
 def provider(result):
@@ -784,3 +786,28 @@ class TestTenantDetection:
             tenant=None,
         )
         assert provider(result) == "independent"
+
+
+class TestGoogleDkimTxt:
+    """google._domainkey TXT detection for Google Workspace (#17)."""
+
+    def test_google_txt_marker_maps_to_google(self):
+        # Google Workspace publishes DKIM as a TXT key at the `google` selector;
+        # lookup_dkim records the marker, which classify_from_dkim -> "google".
+        assert classify_from_dkim({"google": GOOGLE_DKIM_TXT_MARKER}) == "google"
+
+    def test_microsoft_takes_precedence_in_dual_config(self):
+        # If a domain has both selector1 CNAME -> onmicrosoft AND a google DKIM TXT,
+        # Microsoft (mailbox host signal) wins.
+        dkim = {
+            "selector1": "selector1-x._domainkey.contoso.onmicrosoft.com",
+            "google": GOOGLE_DKIM_TXT_MARKER,
+        }
+        assert classify_from_dkim(dkim) == "microsoft"
+
+    def test_cname_google_still_maps_to_google(self):
+        assert classify_from_dkim({"google": "dkim.googlemail.com"}) == "google"
+
+    def test_empty_dkim_unchanged(self):
+        assert classify_from_dkim(None) is None
+        assert classify_from_dkim({}) is None

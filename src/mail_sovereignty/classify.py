@@ -69,7 +69,8 @@ def classify_from_dkim(dkim: dict[str, str] | None) -> str | None:
     # Microsoft: selector1/2 -> *.onmicrosoft.com
     if "onmicrosoft.com" in blob:
         return "microsoft"
-    # Google: google._domainkey -> *.googlemail.com or *.google.com
+    # Google: CNAME target (*.googlemail.com / *.google.com) OR the google._domainkey
+    # TXT DKIM key marker (Google Workspace publishes DKIM as TXT, not CNAME — #17).
     if "google" in blob or "googlemail" in blob:
         return "google"
     for provider, keywords in PROVIDER_KEYWORDS.items():

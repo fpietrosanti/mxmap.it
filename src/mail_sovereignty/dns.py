@@ -7,6 +7,8 @@ import dns.exception
 import dns.resolver
 import httpx
 
+from mail_sovereignty.constants import GOOGLE_DKIM_TXT_MARKER
+
 logger = logging.getLogger(__name__)
 
 _resolvers = None
@@ -250,13 +252,33 @@ async def lookup_autodiscover(domain: str) -> dict[str, str]:
 
 
 async def lookup_dkim(domain: str) -> dict[str, str]:
-    """Check DKIM CNAME records for common selectors. Returns dict of selector -> target."""
+    """Check DKIM records for common selectors. Returns dict of selector -> target/marker.
+
+    selector1/selector2 are detected via their CNAME target (Microsoft-style,
+    e.g. -> ``*.onmicrosoft.com``). The ``google`` selector is different:
+    Google Workspace publishes the DKIM key as a **TXT** record at
+    ``google._domainkey.<domain>`` (``v=DKIM1; k=rsa; p=...``), **not** a CNAME —
+    so a CNAME-only probe misses it (asymmetry vs Microsoft, mxmap-it/mxmap.it#17,
+    upstream davidhuser/mxmap#28). We therefore also check that TXT and, if a DKIM
+    key is present, record the marker ``GOOGLE_DKIM_TXT_MARKER`` (which contains
+    "google", so ``classify_from_dkim`` maps it to Google).
+    """
     selectors = ["selector1", "selector2", "google"]
     result: dict[str, str] = {}
 
     async def _check(selector: str) -> tuple[str, str | None]:
-        chain = await lookup_cname_chain(f"{selector}._domainkey.{domain}", max_hops=1)
-        return selector, chain[-1] if chain else None
+        name = f"{selector}._domainkey.{domain}"
+        chain = await lookup_cname_chain(name, max_hops=1)
+        if chain and chain[-1]:
+            return selector, chain[-1]
+        # Google Workspace: DKIM key published as TXT at the `google` selector.
+        if selector == "google":
+            answers = await resolve_robust(name, "TXT")
+            for r in answers or []:
+                txt = b"".join(r.strings).decode("utf-8", errors="ignore").lower()
+                if "v=dkim1" in txt:
+                    return selector, GOOGLE_DKIM_TXT_MARKER
+        return selector, None
 
     results = await asyncio.gather(*[_check(s) for s in selectors])
     for selector, target in results:

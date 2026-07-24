@@ -1201,3 +1201,9 @@ SMTP_BANNER_KEYWORDS = {
         "zoho.eu",
     ],
 }
+
+# DKIM marker: Google Workspace publishes its DKIM key as a TXT record at the
+# `google._domainkey` selector (not a CNAME). lookup_dkim() records this marker
+# when it finds such a TXT (v=DKIM1); classify_from_dkim() maps it to Google.
+# See mxmap-it/mxmap.it#17 (upstream davidhuser/mxmap#28).
+GOOGLE_DKIM_TXT_MARKER = "google-workspace-dkim-txt"
