@@ -1147,6 +1147,30 @@ def transform(
     return seed
 
 
+MANUAL_ADDITIONS_PATH = ROOT / "data" / "pa_manual_additions.json"
+
+
+def load_manual_pa_additions() -> list[dict[str, Any]]:
+    """Carica ``data/pa_manual_additions.json``: enti pubblici **non presenti in
+    IndicePA** ma da includere nel seed — es. le Forze Armate (Esercito, Marina,
+    Aeronautica) che hanno sottodomini ``*.difesa.it`` con MX propri ma non una
+    voce IPA autonoma. Ogni elemento ha lo **stesso schema** delle voci del seed.
+
+    Sono mergiate in ``main()`` dopo il fetch IndicePA (così sopravvivono al
+    refresh notturno) con dedup per ``id`` e per ``domain``: se un domani IndicePA
+    dovesse includerle, la voce manuale viene saltata automaticamente. Restituisce
+    ``[]`` se il file manca o è illeggibile.
+    """
+    if not MANUAL_ADDITIONS_PATH.exists():
+        return []
+    try:
+        data = json.loads(MANUAL_ADDITIONS_PATH.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as e:
+        print(f"[warn] pa_manual_additions.json non leggibile: {e}")
+        return []
+    return data if isinstance(data, list) else []
+
+
 def main() -> int:
     import argparse
     ap = argparse.ArgumentParser()
@@ -1241,6 +1265,25 @@ def main() -> int:
             if rows:
                 print(f"  {codice_categoria:<5} raw={len(rows):>5}  kept={kept:>5}  "
                       f"dropped={len(rows)-kept-dropped_dup:>4}  dup={dropped_dup:>3}")
+
+    # --- Aggiunte manuali di PA non presenti in IndicePA (es. Forze Armate:
+    # Esercito/Marina/Aeronautica, sottodomini *.difesa.it con MX propri).
+    # Curate in data/pa_manual_additions.json, mergiate qui così sopravvivono al
+    # refresh notturno. Dedup per id e per dominio: se IndicePA le includesse, la
+    # voce manuale è saltata.
+    manual = load_manual_pa_additions()
+    if manual:
+        seen_domains = {e.get("domain") for e in entries if e.get("domain")}
+        added_manual = 0
+        for entity in manual:
+            if entity.get("id") in seen_ids or entity.get("domain") in seen_domains:
+                continue
+            seen_ids.add(entity["id"])
+            if entity.get("domain"):
+                seen_domains.add(entity["domain"])
+            entries.append(entity)
+            added_manual += 1
+        print(f"\n=== Aggiunte manuali (non in IndicePA): +{added_manual}/{len(manual)} ===")
 
     out_path = DATA / "municipalities_it.json"
     DATA.mkdir(parents=True, exist_ok=True)
