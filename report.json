@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-24T16:58:25Z",
+  "generated_at": "2026-07-25T07:14:22Z",
   "run_id": null,
   "edition": "luglio 2026",
   "title": "Stato della sovranità digitale della posta elettronica della PA italiana",
@@ -11,10 +11,10 @@
       "title": "Sintesi per i decisori",
       "kind": "executive",
       "findings": [
-        "Il 48.11% delle PA usa provider extra-UE soggetti al CLOUD Act statunitense.",
-        "I provider italiani restano la prima scelta (51.34%), ma frammentati.",
-        "Scarto tra controllo legale (51.34%) e collocazione tecnica dell'MX (domestico 46.1%): è esso stesso un segnale.",
-        "Settori più esposti al CLOUD Act: Istruzione 78.14% · Sanità 63.6% · Ricerca 56.72%.",
+        "Il 48.1% delle PA usa provider extra-UE soggetti al CLOUD Act statunitense.",
+        "I provider italiani restano la prima scelta (51.35%), ma frammentati.",
+        "Scarto tra controllo legale (51.35%) e collocazione tecnica dell'MX (domestico 46.11%): è esso stesso un segnale.",
+        "Settori più esposti al CLOUD Act: Istruzione 78.13% · Sanità 63.6% · Ricerca 56.72%.",
         "Divario territoriale: Molise guida la sovranità (ISD 73.23%), Veneto è la più esposta al CLOUD Act (60.62%)."
       ],
       "metrics": [
@@ -24,11 +24,11 @@
         },
         {
           "label": "Sovranità italiana (ISD)",
-          "value": "51.34%"
+          "value": "51.35%"
         },
         {
           "label": "Soggette al CLOUD Act",
-          "value": "48.11%"
+          "value": "48.1%"
         },
         {
           "label": "Copertura del dato",
@@ -61,8 +61,8 @@
         {
           "key": "it",
           "label": "Italiano",
-          "pct": 49.9,
-          "count": 11433
+          "pct": 50.0,
+          "count": 11436
         },
         {
           "key": "eu_non_it",
@@ -74,49 +74,49 @@
           "key": "extra_eu",
           "label": "Extra-UE (CLOUD Act)",
           "pct": 46.8,
-          "count": 10715
+          "count": 10713
         },
         {
           "key": "unknown",
           "label": "Sconosciuto",
           "pct": 2.7,
-          "count": 623
+          "count": 622
         }
       ],
       "top_providers": [
         {
           "name": "Provider Italiano",
-          "count": 7469,
+          "count": 7472,
           "pct": 32.6,
           "sovereignty": "it"
         },
         {
           "name": "Google Workspace",
-          "count": 6429,
+          "count": 6431,
           "pct": 28.1,
           "sovereignty": "extra_eu"
         },
         {
           "name": "Microsoft 365",
-          "count": 4278,
+          "count": 4274,
           "pct": 18.7,
           "sovereignty": "extra_eu"
         },
         {
           "name": "Infrastruttura autonoma",
-          "count": 3033,
+          "count": 3032,
           "pct": 13.2,
           "sovereignty": "it"
         },
         {
           "name": "Cloud Italiano",
-          "count": 931,
+          "count": 932,
           "pct": 4.1,
           "sovereignty": "it"
         },
         {
           "name": "Sconosciuto",
-          "count": 623,
+          "count": 622,
           "pct": 2.7,
           "sovereignty": "unknown"
         },
@@ -142,13 +142,13 @@
       "jurisdiction": [
         {
           "key": "domestic",
-          "count": 10553,
-          "pct": 46.1
+          "count": 10556,
+          "pct": 46.11
         },
         {
           "key": "foreign",
-          "count": 11397,
-          "pct": 49.79
+          "count": 11395,
+          "pct": 49.78
         },
         {
           "key": "mixed",
@@ -157,13 +157,13 @@
         },
         {
           "key": "unknown",
-          "count": 691,
-          "pct": 3.02
+          "count": 690,
+          "pct": 3.01
         }
       ],
       "market": {
-        "top3_pct": 67.33,
-        "hhi": 1880.9
+        "top3_pct": 67.34,
+        "hhi": 1881.7
       }
     },
     {
@@ -174,8 +174,8 @@
         {
           "cluster": "Istruzione (Scuole, Università, AFAM)",
           "n_entities": 8340,
-          "usa_pct": 78.14,
-          "isd": 21.51
+          "usa_pct": 78.13,
+          "isd": 21.52
         },
         {
           "cluster": "Enti territoriali (Comuni, Province, Città metrop., Regioni)",
@@ -186,8 +186,8 @@
         {
           "cluster": "Ordini professionali, Camere di commercio, ACI",
           "n_entities": 2015,
-          "usa_pct": 24.02,
-          "isd": 73.47
+          "usa_pct": 24.0,
+          "isd": 73.48
         },
         {
           "cluster": "Consorzi, Unioni di Comuni, Comunità montane",
@@ -204,8 +204,8 @@
         {
           "cluster": "Stazioni appaltanti",
           "n_entities": 610,
-          "usa_pct": 50.5,
-          "isd": 48.66
+          "usa_pct": 50.34,
+          "isd": 48.83
         },
         {
           "cluster": "Welfare, ASP/IPAB e case popolari",
@@ -265,7 +265,7 @@
       "spotlight": [
         {
           "cluster": "Istruzione (Scuole, Università, AFAM)",
-          "usa_pct": 78.14,
+          "usa_pct": 78.13,
           "n_entities": 8340
         },
         {
@@ -326,14 +326,14 @@
         {
           "regione": "Sardegna",
           "n": 906,
-          "isd": 62.26,
-          "usa_pct": 36.94
+          "isd": 62.3,
+          "usa_pct": 36.9
         },
         {
           "regione": "Sicilia",
           "n": 1773,
-          "isd": 57.37,
-          "usa_pct": 42.33
+          "isd": 57.43,
+          "usa_pct": 42.27
         },
         {
           "regione": "Liguria",
@@ -356,8 +356,8 @@
         {
           "regione": "Lazio",
           "n": 1809,
-          "isd": 49.43,
-          "usa_pct": 50.06
+          "isd": 49.48,
+          "usa_pct": 50.0
         },
         {
           "regione": "Friuli-Venezia Giulia",
@@ -412,8 +412,8 @@
         {
           "macroarea": "Isole",
           "n": 2679,
-          "isd": 59.04,
-          "usa_pct": 40.49
+          "isd": 59.1,
+          "usa_pct": 40.44
         },
         {
           "macroarea": "Sud",
@@ -424,8 +424,8 @@
         {
           "macroarea": "Centro",
           "n": 4022,
-          "isd": 49.48,
-          "usa_pct": 49.89
+          "isd": 49.5,
+          "usa_pct": 49.86
         },
         {
           "macroarea": "Nord",
@@ -454,7 +454,7 @@
       "series": [
         {
           "date": "2026-07",
-          "isd": 51.34
+          "isd": 51.35
         }
       ],
       "note": "Monitoraggio appena avviato: la serie storica parte da questa edizione; i trend compariranno dai prossimi rilevamenti."

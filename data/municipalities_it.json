@@ -159683,7 +159683,9 @@
     "district": null,
     "domain": "aeci.it",
     "osm_relation_id": null,
-    "domain_fallbacks": [],
+    "domain_fallbacks": [
+      "aeroclubitalia.it"
+    ],
     "ipa_codice_ipa": "aeci",
     "ipa_codice_categoria": "L1",
     "ipa_codice_istat": null,
@@ -299768,7 +299770,7 @@
     "country": "IT",
     "region": null,
     "district": null,
-    "domain": "itetgaribaldi.it",
+    "domain": "itetgaribaldi.edu.it",
     "osm_relation_id": null,
     "domain_fallbacks": [
       "istruzione.it"
@@ -345652,7 +345654,7 @@
   },
   {
     "id": "IT-L38-rnrmn_",
-    "name": "Riserva Naturale Regionale Monti Navegna e Cervia",
+    "name": "Riserva Naturale Regionale Monte Navegna e Monte Cervia",
     "country": "IT",
     "region": null,
     "district": null,
@@ -356745,7 +356747,9 @@
     "district": null,
     "domain": "federpesistica.it",
     "osm_relation_id": null,
-    "domain_fallbacks": [],
+    "domain_fallbacks": [
+      "federpesi.it"
+    ],
     "ipa_codice_ipa": "545AQBJC",
     "ipa_codice_categoria": "SA",
     "ipa_codice_istat": null,
