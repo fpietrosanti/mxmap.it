@@ -341732,6 +341732,21 @@
     "domain_source": "sito_istituzionale"
   },
   {
+    "id": "IT-L37-TNTNBU1N",
+    "name": "UNINEUROMED - NEUROMED MEDITERRANEAN UNIVERSITY OF SCIENCES AND TECHNOLOGIES",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "unineuromed.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "TNTNBU1N",
+    "ipa_codice_categoria": "L37",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "094038",
+    "domain_source": "sito_istituzionale"
+  },
+  {
     "id": "IT-L37-tspa",
     "name": "Tennacola Spa",
     "country": "IT",

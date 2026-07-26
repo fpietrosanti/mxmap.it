@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-07-25T07:14:21Z",
+  "generated_at": "2026-07-26T07:33:40Z",
   "run_id": null,
   "license": "CC BY-SA 4.0",
   "source": "https://github.com/mxmap-it/mxmap.it",
   "totals": {
-    "n_entities": 22891,
-    "n_with_mx": 22269,
-    "coverage_pct": 97.28
+    "n_entities": 22892,
+    "n_with_mx": 22268,
+    "coverage_pct": 97.27
   },
   "indices": {
     "isd": 51.35,
     "cloud_act_pct": 48.1,
-    "n_classified": 22269
+    "n_classified": 22268
   },
   "sovereignty": {
     "extra_eu": {
@@ -25,12 +25,12 @@
       "label": "Europeo (non italiano)"
     },
     "it": {
-      "count": 11436,
+      "count": 11435,
       "pct": 50.0,
       "label": "Italiano"
     },
     "unknown": {
-      "count": 622,
+      "count": 624,
       "pct": 2.7,
       "label": "Sconosciuto"
     }
@@ -44,19 +44,19 @@
     },
     {
       "name": "Google Workspace",
-      "count": 6431,
+      "count": 6430,
       "pct": 28.1,
       "sovereignty": "extra_eu"
     },
     {
       "name": "Microsoft 365",
-      "count": 4274,
+      "count": 4275,
       "pct": 18.7,
       "sovereignty": "extra_eu"
     },
     {
       "name": "Infrastruttura autonoma",
-      "count": 3032,
+      "count": 3031,
       "pct": 13.2,
       "sovereignty": "it"
     },
@@ -68,7 +68,7 @@
     },
     {
       "name": "Sconosciuto",
-      "count": 622,
+      "count": 624,
       "pct": 2.7,
       "sovereignty": "unknown"
     },
@@ -118,14 +118,14 @@
     },
     {
       "cluster": "Gestori di pubblici servizi",
-      "n_entities": 1138,
+      "n_entities": 1139,
       "usa_pct": 46.3,
       "dominant_provider": "Microsoft 365"
     },
     {
       "cluster": "Stazioni Appaltanti",
       "n_entities": 610,
-      "usa_pct": 49.2,
+      "usa_pct": 49.3,
       "dominant_provider": "Microsoft 365"
     },
     {
@@ -137,7 +137,7 @@
     {
       "cluster": "Ambiente e Territorio",
       "n_entities": 272,
-      "usa_pct": 27.9,
+      "usa_pct": 27.6,
       "dominant_provider": "Provider Italiano"
     },
     {
@@ -184,7 +184,7 @@
     }
   ],
   "confidence": {
-    "mean": 0.8504,
+    "mean": 0.8503,
     "high_pct": 91.6
   }
 }
