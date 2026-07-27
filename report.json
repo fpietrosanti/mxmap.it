@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-26T07:33:41Z",
+  "generated_at": "2026-07-27T08:30:05Z",
   "run_id": null,
   "edition": "luglio 2026",
   "title": "Stato della sovranità digitale della posta elettronica della PA italiana",
@@ -32,7 +32,7 @@
         },
         {
           "label": "Copertura del dato",
-          "value": "97.27%"
+          "value": "97.28%"
         }
       ],
       "recommendations": [
@@ -62,7 +62,7 @@
           "key": "it",
           "label": "Italiano",
           "pct": 50.0,
-          "count": 11435
+          "count": 11436
         },
         {
           "key": "eu_non_it",
@@ -80,7 +80,7 @@
           "key": "unknown",
           "label": "Sconosciuto",
           "pct": 2.7,
-          "count": 624
+          "count": 623
         }
       ],
       "top_providers": [
@@ -92,19 +92,19 @@
         },
         {
           "name": "Google Workspace",
-          "count": 6430,
+          "count": 6431,
           "pct": 28.1,
           "sovereignty": "extra_eu"
         },
         {
           "name": "Microsoft 365",
-          "count": 4275,
+          "count": 4274,
           "pct": 18.7,
           "sovereignty": "extra_eu"
         },
         {
           "name": "Infrastruttura autonoma",
-          "count": 3031,
+          "count": 3032,
           "pct": 13.2,
           "sovereignty": "it"
         },
@@ -116,7 +116,7 @@
         },
         {
           "name": "Sconosciuto",
-          "count": 624,
+          "count": 623,
           "pct": 2.7,
           "sovereignty": "unknown"
         },
@@ -147,8 +147,8 @@
         },
         {
           "key": "foreign",
-          "count": 11394,
-          "pct": 49.77
+          "count": 11395,
+          "pct": 49.78
         },
         {
           "key": "mixed",
@@ -157,13 +157,13 @@
         },
         {
           "key": "unknown",
-          "count": 692,
+          "count": 691,
           "pct": 3.02
         }
       ],
       "market": {
         "top3_pct": 67.33,
-        "hhi": 1880.9
+        "hhi": 1881.2
       }
     },
     {
@@ -181,7 +181,7 @@
           "cluster": "Enti territoriali (Comuni, Province, Città metrop., Regioni)",
           "n_entities": 8005,
           "usa_pct": 25.95,
-          "isd": 73.73
+          "isd": 73.74
         },
         {
           "cluster": "Ordini professionali, Camere di commercio, ACI",
@@ -302,8 +302,8 @@
         {
           "regione": "Piemonte",
           "n": 2272,
-          "isd": 66.38,
-          "usa_pct": 33.35
+          "isd": 66.4,
+          "usa_pct": 33.33
         },
         {
           "regione": "Abruzzo",
@@ -463,8 +463,8 @@
       "id": "metodologia",
       "title": "Metodologia, limiti e dati aperti",
       "kind": "methodology",
-      "coverage_pct": 97.27,
-      "mean_confidence": 0.8503,
+      "coverage_pct": 97.28,
+      "mean_confidence": 0.8504,
       "limits": "IndicePA non è una base dati pulita da cui inferire in modo immediato e senza rielaborazioni i domini email (non-PEC) degli enti: la bonifica continua è una dipendenza funzionale core, tracciata in mxmap.it#2.",
       "license": "CC BY-SA 4.0"
     }

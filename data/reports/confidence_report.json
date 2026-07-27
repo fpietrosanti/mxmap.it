@@ -7,24 +7,24 @@
   "buckets": {
     "0.90-1.00 (molto alta)": 17354,
     "0.80-0.89 (alta)": 3610,
-    "0.00 (nulla / unknown)": 624,
-    "0.60-0.79 (media)": 1235,
+    "0.00 (nulla / unknown)": 623,
+    "0.60-0.79 (media)": 1236,
     "0.01-0.59 (bassa)": 69
   },
   "rules": {
     "mx_spf": 17354,
     "dom_mx_spf": 1727,
-    "no_mx": 624,
+    "no_mx": 623,
     "mx_only": 1883,
-    "frgn_mx_spf": 979,
+    "frgn_mx_spf": 980,
     "dom_mx_only": 256,
     "frgn_mx_only": 69
   },
   "jurisdiction": {
-    "foreign": 11394,
+    "foreign": 11395,
     "domestic": 10555,
     "mixed": 251,
-    "unknown": 692
+    "unknown": 691
   },
   "domestic_mx_override": 176,
   "bounce_candidates": 69,

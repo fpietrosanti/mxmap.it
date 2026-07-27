@@ -14027,7 +14027,7 @@
     "IT-C14-odapcn": {
       "name": "Ordine Degli Architetti, Pianificatori, Paesaggisti e Conservatori di Napoli e Provincia",
       "provider": "local-isp",
-      "domain": "na.archiworld.it",
+      "domain": "napoli.archiworld.it",
       "confidence": 95,
       "flags": [
         "multiple_mx",
@@ -23401,7 +23401,7 @@
     "IT-C3-AGENAS": {
       "name": "Agenzia Nazionale per i Servizi Sanitari Regionali - AGENAS",
       "provider": "microsoft",
-      "domain": "agenas.gov.it",
+      "domain": "agenas.it",
       "confidence": 95,
       "flags": [
         "spf_strict",
@@ -28403,13 +28403,14 @@
     },
     "IT-COM-001223": {
       "name": "Comune di Romano Canavese",
-      "provider": "unknown",
+      "provider": "independent",
       "domain": "comune.romanocanavese.to.it",
-      "confidence": 15,
+      "confidence": 93,
       "flags": [
-        "no_mx",
-        "no_spf",
-        "provider_unknown"
+        "multiple_mx",
+        "spf_softfail",
+        "mx_spf_match",
+        "provider_classified"
       ]
     },
     "IT-COM-001224": {
@@ -123370,13 +123371,14 @@
     "IT-L1-irda": {
       "name": "Liceo Artistico Regionale \"Renato Guttuso\" Bagheria",
       "provider": "independent",
-      "domain": "liceoartisticobagheria.edu.it",
+      "domain": "liceoartisticobagheria.it",
       "confidence": 95,
       "flags": [
         "multiple_mx",
         "spf_strict",
         "mx_spf_match",
-        "provider_classified"
+        "provider_classified",
+        "autodiscover_suggests:aruba"
       ]
     },
     "IT-L1-irlacj": {
@@ -174075,13 +174077,13 @@
     },
     "IT-L33-istsc_fepc01000e": {
       "name": "LICEO CLASSICO - LC LICEO GINNASIO 'G.CEVOLANI'",
-      "provider": "istruzione-miur-tenant",
-      "domain": "liceocevolani.edu.it",
-      "confidence": 80,
+      "provider": "google",
+      "domain": "liceocevolani.it",
+      "confidence": 93,
       "flags": [
-        "spf_strict",
+        "multiple_mx",
+        "spf_softfail",
         "mx_spf_match",
-        "multi_provider_spf:brevo+microsoft+regional-public",
         "provider_classified"
       ]
     },
@@ -197004,7 +197006,7 @@
     "IT-L33-istsc_pcps02000t": {
       "name": "LICEO SCIENTIFICO - LS LORENZO RESPIGHI",
       "provider": "google",
-      "domain": "liceorespighi.edu.it",
+      "domain": "liceorespighi.it",
       "confidence": 93,
       "flags": [
         "multiple_mx",
@@ -228871,7 +228873,7 @@
     "IT-L34-XQZEJ3XC": {
       "name": "arciconfraternita sant'angelo dei rossi",
       "provider": "aruba",
-      "domain": "arciconfraternitadeirossi.it",
+      "domain": "arciconfraternitadeiross.altervista.org",
       "confidence": 83,
       "flags": [
         "spf_softfail",
