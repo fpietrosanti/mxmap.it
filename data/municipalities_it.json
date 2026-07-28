@@ -67247,12 +67247,9 @@
     "country": "IT",
     "region": "Basilicata",
     "district": "Potenza",
-    "domain": "comunemontemilone.it",
+    "domain": "comune.montemilone.pz.it",
     "osm_relation_id": 41039,
-    "domain_fallbacks": [
-      "tiscali.it",
-      "comune.montemilone.pz.it"
-    ],
+    "domain_fallbacks": [],
     "ipa_codice_ipa": "c_f568",
     "ipa_codice_categoria": "L6",
     "ipa_codice_istat": "37114",
@@ -156493,6 +156490,23 @@
     "domain_source": "sito_istituzionale"
   },
   {
+    "id": "IT-C3-aeci",
+    "name": "Aero Club d'Italia",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "aeci.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [
+      "aeroclubitalia.it"
+    ],
+    "ipa_codice_ipa": "aeci",
+    "ipa_codice_categoria": "C3",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "058091",
+    "domain_source": "sito_istituzionale"
+  },
+  {
     "id": "IT-C3-afrstas",
     "name": "Agenzia Forestale Regionale per Lo Sviluppo del Territorio e dell'Ambiente della Sardegna",
     "country": "IT",
@@ -159673,23 +159687,6 @@
     "ipa_codice_categoria": "L1",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "022106",
-    "domain_source": "sito_istituzionale"
-  },
-  {
-    "id": "IT-L1-aeci",
-    "name": "Aero Club d'Italia",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "aeci.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [
-      "aeroclubitalia.it"
-    ],
-    "ipa_codice_ipa": "aeci",
-    "ipa_codice_categoria": "L1",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "058091",
     "domain_source": "sito_istituzionale"
   },
   {
@@ -336083,13 +336080,15 @@
   },
   {
     "id": "IT-L37-fitsbact",
-    "name": "Fondazione Istituto Tecnico Superiore per Tecnologie Innovative per I Beni e Le Attivita' Culturali e Turistiche",
+    "name": "FONDAZIONE ITS ACADEMY BACT",
     "country": "IT",
     "region": null,
     "district": null,
-    "domain": "fondazioneitsbact.it",
+    "domain": "itsbact.it",
     "osm_relation_id": null,
-    "domain_fallbacks": [],
+    "domain_fallbacks": [
+      "fondazioneitsbact.it"
+    ],
     "ipa_codice_ipa": "fitsbact",
     "ipa_codice_categoria": "L37",
     "ipa_codice_istat": null,

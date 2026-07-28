@@ -1,7 +1,7 @@
 {
   "total": 22892,
-  "average_score": 80.7,
-  "high_confidence_pct": 73.7,
+  "average_score": 80.6,
+  "high_confidence_pct": 73.6,
   "quality_passed": false,
   "entries": {
     "IT-C1-KH5RHFCV": {
@@ -2397,13 +2397,13 @@
     },
     "IT-C14-QLLQHCH2": {
       "name": "Ordine dei Dottori Agronomi e dei Dottori Forestali della Provincia di Vibo Valentia",
-      "provider": "unknown",
+      "provider": "local-isp",
       "domain": "ordinevibovalentia.conaf.it",
-      "confidence": 15,
+      "confidence": 80,
       "flags": [
-        "no_mx",
-        "no_spf",
-        "provider_unknown"
+        "spf_strict",
+        "independent_mx_with_cloud_spf",
+        "provider_classified"
       ]
     },
     "IT-C14-R1SU1RWE": {
@@ -14935,13 +14935,13 @@
     },
     "IT-C14-odcec_at": {
       "name": "Ordine dei Dottori Commercialisti e degli Esperti Contabili di Asti",
-      "provider": "regional-public",
+      "provider": "unknown",
       "domain": "asti.odec.com",
-      "confidence": 88,
+      "confidence": 15,
       "flags": [
-        "spf_softfail",
-        "mx_spf_match",
-        "provider_classified"
+        "no_mx",
+        "no_spf",
+        "provider_unknown"
       ]
     },
     "IT-C14-odcec_ba": {
@@ -15902,13 +15902,13 @@
     },
     "IT-C14-oddc_002": {
       "name": "Ordine Dei Dottori Commercialisti e Degli Esperti Contabili di Vercelli",
-      "provider": "regional-public",
+      "provider": "unknown",
       "domain": "vercelli.commercialisti.it",
-      "confidence": 90,
+      "confidence": 15,
       "flags": [
-        "spf_strict",
-        "mx_spf_match",
-        "provider_classified"
+        "no_mx",
+        "no_spf",
+        "provider_unknown"
       ]
     },
     "IT-C14-oddc_014": {
@@ -16322,13 +16322,13 @@
     },
     "IT-C14-oddcd_09": {
       "name": "Ordine dei Dottori Commercialisti e degli Esperti Contabili di  Siracusa",
-      "provider": "independent",
+      "provider": "unknown",
       "domain": "siracusa.commercialisti.it",
-      "confidence": 78,
+      "confidence": 15,
       "flags": [
-        "spf_softfail",
-        "independent_mx_with_cloud_spf",
-        "provider_classified"
+        "no_mx",
+        "no_spf",
+        "provider_unknown"
       ]
     },
     "IT-C14-oddcd_1": {
@@ -16451,13 +16451,13 @@
     },
     "IT-C14-oddcd_vb": {
       "name": "Ordine dei Dottori Commercialisti e degli Esperti Contabili di Verbania",
-      "provider": "independent",
+      "provider": "unknown",
       "domain": "verbania.commercialisti.it",
-      "confidence": 90,
+      "confidence": 15,
       "flags": [
-        "spf_strict",
-        "mx_spf_match",
-        "provider_classified"
+        "no_mx",
+        "no_spf",
+        "provider_unknown"
       ]
     },
     "IT-C14-oddcd_vz": {
@@ -16510,14 +16510,13 @@
     },
     "IT-C14-oddcdf": {
       "name": "Ordine Dei Dottori Commercialisti e Degli Esperti Contabili di Forli'",
-      "provider": "google",
+      "provider": "unknown",
       "domain": "forli.commercialisti.it",
-      "confidence": 93,
+      "confidence": 15,
       "flags": [
-        "multiple_mx",
-        "spf_softfail",
-        "mx_spf_match",
-        "provider_classified"
+        "no_mx",
+        "no_spf",
+        "provider_unknown"
       ]
     },
     "IT-C14-oddcdk": {
@@ -16591,14 +16590,13 @@
     },
     "IT-C14-oddcds": {
       "name": "Ordine Dei Dottori Commercialisti e Degli Esperti Contabili di Sanremo",
-      "provider": "microsoft",
+      "provider": "unknown",
       "domain": "sanremo.odcec.com",
-      "confidence": 93,
+      "confidence": 15,
       "flags": [
-        "spf_softfail",
-        "mx_spf_match",
-        "provider_classified",
-        "autodiscover_confirms"
+        "no_mx",
+        "no_spf",
+        "provider_unknown"
       ]
     },
     "IT-C14-oddcdtp": {
@@ -23470,6 +23468,17 @@
         "autodiscover_confirms"
       ]
     },
+    "IT-C3-aeci": {
+      "name": "Aero Club d'Italia",
+      "provider": "unknown",
+      "domain": "aeci.it",
+      "confidence": 15,
+      "flags": [
+        "no_mx",
+        "no_spf",
+        "provider_unknown"
+      ]
+    },
     "IT-C3-afrstas": {
       "name": "Agenzia Forestale Regionale per Lo Sviluppo del Territorio e dell'Ambiente della Sardegna",
       "provider": "unknown",
@@ -28403,14 +28412,13 @@
     },
     "IT-COM-001223": {
       "name": "Comune di Romano Canavese",
-      "provider": "independent",
+      "provider": "unknown",
       "domain": "comune.romanocanavese.to.it",
-      "confidence": 93,
+      "confidence": 15,
       "flags": [
-        "multiple_mx",
-        "spf_softfail",
-        "mx_spf_match",
-        "provider_classified"
+        "no_mx",
+        "no_spf",
+        "provider_unknown"
       ]
     },
     "IT-COM-001224": {
@@ -28620,7 +28628,7 @@
     "IT-COM-001242": {
       "name": "Comune di San Germano Chisone",
       "provider": "regional-public",
-      "domain": "ruparpiemonte.it",
+      "domain": "comune.sangermanochisone.to.it",
       "confidence": 90,
       "flags": [
         "spf_strict",
@@ -29927,7 +29935,7 @@
     "IT-COM-002068": {
       "name": "Comune di Lenta",
       "provider": "regional-public",
-      "domain": "ruparpiemonte.it",
+      "domain": "comune.lenta.vc.it",
       "confidence": 90,
       "flags": [
         "spf_strict",
@@ -79731,14 +79739,13 @@
     },
     "IT-COM-057026": {
       "name": "Comune di Cottanello",
-      "provider": "aruba",
+      "provider": "unknown",
       "domain": "comune.cottanello.it",
-      "confidence": 83,
+      "confidence": 15,
       "flags": [
-        "spf_softfail",
-        "independent_mx_with_cloud_spf",
-        "provider_classified",
-        "autodiscover_confirms"
+        "no_mx",
+        "no_spf",
+        "provider_unknown"
       ]
     },
     "IT-COM-057027": {
@@ -97280,13 +97287,13 @@
     },
     "IT-COM-076051": {
       "name": "Comune di Montemilone",
-      "provider": "unknown",
-      "domain": "comunemontemilone.it",
-      "confidence": 15,
+      "provider": "regional-public",
+      "domain": "comune.montemilone.pz.it",
+      "confidence": 90,
       "flags": [
-        "no_mx",
-        "no_spf",
-        "provider_unknown"
+        "spf_strict",
+        "mx_spf_match",
+        "provider_classified"
       ]
     },
     "IT-COM-076052": {
@@ -97887,14 +97894,13 @@
     },
     "IT-COM-077006": {
       "name": "Comune di Colobraro",
-      "provider": "aruba",
+      "provider": "unknown",
       "domain": "colobraro.gov.it",
-      "confidence": 83,
+      "confidence": 15,
       "flags": [
-        "spf_softfail",
-        "independent_mx_with_cloud_spf",
-        "provider_classified",
-        "autodiscover_confirms"
+        "no_mx",
+        "no_spf",
+        "provider_unknown"
       ]
     },
     "IT-COM-077007": {
@@ -120311,17 +120317,6 @@
         "provider_classified"
       ]
     },
-    "IT-L1-aeci": {
-      "name": "Aero Club d'Italia",
-      "provider": "unknown",
-      "domain": "aeci.it",
-      "confidence": 15,
-      "flags": [
-        "no_mx",
-        "no_spf",
-        "provider_unknown"
-      ]
-    },
     "IT-L1-agiru_": {
       "name": "Autorita' Gestione Integrata Rifiuti Urbani Abruzzo",
       "provider": "microsoft",
@@ -122108,11 +122103,10 @@
     "IT-L1-azcv": {
       "name": "Azienda Calabria Verde",
       "provider": "aruba",
-      "domain": "calabriaverde.regione.calabria.it",
-      "confidence": 78,
+      "domain": "pec.calabriaverde.eu",
+      "confidence": 50,
       "flags": [
-        "spf_softfail",
-        "independent_mx_with_cloud_spf",
+        "no_spf",
         "provider_classified"
       ]
     },
@@ -131035,10 +131029,11 @@
     },
     "IT-L18-udcmc_": {
       "name": "Unione Dei Comuni Montani del Casentino",
-      "provider": "regional-public",
-      "domain": "uc.casentino.toscana.it",
-      "confidence": 85,
+      "provider": "independent",
+      "domain": "postacert.toscana.it",
+      "confidence": 90,
       "flags": [
+        "spf_strict",
         "mx_spf_match",
         "provider_classified"
       ]
@@ -131782,15 +131777,13 @@
     },
     "IT-L18-udcvt": {
       "name": "Unione Dei Comuni Valle del Tevere Soratte",
-      "provider": "aruba",
+      "provider": "unknown",
       "domain": "santoreste.rm.gov.it",
-      "confidence": 100,
+      "confidence": 15,
       "flags": [
-        "multiple_mx",
-        "spf_strict",
-        "mx_spf_match",
-        "provider_classified",
-        "autodiscover_confirms"
+        "no_mx",
+        "no_spf",
+        "provider_unknown"
       ]
     },
     "IT-L18-udcvt_0": {
@@ -132921,14 +132914,13 @@
     },
     "IT-L18-upm_082": {
       "name": "Unione dei comuni Pizzo Marabito",
-      "provider": "aruba",
+      "provider": "unknown",
       "domain": "marabito.comune.mezzojuso.pa.it",
-      "confidence": 83,
+      "confidence": 15,
       "flags": [
-        "spf_softfail",
-        "independent_mx_with_cloud_spf",
-        "provider_classified",
-        "autodiscover_confirms"
+        "no_mx",
+        "no_spf",
+        "provider_unknown"
       ]
     },
     "IT-L18-upn": {
@@ -228873,7 +228865,7 @@
     "IT-L34-XQZEJ3XC": {
       "name": "arciconfraternita sant'angelo dei rossi",
       "provider": "aruba",
-      "domain": "arciconfraternitadeiross.altervista.org",
+      "domain": "arciconfraternitadeirossi.it",
       "confidence": 83,
       "flags": [
         "spf_softfail",
@@ -231272,13 +231264,13 @@
     },
     "IT-L34-crca": {
       "name": "Casa di Riposo Citta' di Asti",
-      "provider": "regional-public",
+      "provider": "unknown",
       "domain": "casadiriposo.asti.it",
-      "confidence": 88,
+      "confidence": 15,
       "flags": [
-        "spf_softfail",
-        "mx_spf_match",
-        "provider_classified"
+        "no_mx",
+        "no_spf",
+        "provider_unknown"
       ]
     },
     "IT-L34-crcgs": {
@@ -233144,13 +233136,13 @@
     },
     "IT-L34-ivillabe": {
       "name": "Ipab Villa Betania",
-      "provider": "local-isp",
+      "provider": "unknown",
       "domain": "villabetania.agrigento.it",
-      "confidence": 90,
+      "confidence": 15,
       "flags": [
-        "spf_strict",
-        "mx_spf_match",
-        "provider_classified"
+        "no_mx",
+        "no_spf",
+        "provider_unknown"
       ]
     },
     "IT-L34-ivsvi": {
@@ -236167,14 +236159,13 @@
     },
     "IT-L36-cpgd": {
       "name": "Consorzio del Parco Grazia Deledda",
-      "provider": "google",
+      "provider": "unknown",
       "domain": "old.comune.nuoro.it",
-      "confidence": 93,
+      "confidence": 15,
       "flags": [
-        "multiple_mx",
-        "spf_softfail",
-        "mx_spf_match",
-        "provider_classified"
+        "no_mx",
+        "no_spf",
+        "provider_unknown"
       ]
     },
     "IT-L36-cpl_024": {
@@ -240277,14 +240268,13 @@
     },
     "IT-L37-ML34846M": {
       "name": "Azienda Speciale Milazzo Servizi",
-      "provider": "aruba",
+      "provider": "unknown",
       "domain": "milazzo.servizi.it",
-      "confidence": 83,
+      "confidence": 15,
       "flags": [
-        "spf_softfail",
-        "independent_mx_with_cloud_spf",
-        "provider_classified",
-        "autodiscover_confirms"
+        "no_mx",
+        "no_spf",
+        "provider_unknown"
       ]
     },
     "IT-L37-MOO2BXHE": {
@@ -241580,14 +241570,13 @@
     },
     "IT-L37-UNJWGWK4": {
       "name": "Azienda Territoriale per l'Edilizia Residenziale di Gorizia",
-      "provider": "independent",
+      "provider": "unknown",
       "domain": "gorizia.aterfvg.it",
-      "confidence": 93,
+      "confidence": 15,
       "flags": [
-        "multiple_mx",
-        "spf_softfail",
-        "mx_spf_match",
-        "provider_classified"
+        "no_mx",
+        "no_spf",
+        "provider_unknown"
       ]
     },
     "IT-L37-UQWJT58U": {
@@ -244131,14 +244120,13 @@
     },
     "IT-L37-azspclca": {
       "name": "Azienda di Servizi alla Persona Casa Leandra di Canneto Sull' Oglio",
-      "provider": "independent",
+      "provider": "unknown",
       "domain": "asp.canneto.mn.it",
-      "confidence": 95,
+      "confidence": 15,
       "flags": [
-        "multiple_mx",
-        "spf_strict",
-        "mx_spf_match",
-        "provider_classified"
+        "no_mx",
+        "no_spf",
+        "provider_unknown"
       ]
     },
     "IT-L37-barsas": {
@@ -246184,14 +246172,14 @@
       ]
     },
     "IT-L37-fitsbact": {
-      "name": "Fondazione Istituto Tecnico Superiore per Tecnologie Innovative per I Beni e Le Attivita' Culturali e Turistiche",
+      "name": "FONDAZIONE ITS ACADEMY BACT",
       "provider": "google",
-      "domain": "fondazioneitsbact.it",
-      "confidence": 53,
+      "domain": "itsbact.it",
+      "confidence": 93,
       "flags": [
         "multiple_mx",
         "spf_softfail",
-        "mx_spf_mismatch",
+        "mx_spf_match",
         "provider_classified"
       ]
     },
@@ -253661,13 +253649,13 @@
     },
     "IT-L47-8FL5MZFG": {
       "name": "STRUTTURA DEL COMMISSARIO STRAORDINARIO ART. 42 BIS D.L. 23/2020",
-      "provider": "independent",
+      "provider": "unknown",
       "domain": "nos.ospedale.siracusa.it",
-      "confidence": 78,
+      "confidence": 15,
       "flags": [
-        "spf_softfail",
-        "independent_mx_with_cloud_spf",
-        "provider_classified"
+        "no_mx",
+        "no_spf",
+        "provider_unknown"
       ]
     },
     "IT-L47-8UIFPO9K": {
@@ -261001,14 +260989,12 @@
     },
     "IT-SA-ADZ4T32G": {
       "name": "PORT MOBILITY S.p.A. con Socio Unico",
-      "provider": "microsoft",
-      "domain": "civitavecchia.portmobility.it",
-      "confidence": 95,
+      "provider": "aruba",
+      "domain": "pec.portmobility.it",
+      "confidence": 68,
       "flags": [
-        "spf_strict",
-        "mx_spf_match",
-        "provider_classified",
-        "autodiscover_confirms"
+        "spf_softfail",
+        "provider_classified"
       ]
     },
     "IT-SA-AKP3SCHD": {
