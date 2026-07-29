@@ -55575,7 +55575,7 @@
     "country": "IT",
     "region": "Campania",
     "district": "Caserta",
-    "domain": "letino.gov.it",
+    "domain": "comune.letino.ce.it",
     "osm_relation_id": 41304,
     "domain_fallbacks": [],
     "ipa_codice_ipa": "c_e554",
@@ -155247,7 +155247,7 @@
     "country": "IT",
     "region": null,
     "district": null,
-    "domain": "ordineingegnerilaspezia.it",
+    "domain": "laspezia.ordingegneri.it",
     "osm_relation_id": null,
     "domain_fallbacks": [],
     "ipa_codice_ipa": "oring_sp",
@@ -197821,14 +197821,16 @@
     "country": "IT",
     "region": null,
     "district": null,
-    "domain": "istruzione.it",
+    "domain": "wordpress.iisdionigiscano.edu.it",
     "osm_relation_id": null,
-    "domain_fallbacks": [],
+    "domain_fallbacks": [
+      "istruzione.it"
+    ],
     "ipa_codice_ipa": "iisds_09",
     "ipa_codice_categoria": "L33",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "118006",
-    "domain_source": "email_non_pec_fallback"
+    "domain_source": "sito_istituzionale"
   },
   {
     "id": "IT-L33-iisdsd",
@@ -358236,6 +358238,21 @@
     "domain_source": "sito_istituzionale"
   },
   {
+    "id": "IT-SA-CKXT3LV4",
+    "name": "Oasi srl",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "istitutosangiorgio.com",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "CKXT3LV4",
+    "ipa_codice_categoria": "SA",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "063049",
+    "domain_source": "sito_istituzionale"
+  },
+  {
     "id": "IT-SA-COOYAM44",
     "name": "FAR.COM. SRL",
     "country": "IT",
@@ -358400,6 +358417,21 @@
     "ipa_codice_categoria": "SA",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "017075",
+    "domain_source": "sito_istituzionale"
+  },
+  {
+    "id": "IT-SA-D3ZDP3W4",
+    "name": "Società Trasporti Provinciale Bari",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "stpspa.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "D3ZDP3W4",
+    "ipa_codice_categoria": "SA",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "110009",
     "domain_source": "sito_istituzionale"
   },
   {
