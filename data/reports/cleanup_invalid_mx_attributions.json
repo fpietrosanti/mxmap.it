@@ -1,5 +1,5 @@
 {
-  "n_purged": 503,
+  "n_purged": 504,
   "items": [
     {
       "id": "IT-C1-m_pi",
@@ -1716,6 +1716,17 @@
       "old_mx": "mx.cittadisalemi.it",
       "old_provider": "aruba",
       "old_reason": "MX (mx.cittadisalemi.it) on AS31034 (Aruba.it (IT)) -> aruba (ASN-based override)"
+    },
+    {
+      "id": "IT-COM-082072",
+      "name": "Comune di Torretta",
+      "codice_ipa": "c_l282",
+      "seed_domain": "operapiamangione1811.com",
+      "claimed_domain": "comune.torretta.pa.it",
+      "reject_reason": "unrelated",
+      "old_mx": "mx.comune.torretta.pa.it",
+      "old_provider": "aruba",
+      "old_reason": "MX (mx.comune.torretta.pa.it) on AS31034 (Aruba.it (IT)) -> aruba (ASN-based override)"
     },
     {
       "id": "IT-COM-084037",

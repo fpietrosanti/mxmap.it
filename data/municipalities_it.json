@@ -109924,7 +109924,7 @@
     "country": "IT",
     "region": "Sicilia",
     "district": "Palermo",
-    "domain": "comune.torretta.pa.it",
+    "domain": "operapiamangione1811.com",
     "osm_relation_id": 39539,
     "domain_fallbacks": [
       "libero.it"
@@ -163590,6 +163590,21 @@
     "ipa_codice_categoria": "L1",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "032006",
+    "domain_source": "sito_istituzionale"
+  },
+  {
+    "id": "IT-L1-hitf",
+    "name": "FONDAZIONE HUB INNOVAZIONE TRENTINO",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "trentinoinnovation.eu",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "hitf",
+    "ipa_codice_categoria": "L1",
+    "ipa_codice_istat": "30469695",
+    "ipa_codice_comune_istat": "022205",
     "domain_source": "sito_istituzionale"
   },
   {
@@ -240499,7 +240514,7 @@
     "country": "IT",
     "region": null,
     "district": null,
-    "domain": "stoppanicomprensivo.it",
+    "domain": "stoppanicomprensivo.edu.it",
     "osm_relation_id": null,
     "domain_fallbacks": [
       "istruzione.it"
@@ -315738,7 +315753,9 @@
     "district": null,
     "domain": "ssp-latsch.eu",
     "osm_relation_id": null,
-    "domain_fallbacks": [],
+    "domain_fallbacks": [
+      "schule.suedtirol.it"
+    ],
     "ipa_codice_ipa": "sl_",
     "ipa_codice_categoria": "L33",
     "ipa_codice_istat": null,
@@ -359321,21 +359338,6 @@
     "ipa_codice_categoria": "SA",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "058091",
-    "domain_source": "sito_istituzionale"
-  },
-  {
-    "id": "IT-SA-hitf",
-    "name": "FONDAZIONE HUB INNOVAZIONE TRENTINO",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "trentinoinnovation.eu",
-    "osm_relation_id": null,
-    "domain_fallbacks": [],
-    "ipa_codice_ipa": "hitf",
-    "ipa_codice_categoria": "SA",
-    "ipa_codice_istat": "30469695",
-    "ipa_codice_comune_istat": "022205",
     "domain_source": "sito_istituzionale"
   },
   {
