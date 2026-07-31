@@ -1,5 +1,5 @@
 {
-  "n_purged": 504,
+  "n_purged": 506,
   "items": [
     {
       "id": "IT-C1-m_pi",
@@ -1276,6 +1276,17 @@
       "old_mx": "mx.comunetorreberetti.pv.it",
       "old_provider": "aruba",
       "old_reason": "MX (mx.comunetorreberetti.pv.it) on AS31034 (Aruba.it (IT)) -> aruba (ASN-based override)"
+    },
+    {
+      "id": "IT-COM-019051",
+      "name": "Comune di Grumello Cremonese ed Uniti",
+      "codice_ipa": "c_e217",
+      "seed_domain": "grumellocremonese.it",
+      "claimed_domain": "comune.grumellocremoneseeduniti.cr.it",
+      "reject_reason": "unrelated",
+      "old_mx": "mx.comune.grumellocremoneseeduniti.cr.it",
+      "old_provider": "aruba",
+      "old_reason": "MX (mx.comune.grumellocremoneseeduniti.cr.it) on AS31034 (Aruba.it (IT)) -> aruba (ASN-based override)"
     },
     {
       "id": "IT-COM-022040",
@@ -2640,17 +2651,6 @@
       "old_mx": "mail.comune.sulmona.aq.it",
       "old_provider": "independent",
       "old_reason": "MX (mail.comune.sulmona.aq.it) is self-hosted"
-    },
-    {
-      "id": "IT-L12-cmp_to",
-      "name": "Comunita' Montana del Pinerolese",
-      "codice_ipa": "cmp_to",
-      "seed_domain": "cmpinerolese.it",
-      "claimed_domain": "comune.perosaargentina.to.it",
-      "reject_reason": "unrelated",
-      "old_mx": "mx01.alpimedia.it",
-      "old_provider": "local-isp",
-      "old_reason": "MX (mx01.alpimedia.it) hosted on Local ISP (IT.Gate (IT))"
     },
     {
       "id": "IT-L12-cms_078",
@@ -4490,6 +4490,17 @@
       "old_reason": "MX (mx01.ergonet.it, mx02.ergonet.it) on AS31034 (Aruba.it (IT)) -> aruba (ASN-based override)"
     },
     {
+      "id": "IT-L37-URKWSF83",
+      "name": "SOCIETA' RISCOSSIONI COMUNALI S.R.L.",
+      "codice_ipa": "urkwsf83",
+      "seed_domain": "riscosrl.it",
+      "claimed_domain": "comune.francavilla.ch.it",
+      "reject_reason": "unrelated",
+      "old_mx": "mx.comune.francavilla.ch.it",
+      "old_provider": "aruba",
+      "old_reason": "MX (mx.comune.francavilla.ch.it) on AS31034 (Aruba.it (IT)) -> aruba (ASN-based override)"
+    },
+    {
       "id": "IT-L37-afisp",
       "name": "Azienda Feltrina per i Servizi alla Persona",
       "codice_ipa": "afisp",
@@ -5005,6 +5016,17 @@
       "old_mx": "mail.comune.salbertrand.to.it",
       "old_provider": "aruba",
       "old_reason": "MX (mail.comune.salbertrand.to.it) on AS31034 (Aruba.it (IT)) -> aruba (ASN-based override)"
+    },
+    {
+      "id": "IT-L38-palili",
+      "name": "Parco Archeologico di Lilibeo-Marsala",
+      "codice_ipa": "palili",
+      "seed_domain": "parcolilibeo.it",
+      "claimed_domain": "comune.marsala.tp.it",
+      "reject_reason": "unrelated",
+      "old_mx": "mx.comune.marsala.tp.it",
+      "old_provider": "aruba",
+      "old_reason": "MX (mx.comune.marsala.tp.it) on AS31034 (Aruba.it (IT)) -> aruba (ASN-based override)"
     },
     {
       "id": "IT-L38-pr_migli",

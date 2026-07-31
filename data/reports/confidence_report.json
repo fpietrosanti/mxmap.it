@@ -1,46 +1,46 @@
 {
   "country": "IT",
-  "n": 22894,
+  "n": 22895,
   "mean": 0.851,
   "median": 0.9,
   "mean_nonzero": 0.875,
   "buckets": {
-    "0.90-1.00 (molto alta)": 17349,
-    "0.80-0.89 (alta)": 3618,
-    "0.00 (nulla / unknown)": 624,
-    "0.60-0.79 (media)": 1235,
-    "0.01-0.59 (bassa)": 68
+    "0.90-1.00 (molto alta)": 17341,
+    "0.80-0.89 (alta)": 3624,
+    "0.00 (nulla / unknown)": 626,
+    "0.60-0.79 (media)": 1237,
+    "0.01-0.59 (bassa)": 67
   },
   "rules": {
-    "mx_spf": 17349,
-    "dom_mx_spf": 1734,
-    "no_mx": 624,
-    "mx_only": 1884,
-    "frgn_mx_spf": 980,
+    "mx_spf": 17341,
+    "dom_mx_spf": 1742,
+    "no_mx": 626,
+    "mx_only": 1882,
+    "frgn_mx_spf": 982,
     "dom_mx_only": 255,
-    "frgn_mx_only": 68
+    "frgn_mx_only": 67
   },
   "jurisdiction": {
-    "foreign": 11405,
-    "domestic": 10545,
-    "mixed": 251,
-    "unknown": 693
+    "foreign": 11416,
+    "domestic": 10533,
+    "mixed": 250,
+    "unknown": 696
   },
-  "domestic_mx_override": 188,
-  "bounce_candidates": 68,
+  "domestic_mx_override": 196,
+  "bounce_candidates": 67,
   "bounce_by_provider": {
-    "independent": 68
+    "independent": 67
   },
   "bounce_by_jurisdiction": {
-    "unknown": 36,
+    "unknown": 35,
     "foreign": 32
   },
   "provider_confidence": {
     "microsoft": 0.928,
-    "independent": 0.72,
+    "independent": 0.721,
     "local-isp": 0.892,
     "unknown": 0.0,
-    "google": 0.881,
+    "google": 0.883,
     "aruba": 0.896,
     "seeweb": 0.899,
     "register-it": 0.89,

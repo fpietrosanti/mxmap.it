@@ -320,9 +320,9 @@
   },
   {
     "id": "IT-CONS-JZXL7734",
-    "name": "Servizio Affari Generali e Amministrativi",
+    "name": "Agenzia Regionale di Protezione Civile Regione Abruzzo",
     "country": "IT",
-    "region": "Servizio Affari Generali e Amministrativi",
+    "region": "Agenzia Regionale di Protezione Civile Regione Abruzzo",
     "district": null,
     "domain": "protezionecivile.regione.abruzzo.it",
     "osm_relation_id": null,
@@ -27417,11 +27417,9 @@
     "country": "IT",
     "region": "Lombardia",
     "district": "Mantova",
-    "domain": "castelgoffredo-sito.municipiumapp.it",
+    "domain": "comune.castelgoffredo.mn.it",
     "osm_relation_id": 44609,
-    "domain_fallbacks": [
-      "comune.castelgoffredo.mn.it"
-    ],
+    "domain_fallbacks": [],
     "ipa_codice_ipa": "c_c118",
     "ipa_codice_categoria": "L6",
     "ipa_codice_istat": "717050",
@@ -49447,7 +49445,7 @@
     "domain": "comune.gildone.cb.it",
     "osm_relation_id": 41330,
     "domain_fallbacks": [
-      "gmail.com"
+      "virgilio.it"
     ],
     "ipa_codice_ipa": "c_e030",
     "ipa_codice_categoria": "L6",
@@ -359987,6 +359985,21 @@
     "ipa_codice_categoria": "SA",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "058091",
+    "domain_source": "sito_istituzionale"
+  },
+  {
+    "id": "IT-SA-KHD93DIQ",
+    "name": "Training & Job cooperativa arl",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "ipsarcangelo.com",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "KHD93DIQ",
+    "ipa_codice_categoria": "SA",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "063051",
     "domain_source": "sito_istituzionale"
   },
   {
