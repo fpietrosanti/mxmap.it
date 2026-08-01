@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-07-31T07:54:03Z",
+  "generated_at": "2026-08-01T07:17:55Z",
   "run_id": null,
   "license": "CC BY-SA 4.0",
   "source": "https://github.com/mxmap-it/mxmap.it",
   "totals": {
     "n_entities": 22895,
-    "n_with_mx": 22269,
+    "n_with_mx": 22271,
     "coverage_pct": 97.27
   },
   "indices": {
-    "isd": 51.3,
-    "cloud_act_pct": 48.15,
-    "n_classified": 22269
+    "isd": 51.31,
+    "cloud_act_pct": 48.14,
+    "n_classified": 22271
   },
   "sovereignty": {
     "extra_eu": {
-      "count": 10725,
+      "count": 10724,
       "pct": 46.8,
       "label": "Extra-UE (CLOUD Act)"
     },
@@ -25,12 +25,12 @@
       "label": "Europeo (non italiano)"
     },
     "it": {
-      "count": 11424,
+      "count": 11427,
       "pct": 49.9,
       "label": "Italiano"
     },
     "unknown": {
-      "count": 626,
+      "count": 624,
       "pct": 2.7,
       "label": "Sconosciuto"
     }
@@ -38,7 +38,7 @@
   "top_providers": [
     {
       "name": "Provider Italiano",
-      "count": 7448,
+      "count": 7449,
       "pct": 32.5,
       "sovereignty": "it"
     },
@@ -50,13 +50,13 @@
     },
     {
       "name": "Microsoft 365",
-      "count": 4278,
+      "count": 4277,
       "pct": 18.7,
       "sovereignty": "extra_eu"
     },
     {
       "name": "Infrastruttura autonoma",
-      "count": 3046,
+      "count": 3048,
       "pct": 13.3,
       "sovereignty": "it"
     },
@@ -68,7 +68,7 @@
     },
     {
       "name": "Sconosciuto",
-      "count": 626,
+      "count": 624,
       "pct": 2.7,
       "sovereignty": "unknown"
     },
@@ -184,7 +184,7 @@
     }
   ],
   "confidence": {
-    "mean": 0.8511,
+    "mean": 0.8512,
     "high_pct": 91.6
   }
 }

@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-07-31 07:53 UTC",
+ "generated_at": "2026-08-01 07:17 UTC",
  "country": "IT",
  "total_entities": 22895,
- "anomalies_total": 728,
- "anomalies_pct": 3.18,
+ "anomalies_total": 726,
+ "anomalies_pct": 3.17,
  "by_type": {
-  "no_mx": 626,
+  "no_mx": 624,
   "geo_unknown": 70,
   "low_confidence": 67
  },
@@ -15,7 +15,7 @@
   "low_confidence": "Bassa confidenza (<0,60)"
  },
  "by_provider": {
-  "unknown": 626,
+  "unknown": 624,
   "independent": 94,
   "google": 4,
   "microsoft": 4
@@ -163,7 +163,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 1 candidates; none yielded MX"
+   "reason": "search engine returned 6 candidates; none yielded MX"
   },
   {
    "name": "ISTITUTO TECNICO SUPERIORE AGROALIMENTARE PER IL PIEMONTE",
@@ -1651,17 +1651,6 @@
    "reason": "cleared by is_legit gate: unrelated"
   },
   {
-   "name": "Comune di Cureggio",
-   "domain": "comune.cureggio.no.it",
-   "provider": "unknown",
-   "confidence": 0.0,
-   "anomaly": [
-    "no_mx"
-   ],
-   "mx": null,
-   "reason": "search engine returned 1 candidates; none yielded MX"
-  },
-  {
    "name": "Comune di Domegge di Cadore",
    "domain": "comune.domeggedicadore.bl.it",
    "provider": "unknown",
@@ -2201,17 +2190,6 @@
    "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
-   "name": "Comune di Scanno",
-   "domain": "comune.scanno.aq.it",
-   "provider": "unknown",
-   "confidence": 0.0,
-   "anomaly": [
-    "no_mx"
-   ],
-   "mx": null,
-   "reason": "search engine returned 1 candidates; none yielded MX"
-  },
-  {
    "name": "Comune di Sciolze",
    "domain": "comune.sciolze.to.it",
    "provider": "unknown",
@@ -2704,7 +2682,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 5 candidates; none yielded MX"
+   "reason": "search engine returned 6 candidates; none yielded MX"
   },
   {
    "name": "Comune di San Sebastiano al Vesuvio",
@@ -4035,7 +4013,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 6 candidates; none yielded MX"
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Istituto Comprensivo di Scuola Primaria e Secondaria di Primo Grado Rovereto - Sud Via Benacense, 32",
@@ -6400,7 +6378,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 1 candidates; none yielded MX"
+   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
   },
   {
    "name": "Unione Collinare Canavesana",
