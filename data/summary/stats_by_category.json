@@ -50,7 +50,7 @@
    "cluster": "territorial",
    "label": "Enti territoriali (Comuni, Province, Città metrop., Regioni)",
    "n": 8005,
-   "n_classified": 7870,
+   "n_classified": 7869,
    "isd": 73.68,
    "cloud_act_pct": 26.0,
    "sovereignty": [
@@ -63,8 +63,8 @@
     {
      "bucket": "Italia — Provider commerciali",
      "group": "ITA",
-     "count": 3230,
-     "pct": 41.04
+     "count": 3229,
+     "pct": 41.03
     },
     {
      "bucket": "Italia — Infrastruttura autonoma",
@@ -87,8 +87,8 @@
     {
      "bucket": "Sconosciuto",
      "group": "ND",
-     "count": 135,
-     "pct": 1.69
+     "count": 136,
+     "pct": 1.7
     }
    ]
   },
@@ -691,5 +691,5 @@
    ]
   }
  ],
- "generated": "2026-08-01T06:40:22Z"
+ "generated": "2026-08-02T06:42:33Z"
 }
