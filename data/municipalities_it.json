@@ -328315,6 +328315,21 @@
     "domain_source": "sito_istituzionale"
   },
   {
+    "id": "IT-L37-1G20JNNY",
+    "name": "SOCIETA' ECOLOGIA TERRITORIO AMBIENTE SPA",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "setaspa.com",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "1G20JNNY",
+    "ipa_codice_categoria": "L37",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "001265",
+    "domain_source": "sito_istituzionale"
+  },
+  {
     "id": "IT-L37-1KUZ447N",
     "name": "Fondazione Istituto Tecnologico Superiore Academy Terra di Lavoro - TE.LA.",
     "country": "IT",
@@ -329355,6 +329370,21 @@
     "ipa_codice_categoria": "L37",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "058091",
+    "domain_source": "sito_istituzionale"
+  },
+  {
+    "id": "IT-L37-5WEQOI7K",
+    "name": "ALILAURO S.P.A.",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "alilauro.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "5WEQOI7K",
+    "ipa_codice_categoria": "L37",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "063049",
     "domain_source": "sito_istituzionale"
   },
   {

@@ -1,5 +1,5 @@
 {
-  "total": 22895,
+  "total": 22897,
   "average_score": 80.7,
   "high_confidence_pct": 73.7,
   "quality_passed": false,
@@ -14028,7 +14028,7 @@
     "IT-C14-odapcn": {
       "name": "Ordine Degli Architetti, Pianificatori, Paesaggisti e Conservatori di Napoli e Provincia",
       "provider": "local-isp",
-      "domain": "napoli.archiworld.it",
+      "domain": "na.archiworld.it",
       "confidence": 95,
       "flags": [
         "multiple_mx",
@@ -28418,13 +28418,14 @@
     },
     "IT-COM-001223": {
       "name": "Comune di Romano Canavese",
-      "provider": "unknown",
+      "provider": "independent",
       "domain": "comune.romanocanavese.to.it",
-      "confidence": 15,
+      "confidence": 93,
       "flags": [
-        "no_mx",
-        "no_spf",
-        "provider_unknown"
+        "multiple_mx",
+        "spf_softfail",
+        "mx_spf_match",
+        "provider_classified"
       ]
     },
     "IT-COM-001224": {
@@ -35741,7 +35742,7 @@
     "IT-COM-006002": {
       "name": "Comune di Albera Ligure",
       "provider": "independent",
-      "domain": "comune.alberaligure.al.it",
+      "domain": "cert.ruparpiemonte.it",
       "confidence": 80,
       "flags": [
         "spf_strict",
@@ -131056,10 +131057,11 @@
     },
     "IT-L18-udcmc_": {
       "name": "Unione Dei Comuni Montani del Casentino",
-      "provider": "regional-public",
-      "domain": "uc.casentino.toscana.it",
-      "confidence": 85,
+      "provider": "independent",
+      "domain": "postacert.toscana.it",
+      "confidence": 90,
       "flags": [
+        "spf_strict",
         "mx_spf_match",
         "provider_classified"
       ]
@@ -162950,13 +162952,13 @@
     },
     "IT-L33-istsc_boic82800e": {
       "name": "ISTITUTO COMPRENSIVO - IC DI OZZANO DELL'EMILIA",
-      "provider": "istruzione-miur-tenant",
-      "domain": "icozzano.edu.it",
-      "confidence": 80,
+      "provider": "google",
+      "domain": "icozzano.istruzioneer.it",
+      "confidence": 93,
       "flags": [
-        "spf_strict",
+        "multiple_mx",
+        "spf_softfail",
         "mx_spf_match",
-        "multi_provider_spf:brevo+microsoft+regional-public",
         "provider_classified"
       ]
     },
@@ -204612,13 +204614,11 @@
     },
     "IT-L33-istsc_reic82400e": {
       "name": "ISTITUTO COMPRENSIVO - GALILEO GALILEI R.E.",
-      "provider": "istruzione-miur-tenant",
+      "provider": "google",
       "domain": "icgalilei-re.edu.it",
-      "confidence": 80,
+      "confidence": 50,
       "flags": [
-        "spf_strict",
-        "mx_spf_match",
-        "multi_provider_spf:brevo+microsoft+regional-public",
+        "no_spf",
         "provider_classified"
       ]
     },
@@ -237007,6 +237007,18 @@
         "provider_classified"
       ]
     },
+    "IT-L37-1G20JNNY": {
+      "name": "SOCIETA' ECOLOGIA TERRITORIO AMBIENTE SPA",
+      "provider": "independent",
+      "domain": "setaspa.com",
+      "confidence": 50,
+      "flags": [
+        "spf_strict",
+        "mx_spf_mismatch",
+        "provider_classified",
+        "autodiscover_suggests:microsoft"
+      ]
+    },
     "IT-L37-1KUZ447N": {
       "name": "Fondazione Istituto Tecnologico Superiore Academy Terra di Lavoro - TE.LA.",
       "provider": "local-isp",
@@ -237817,6 +237829,17 @@
         "independent_mx_with_cloud_spf",
         "provider_classified",
         "autodiscover_confirms"
+      ]
+    },
+    "IT-L37-5WEQOI7K": {
+      "name": "ALILAURO S.P.A.",
+      "provider": "local-isp",
+      "domain": "alilauro.it",
+      "confidence": 80,
+      "flags": [
+        "spf_strict",
+        "independent_mx_with_cloud_spf",
+        "provider_classified"
       ]
     },
     "IT-L37-6006VSSS": {
@@ -254035,11 +254058,11 @@
     },
     "IT-L47-csdpcm": {
       "name": "Commissario Straordinario D.P.C.M. del 21 Gennaio 2011",
-      "provider": "microsoft",
-      "domain": "mitigazione-rischioidrogeologico.regione.campania.it",
-      "confidence": 90,
+      "provider": "aruba",
+      "domain": "pec.regione.campania.it",
+      "confidence": 88,
       "flags": [
-        "spf_strict",
+        "spf_softfail",
         "mx_spf_match",
         "provider_classified"
       ]
@@ -262693,11 +262716,11 @@
     },
     "IT-SA-MH8PWLTO": {
       "name": "Fondazione POL.I.S.",
-      "provider": "microsoft",
-      "domain": "fondazionepolis.regione.campania.it",
-      "confidence": 90,
+      "provider": "aruba",
+      "domain": "pec.regione.campania.it",
+      "confidence": 88,
       "flags": [
-        "spf_strict",
+        "spf_softfail",
         "mx_spf_match",
         "provider_classified"
       ]
