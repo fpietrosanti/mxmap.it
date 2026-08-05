@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-08-04T07:18:15Z",
+  "generated_at": "2026-08-05T07:24:37Z",
   "run_id": null,
   "license": "CC BY-SA 4.0",
   "source": "https://github.com/mxmap-it/mxmap.it",
   "totals": {
     "n_entities": 22897,
-    "n_with_mx": 22272,
+    "n_with_mx": 22273,
     "coverage_pct": 97.27
   },
   "indices": {
     "isd": 51.31,
     "cloud_act_pct": 48.14,
-    "n_classified": 22272
+    "n_classified": 22273
   },
   "sovereignty": {
     "extra_eu": {
-      "count": 10724,
+      "count": 10725,
       "pct": 46.8,
       "label": "Extra-UE (CLOUD Act)"
     },
@@ -30,7 +30,7 @@
       "label": "Italiano"
     },
     "unknown": {
-      "count": 625,
+      "count": 624,
       "pct": 2.7,
       "label": "Sconosciuto"
     }
@@ -44,13 +44,13 @@
     },
     {
       "name": "Google Workspace",
-      "count": 6442,
+      "count": 6441,
       "pct": 28.1,
       "sovereignty": "extra_eu"
     },
     {
       "name": "Microsoft 365",
-      "count": 4274,
+      "count": 4276,
       "pct": 18.7,
       "sovereignty": "extra_eu"
     },
@@ -68,7 +68,7 @@
     },
     {
       "name": "Sconosciuto",
-      "count": 625,
+      "count": 624,
       "pct": 2.7,
       "sovereignty": "unknown"
     },
@@ -118,7 +118,7 @@
     },
     {
       "cluster": "Gestori di pubblici servizi",
-      "n_entities": 1141,
+      "n_entities": 1142,
       "usa_pct": 46.3,
       "dominant_provider": "Microsoft 365"
     },
@@ -136,8 +136,8 @@
     },
     {
       "cluster": "Ambiente e Territorio",
-      "n_entities": 272,
-      "usa_pct": 27.6,
+      "n_entities": 271,
+      "usa_pct": 27.7,
       "dominant_provider": "Provider Italiano"
     },
     {

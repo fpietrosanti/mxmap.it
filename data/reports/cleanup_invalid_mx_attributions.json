@@ -1,5 +1,5 @@
 {
-  "n_purged": 506,
+  "n_purged": 505,
   "items": [
     {
       "id": "IT-C1-m_pi",
@@ -140,9 +140,9 @@
       "seed_domain": "ordineostetrichemodenaferrara.it",
       "claimed_domain": "comune.modena.it",
       "reject_reason": "unrelated",
-      "old_mx": "mx.carboniocloud.com",
+      "old_mx": "mx-01-eu-west-1.prod.hydra.sophos.com",
       "old_provider": "google",
-      "old_reason": "MX is carbonio gateway; TXT verification proves google tenant"
+      "old_reason": "MX is sophos gateway; TXT verification proves google tenant"
     },
     {
       "id": "IT-C14-cdop_061",
@@ -4488,17 +4488,6 @@
       "old_mx": "mx01.ergonet.it",
       "old_provider": "aruba",
       "old_reason": "MX (mx01.ergonet.it, mx02.ergonet.it) on AS31034 (Aruba.it (IT)) -> aruba (ASN-based override)"
-    },
-    {
-      "id": "IT-L37-URKWSF83",
-      "name": "SOCIETA' RISCOSSIONI COMUNALI S.R.L.",
-      "codice_ipa": "urkwsf83",
-      "seed_domain": "riscosrl.it",
-      "claimed_domain": "comune.francavilla.ch.it",
-      "reject_reason": "unrelated",
-      "old_mx": "mx.comune.francavilla.ch.it",
-      "old_provider": "aruba",
-      "old_reason": "MX (mx.comune.francavilla.ch.it) on AS31034 (Aruba.it (IT)) -> aruba (ASN-based override)"
     },
     {
       "id": "IT-L37-afisp",

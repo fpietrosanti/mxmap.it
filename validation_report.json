@@ -2841,7 +2841,7 @@
     "IT-C14-cdgd_050": {
       "name": "Collegio Dei Geometri e Dei Geometri Laureati della Provincia di Pisa",
       "provider": "microsoft",
-      "domain": "collegio.geometri.pi.it",
+      "domain": "collegiogeometripisa.it",
       "confidence": 95,
       "flags": [
         "spf_strict",
@@ -14686,12 +14686,12 @@
     },
     "IT-C14-odc_0": {
       "name": "Ordine Dei Dottori Commercialisti e Degli Esperti Contabili di Caltagirone",
-      "provider": "independent",
-      "domain": "pec.commercialisti.it",
-      "confidence": 90,
+      "provider": "aruba",
+      "domain": "caltagirone.commercialisti.it",
+      "confidence": 78,
       "flags": [
-        "spf_strict",
-        "mx_spf_match",
+        "spf_softfail",
+        "independent_mx_with_cloud_spf",
         "provider_classified"
       ]
     },
@@ -87428,7 +87428,7 @@
     },
     "IT-COM-064109": {
       "name": "Comune di Torella dei Lombardi",
-      "provider": "local-isp",
+      "provider": "independent",
       "domain": "comune.torelladeilombardi.av.it",
       "confidence": 90,
       "flags": [
@@ -162952,13 +162952,13 @@
     },
     "IT-L33-istsc_boic82800e": {
       "name": "ISTITUTO COMPRENSIVO - IC DI OZZANO DELL'EMILIA",
-      "provider": "google",
-      "domain": "icozzano.istruzioneer.it",
-      "confidence": 93,
+      "provider": "istruzione-miur-tenant",
+      "domain": "icozzano.edu.it",
+      "confidence": 80,
       "flags": [
-        "multiple_mx",
-        "spf_softfail",
+        "spf_strict",
         "mx_spf_match",
+        "multi_provider_spf:brevo+microsoft+regional-public",
         "provider_classified"
       ]
     },
@@ -190586,14 +190586,12 @@
       ]
     },
     "IT-L33-istsc_naic80300c": {
-      "name": "I.C. Visciano - Camposano",
+      "name": "Istituto Comprensivo \"Padre Arturo D'Onofrio\"",
       "provider": "google",
-      "domain": "icviscianocamposano.edu.it",
-      "confidence": 93,
+      "domain": "icdonofrio.edu.it",
+      "confidence": 50,
       "flags": [
-        "multiple_mx",
-        "spf_softfail",
-        "mx_spf_match",
+        "no_spf",
         "provider_classified"
       ]
     },
@@ -240228,6 +240226,18 @@
         "provider_classified"
       ]
     },
+    "IT-L37-LUU33H6V": {
+      "name": "ORGANISMO PER LA GESTIONE DEGLI ELENCHI DEGLI AGENTI IN ATTIVITA' FINANZIARIA E DEI MEDIATORI CREDITIZI",
+      "provider": "microsoft",
+      "domain": "organismo-am.it",
+      "confidence": 95,
+      "flags": [
+        "spf_strict",
+        "mx_spf_match",
+        "provider_classified",
+        "autodiscover_confirms"
+      ]
+    },
     "IT-L37-M4UX0XWJ": {
       "name": "la maddalena ambiente srl",
       "provider": "aruba",
@@ -241651,13 +241661,13 @@
     },
     "IT-L37-URKWSF83": {
       "name": "SOCIETA' RISCOSSIONI COMUNALI S.R.L.",
-      "provider": "unknown",
+      "provider": "local-isp",
       "domain": "riscosrl.it",
-      "confidence": 15,
+      "confidence": 88,
       "flags": [
-        "no_mx",
-        "no_spf",
-        "provider_unknown"
+        "spf_softfail",
+        "mx_spf_match",
+        "provider_classified"
       ]
     },
     "IT-L37-UTZDRHOA": {
@@ -252719,17 +252729,6 @@
         "multiple_mx",
         "spf_strict",
         "mx_spf_match",
-        "provider_classified"
-      ]
-    },
-    "IT-L44-adas": {
-      "name": "Autorita' di Ambito Sele",
-      "provider": "aruba",
-      "domain": "atosele.it",
-      "confidence": 78,
-      "flags": [
-        "spf_softfail",
-        "independent_mx_with_cloud_spf",
         "provider_classified"
       ]
     },
