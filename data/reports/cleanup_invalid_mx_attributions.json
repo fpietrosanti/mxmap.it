@@ -1,5 +1,5 @@
 {
-  "n_purged": 505,
+  "n_purged": 506,
   "items": [
     {
       "id": "IT-C1-m_pi",
@@ -2673,6 +2673,17 @@
       "old_mx": "mail.asmecal.it",
       "old_provider": "regional-public",
       "old_reason": "MX record (mail.asmecal.it) matches Italian regional public ICT"
+    },
+    {
+      "id": "IT-L12-xcmar",
+      "name": "XVIII Comunita' Montana Area Romana",
+      "codice_ipa": "xcmar",
+      "seed_domain": "cmmontilepini.it",
+      "claimed_domain": "comune.segni.rm.it",
+      "reject_reason": "unrelated",
+      "old_mx": "mx.comune.segni.rm.it",
+      "old_provider": "aruba",
+      "old_reason": "MX (mx.comune.segni.rm.it) on AS31034 (Aruba.it (IT)) -> aruba (ASN-based override)"
     },
     {
       "id": "IT-L15-cidsc_mi",

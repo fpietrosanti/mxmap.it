@@ -126822,7 +126822,9 @@
     "district": null,
     "domain": "acireggio.it",
     "osm_relation_id": null,
-    "domain_fallbacks": [],
+    "domain_fallbacks": [
+      "acire.it"
+    ],
     "ipa_codice_ipa": "acree",
     "ipa_codice_categoria": "C13",
     "ipa_codice_istat": null,
@@ -127170,6 +127172,21 @@
     "ipa_codice_categoria": "C14",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "058111",
+    "domain_source": "sito_istituzionale"
+  },
+  {
+    "id": "IT-C14-1SCXYSW4",
+    "name": "ORDINE INTERPROVINCIALE DELLA PROFESSIONE DI OSTETRICA DI AGRIGENTO, CALTANISSETTA E ENNA",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "collegiostetricheagcl.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "1SCXYSW4",
+    "ipa_codice_categoria": "C14",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "084001",
     "domain_source": "sito_istituzionale"
   },
   {
@@ -134504,7 +134521,9 @@
     "district": null,
     "domain": "ostetrichep.it",
     "osm_relation_id": null,
-    "domain_fallbacks": [],
+    "domain_fallbacks": [
+      "virgilio.it"
+    ],
     "ipa_codice_ipa": "coppg",
     "ipa_codice_categoria": "C14",
     "ipa_codice_istat": null,
@@ -356149,21 +356168,6 @@
     "domain_source": "sito_istituzionale"
   },
   {
-    "id": "IT-SA-1R9VQFM0",
-    "name": "Consorzio di Bonifica Alta Pianura Veneta",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "altapianuraveneta.eu",
-    "osm_relation_id": null,
-    "domain_fallbacks": [],
-    "ipa_codice_ipa": "1R9VQFM0",
-    "ipa_codice_categoria": "SA",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "023069",
-    "domain_source": "sito_istituzionale"
-  },
-  {
     "id": "IT-SA-1T08N3AZ",
     "name": "AZIENDA SPECIALE MULTISERVIZI VIGEVANO",
     "country": "IT",
@@ -362963,6 +362967,21 @@
     "ipa_codice_categoria": "SAG",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "086009",
+    "domain_source": "sito_istituzionale"
+  },
+  {
+    "id": "IT-SAG-1R9VQFM0",
+    "name": "Consorzio di Bonifica Alta Pianura Veneta",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "altapianuraveneta.eu",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "1R9VQFM0",
+    "ipa_codice_categoria": "SAG",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "023069",
     "domain_source": "sito_istituzionale"
   },
   {

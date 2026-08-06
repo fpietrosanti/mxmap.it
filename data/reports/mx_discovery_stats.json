@@ -1,13 +1,13 @@
 {
-  "total": 22897,
+  "total": 22898,
   "by_method": {
     "seed_primary_mx": 21203,
-    "aoo_uo_tier6": 56,
-    "unknown": 624,
+    "aoo_uo_tier6": 59,
+    "unknown": 625,
     "domain_fallback": 112,
-    "wikidata_p856": 18,
+    "wikidata_p856": 17,
     "search_engine_scrape": 1,
     "public_pec_inference": 16,
-    "istruzione_miur_tenant": 867
+    "istruzione_miur_tenant": 865
   }
 }
