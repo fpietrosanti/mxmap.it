@@ -1,5 +1,5 @@
 {
-  "total": 22898,
+  "total": 22899,
   "average_score": 80.7,
   "high_confidence_pct": 73.7,
   "quality_passed": false,
@@ -28648,12 +28648,11 @@
     },
     "IT-COM-001242": {
       "name": "Comune di San Germano Chisone",
-      "provider": "regional-public",
-      "domain": "comune.sangermanochisone.to.it",
-      "confidence": 90,
+      "provider": "independent",
+      "domain": "cert.comune.sangermanochisone.to.it",
+      "confidence": 50,
       "flags": [
-        "spf_strict",
-        "mx_spf_match",
+        "no_spf",
         "provider_classified"
       ]
     },
@@ -30838,13 +30837,13 @@
     },
     "IT-COM-003058": {
       "name": "Comune di Cureggio",
-      "provider": "unknown",
-      "domain": "comune.cureggio.no.it",
-      "confidence": 15,
+      "provider": "independent",
+      "domain": "cert.ruparpiemonte.it",
+      "confidence": 80,
       "flags": [
-        "no_mx",
-        "no_spf",
-        "provider_unknown"
+        "spf_strict",
+        "independent_mx_with_cloud_spf",
+        "provider_classified"
       ]
     },
     "IT-COM-003060": {
@@ -39348,11 +39347,10 @@
     "IT-COM-008046": {
       "name": "Comune di Pornassio",
       "provider": "aruba",
-      "domain": "comune.pornassio.im.it",
-      "confidence": 78,
+      "domain": "pec.pornassio.org",
+      "confidence": 68,
       "flags": [
         "spf_softfail",
-        "independent_mx_with_cloud_spf",
         "provider_classified"
       ]
     },
@@ -81690,14 +81688,12 @@
     },
     "IT-COM-058122": {
       "name": "Comune di Fonte Nuova",
-      "provider": "microsoft",
-      "domain": "comune.fontenuova.rm.it",
-      "confidence": 95,
+      "provider": "independent",
+      "domain": "cert.fonte-nuova.it",
+      "confidence": 50,
       "flags": [
-        "spf_strict",
-        "mx_spf_match",
-        "provider_classified",
-        "autodiscover_confirms"
+        "no_spf",
+        "provider_classified"
       ]
     },
     "IT-COM-059001": {
@@ -90450,13 +90446,12 @@
     },
     "IT-COM-066093": {
       "name": "Comune di Scanno",
-      "provider": "unknown",
+      "provider": "aruba",
       "domain": "comune.scanno.aq.it",
-      "confidence": 15,
+      "confidence": 68,
       "flags": [
-        "no_mx",
-        "no_spf",
-        "provider_unknown"
+        "spf_softfail",
+        "provider_classified"
       ]
     },
     "IT-COM-066094": {
@@ -102446,7 +102441,7 @@
     "IT-COM-082008": {
       "name": "Comune di Baucina",
       "provider": "aruba",
-      "domain": "egov.comune.baucina.pa.it",
+      "domain": "comune.baucina.pa.it",
       "confidence": 83,
       "flags": [
         "spf_softfail",
@@ -122130,10 +122125,11 @@
     "IT-L1-azcv": {
       "name": "Azienda Calabria Verde",
       "provider": "aruba",
-      "domain": "pec.calabriaverde.eu",
-      "confidence": 50,
+      "domain": "calabriaverde.regione.calabria.it",
+      "confidence": 78,
       "flags": [
-        "no_spf",
+        "spf_softfail",
+        "independent_mx_with_cloud_spf",
         "provider_classified"
       ]
     },
@@ -130334,17 +130330,6 @@
         "provider_via_gateway_spf"
       ]
     },
-    "IT-L18-udcbv_pc": {
-      "name": "Unione Dei Comuni Bassa Val Trebbia e Val Luretta",
-      "provider": "local-isp",
-      "domain": "unionecomuni-valtrebbia-valluretta.it",
-      "confidence": 88,
-      "flags": [
-        "spf_softfail",
-        "mx_spf_match",
-        "provider_classified"
-      ]
-    },
     "IT-L18-udcbvafp": {
       "name": "Unione Dei Comuni Bassa Val D'Arda Fiume Po",
       "provider": "unknown",
@@ -131075,11 +131060,10 @@
     },
     "IT-L18-udcmc_": {
       "name": "Unione Dei Comuni Montani del Casentino",
-      "provider": "independent",
-      "domain": "postacert.toscana.it",
-      "confidence": 90,
+      "provider": "regional-public",
+      "domain": "uc.casentino.toscana.it",
+      "confidence": 85,
       "flags": [
-        "spf_strict",
         "mx_spf_match",
         "provider_classified"
       ]
@@ -197786,13 +197770,13 @@
     },
     "IT-L33-istsc_pdis003009": {
       "name": "IIS CATTANEO-MATTEI",
-      "provider": "google",
-      "domain": "cattaneomattei.it",
-      "confidence": 93,
+      "provider": "istruzione-miur-tenant",
+      "domain": "cattaneo-mattei.edu.it",
+      "confidence": 80,
       "flags": [
-        "multiple_mx",
-        "spf_softfail",
+        "spf_strict",
         "mx_spf_match",
+        "multi_provider_spf:brevo+microsoft+regional-public",
         "provider_classified"
       ]
     },
@@ -198930,13 +198914,13 @@
     },
     "IT-L33-istsc_pgic82200q": {
       "name": "ISTITUTO COMPRENSIVO - ISTITUTO COMPRENSIVO SIGILLO",
-      "provider": "google",
-      "domain": "icsigillo.it",
-      "confidence": 53,
+      "provider": "istruzione-miur-tenant",
+      "domain": "icsigillo.edu.it",
+      "confidence": 80,
       "flags": [
-        "multiple_mx",
-        "spf_softfail",
-        "mx_spf_mismatch",
+        "spf_strict",
+        "mx_spf_match",
+        "multi_provider_spf:brevo+microsoft+regional-public",
         "provider_classified"
       ]
     },
@@ -228898,7 +228882,7 @@
     "IT-L34-XQZEJ3XC": {
       "name": "arciconfraternita sant'angelo dei rossi",
       "provider": "aruba",
-      "domain": "arciconfraternitadeiross.altervista.org",
+      "domain": "arciconfraternitadeirossi.it",
       "confidence": 83,
       "flags": [
         "spf_softfail",
@@ -235370,6 +235354,18 @@
         "provider_classified"
       ]
     },
+    "IT-L36-ceap": {
+      "name": "CONSORZIO ENTE AUTODROMO DI PERGUSA",
+      "provider": "local-isp",
+      "domain": "autodromopergusa.it",
+      "confidence": 93,
+      "flags": [
+        "multiple_mx",
+        "spf_softfail",
+        "mx_spf_match",
+        "provider_classified"
+      ]
+    },
     "IT-L36-cells": {
       "name": "Consorzio Etneo per La Legalita' e Lo Sviluppo",
       "provider": "aruba",
@@ -237115,7 +237111,7 @@
     "IT-L37-219TJPHO": {
       "name": "Croce Rossa Italiana - Comitato di Latina - Organizzazione di Volontariato",
       "provider": "google",
-      "domain": "latina.cri.it",
+      "domain": "cri.it",
       "confidence": 93,
       "flags": [
         "multiple_mx",
@@ -239692,6 +239688,18 @@
       "name": "SOAIC SPA",
       "provider": "aruba",
       "domain": "soaic.it",
+      "confidence": 83,
+      "flags": [
+        "spf_softfail",
+        "independent_mx_with_cloud_spf",
+        "provider_classified",
+        "autodiscover_confirms"
+      ]
+    },
+    "IT-L37-I0LRDXP4": {
+      "name": "Fondazione Marino per l'Autismo ETS",
+      "provider": "aruba",
+      "domain": "fondazionemarino.it",
       "confidence": 83,
       "flags": [
         "spf_softfail",

@@ -156,7 +156,6 @@ IT-COM-057022,Comune di Colli sul Velino,unknown,comune.collisulvelino.ri.it,15,
 IT-COM-067021,Comune di Corropoli,unknown,comune.corropoli.te.it,15,no_mx; no_spf; provider_unknown
 IT-COM-096021,Comune di Crevacuore,unknown,comune.crevacuore.bi.it,15,no_mx; no_spf; provider_unknown
 IT-COM-067023,Comune di Crognaleto,unknown,comune.crognaleto.te.it,15,no_mx; no_spf; provider_unknown
-IT-COM-003058,Comune di Cureggio,unknown,comune.cureggio.no.it,15,no_mx; no_spf; provider_unknown
 IT-COM-069029,Comune di Dogliola,unknown,dogliola.it,15,no_mx; no_spf; provider_unknown
 IT-COM-025018,Comune di Domegge di Cadore,unknown,comune.domeggedicadore.bl.it,15,no_mx; no_spf; provider_unknown
 IT-COM-060032,Comune di Falvaterra,unknown,falvaterra.workmm.com,15,no_mx; no_spf; provider_unknown
@@ -229,7 +228,6 @@ IT-COM-026075,Comune di Santa Lucia di Piave,unknown,comune.santaluciadipiave.tv
 IT-COM-064093,Comune di Santa Paolina,unknown,comunesantapaolina.gov.it,15,no_mx; no_spf; provider_unknown
 IT-COM-004212,Comune di Santa Vittoria d' Alba,unknown,comune.santavittoriadalba.cn.it,15,no_mx; no_spf; provider_unknown
 IT-COM-114044,Comune di Sarule,unknown,comune.sarule.nu.it,15,no_mx; no_spf; provider_unknown
-IT-COM-066093,Comune di Scanno,unknown,comune.scanno.aq.it,15,no_mx; no_spf; provider_unknown
 IT-COM-001262,Comune di Sciolze,unknown,comune.sciolze.to.it,15,no_mx; no_spf; provider_unknown
 IT-COM-066097,Comune di Secinaro,unknown,secinaro.comnet-ra.it,15,no_mx; no_spf; provider_unknown
 IT-COM-011028,Comune di Sesta Godano,unknown,comunesestagodano.sp.it,15,no_mx; no_spf; provider_unknown
@@ -731,7 +729,6 @@ IT-L37-FCXW41LP,Associazione SPORVIC2 COMMUNITY,regional-public,sporvic.it,50,no
 IT-S01-astus,Authority Societa di Trasformazione Urbana Spa in Liquidazione,independent,sttholding.com,50,no_spf; provider_classified
 IT-L11-aprlu,Autorita' Portuale Regionale,regional-public,autoritaportualeregionale.toscana.it,50,no_spf; provider_classified
 IT-L40-abb_,Autorita' di Bacino della Basilicata,regional-public,adb.basilicata.it,50,no_spf; provider_classified
-IT-L1-azcv,Azienda Calabria Verde,aruba,pec.calabriaverde.eu,50,no_spf; provider_classified
 IT-L7-a_101,Azienda Sanitaria Provinciale Crotone,aruba,asp.crotone.it,50,no_spf; provider_classified
 IT-L37-asafdat,Azienda Speciale Agenzia Formativa Don Angelo Tedoldi,register-it,agenziadontedoldi.eu,50,no_spf; provider_classified
 IT-SAG-atapp,Azienda Trasporti Automobilistici Pubblici Province Biella e Vercelli,microsoft,atapspa.it,50,no_spf; provider_classified; provider_via_gateway_spf
@@ -889,6 +886,7 @@ IT-COM-048018,Comune di Firenzuola,independent,comune.firenzuola.fi.it,50,no_spf
 IT-COM-002057,Comune di Fobello,independent,comune.fobello.vc.it,50,no_spf; provider_classified
 IT-COM-083023,Comune di Fondachelli Fantina,aruba,comune.fondachellifantina.me.it,50,no_spf; provider_classified
 IT-COM-010024,Comune di Fontanigorda,independent,comune.fontanigorda.ge.it,50,no_spf; provider_classified
+IT-COM-058122,Comune di Fonte Nuova,independent,cert.fonte-nuova.it,50,no_spf; provider_classified
 IT-COM-002059,Comune di Formigliana,local-isp,comune.formigliana.vc.it,50,no_spf; provider_classified
 IT-COM-083024,Comune di Forza D'Agro',aruba,comune.forzadagro.me.it,50,no_spf; provider_classified
 IT-COM-004090,Comune di Frabosa Soprana,independent,comune.frabosasoprana.cn.it,50,no_spf; provider_classified
@@ -1036,6 +1034,7 @@ IT-COM-013203,Comune di Sala Comacina,aruba,comune.salacomacina.co.it,50,no_spf;
 IT-COM-006150,Comune di Sala Monferrato,aruba,comune.salamonferrato.al.it,50,no_spf; provider_classified
 IT-COM-004199,Comune di Sale Delle Langhe,independent,comune.saledellelanghe.cn.it,50,no_spf; provider_classified
 IT-COM-096058,Comune di Salussola,independent,comune.salussola.bi.it,50,no_spf; provider_classified; provider_via_gateway_spf
+IT-COM-001242,Comune di San Germano Chisone,independent,cert.comune.sangermanochisone.to.it,50,no_spf; provider_classified
 IT-COM-017172,Comune di San Gervasio Bresciano,independent,pec.comune.sangervasiobresciano.bs.it,50,no_spf; provider_classified
 IT-COM-006153,Comune di San Giorgio Monferrato,aruba,comune.sangiorgiomonferrato.al.it,50,no_spf; provider_classified
 IT-COM-060063,Comune di San Giorgio a Liri,local-isp,comune.sangiorgioaliri.fr.it,50,no_spf; provider_classified
@@ -1818,7 +1817,6 @@ IT-L33-istsc_fiic84300p,ISTITUTO COMPRENSIVO - ISTITUTO COMPRENSIVO OLTRARNO,goo
 IT-L33-istsc_kric80300c,ISTITUTO COMPRENSIVO - ISTITUTO COMPRENSIVO PAPANICE,google,icpapanice.edu.it,53,multiple_mx; spf_softfail; mx_spf_mismatch; provider_classified
 IT-L33-istsc_leic88000b,ISTITUTO COMPRENSIVO - ISTITUTO COMPRENSIVO POGGIARDO,google,comprensivopoggiardo.edu.it,53,multiple_mx; spf_softfail; mx_spf_mismatch; provider_classified
 IT-L33-istsc_fiic86300x,ISTITUTO COMPRENSIVO - ISTITUTO COMPRENSIVO RIGNANO-INCISA V.NO,google,scuolerignanoincisa.edu.it,53,multiple_mx; spf_softfail; mx_spf_mismatch; provider_classified
-IT-L33-istsc_pgic82200q,ISTITUTO COMPRENSIVO - ISTITUTO COMPRENSIVO SIGILLO,google,icsigillo.it,53,multiple_mx; spf_softfail; mx_spf_mismatch; provider_classified
 IT-L33-istsc_rmic85900b,ISTITUTO COMPRENSIVO - LA GIUSTINIANA,microsoft,icslagiustiniana.edu.it,53,spf_softfail; mx_spf_mismatch; provider_classified; autodiscover_confirms
 IT-L33-istsc_rmic8bz00c,ISTITUTO COMPRENSIVO - LEONARDO VINCI,google,icleonardodavinci.edu.it,53,multiple_mx; spf_softfail; mx_spf_mismatch; provider_classified
 IT-L33-istsc_rmic8aq00n,ISTITUTO COMPRENSIVO - LEONIDA MONTANARI,google,icmontanariroccadipapa.edu.it,53,multiple_mx; spf_softfail; mx_spf_mismatch; provider_classified
@@ -4147,6 +4145,7 @@ IT-COM-001197,Comune di Poirino,register-it,comune.poirino.to.it,68,spf_softfail
 IT-COM-017145,Comune di Polpenazze del Garda,register-it,comune.polpenazzedelgarda.bs.it,68,spf_softfail; provider_classified
 IT-COM-016168,Comune di Ponte Nossa,register-it,comune.pontenossa.bg.it,68,spf_softfail; provider_classified
 IT-COM-033037,Comune di Pontenure,independent,comune.pontenure.pc.it,68,spf_softfail; provider_classified; provider_via_gateway_spf
+IT-COM-008046,Comune di Pornassio,aruba,pec.pornassio.org,68,spf_softfail; provider_classified
 IT-COM-010044,Comune di Portofino,register-it,comune.portofino.genova.it,68,spf_softfail; provider_classified
 IT-COM-038019,Comune di Portomaggiore,independent,comune.portomaggiore.fe.it,68,spf_softfail; independent_mx_with_cloud_spf; multi_provider_spf:aruba+google; provider_classified
 IT-COM-019077,Comune di Pozzaglio ed Uniti,register-it,comune.pozzaglio.cr.it,68,spf_softfail; provider_classified
@@ -4212,6 +4211,7 @@ IT-COM-066091,Comune di Santo Stefano di Sessanio,register-it,comunesantostefano
 IT-COM-026078,Comune di Sarmede,register-it,comune.sarmede.tv.it,68,spf_softfail; provider_classified
 IT-COM-018146,Comune di Sartirana Lomellina,register-it,comune.sartiranalomellina.pv.it,68,spf_softfail; provider_classified
 IT-COM-065138,Comune di Scala,register-it,comune.scala.sa.it,68,spf_softfail; provider_classified
+IT-COM-066093,Comune di Scanno,aruba,comune.scanno.aq.it,68,spf_softfail; provider_classified
 IT-COM-053023,Comune di Scansano,register-it,comune.scansano.gr.it,68,spf_softfail; provider_classified
 IT-COM-008057,Comune di Seborga,register-it,comune.seborga.im.it,68,spf_softfail; provider_classified
 IT-COM-118050,Comune di Senorbi',aruba,pec.comune.senorbi.ca.it,68,spf_softfail; provider_classified
@@ -5183,6 +5183,7 @@ IT-L44-arasp,Ato Ragusa Ambiente S.P.A. in Liquidazione,aruba,atoragusambiente.i
 IT-L44-ait_048,Autorita Idrica Toscana,aruba,autoritaidrica.toscana.it,78,spf_softfail; independent_mx_with_cloud_spf; provider_classified
 IT-L44-aisgi,Autorita per Il Servizio di Gestione Integrata Dei Rifiuti Urbani Ambito Territoriale Ottimale Toscana Costa,aruba,atotoscanacosta.it,78,spf_softfail; independent_mx_with_cloud_spf; provider_classified
 IT-L11-aspmalo,Autorità di Sistema Portuale del Mar Ligure Occidentale,independent,portsofgenoa.com,78,spf_softfail; independent_mx_with_cloud_spf; provider_classified; autodiscover_suggests:microsoft
+IT-L1-azcv,Azienda Calabria Verde,aruba,calabriaverde.regione.calabria.it,78,spf_softfail; independent_mx_with_cloud_spf; provider_classified
 IT-L37-acavn,Azienda Consortile Acquedotti Vena Niceto,aruba,acavn.it,78,spf_softfail; independent_mx_with_cloud_spf; provider_classified
 IT-L37-amams,Azienda Meridionale Acque Messina S.P.A.,aruba,amam.it,78,spf_softfail; independent_mx_with_cloud_spf; provider_classified
 IT-L8-aoum_fi,Azienda Ospedaliera Universitaria Meyer IRCCS,regional-public,meyer.it,78,spf_softfail; independent_mx_with_cloud_spf; provider_classified
@@ -5595,7 +5596,6 @@ IT-COM-020043,Comune di Pomponesco,aruba,comune.pomponesco.mn.it,78,spf_softfail
 IT-COM-115049,Comune di Pompu,aruba,comune.pompu.or.it,78,spf_softfail; independent_mx_with_cloud_spf; provider_classified
 IT-COM-062054,Comune di Pontelandolfo,aruba,comune.pontelandolfo.bn.it,78,spf_softfail; independent_mx_with_cloud_spf; provider_classified
 IT-COM-109032,Comune di Ponzano di Fermo,independent,ponzanodifermo.org,78,spf_softfail; independent_mx_with_cloud_spf; provider_classified; autodiscover_suggests:aruba
-IT-COM-008046,Comune di Pornassio,aruba,comune.pornassio.im.it,78,spf_softfail; independent_mx_with_cloud_spf; provider_classified
 IT-COM-061062,Comune di Portico di Caserta,aruba,comune.porticodicaserta.ce.it,78,spf_softfail; independent_mx_with_cloud_spf; provider_classified
 IT-COM-043042,Comune di Porto Recanati,aruba,comune.porto-recanati.mc.it,78,spf_softfail; independent_mx_with_cloud_spf; provider_classified
 IT-COM-012114,Comune di Porto Valtravaglia,aruba,comune.portovaltravaglia.va.it,78,spf_softfail; independent_mx_with_cloud_spf; provider_classified
@@ -6108,6 +6108,7 @@ IT-COM-001089,Comune di Coazze,aruba,comune.coazze.to.it,80,spf_strict; independ
 IT-COM-001092,Comune di Colleretto Giacosa,independent,comune.collerettogiacosa.to.it,80,spf_strict; independent_mx_with_cloud_spf; provider_classified; provider_via_gateway_spf
 IT-COM-041069,Comune di Colli al Metauro,regional-public,comune.collialmetauro.pu.it,80,spf_strict; independent_mx_with_cloud_spf; provider_classified
 IT-COM-018053,Comune di Copiano,independent,comune.copiano.pv.it,80,spf_strict; independent_mx_with_cloud_spf; provider_classified
+IT-COM-003058,Comune di Cureggio,independent,cert.ruparpiemonte.it,80,spf_strict; independent_mx_with_cloud_spf; provider_classified
 IT-COM-017067,Comune di Desenzano del Garda,microsoft,comune.desenzano.brescia.it,80,spf_strict; independent_mx_with_cloud_spf; provider_classified; provider_via_gateway_spf
 IT-COM-018061,Comune di Dorno,independent,comune.dorno.pv.it,80,spf_strict; independent_mx_with_cloud_spf; provider_classified; provider_via_gateway_spf
 IT-COM-001100,Comune di Exilles,aruba,comune.exilles.to.it,80,spf_strict; independent_mx_with_cloud_spf; provider_classified
@@ -6308,6 +6309,7 @@ IT-L33-5B9J9SUG,IC COMUNE DI CORIANO,istruzione-miur-tenant,iccoriano.edu.it,80,
 IT-L33-istsc_tvic85700g,IC MASERADA E BREDA DI PIAVE,istruzione-miur-tenant,icmaserada.edu.it,80,spf_strict; mx_spf_match; multi_provider_spf:brevo+microsoft+regional-public; provider_classified
 IT-S01-igeasl,IGEA SPA,local-isp,igeaspa.it,80,spf_strict; independent_mx_with_cloud_spf; provider_classified
 IT-L33-istsc_svis00600t,IIS Boselli-Alberti-Mazzini-Da Vinci,istruzione-miur-tenant,iisboselli-alberti-mazzini-davinci.edu.it,80,spf_strict; mx_spf_match; multi_provider_spf:brevo+microsoft+regional-public; provider_classified
+IT-L33-istsc_pdis003009,IIS CATTANEO-MATTEI,istruzione-miur-tenant,cattaneo-mattei.edu.it,80,spf_strict; mx_spf_match; multi_provider_spf:brevo+microsoft+regional-public; provider_classified
 IT-L33-iii,IIS ITC-IPA TODARO RENDE,istruzione-miur-tenant,iisrende.gov.it,80,spf_strict; mx_spf_match; multi_provider_spf:brevo+microsoft+regional-public; provider_classified
 IT-L33-i_063h,ISIS LEONE NOBILE,istruzione-miur-tenant,leonenobile.it,80,spf_strict; mx_spf_match; multi_provider_spf:brevo+microsoft+regional-public; provider_classified
 IT-L33-istsc_geri07000p,IST PROF INDUSTRIA E ARTIGIANATO - I.P.S. I.S. GASLINI/MEUCCI,istruzione-miur-tenant,ipsisgaslinimeucci.edu.it,80,spf_strict; mx_spf_match; multi_provider_spf:brevo+microsoft+regional-public; provider_classified
@@ -6653,6 +6655,7 @@ IT-L33-istsc_lcic82600d,ISTITUTO COMPRENSIVO - ISTITUTO COMPRENSIVO LECCO 3,istr
 IT-L33-istsc_rmic80100q,ISTITUTO COMPRENSIVO - ISTITUTO COMPRENSIVO LEONE XIII,istruzione-miur-tenant,comprensivocarpineto.it,80,spf_strict; mx_spf_match; multi_provider_spf:brevo+microsoft+regional-public; provider_classified
 IT-L33-istsc_spic814006,ISTITUTO COMPRENSIVO - ISTITUTO COMPRENSIVO N 1,istruzione-miur-tenant,isa1donmilanisp.edu.it,80,spf_strict; mx_spf_match; multi_provider_spf:brevo+microsoft+regional-public; provider_classified
 IT-L33-istsc_svic81900q,ISTITUTO COMPRENSIVO - ISTITUTO COMPRENSIVO SAVONA II,istruzione-miur-tenant,icsavona2.edu.it,80,spf_strict; mx_spf_match; multi_provider_spf:brevo+microsoft+regional-public; provider_classified
+IT-L33-istsc_pgic82200q,ISTITUTO COMPRENSIVO - ISTITUTO COMPRENSIVO SIGILLO,istruzione-miur-tenant,icsigillo.edu.it,80,spf_strict; mx_spf_match; multi_provider_spf:brevo+microsoft+regional-public; provider_classified
 IT-L33-istsc_caic823009,ISTITUTO COMPRENSIVO - ISTITUTO COMPRENSIVO STATALE,istruzione-miur-tenant,icnarcao.edu.it,80,spf_strict; mx_spf_match; multi_provider_spf:brevo+microsoft+regional-public; provider_classified
 IT-L33-istsc_rmic87900l,ISTITUTO COMPRENSIVO - ISTITUTO COMPRENSIVO'PADRE PIO',istruzione-miur-tenant,icpadrepiosacrofano.edu.it,80,spf_strict; mx_spf_match; multi_provider_spf:brevo+microsoft+regional-public; provider_classified
 IT-L33-istsc_pdic88100a,ISTITUTO COMPRENSIVO - IV DI PADOVA 'ROSMINI',istruzione-miur-tenant,4icpadova.edu.it,80,spf_strict; mx_spf_match; multi_provider_spf:brevo+microsoft+regional-public; provider_classified
@@ -7605,7 +7608,7 @@ IT-COM-116002,Comune di Barisardo,aruba,comunedibarisardo.it,83,spf_softfail; in
 IT-COM-083006,Comune di Basico',aruba,comune.basico.me.it,83,spf_softfail; independent_mx_with_cloud_spf; provider_classified; autodiscover_confirms
 IT-COM-056005,Comune di Bassano Romano,aruba,comune.bassanoromano.vt.it,83,spf_softfail; independent_mx_with_cloud_spf; provider_classified; autodiscover_confirms
 IT-COM-004014,Comune di Bastia Mondovi,aruba,comune.bastiamondovi.cn.it,83,spf_softfail; independent_mx_with_cloud_spf; provider_classified; autodiscover_confirms
-IT-COM-082008,Comune di Baucina,aruba,egov.comune.baucina.pa.it,83,spf_softfail; independent_mx_with_cloud_spf; provider_classified; autodiscover_confirms
+IT-COM-082008,Comune di Baucina,aruba,comune.baucina.pa.it,83,spf_softfail; independent_mx_with_cloud_spf; provider_classified; autodiscover_confirms
 IT-COM-115013,Comune di Bauladu,aruba,comune.bauladu.or.it,83,spf_softfail; independent_mx_with_cloud_spf; provider_classified; autodiscover_confirms
 IT-COM-076012,Comune di Bella,aruba,comune.bella.pz.it,83,spf_softfail; independent_mx_with_cloud_spf; provider_classified; autodiscover_confirms
 IT-COM-061007,Comune di Bellona,aruba,comune.bellona.ce.it,83,spf_softfail; independent_mx_with_cloud_spf; provider_classified; autodiscover_confirms
@@ -8968,6 +8971,7 @@ IT-L37-N8UGGL4N,Fondazione Its Academy Sistema Moda,aruba,itsacademymoda.it,83,s
 IT-L16-flsptb,Fondazione Lirico Sinfonica Petruzzelli e Teatri di Bari,aruba,fondazionepetruzzelli.it,83,spf_softfail; independent_mx_with_cloud_spf; provider_classified; autodiscover_confirms
 IT-L1-flfc,Fondazione Lucana Film Commission,aruba,lucanafilmcommission.it,83,spf_softfail; independent_mx_with_cloud_spf; provider_classified; autodiscover_confirms
 IT-L1-fmivc,Fondazione Maria Ida Viglino Cultura Musicale,google,fondazionemusicalevda.it,83,multiple_mx; spf_softfail; mx_spf_match; multi_provider_spf:aws+google; provider_classified
+IT-L37-I0LRDXP4,Fondazione Marino per l'Autismo ETS,aruba,fondazionemarino.it,83,spf_softfail; independent_mx_with_cloud_spf; provider_classified; autodiscover_confirms
 IT-SA-4DCNS5QF,Fondazione Messina per la Cultura,aruba,fondazionemessinaperlacultura.it,83,spf_softfail; independent_mx_with_cloud_spf; provider_classified; autodiscover_confirms
 IT-SA-JKQJKAGQ,Fondazione Museo della Shoah,aruba,museodellashoah.it,83,spf_softfail; independent_mx_with_cloud_spf; provider_classified; autodiscover_confirms
 IT-C3-frscar,Fondazione Real Sito di Carditello,aruba,fondazionecarditello.org,83,spf_softfail; independent_mx_with_cloud_spf; provider_classified; autodiscover_confirms
@@ -10277,7 +10281,7 @@ IT-L34-vslsssp,Villa Serena Lonigo Servizi Sociali e Sociosanitari alla Persona,
 IT-L12-xcmla_fr,XIX Comunita' Montana L'Arco Degli Aurunci,aruba,comunitamontanaxixaurunciinweb.it,83,spf_softfail; independent_mx_with_cloud_spf; provider_classified; autodiscover_confirms
 IT-L12-xcma,Xvii Comunita' Montana Monti Aurunci,aruba,comunitamontanamontiaurunci.it,83,spf_softfail; independent_mx_with_cloud_spf; provider_classified; autodiscover_confirms
 IT-L37-9LSXXA51,amgas spa,aruba,amgasfoggiaweb.it,83,spf_softfail; independent_mx_with_cloud_spf; provider_classified; autodiscover_confirms
-IT-L34-XQZEJ3XC,arciconfraternita sant'angelo dei rossi,aruba,arciconfraternitadeiross.altervista.org,83,spf_softfail; independent_mx_with_cloud_spf; provider_classified; autodiscover_confirms
+IT-L34-XQZEJ3XC,arciconfraternita sant'angelo dei rossi,aruba,arciconfraternitadeirossi.it,83,spf_softfail; independent_mx_with_cloud_spf; provider_classified; autodiscover_confirms
 IT-L7-au12ve,azienda ULSS n. 3 Serenissima,google,aulss3.veneto.it,83,multiple_mx; spf_softfail; mx_spf_match; multi_provider_spf:aws+google; provider_classified
 IT-L37-P5ZGMQSC,caf fenalca srl,aruba,fenalca.it,83,spf_softfail; independent_mx_with_cloud_spf; provider_classified; autodiscover_confirms
 IT-COM-081025,comune di misiliscemi,aruba,comune.misiliscemi.tp.it,83,spf_softfail; independent_mx_with_cloud_spf; provider_classified; autodiscover_confirms
@@ -11463,6 +11467,7 @@ IT-L18-uctvp_00,Unione Collinare Terre di Vigneti e Pietra da Cantoni,independen
 IT-L18-ucg,Unione Comuni Garfagnana,regional-public,ucgarfagnana.lu.it,85,mx_spf_match; provider_classified
 IT-L18-udcc_082,Unione Dei Comuni Corvo Eleuterio,local-isp,unionedeicomunicorvoeleuterio.pa.it,85,mx_spf_match; provider_classified
 IT-L18-udcma,Unione Dei Comuni Montani Amiata Grossetana,regional-public,uc-amiata.gr.it,85,mx_spf_match; provider_classified
+IT-L18-udcmc_,Unione Dei Comuni Montani del Casentino,regional-public,uc.casentino.toscana.it,85,mx_spf_match; provider_classified
 IT-L18-udctp_,Unione Dei Comuni Terre di Pianura,microsoft,terredipianura.it,85,multiple_mx; spf_strict; independent_mx_with_cloud_spf; provider_classified; provider_via_gateway_spf
 IT-L18-udctd,Unione Dei Comuni di Terre D'Acqua,regional-public,terredacqua.net,85,mx_spf_match; provider_classified
 IT-L12-cm_alpa,Unione Montana Alpago,independent,um.alpago.bl.it,85,mx_spf_match; provider_classified; provider_via_gateway_spf
@@ -13044,7 +13049,6 @@ IT-L18-ucpiareg,Unione Comuni Pianura Reggiana,regional-public,pianurareggiana.i
 IT-L18-uc_preso,Unione Comuni della Presolana,independent,unionepresolana.bg.it,88,spf_softfail; mx_spf_match; provider_classified; provider_via_gateway_spf
 IT-L18-ucbv_002,Unione Coser Bassa Vercellese,independent,unione-coser.it,88,spf_softfail; mx_spf_match; provider_classified; provider_via_gateway_spf
 IT-L18-udcav,Unione Dei Comuni Amiata Val D'Orcia,microsoft,uc-amiatavaldorcia.si.it,88,spf_softfail; mx_spf_match; provider_classified; provider_via_gateway_spf
-IT-L18-udcbv_pc,Unione Dei Comuni Bassa Val Trebbia e Val Luretta,local-isp,unionecomuni-valtrebbia-valluretta.it,88,spf_softfail; mx_spf_match; provider_classified
 IT-L18-udccbm,Unione Dei Comuni Centuriati di Bonemerse e Malagnino,local-isp,unionecenturiati.cr.it,88,spf_softfail; mx_spf_match; provider_classified
 IT-L18-udcccv,Unione Dei Comuni Comunita' Collinare Valtriversa,independent,valtriversa.it,88,spf_softfail; mx_spf_match; provider_classified; provider_via_gateway_spf
 IT-L18-udcmv_,Unione Dei Comuni Media Valle del Serchio,local-isp,ucmediavalle.it,88,spf_softfail; mx_spf_match; provider_classified
@@ -14323,7 +14327,6 @@ IT-COM-013206,Comune di San Fermo della Battaglia,google,comune.sanfermodellabat
 IT-COM-001240,Comune di San Francesco al Campo,local-isp,comune.sanfrancescoalcampo.to.it,90,spf_strict; mx_spf_match; provider_classified
 IT-COM-083078,Comune di San Fratello,aruba,comune.sanfratello.me.it,90,spf_strict; mx_spf_match; provider_classified
 IT-COM-055029,Comune di San Gemini,independent,comune.sangemini.tr.it,90,spf_strict; mx_spf_match; provider_classified
-IT-COM-001242,Comune di San Germano Chisone,regional-public,comune.sangermanochisone.to.it,90,spf_strict; mx_spf_match; provider_classified
 IT-COM-014058,Comune di San Giacomo Filippo,independent,comune.sangiacomofilippo.so.it,90,multiple_mx; mx_spf_match; provider_classified; provider_via_gateway_spf
 IT-COM-002035,Comune di San Giacomo Vercellese,independent,comune.sangiacomovercellese.vc.it,90,spf_strict; mx_spf_match; provider_classified; provider_via_gateway_spf
 IT-COM-020056,Comune di San Giacomo delle Segnate,independent,pec.regione.lombardia.it,90,spf_strict; mx_spf_match; provider_classified; autodiscover_suggests:aruba
@@ -15248,7 +15251,6 @@ IT-L18-udcd,Unione Dei Casali Dauni,aruba,unionecasalidauni.fg.it,90,spf_strict;
 IT-L18-udcabc,Unione Dei Comuni Alto Biferno,aruba,unionecomunialtobiferno.it,90,spf_strict; mx_spf_match; provider_classified
 IT-L18-udcab_0,Unione Dei Comuni Alto Bradano,regional-public,unionecomunialtobradano.it,90,spf_strict; mx_spf_match; provider_classified
 IT-L18-udci_015,Unione Dei Comuni I Fontanili,google,unioneifontanili.it,90,spf_strict; mx_spf_match; provider_classified
-IT-L18-udcmc_,Unione Dei Comuni Montani del Casentino,independent,postacert.toscana.it,90,spf_strict; mx_spf_match; provider_classified
 IT-L18-udcne_01,Unione Dei Comuni Nord Est Torino,google,unionenet.it,90,multiple_mx; mx_spf_match; provider_classified; provider_via_gateway_spf
 IT-L18-udcrg,Unione Dei Comuni Riviera di Gallura,aruba,unionerivieradigallura.it,90,spf_strict; mx_spf_match; provider_classified
 IT-L18-udctdno,Unione Dei Comuni Terre D'Acque,independent,unioneterredacque.it,90,spf_strict; mx_spf_match; provider_classified; provider_via_gateway_spf
@@ -15641,6 +15643,7 @@ IT-SA-YFTMRIK0,CONSORZIO DI BONIFICA ADIGE EUGANEO,google,adigeuganeo.it,93,mult
 IT-SAG-SHJGFOSY,CONSORZIO DI BONIFICA LAZIO SUD OVEST,microsoft,bonifica.latina.it,93,spf_softfail; mx_spf_match; provider_classified; autodiscover_confirms
 IT-SA-QZ4X0P9P,CONSORZIO DI BONIFICA PIANURA FRIULANA,google,bonificafriulana.it,93,multiple_mx; spf_softfail; mx_spf_match; provider_classified
 IT-L37-SW05P9R2,CONSORZIO ELETTRICO DI STORO SOC. COOP.,microsoft,cedis.info,93,spf_softfail; mx_spf_match; provider_classified; autodiscover_confirms
+IT-L36-ceap,CONSORZIO ENTE AUTODROMO DI PERGUSA,local-isp,autodromopergusa.it,93,multiple_mx; spf_softfail; mx_spf_match; provider_classified
 IT-SA-VLOT61RV,CONSORZIO INTERUNIVERSITARIO SISTEMI INTEGRATI PER L'ACCESSO,microsoft,cisiaonline.it,93,spf_softfail; mx_spf_match; provider_classified; autodiscover_confirms
 IT-SAG-EET9XGEV,CONSORZIO STRADALE CENTRO RESIDENZIALE AXA,microsoft,consorzioaxa.it,93,spf_softfail; mx_spf_match; provider_classified; autodiscover_confirms
 IT-L33-istsc_rmvc02000v,"CONVITTO NAZIONALE - 'A.DI SAVOIA,DUCA D'AOSTA'",google,convittotivoli.edu.it,93,multiple_mx; spf_softfail; mx_spf_match; provider_classified
@@ -17037,7 +17040,7 @@ IT-L33-cpiapech,Cpia Pescara Chieti,google,cpiapech.edu.it,93,multiple_mx; spf_s
 IT-L33-cpiact1,Cpia di Catania 1,google,cpiacataniauno.edu.it,93,multiple_mx; spf_softfail; mx_spf_match; provider_classified
 IT-L33-cpiac,Cpia di Cremona,google,cpiacr.edu.it,93,multiple_mx; spf_softfail; mx_spf_match; provider_classified
 IT-L37-VU0SWM8Z,Croce Rossa Italiana,google,cri.it,93,multiple_mx; spf_softfail; mx_spf_match; provider_classified
-IT-L37-219TJPHO,Croce Rossa Italiana - Comitato di Latina - Organizzazione di Volontariato,google,latina.cri.it,93,multiple_mx; spf_softfail; mx_spf_match; provider_classified
+IT-L37-219TJPHO,Croce Rossa Italiana - Comitato di Latina - Organizzazione di Volontariato,google,cri.it,93,multiple_mx; spf_softfail; mx_spf_match; provider_classified
 IT-L33-istsc_pgee00200l,DIREZIONE DIDATTICA - 'COMPAROZZI'/SECONDO CIRC. PG,google,secondocircolopg.edu.it,93,multiple_mx; spf_softfail; mx_spf_match; provider_classified
 IT-L33-istsc_baee09400l,DIREZIONE DIDATTICA - 1 CD. 'FALCONE' - CONVERSANO,google,circolofalcone.edu.it,93,multiple_mx; spf_softfail; mx_spf_match; provider_classified
 IT-L33-istsc_baee076003,DIREZIONE DIDATTICA - 1 CD.'N.FORNELLI' - BITONTO,google,scuolafornelli.edu.it,93,multiple_mx; spf_softfail; mx_spf_match; provider_classified
@@ -17221,7 +17224,6 @@ IT-C3-ice_rm,ICE - Agenzia per la Promozione All'estero e l'Internazionalizzazio
 IT-L33-iicni,II Istituto Comprensivo Nocera Inferiore,google,comprensivo2nocera.edu.it,93,multiple_mx; spf_softfail; mx_spf_match; provider_classified
 IT-L33-isr,II.SS. RIGHI,google,righitaranto.edu.it,93,multiple_mx; spf_softfail; mx_spf_match; provider_classified
 IT-L33-istsc_ctis001009,"IIS ""Amari Rizzo Pantano""",google,iisamari.edu.it,93,multiple_mx; spf_softfail; mx_spf_match; provider_classified
-IT-L33-istsc_pdis003009,IIS CATTANEO-MATTEI,google,cattaneomattei.it,93,multiple_mx; spf_softfail; mx_spf_match; provider_classified
 IT-L33-istsc_ctis00400r,IIS Cucuzza - Euclide,google,iiscucuzzaeuclide.edu.it,93,multiple_mx; spf_softfail; mx_spf_match; provider_classified
 IT-L33-istsc_bais05200l,IIS L. Da Vinci - A. Agherbino,google,davinciagherbino.edu.it,93,multiple_mx; spf_softfail; mx_spf_match; provider_classified
 IT-L33-ipsarcas,IPSAR Luigi Veronelli,google,ipsarveronelli.edu.it,93,multiple_mx; spf_softfail; mx_spf_match; provider_classified
@@ -20393,7 +20395,6 @@ IT-COM-007028,Comune di Fontainemore,independent,comune.fontainemore.ao.it,95,mu
 IT-COM-034015,Comune di Fontanellato,local-isp,comune.fontanellato.pr.it,95,multiple_mx; spf_strict; mx_spf_match; provider_classified
 IT-COM-028038,Comune di Fontaniva,microsoft,comune.fontaniva.pd.it,95,spf_strict; mx_spf_match; provider_classified; autodiscover_confirms
 IT-COM-026029,Comune di Fonte,microsoft,comune.fonte.tv.it,95,spf_strict; mx_spf_match; provider_classified; autodiscover_confirms
-IT-COM-058122,Comune di Fonte Nuova,microsoft,comune.fontenuova.rm.it,95,spf_strict; mx_spf_match; provider_classified; autodiscover_confirms
 IT-COM-016102,Comune di Fonteno,google,comune.fonteno.bg.it,95,multiple_mx; spf_strict; mx_spf_match; provider_classified; provider_via_gateway_spf
 IT-COM-034016,Comune di Fontevivo,local-isp,comune.fontevivo.pr.it,95,multiple_mx; spf_strict; mx_spf_match; provider_classified
 IT-COM-115023,Comune di Fordongianus,google,comune.fordongianus.or.it,95,multiple_mx; spf_strict; mx_spf_match; provider_classified; provider_via_gateway_spf

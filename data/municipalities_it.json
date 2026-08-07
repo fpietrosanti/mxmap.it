@@ -173045,21 +173045,6 @@
     "domain_source": "sito_istituzionale"
   },
   {
-    "id": "IT-L18-udcbv_pc",
-    "name": "Unione Dei Comuni Bassa Val Trebbia e Val Luretta",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "unionecomuni-valtrebbia-valluretta.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [],
-    "ipa_codice_ipa": "udcbv_pc",
-    "ipa_codice_categoria": "L18",
-    "ipa_codice_istat": "23829258",
-    "ipa_codice_comune_istat": "033038",
-    "domain_source": "sito_istituzionale"
-  },
-  {
     "id": "IT-L18-udcbvafp",
     "name": "Unione Dei Comuni Bassa Val D'Arda Fiume Po",
     "country": "IT",
@@ -325947,6 +325932,21 @@
     "domain_source": "sito_istituzionale"
   },
   {
+    "id": "IT-L36-ceap",
+    "name": "CONSORZIO ENTE AUTODROMO DI PERGUSA",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "autodromopergusa.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "ceap",
+    "ipa_codice_categoria": "L36",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "086009",
+    "domain_source": "sito_istituzionale"
+  },
+  {
     "id": "IT-L36-cells",
     "name": "Consorzio Etneo per La Legalita' e Lo Sviluppo",
     "country": "IT",
@@ -337288,6 +337288,21 @@
     "ipa_codice_categoria": "L37",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "072006",
+    "domain_source": "sito_istituzionale"
+  },
+  {
+    "id": "IT-L37-I0LRDXP4",
+    "name": "Fondazione Marino per l'Autismo ETS",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "fondazionemarino.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "I0LRDXP4",
+    "ipa_codice_categoria": "L37",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "080050",
     "domain_source": "sito_istituzionale"
   },
   {
