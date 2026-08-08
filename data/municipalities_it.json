@@ -140619,7 +140619,7 @@
     "domain": "pd.archiworld.it",
     "osm_relation_id": null,
     "domain_fallbacks": [
-      "padova.archiworld.it"
+      "ordinearchitetti.pd.it"
     ],
     "ipa_codice_ipa": "oappc_pd",
     "ipa_codice_categoria": "C14",
@@ -164656,6 +164656,21 @@
     "ipa_codice_categoria": "L1",
     "ipa_codice_istat": "26756416",
     "ipa_codice_comune_istat": "052022",
+    "domain_source": "sito_istituzionale"
+  },
+  {
+    "id": "IT-L1-TGZN1O5G",
+    "name": "LOMBARDIA FILM COMMISSION",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "filmcomlombardia.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "TGZN1O5G",
+    "ipa_codice_categoria": "L1",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "015086",
     "domain_source": "sito_istituzionale"
   },
   {
@@ -359203,6 +359218,21 @@
     "ipa_codice_categoria": "SA",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "058091",
+    "domain_source": "sito_istituzionale"
+  },
+  {
+    "id": "IT-SA-GGRRLHA8",
+    "name": "Cooperativa Sociale learning Academy Amirante",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "academyamirante.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "GGRRLHA8",
+    "ipa_codice_categoria": "SA",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "064080",
     "domain_source": "sito_istituzionale"
   },
   {

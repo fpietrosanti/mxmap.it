@@ -233,6 +233,17 @@
       "old_reason": "MX record (alt1.aspmx.l.google.com, alt2.aspmx.l.google.com) matches Google"
     },
     {
+      "id": "IT-C14-cdpi_020",
+      "name": "Collegio Dei Periti Industriali e Dei Periti Industriali Laureati della Provincia di Mantova",
+      "codice_ipa": "cdpi_020",
+      "seed_domain": "perindmn.com",
+      "claimed_domain": "comune.mantova.it",
+      "reject_reason": "unrelated",
+      "old_mx": "comune-mantova-it.mail.protection.outlook.com",
+      "old_provider": "microsoft",
+      "old_reason": "MX record (comune-mantova-it.mail.protection.outlook.com) matches Microsoft"
+    },
+    {
       "id": "IT-C14-cdpid",
       "name": "Ordine dei Periti Industriali della Provincia di Bologna",
       "codice_ipa": "cdpid",
@@ -3344,17 +3355,6 @@
       "old_mx": "mx-01-eu-central-1.prod.hydra.sophos.com",
       "old_provider": "independent",
       "old_reason": "MX is sophos gateway; backend provider unknown"
-    },
-    {
-      "id": "IT-L24-cvs",
-      "name": "Consiglio di Valle Sabbia",
-      "codice_ipa": "cvs",
-      "seed_domain": "consorziobim.etrasparenza2.it",
-      "claimed_domain": "comune.vestone.bs.it",
-      "reject_reason": "unrelated",
-      "old_mx": "mx-01-eu-central-1.prod.hydra.sophos.com",
-      "old_provider": "microsoft",
-      "old_reason": "MX is sophos gateway; SPF+autodiscover confirm microsoft"
     },
     {
       "id": "IT-L28-ccars",
