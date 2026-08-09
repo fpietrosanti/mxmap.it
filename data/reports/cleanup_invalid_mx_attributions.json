@@ -1,5 +1,5 @@
 {
-  "n_purged": 506,
+  "n_purged": 507,
   "items": [
     {
       "id": "IT-C1-m_pi",
@@ -3355,6 +3355,17 @@
       "old_mx": "mx-01-eu-central-1.prod.hydra.sophos.com",
       "old_provider": "independent",
       "old_reason": "MX is sophos gateway; backend provider unknown"
+    },
+    {
+      "id": "IT-L24-cvs",
+      "name": "Consiglio di Valle Sabbia",
+      "codice_ipa": "cvs",
+      "seed_domain": "consorziobim.etrasparenza2.it",
+      "claimed_domain": "comune.vestone.bs.it",
+      "reject_reason": "unrelated",
+      "old_mx": "mx-01-eu-central-1.prod.hydra.sophos.com",
+      "old_provider": "microsoft",
+      "old_reason": "MX is sophos gateway; SPF+autodiscover confirm microsoft"
     },
     {
       "id": "IT-L28-ccars",

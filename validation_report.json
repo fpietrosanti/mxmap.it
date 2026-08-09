@@ -1,6 +1,6 @@
 {
   "total": 22901,
-  "average_score": 80.6,
+  "average_score": 80.7,
   "high_confidence_pct": 73.7,
   "quality_passed": false,
   "entries": {
@@ -28650,12 +28650,11 @@
     },
     "IT-COM-001242": {
       "name": "Comune di San Germano Chisone",
-      "provider": "regional-public",
-      "domain": "comune.sangermanochisone.to.it",
-      "confidence": 90,
+      "provider": "independent",
+      "domain": "cert.comune.sangermanochisone.to.it",
+      "confidence": 50,
       "flags": [
-        "spf_strict",
-        "mx_spf_match",
+        "no_spf",
         "provider_classified"
       ]
     },
@@ -30840,13 +30839,13 @@
     },
     "IT-COM-003058": {
       "name": "Comune di Cureggio",
-      "provider": "unknown",
-      "domain": "comune.cureggio.no.it",
-      "confidence": 15,
+      "provider": "independent",
+      "domain": "cert.ruparpiemonte.it",
+      "confidence": 80,
       "flags": [
-        "no_mx",
-        "no_spf",
-        "provider_unknown"
+        "spf_strict",
+        "independent_mx_with_cloud_spf",
+        "provider_classified"
       ]
     },
     "IT-COM-003060": {
@@ -39351,11 +39350,10 @@
     "IT-COM-008046": {
       "name": "Comune di Pornassio",
       "provider": "aruba",
-      "domain": "comune.pornassio.im.it",
-      "confidence": 78,
+      "domain": "pec.pornassio.org",
+      "confidence": 68,
       "flags": [
         "spf_softfail",
-        "independent_mx_with_cloud_spf",
         "provider_classified"
       ]
     },
@@ -50306,13 +50304,16 @@
     },
     "IT-COM-017003": {
       "name": "Comune di Agnosine",
-      "provider": "unknown",
+      "provider": "microsoft",
       "domain": "comune.agnosine.bs.it",
-      "confidence": 15,
+      "confidence": 90,
       "flags": [
-        "no_mx",
-        "no_spf",
-        "provider_unknown"
+        "multiple_mx",
+        "spf_strict",
+        "independent_mx_with_cloud_spf",
+        "provider_classified",
+        "provider_via_gateway_spf",
+        "autodiscover_confirms"
       ]
     },
     "IT-COM-017004": {
@@ -50330,13 +50331,16 @@
     },
     "IT-COM-017005": {
       "name": "Comune di Anfo",
-      "provider": "unknown",
+      "provider": "microsoft",
       "domain": "comune.anfo.bs.it",
-      "confidence": 15,
+      "confidence": 90,
       "flags": [
-        "no_mx",
-        "no_spf",
-        "provider_unknown"
+        "multiple_mx",
+        "spf_strict",
+        "independent_mx_with_cloud_spf",
+        "provider_classified",
+        "provider_via_gateway_spf",
+        "autodiscover_confirms"
       ]
     },
     "IT-COM-017006": {
@@ -50718,13 +50722,16 @@
     },
     "IT-COM-017036": {
       "name": "Comune di Capovalle",
-      "provider": "unknown",
+      "provider": "microsoft",
       "domain": "comune.capovalle.bs.it",
-      "confidence": 15,
+      "confidence": 90,
       "flags": [
-        "no_mx",
-        "no_spf",
-        "provider_unknown"
+        "multiple_mx",
+        "spf_strict",
+        "independent_mx_with_cloud_spf",
+        "provider_classified",
+        "provider_via_gateway_spf",
+        "autodiscover_confirms"
       ]
     },
     "IT-COM-017037": {
@@ -50817,13 +50824,16 @@
     },
     "IT-COM-017044": {
       "name": "Comune di Casto",
-      "provider": "unknown",
+      "provider": "microsoft",
       "domain": "comune.casto.bs.it",
-      "confidence": 15,
+      "confidence": 90,
       "flags": [
-        "no_mx",
-        "no_spf",
-        "provider_unknown"
+        "multiple_mx",
+        "spf_strict",
+        "independent_mx_with_cloud_spf",
+        "provider_classified",
+        "provider_via_gateway_spf",
+        "autodiscover_confirms"
       ]
     },
     "IT-COM-017045": {
@@ -51285,13 +51295,16 @@
     },
     "IT-COM-017082": {
       "name": "Comune di Idro",
-      "provider": "unknown",
+      "provider": "microsoft",
       "domain": "comune.idro.bs.it",
-      "confidence": 15,
+      "confidence": 90,
       "flags": [
-        "no_mx",
-        "no_spf",
-        "provider_unknown"
+        "multiple_mx",
+        "spf_strict",
+        "independent_mx_with_cloud_spf",
+        "provider_classified",
+        "provider_via_gateway_spf",
+        "autodiscover_confirms"
       ]
     },
     "IT-COM-017083": {
@@ -51343,13 +51356,16 @@
     },
     "IT-COM-017087": {
       "name": "Comune di Lavenone",
-      "provider": "unknown",
+      "provider": "microsoft",
       "domain": "comune.lavenone.bs.it",
-      "confidence": 15,
+      "confidence": 90,
       "flags": [
-        "no_mx",
-        "no_spf",
-        "provider_unknown"
+        "multiple_mx",
+        "spf_strict",
+        "independent_mx_with_cloud_spf",
+        "provider_classified",
+        "provider_via_gateway_spf",
+        "autodiscover_confirms"
       ]
     },
     "IT-COM-017088": {
@@ -51683,24 +51699,30 @@
     },
     "IT-COM-017115": {
       "name": "Comune di Mura",
-      "provider": "unknown",
+      "provider": "microsoft",
       "domain": "comune.mura.bs.it",
-      "confidence": 15,
+      "confidence": 90,
       "flags": [
-        "no_mx",
-        "no_spf",
-        "provider_unknown"
+        "multiple_mx",
+        "spf_strict",
+        "independent_mx_with_cloud_spf",
+        "provider_classified",
+        "provider_via_gateway_spf",
+        "autodiscover_confirms"
       ]
     },
     "IT-COM-017116": {
       "name": "Comune di Muscoline",
-      "provider": "unknown",
+      "provider": "microsoft",
       "domain": "comune.muscoline.bs.it",
-      "confidence": 15,
+      "confidence": 90,
       "flags": [
-        "no_mx",
-        "no_spf",
-        "provider_unknown"
+        "multiple_mx",
+        "spf_strict",
+        "independent_mx_with_cloud_spf",
+        "provider_classified",
+        "provider_via_gateway_spf",
+        "autodiscover_confirms"
       ]
     },
     "IT-COM-017117": {
@@ -52147,13 +52169,16 @@
     },
     "IT-COM-017153": {
       "name": "Comune di Preseglie",
-      "provider": "unknown",
+      "provider": "microsoft",
       "domain": "comune.preseglie.bs.it",
-      "confidence": 15,
+      "confidence": 90,
       "flags": [
-        "no_mx",
-        "no_spf",
-        "provider_unknown"
+        "multiple_mx",
+        "spf_strict",
+        "independent_mx_with_cloud_spf",
+        "provider_classified",
+        "provider_via_gateway_spf",
+        "autodiscover_confirms"
       ]
     },
     "IT-COM-017155": {
@@ -52183,13 +52208,16 @@
     },
     "IT-COM-017157": {
       "name": "Comune di Provagliovalsabbia",
-      "provider": "unknown",
+      "provider": "microsoft",
       "domain": "comune.provagliovalsabbia.bs.it",
-      "confidence": 15,
+      "confidence": 90,
       "flags": [
-        "no_mx",
-        "no_spf",
-        "provider_unknown"
+        "multiple_mx",
+        "spf_strict",
+        "independent_mx_with_cloud_spf",
+        "provider_classified",
+        "provider_via_gateway_spf",
+        "autodiscover_confirms"
       ]
     },
     "IT-COM-017158": {
@@ -52228,13 +52256,16 @@
     },
     "IT-COM-017161": {
       "name": "Comune di Rezzato",
-      "provider": "unknown",
+      "provider": "microsoft",
       "domain": "comune.rezzato.bs.it",
-      "confidence": 15,
+      "confidence": 90,
       "flags": [
-        "no_mx",
-        "no_spf",
-        "provider_unknown"
+        "multiple_mx",
+        "spf_strict",
+        "independent_mx_with_cloud_spf",
+        "provider_classified",
+        "provider_via_gateway_spf",
+        "autodiscover_confirms"
       ]
     },
     "IT-COM-017162": {
@@ -52593,13 +52624,16 @@
     },
     "IT-COM-017191": {
       "name": "Comune di Treviso Bresciano",
-      "provider": "unknown",
+      "provider": "microsoft",
       "domain": "comune.trevisobresciano.bs.it",
-      "confidence": 15,
+      "confidence": 90,
       "flags": [
-        "no_mx",
-        "no_spf",
-        "provider_unknown"
+        "multiple_mx",
+        "spf_strict",
+        "independent_mx_with_cloud_spf",
+        "provider_classified",
+        "provider_via_gateway_spf",
+        "autodiscover_confirms"
       ]
     },
     "IT-COM-017192": {
@@ -52617,13 +52651,16 @@
     },
     "IT-COM-017193": {
       "name": "Comune di Vallio Terme",
-      "provider": "independent",
+      "provider": "microsoft",
       "domain": "comune.vallioterme.bs.it",
       "confidence": 90,
       "flags": [
+        "multiple_mx",
         "spf_strict",
-        "mx_spf_match",
-        "provider_classified"
+        "independent_mx_with_cloud_spf",
+        "provider_classified",
+        "provider_via_gateway_spf",
+        "autodiscover_confirms"
       ]
     },
     "IT-COM-017194": {
@@ -52664,13 +52701,16 @@
     },
     "IT-COM-017197": {
       "name": "Comune di Vestone",
-      "provider": "unknown",
+      "provider": "microsoft",
       "domain": "comune.vestone.bs.it",
-      "confidence": 15,
+      "confidence": 90,
       "flags": [
-        "no_mx",
-        "no_spf",
-        "provider_unknown"
+        "multiple_mx",
+        "spf_strict",
+        "independent_mx_with_cloud_spf",
+        "provider_classified",
+        "provider_via_gateway_spf",
+        "autodiscover_confirms"
       ]
     },
     "IT-COM-017198": {
@@ -52710,13 +52750,16 @@
     },
     "IT-COM-017201": {
       "name": "Comune di Villanuova sul Clisi",
-      "provider": "unknown",
+      "provider": "microsoft",
       "domain": "comune.villanuova-sul-clisi.bs.it",
-      "confidence": 15,
+      "confidence": 90,
       "flags": [
-        "no_mx",
-        "no_spf",
-        "provider_unknown"
+        "multiple_mx",
+        "spf_strict",
+        "independent_mx_with_cloud_spf",
+        "provider_classified",
+        "provider_via_gateway_spf",
+        "autodiscover_confirms"
       ]
     },
     "IT-COM-017202": {
@@ -52744,13 +52787,16 @@
     },
     "IT-COM-017204": {
       "name": "Comune di Vobarno",
-      "provider": "unknown",
+      "provider": "microsoft",
       "domain": "comune.vobarno.bs.it",
-      "confidence": 15,
+      "confidence": 90,
       "flags": [
-        "no_mx",
-        "no_spf",
-        "provider_unknown"
+        "multiple_mx",
+        "spf_strict",
+        "independent_mx_with_cloud_spf",
+        "provider_classified",
+        "provider_via_gateway_spf",
+        "autodiscover_confirms"
       ]
     },
     "IT-COM-017205": {
@@ -77092,7 +77138,7 @@
     "IT-COM-052009": {
       "name": "Comune di Chianciano Terme",
       "provider": "microsoft",
-      "domain": "comune.chianciano-terme.siena.it",
+      "domain": "comune.chianciano-terme.si.it",
       "confidence": 95,
       "flags": [
         "spf_strict",
@@ -77104,12 +77150,13 @@
     "IT-COM-052010": {
       "name": "Comune di Chiusdino",
       "provider": "independent",
-      "domain": "comune.chiusdino.si.it",
+      "domain": "comune.chiusdino.siena.it",
       "confidence": 88,
       "flags": [
         "spf_softfail",
         "mx_spf_match",
-        "provider_classified"
+        "provider_classified",
+        "provider_via_gateway_spf"
       ]
     },
     "IT-COM-052011": {
@@ -77269,13 +77316,14 @@
     },
     "IT-COM-052025": {
       "name": "Comune di Radicondoli",
-      "provider": "independent",
-      "domain": "comune.radicondoli.si.it",
+      "provider": "google",
+      "domain": "comune.radicondoli.siena.it",
       "confidence": 88,
       "flags": [
         "spf_softfail",
         "mx_spf_match",
-        "provider_classified"
+        "provider_classified",
+        "provider_via_gateway_spf"
       ]
     },
     "IT-COM-052026": {
@@ -81645,14 +81693,12 @@
     },
     "IT-COM-058122": {
       "name": "Comune di Fonte Nuova",
-      "provider": "microsoft",
-      "domain": "comune.fontenuova.rm.it",
-      "confidence": 95,
+      "provider": "independent",
+      "domain": "cert.fonte-nuova.it",
+      "confidence": 50,
       "flags": [
-        "spf_strict",
-        "mx_spf_match",
-        "provider_classified",
-        "autodiscover_confirms"
+        "no_spf",
+        "provider_classified"
       ]
     },
     "IT-COM-059001": {
@@ -81813,13 +81859,13 @@
     },
     "IT-COM-059015": {
       "name": "Comune di Monte San Biagio",
-      "provider": "unknown",
+      "provider": "local-isp",
       "domain": "comunedimontesanbiagio.it",
-      "confidence": 15,
+      "confidence": 88,
       "flags": [
-        "no_mx",
-        "no_spf",
-        "provider_unknown"
+        "spf_softfail",
+        "mx_spf_match",
+        "provider_classified"
       ]
     },
     "IT-COM-059016": {
@@ -90405,13 +90451,12 @@
     },
     "IT-COM-066093": {
       "name": "Comune di Scanno",
-      "provider": "unknown",
+      "provider": "aruba",
       "domain": "comune.scanno.aq.it",
-      "confidence": 15,
+      "confidence": 68,
       "flags": [
-        "no_mx",
-        "no_spf",
-        "provider_unknown"
+        "spf_softfail",
+        "provider_classified"
       ]
     },
     "IT-COM-066094": {
@@ -102401,7 +102446,7 @@
     "IT-COM-082008": {
       "name": "Comune di Baucina",
       "provider": "aruba",
-      "domain": "egov.comune.baucina.pa.it",
+      "domain": "comune.baucina.pa.it",
       "confidence": 83,
       "flags": [
         "spf_softfail",
@@ -112796,7 +112841,8 @@
       "flags": [
         "spf_softfail",
         "independent_mx_with_cloud_spf",
-        "provider_classified"
+        "provider_classified",
+        "smtp_suggests:microsoft"
       ]
     },
     "IT-COM-108025": {
@@ -117580,13 +117626,11 @@
     "IT-COM-118050": {
       "name": "Comune di Senorbi'",
       "provider": "aruba",
-      "domain": "comune.senorbi.su.it",
-      "confidence": 83,
+      "domain": "pec.comune.senorbi.ca.it",
+      "confidence": 68,
       "flags": [
         "spf_softfail",
-        "independent_mx_with_cloud_spf",
-        "provider_classified",
-        "autodiscover_confirms"
+        "provider_classified"
       ]
     },
     "IT-COM-118051": {
@@ -117971,7 +118015,7 @@
     "IT-COM-119013": {
       "name": "Comune di Nuxis",
       "provider": "microsoft",
-      "domain": "comune.nuxis.su.it",
+      "domain": "comune.nuxis.ci.it",
       "confidence": 95,
       "flags": [
         "spf_strict",
@@ -122100,10 +122144,11 @@
     "IT-L1-azcv": {
       "name": "Azienda Calabria Verde",
       "provider": "aruba",
-      "domain": "pec.calabriaverde.eu",
-      "confidence": 50,
+      "domain": "calabriaverde.regione.calabria.it",
+      "confidence": 78,
       "flags": [
-        "no_spf",
+        "spf_softfail",
+        "independent_mx_with_cloud_spf",
         "provider_classified"
       ]
     },
@@ -131034,10 +131079,11 @@
     },
     "IT-L18-udcmc_": {
       "name": "Unione Dei Comuni Montani del Casentino",
-      "provider": "regional-public",
-      "domain": "uc.casentino.toscana.it",
-      "confidence": 85,
+      "provider": "independent",
+      "domain": "postacert.toscana.it",
+      "confidence": 90,
       "flags": [
+        "spf_strict",
         "mx_spf_match",
         "provider_classified"
       ]
@@ -162953,13 +162999,12 @@
     },
     "IT-L33-istsc_boic83000e": {
       "name": "ISTITUTO COMPRENSIVO - I.C. DI PIANORO",
-      "provider": "istruzione-miur-tenant",
-      "domain": "icpianoro.edu.it",
-      "confidence": 80,
+      "provider": "google",
+      "domain": "icpianoro.istruzioneer.it",
+      "confidence": 55,
       "flags": [
-        "spf_strict",
-        "mx_spf_match",
-        "multi_provider_spf:brevo+microsoft+regional-public",
+        "multiple_mx",
+        "no_spf",
         "provider_classified"
       ]
     },
@@ -165279,14 +165324,14 @@
     },
     "IT-L33-istsc_bsis008004": {
       "name": "ISTRUZIONE SECONDARIA SUPERIORE - 'ANTONIETTI' - ISEO",
-      "provider": "istruzione-miur-tenant",
-      "domain": "antoniettiseo.edu.it",
-      "confidence": 80,
+      "provider": "microsoft",
+      "domain": "antoniettiseo.it",
+      "confidence": 95,
       "flags": [
         "spf_strict",
         "mx_spf_match",
-        "multi_provider_spf:brevo+microsoft+regional-public",
-        "provider_classified"
+        "provider_classified",
+        "autodiscover_confirms"
       ]
     },
     "IT-L33-istsc_bsis00900x": {
@@ -197746,13 +197791,13 @@
     },
     "IT-L33-istsc_pdis003009": {
       "name": "IIS CATTANEO-MATTEI",
-      "provider": "google",
-      "domain": "cattaneomattei.it",
-      "confidence": 93,
+      "provider": "istruzione-miur-tenant",
+      "domain": "cattaneo-mattei.edu.it",
+      "confidence": 80,
       "flags": [
-        "multiple_mx",
-        "spf_softfail",
+        "spf_strict",
         "mx_spf_match",
+        "multi_provider_spf:brevo+microsoft+regional-public",
         "provider_classified"
       ]
     },
@@ -219102,7 +219147,7 @@
     "IT-L33-istsc_tris00100e": {
       "name": "ISTRUZIONE SECONDARIA SUPERIORE - NARNI I.I.S. SC. MAG. GEOM. GANDHI",
       "provider": "google",
-      "domain": "gandhinarni.it",
+      "domain": "gandhinarni.edu.it",
       "confidence": 73,
       "flags": [
         "multiple_mx",
@@ -228857,7 +228902,7 @@
     "IT-L34-XQZEJ3XC": {
       "name": "arciconfraternita sant'angelo dei rossi",
       "provider": "aruba",
-      "domain": "arciconfraternitadeiross.altervista.org",
+      "domain": "arciconfraternitadeirossi.it",
       "confidence": 83,
       "flags": [
         "spf_softfail",
@@ -247967,13 +248012,16 @@
     },
     "IT-L37-sevss": {
       "name": "Servizi Energia Valle Sabbia Srl",
-      "provider": "unknown",
+      "provider": "microsoft",
       "domain": "saevallesabbia.it",
-      "confidence": 15,
+      "confidence": 90,
       "flags": [
-        "no_mx",
-        "no_spf",
-        "provider_unknown"
+        "multiple_mx",
+        "spf_strict",
+        "independent_mx_with_cloud_spf",
+        "provider_classified",
+        "provider_via_gateway_spf",
+        "autodiscover_confirms"
       ]
     },
     "IT-L37-sgaas": {
@@ -248282,13 +248330,16 @@
     },
     "IT-L37-ss": {
       "name": "Secoval Srl",
-      "provider": "unknown",
+      "provider": "microsoft",
       "domain": "secoval.it",
-      "confidence": 15,
+      "confidence": 90,
       "flags": [
-        "no_mx",
-        "no_spf",
-        "provider_unknown"
+        "multiple_mx",
+        "spf_strict",
+        "independent_mx_with_cloud_spf",
+        "provider_classified",
+        "provider_via_gateway_spf",
+        "autodiscover_confirms"
       ]
     },
     "IT-L37-ssas": {
@@ -248661,13 +248712,16 @@
     },
     "IT-L37-vssbs": {
       "name": "Valle Sabbia Solidale",
-      "provider": "unknown",
+      "provider": "microsoft",
       "domain": "vallesabbiasolidale.it",
-      "confidence": 15,
+      "confidence": 90,
       "flags": [
-        "no_mx",
-        "no_spf",
-        "provider_unknown"
+        "multiple_mx",
+        "spf_strict",
+        "independent_mx_with_cloud_spf",
+        "provider_classified",
+        "provider_via_gateway_spf",
+        "autodiscover_confirms"
       ]
     },
     "IT-L37-vssrl": {
@@ -251036,13 +251090,16 @@
     },
     "IT-L40-cdc_sb": {
       "name": "Autorita' di Bacino Laghi Garda e Idro",
-      "provider": "unknown",
+      "provider": "microsoft",
       "domain": "consorziogardaidro.it",
-      "confidence": 15,
+      "confidence": 90,
       "flags": [
-        "no_mx",
-        "no_spf",
-        "provider_unknown"
+        "multiple_mx",
+        "spf_strict",
+        "independent_mx_with_cloud_spf",
+        "provider_classified",
+        "provider_via_gateway_spf",
+        "autodiscover_confirms"
       ]
     },
     "IT-L40-colsd": {
@@ -256001,12 +256058,11 @@
     },
     "IT-L8-aouora": {
       "name": "Azienda ospedaliero-universitaria delle Marche",
-      "provider": "google",
-      "domain": "portale.ospedaliriuniti.marche.it",
-      "confidence": 93,
+      "provider": "independent",
+      "domain": "emarche.it",
+      "confidence": 90,
       "flags": [
-        "multiple_mx",
-        "spf_softfail",
+        "spf_strict",
         "mx_spf_match",
         "provider_classified"
       ]
@@ -257676,7 +257732,7 @@
     "IT-PRO-7503982": {
       "name": "Provincia di Massa Carrara",
       "provider": "google",
-      "domain": "portale.provincia.ms.it",
+      "domain": "provincia.ms.it",
       "confidence": 90,
       "flags": [
         "spf_strict",

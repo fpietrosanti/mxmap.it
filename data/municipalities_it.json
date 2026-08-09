@@ -164669,7 +164669,7 @@
     "domain_fallbacks": [],
     "ipa_codice_ipa": "TGZN1O5G",
     "ipa_codice_categoria": "L1",
-    "ipa_codice_istat": null,
+    "ipa_codice_istat": "18993750",
     "ipa_codice_comune_istat": "015086",
     "domain_source": "sito_istituzionale"
   },
@@ -165790,7 +165790,7 @@
     "domain": "altatuscia.vt.it",
     "osm_relation_id": null,
     "domain_fallbacks": [
-      "tiscalinet.it"
+      "gmail.com"
     ],
     "ipa_codice_ipa": "cm_alta3",
     "ipa_codice_categoria": "L12",

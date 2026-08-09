@@ -1,32 +1,32 @@
 {
  "n_entities": 22901,
- "n_classified": 22256,
- "coverage_pct": 97.18,
- "mean_confidence": 0.8503,
- "isd": 51.31,
+ "n_classified": 22278,
+ "coverage_pct": 97.28,
+ "mean_confidence": 0.8512,
+ "isd": 51.27,
  "headline": {
-  "isd": 51.31,
-  "cloud_act_pct": 48.14,
-  "coverage_pct": 97.18,
+  "isd": 51.27,
+  "cloud_act_pct": 48.18,
+  "coverage_pct": 97.28,
   "n_entities": 22901
  },
  "sovereignty": [
   {
    "bucket": "Italia — Cloud sovrano",
    "group": "ITA",
-   "count": 931,
-   "pct": 4.18
+   "count": 929,
+   "pct": 4.17
   },
   {
    "bucket": "Italia — Provider commerciali",
    "group": "ITA",
-   "count": 7440,
-   "pct": 33.43
+   "count": 7442,
+   "pct": 33.41
   },
   {
    "bucket": "Italia — Infrastruttura autonoma",
    "group": "ITA",
-   "count": 3049,
+   "count": 3052,
    "pct": 13.7
   },
   {
@@ -38,26 +38,26 @@
   {
    "bucket": "USA (CLOUD Act)",
    "group": "EST",
-   "count": 10714,
-   "pct": 48.14
+   "count": 10733,
+   "pct": 48.18
   },
   {
    "bucket": "Sconosciuto",
    "group": "ND",
-   "count": 645,
-   "pct": 2.82
+   "count": 623,
+   "pct": 2.72
   }
  ],
  "jurisdiction": [
   {
    "key": "domestic",
-   "count": 10522,
-   "pct": 45.95
+   "count": 10527,
+   "pct": 45.97
   },
   {
    "key": "foreign",
-   "count": 11415,
-   "pct": 49.84
+   "count": 11432,
+   "pct": 49.92
   },
   {
    "key": "mixed",
@@ -66,8 +66,8 @@
   },
   {
    "key": "unknown",
-   "count": 713,
-   "pct": 3.11
+   "count": 691,
+   "pct": 3.02
   }
  ],
  "providers": [
@@ -75,43 +75,43 @@
    "provider": "google",
    "display": "Google Workspace",
    "count": 6445,
-   "pct": 28.96
+   "pct": 28.93
   },
   {
    "provider": "aruba",
    "display": "Provider Italiano",
-   "count": 5143,
-   "pct": 23.11
+   "count": 5144,
+   "pct": 23.09
   },
   {
    "provider": "microsoft",
    "display": "Microsoft 365",
-   "count": 3395,
-   "pct": 15.25
+   "count": 3415,
+   "pct": 15.33
   },
   {
    "provider": "independent",
    "display": "Infrastruttura autonoma",
-   "count": 3049,
+   "count": 3052,
    "pct": 13.7
   },
   {
    "provider": "local-isp",
    "display": "Provider Italiano",
-   "count": 1555,
-   "pct": 6.99
+   "count": 1556,
+   "pct": 6.98
   },
   {
    "provider": "regional-public",
    "display": "Cloud Italiano",
-   "count": 931,
-   "pct": 4.18
+   "count": 929,
+   "pct": 4.17
   },
   {
    "provider": "istruzione-miur-tenant",
    "display": "Microsoft 365",
-   "count": 868,
-   "pct": 3.9
+   "count": 867,
+   "pct": 3.89
   },
   {
    "provider": "register-it",
@@ -122,8 +122,8 @@
   {
    "provider": "unknown",
    "display": "Sconosciuto",
-   "count": 645,
-   "pct": 2.82
+   "count": 623,
+   "pct": 2.72
   },
   {
    "provider": "seeweb",
@@ -181,32 +181,32 @@
   }
  ],
  "market": {
-  "top3_pct": 67.32,
-  "hhi": 1883.7
+  "top3_pct": 67.35,
+  "hhi": 1883.2
  },
  "confidence_bands": [
   {
    "band": "alta",
-   "count": 20950,
-   "pct": 91.48
+   "count": 20971,
+   "pct": 91.57
   },
   {
    "band": "media",
-   "count": 1306,
-   "pct": 5.7
+   "count": 1307,
+   "pct": 5.71
   },
   {
    "band": "bassa",
-   "count": 645,
-   "pct": 2.82
+   "count": 623,
+   "pct": 2.72
   }
  ],
  "signals": {
-  "mx_pct": 97.18,
-  "spf_pct": 87.59,
-  "dkim_pct": 15.41,
-  "gateway_pct": 15.06
+  "mx_pct": 97.28,
+  "spf_pct": 87.68,
+  "dkim_pct": 15.4,
+  "gateway_pct": 15.15
  },
- "generated": "2026-08-08T05:42:53Z",
+ "generated": "2026-08-09T05:17:35Z",
  "country": "IT"
 }
