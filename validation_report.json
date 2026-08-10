@@ -14041,7 +14041,7 @@
     "IT-C14-odapcn": {
       "name": "Ordine Degli Architetti, Pianificatori, Paesaggisti e Conservatori di Napoli e Provincia",
       "provider": "local-isp",
-      "domain": "napoli.archiworld.it",
+      "domain": "na.archiworld.it",
       "confidence": 95,
       "flags": [
         "multiple_mx",
@@ -28434,14 +28434,13 @@
     },
     "IT-COM-001223": {
       "name": "Comune di Romano Canavese",
-      "provider": "independent",
+      "provider": "unknown",
       "domain": "comune.romanocanavese.to.it",
-      "confidence": 93,
+      "confidence": 15,
       "flags": [
-        "multiple_mx",
-        "spf_softfail",
-        "mx_spf_match",
-        "provider_classified"
+        "no_mx",
+        "no_spf",
+        "provider_unknown"
       ]
     },
     "IT-COM-001224": {
@@ -30839,13 +30838,13 @@
     },
     "IT-COM-003058": {
       "name": "Comune di Cureggio",
-      "provider": "independent",
-      "domain": "cert.ruparpiemonte.it",
-      "confidence": 80,
+      "provider": "unknown",
+      "domain": "comune.cureggio.no.it",
+      "confidence": 15,
       "flags": [
-        "spf_strict",
-        "independent_mx_with_cloud_spf",
-        "provider_classified"
+        "no_mx",
+        "no_spf",
+        "provider_unknown"
       ]
     },
     "IT-COM-003060": {
@@ -90451,12 +90450,13 @@
     },
     "IT-COM-066093": {
       "name": "Comune di Scanno",
-      "provider": "aruba",
+      "provider": "unknown",
       "domain": "comune.scanno.aq.it",
-      "confidence": 68,
+      "confidence": 15,
       "flags": [
-        "spf_softfail",
-        "provider_classified"
+        "no_mx",
+        "no_spf",
+        "provider_unknown"
       ]
     },
     "IT-COM-066094": {
@@ -102446,7 +102446,7 @@
     "IT-COM-082008": {
       "name": "Comune di Baucina",
       "provider": "aruba",
-      "domain": "comune.baucina.pa.it",
+      "domain": "egov.comune.baucina.pa.it",
       "confidence": 83,
       "flags": [
         "spf_softfail",
@@ -131079,11 +131079,10 @@
     },
     "IT-L18-udcmc_": {
       "name": "Unione Dei Comuni Montani del Casentino",
-      "provider": "independent",
-      "domain": "postacert.toscana.it",
-      "confidence": 90,
+      "provider": "regional-public",
+      "domain": "uc.casentino.toscana.it",
+      "confidence": 85,
       "flags": [
-        "spf_strict",
         "mx_spf_match",
         "provider_classified"
       ]
@@ -174119,13 +174118,13 @@
     },
     "IT-L33-istsc_fepc01000e": {
       "name": "LICEO CLASSICO - LC LICEO GINNASIO 'G.CEVOLANI'",
-      "provider": "google",
-      "domain": "liceocevolani.it",
-      "confidence": 93,
+      "provider": "istruzione-miur-tenant",
+      "domain": "liceocevolani.edu.it",
+      "confidence": 80,
       "flags": [
-        "multiple_mx",
-        "spf_softfail",
+        "spf_strict",
         "mx_spf_match",
+        "multi_provider_spf:brevo+microsoft+regional-public",
         "provider_classified"
       ]
     },
@@ -243615,7 +243614,7 @@
     "IT-L37-asaspa": {
       "name": "PLURES S.P.A.",
       "provider": "microsoft",
-      "domain": "plures.aliaserviziambientali.it",
+      "domain": "aliaserviziambientali.it",
       "confidence": 95,
       "flags": [
         "spf_strict",
