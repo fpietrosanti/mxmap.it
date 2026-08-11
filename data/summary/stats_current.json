@@ -3,10 +3,10 @@
  "n_classified": 22275,
  "coverage_pct": 97.27,
  "mean_confidence": 0.8511,
- "isd": 51.27,
+ "isd": 51.25,
  "headline": {
-  "isd": 51.27,
-  "cloud_act_pct": 48.18,
+  "isd": 51.25,
+  "cloud_act_pct": 48.2,
   "coverage_pct": 97.27,
   "n_entities": 22901
  },
@@ -20,14 +20,14 @@
   {
    "bucket": "Italia — Provider commerciali",
    "group": "ITA",
-   "count": 7441,
+   "count": 7442,
    "pct": 33.41
   },
   {
    "bucket": "Italia — Infrastruttura autonoma",
    "group": "ITA",
-   "count": 3049,
-   "pct": 13.69
+   "count": 3045,
+   "pct": 13.67
   },
   {
    "bucket": "Altri provider esteri",
@@ -38,8 +38,8 @@
   {
    "bucket": "USA (CLOUD Act)",
    "group": "EST",
-   "count": 10733,
-   "pct": 48.18
+   "count": 10736,
+   "pct": 48.2
   },
   {
    "bucket": "Sconosciuto",
@@ -51,13 +51,13 @@
  "jurisdiction": [
   {
    "key": "domestic",
-   "count": 10525,
-   "pct": 45.96
+   "count": 10523,
+   "pct": 45.95
   },
   {
    "key": "foreign",
-   "count": 11431,
-   "pct": 49.91
+   "count": 11433,
+   "pct": 49.92
   },
   {
    "key": "mixed",
@@ -74,7 +74,7 @@
   {
    "provider": "google",
    "display": "Google Workspace",
-   "count": 6444,
+   "count": 6445,
    "pct": 28.93
   },
   {
@@ -86,19 +86,19 @@
   {
    "provider": "microsoft",
    "display": "Microsoft 365",
-   "count": 3415,
-   "pct": 15.33
+   "count": 3417,
+   "pct": 15.34
   },
   {
    "provider": "independent",
    "display": "Infrastruttura autonoma",
-   "count": 3049,
-   "pct": 13.69
+   "count": 3045,
+   "pct": 13.67
   },
   {
    "provider": "local-isp",
    "display": "Provider Italiano",
-   "count": 1556,
+   "count": 1557,
    "pct": 6.99
   },
   {
@@ -181,18 +181,18 @@
   }
  ],
  "market": {
-  "top3_pct": 67.35,
-  "hhi": 1883.3
+  "top3_pct": 67.36,
+  "hhi": 1883.0
  },
  "confidence_bands": [
   {
    "band": "alta",
-   "count": 20969,
-   "pct": 91.56
+   "count": 20970,
+   "pct": 91.57
   },
   {
    "band": "media",
-   "count": 1306,
+   "count": 1305,
    "pct": 5.7
   },
   {
@@ -203,10 +203,10 @@
  ],
  "signals": {
   "mx_pct": 97.27,
-  "spf_pct": 87.66,
+  "spf_pct": 87.67,
   "dkim_pct": 15.4,
   "gateway_pct": 15.15
  },
- "generated": "2026-08-10T05:45:14Z",
+ "generated": "2026-08-11T05:21:46Z",
  "country": "IT"
 }
