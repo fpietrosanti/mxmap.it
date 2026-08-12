@@ -195,9 +195,9 @@
       "seed_domain": "peritiagrarisiracusa.it",
       "claimed_domain": "comune.siracusa.it",
       "reject_reason": "unrelated",
-      "old_mx": "mx.carboniocloud.com",
+      "old_mx": "comune-siracusa-it.mail.protection.outlook.com",
       "old_provider": "microsoft",
-      "old_reason": "MX is carbonio gateway; DKIM signs via microsoft"
+      "old_reason": "MX record (comune-siracusa-it.mail.protection.outlook.com) matches Microsoft"
     },
     {
       "id": "IT-C14-cdpappt",
@@ -5123,9 +5123,9 @@
       "seed_domain": "consorzioasisr.it",
       "claimed_domain": "comune.siracusa.it",
       "reject_reason": "unrelated",
-      "old_mx": "mx.carboniocloud.com",
+      "old_mx": "comune-siracusa-it.mail.protection.outlook.com",
       "old_provider": "microsoft",
-      "old_reason": "MX is carbonio gateway; DKIM signs via microsoft"
+      "old_reason": "MX record (comune-siracusa-it.mail.protection.outlook.com) matches Microsoft"
     },
     {
       "id": "IT-L44-adnv",

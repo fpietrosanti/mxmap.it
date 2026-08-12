@@ -56102,9 +56102,11 @@
     "country": "IT",
     "region": "Sicilia",
     "district": "Messina",
-    "domain": "comunelipari.it",
+    "domain": "comune.lipari.me.it",
     "osm_relation_id": 39647,
-    "domain_fallbacks": [],
+    "domain_fallbacks": [
+      "comunelipari.it"
+    ],
     "ipa_codice_ipa": "c_e606",
     "ipa_codice_categoria": "L6",
     "ipa_codice_istat": "75422",
