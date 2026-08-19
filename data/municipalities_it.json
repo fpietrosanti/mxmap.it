@@ -50664,7 +50664,7 @@
     "country": "IT",
     "region": "Piemonte",
     "district": "Asti",
-    "domain": "comune.grana.at.it",
+    "domain": "comune.granamonferrato.at.it",
     "osm_relation_id": 43952,
     "domain_fallbacks": [
       "micso.net"
@@ -101396,9 +101396,7 @@
     "district": "L'Aquila",
     "domain": "comune.scoppito.aq.it",
     "osm_relation_id": 41972,
-    "domain_fallbacks": [
-      "hotmail.it"
-    ],
+    "domain_fallbacks": [],
     "ipa_codice_ipa": "c_i546",
     "ipa_codice_categoria": "L6",
     "ipa_codice_istat": "11117163",
@@ -117780,9 +117778,7 @@
     "district": "Savona",
     "domain": "comune.villanovadalbenga.sv.it",
     "osm_relation_id": 42805,
-    "domain_fallbacks": [
-      "comunevillanovadalbenga.it"
-    ],
+    "domain_fallbacks": [],
     "ipa_codice_ipa": "c_l975",
     "ipa_codice_categoria": "L6",
     "ipa_codice_istat": "11118585",
@@ -164277,21 +164273,6 @@
     "ipa_codice_categoria": "L1",
     "ipa_codice_istat": "25093716",
     "ipa_codice_comune_istat": "016219",
-    "domain_source": "sito_istituzionale"
-  },
-  {
-    "id": "IT-L1-sa630",
-    "name": "Soggetto Attuatore Ocdpc N.630/2020 e 639/2020",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "regione.vda.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [],
-    "ipa_codice_ipa": "sa630",
-    "ipa_codice_categoria": "L1",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "007058",
     "domain_source": "sito_istituzionale"
   },
   {
@@ -269958,7 +269939,7 @@
     "country": "IT",
     "region": null,
     "district": null,
-    "domain": "icsangiustino.gov.it",
+    "domain": "icsangiustino.edu.it",
     "osm_relation_id": null,
     "domain_fallbacks": [
       "istruzione.it"
@@ -338007,6 +337988,21 @@
     "domain_source": "sito_istituzionale"
   },
   {
+    "id": "IT-L37-KLTE0J0S",
+    "name": "AIMAG SPA",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "aimag.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "KLTE0J0S",
+    "ipa_codice_categoria": "L37",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "036022",
+    "domain_source": "sito_istituzionale"
+  },
+  {
     "id": "IT-L37-KM9238GS",
     "name": "Hera Spa",
     "country": "IT",
@@ -346897,7 +346893,9 @@
     "district": null,
     "domain": "abacatania.it",
     "osm_relation_id": null,
-    "domain_fallbacks": [],
+    "domain_fallbacks": [
+      "pec.abacatania.it"
+    ],
     "ipa_codice_ipa": "abac",
     "ipa_codice_categoria": "L43",
     "ipa_codice_istat": null,
@@ -358983,21 +358981,6 @@
     "domain_source": "sito_istituzionale"
   },
   {
-    "id": "IT-SA-fih",
-    "name": "Federazione Italiana Hockey",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "federhockey.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [],
-    "ipa_codice_ipa": "fih",
-    "ipa_codice_categoria": "SA",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "058091",
-    "domain_source": "sito_istituzionale"
-  },
-  {
     "id": "IT-SA-fisg",
     "name": "Federazione Italiana Sport del Ghiaccio",
     "country": "IT",
@@ -361674,6 +361657,21 @@
     "ipa_codice_categoria": "SA",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "073027",
+    "domain_source": "sito_istituzionale"
+  },
+  {
+    "id": "IT-SA-SY0OKFWP",
+    "name": "CONSORZIO FORESTALE DELL'UNIONE MONTANA DEL PINEROLESE",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "consorzioforestaleump.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "SY0OKFWP",
+    "ipa_codice_categoria": "SA",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "001275",
     "domain_source": "sito_istituzionale"
   },
   {

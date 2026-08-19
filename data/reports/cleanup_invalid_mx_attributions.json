@@ -1,5 +1,5 @@
 {
-  "n_purged": 507,
+  "n_purged": 513,
   "items": [
     {
       "id": "IT-C1-m_pi",
@@ -563,6 +563,17 @@
       "old_reason": "MX record (alt1.aspmx.l.google.com, alt2.aspmx.l.google.com) matches Google"
     },
     {
+      "id": "IT-C14-cpipr_vi",
+      "name": "Ordine dei Periti Industriali e dei Periti Industriali Laureati della Provincia di Vicenza",
+      "codice_ipa": "cpipr_vi",
+      "seed_domain": "ordine-vicenza.cnpi.eu",
+      "claimed_domain": "comune.vicenza.it",
+      "reject_reason": "unrelated",
+      "old_mx": "comune-vicenza.esvacloud.com",
+      "old_provider": "microsoft",
+      "old_reason": "MX is libraesva gateway; TXT verification proves microsoft tenant"
+    },
+    {
       "id": "IT-C14-cpoppu",
       "name": "Collegio Provinciale Ordine dei Consulenti del Lavoro di Pesaro - Urbino",
       "codice_ipa": "cpoppu",
@@ -629,6 +640,17 @@
       "old_reason": "MX record (comune-milano-it.mail.protection.outlook.com) matches Microsoft"
     },
     {
+      "id": "IT-C14-crmsc",
+      "name": "Collegio Regionale Maestri di Sci Campania",
+      "codice_ipa": "crmsc",
+      "seed_domain": "maestridiscicampania.it",
+      "claimed_domain": "comune.napoli.it",
+      "reject_reason": "unrelated",
+      "old_mx": "comune-napoli-it.mail.protection.outlook.com",
+      "old_provider": "microsoft",
+      "old_reason": "MX record (comune-napoli-it.mail.protection.outlook.com) matches Microsoft"
+    },
+    {
       "id": "IT-C14-ctsr_070",
       "name": "Ordine dei Tecnici Sanitari di Radiologia Medica e delle Professioni Sanitarie Tecniche, della Riabilitazione e della Prevenzione di Campobasso-Isernia",
       "codice_ipa": "ctsr_070",
@@ -678,6 +700,17 @@
       "codice_ipa": "oclpal",
       "seed_domain": "consulentidellavoro.pa.it",
       "claimed_domain": "comune.palermo.it",
+      "reject_reason": "unrelated",
+      "old_mx": "alt1.aspmx.l.google.com",
+      "old_provider": "google",
+      "old_reason": "MX record (alt1.aspmx.l.google.com, alt2.aspmx.l.google.com) matches Google"
+    },
+    {
+      "id": "IT-C14-ocpp_pz",
+      "name": "Ordine dei Chimici e dei Fisici della Provincia di Potenza",
+      "codice_ipa": "ocpp_pz",
+      "seed_domain": "chimicipotenza.it",
+      "claimed_domain": "comune.potenza.it",
       "reject_reason": "unrelated",
       "old_mx": "alt1.aspmx.l.google.com",
       "old_provider": "google",
@@ -1243,17 +1276,6 @@
       "old_mx": "mx1.comune.laigueglia.sv.it",
       "old_provider": "local-isp",
       "old_reason": "MX (mx1.comune.laigueglia.sv.it) hosted on Local ISP (Genesys Informatica (IT))"
-    },
-    {
-      "id": "IT-COM-009051",
-      "name": "Comune di Pontinvrea",
-      "codice_ipa": "c_g866",
-      "seed_domain": "comune.pontinvrea.sv.it",
-      "claimed_domain": "comunedipontinvrea.it",
-      "reject_reason": "unrelated",
-      "old_mx": "eracle.si-tek.net",
-      "old_provider": "independent",
-      "old_reason": "MX is sitek gateway; backend provider unknown"
     },
     {
       "id": "IT-COM-011028",
@@ -2488,6 +2510,17 @@
       "old_reason": "MX (mx.comunedipalena.it) on AS31034 (Aruba.it (IT)) -> aruba (ASN-based override)"
     },
     {
+      "id": "IT-L12-CMCVB",
+      "name": "Comunita' Montana Cigno Valle Biferno",
+      "codice_ipa": "cmcvb",
+      "seed_domain": "montanacigno.com",
+      "claimed_domain": "casacalendacomune.it",
+      "reject_reason": "unrelated",
+      "old_mx": "alltheemails.com",
+      "old_provider": "independent",
+      "old_reason": "MX (alltheemails.com) is self-hosted"
+    },
+    {
       "id": "IT-L12-CMMC",
       "name": "Comunita' Montana Molise Centrale",
       "codice_ipa": "cmmc",
@@ -2882,6 +2915,17 @@
       "old_mx": "mail.comune.cavallino.le.it",
       "old_provider": "local-isp",
       "old_reason": "MX (mail.comune.cavallino.le.it, mail1.comune.cavallino.le.it) hosted on Local ISP (Vodafone Italia (IT))"
+    },
+    {
+      "id": "IT-L18-ucmc",
+      "name": "Unione Dei Comuni Montani Castello di Gerione",
+      "codice_ipa": "ucmc",
+      "seed_domain": "unionecastellodigerionecb.it",
+      "claimed_domain": "casacalendacomune.it",
+      "reject_reason": "unrelated",
+      "old_mx": "alltheemails.com",
+      "old_provider": "independent",
+      "old_reason": "MX (alltheemails.com) is self-hosted"
     },
     {
       "id": "IT-L18-uco",
@@ -3973,6 +4017,17 @@
       "old_reason": "MX is omitech gateway; MS365 tenant detected (Managed)"
     },
     {
+      "id": "IT-L34-iavvmcr",
+      "name": "Ipab Associazione Volontariato Villaggio Marino Ca' Roman",
+      "codice_ipa": "iavvmcr",
+      "seed_domain": "villaggiocaroman.weebly.com",
+      "claimed_domain": "comune.padova.it",
+      "reject_reason": "unrelated",
+      "old_mx": "comune-padova-it.mail.protection.outlook.com",
+      "old_provider": "microsoft",
+      "old_reason": "MX record (comune-padova-it.mail.protection.outlook.com) matches Microsoft"
+    },
+    {
       "id": "IT-L34-idb",
       "name": "Ipab Domenico Bertone",
       "codice_ipa": "idb",
@@ -4070,6 +4125,17 @@
       "old_mx": "comune-vicenza.esvacloud.com",
       "old_provider": "microsoft",
       "old_reason": "MX is libraesva gateway; TXT verification proves microsoft tenant"
+    },
+    {
+      "id": "IT-L34-opcom",
+      "name": "Opera Pia Casa di Ospitalita Mangione",
+      "codice_ipa": "opcom",
+      "seed_domain": "operapiamangione.it",
+      "claimed_domain": "comune.alcamo.tp.it",
+      "reject_reason": "unrelated",
+      "old_mx": "mailgw01.host.it",
+      "old_provider": "microsoft",
+      "old_reason": "MX is host-it gateway; MS365 tenant detected (Managed)"
     },
     {
       "id": "IT-L34-opcrsa",
@@ -5095,15 +5161,15 @@
       "old_reason": "MX is sophos gateway; MS365 tenant detected (Managed)"
     },
     {
-      "id": "IT-L40-colsd",
-      "name": "Consorzio Obbligatorio per lo Smaltimento Dei Rifiuti Solidi Urbani Bacino Padova 4",
-      "codice_ipa": "colsd",
-      "seed_domain": "bacinopadova4.it",
-      "claimed_domain": "comune.piovedisacco.pd.it",
+      "id": "IT-L40-abflgv",
+      "name": "Autorita' di Bacino dei Fiumi Liri Garigliano e Volturno",
+      "codice_ipa": "abflgv",
+      "seed_domain": "autoritadibacino.it",
+      "claimed_domain": "comune.caserta.it",
       "reject_reason": "unrelated",
-      "old_mx": "mail.comune.piove.pd.it",
-      "old_provider": "independent",
-      "old_reason": "MX (mail.comune.piove.pd.it) is self-hosted"
+      "old_mx": "mx.comune.caserta.it",
+      "old_provider": "aruba",
+      "old_reason": "MX (mx.comune.caserta.it) on AS31034 (Aruba.it (IT)) -> aruba (ASN-based override)"
     },
     {
       "id": "IT-L42-caltg",

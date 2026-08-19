@@ -1,6 +1,206 @@
 {
-  "n_rejected": 367,
+  "n_rejected": 372,
   "items": [
+    {
+      "id": "IT-L33-isjc_",
+      "fallback": "mail.scuole.vda.it",
+      "reason": "unrelated"
+    },
+    {
+      "id": "IT-L33-isjc_",
+      "fallback": "regione.vda.it",
+      "reason": "pa_shared_platform_out_of_scope:regione.vda.it"
+    },
+    {
+      "id": "IT-COM-004121",
+      "fallback": "martiniana.po.it",
+      "reason": "unrelated"
+    },
+    {
+      "id": "IT-L33-islb",
+      "fallback": "regione.vda.it",
+      "reason": "pa_shared_platform_out_of_scope:regione.vda.it"
+    },
+    {
+      "id": "IT-COM-004201",
+      "fallback": "reteunitaria.piemonte.it",
+      "reason": "unrelated"
+    },
+    {
+      "id": "IT-L33-isle",
+      "fallback": "regione.vda.it",
+      "reason": "pa_shared_platform_out_of_scope:regione.vda.it"
+    },
+    {
+      "id": "IT-COM-004212",
+      "fallback": "comunedisantavittoriadalba.it",
+      "reason": "unrelated"
+    },
+    {
+      "id": "IT-COM-004249",
+      "fallback": "reteunitaria.piemonte.it",
+      "reason": "unrelated"
+    },
+    {
+      "id": "IT-L33-isme_",
+      "fallback": "regione.vda.it",
+      "reason": "pa_shared_platform_out_of_scope:regione.vda.it"
+    },
+    {
+      "id": "IT-L33-ismiv",
+      "fallback": "regione.vda.it",
+      "reason": "pa_shared_platform_out_of_scope:regione.vda.it"
+    },
+    {
+      "id": "IT-COM-006016",
+      "fallback": "comune.berzanoditortona.al.it",
+      "reason": "unrelated"
+    },
+    {
+      "id": "IT-COM-006028",
+      "fallback": "libero.it",
+      "reason": "unrelated"
+    },
+    {
+      "id": "IT-COM-006028",
+      "fallback": "gmail.com",
+      "reason": "unrelated"
+    },
+    {
+      "id": "IT-L33-isrma_",
+      "fallback": "regione.vda.it",
+      "reason": "pa_shared_platform_out_of_scope:regione.vda.it"
+    },
+    {
+      "id": "IT-COM-006047",
+      "fallback": "comunecastellazzobormida.it",
+      "reason": "unrelated"
+    },
+    {
+      "id": "IT-COM-009015",
+      "fallback": "comunecairo.it",
+      "reason": "unrelated"
+    },
+    {
+      "id": "IT-L33-issr_",
+      "fallback": "regione.vda.it",
+      "reason": "pa_shared_platform_out_of_scope:regione.vda.it"
+    },
+    {
+      "id": "IT-COM-009033",
+      "fallback": "comune.laigueglia.sv.it",
+      "reason": "unrelated"
+    },
+    {
+      "id": "IT-COM-011028",
+      "fallback": "comune.sestagodano.sp.it",
+      "reason": "unrelated"
+    },
+    {
+      "id": "IT-COM-012099",
+      "fallback": "comune.marzio.va.it",
+      "reason": "unrelated"
+    },
+    {
+      "id": "IT-COM-013040",
+      "fallback": "comunecampione.ch",
+      "reason": "unrelated"
+    },
+    {
+      "id": "IT-COM-018156",
+      "fallback": "libero.it",
+      "reason": "unrelated"
+    },
+    {
+      "id": "IT-COM-019051",
+      "fallback": "comune.grumellocremoneseeduniti.cr.it",
+      "reason": "unrelated"
+    },
+    {
+      "id": "IT-COM-021019",
+      "fallback": "kastelruth.eu",
+      "reason": "unrelated"
+    },
+    {
+      "id": "IT-COM-022040",
+      "fallback": "comunecapriana.com",
+      "reason": "unrelated"
+    },
+    {
+      "id": "IT-COM-022050",
+      "fallback": "comunecavalese.it",
+      "reason": "unrelated"
+    },
+    {
+      "id": "IT-COM-022157",
+      "fallback": "comune.ronchivalsugana.tn.it",
+      "reason": "unrelated"
+    },
+    {
+      "id": "IT-COM-022199",
+      "fallback": "comunetioneditrento.it",
+      "reason": "unrelated"
+    },
+    {
+      "id": "IT-COM-022244",
+      "fallback": "comuneportedirendena.tn.it",
+      "reason": "unrelated"
+    },
+    {
+      "id": "IT-COM-022245",
+      "fallback": "comuneprimiero.tn.it",
+      "reason": "unrelated"
+    },
+    {
+      "id": "IT-COM-023035",
+      "fallback": "comunedifumane.it",
+      "reason": "unrelated"
+    },
+    {
+      "id": "IT-COM-023056",
+      "fallback": "comunepalu.it",
+      "reason": "unrelated"
+    },
+    {
+      "id": "IT-COM-023073",
+      "fallback": "comunesanmartinobuonalbergo.it",
+      "reason": "unrelated"
+    },
+    {
+      "id": "IT-COM-025018",
+      "fallback": "cmcs.it",
+      "reason": "unrelated"
+    },
+    {
+      "id": "IT-COM-025046",
+      "fallback": "cmcs.it",
+      "reason": "unrelated"
+    },
+    {
+      "id": "IT-COM-026075",
+      "fallback": "comunesantalucia.it",
+      "reason": "unrelated"
+    },
+    {
+      "id": "IT-COM-027044",
+      "fallback": "comunecavallinotreporti.it",
+      "reason": "unrelated"
+    },
+    {
+      "id": "IT-COM-028087",
+      "fallback": "comunesolesino.it",
+      "reason": "unrelated"
+    },
+    {
+      "id": "IT-COM-032002",
+      "fallback": "com-monrupino.regione.fvg.it",
+      "reason": "pa_shared_platform_out_of_scope:regione.fvg.it"
+    },
+    {
+      "id": "IT-COM-033036",
+      "fallback": "comune-pontedellolio.it",
+      "reason": "unrelated"
+    },
     {
       "id": "IT-COM-036020",
       "fallback": "comune.marano.mo.it",
@@ -13,6 +213,11 @@
     },
     {
       "id": "IT-COM-051041",
+      "fallback": "gmail.com",
+      "reason": "unrelated"
+    },
+    {
+      "id": "IT-L33-istsc_msee014007",
       "fallback": "gmail.com",
       "reason": "unrelated"
     },
@@ -112,11 +317,6 @@
       "reason": "unrelated"
     },
     {
-      "id": "IT-L33-iswm_",
-      "fallback": "regione.vda.it",
-      "reason": "pa_shared_platform_out_of_scope:regione.vda.it"
-    },
-    {
       "id": "IT-COM-064120",
       "fallback": "comunezungoli.it",
       "reason": "unrelated"
@@ -125,6 +325,11 @@
       "id": "IT-COM-065065",
       "fallback": "tiscali.it",
       "reason": "unrelated"
+    },
+    {
+      "id": "IT-L33-iswm_",
+      "fallback": "regione.vda.it",
+      "reason": "pa_shared_platform_out_of_scope:regione.vda.it"
     },
     {
       "id": "IT-COM-065084",
@@ -147,18 +352,8 @@
       "reason": "unrelated"
     },
     {
-      "id": "IT-L33-itr",
-      "fallback": "regione.vda.it",
-      "reason": "pa_shared_platform_out_of_scope:regione.vda.it"
-    },
-    {
       "id": "IT-COM-066031",
       "fallback": "katamail.com",
-      "reason": "unrelated"
-    },
-    {
-      "id": "IT-L33-lc_tn",
-      "fallback": "scuole.provincia.tn.it",
       "reason": "unrelated"
     },
     {
@@ -167,9 +362,14 @@
       "reason": "unrelated"
     },
     {
-      "id": "IT-L33-lseb_",
+      "id": "IT-L33-itr",
       "fallback": "regione.vda.it",
       "reason": "pa_shared_platform_out_of_scope:regione.vda.it"
+    },
+    {
+      "id": "IT-L33-lc_tn",
+      "fallback": "scuole.provincia.tn.it",
+      "reason": "unrelated"
     },
     {
       "id": "IT-COM-066097",
@@ -177,13 +377,13 @@
       "reason": "unrelated"
     },
     {
-      "id": "IT-COM-067023",
-      "fallback": "comunedicrognaleto.it",
-      "reason": "unrelated"
+      "id": "IT-L33-lseb_",
+      "fallback": "regione.vda.it",
+      "reason": "pa_shared_platform_out_of_scope:regione.vda.it"
     },
     {
-      "id": "IT-L33-itongr",
-      "fallback": "gmail.com",
+      "id": "IT-COM-067023",
+      "fallback": "comunedicrognaleto.it",
       "reason": "unrelated"
     },
     {
@@ -202,19 +402,14 @@
       "reason": "unrelated"
     },
     {
-      "id": "IT-L33-st_",
-      "fallback": "schule.suedtirol.it",
-      "reason": "pa_shared_platform_out_of_scope:schule.suedtirol.it"
-    },
-    {
       "id": "IT-COM-069066",
       "fallback": "gmail.com",
       "reason": "unrelated"
     },
     {
-      "id": "IT-L34-apspc",
-      "fallback": "aspcordenonese.it",
-      "reason": "unrelated"
+      "id": "IT-L33-st_",
+      "fallback": "schule.suedtirol.it",
+      "reason": "pa_shared_platform_out_of_scope:schule.suedtirol.it"
     },
     {
       "id": "IT-COM-069072",
@@ -222,7 +417,7 @@
       "reason": "unrelated"
     },
     {
-      "id": "IT-L34-cotl",
+      "id": "IT-L33-itongr",
       "fallback": "gmail.com",
       "reason": "unrelated"
     },
@@ -237,13 +432,13 @@
       "reason": "unrelated"
     },
     {
-      "id": "IT-L34-crca",
-      "fallback": "gmail.com",
+      "id": "IT-L34-apspc",
+      "fallback": "aspcordenonese.it",
       "reason": "unrelated"
     },
     {
-      "id": "IT-L34-crgx_",
-      "fallback": "libero.it",
+      "id": "IT-L34-cotl",
+      "fallback": "gmail.com",
       "reason": "unrelated"
     },
     {
@@ -252,7 +447,7 @@
       "reason": "unrelated"
     },
     {
-      "id": "IT-L34-crmadd",
+      "id": "IT-L34-crca",
       "fallback": "gmail.com",
       "reason": "unrelated"
     },
@@ -262,8 +457,8 @@
       "reason": "unrelated"
     },
     {
-      "id": "IT-L34-crssa",
-      "fallback": "gmail.com",
+      "id": "IT-L34-crgx_",
+      "fallback": "libero.it",
       "reason": "unrelated"
     },
     {
@@ -272,8 +467,13 @@
       "reason": "unrelated"
     },
     {
-      "id": "IT-L34-csaasb",
-      "fallback": "virgilio.it",
+      "id": "IT-L34-crmadd",
+      "fallback": "gmail.com",
+      "reason": "unrelated"
+    },
+    {
+      "id": "IT-L34-crssa",
+      "fallback": "gmail.com",
       "reason": "unrelated"
     },
     {
@@ -282,8 +482,8 @@
       "reason": "unrelated"
     },
     {
-      "id": "IT-L34-ipabcoc",
-      "fallback": "libero.it",
+      "id": "IT-L34-csaasb",
+      "fallback": "virgilio.it",
       "reason": "unrelated"
     },
     {
@@ -292,13 +492,8 @@
       "reason": "unrelated"
     },
     {
-      "id": "IT-L34-irsbs",
-      "fallback": "tiscali.it",
-      "reason": "unrelated"
-    },
-    {
-      "id": "IT-L34-isalt",
-      "fallback": "hotmail.it",
+      "id": "IT-L34-iavvmcr",
+      "fallback": "gmail.com",
       "reason": "unrelated"
     },
     {
@@ -307,8 +502,8 @@
       "reason": "unrelated"
     },
     {
-      "id": "IT-L34-itlep",
-      "fallback": "virgilio.it",
+      "id": "IT-L34-ipabcoc",
+      "fallback": "libero.it",
       "reason": "unrelated"
     },
     {
@@ -317,8 +512,18 @@
       "reason": "unrelated"
     },
     {
-      "id": "IT-L34-opasm",
-      "fallback": "inwind.it",
+      "id": "IT-L34-irsbs",
+      "fallback": "tiscali.it",
+      "reason": "unrelated"
+    },
+    {
+      "id": "IT-COM-082070",
+      "fallback": "comune.termini-imerese.pa.it",
+      "reason": "unrelated"
+    },
+    {
+      "id": "IT-L34-isalt",
+      "fallback": "hotmail.it",
       "reason": "unrelated"
     },
     {
@@ -327,17 +532,17 @@
       "reason": "unrelated"
     },
     {
+      "id": "IT-L34-itlep",
+      "fallback": "virgilio.it",
+      "reason": "unrelated"
+    },
+    {
+      "id": "IT-L34-opasm",
+      "fallback": "inwind.it",
+      "reason": "unrelated"
+    },
+    {
       "id": "IT-L34-oplbag",
-      "fallback": "gmail.com",
-      "reason": "unrelated"
-    },
-    {
-      "id": "IT-L34-oprdm",
-      "fallback": "libero.it",
-      "reason": "unrelated"
-    },
-    {
-      "id": "IT-L34-silb",
       "fallback": "gmail.com",
       "reason": "unrelated"
     },
@@ -347,13 +552,18 @@
       "reason": "unrelated"
     },
     {
+      "id": "IT-L34-oprdm",
+      "fallback": "libero.it",
+      "reason": "unrelated"
+    },
+    {
       "id": "IT-COM-094007",
       "fallback": "carovilli.info",
       "reason": "unrelated"
     },
     {
-      "id": "IT-L35-urdcca",
-      "fallback": "abruzzo.camcom.it",
+      "id": "IT-L34-silb",
+      "fallback": "gmail.com",
       "reason": "unrelated"
     },
     {
@@ -362,12 +572,27 @@
       "reason": "unrelated"
     },
     {
+      "id": "IT-COM-096005",
+      "fallback": "ptb.provincia.biella.it",
+      "reason": "unrelated"
+    },
+    {
+      "id": "IT-L35-urdcca",
+      "fallback": "abruzzo.camcom.it",
+      "reason": "unrelated"
+    },
+    {
+      "id": "IT-COM-096006",
+      "fallback": "comuneborriana.info",
+      "reason": "unrelated"
+    },
+    {
       "id": "IT-L36-VTH34HOV",
       "fallback": "uslcentro.toscana.it",
       "reason": "unrelated"
     },
     {
-      "id": "IT-COM-096005",
+      "id": "IT-COM-096021",
       "fallback": "ptb.provincia.biella.it",
       "reason": "unrelated"
     },
@@ -377,8 +602,8 @@
       "reason": "unrelated"
     },
     {
-      "id": "IT-COM-096006",
-      "fallback": "comuneborriana.info",
+      "id": "IT-COM-096031",
+      "fallback": "ptb.provincia.biella.it",
       "reason": "unrelated"
     },
     {
@@ -387,7 +612,7 @@
       "reason": "unrelated"
     },
     {
-      "id": "IT-COM-096021",
+      "id": "IT-COM-096054",
       "fallback": "ptb.provincia.biella.it",
       "reason": "unrelated"
     },
@@ -397,12 +622,12 @@
       "reason": "unrelated"
     },
     {
-      "id": "IT-COM-096031",
+      "id": "IT-COM-096064",
       "fallback": "ptb.provincia.biella.it",
       "reason": "unrelated"
     },
     {
-      "id": "IT-COM-096054",
+      "id": "IT-COM-096066",
       "fallback": "ptb.provincia.biella.it",
       "reason": "unrelated"
     },
@@ -412,8 +637,8 @@
       "reason": "unrelated"
     },
     {
-      "id": "IT-COM-096064",
-      "fallback": "ptb.provincia.biella.it",
+      "id": "IT-COM-102030",
+      "fallback": "comune.ricadi.vv.it",
       "reason": "unrelated"
     },
     {
@@ -422,8 +647,8 @@
       "reason": "unrelated"
     },
     {
-      "id": "IT-COM-096066",
-      "fallback": "ptb.provincia.biella.it",
+      "id": "IT-COM-102033",
+      "fallback": "libero.it",
       "reason": "unrelated"
     },
     {
@@ -432,23 +657,18 @@
       "reason": "unrelated"
     },
     {
-      "id": "IT-COM-102030",
-      "fallback": "comune.ricadi.vv.it",
-      "reason": "unrelated"
-    },
-    {
       "id": "IT-L36-cisps",
       "fallback": "virgilio.it",
       "reason": "unrelated"
     },
     {
-      "id": "IT-COM-102033",
-      "fallback": "libero.it",
+      "id": "IT-L36-clili",
+      "fallback": "comune.maglie.le.it",
       "reason": "unrelated"
     },
     {
-      "id": "IT-L36-clili",
-      "fallback": "comune.maglie.le.it",
+      "id": "IT-COM-109008",
+      "fallback": "comune-grottazzolina.it",
       "reason": "unrelated"
     },
     {
@@ -462,18 +682,13 @@
       "reason": "unrelated"
     },
     {
-      "id": "IT-L36-cplibsca",
-      "fallback": "comune.sottoilmontegiovannixxiii.bg.it",
-      "reason": "unrelated"
-    },
-    {
-      "id": "IT-COM-109008",
-      "fallback": "comune-grottazzolina.it",
-      "reason": "unrelated"
-    },
-    {
       "id": "IT-COM-109009",
       "fallback": "ucvaldaso.it",
+      "reason": "unrelated"
+    },
+    {
+      "id": "IT-L36-cplibsca",
+      "fallback": "comune.sottoilmontegiovannixxiii.bg.it",
       "reason": "unrelated"
     },
     {
@@ -507,23 +722,23 @@
       "reason": "unrelated"
     },
     {
-      "id": "IT-L37-cas",
-      "fallback": "hotmail.it",
-      "reason": "unrelated"
-    },
-    {
       "id": "IT-COM-116018",
       "fallback": "comunetriei.it",
       "reason": "unrelated"
     },
     {
-      "id": "IT-L37-cbb_107",
-      "fallback": "tiscali.it",
+      "id": "IT-COM-117001",
+      "fallback": "comunearbus.it",
       "reason": "unrelated"
     },
     {
-      "id": "IT-COM-117001",
-      "fallback": "comunearbus.it",
+      "id": "IT-L37-cas",
+      "fallback": "hotmail.it",
+      "reason": "unrelated"
+    },
+    {
+      "id": "IT-L37-cbb_107",
+      "fallback": "tiscali.it",
       "reason": "unrelated"
     },
     {
@@ -592,13 +807,13 @@
       "reason": "unrelated"
     },
     {
-      "id": "IT-L1-amp_021",
-      "fallback": "museiprovinciali.it",
+      "id": "IT-L37-scirs",
+      "fallback": "libero.it",
       "reason": "unrelated"
     },
     {
-      "id": "IT-L37-scirs",
-      "fallback": "libero.it",
+      "id": "IT-L1-amp_021",
+      "fallback": "museiprovinciali.it",
       "reason": "unrelated"
     },
     {
@@ -637,18 +852,13 @@
       "reason": "unrelated"
     },
     {
-      "id": "IT-L1-cavriago",
-      "fallback": "comune.cavriago.re.it",
-      "reason": "unrelated"
-    },
-    {
       "id": "IT-L38-palili",
       "fallback": "regione.sicilia.it",
       "reason": "pa_shared_platform_out_of_scope:regione.sicilia.it"
     },
     {
-      "id": "IT-L1-cdeop",
-      "fallback": "gmail.com",
+      "id": "IT-L1-cavriago",
+      "fallback": "comune.cavriago.re.it",
       "reason": "unrelated"
     },
     {
@@ -657,6 +867,21 @@
       "reason": "unrelated"
     },
     {
+      "id": "IT-L1-cdeop",
+      "fallback": "gmail.com",
+      "reason": "unrelated"
+    },
+    {
+      "id": "IT-L38-pzdm",
+      "fallback": "regione.marche.it",
+      "reason": "pa_shared_platform_out_of_scope:regione.marche.it"
+    },
+    {
+      "id": "IT-L1-assapcbz",
+      "fallback": "provinz.bz.it",
+      "reason": "unrelated"
+    },
+    {
       "id": "IT-L1-cgri_083",
       "fallback": "regione.sicilia.it",
       "reason": "pa_shared_platform_out_of_scope:regione.sicilia.it"
@@ -672,9 +897,9 @@
       "reason": "unrelated"
     },
     {
-      "id": "IT-L38-pzdm",
-      "fallback": "regione.marche.it",
-      "reason": "pa_shared_platform_out_of_scope:regione.marche.it"
+      "id": "IT-L38-rndac",
+      "fallback": "libero.it",
+      "reason": "unrelated"
     },
     {
       "id": "IT-L38-rnlc",
@@ -682,13 +907,13 @@
       "reason": "unrelated"
     },
     {
-      "id": "IT-L1-eslpi",
-      "fallback": "tiscali.it",
+      "id": "IT-L40-abflgv",
+      "fallback": "pec.autoritalgv.it",
       "reason": "unrelated"
     },
     {
-      "id": "IT-L38-rndac",
-      "fallback": "libero.it",
+      "id": "IT-L1-eslpi",
+      "fallback": "tiscali.it",
       "reason": "unrelated"
     },
     {
@@ -699,11 +924,6 @@
     {
       "id": "IT-L1-icm_rg9v",
       "fallback": "kib.it",
-      "reason": "unrelated"
-    },
-    {
-      "id": "IT-L1-assapcbz",
-      "fallback": "provinz.bz.it",
       "reason": "unrelated"
     },
     {
@@ -947,6 +1167,11 @@
       "reason": "unrelated"
     },
     {
+      "id": "IT-L18-udccs",
+      "fallback": "unione.costadelsinisterradeigiganti.or.it",
+      "reason": "unrelated"
+    },
+    {
       "id": "IT-L18-udcdt",
       "fallback": "comunebagnoregio.it",
       "reason": "unrelated"
@@ -957,11 +1182,6 @@
       "reason": "unrelated"
     },
     {
-      "id": "IT-L18-udcfle",
-      "fallback": "gmail.com",
-      "reason": "unrelated"
-    },
-    {
       "id": "IT-L18-udclq_",
       "fallback": "alice.it",
       "reason": "unrelated"
@@ -969,6 +1189,11 @@
     {
       "id": "IT-L18-udcp",
       "fallback": "gmail.it",
+      "reason": "unrelated"
+    },
+    {
+      "id": "IT-L18-udcfle",
+      "fallback": "gmail.com",
       "reason": "unrelated"
     },
     {
@@ -987,13 +1212,13 @@
       "reason": "unrelated"
     },
     {
-      "id": "IT-L18-udcv",
-      "fallback": "tiscali.it",
+      "id": "IT-L18-udcv_070",
+      "fallback": "valledeltammaro.gov.it",
       "reason": "unrelated"
     },
     {
-      "id": "IT-L18-udcv_070",
-      "fallback": "valledeltammaro.gov.it",
+      "id": "IT-L18-udcv",
+      "fallback": "tiscali.it",
       "reason": "unrelated"
     },
     {
@@ -1009,11 +1234,6 @@
     {
       "id": "IT-L18-umcn",
       "fallback": "provincia.ps.it",
-      "reason": "unrelated"
-    },
-    {
-      "id": "IT-L33-istsc_cric80600n",
-      "fallback": "icsergnano.it",
       "reason": "unrelated"
     },
     {
@@ -1047,8 +1267,18 @@
       "reason": "unrelated"
     },
     {
+      "id": "IT-L33-istsc_cric80600n",
+      "fallback": "icsergnano.it",
+      "reason": "unrelated"
+    },
+    {
       "id": "IT-L24-cdcbiim",
       "fallback": "comune.cimolais.pn.it",
+      "reason": "unrelated"
+    },
+    {
+      "id": "IT-C13-acicl",
+      "fallback": "acicl.it",
       "reason": "unrelated"
     },
     {
@@ -1062,24 +1292,14 @@
       "reason": "unrelated"
     },
     {
-      "id": "IT-C13-acicl",
-      "fallback": "acicl.it",
+      "id": "IT-C13-acmt",
+      "fallback": "tin.it",
       "reason": "unrelated"
     },
     {
       "id": "IT-L28-inn",
       "fallback": "gmail.com",
       "reason": "unrelated"
-    },
-    {
-      "id": "IT-C13-acmt",
-      "fallback": "tin.it",
-      "reason": "unrelated"
-    },
-    {
-      "id": "IT-L33-EEYO9QFD",
-      "fallback": "regione.vda.it",
-      "reason": "pa_shared_platform_out_of_scope:regione.vda.it"
     },
     {
       "id": "IT-C14-ZMK7OVXU",
@@ -1092,13 +1312,38 @@
       "reason": "unrelated"
     },
     {
+      "id": "IT-C14-cdad_020",
+      "fallback": "agrotecnici.it",
+      "reason": "unrelated"
+    },
+    {
+      "id": "IT-L33-EEYO9QFD",
+      "fallback": "regione.vda.it",
+      "reason": "pa_shared_platform_out_of_scope:regione.vda.it"
+    },
+    {
+      "id": "IT-C14-cdglbz",
+      "fallback": "collegio.geometri.bz.it",
+      "reason": "unrelated"
+    },
+    {
+      "id": "IT-L33-ICBDB",
+      "fallback": "scuola.alto-adige.it",
+      "reason": "pa_shared_platform_out_of_scope:scuola.alto-adige.it"
+    },
+    {
+      "id": "IT-C14-cdobn",
+      "fallback": "virgilio.it",
+      "reason": "unrelated"
+    },
+    {
       "id": "IT-L33-ICBO",
       "fallback": "scuola.alto-adige.it",
       "reason": "pa_shared_platform_out_of_scope:scuola.alto-adige.it"
     },
     {
-      "id": "IT-C14-cdad_020",
-      "fallback": "agrotecnici.it",
+      "id": "IT-C14-cdom_mo",
+      "fallback": "gmail.com",
       "reason": "unrelated"
     },
     {
@@ -1107,28 +1352,13 @@
       "reason": "pa_shared_platform_out_of_scope:scuola.alto-adige.it"
     },
     {
-      "id": "IT-L33-LAR",
-      "fallback": "scuole.provincia.tn.it",
-      "reason": "unrelated"
-    },
-    {
-      "id": "IT-C14-cdglbz",
-      "fallback": "collegio.geometri.bz.it",
-      "reason": "unrelated"
-    },
-    {
-      "id": "IT-C14-cdobn",
-      "fallback": "virgilio.it",
-      "reason": "unrelated"
-    },
-    {
-      "id": "IT-C14-cdom_mo",
-      "fallback": "gmail.com",
-      "reason": "unrelated"
-    },
-    {
       "id": "IT-C14-cdop_061",
       "fallback": "gmail.com",
+      "reason": "unrelated"
+    },
+    {
+      "id": "IT-L33-LAR",
+      "fallback": "scuole.provincia.tn.it",
       "reason": "unrelated"
     },
     {
@@ -1187,11 +1417,6 @@
       "reason": "unrelated"
     },
     {
-      "id": "IT-L33-css_001",
-      "fallback": "libero.it",
-      "reason": "unrelated"
-    },
-    {
       "id": "IT-C14-cida_076",
       "fallback": "agrotecnici.it",
       "reason": "unrelated"
@@ -1207,9 +1432,9 @@
       "reason": "unrelated"
     },
     {
-      "id": "IT-L33-gkic_ud",
-      "fallback": "schule.suedtirol.it",
-      "reason": "pa_shared_platform_out_of_scope:schule.suedtirol.it"
+      "id": "IT-L33-css_001",
+      "fallback": "libero.it",
+      "reason": "unrelated"
     },
     {
       "id": "IT-C14-cip_a",
@@ -1232,6 +1457,11 @@
       "reason": "pec_provider:notariato.it"
     },
     {
+      "id": "IT-L33-gkic_ud",
+      "fallback": "schule.suedtirol.it",
+      "reason": "pa_shared_platform_out_of_scope:schule.suedtirol.it"
+    },
+    {
       "id": "IT-C14-cnddrfr",
       "fallback": "notariato.it",
       "reason": "pec_provider:notariato.it"
@@ -1240,11 +1470,6 @@
       "id": "IT-C14-coenna",
       "fallback": "gmail.com",
       "reason": "unrelated"
-    },
-    {
-      "id": "IT-L33-icbcs_bz",
-      "fallback": "scuola.alto-adige.it",
-      "reason": "pa_shared_platform_out_of_scope:scuola.alto-adige.it"
     },
     {
       "id": "IT-C14-cpa_006",
@@ -1267,6 +1492,11 @@
       "reason": "unrelated"
     },
     {
+      "id": "IT-L33-icbcs_bz",
+      "fallback": "scuola.alto-adige.it",
+      "reason": "pa_shared_platform_out_of_scope:scuola.alto-adige.it"
+    },
+    {
       "id": "IT-C14-cpdoc",
       "fallback": "libero.it",
       "reason": "unrelated"
@@ -1274,6 +1504,11 @@
     {
       "id": "IT-C14-cpdpa_cb",
       "fallback": "peritiagrari.it",
+      "reason": "unrelated"
+    },
+    {
+      "id": "IT-C14-cpipr_vi",
+      "fallback": "periti-industriali.vi.it",
       "reason": "unrelated"
     },
     {
@@ -1412,11 +1647,6 @@
       "reason": "unrelated"
     },
     {
-      "id": "IT-L33-icspm_tn",
-      "fallback": "scuole.provincia.tn.it",
-      "reason": "unrelated"
-    },
-    {
       "id": "IT-C14-oddadfro",
       "fallback": "fodafveneto.it",
       "reason": "unrelated"
@@ -1427,13 +1657,13 @@
       "reason": "unrelated"
     },
     {
-      "id": "IT-L33-icspstn5",
-      "fallback": "scuole.provincia.tn.it",
+      "id": "IT-C14-oddadnu",
+      "fallback": "gmail.com",
       "reason": "unrelated"
     },
     {
-      "id": "IT-C14-oddadnu",
-      "fallback": "gmail.com",
+      "id": "IT-L33-icspm_tn",
+      "fallback": "scuole.provincia.tn.it",
       "reason": "unrelated"
     },
     {
@@ -1447,9 +1677,9 @@
       "reason": "unrelated"
     },
     {
-      "id": "IT-L33-icsvm_bz",
-      "fallback": "scuola.alto-adige.it",
-      "reason": "pa_shared_platform_out_of_scope:scuola.alto-adige.it"
+      "id": "IT-L33-icspstn5",
+      "fallback": "scuole.provincia.tn.it",
+      "reason": "unrelated"
     },
     {
       "id": "IT-C14-oddafvi",
@@ -1460,6 +1690,11 @@
       "id": "IT-C14-oddc_002",
       "fallback": "odcecvercelli.it",
       "reason": "unrelated"
+    },
+    {
+      "id": "IT-L33-icsvm_bz",
+      "fallback": "scuola.alto-adige.it",
+      "reason": "pa_shared_platform_out_of_scope:scuola.alto-adige.it"
     },
     {
       "id": "IT-C14-oddc_095",
@@ -1477,11 +1712,6 @@
       "reason": "unrelated"
     },
     {
-      "id": "IT-L33-iiad_tn",
-      "fallback": "scuole.provincia.tn.it",
-      "reason": "unrelated"
-    },
-    {
       "id": "IT-C14-oddcd_vb",
       "fallback": "odcec-verbania.it",
       "reason": "unrelated"
@@ -1489,6 +1719,11 @@
     {
       "id": "IT-C14-oddcdf",
       "fallback": "odcecforlicesena.it",
+      "reason": "unrelated"
+    },
+    {
+      "id": "IT-L33-iiad_tn",
+      "fallback": "scuole.provincia.tn.it",
       "reason": "unrelated"
     },
     {
@@ -1537,11 +1772,6 @@
       "reason": "unrelated"
     },
     {
-      "id": "IT-L33-ipbp_",
-      "fallback": "scuola.alto-adige.it",
-      "reason": "pa_shared_platform_out_of_scope:scuola.alto-adige.it"
-    },
-    {
       "id": "IT-C3-cslri",
       "fallback": "gmail.com",
       "reason": "unrelated"
@@ -1550,6 +1780,11 @@
       "id": "IT-C3-cslri",
       "fallback": "alice.it",
       "reason": "unrelated"
+    },
+    {
+      "id": "IT-L33-ipbp_",
+      "fallback": "scuola.alto-adige.it",
+      "reason": "pa_shared_platform_out_of_scope:scuola.alto-adige.it"
     },
     {
       "id": "IT-C5-gnddp",
@@ -1577,11 +1812,6 @@
       "reason": "pa_shared_platform_out_of_scope:regione.vda.it"
     },
     {
-      "id": "IT-L33-iscme_",
-      "fallback": "regione.vda.it",
-      "reason": "pa_shared_platform_out_of_scope:regione.vda.it"
-    },
-    {
       "id": "IT-COM-001113",
       "fallback": "municipiodigermagnano.it",
       "reason": "unrelated"
@@ -1592,12 +1822,7 @@
       "reason": "unrelated"
     },
     {
-      "id": "IT-L33-iscmm_",
-      "fallback": "regione.vda.it",
-      "reason": "pa_shared_platform_out_of_scope:regione.vda.it"
-    },
-    {
-      "id": "IT-L33-iscmm_bv",
+      "id": "IT-L33-iscme_",
       "fallback": "regione.vda.it",
       "reason": "pa_shared_platform_out_of_scope:regione.vda.it"
     },
@@ -1607,7 +1832,7 @@
       "reason": "unrelated"
     },
     {
-      "id": "IT-L33-iscmv_",
+      "id": "IT-L33-iscmm_",
       "fallback": "regione.vda.it",
       "reason": "pa_shared_platform_out_of_scope:regione.vda.it"
     },
@@ -1617,7 +1842,12 @@
       "reason": "unrelated"
     },
     {
-      "id": "IT-L33-isem_",
+      "id": "IT-L33-iscmm_bv",
+      "fallback": "regione.vda.it",
+      "reason": "pa_shared_platform_out_of_scope:regione.vda.it"
+    },
+    {
+      "id": "IT-L33-iscmv_",
       "fallback": "regione.vda.it",
       "reason": "pa_shared_platform_out_of_scope:regione.vda.it"
     },
@@ -1627,214 +1857,9 @@
       "reason": "unrelated"
     },
     {
-      "id": "IT-L33-isjc_",
-      "fallback": "mail.scuole.vda.it",
-      "reason": "unrelated"
-    },
-    {
-      "id": "IT-L33-isjc_",
+      "id": "IT-L33-isem_",
       "fallback": "regione.vda.it",
       "reason": "pa_shared_platform_out_of_scope:regione.vda.it"
-    },
-    {
-      "id": "IT-L33-islb",
-      "fallback": "regione.vda.it",
-      "reason": "pa_shared_platform_out_of_scope:regione.vda.it"
-    },
-    {
-      "id": "IT-L33-isle",
-      "fallback": "regione.vda.it",
-      "reason": "pa_shared_platform_out_of_scope:regione.vda.it"
-    },
-    {
-      "id": "IT-COM-004121",
-      "fallback": "martiniana.po.it",
-      "reason": "unrelated"
-    },
-    {
-      "id": "IT-L33-isme_",
-      "fallback": "regione.vda.it",
-      "reason": "pa_shared_platform_out_of_scope:regione.vda.it"
-    },
-    {
-      "id": "IT-COM-004201",
-      "fallback": "reteunitaria.piemonte.it",
-      "reason": "unrelated"
-    },
-    {
-      "id": "IT-L33-ismiv",
-      "fallback": "regione.vda.it",
-      "reason": "pa_shared_platform_out_of_scope:regione.vda.it"
-    },
-    {
-      "id": "IT-COM-004212",
-      "fallback": "comunedisantavittoriadalba.it",
-      "reason": "unrelated"
-    },
-    {
-      "id": "IT-COM-004249",
-      "fallback": "reteunitaria.piemonte.it",
-      "reason": "unrelated"
-    },
-    {
-      "id": "IT-L33-isrma_",
-      "fallback": "regione.vda.it",
-      "reason": "pa_shared_platform_out_of_scope:regione.vda.it"
-    },
-    {
-      "id": "IT-COM-005056",
-      "fallback": "micso.net",
-      "reason": "unrelated"
-    },
-    {
-      "id": "IT-COM-006016",
-      "fallback": "comune.berzanoditortona.al.it",
-      "reason": "unrelated"
-    },
-    {
-      "id": "IT-L33-issr_",
-      "fallback": "regione.vda.it",
-      "reason": "pa_shared_platform_out_of_scope:regione.vda.it"
-    },
-    {
-      "id": "IT-COM-006028",
-      "fallback": "libero.it",
-      "reason": "unrelated"
-    },
-    {
-      "id": "IT-COM-006028",
-      "fallback": "gmail.com",
-      "reason": "unrelated"
-    },
-    {
-      "id": "IT-COM-006047",
-      "fallback": "comunecastellazzobormida.it",
-      "reason": "unrelated"
-    },
-    {
-      "id": "IT-COM-009015",
-      "fallback": "comunecairo.it",
-      "reason": "unrelated"
-    },
-    {
-      "id": "IT-COM-009033",
-      "fallback": "comune.laigueglia.sv.it",
-      "reason": "unrelated"
-    },
-    {
-      "id": "IT-COM-011028",
-      "fallback": "comune.sestagodano.sp.it",
-      "reason": "unrelated"
-    },
-    {
-      "id": "IT-COM-012099",
-      "fallback": "comune.marzio.va.it",
-      "reason": "unrelated"
-    },
-    {
-      "id": "IT-COM-013040",
-      "fallback": "comunecampione.ch",
-      "reason": "unrelated"
-    },
-    {
-      "id": "IT-COM-018156",
-      "fallback": "libero.it",
-      "reason": "unrelated"
-    },
-    {
-      "id": "IT-COM-019051",
-      "fallback": "comune.grumellocremoneseeduniti.cr.it",
-      "reason": "unrelated"
-    },
-    {
-      "id": "IT-COM-021019",
-      "fallback": "kastelruth.eu",
-      "reason": "unrelated"
-    },
-    {
-      "id": "IT-COM-022040",
-      "fallback": "comunecapriana.com",
-      "reason": "unrelated"
-    },
-    {
-      "id": "IT-COM-022050",
-      "fallback": "comunecavalese.it",
-      "reason": "unrelated"
-    },
-    {
-      "id": "IT-COM-022157",
-      "fallback": "comune.ronchivalsugana.tn.it",
-      "reason": "unrelated"
-    },
-    {
-      "id": "IT-COM-022199",
-      "fallback": "comunetioneditrento.it",
-      "reason": "unrelated"
-    },
-    {
-      "id": "IT-COM-022244",
-      "fallback": "comuneportedirendena.tn.it",
-      "reason": "unrelated"
-    },
-    {
-      "id": "IT-COM-022245",
-      "fallback": "comuneprimiero.tn.it",
-      "reason": "unrelated"
-    },
-    {
-      "id": "IT-COM-023035",
-      "fallback": "comunedifumane.it",
-      "reason": "unrelated"
-    },
-    {
-      "id": "IT-COM-023056",
-      "fallback": "comunepalu.it",
-      "reason": "unrelated"
-    },
-    {
-      "id": "IT-COM-023073",
-      "fallback": "comunesanmartinobuonalbergo.it",
-      "reason": "unrelated"
-    },
-    {
-      "id": "IT-COM-025018",
-      "fallback": "cmcs.it",
-      "reason": "unrelated"
-    },
-    {
-      "id": "IT-COM-025046",
-      "fallback": "cmcs.it",
-      "reason": "unrelated"
-    },
-    {
-      "id": "IT-COM-026075",
-      "fallback": "comunesantalucia.it",
-      "reason": "unrelated"
-    },
-    {
-      "id": "IT-COM-027044",
-      "fallback": "comunecavallinotreporti.it",
-      "reason": "unrelated"
-    },
-    {
-      "id": "IT-COM-028087",
-      "fallback": "comunesolesino.it",
-      "reason": "unrelated"
-    },
-    {
-      "id": "IT-COM-032002",
-      "fallback": "com-monrupino.regione.fvg.it",
-      "reason": "pa_shared_platform_out_of_scope:regione.fvg.it"
-    },
-    {
-      "id": "IT-COM-033036",
-      "fallback": "comune-pontedellolio.it",
-      "reason": "unrelated"
-    },
-    {
-      "id": "IT-L33-istsc_msee014007",
-      "fallback": "gmail.com",
-      "reason": "unrelated"
     }
   ]
 }
