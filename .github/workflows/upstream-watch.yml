@@ -1,0 +1,56 @@
+name: Upstream watch (mxmap/secassure2026)
+
+# Sorveglianza settimanale dell'upstream ufficiale. Il progetto originario
+# davidhuser/mxmap (mxmap.ch) è "succeeded by mxmap/secassure2026" (DACH):
+# lì avviene lo sviluppo futuro. Il nostro fork IT è divergente e NON si merge
+# — si REVISIONA: questo workflow produce un digest dei commit upstream degli
+# ultimi 8 giorni (cadenza settimanale + 1 giorno di margine, stateless) e
+# apre/aggiorna un issue etichettato `upstream-watch`, dove si decide se c'è
+# qualche feature da incorporare. Vedi CLAUDE.md §"Upstream".
+
+on:
+  schedule:
+    - cron: '0 6 * * 1' # lunedì 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Digest dei commit upstream (ultimi 8 giorni)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          since=$(date -u -d '8 days ago' +%FT%TZ)
+          commits=$(gh api "repos/mxmap/secassure2026/commits?since=$since&per_page=50" \
+            -q '.[] | "- \(.commit.author.date[0:10]) [`\(.sha[0:7])`](\(.html_url)) — \(.commit.message | split("\n")[0])"' || true)
+          if [ -z "$commits" ]; then
+            echo "Nessun commit upstream dal $since: niente da segnalare."
+            exit 0
+          fi
+          echo "Nuovi commit upstream:"
+          echo "$commits"
+          gh label create upstream-watch --color 0E8A16 \
+            --description "Novità nell'upstream mxmap/secassure2026 da revisionare" 2>/dev/null || true
+          body=$(mktemp)
+          {
+            echo "Commit nell'upstream [mxmap/secassure2026](https://github.com/mxmap/secassure2026) negli ultimi 8 giorni:"
+            echo ""
+            echo "$commits"
+            echo ""
+            echo "**Da fare:** revisionare se c'è qualche feature da incorporare nel fork IT (policy: niente merge, solo cherry-pick ragionato — vedi CLAUDE.md §Upstream)."
+          } > "$body"
+          existing=$(gh issue list --label upstream-watch --state open --limit 1 --json number -q '.[0].number')
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --body-file "$body"
+          else
+            gh issue create \
+              --title "Upstream watch: novità in mxmap/secassure2026" \
+              --label upstream-watch \
+              --body-file "$body"
+          fi
