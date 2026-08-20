@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-08-19T16:21:16Z",
+  "generated_at": "2026-08-20T05:40:25Z",
   "run_id": null,
   "license": "CC BY-SA 4.0",
   "source": "https://github.com/mxmap-it/mxmap.it",
   "totals": {
-    "n_entities": 22901,
-    "n_with_mx": 22270,
-    "coverage_pct": 97.24
+    "n_entities": 22902,
+    "n_with_mx": 22272,
+    "coverage_pct": 97.25
   },
   "indices": {
     "isd": 51.22,
     "cloud_act_pct": 48.23,
-    "n_classified": 22270
+    "n_classified": 22272
   },
   "sovereignty": {
     "extra_eu": {
-      "count": 10743,
+      "count": 10744,
       "pct": 46.9,
       "label": "Extra-UE (CLOUD Act)"
     },
@@ -25,12 +25,12 @@
       "label": "Europeo (non italiano)"
     },
     "it": {
-      "count": 11407,
+      "count": 11408,
       "pct": 49.8,
       "label": "Italiano"
     },
     "unknown": {
-      "count": 631,
+      "count": 630,
       "pct": 2.8,
       "label": "Sconosciuto"
     }
@@ -38,13 +38,13 @@
   "top_providers": [
     {
       "name": "Provider Italiano",
-      "count": 7433,
+      "count": 7434,
       "pct": 32.5,
       "sovereignty": "it"
     },
     {
       "name": "Google Workspace",
-      "count": 6448,
+      "count": 6449,
       "pct": 28.2,
       "sovereignty": "extra_eu"
     },
@@ -56,19 +56,19 @@
     },
     {
       "name": "Infrastruttura autonoma",
-      "count": 3045,
+      "count": 3041,
       "pct": 13.3,
       "sovereignty": "it"
     },
     {
       "name": "Cloud Italiano",
-      "count": 929,
+      "count": 933,
       "pct": 4.1,
       "sovereignty": "it"
     },
     {
       "name": "Sconosciuto",
-      "count": 631,
+      "count": 630,
       "pct": 2.8,
       "sovereignty": "unknown"
     },
@@ -118,7 +118,7 @@
     },
     {
       "cluster": "Gestori di pubblici servizi",
-      "n_entities": 1144,
+      "n_entities": 1145,
       "usa_pct": 46.3,
       "dominant_provider": "Microsoft 365"
     },
@@ -131,7 +131,7 @@
     {
       "cluster": "Welfare e politiche sociali",
       "n_entities": 464,
-      "usa_pct": 28.9,
+      "usa_pct": 29.1,
       "dominant_provider": "Provider Italiano"
     },
     {

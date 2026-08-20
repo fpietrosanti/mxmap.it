@@ -159549,7 +159549,7 @@
     "domain": "comunebedollo.it",
     "osm_relation_id": null,
     "domain_fallbacks": [
-      "asucpinetane.com"
+      "gmail.com"
     ],
     "ipa_codice_ipa": "ab",
     "ipa_codice_categoria": "L1",
@@ -343303,6 +343303,21 @@
     "domain_source": "sito_istituzionale"
   },
   {
+    "id": "IT-L37-ZP13ZM78",
+    "name": "INIZIATIVE PER LA PROMOZIONE DELLO SVILUPPO ECONOMICO DELLA PROVINCIA DI REGGIO CALABRIA",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "sviprore.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "ZP13ZM78",
+    "ipa_codice_categoria": "L37",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "080063",
+    "domain_source": "sito_istituzionale"
+  },
+  {
     "id": "IT-L37-ZV7OSJOH",
     "name": "UNILAV SCPA",
     "country": "IT",
@@ -360464,7 +360479,9 @@
     "district": null,
     "domain": "moliseversoil2000.it",
     "osm_relation_id": null,
-    "domain_fallbacks": [],
+    "domain_fallbacks": [
+      "galmolise.it"
+    ],
     "ipa_codice_ipa": "mvis_070",
     "ipa_codice_categoria": "SA",
     "ipa_codice_istat": null,

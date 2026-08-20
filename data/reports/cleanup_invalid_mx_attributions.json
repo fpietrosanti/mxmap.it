@@ -1,5 +1,5 @@
 {
-  "n_purged": 513,
+  "n_purged": 511,
   "items": [
     {
       "id": "IT-C1-m_pi",
@@ -561,17 +561,6 @@
       "old_mx": "alt1.aspmx.l.google.com",
       "old_provider": "google",
       "old_reason": "MX record (alt1.aspmx.l.google.com, alt2.aspmx.l.google.com) matches Google"
-    },
-    {
-      "id": "IT-C14-cpipr_vi",
-      "name": "Ordine dei Periti Industriali e dei Periti Industriali Laureati della Provincia di Vicenza",
-      "codice_ipa": "cpipr_vi",
-      "seed_domain": "ordine-vicenza.cnpi.eu",
-      "claimed_domain": "comune.vicenza.it",
-      "reject_reason": "unrelated",
-      "old_mx": "comune-vicenza.esvacloud.com",
-      "old_provider": "microsoft",
-      "old_reason": "MX is libraesva gateway; TXT verification proves microsoft tenant"
     },
     {
       "id": "IT-C14-cpoppu",
@@ -4015,17 +4004,6 @@
       "old_mx": "mailbox15.omitech.it",
       "old_provider": "microsoft",
       "old_reason": "MX is omitech gateway; MS365 tenant detected (Managed)"
-    },
-    {
-      "id": "IT-L34-iavvmcr",
-      "name": "Ipab Associazione Volontariato Villaggio Marino Ca' Roman",
-      "codice_ipa": "iavvmcr",
-      "seed_domain": "villaggiocaroman.weebly.com",
-      "claimed_domain": "comune.padova.it",
-      "reject_reason": "unrelated",
-      "old_mx": "comune-padova-it.mail.protection.outlook.com",
-      "old_provider": "microsoft",
-      "old_reason": "MX record (comune-padova-it.mail.protection.outlook.com) matches Microsoft"
     },
     {
       "id": "IT-L34-idb",
