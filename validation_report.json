@@ -1,5 +1,5 @@
 {
-  "total": 22902,
+  "total": 22903,
   "average_score": 80.7,
   "high_confidence_pct": 73.7,
   "quality_passed": false,
@@ -1470,14 +1470,14 @@
     },
     "IT-C13-acs_so": {
       "name": "Automobile Club Sondrio",
-      "provider": "microsoft",
+      "provider": "google",
       "domain": "sondrio.aci.it",
       "confidence": 93,
       "flags": [
+        "multiple_mx",
         "spf_softfail",
         "mx_spf_match",
-        "provider_classified",
-        "autodiscover_confirms"
+        "provider_classified"
       ]
     },
     "IT-C13-acs_sr": {
@@ -30090,12 +30090,12 @@
     },
     "IT-COM-002096": {
       "name": "Comune di Pila",
-      "provider": "regional-public",
-      "domain": "comune.pila.vc.it",
-      "confidence": 90,
+      "provider": "independent",
+      "domain": "cert.ruparpiemonte.it",
+      "confidence": 80,
       "flags": [
         "spf_strict",
-        "mx_spf_match",
+        "independent_mx_with_cloud_spf",
         "provider_classified"
       ]
     },
@@ -31552,12 +31552,12 @@
     },
     "IT-COM-004005": {
       "name": "Comune di Alto",
-      "provider": "regional-public",
-      "domain": "comune.alto.cn.it",
-      "confidence": 90,
+      "provider": "independent",
+      "domain": "cert.ruparpiemonte.it",
+      "confidence": 80,
       "flags": [
         "spf_strict",
-        "mx_spf_match",
+        "independent_mx_with_cloud_spf",
         "provider_classified"
       ]
     },
@@ -33680,12 +33680,12 @@
     },
     "IT-COM-004188": {
       "name": "Comune di Rocca Ciglie'",
-      "provider": "regional-public",
-      "domain": "comune.roccaciglie.cn.it",
-      "confidence": 90,
+      "provider": "independent",
+      "domain": "cert.ruparpiemonte.it",
+      "confidence": 80,
       "flags": [
         "spf_strict",
-        "mx_spf_match",
+        "independent_mx_with_cloud_spf",
         "provider_classified"
       ]
     },
@@ -35754,13 +35754,13 @@
     },
     "IT-COM-006002": {
       "name": "Comune di Albera Ligure",
-      "provider": "unknown",
-      "domain": "comune.alberaligure.al.it",
-      "confidence": 15,
+      "provider": "independent",
+      "domain": "cert.ruparpiemonte.it",
+      "confidence": 80,
       "flags": [
-        "no_mx",
-        "no_spf",
-        "provider_unknown"
+        "spf_strict",
+        "independent_mx_with_cloud_spf",
+        "provider_classified"
       ]
     },
     "IT-COM-006003": {
@@ -108414,14 +108414,13 @@
     },
     "IT-COM-096066": {
       "name": "Comune di Tavigliano",
-      "provider": "microsoft",
+      "provider": "unknown",
       "domain": "comune.tavigliano.bi.it",
-      "confidence": 95,
+      "confidence": 15,
       "flags": [
-        "spf_strict",
-        "mx_spf_match",
-        "provider_classified",
-        "autodiscover_confirms"
+        "no_mx",
+        "no_spf",
+        "provider_unknown"
       ]
     },
     "IT-COM-096067": {
@@ -108519,13 +108518,11 @@
     "IT-COM-096077": {
       "name": "Comune di Vigliano Biellese",
       "provider": "aruba",
-      "domain": "comune.vigliano.bi.it",
-      "confidence": 83,
+      "domain": "pec.vigliano.info",
+      "confidence": 68,
       "flags": [
         "spf_softfail",
-        "independent_mx_with_cloud_spf",
-        "provider_classified",
-        "autodiscover_confirms"
+        "provider_classified"
       ]
     },
     "IT-COM-096078": {
@@ -112360,12 +112357,12 @@
     },
     "IT-COM-103061": {
       "name": "Comune di San Bernardino Verbano",
-      "provider": "regional-public",
-      "domain": "comune.sanbernardinoverbano.vb.it",
-      "confidence": 90,
+      "provider": "independent",
+      "domain": "cert.ruparpiemonte.it",
+      "confidence": 80,
       "flags": [
         "spf_strict",
-        "mx_spf_match",
+        "independent_mx_with_cloud_spf",
         "provider_classified"
       ]
     },
@@ -117307,14 +117304,13 @@
     "IT-COM-118023": {
       "name": "Comune di Guasila",
       "provider": "independent",
-      "domain": "comune.guasila.ca.it",
+      "domain": "comune.guasila.su.it",
       "confidence": 95,
       "flags": [
         "multiple_mx",
         "spf_strict",
         "mx_spf_match",
-        "provider_classified",
-        "provider_via_gateway_spf"
+        "provider_classified"
       ]
     },
     "IT-COM-118024": {
@@ -118985,7 +118981,7 @@
     "IT-CONS-cidssos": {
       "name": "Consorzio Intercomunale Dei Servizi Sociali - Ciss Ossola",
       "provider": "aruba",
-      "domain": "cissossola.it",
+      "domain": "ciss-ossola.it",
       "confidence": 83,
       "flags": [
         "spf_softfail",
@@ -197783,13 +197779,13 @@
     },
     "IT-L33-istsc_pdis003009": {
       "name": "IIS CATTANEO-MATTEI",
-      "provider": "google",
-      "domain": "cattaneomattei.it",
-      "confidence": 93,
+      "provider": "istruzione-miur-tenant",
+      "domain": "cattaneo-mattei.edu.it",
+      "confidence": 80,
       "flags": [
-        "multiple_mx",
-        "spf_softfail",
+        "spf_strict",
         "mx_spf_match",
+        "multi_provider_spf:brevo+microsoft+regional-public",
         "provider_classified"
       ]
     },
@@ -198515,12 +198511,10 @@
     },
     "IT-L33-istsc_peis00400q": {
       "name": "Istituto Omnicomprensivo",
-      "provider": "google",
-      "domain": "omnicomprensivocsangelo.edu.it",
-      "confidence": 93,
+      "provider": "local-isp",
+      "domain": "omnicomprensivocsangelo.it",
+      "confidence": 85,
       "flags": [
-        "multiple_mx",
-        "spf_softfail",
         "mx_spf_match",
         "provider_classified"
       ]
@@ -211351,13 +211345,12 @@
     },
     "IT-L33-istsc_roic808005": {
       "name": "ISTITUTO COMPRENSIVO - POLESELLA",
-      "provider": "istruzione-miur-tenant",
-      "domain": "icpolesella.edu.it",
-      "confidence": 80,
+      "provider": "google",
+      "domain": "icpolesella.net.in",
+      "confidence": 90,
       "flags": [
-        "spf_strict",
+        "multiple_mx",
         "mx_spf_match",
-        "multi_provider_spf:brevo+microsoft+regional-public",
         "provider_classified"
       ]
     },
@@ -217992,12 +217985,13 @@
     },
     "IT-L33-istsc_topc01000c": {
       "name": "LICEO CLASSICO - LC C. CAVOUR",
-      "provider": "google",
+      "provider": "istruzione-miur-tenant",
       "domain": "lcavour.edu.it",
-      "confidence": 55,
+      "confidence": 80,
       "flags": [
-        "multiple_mx",
-        "no_spf",
+        "spf_strict",
+        "mx_spf_match",
+        "multi_provider_spf:brevo+microsoft+regional-public",
         "provider_classified"
       ]
     },
@@ -228895,7 +228889,7 @@
     "IT-L34-XQZEJ3XC": {
       "name": "arciconfraternita sant'angelo dei rossi",
       "provider": "aruba",
-      "domain": "arciconfraternitadeirossi.it",
+      "domain": "arciconfraternitadeiross.altervista.org",
       "confidence": 83,
       "flags": [
         "spf_softfail",
@@ -232276,14 +232270,13 @@
     },
     "IT-L34-iavvmcr": {
       "name": "Ipab Associazione Volontariato Villaggio Marino Ca' Roman",
-      "provider": "google",
-      "domain": "weebly.com",
-      "confidence": 93,
+      "provider": "unknown",
+      "domain": "villaggiocaroman.weebly.com",
+      "confidence": 15,
       "flags": [
-        "multiple_mx",
-        "spf_softfail",
-        "mx_spf_match",
-        "provider_classified"
+        "no_mx",
+        "no_spf",
+        "provider_unknown"
       ]
     },
     "IT-L34-ibbi_026": {
@@ -232371,7 +232364,7 @@
     "IT-L34-icriv": {
       "name": "A.P.S.P. \"CASE DI RIPOSO DI SOLERO\"",
       "provider": "aruba",
-      "domain": "casadiripososolero.it",
+      "domain": "casediripososolero.it",
       "confidence": 83,
       "flags": [
         "spf_softfail",
@@ -252649,6 +252642,17 @@
         "autodiscover_confirms"
       ]
     },
+    "IT-L44-SJR0NGX6": {
+      "name": "ENTE DI GOVERNO DELL'AMBITO DEL MOLISE",
+      "provider": "aruba",
+      "domain": "egam.it",
+      "confidence": 90,
+      "flags": [
+        "spf_strict",
+        "mx_spf_match",
+        "provider_classified"
+      ]
+    },
     "IT-L44-UZSR6V6K": {
       "name": "Consiglio di Bacino Padova Centro",
       "provider": "microsoft",
@@ -261097,14 +261101,12 @@
     },
     "IT-SA-ADZ4T32G": {
       "name": "PORT MOBILITY S.p.A. con Socio Unico",
-      "provider": "microsoft",
-      "domain": "civitavecchia.portmobility.it",
-      "confidence": 95,
+      "provider": "aruba",
+      "domain": "pec.portmobility.it",
+      "confidence": 68,
       "flags": [
-        "spf_strict",
-        "mx_spf_match",
-        "provider_classified",
-        "autodiscover_confirms"
+        "spf_softfail",
+        "provider_classified"
       ]
     },
     "IT-SA-AKP3SCHD": {

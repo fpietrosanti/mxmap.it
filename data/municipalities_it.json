@@ -239205,7 +239205,7 @@
     "domain": "polobianciardigrosseto.edu.it",
     "osm_relation_id": null,
     "domain_fallbacks": [
-      "istruzione.it"
+      "istruzione.gov.it"
     ],
     "ipa_codice_ipa": "istsc_GRIS01200Q",
     "ipa_codice_categoria": "L33",
@@ -269123,7 +269123,7 @@
     "country": "IT",
     "region": null,
     "district": null,
-    "domain": "omnicomprensivocsangelo.edu.it",
+    "domain": "omnicomprensivocsangelo.it",
     "osm_relation_id": null,
     "domain_fallbacks": [
       "istruzione.it"
@@ -349595,6 +349595,21 @@
     "ipa_codice_categoria": "L44",
     "ipa_codice_istat": "32701969",
     "ipa_codice_comune_istat": "024012",
+    "domain_source": "sito_istituzionale"
+  },
+  {
+    "id": "IT-L44-SJR0NGX6",
+    "name": "ENTE DI GOVERNO DELL'AMBITO DEL MOLISE",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "egam.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "SJR0NGX6",
+    "ipa_codice_categoria": "L44",
+    "ipa_codice_istat": "32447407",
+    "ipa_codice_comune_istat": "070006",
     "domain_source": "sito_istituzionale"
   },
   {
