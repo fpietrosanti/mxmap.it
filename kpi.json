@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-08-21T05:26:37Z",
+  "generated_at": "2026-08-22T05:28:37Z",
   "run_id": null,
   "license": "CC BY-SA 4.0",
   "source": "https://github.com/mxmap-it/mxmap.it",
   "totals": {
     "n_entities": 22903,
-    "n_with_mx": 22272,
+    "n_with_mx": 22271,
     "coverage_pct": 97.24
   },
   "indices": {
-    "isd": 51.24,
-    "cloud_act_pct": 48.21,
-    "n_classified": 22272
+    "isd": 51.22,
+    "cloud_act_pct": 48.23,
+    "n_classified": 22271
   },
   "sovereignty": {
     "extra_eu": {
-      "count": 10740,
+      "count": 10744,
       "pct": 46.9,
       "label": "Extra-UE (CLOUD Act)"
     },
@@ -25,12 +25,12 @@
       "label": "Europeo (non italiano)"
     },
     "it": {
-      "count": 11412,
+      "count": 11407,
       "pct": 49.8,
       "label": "Italiano"
     },
     "unknown": {
-      "count": 631,
+      "count": 632,
       "pct": 2.8,
       "label": "Sconosciuto"
     }
@@ -38,37 +38,37 @@
   "top_providers": [
     {
       "name": "Provider Italiano",
-      "count": 7437,
+      "count": 7434,
       "pct": 32.5,
       "sovereignty": "it"
     },
     {
       "name": "Google Workspace",
-      "count": 6447,
-      "pct": 28.1,
+      "count": 6448,
+      "pct": 28.2,
       "sovereignty": "extra_eu"
     },
     {
       "name": "Microsoft 365",
-      "count": 4285,
+      "count": 4288,
       "pct": 18.7,
       "sovereignty": "extra_eu"
     },
     {
       "name": "Infrastruttura autonoma",
-      "count": 3046,
+      "count": 3043,
       "pct": 13.3,
       "sovereignty": "it"
     },
     {
       "name": "Cloud Italiano",
-      "count": 929,
+      "count": 930,
       "pct": 4.1,
       "sovereignty": "it"
     },
     {
       "name": "Sconosciuto",
-      "count": 631,
+      "count": 632,
       "pct": 2.8,
       "sovereignty": "unknown"
     },
@@ -125,13 +125,13 @@
     {
       "cluster": "Stazioni Appaltanti",
       "n_entities": 613,
-      "usa_pct": 49.1,
+      "usa_pct": 49.3,
       "dominant_provider": "Microsoft 365"
     },
     {
       "cluster": "Welfare e politiche sociali",
       "n_entities": 464,
-      "usa_pct": 28.9,
+      "usa_pct": 29.1,
       "dominant_provider": "Provider Italiano"
     },
     {
@@ -184,7 +184,7 @@
     }
   ],
   "confidence": {
-    "mean": 0.851,
+    "mean": 0.8509,
     "high_pct": 91.6
   }
 }
