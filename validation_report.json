@@ -27180,13 +27180,13 @@
     },
     "IT-COM-001113": {
       "name": "Comune di Germagnano",
-      "provider": "unknown",
+      "provider": "independent",
       "domain": "comune.germagnano.to.it",
-      "confidence": 15,
+      "confidence": 80,
       "flags": [
-        "no_mx",
-        "no_spf",
-        "provider_unknown"
+        "spf_strict",
+        "independent_mx_with_cloud_spf",
+        "provider_classified"
       ]
     },
     "IT-COM-001114": {
@@ -27546,7 +27546,7 @@
     "IT-COM-001145": {
       "name": "Comune di Massello",
       "provider": "independent",
-      "domain": "cert.ruparpiemonte.it",
+      "domain": "comune.massello.to.it",
       "confidence": 80,
       "flags": [
         "spf_strict",
@@ -47510,7 +47510,7 @@
     "IT-COM-016004": {
       "name": "Comune di Albino",
       "provider": "aruba",
-      "domain": "albino.it",
+      "domain": "comune.albino.bg.it",
       "confidence": 90,
       "flags": [
         "spf_strict",
@@ -112845,7 +112845,8 @@
       "flags": [
         "spf_softfail",
         "independent_mx_with_cloud_spf",
-        "provider_classified"
+        "provider_classified",
+        "smtp_suggests:microsoft"
       ]
     },
     "IT-COM-108025": {
@@ -131069,10 +131070,11 @@
     },
     "IT-L18-udcmc_": {
       "name": "Unione Dei Comuni Montani del Casentino",
-      "provider": "regional-public",
-      "domain": "uc.casentino.toscana.it",
-      "confidence": 85,
+      "provider": "independent",
+      "domain": "postacert.toscana.it",
+      "confidence": 90,
       "flags": [
+        "spf_strict",
         "mx_spf_match",
         "provider_classified"
       ]
@@ -162966,13 +162968,13 @@
     },
     "IT-L33-istsc_boic82800e": {
       "name": "ISTITUTO COMPRENSIVO - IC DI OZZANO DELL'EMILIA",
-      "provider": "istruzione-miur-tenant",
-      "domain": "icozzano.edu.it",
-      "confidence": 80,
+      "provider": "google",
+      "domain": "icozzano.istruzioneer.it",
+      "confidence": 93,
       "flags": [
-        "spf_strict",
+        "multiple_mx",
+        "spf_softfail",
         "mx_spf_match",
-        "multi_provider_spf:brevo+microsoft+regional-public",
         "provider_classified"
       ]
     },
@@ -162989,12 +162991,13 @@
     },
     "IT-L33-istsc_boic83000e": {
       "name": "ISTITUTO COMPRENSIVO - I.C. DI PIANORO",
-      "provider": "google",
-      "domain": "icpianoro.istruzioneer.it",
-      "confidence": 55,
+      "provider": "istruzione-miur-tenant",
+      "domain": "icpianoro.edu.it",
+      "confidence": 80,
       "flags": [
-        "multiple_mx",
-        "no_spf",
+        "spf_strict",
+        "mx_spf_match",
+        "multi_provider_spf:brevo+microsoft+regional-public",
         "provider_classified"
       ]
     },
@@ -174109,13 +174112,13 @@
     },
     "IT-L33-istsc_fepc01000e": {
       "name": "LICEO CLASSICO - LC LICEO GINNASIO 'G.CEVOLANI'",
-      "provider": "google",
-      "domain": "liceocevolani.it",
-      "confidence": 93,
+      "provider": "istruzione-miur-tenant",
+      "domain": "liceocevolani.edu.it",
+      "confidence": 80,
       "flags": [
-        "multiple_mx",
-        "spf_softfail",
+        "spf_strict",
         "mx_spf_match",
+        "multi_provider_spf:brevo+microsoft+regional-public",
         "provider_classified"
       ]
     },
@@ -175622,7 +175625,7 @@
     "IT-L33-istsc_fiis00700q": {
       "name": "ISTRUZIONE SECONDARIA SUPERIORE - ISTITUTO TECNICO AGRARIO STATALE",
       "provider": "google",
-      "domain": "agrariofirenze.eu",
+      "domain": "agrariofirenze.edu.it",
       "confidence": 93,
       "flags": [
         "multiple_mx",
@@ -197028,7 +197031,7 @@
     "IT-L33-istsc_pcps02000t": {
       "name": "LICEO SCIENTIFICO - LS LORENZO RESPIGHI",
       "provider": "google",
-      "domain": "liceorespighi.edu.it",
+      "domain": "liceorespighi.it",
       "confidence": 93,
       "flags": [
         "multiple_mx",
@@ -200169,13 +200172,13 @@
     },
     "IT-L33-istsc_pnic82800x": {
       "name": "ISTITUTO COMPRENSIVO - IC MANIAGO",
-      "provider": "istruzione-miur-tenant",
-      "domain": "icmaniago.edu.it",
-      "confidence": 80,
+      "provider": "google",
+      "domain": "icmaniago.it",
+      "confidence": 53,
       "flags": [
-        "spf_strict",
-        "mx_spf_match",
-        "multi_provider_spf:brevo+microsoft+regional-public",
+        "multiple_mx",
+        "spf_softfail",
+        "mx_spf_mismatch",
         "provider_classified"
       ]
     },
@@ -217045,13 +217048,13 @@
     },
     "IT-L33-istsc_toic86900d": {
       "name": "ISTITUTO COMPRENSIVO - I.C. - TRANA",
-      "provider": "independent",
-      "domain": "ictrana.it",
-      "confidence": 85,
+      "provider": "google",
+      "domain": "ictrana.edu.it",
+      "confidence": 88,
       "flags": [
+        "spf_softfail",
         "mx_spf_match",
-        "provider_classified",
-        "provider_via_gateway_spf"
+        "provider_classified"
       ]
     },
     "IT-L33-istsc_toic87000n": {
@@ -232266,13 +232269,14 @@
     },
     "IT-L34-iavvmcr": {
       "name": "Ipab Associazione Volontariato Villaggio Marino Ca' Roman",
-      "provider": "unknown",
-      "domain": "villaggiocaroman.weebly.com",
-      "confidence": 15,
+      "provider": "google",
+      "domain": "weebly.com",
+      "confidence": 93,
       "flags": [
-        "no_mx",
-        "no_spf",
-        "provider_unknown"
+        "multiple_mx",
+        "spf_softfail",
+        "mx_spf_match",
+        "provider_classified"
       ]
     },
     "IT-L34-ibbi_026": {
@@ -256083,12 +256087,11 @@
     },
     "IT-L8-aouora": {
       "name": "Azienda ospedaliero-universitaria delle Marche",
-      "provider": "google",
-      "domain": "portale.ospedaliriuniti.marche.it",
-      "confidence": 93,
+      "provider": "independent",
+      "domain": "emarche.it",
+      "confidence": 90,
       "flags": [
-        "multiple_mx",
-        "spf_softfail",
+        "spf_strict",
         "mx_spf_match",
         "provider_classified"
       ]

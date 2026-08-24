@@ -1,11 +1,11 @@
 {
- "generated_at": "2026-08-23 05:29 UTC",
+ "generated_at": "2026-08-24 05:41 UTC",
  "country": "IT",
  "total_entities": 22903,
- "anomalies_total": 729,
- "anomalies_pct": 3.18,
+ "anomalies_total": 727,
+ "anomalies_pct": 3.17,
  "by_type": {
-  "no_mx": 630,
+  "no_mx": 628,
   "geo_unknown": 70,
   "low_confidence": 64
  },
@@ -15,7 +15,7 @@
   "low_confidence": "Bassa confidenza (<0,60)"
  },
  "by_provider": {
-  "unknown": 630,
+  "unknown": 628,
   "independent": 92,
   "microsoft": 4,
   "google": 3
@@ -680,7 +680,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 1 candidates; none yielded MX"
+   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
   },
   {
    "name": "Azienda Feltrina per i Servizi alla Persona",
@@ -768,7 +768,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 1 candidates; none yielded MX"
+   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
   },
   {
    "name": "B.I.M. Consorzio Comuni Provincia Cagliari",
@@ -779,7 +779,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 6 candidates; none yielded MX"
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Consorzio Dei Comuni del Bacino Imbrifero Montano del Piave dell'Alta Valcellina",
@@ -1637,7 +1637,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 1 candidates; none yielded MX"
+   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
   },
   {
    "name": "Comune di Corropoli",
@@ -1708,17 +1708,6 @@
   {
    "name": "Comune di Gavi",
    "domain": "comune.gavi.al.it",
-   "provider": "unknown",
-   "confidence": 0.0,
-   "anomaly": [
-    "no_mx"
-   ],
-   "mx": null,
-   "reason": "search engine returned 1 candidates; none yielded MX"
-  },
-  {
-   "name": "Comune di Germagnano",
-   "domain": "comune.germagnano.to.it",
    "provider": "unknown",
    "confidence": 0.0,
    "anomaly": [
@@ -1813,7 +1802,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 1 candidates; none yielded MX"
+   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
   },
   {
    "name": "Comune di Marrubiu",
@@ -1846,7 +1835,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 1 candidates; none yielded MX"
+   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
   },
   {
    "name": "Comune di Melfi",
@@ -1890,7 +1879,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 1 candidates; none yielded MX"
+   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
   },
   {
    "name": "Comune di Omignano",
@@ -1945,7 +1934,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 5 candidates; none yielded MX"
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Comune di Ponte dell'Olio",
@@ -1978,7 +1967,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 1 candidates; none yielded MX"
+   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
   },
   {
    "name": "Comune di Pray",
@@ -2033,7 +2022,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 1 candidates; none yielded MX"
+   "reason": "search engine returned 6 candidates; none yielded MX"
   },
   {
    "name": "Comune di Romano Canavese",
@@ -2253,7 +2242,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 1 candidates; none yielded MX"
+   "reason": "search engine returned 4 candidates; none yielded MX"
   },
   {
    "name": "Comune di Tavigliano",
@@ -2319,7 +2308,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 1 candidates; none yielded MX"
+   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
   },
   {
    "name": "Comune di Tre Ville",
@@ -2352,7 +2341,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 1 candidates; none yielded MX"
+   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
   },
   {
    "name": "Comune di Vallesaccarda",
@@ -2374,7 +2363,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 1 candidates; none yielded MX"
+   "reason": "search engine returned 6 candidates; none yielded MX"
   },
   {
    "name": "Comune di Varapodio",
@@ -2660,7 +2649,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 1 candidates; none yielded MX"
+   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
   },
   {
    "name": "Comune di Ricadi",
@@ -2671,7 +2660,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 1 candidates; none yielded MX"
+   "reason": "search engine returned 6 candidates; none yielded MX"
   },
   {
    "name": "Comune di Ripa Teatina",
@@ -2704,7 +2693,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 6 candidates; none yielded MX"
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Comune di San Sebastiano al Vesuvio",
@@ -2737,7 +2726,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 4 candidates; none yielded MX"
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Comune di Sesta Godano",
@@ -3188,7 +3177,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 1 candidates; none yielded MX"
+   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
   },
   {
    "name": "Consorzio Intercomunale del Montefeltro",
@@ -3727,7 +3716,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 1 candidates; none yielded MX"
+   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
   },
   {
    "name": "Collegio Geometri e Geometri Laureati della Provincia di Reggio Emilia",
@@ -3826,7 +3815,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 1 candidates; none yielded MX"
+   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
   },
   {
    "name": "Istituto Comprensivo Bolzano 4 - Oltrisarco",
@@ -4937,7 +4926,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 1 candidates; none yielded MX"
+   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
   },
   {
    "name": "Ordine Dottori Agronomi e Dottori Forestali della Provincia di Verona",
@@ -5432,7 +5421,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 1 candidates; none yielded MX"
+   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
   },
   {
    "name": "Comunita' Montana Trigno medio Biferno",
@@ -5718,7 +5707,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 6 candidates; none yielded MX"
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Agenzia Regionale Conservatoria Delle Coste della Sardegna",
@@ -5729,7 +5718,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 4 candidates; none yielded MX"
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Agenzia Regionale per la Protezione dell'Ambiente della Sardegna",
@@ -5740,7 +5729,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 4 candidates; none yielded MX"
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Agenzia Forestale Regionale per Lo Sviluppo del Territorio e dell'Ambiente della Sardegna",
@@ -6103,7 +6092,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 1 candidates; none yielded MX"
+   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
   },
   {
    "name": "Schulsprengel Tschoegglberg",
@@ -6180,7 +6169,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 1 candidates; none yielded MX"
+   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
   },
   {
    "name": "Unione di Comuni Lombarda Terra Dei Gonzaga",
@@ -6246,7 +6235,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 1 candidates; none yielded MX"
+   "reason": "search engine returned 6 candidates; none yielded MX"
   },
   {
    "name": "Unioncamere Calabria",
@@ -6433,7 +6422,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 1 candidates; none yielded MX"
+   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
   },
   {
    "name": "Unione Collinare Canavesana",
@@ -6499,7 +6488,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 1 candidates; none yielded MX"
+   "reason": "search engine returned 6 candidates; none yielded MX"
   },
   {
    "name": "Unione Dei Comuni della Teverina",
@@ -6823,17 +6812,6 @@
   {
    "name": "Unione Comuni Vette Dei Nebrodi",
    "domain": "vettedeinebrodi.it",
-   "provider": "unknown",
-   "confidence": 0.0,
-   "anomaly": [
-    "no_mx"
-   ],
-   "mx": null,
-   "reason": "cleared by is_legit gate: unrelated"
-  },
-  {
-   "name": "Ipab Associazione Volontariato Villaggio Marino Ca' Roman",
-   "domain": "villaggiocaroman.weebly.com",
    "provider": "unknown",
    "confidence": 0.0,
    "anomaly": [
