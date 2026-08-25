@@ -39888,9 +39888,7 @@
     "district": "Asti",
     "domain": "comune.cunico.at.it",
     "osm_relation_id": 44040,
-    "domain_fallbacks": [
-      "gmail.com"
-    ],
+    "domain_fallbacks": [],
     "ipa_codice_ipa": "c_d207",
     "ipa_codice_categoria": "L6",
     "ipa_codice_istat": "17777193",
@@ -172660,7 +172658,7 @@
     "country": "IT",
     "region": null,
     "district": null,
-    "domain": "comune.savigliano.cn.it",
+    "domain": "unioneterrepianura.it",
     "osm_relation_id": null,
     "domain_fallbacks": [],
     "ipa_codice_ipa": "udc_cn",
@@ -342502,21 +342500,6 @@
     "domain_source": "sito_istituzionale"
   },
   {
-    "id": "IT-L37-VPYML80H",
-    "name": "Multiservizi Vipiteno Srl.",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "stevi.bz.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [],
-    "ipa_codice_ipa": "VPYML80H",
-    "ipa_codice_categoria": "L37",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "021115",
-    "domain_source": "sito_istituzionale"
-  },
-  {
     "id": "IT-L37-VRBJV6ZO",
     "name": "Sviluppo Turistico Lerici srl",
     "country": "IT",
@@ -365002,6 +364985,21 @@
     "ipa_codice_categoria": "SAG",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "016024",
+    "domain_source": "sito_istituzionale"
+  },
+  {
+    "id": "IT-SAG-VPYML80H",
+    "name": "Multiservizi Vipiteno Srl.",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "stadtwerke-sterzing.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "VPYML80H",
+    "ipa_codice_categoria": "SAG",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "021115",
     "domain_source": "sito_istituzionale"
   },
   {

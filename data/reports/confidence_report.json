@@ -6,25 +6,25 @@
   "mean_nonzero": 0.875,
   "buckets": {
     "0.90-1.00 (molto alta)": 17350,
-    "0.80-0.89 (alta)": 3624,
-    "0.00 (nulla / unknown)": 628,
+    "0.80-0.89 (alta)": 3625,
+    "0.00 (nulla / unknown)": 627,
     "0.60-0.79 (media)": 1237,
     "0.01-0.59 (bassa)": 64
   },
   "rules": {
     "mx_spf": 17350,
-    "dom_mx_spf": 1743,
-    "no_mx": 628,
-    "mx_only": 1881,
+    "dom_mx_spf": 1742,
+    "no_mx": 627,
+    "mx_only": 1883,
     "frgn_mx_spf": 988,
     "dom_mx_only": 249,
     "frgn_mx_only": 64
   },
   "jurisdiction": {
-    "foreign": 11442,
-    "domestic": 10518,
+    "foreign": 11440,
+    "domestic": 10521,
     "mixed": 245,
-    "unknown": 698
+    "unknown": 697
   },
   "domestic_mx_override": 193,
   "bounce_candidates": 64,

@@ -1,5 +1,5 @@
 {
-  "n_purged": 512,
+  "n_purged": 513,
   "items": [
     {
       "id": "IT-C1-m_pi",
@@ -4017,6 +4017,17 @@
       "old_reason": "MX is omitech gateway; MS365 tenant detected (Managed)"
     },
     {
+      "id": "IT-L34-iavvmcr",
+      "name": "Ipab Associazione Volontariato Villaggio Marino Ca' Roman",
+      "codice_ipa": "iavvmcr",
+      "seed_domain": "villaggiocaroman.weebly.com",
+      "claimed_domain": "comune.padova.it",
+      "reject_reason": "unrelated",
+      "old_mx": "comune-padova-it.mail.protection.outlook.com",
+      "old_provider": "microsoft",
+      "old_reason": "MX record (comune-padova-it.mail.protection.outlook.com) matches Microsoft"
+    },
+    {
       "id": "IT-L34-idb",
       "name": "Ipab Domenico Bertone",
       "codice_ipa": "idb",
@@ -4123,8 +4134,8 @@
       "claimed_domain": "comune.alcamo.tp.it",
       "reject_reason": "unrelated",
       "old_mx": "mailgw01.host.it",
-      "old_provider": "microsoft",
-      "old_reason": "MX is host-it gateway; MS365 tenant detected (Managed)"
+      "old_provider": "independent",
+      "old_reason": "MX is host-it gateway; backend provider unknown"
     },
     {
       "id": "IT-L34-opcrsa",
