@@ -173980,9 +173980,7 @@
     "district": null,
     "domain": "unionecomunimontalbo.it",
     "osm_relation_id": null,
-    "domain_fallbacks": [
-      "libero.it"
-    ],
+    "domain_fallbacks": [],
     "ipa_codice_ipa": "udcma_0",
     "ipa_codice_categoria": "L18",
     "ipa_codice_istat": "25617027",
@@ -317283,6 +317281,21 @@
     "domain_source": "sito_istituzionale"
   },
   {
+    "id": "IT-L34-4E1NJHKT",
+    "name": "asp fondazione nicolò piccolomini per l'accademia d'arte drammatica",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "fondazionepiccolomini.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "4E1NJHKT",
+    "ipa_codice_categoria": "L34",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "058091",
+    "domain_source": "sito_istituzionale"
+  },
+  {
     "id": "IT-L34-a_034",
     "name": "Azienda pubblica servizi alla persona Cav. Marco Rossi Sidoli",
     "country": "IT",
@@ -343286,21 +343299,6 @@
     "domain_source": "sito_istituzionale"
   },
   {
-    "id": "IT-L37-ZP13ZM78",
-    "name": "INIZIATIVE PER LA PROMOZIONE DELLO SVILUPPO ECONOMICO DELLA PROVINCIA DI REGGIO CALABRIA",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "sviprore.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [],
-    "ipa_codice_ipa": "ZP13ZM78",
-    "ipa_codice_categoria": "L37",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "080063",
-    "domain_source": "sito_istituzionale"
-  },
-  {
     "id": "IT-L37-ZV7OSJOH",
     "name": "UNILAV SCPA",
     "country": "IT",
@@ -362952,6 +362950,21 @@
     "ipa_codice_categoria": "SA",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "058091",
+    "domain_source": "sito_istituzionale"
+  },
+  {
+    "id": "IT-SA-ZP13ZM78",
+    "name": "INIZIATIVE PER LA PROMOZIONE DELLO SVILUPPO ECONOMICO DELLA PROVINCIA DI REGGIO CALABRIA",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "sviprore.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "ZP13ZM78",
+    "ipa_codice_categoria": "SA",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "080063",
     "domain_source": "sito_istituzionale"
   },
   {

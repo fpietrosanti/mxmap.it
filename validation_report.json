@@ -1,5 +1,5 @@
 {
-  "total": 22903,
+  "total": 22904,
   "average_score": 80.7,
   "high_confidence_pct": 73.7,
   "quality_passed": false,
@@ -15879,13 +15879,13 @@
     },
     "IT-C14-oddafpo": {
       "name": "Ordine Dei Dottori Agronomi e Dei Dottori Forestali della Provincia di Oristano",
-      "provider": "local-isp",
+      "provider": "unknown",
       "domain": "ordineoristano.conaf.it",
-      "confidence": 80,
+      "confidence": 15,
       "flags": [
-        "spf_strict",
-        "independent_mx_with_cloud_spf",
-        "provider_classified"
+        "no_mx",
+        "no_spf",
+        "provider_unknown"
       ]
     },
     "IT-C14-oddafvi": {
@@ -27180,13 +27180,13 @@
     },
     "IT-COM-001113": {
       "name": "Comune di Germagnano",
-      "provider": "unknown",
+      "provider": "independent",
       "domain": "comune.germagnano.to.it",
-      "confidence": 15,
+      "confidence": 80,
       "flags": [
-        "no_mx",
-        "no_spf",
-        "provider_unknown"
+        "spf_strict",
+        "independent_mx_with_cloud_spf",
+        "provider_classified"
       ]
     },
     "IT-COM-001114": {
@@ -47999,7 +47999,7 @@
     "IT-COM-016047": {
       "name": "Comune di Calvenzano",
       "provider": "independent",
-      "domain": "comune.calvenzano.bg.it",
+      "domain": "pec.regione.lombardia.it",
       "confidence": 90,
       "flags": [
         "spf_strict",
@@ -87277,13 +87277,12 @@
     },
     "IT-COM-064093": {
       "name": "Comune di Santa Paolina",
-      "provider": "unknown",
+      "provider": "register-it",
       "domain": "comunesantapaolina.gov.it",
-      "confidence": 15,
+      "confidence": 68,
       "flags": [
-        "no_mx",
-        "no_spf",
-        "provider_unknown"
+        "spf_softfail",
+        "provider_classified"
       ]
     },
     "IT-COM-064095": {
@@ -117303,13 +117302,14 @@
     "IT-COM-118023": {
       "name": "Comune di Guasila",
       "provider": "independent",
-      "domain": "comune.guasila.su.it",
+      "domain": "comune.guasila.ca.it",
       "confidence": 95,
       "flags": [
         "multiple_mx",
         "spf_strict",
         "mx_spf_match",
-        "provider_classified"
+        "provider_classified",
+        "provider_via_gateway_spf"
       ]
     },
     "IT-COM-118024": {
@@ -122146,10 +122146,11 @@
     "IT-L1-azcv": {
       "name": "Azienda Calabria Verde",
       "provider": "aruba",
-      "domain": "pec.calabriaverde.eu",
-      "confidence": 50,
+      "domain": "calabriaverde.regione.calabria.it",
+      "confidence": 78,
       "flags": [
-        "no_spf",
+        "spf_softfail",
+        "independent_mx_with_cloud_spf",
         "provider_classified"
       ]
     },
@@ -146221,7 +146222,7 @@
     },
     "IT-L33-ics_025": {
       "name": "Istituto Comprensivo Sedico/sospirolo",
-      "provider": "independent",
+      "provider": "microsoft",
       "domain": "istitutocomprensivosedico-sospirolo.edu.it",
       "confidence": 85,
       "flags": [
@@ -158321,7 +158322,7 @@
     },
     "IT-L33-istsc_avic857002": {
       "name": "Istituto Comprensivo Di Pratola Serra",
-      "provider": "microsoft",
+      "provider": "google",
       "domain": "icpratolaserra.edu.it",
       "confidence": 85,
       "flags": [
@@ -174107,13 +174108,13 @@
     },
     "IT-L33-istsc_fepc01000e": {
       "name": "LICEO CLASSICO - LC LICEO GINNASIO 'G.CEVOLANI'",
-      "provider": "google",
-      "domain": "liceocevolani.it",
-      "confidence": 93,
+      "provider": "istruzione-miur-tenant",
+      "domain": "liceocevolani.edu.it",
+      "confidence": 80,
       "flags": [
-        "multiple_mx",
-        "spf_softfail",
+        "spf_strict",
         "mx_spf_match",
+        "multi_provider_spf:brevo+microsoft+regional-public",
         "provider_classified"
       ]
     },
@@ -175620,7 +175621,7 @@
     "IT-L33-istsc_fiis00700q": {
       "name": "ISTRUZIONE SECONDARIA SUPERIORE - ISTITUTO TECNICO AGRARIO STATALE",
       "provider": "google",
-      "domain": "agrariofirenze.eu",
+      "domain": "agrariofirenze.edu.it",
       "confidence": 93,
       "flags": [
         "multiple_mx",
@@ -228754,6 +228755,17 @@
         "provider_classified"
       ]
     },
+    "IT-L34-4E1NJHKT": {
+      "name": "asp fondazione nicolò piccolomini per l'accademia d'arte drammatica",
+      "provider": "local-isp",
+      "domain": "fondazionepiccolomini.it",
+      "confidence": 88,
+      "flags": [
+        "spf_softfail",
+        "mx_spf_match",
+        "provider_classified"
+      ]
+    },
     "IT-L34-A86RQ42W": {
       "name": "AZIENDA SPECIALE CONSORTILE PER I SERVIZI ALLA PERSONA DEL TERRITORIO DEL DESTRA SECCHIA",
       "provider": "aruba",
@@ -232264,13 +232276,14 @@
     },
     "IT-L34-iavvmcr": {
       "name": "Ipab Associazione Volontariato Villaggio Marino Ca' Roman",
-      "provider": "unknown",
-      "domain": "villaggiocaroman.weebly.com",
-      "confidence": 15,
+      "provider": "google",
+      "domain": "weebly.com",
+      "confidence": 93,
       "flags": [
-        "no_mx",
-        "no_spf",
-        "provider_unknown"
+        "multiple_mx",
+        "spf_softfail",
+        "mx_spf_match",
+        "provider_classified"
       ]
     },
     "IT-L34-ibbi_026": {
@@ -237112,7 +237125,7 @@
     "IT-L37-219TJPHO": {
       "name": "Croce Rossa Italiana - Comitato di Latina - Organizzazione di Volontariato",
       "provider": "google",
-      "domain": "cri.it",
+      "domain": "latina.cri.it",
       "confidence": 93,
       "flags": [
         "multiple_mx",
@@ -242468,18 +242481,6 @@
         "no_mx",
         "no_spf",
         "provider_unknown"
-      ]
-    },
-    "IT-L37-ZP13ZM78": {
-      "name": "INIZIATIVE PER LA PROMOZIONE DELLO SVILUPPO ECONOMICO DELLA PROVINCIA DI REGGIO CALABRIA",
-      "provider": "aruba",
-      "domain": "sviprore.it",
-      "confidence": 83,
-      "flags": [
-        "spf_softfail",
-        "independent_mx_with_cloud_spf",
-        "provider_classified",
-        "autodiscover_confirms"
       ]
     },
     "IT-L37-ZV7OSJOH": {
@@ -254068,7 +254069,7 @@
     "IT-L47-csdad": {
       "name": "Commissario Straordinario Discariche Abusive Dpcm 24.03.2017",
       "provider": "microsoft",
-      "domain": "governo.it",
+      "domain": "commissariobonificadiscariche.governo.it",
       "confidence": 65,
       "flags": [
         "provider_classified"
@@ -264665,6 +264666,18 @@
         "mx_spf_match",
         "provider_classified",
         "autodiscover_suggests:microsoft"
+      ]
+    },
+    "IT-SA-ZP13ZM78": {
+      "name": "INIZIATIVE PER LA PROMOZIONE DELLO SVILUPPO ECONOMICO DELLA PROVINCIA DI REGGIO CALABRIA",
+      "provider": "aruba",
+      "domain": "sviprore.it",
+      "confidence": 83,
+      "flags": [
+        "spf_softfail",
+        "independent_mx_with_cloud_spf",
+        "provider_classified",
+        "autodiscover_confirms"
       ]
     },
     "IT-SA-ZS1M7716": {
