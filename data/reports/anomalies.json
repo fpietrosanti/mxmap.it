@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-08-26 05:32 UTC",
+ "generated_at": "2026-08-27 16:47 UTC",
  "country": "IT",
- "total_entities": 22904,
- "anomalies_total": 724,
- "anomalies_pct": 3.16,
+ "total_entities": 22906,
+ "anomalies_total": 728,
+ "anomalies_pct": 3.18,
  "by_type": {
-  "no_mx": 625,
-  "geo_unknown": 70,
+  "no_mx": 630,
+  "geo_unknown": 69,
   "low_confidence": 64
  },
  "by_type_label": {
@@ -15,12 +15,12 @@
   "low_confidence": "Bassa confidenza (<0,60)"
  },
  "by_provider": {
-  "unknown": 625,
-  "independent": 92,
+  "unknown": 630,
+  "independent": 91,
   "microsoft": 4,
   "google": 3
  },
- "classified_but_anomalous": 99,
+ "classified_but_anomalous": 98,
  "entries": [
   {
    "name": "ISTITUTO COMPRENSIVO  SANTE GIUFFRIDA - DON LA MELA",
@@ -141,7 +141,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Agenzia Regionale per Il Lavoro",
@@ -163,7 +163,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 3 candidates; none yielded MX"
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "ISTITUTO TECNICO SUPERIORE AGROALIMENTARE PER IL PIEMONTE",
@@ -834,7 +834,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Centro di Formazione Professionale Brunico",
@@ -1263,7 +1263,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Collegio Delle Ostetriche della Provincia di Mantova",
@@ -1673,6 +1673,17 @@
    "reason": "cleared by is_legit gate: unrelated"
   },
   {
+   "name": "Comune di Cureggio",
+   "domain": "comune.cureggio.no.it",
+   "provider": "unknown",
+   "confidence": 0.0,
+   "anomaly": [
+    "no_mx"
+   ],
+   "mx": null,
+   "reason": "search engine returned 1 candidates; none yielded MX"
+  },
+  {
    "name": "Comune di Domegge di Cadore",
    "domain": "comune.domeggedicadore.bl.it",
    "provider": "unknown",
@@ -1697,6 +1708,17 @@
   {
    "name": "Comune di Gavi",
    "domain": "comune.gavi.al.it",
+   "provider": "unknown",
+   "confidence": 0.0,
+   "anomaly": [
+    "no_mx"
+   ],
+   "mx": null,
+   "reason": "search engine returned 1 candidates; none yielded MX"
+  },
+  {
+   "name": "Comune di Germagnano",
+   "domain": "comune.germagnano.to.it",
    "provider": "unknown",
    "confidence": 0.0,
    "anomaly": [
@@ -1736,7 +1758,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Comune di Loano",
@@ -1791,7 +1813,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Comune di Marrubiu",
@@ -1835,7 +1857,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 1 candidates; none yielded MX"
+   "reason": "search engine returned 6 candidates; none yielded MX"
   },
   {
    "name": "Comune di Montanaro",
@@ -1846,7 +1868,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 6 candidates; none yielded MX"
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Comune di Monteleone di Spoleto",
@@ -1868,7 +1890,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Comune di Omignano",
@@ -1923,7 +1945,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 1 candidates; none yielded MX"
+   "reason": "search engine returned 5 candidates; none yielded MX"
   },
   {
    "name": "Comune di Ponte dell'Olio",
@@ -2011,7 +2033,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 6 candidates; none yielded MX"
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Comune di Romano Canavese",
@@ -2179,6 +2201,17 @@
    "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
+   "name": "Comune di Scanno",
+   "domain": "comune.scanno.aq.it",
+   "provider": "unknown",
+   "confidence": 0.0,
+   "anomaly": [
+    "no_mx"
+   ],
+   "mx": null,
+   "reason": "search engine returned 1 candidates; none yielded MX"
+  },
+  {
    "name": "Comune di Sciolze",
    "domain": "comune.sciolze.to.it",
    "provider": "unknown",
@@ -2286,7 +2319,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Comune di Tre Ville",
@@ -2495,7 +2528,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 1 candidates; none yielded MX"
+   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
   },
   {
    "name": "Amministrazione Separata Beni Uso Civico Dobbiaco",
@@ -2594,7 +2627,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Comune di Picciano",
@@ -2671,7 +2704,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 1 candidates; none yielded MX"
+   "reason": "search engine returned 6 candidates; none yielded MX"
   },
   {
    "name": "Comune di San Sebastiano al Vesuvio",
@@ -2682,7 +2715,18 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 6 candidates; none yielded MX"
+   "reason": "search engine returned 1 candidates; none yielded MX"
+  },
+  {
+   "name": "Comune di Santa Paolina",
+   "domain": "comunesantapaolina.gov.it",
+   "provider": "unknown",
+   "confidence": 0.0,
+   "anomaly": [
+    "no_mx"
+   ],
+   "mx": null,
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Comune di San Zeno di Montagna",
@@ -2693,7 +2737,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 1 candidates; none yielded MX"
+   "reason": "search engine returned 5 candidates; none yielded MX"
   },
   {
    "name": "Comune di Sesta Godano",
@@ -3144,7 +3188,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Consorzio Intercomunale del Montefeltro",
@@ -3301,17 +3345,6 @@
    "reason": "cleared by is_legit gate: unrelated"
   },
   {
-   "name": "Consorzio Sviluppo Basso Veronese di Nogara",
-   "domain": "csbv.it",
-   "provider": "unknown",
-   "confidence": 0.0,
-   "anomaly": [
-    "no_mx"
-   ],
-   "mx": null,
-   "reason": "cleared by is_legit gate: unrelated"
-  },
-  {
    "name": "Consorzio per il sistema informativo CSI-Piemonte",
    "domain": "csipiemonte.it",
    "provider": "unknown",
@@ -3336,6 +3369,28 @@
   {
    "name": "Consorzio Universitario Interprovinciale Salentino",
    "domain": "cuislecce.it",
+   "provider": "unknown",
+   "confidence": 0.0,
+   "anomaly": [
+    "no_mx"
+   ],
+   "mx": null,
+   "reason": "cleared by is_legit gate: unrelated"
+  },
+  {
+   "name": "Amministrazione Separata Beni Usi Civici Oris",
+   "domain": "data.gvcc.net",
+   "provider": "unknown",
+   "confidence": 0.0,
+   "anomaly": [
+    "no_mx"
+   ],
+   "mx": null,
+   "reason": "cleared by is_legit gate: unrelated"
+  },
+  {
+   "name": "Amministrazione Separata Beni Usi Civici di Ultimo-Alsago",
+   "domain": "data.gvcc.net",
    "provider": "unknown",
    "confidence": 0.0,
    "anomaly": [
@@ -3694,7 +3749,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Scuola dell Infanzia Giandanese Bernini",
@@ -4698,17 +4753,6 @@
    "reason": "cleared by is_legit gate: unrelated"
   },
   {
-   "name": "Ordine Dei Dottori Agronomi e Dei Dottori Forestali della Provincia di Oristano",
-   "domain": "ordineoristano.conaf.it",
-   "provider": "unknown",
-   "confidence": 0.0,
-   "anomaly": [
-    "no_mx"
-   ],
-   "mx": null,
-   "reason": "search engine returned 1 candidates; none yielded MX"
-  },
-  {
    "name": "Ordine Interprovinciale Professione Ostetrica Ascoli Piceno e Fermo",
    "domain": "ordineostetricheapfm.it",
    "provider": "unknown",
@@ -4717,7 +4761,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Ordine Delle Ostetriche della Provincia di L'Aquila",
@@ -4893,7 +4937,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Ordine Dottori Agronomi e Dottori Forestali della Provincia di Verona",
@@ -5674,7 +5718,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 1 candidates; none yielded MX"
+   "reason": "search engine returned 6 candidates; none yielded MX"
   },
   {
    "name": "Agenzia Regionale Conservatoria Delle Coste della Sardegna",
@@ -6136,7 +6180,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Unione di Comuni Lombarda Terra Dei Gonzaga",
@@ -6202,7 +6246,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "search engine returned 6 candidates; none yielded MX"
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Unioncamere Calabria",
@@ -6389,7 +6433,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Unione Collinare Canavesana",
@@ -6598,7 +6642,7 @@
     "no_mx"
    ],
    "mx": null,
-   "reason": "all strategies exhausted (S0 AOO/UO Tier-6, S1 PEC, S2 Wikidata, S3 scrape primary, S4 search engine)"
+   "reason": "search engine returned 1 candidates; none yielded MX"
   },
   {
    "name": "Unione di Comuni Lombarda di Lomello e Galliavola",
@@ -6779,6 +6823,17 @@
   {
    "name": "Unione Comuni Vette Dei Nebrodi",
    "domain": "vettedeinebrodi.it",
+   "provider": "unknown",
+   "confidence": 0.0,
+   "anomaly": [
+    "no_mx"
+   ],
+   "mx": null,
+   "reason": "cleared by is_legit gate: unrelated"
+  },
+  {
+   "name": "Ipab Associazione Volontariato Villaggio Marino Ca' Roman",
+   "domain": "villaggiocaroman.weebly.com",
    "provider": "unknown",
    "confidence": 0.0,
    "anomaly": [
@@ -7448,6 +7503,17 @@
    "reason": "MX (mx.icspuerchererba.edu.it) is self-hosted"
   },
   {
+   "name": "ISTITUTO COMPRENSIVO - TORREGROTTA",
+   "domain": "ictorregrotta.edu.it",
+   "provider": "independent",
+   "confidence": 0.5,
+   "anomaly": [
+    "low_confidence"
+   ],
+   "mx": "mx.ictorregrotta.edu.it",
+   "reason": "riclassificato da aws: segnale cloud (tenant/DKIM) presente ma MX in entrata self-hosted domestico (il tenant cloud riflette uso Teams/Share"
+  },
+  {
    "name": "ISTRUZIONE SECONDARIA SUPERIORE - LICETI",
    "domain": "iissliceti.it",
    "provider": "independent",
@@ -7468,17 +7534,6 @@
    ],
    "mx": "ipsarcangelo.com",
    "reason": "MX (ipsarcangelo.com) is self-hosted"
-  },
-  {
-   "name": "Istituto Scolastico Comprensivo Monti Dauni",
-   "domain": "isc-montidauni.edu.it",
-   "provider": "independent",
-   "confidence": 0.5,
-   "anomaly": [
-    "low_confidence"
-   ],
-   "mx": "mx.isc-montidauni.edu.it",
-   "reason": "riclassificato da aws: segnale cloud (tenant/DKIM) presente ma MX in entrata self-hosted domestico (il tenant cloud riflette uso Teams/Share"
   },
   {
    "name": "ISTITUTO COMPRENSIVO - LEONESSA",
@@ -7692,17 +7747,6 @@
    "reason": "MX (posta.ideafutura.com) is self-hosted"
   },
   {
-   "name": "Consiglio Provinciale Ordine Dei Consulenti del Lavoro di Ferrara",
-   "domain": "consulentilavoroferrara.it",
-   "provider": "independent",
-   "confidence": 0.6,
-   "anomaly": [
-    "geo_unknown"
-   ],
-   "mx": "email3-cpanel.vhosting-it.com",
-   "reason": "MX (email3-cpanel.vhosting-it.com) is self-hosted"
-  },
-  {
    "name": "Consorzio per lo Sviluppo del Polo Universitario di Gorizia",
    "domain": "consunigo.it",
    "provider": "independent",
@@ -7824,6 +7868,17 @@
    "reason": "MX (mx.servizi.fweds-spc.it) is self-hosted"
   },
   {
+   "name": "Istituto Omnicomprensivo Pestalozzi",
+   "domain": "iopestalozzi.edu.it",
+   "provider": "independent",
+   "confidence": 0.6,
+   "anomaly": [
+    "geo_unknown"
+   ],
+   "mx": "mail.iopestalozzi.edu.it",
+   "reason": "MX (mail.iopestalozzi.edu.it) is self-hosted"
+  },
+  {
    "name": "Istituto Comprensivo Statale G. Falcone - P. Borsellino",
    "domain": "istitutocomprensivocaulonia.edu.it",
    "provider": "independent",
@@ -7910,17 +7965,6 @@
    ],
    "mx": "ms96137180.msv1.invalid",
    "reason": "MX (ms96137180.msv1.invalid) is self-hosted"
-  },
-  {
-   "name": "Troina Ambiente S.R.L.",
-   "domain": "troinaambiente.it",
-   "provider": "independent",
-   "confidence": 0.6,
-   "anomaly": [
-    "geo_unknown"
-   ],
-   "mx": "_dc-mx.5e27d694a962.troinaambiente.it",
-   "reason": "MX (_dc-mx.5e27d694a962.troinaambiente.it) is self-hosted"
   },
   {
    "name": "Unione Regionale Delle Camere di Commercio Industria Artigianato e Agricoltura dell'Emilia-Romagna",

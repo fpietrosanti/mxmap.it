@@ -1,7 +1,7 @@
 {
-  "total": 22904,
+  "total": 22906,
   "average_score": 80.7,
-  "high_confidence_pct": 73.7,
+  "high_confidence_pct": 73.8,
   "quality_passed": false,
   "entries": {
     "IT-C1-KH5RHFCV": {
@@ -10108,7 +10108,7 @@
     },
     "IT-C14-cpodcfe": {
       "name": "Consiglio Provinciale Ordine Dei Consulenti del Lavoro di Ferrara",
-      "provider": "independent",
+      "provider": "local-isp",
       "domain": "consulentilavoroferrara.it",
       "confidence": 88,
       "flags": [
@@ -11102,7 +11102,7 @@
     "IT-C14-fodaf": {
       "name": "Federazione Interregionale Degli Ordini Dei Dottori Agronomi e Dottori Forestali del Piemonte e della Valle D'Aosta",
       "provider": "local-isp",
-      "domain": "conaf.it",
+      "domain": "fodafpiemonte-valledaosta.conaf.it",
       "confidence": 80,
       "flags": [
         "spf_strict",
@@ -11181,7 +11181,7 @@
     "IT-C14-frtopdad": {
       "name": "Federazione Regionale Toscana Degli Ordini Provinciali Dottori Agronomi e Dottori Forestali",
       "provider": "local-isp",
-      "domain": "conaf.it",
+      "domain": "fodaftoscana.conaf.it",
       "confidence": 80,
       "flags": [
         "spf_strict",
@@ -13097,7 +13097,7 @@
     "IT-C14-odadfcs": {
       "name": "Ordine Dottori Agronomi e Dottori Forestali di Cosenza",
       "provider": "local-isp",
-      "domain": "conaf.it",
+      "domain": "ordinecosenza.conaf.it",
       "confidence": 80,
       "flags": [
         "spf_strict",
@@ -14036,7 +14036,7 @@
     "IT-C14-odapcn": {
       "name": "Ordine Degli Architetti, Pianificatori, Paesaggisti e Conservatori di Napoli e Provincia",
       "provider": "local-isp",
-      "domain": "napoli.archiworld.it",
+      "domain": "na.archiworld.it",
       "confidence": 95,
       "flags": [
         "multiple_mx",
@@ -15879,13 +15879,13 @@
     },
     "IT-C14-oddafpo": {
       "name": "Ordine Dei Dottori Agronomi e Dei Dottori Forestali della Provincia di Oristano",
-      "provider": "unknown",
+      "provider": "local-isp",
       "domain": "ordineoristano.conaf.it",
-      "confidence": 15,
+      "confidence": 80,
       "flags": [
-        "no_mx",
-        "no_spf",
-        "provider_unknown"
+        "spf_strict",
+        "independent_mx_with_cloud_spf",
+        "provider_classified"
       ]
     },
     "IT-C14-oddafvi": {
@@ -16758,10 +16758,11 @@
     },
     "IT-C14-odfp_034": {
       "name": "Ordine Dei Farmacisti della Provincia di Parma",
-      "provider": "independent",
+      "provider": "local-isp",
       "domain": "ordinefarmacistiparma.it",
-      "confidence": 90,
+      "confidence": 95,
       "flags": [
+        "multiple_mx",
         "spf_strict",
         "mx_spf_match",
         "provider_classified"
@@ -19435,9 +19436,9 @@
       "name": "Ordine dei Medici Chirurghi e degli Odontoiatri della Provincia di Cuneo",
       "provider": "independent",
       "domain": "omceo.cuneo.it",
-      "confidence": 88,
+      "confidence": 90,
       "flags": [
-        "spf_softfail",
+        "spf_strict",
         "mx_spf_match",
         "provider_classified"
       ]
@@ -27180,13 +27181,13 @@
     },
     "IT-COM-001113": {
       "name": "Comune di Germagnano",
-      "provider": "independent",
+      "provider": "unknown",
       "domain": "comune.germagnano.to.it",
-      "confidence": 80,
+      "confidence": 15,
       "flags": [
-        "spf_strict",
-        "independent_mx_with_cloud_spf",
-        "provider_classified"
+        "no_mx",
+        "no_spf",
+        "provider_unknown"
       ]
     },
     "IT-COM-001114": {
@@ -30836,13 +30837,13 @@
     },
     "IT-COM-003058": {
       "name": "Comune di Cureggio",
-      "provider": "independent",
-      "domain": "cert.ruparpiemonte.it",
-      "confidence": 80,
+      "provider": "unknown",
+      "domain": "comune.cureggio.no.it",
+      "confidence": 15,
       "flags": [
-        "spf_strict",
-        "independent_mx_with_cloud_spf",
-        "provider_classified"
+        "no_mx",
+        "no_spf",
+        "provider_unknown"
       ]
     },
     "IT-COM-003060": {
@@ -32682,7 +32683,7 @@
     "IT-COM-004103": {
       "name": "Comune di Isasca",
       "provider": "regional-public",
-      "domain": "ruparpiemonte.it",
+      "domain": "comune.isasca.cn.it",
       "confidence": 90,
       "flags": [
         "spf_strict",
@@ -33372,14 +33373,13 @@
     },
     "IT-COM-004162": {
       "name": "Comune di Perlo",
-      "provider": "independent",
-      "domain": "cert.ruparpiemonte.it",
-      "confidence": 80,
+      "provider": "regional-public",
+      "domain": "comune.perlo.cn.it",
+      "confidence": 90,
       "flags": [
         "spf_strict",
-        "independent_mx_with_cloud_spf",
-        "provider_classified",
-        "autodiscover_suggests:aruba"
+        "mx_spf_match",
+        "provider_classified"
       ]
     },
     "IT-COM-004163": {
@@ -34243,12 +34243,12 @@
     },
     "IT-COM-004237": {
       "name": "Comune di Venasca",
-      "provider": "independent",
-      "domain": "cert.ruparpiemonte.it",
-      "confidence": 80,
+      "provider": "regional-public",
+      "domain": "comune.venasca.cn.it",
+      "confidence": 90,
       "flags": [
         "spf_strict",
-        "independent_mx_with_cloud_spf",
+        "mx_spf_match",
         "provider_classified"
       ]
     },
@@ -34880,7 +34880,7 @@
     "IT-COM-005042": {
       "name": "Comune di Cocconato",
       "provider": "aruba",
-      "domain": "cocconato.info",
+      "domain": "comune.cocconato.at.it",
       "confidence": 83,
       "flags": [
         "spf_softfail",
@@ -81125,10 +81125,10 @@
       "name": "Comune di Nerola",
       "provider": "aruba",
       "domain": "comune.nerola.rm.it",
-      "confidence": 95,
+      "confidence": 83,
       "flags": [
-        "spf_strict",
-        "mx_spf_match",
+        "spf_softfail",
+        "independent_mx_with_cloud_spf",
         "provider_classified",
         "autodiscover_confirms"
       ]
@@ -81696,12 +81696,14 @@
     },
     "IT-COM-058122": {
       "name": "Comune di Fonte Nuova",
-      "provider": "independent",
-      "domain": "cert.fonte-nuova.it",
-      "confidence": 50,
+      "provider": "microsoft",
+      "domain": "comune.fontenuova.rm.it",
+      "confidence": 95,
       "flags": [
-        "no_spf",
-        "provider_classified"
+        "spf_strict",
+        "mx_spf_match",
+        "provider_classified",
+        "autodiscover_confirms"
       ]
     },
     "IT-COM-059001": {
@@ -87277,12 +87279,13 @@
     },
     "IT-COM-064093": {
       "name": "Comune di Santa Paolina",
-      "provider": "register-it",
+      "provider": "unknown",
       "domain": "comunesantapaolina.gov.it",
-      "confidence": 68,
+      "confidence": 15,
       "flags": [
-        "spf_softfail",
-        "provider_classified"
+        "no_mx",
+        "no_spf",
+        "provider_unknown"
       ]
     },
     "IT-COM-064095": {
@@ -90453,12 +90456,13 @@
     },
     "IT-COM-066093": {
       "name": "Comune di Scanno",
-      "provider": "aruba",
+      "provider": "unknown",
       "domain": "comune.scanno.aq.it",
-      "confidence": 68,
+      "confidence": 15,
       "flags": [
-        "spf_softfail",
-        "provider_classified"
+        "no_mx",
+        "no_spf",
+        "provider_unknown"
       ]
     },
     "IT-COM-066094": {
@@ -100476,11 +100480,13 @@
     "IT-COM-079077": {
       "name": "Comune di Miglierina",
       "provider": "regional-public",
-      "domain": "miglierina.asmenet.it",
-      "confidence": 68,
+      "domain": "comune.miglierina.cz.it",
+      "confidence": 93,
       "flags": [
         "spf_softfail",
-        "provider_classified"
+        "mx_spf_match",
+        "provider_classified",
+        "autodiscover_confirms"
       ]
     },
     "IT-COM-079080": {
@@ -102448,7 +102454,7 @@
     "IT-COM-082008": {
       "name": "Comune di Baucina",
       "provider": "aruba",
-      "domain": "comune.baucina.pa.it",
+      "domain": "egov.comune.baucina.pa.it",
       "confidence": 83,
       "flags": [
         "spf_softfail",
@@ -109808,10 +109814,10 @@
       "name": "Comune di Castelnuovo Bocca D'Adda",
       "provider": "independent",
       "domain": "comune.castelnuovoboccadadda.lo.it",
-      "confidence": 93,
+      "confidence": 95,
       "flags": [
         "multiple_mx",
-        "spf_softfail",
+        "spf_strict",
         "mx_spf_match",
         "provider_classified",
         "provider_via_gateway_spf"
@@ -117628,11 +117634,13 @@
     "IT-COM-118050": {
       "name": "Comune di Senorbi'",
       "provider": "aruba",
-      "domain": "pec.comune.senorbi.ca.it",
-      "confidence": 68,
+      "domain": "comune.senorbi.su.it",
+      "confidence": 83,
       "flags": [
         "spf_softfail",
-        "provider_classified"
+        "independent_mx_with_cloud_spf",
+        "provider_classified",
+        "autodiscover_confirms"
       ]
     },
     "IT-COM-118051": {
@@ -118006,7 +118014,7 @@
     "IT-COM-119012": {
       "name": "Comune di Narcao",
       "provider": "aruba",
-      "domain": "comune.narcao.ci.it",
+      "domain": "comune.narcao.su.it",
       "confidence": 78,
       "flags": [
         "spf_softfail",
@@ -118017,7 +118025,7 @@
     "IT-COM-119013": {
       "name": "Comune di Nuxis",
       "provider": "microsoft",
-      "domain": "comune.nuxis.ci.it",
+      "domain": "comune.nuxis.su.it",
       "confidence": 95,
       "flags": [
         "spf_strict",
@@ -120542,13 +120550,14 @@
     },
     "IT-L1-arlst": {
       "name": "Agenzia Regionale per La Sicurezza Territoriale e La Protezione Civile",
-      "provider": "independent",
-      "domain": "postacert.regione.emilia-romagna.it",
-      "confidence": 80,
+      "provider": "microsoft",
+      "domain": "protezionecivile.regione.emilia-romagna.it",
+      "confidence": 95,
       "flags": [
         "spf_strict",
-        "independent_mx_with_cloud_spf",
-        "provider_classified"
+        "mx_spf_match",
+        "provider_classified",
+        "autodiscover_confirms"
       ]
     },
     "IT-L1-arp": {
@@ -121064,14 +121073,13 @@
     },
     "IT-L1-asbucry": {
       "name": "Amministrazione Separata Beni Usi Civici Oris",
-      "provider": "regional-public",
-      "domain": "gvcc.net",
-      "confidence": 95,
+      "provider": "unknown",
+      "domain": "data.gvcc.net",
+      "confidence": 15,
       "flags": [
-        "multiple_mx",
-        "spf_strict",
-        "mx_spf_match",
-        "provider_classified"
+        "no_mx",
+        "no_spf",
+        "provider_unknown"
       ]
     },
     "IT-L1-asbucsc": {
@@ -121182,14 +121190,13 @@
     },
     "IT-L1-asbucua": {
       "name": "Amministrazione Separata Beni Usi Civici di Ultimo-Alsago",
-      "provider": "regional-public",
-      "domain": "gvcc.net",
-      "confidence": 95,
+      "provider": "unknown",
+      "domain": "data.gvcc.net",
+      "confidence": 15,
       "flags": [
-        "multiple_mx",
-        "spf_strict",
-        "mx_spf_match",
-        "provider_classified"
+        "no_mx",
+        "no_spf",
+        "provider_unknown"
       ]
     },
     "IT-L1-asbucva": {
@@ -126989,13 +126996,14 @@
     },
     "IT-L16-ftlgv": {
       "name": "Fondazione Teatro Lirico Giuseppe Verdi di Trieste",
-      "provider": "aruba",
+      "provider": "microsoft",
       "domain": "teatroverdi-trieste.com",
-      "confidence": 88,
+      "confidence": 95,
       "flags": [
-        "spf_softfail",
+        "spf_strict",
         "mx_spf_match",
-        "provider_classified"
+        "provider_classified",
+        "autodiscover_confirms"
       ]
     },
     "IT-L16-ftm_082": {
@@ -132920,13 +132928,14 @@
     },
     "IT-L18-unmotea": {
       "name": "Unione Montana Terre Alte",
-      "provider": "local-isp",
+      "provider": "independent",
       "domain": "unionemontanaterrealte.it",
       "confidence": 90,
       "flags": [
         "spf_strict",
         "mx_spf_match",
-        "provider_classified"
+        "provider_classified",
+        "provider_via_gateway_spf"
       ]
     },
     "IT-L18-upac": {
@@ -139693,7 +139702,7 @@
       ]
     },
     "IT-L33-cpiaab": {
-      "name": "CPIA  Avellino",
+      "name": "CPIA \"Valeria Solesin\" Avellino",
       "provider": "microsoft",
       "domain": "cpiaavellino.edu.it",
       "confidence": 85,
@@ -143360,11 +143369,11 @@
       "name": "Istituto Comprensivo - 'Levico Terme'",
       "provider": "google",
       "domain": "iclevico.eu",
-      "confidence": 53,
+      "confidence": 95,
       "flags": [
         "multiple_mx",
-        "spf_softfail",
-        "mx_spf_mismatch",
+        "spf_strict",
+        "mx_spf_match",
         "provider_classified"
       ]
     },
@@ -146895,13 +146904,13 @@
     },
     "IT-L33-icsiq": {
       "name": "Istituto Comprensivo Settimo IV",
-      "provider": "independent",
+      "provider": "istruzione-miur-tenant",
       "domain": "ddivcircolosettimo.it",
-      "confidence": 93,
+      "confidence": 80,
       "flags": [
-        "multiple_mx",
-        "spf_softfail",
+        "spf_strict",
         "mx_spf_match",
+        "multi_provider_spf:brevo+microsoft+regional-public",
         "provider_classified"
       ]
     },
@@ -150216,13 +150225,12 @@
       "name": "I.I.S. R.SALVO TRAPANI",
       "provider": "microsoft",
       "domain": "rosinasalvo.edu.it",
-      "confidence": 58,
+      "confidence": 53,
       "flags": [
         "multiple_mx",
         "spf_softfail",
         "mx_spf_mismatch",
-        "provider_classified",
-        "autodiscover_confirms"
+        "provider_classified"
       ]
     },
     "IT-L33-iiss_083": {
@@ -158324,11 +158332,11 @@
       "name": "Istituto Comprensivo Di Pratola Serra",
       "provider": "google",
       "domain": "icpratolaserra.edu.it",
-      "confidence": 85,
+      "confidence": 88,
       "flags": [
+        "spf_softfail",
         "mx_spf_match",
-        "provider_classified",
-        "provider_via_gateway_spf"
+        "provider_classified"
       ]
     },
     "IT-L33-istsc_avic86000t": {
@@ -159192,11 +159200,11 @@
       "name": "Istituto Comprensivo A. Moro - G. Falcone",
       "provider": "google",
       "domain": "icadelfia.edu.it",
-      "confidence": 53,
+      "confidence": 93,
       "flags": [
         "multiple_mx",
         "spf_softfail",
-        "mx_spf_mismatch",
+        "mx_spf_match",
         "provider_classified"
       ]
     },
@@ -159353,14 +159361,14 @@
     },
     "IT-L33-istsc_baic85200c": {
       "name": "ISTITUTO COMPRENSIVO - \"FOSCOLO - DE MURO LOMANTO - MAZZINI\"",
-      "provider": "aruba",
+      "provider": "google",
       "domain": "icfoscololomantomazzini.edu.it",
-      "confidence": 83,
+      "confidence": 53,
       "flags": [
+        "multiple_mx",
         "spf_softfail",
-        "independent_mx_with_cloud_spf",
-        "provider_classified",
-        "autodiscover_confirms"
+        "mx_spf_mismatch",
+        "provider_classified"
       ]
     },
     "IT-L33-istsc_baic853008": {
@@ -162965,13 +162973,13 @@
     },
     "IT-L33-istsc_boic82800e": {
       "name": "ISTITUTO COMPRENSIVO - IC DI OZZANO DELL'EMILIA",
-      "provider": "istruzione-miur-tenant",
-      "domain": "icozzano.edu.it",
-      "confidence": 80,
+      "provider": "google",
+      "domain": "icozzano.istruzioneer.it",
+      "confidence": 93,
       "flags": [
-        "spf_strict",
+        "multiple_mx",
+        "spf_softfail",
         "mx_spf_match",
-        "multi_provider_spf:brevo+microsoft+regional-public",
         "provider_classified"
       ]
     },
@@ -163666,13 +163674,11 @@
     },
     "IT-L33-istsc_bops04000p": {
       "name": "LICEO SCIENTIFICO - LICEO A. B. SABIN",
-      "provider": "istruzione-miur-tenant",
+      "provider": "google",
       "domain": "liceosabin.edu.it",
-      "confidence": 80,
+      "confidence": 50,
       "flags": [
-        "spf_strict",
-        "mx_spf_match",
-        "multi_provider_spf:brevo+microsoft+regional-public",
+        "no_spf",
         "provider_classified"
       ]
     },
@@ -166598,14 +166604,14 @@
     },
     "IT-L33-istsc_carf010003": {
       "name": "ISTITUTO PROFESSIONALE PER I SERVIZI SOCIALI - 'PERTINI' (CAGLIARI)",
-      "provider": "aruba",
+      "provider": "google",
       "domain": "istitutopertini.edu.it",
-      "confidence": 83,
+      "confidence": 53,
       "flags": [
+        "multiple_mx",
         "spf_softfail",
-        "independent_mx_with_cloud_spf",
-        "provider_classified",
-        "autodiscover_confirms"
+        "mx_spf_mismatch",
+        "provider_classified"
       ]
     },
     "IT-L33-istsc_carh050001": {
@@ -168609,7 +168615,7 @@
     },
     "IT-L33-istsc_cltd090005": {
       "name": "Istituto Tecnico Economico e Tecnologico - 'Mario Rapisardi - Leonardo da Vinci'",
-      "provider": "local-isp",
+      "provider": "independent",
       "domain": "rapisardidavinci.edu.it",
       "confidence": 88,
       "flags": [
@@ -169188,13 +169194,13 @@
     },
     "IT-L33-istsc_cnis01100d": {
       "name": "ISTRUZIONE SECONDARIA SUPERIORE - CEVA - 'G. BARUFFI'",
-      "provider": "istruzione-miur-tenant",
-      "domain": "barufficevaormea.edu.it",
-      "confidence": 80,
+      "provider": "google",
+      "domain": "barufficevaormea.it",
+      "confidence": 93,
       "flags": [
-        "spf_strict",
+        "multiple_mx",
+        "spf_softfail",
         "mx_spf_match",
-        "multi_provider_spf:brevo+microsoft+regional-public",
         "provider_classified"
       ]
     },
@@ -170701,12 +170707,11 @@
     },
     "IT-L33-istsc_csic848007": {
       "name": "ISTITUTO COMPRENSIVO - IC LONGOBUCCO",
-      "provider": "google",
+      "provider": "aruba",
       "domain": "omnicomprensivolongobucco.edu.it",
-      "confidence": 93,
+      "confidence": 90,
       "flags": [
-        "multiple_mx",
-        "spf_softfail",
+        "spf_strict",
         "mx_spf_match",
         "provider_classified"
       ]
@@ -172513,12 +172518,13 @@
     },
     "IT-L33-istsc_ctic8aj00q": {
       "name": "Istituto Comprensivo - G. Galilei - G. Mazzini Grammichele",
-      "provider": "local-isp",
+      "provider": "istruzione-miur-tenant",
       "domain": "icgalileimazzinigrammichele.it",
-      "confidence": 90,
+      "confidence": 80,
       "flags": [
         "spf_strict",
         "mx_spf_match",
+        "multi_provider_spf:brevo+microsoft+regional-public",
         "provider_classified"
       ]
     },
@@ -174108,13 +174114,13 @@
     },
     "IT-L33-istsc_fepc01000e": {
       "name": "LICEO CLASSICO - LC LICEO GINNASIO 'G.CEVOLANI'",
-      "provider": "istruzione-miur-tenant",
-      "domain": "liceocevolani.edu.it",
-      "confidence": 80,
+      "provider": "google",
+      "domain": "liceocevolani.it",
+      "confidence": 93,
       "flags": [
-        "spf_strict",
+        "multiple_mx",
+        "spf_softfail",
         "mx_spf_match",
-        "multi_provider_spf:brevo+microsoft+regional-public",
         "provider_classified"
       ]
     },
@@ -174320,11 +174326,13 @@
     },
     "IT-L33-istsc_fgic82400l": {
       "name": "Istituto Scolastico Comprensivo Monti Dauni",
-      "provider": "independent",
+      "provider": "istruzione-miur-tenant",
       "domain": "isc-montidauni.edu.it",
-      "confidence": 50,
+      "confidence": 80,
       "flags": [
-        "no_spf",
+        "spf_strict",
+        "mx_spf_match",
+        "multi_provider_spf:brevo+microsoft+regional-public",
         "provider_classified"
       ]
     },
@@ -175621,7 +175629,7 @@
     "IT-L33-istsc_fiis00700q": {
       "name": "ISTRUZIONE SECONDARIA SUPERIORE - ISTITUTO TECNICO AGRARIO STATALE",
       "provider": "google",
-      "domain": "agrariofirenze.edu.it",
+      "domain": "agrariofirenze.eu",
       "confidence": 93,
       "flags": [
         "multiple_mx",
@@ -176079,12 +176087,12 @@
     },
     "IT-L33-istsc_foic80700r": {
       "name": "ISTITUTO COMPRENSIVO - IC LONGIANO",
-      "provider": "aruba",
+      "provider": "independent",
       "domain": "iclongiano.edu.it",
-      "confidence": 83,
+      "confidence": 85,
       "flags": [
         "multiple_mx",
-        "spf_softfail",
+        "spf_strict",
         "independent_mx_with_cloud_spf",
         "provider_classified"
       ]
@@ -183357,12 +183365,13 @@
     },
     "IT-L33-istsc_meic84600d": {
       "name": "ISTITUTO COMPRENSIVO - MISTRETTA",
-      "provider": "independent",
+      "provider": "istruzione-miur-tenant",
       "domain": "ictommasoaversa.it",
-      "confidence": 90,
+      "confidence": 80,
       "flags": [
         "spf_strict",
         "mx_spf_match",
+        "multi_provider_spf:brevo+microsoft+regional-public",
         "provider_classified"
       ]
     },
@@ -183591,13 +183600,11 @@
     },
     "IT-L33-istsc_meic876009": {
       "name": "ISTITUTO COMPRENSIVO - TORREGROTTA",
-      "provider": "google",
+      "provider": "independent",
       "domain": "ictorregrotta.edu.it",
-      "confidence": 53,
+      "confidence": 50,
       "flags": [
-        "multiple_mx",
-        "spf_softfail",
-        "mx_spf_mismatch",
+        "no_spf",
         "provider_classified"
       ]
     },
@@ -196693,10 +196700,11 @@
       "name": "DIREZIONE DIDATTICA - CD QUINTO CIRCOLO",
       "provider": "google",
       "domain": "quintocircolopc.edu.it",
-      "confidence": 55,
+      "confidence": 93,
       "flags": [
         "multiple_mx",
-        "no_spf",
+        "spf_softfail",
+        "mx_spf_match",
         "provider_classified"
       ]
     },
@@ -204511,9 +204519,8 @@
       "name": "ISTITUTO COMPRENSIVO - DON PASQUINO BORGHI R.E.",
       "provider": "google",
       "domain": "icdonborghi-re.edu.it",
-      "confidence": 93,
+      "confidence": 88,
       "flags": [
-        "multiple_mx",
         "spf_softfail",
         "mx_spf_match",
         "provider_classified"
@@ -208964,11 +208971,10 @@
       "name": "ISTITUTO COMPRENSIVO - IC VIA MAFFI",
       "provider": "google",
       "domain": "icmaffi.edu.it",
-      "confidence": 53,
+      "confidence": 88,
       "flags": [
-        "multiple_mx",
         "spf_softfail",
-        "mx_spf_mismatch",
+        "mx_spf_match",
         "provider_classified"
       ]
     },
@@ -210841,13 +210847,13 @@
     },
     "IT-L33-istsc_rmtf15000d": {
       "name": "ISTITUTO TECNICO INDUSTRIALE - STANISLAO CANNIZZARO COLLEFERRO",
-      "provider": "google",
-      "domain": "itiscannizzarocolleferro.it",
-      "confidence": 93,
+      "provider": "istruzione-miur-tenant",
+      "domain": "itiscannizzarocolleferro.edu.it",
+      "confidence": 80,
       "flags": [
-        "multiple_mx",
-        "spf_softfail",
+        "spf_strict",
         "mx_spf_match",
+        "multi_provider_spf:brevo+microsoft+regional-public",
         "provider_classified"
       ]
     },
@@ -219130,7 +219136,7 @@
     "IT-L33-istsc_tris00100e": {
       "name": "ISTRUZIONE SECONDARIA SUPERIORE - NARNI I.I.S. SC. MAG. GEOM. GANDHI",
       "provider": "google",
-      "domain": "gandhinarni.edu.it",
+      "domain": "gandhinarni.it",
       "confidence": 73,
       "flags": [
         "multiple_mx",
@@ -219971,10 +219977,10 @@
       "name": "ISTITUTO COMPRENSIVO - IC SANTA LUCIA DI PIAVE",
       "provider": "google",
       "domain": "icsantaluciadipiave.edu.it",
-      "confidence": 48,
+      "confidence": 88,
       "flags": [
         "spf_softfail",
-        "mx_spf_mismatch",
+        "mx_spf_match",
         "provider_classified"
       ]
     },
@@ -227027,13 +227033,13 @@
     },
     "IT-L33-itetbg": {
       "name": "Istituto Tecnico Economico Tecnologico Bramante-Genga",
-      "provider": "istruzione-miur-tenant",
-      "domain": "itbramantegenga.edu.it",
-      "confidence": 80,
+      "provider": "google",
+      "domain": "itbramantegenga.it",
+      "confidence": 93,
       "flags": [
-        "spf_strict",
+        "multiple_mx",
+        "spf_softfail",
         "mx_spf_match",
-        "multi_provider_spf:brevo+microsoft+regional-public",
         "provider_classified"
       ]
     },
@@ -228895,7 +228901,7 @@
     "IT-L34-XQZEJ3XC": {
       "name": "arciconfraternita sant'angelo dei rossi",
       "provider": "aruba",
-      "domain": "arciconfraternitadeirossi.it",
+      "domain": "arciconfraternitadeiross.altervista.org",
       "confidence": 83,
       "flags": [
         "spf_softfail",
@@ -232276,14 +232282,13 @@
     },
     "IT-L34-iavvmcr": {
       "name": "Ipab Associazione Volontariato Villaggio Marino Ca' Roman",
-      "provider": "google",
-      "domain": "weebly.com",
-      "confidence": 93,
+      "provider": "unknown",
+      "domain": "villaggiocaroman.weebly.com",
+      "confidence": 15,
       "flags": [
-        "multiple_mx",
-        "spf_softfail",
-        "mx_spf_match",
-        "provider_classified"
+        "no_mx",
+        "no_spf",
+        "provider_unknown"
       ]
     },
     "IT-L34-ibbi_026": {
@@ -232855,13 +232860,14 @@
     },
     "IT-L34-ipabrgf": {
       "name": "I.P.A.B. Residenza per Anziani G. Francescon",
-      "provider": "local-isp",
+      "provider": "microsoft",
       "domain": "residenzafrancescon.it",
-      "confidence": 90,
+      "confidence": 95,
       "flags": [
         "spf_strict",
         "mx_spf_match",
-        "provider_classified"
+        "provider_classified",
+        "autodiscover_confirms"
       ]
     },
     "IT-L34-ipabs": {
@@ -236332,13 +236338,14 @@
     },
     "IT-L36-csbv_vr": {
       "name": "Consorzio Sviluppo Basso Veronese di Nogara",
-      "provider": "unknown",
+      "provider": "independent",
       "domain": "csbv.it",
-      "confidence": 15,
+      "confidence": 93,
       "flags": [
-        "no_mx",
-        "no_spf",
-        "provider_unknown"
+        "multiple_mx",
+        "spf_softfail",
+        "mx_spf_match",
+        "provider_classified"
       ]
     },
     "IT-L36-cseea_cn": {
@@ -239034,6 +239041,18 @@
         "autodiscover_suggests:microsoft"
       ]
     },
+    "IT-L37-DXCPHH6Z": {
+      "name": "Fraternita Sistemi IS SCS",
+      "provider": "microsoft",
+      "domain": "fraternitasistemi.it",
+      "confidence": 95,
+      "flags": [
+        "spf_strict",
+        "mx_spf_match",
+        "provider_classified",
+        "autodiscover_confirms"
+      ]
+    },
     "IT-L37-DZ8SDIRD": {
       "name": "FONDAZIONE ITS TEC MOS TECNOLOGIE E SICUREZZA PER LA MOBILITA' SOSTENIBILE",
       "provider": "aruba",
@@ -239237,7 +239256,7 @@
     "IT-L37-F21ME6OU": {
       "name": "FLEGREA LAVORO SPA",
       "provider": "local-isp",
-      "domain": "flegrealavoro.com",
+      "domain": "flegrealavoro.portaletrasparenza.net",
       "confidence": 88,
       "flags": [
         "spf_softfail",
@@ -239941,10 +239960,10 @@
       "name": "azienda speciale sirmione",
       "provider": "ovh",
       "domain": "farmaciacomunalesirmione.it",
-      "confidence": 93,
+      "confidence": 95,
       "flags": [
         "multiple_mx",
-        "spf_softfail",
+        "spf_strict",
         "mx_spf_match",
         "provider_classified"
       ]
@@ -241097,6 +241116,18 @@
         "spf_softfail",
         "mx_spf_match",
         "provider_classified"
+      ]
+    },
+    "IT-L37-QXSJ8M2L": {
+      "name": "AZIENDA SPECIALE COMUNALE \"CAPRAROLA SERVIZI\"",
+      "provider": "aruba",
+      "domain": "caprarolaservizi.it",
+      "confidence": 83,
+      "flags": [
+        "spf_softfail",
+        "independent_mx_with_cloud_spf",
+        "provider_classified",
+        "autodiscover_confirms"
       ]
     },
     "IT-L37-QYUU47Q3": {
@@ -242486,7 +242517,7 @@
     "IT-L37-ZV7OSJOH": {
       "name": "UNILAV SCPA",
       "provider": "aruba",
-      "domain": "unilavspa.it",
+      "domain": "unilavspa.portaletrasparenza.net",
       "confidence": 83,
       "flags": [
         "spf_softfail",
@@ -243611,7 +243642,7 @@
     "IT-L37-asaspa": {
       "name": "PLURES S.P.A.",
       "provider": "microsoft",
-      "domain": "aliaserviziambientali.it",
+      "domain": "plures.aliaserviziambientali.it",
       "confidence": 95,
       "flags": [
         "spf_strict",
@@ -244818,12 +244849,12 @@
     },
     "IT-L37-cbnac": {
       "name": "Consorzio di Bonifica Navarolo Agro Cremonese Mantovano",
-      "provider": "local-isp",
+      "provider": "independent",
       "domain": "navarolo.it",
-      "confidence": 90,
+      "confidence": 80,
       "flags": [
         "spf_strict",
-        "mx_spf_match",
+        "independent_mx_with_cloud_spf",
         "provider_classified"
       ]
     },
@@ -248483,14 +248514,14 @@
     },
     "IT-L37-tasrl": {
       "name": "Troina Ambiente S.R.L.",
-      "provider": "independent",
+      "provider": "aruba",
       "domain": "troinaambiente.it",
-      "confidence": 78,
+      "confidence": 83,
       "flags": [
         "spf_softfail",
         "independent_mx_with_cloud_spf",
         "provider_classified",
-        "autodiscover_suggests:aruba"
+        "autodiscover_confirms"
       ]
     },
     "IT-L37-tdtos": {
@@ -249417,15 +249448,13 @@
     },
     "IT-L38-epna_ss": {
       "name": "Ente Parco Nazionale dell'Asinara",
-      "provider": "independent",
+      "provider": "aruba",
       "domain": "parcoasinara.org",
-      "confidence": 93,
+      "confidence": 88,
       "flags": [
-        "multiple_mx",
         "spf_softfail",
         "mx_spf_match",
-        "provider_classified",
-        "provider_via_gateway_spf"
+        "provider_classified"
       ]
     },
     "IT-L38-epnal": {
@@ -256070,11 +256099,12 @@
     },
     "IT-L8-aouora": {
       "name": "Azienda ospedaliero-universitaria delle Marche",
-      "provider": "independent",
-      "domain": "emarche.it",
-      "confidence": 90,
+      "provider": "google",
+      "domain": "portale.ospedaliriuniti.marche.it",
+      "confidence": 93,
       "flags": [
-        "spf_strict",
+        "multiple_mx",
+        "spf_softfail",
         "mx_spf_match",
         "provider_classified"
       ]
@@ -261084,12 +261114,14 @@
     },
     "IT-SA-ADZ4T32G": {
       "name": "PORT MOBILITY S.p.A. con Socio Unico",
-      "provider": "aruba",
-      "domain": "pec.portmobility.it",
-      "confidence": 68,
+      "provider": "microsoft",
+      "domain": "civitavecchia.portmobility.it",
+      "confidence": 95,
       "flags": [
-        "spf_softfail",
-        "provider_classified"
+        "spf_strict",
+        "mx_spf_match",
+        "provider_classified",
+        "autodiscover_confirms"
       ]
     },
     "IT-SA-AKP3SCHD": {
@@ -263201,15 +263233,14 @@
     },
     "IT-SA-OSB50GD5": {
       "name": "Associazione Irrigazione Est Sesia",
-      "provider": "independent",
+      "provider": "local-isp",
       "domain": "estsesia.it",
       "confidence": 83,
       "flags": [
         "multiple_mx",
         "spf_softfail",
         "independent_mx_with_cloud_spf",
-        "provider_classified",
-        "provider_via_cname"
+        "provider_classified"
       ]
     },
     "IT-SA-OX8RPXWI": {
@@ -264118,15 +264149,14 @@
     },
     "IT-SA-VZXHMF59": {
       "name": "Consorzio Irriguo Miglioramento Fondiario Angiono Foglietti",
-      "provider": "independent",
+      "provider": "local-isp",
       "domain": "estsesia.it",
       "confidence": 83,
       "flags": [
         "multiple_mx",
         "spf_softfail",
         "independent_mx_with_cloud_spf",
-        "provider_classified",
-        "provider_via_cname"
+        "provider_classified"
       ]
     },
     "IT-SA-W5V45EZS": {

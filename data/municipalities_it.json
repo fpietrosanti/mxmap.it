@@ -44128,9 +44128,7 @@
     "district": "Potenza",
     "domain": "comune.filiano.pz.it",
     "osm_relation_id": 40786,
-    "domain_fallbacks": [
-      "filiano.com"
-    ],
+    "domain_fallbacks": [],
     "ipa_codice_ipa": "c_d593",
     "ipa_codice_categoria": "L6",
     "ipa_codice_istat": "11136277",
@@ -62785,7 +62783,7 @@
     "country": "IT",
     "region": "Calabria",
     "district": "Catanzaro",
-    "domain": "miglierina.asmenet.it",
+    "domain": "comune.miglierina.cz.it",
     "osm_relation_id": 39746,
     "domain_fallbacks": [],
     "ipa_codice_ipa": "c_f200",
@@ -182200,7 +182198,7 @@
   },
   {
     "id": "IT-L33-cpiaab",
-    "name": "CPIA  Avellino",
+    "name": "CPIA \"Valeria Solesin\" Avellino",
     "country": "IT",
     "region": null,
     "district": null,
@@ -335332,6 +335330,21 @@
     "domain_source": "sito_istituzionale"
   },
   {
+    "id": "IT-L37-DXCPHH6Z",
+    "name": "Fraternita Sistemi IS SCS",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "fraternitasistemi.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "DXCPHH6Z",
+    "ipa_codice_categoria": "L37",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "017029",
+    "domain_source": "sito_istituzionale"
+  },
+  {
     "id": "IT-L37-DZ8SDIRD",
     "name": "FONDAZIONE ITS TEC MOS TECNOLOGIE E SICUREZZA PER LA MOBILITA' SOSTENIBILE",
     "country": "IT",
@@ -340195,6 +340208,21 @@
     "ipa_codice_categoria": "L37",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "058088",
+    "domain_source": "sito_istituzionale"
+  },
+  {
+    "id": "IT-L37-QXSJ8M2L",
+    "name": "AZIENDA SPECIALE COMUNALE \"CAPRAROLA SERVIZI\"",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "caprarolaservizi.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "QXSJ8M2L",
+    "ipa_codice_categoria": "L37",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "056015",
     "domain_source": "sito_istituzionale"
   },
   {
