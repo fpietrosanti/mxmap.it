@@ -340211,21 +340211,6 @@
     "domain_source": "sito_istituzionale"
   },
   {
-    "id": "IT-L37-QXSJ8M2L",
-    "name": "AZIENDA SPECIALE COMUNALE \"CAPRAROLA SERVIZI\"",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "caprarolaservizi.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [],
-    "ipa_codice_ipa": "QXSJ8M2L",
-    "ipa_codice_categoria": "L37",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "056015",
-    "domain_source": "sito_istituzionale"
-  },
-  {
     "id": "IT-L37-QYUU47Q3",
     "name": "Società Trasporti Pubblici Brindisi s.p.a",
     "country": "IT",
@@ -361291,6 +361276,21 @@
     "ipa_codice_categoria": "SA",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "015007",
+    "domain_source": "sito_istituzionale"
+  },
+  {
+    "id": "IT-SA-QXSJ8M2L",
+    "name": "AZIENDA SPECIALE COMUNALE \"CAPRAROLA SERVIZI\"",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "caprarolaservizi.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "QXSJ8M2L",
+    "ipa_codice_categoria": "SA",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "056015",
     "domain_source": "sito_istituzionale"
   },
   {
