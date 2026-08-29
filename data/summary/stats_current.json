@@ -14,7 +14,7 @@
   {
    "bucket": "Italia — Cloud sovrano",
    "group": "ITA",
-   "count": 929,
+   "count": 930,
    "pct": 4.17
   },
   {
@@ -26,8 +26,8 @@
   {
    "bucket": "Italia — Infrastruttura autonoma",
    "group": "ITA",
-   "count": 3039,
-   "pct": 13.64
+   "count": 3038,
+   "pct": 13.63
   },
   {
    "bucket": "Altri provider esteri",
@@ -51,12 +51,12 @@
  "jurisdiction": [
   {
    "key": "domestic",
-   "count": 10517,
-   "pct": 45.91
+   "count": 10518,
+   "pct": 45.92
   },
   {
    "key": "foreign",
-   "count": 11449,
+   "count": 11448,
    "pct": 49.98
   },
   {
@@ -74,14 +74,14 @@
   {
    "provider": "google",
    "display": "Google Workspace",
-   "count": 6453,
+   "count": 6452,
    "pct": 28.96
   },
   {
    "provider": "aruba",
    "display": "Provider Italiano",
-   "count": 5145,
-   "pct": 23.09
+   "count": 5146,
+   "pct": 23.1
   },
   {
    "provider": "microsoft",
@@ -92,25 +92,25 @@
   {
    "provider": "independent",
    "display": "Infrastruttura autonoma",
-   "count": 3039,
-   "pct": 13.64
+   "count": 3038,
+   "pct": 13.63
   },
   {
    "provider": "local-isp",
    "display": "Provider Italiano",
-   "count": 1555,
-   "pct": 6.98
+   "count": 1554,
+   "pct": 6.97
   },
   {
    "provider": "regional-public",
    "display": "Cloud Italiano",
-   "count": 929,
+   "count": 930,
    "pct": 4.17
   },
   {
    "provider": "istruzione-miur-tenant",
    "display": "Microsoft 365",
-   "count": 868,
+   "count": 869,
    "pct": 3.9
   },
   {
@@ -181,8 +181,8 @@
   }
  ],
  "market": {
-  "top3_pct": 67.41,
-  "hhi": 1884.3
+  "top3_pct": 67.42,
+  "hhi": 1884.4
  },
  "confidence_bands": [
   {
@@ -207,6 +207,6 @@
   "dkim_pct": 15.51,
   "gateway_pct": 15.15
  },
- "generated": "2026-08-28T16:35:14Z",
+ "generated": "2026-08-29T11:04:51Z",
  "country": "IT"
 }

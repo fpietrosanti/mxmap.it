@@ -8,8 +8,8 @@ Livelli di confidenza della classificazione email, analitici e aggregati. Metodo
 
 | fascia | enti | % |
 |---|---:|---:|
-| 0.90-1.00 (molto alta) | 17359 | 75.8% |
-| 0.80-0.89 (alta) | 3625 | 15.8% |
+| 0.90-1.00 (molto alta) | 17361 | 75.8% |
+| 0.80-0.89 (alta) | 3623 | 15.8% |
 | 0.60-0.79 (media) | 1233 | 5.4% |
 | 0.01-0.59 (bassa) | 64 | 0.3% |
 | 0.00 (nulla / unknown) | 625 | 2.7% |
@@ -18,13 +18,13 @@ Livelli di confidenza della classificazione email, analitici e aggregati. Metodo
 
 | provider | enti | confidenza media | min | max |
 |---|---:|---:|---:|---:|
-| google | 6453 | 0.883 | 0.80 | 0.92 |
-| aruba | 5145 | 0.896 | 0.80 | 0.92 |
+| google | 6452 | 0.883 | 0.80 | 0.92 |
+| aruba | 5146 | 0.896 | 0.80 | 0.92 |
 | microsoft | 3423 | 0.929 | 0.80 | 0.96 |
-| independent | 3039 | 0.721 | 0.50 | 0.80 |
-| local-isp | 1555 | 0.892 | 0.80 | 0.92 |
-| regional-public | 929 | 0.894 | 0.80 | 0.90 |
-| istruzione-miur-tenant | 868 | 0.960 | 0.96 | 0.96 |
+| independent | 3038 | 0.721 | 0.50 | 0.80 |
+| local-isp | 1554 | 0.892 | 0.80 | 0.92 |
+| regional-public | 930 | 0.894 | 0.80 | 0.90 |
+| istruzione-miur-tenant | 869 | 0.960 | 0.96 | 0.96 |
 | register-it | 666 | 0.890 | 0.80 | 0.90 |
 | unknown | 625 | 0.000 | 0.00 | 0.00 |
 | ovh | 75 | 0.900 | 0.90 | 0.90 |
@@ -41,9 +41,9 @@ Livelli di confidenza della classificazione email, analitici e aggregati. Metodo
 
 | regola | enti | % |
 |---|---:|---:|
-| `mx_spf` | 17359 | 75.8% |
-| `mx_only` | 1883 | 8.2% |
-| `dom_mx_spf` | 1742 | 7.6% |
+| `mx_spf` | 17361 | 75.8% |
+| `mx_only` | 1882 | 8.2% |
+| `dom_mx_spf` | 1741 | 7.6% |
 | `frgn_mx_spf` | 985 | 4.3% |
 | `no_mx` | 625 | 2.7% |
 | `dom_mx_only` | 248 | 1.1% |
@@ -55,9 +55,9 @@ Dove risiede fisicamente il server di posta in entrata (Team Cymru ASN country):
 
 | giurisdizione | enti | % |
 |---|---:|---:|
-| 🇮🇹 Domestica (IT) | 10517 | 45.9% |
+| 🇮🇹 Domestica (IT) | 10518 | 45.9% |
 | Mista (IT + estero) | 246 | 1.1% |
-| 🌍 Estera | 11449 | 50.0% |
+| 🌍 Estera | 11448 | 50.0% |
 | Sconosciuta | 694 | 3.0% |
 
 **Domestic MX override** applicato a **193** enti: classificati cloud (Microsoft/Google) per segnale tenant/DKIM, ma con MX in entrata self-hosted domestico → riclassificati `independent` (il tenant cloud riflette Teams/SharePoint, non la posta).

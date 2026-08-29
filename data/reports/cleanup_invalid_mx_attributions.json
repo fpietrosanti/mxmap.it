@@ -1,5 +1,5 @@
 {
-  "n_purged": 510,
+  "n_purged": 509,
   "items": [
     {
       "id": "IT-C1-m_pi",
@@ -4268,17 +4268,6 @@
       "old_mx": "mail.register.it",
       "old_provider": "register-it",
       "old_reason": "MX record (mail.register.it) matches Register.it"
-    },
-    {
-      "id": "IT-L36-ccos_063",
-      "name": "Consorzio Cimitero Ottaviano San Giuseppe Vesuviano",
-      "codice_ipa": "ccos_063",
-      "seed_domain": "consorziocimiteroottavianosangiuseppevesuviano.it",
-      "claimed_domain": "comune.ottaviano.na.it",
-      "reject_reason": "unrelated",
-      "old_mx": "mx.comune.ottaviano.na.it",
-      "old_provider": "aruba",
-      "old_reason": "MX (mx.comune.ottaviano.na.it) on AS31034 (Aruba.it (IT)) -> aruba (ASN-based override)"
     },
     {
       "id": "IT-L36-cgampg",

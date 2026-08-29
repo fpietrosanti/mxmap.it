@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T17:26:34Z",
+  "generated_at": "2026-08-29T11:47:56Z",
   "run_id": null,
   "license": "CC BY-SA 4.0",
   "source": "https://github.com/mxmap-it/mxmap.it",
@@ -44,25 +44,25 @@
     },
     {
       "name": "Google Workspace",
-      "count": 6453,
+      "count": 6452,
       "pct": 28.2,
       "sovereignty": "extra_eu"
     },
     {
       "name": "Microsoft 365",
-      "count": 4291,
+      "count": 4292,
       "pct": 18.7,
       "sovereignty": "extra_eu"
     },
     {
       "name": "Infrastruttura autonoma",
-      "count": 3039,
+      "count": 3038,
       "pct": 13.3,
       "sovereignty": "it"
     },
     {
       "name": "Cloud Italiano",
-      "count": 929,
+      "count": 930,
       "pct": 4.1,
       "sovereignty": "it"
     },
