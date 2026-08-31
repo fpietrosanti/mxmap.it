@@ -5,24 +5,24 @@
   "median": 0.9,
   "mean_nonzero": 0.875,
   "buckets": {
-    "0.90-1.00 (molto alta)": 17359,
+    "0.90-1.00 (molto alta)": 17360,
     "0.80-0.89 (alta)": 3625,
     "0.00 (nulla / unknown)": 624,
-    "0.60-0.79 (media)": 1234,
+    "0.60-0.79 (media)": 1233,
     "0.01-0.59 (bassa)": 64
   },
   "rules": {
-    "mx_spf": 17359,
+    "mx_spf": 17360,
     "dom_mx_spf": 1743,
     "no_mx": 624,
     "mx_only": 1882,
     "frgn_mx_spf": 985,
-    "dom_mx_only": 249,
+    "dom_mx_only": 248,
     "frgn_mx_only": 64
   },
   "jurisdiction": {
-    "foreign": 11446,
-    "domestic": 10521,
+    "foreign": 11447,
+    "domestic": 10520,
     "mixed": 246,
     "unknown": 693
   },

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-30T10:36:13Z",
+  "generated_at": "2026-08-31T11:33:22Z",
   "run_id": null,
   "edition": "agosto 2026",
   "title": "Stato della sovranità digitale della posta elettronica della PA italiana",
@@ -12,8 +12,8 @@
       "kind": "executive",
       "findings": [
         "Il 48.24% delle PA usa provider extra-UE soggetti al CLOUD Act statunitense.",
-        "I provider italiani restano la prima scelta (51.22%), ma frammentati.",
-        "Scarto tra controllo legale (51.22%) e collocazione tecnica dell'MX (domestico 45.93%): è esso stesso un segnale.",
+        "I provider italiani restano la prima scelta (51.21%), ma frammentati.",
+        "Scarto tra controllo legale (51.21%) e collocazione tecnica dell'MX (domestico 45.93%): è esso stesso un segnale.",
         "Settori più esposti al CLOUD Act: Istruzione 78.32% · Sanità 64.47% · Ricerca 56.72%.",
         "Divario territoriale: Molise guida la sovranità (ISD 73.44%), Veneto è la più esposta al CLOUD Act (60.81%)."
       ],
@@ -24,7 +24,7 @@
         },
         {
           "label": "Sovranità italiana (ISD)",
-          "value": "51.22%"
+          "value": "51.21%"
         },
         {
           "label": "Soggette al CLOUD Act",
@@ -62,7 +62,7 @@
           "key": "it",
           "label": "Italiano",
           "pct": 49.8,
-          "count": 11412
+          "count": 11411
         },
         {
           "key": "eu_non_it",
@@ -74,7 +74,7 @@
           "key": "extra_eu",
           "label": "Extra-UE (CLOUD Act)",
           "pct": 46.9,
-          "count": 10750
+          "count": 10751
         },
         {
           "key": "unknown",
@@ -86,13 +86,13 @@
       "top_providers": [
         {
           "name": "Provider Italiano",
-          "count": 7442,
+          "count": 7441,
           "pct": 32.5,
           "sovereignty": "it"
         },
         {
           "name": "Google Workspace",
-          "count": 6453,
+          "count": 6454,
           "pct": 28.2,
           "sovereignty": "extra_eu"
         },
@@ -104,13 +104,13 @@
         },
         {
           "name": "Infrastruttura autonoma",
-          "count": 3041,
+          "count": 3040,
           "pct": 13.3,
           "sovereignty": "it"
         },
         {
           "name": "Cloud Italiano",
-          "count": 929,
+          "count": 930,
           "pct": 4.1,
           "sovereignty": "it"
         },
@@ -142,12 +142,12 @@
       "jurisdiction": [
         {
           "key": "domestic",
-          "count": 10521,
+          "count": 10520,
           "pct": 45.93
         },
         {
           "key": "foreign",
-          "count": 11446,
+          "count": 11447,
           "pct": 49.97
         },
         {
@@ -163,7 +163,7 @@
       ],
       "market": {
         "top3_pct": 67.41,
-        "hhi": 1884.6
+        "hhi": 1884.4
       }
     },
     {
@@ -204,8 +204,8 @@
         {
           "cluster": "Stazioni appaltanti",
           "n_entities": 616,
-          "usa_pct": 50.17,
-          "isd": 49.0
+          "usa_pct": 50.33,
+          "isd": 48.84
         },
         {
           "cluster": "Welfare, ASP/IPAB e case popolari",
@@ -356,8 +356,8 @@
         {
           "regione": "Lazio",
           "n": 1811,
-          "isd": 49.37,
-          "usa_pct": 50.11
+          "isd": 49.31,
+          "usa_pct": 50.17
         },
         {
           "regione": "Friuli-Venezia Giulia",
@@ -424,8 +424,8 @@
         {
           "macroarea": "Centro",
           "n": 4024,
-          "isd": 49.39,
-          "usa_pct": 49.97
+          "isd": 49.36,
+          "usa_pct": 50.0
         },
         {
           "macroarea": "Nord",
@@ -454,7 +454,7 @@
       "series": [
         {
           "date": "2026-08",
-          "isd": 51.22
+          "isd": 51.21
         }
       ],
       "note": "Monitoraggio appena avviato: la serie storica parte da questa edizione; i trend compariranno dai prossimi rilevamenti."

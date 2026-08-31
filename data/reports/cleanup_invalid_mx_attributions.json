@@ -1,5 +1,5 @@
 {
-  "n_purged": 509,
+  "n_purged": 505,
   "items": [
     {
       "id": "IT-C1-m_pi",
@@ -2345,17 +2345,6 @@
       "old_reason": "MX is proofpoint gateway; SPF+DKIM confirm microsoft"
     },
     {
-      "id": "IT-L1-sppaea",
-      "name": "Centro di formazione professionale Emma Hellenstainer gastronomia e culinaria Bressanone",
-      "codice_ipa": "sppaea",
-      "seed_domain": "hellenstainer.berufsschule.it",
-      "claimed_domain": "bressanone.it",
-      "reject_reason": "unrelated",
-      "old_mx": "bressanone-it.mail.protection.outlook.com",
-      "old_provider": "microsoft",
-      "old_reason": "MX record (bressanone-it.mail.protection.outlook.com) matches Microsoft"
-    },
-    {
       "id": "IT-L1-sppasm",
       "name": "Scuola Professionale Provinciale Alberghiera Savoy Merano",
       "codice_ipa": "sppasm",
@@ -2365,28 +2354,6 @@
       "old_mx": "mx07-0067de01.pphosted.com",
       "old_provider": "microsoft",
       "old_reason": "MX is proofpoint gateway; SPF+DKIM confirm microsoft"
-    },
-    {
-      "id": "IT-L1-sppem",
-      "name": "Scuola Professionale Provinciale Enrico Mattei - Scuola Professionale per Le Professioni Sociali Emmanuel Levinas",
-      "codice_ipa": "sppem",
-      "seed_domain": "mattei.fpbz.it",
-      "claimed_domain": "bressanone.it",
-      "reject_reason": "unrelated",
-      "old_mx": "bressanone-it.mail.protection.outlook.com",
-      "old_provider": "microsoft",
-      "old_reason": "MX record (bressanone-it.mail.protection.outlook.com) matches Microsoft"
-    },
-    {
-      "id": "IT-L1-sppictb",
-      "name": "Centro di formazione professionale Christian Josef Tschuggmall Bressanone",
-      "codice_ipa": "sppictb",
-      "seed_domain": "tschuggmall.berufsschule.it",
-      "claimed_domain": "bressanone.it",
-      "reject_reason": "unrelated",
-      "old_mx": "bressanone-it.mail.protection.outlook.com",
-      "old_provider": "microsoft",
-      "old_reason": "MX record (bressanone-it.mail.protection.outlook.com) matches Microsoft"
     },
     {
       "id": "IT-L1-spps",
@@ -2516,9 +2483,9 @@
       "seed_domain": "montanacigno.com",
       "claimed_domain": "casacalendacomune.it",
       "reject_reason": "unrelated",
-      "old_mx": "alltheemails.com",
-      "old_provider": "independent",
-      "old_reason": "MX (alltheemails.com) is self-hosted"
+      "old_mx": "mail.h-email.net",
+      "old_provider": "local-isp",
+      "old_reason": "MX (mail.h-email.net) hosted on Local ISP (Hetzner (DE))"
     },
     {
       "id": "IT-L12-CMMC",
@@ -2563,17 +2530,6 @@
       "old_mx": "m3-b.evnom.com",
       "old_provider": "seeweb",
       "old_reason": "MX record (m3-b.evnom.com, smtp-avas.seeweb.it) matches Seeweb"
-    },
-    {
-      "id": "IT-L12-cc_bress",
-      "name": "Comunita' Comprensoriale Valle Isarco",
-      "codice_ipa": "cc_bress",
-      "seed_domain": "bzgeisacktal.it",
-      "claimed_domain": "bressanone.it",
-      "reject_reason": "unrelated",
-      "old_mx": "bressanone-it.mail.protection.outlook.com",
-      "old_provider": "microsoft",
-      "old_reason": "MX record (bressanone-it.mail.protection.outlook.com) matches Microsoft"
     },
     {
       "id": "IT-L12-cm_intem",
@@ -2923,9 +2879,9 @@
       "seed_domain": "unionecastellodigerionecb.it",
       "claimed_domain": "casacalendacomune.it",
       "reject_reason": "unrelated",
-      "old_mx": "alltheemails.com",
-      "old_provider": "independent",
-      "old_reason": "MX (alltheemails.com) is self-hosted"
+      "old_mx": "mail.h-email.net",
+      "old_provider": "local-isp",
+      "old_reason": "MX (mail.h-email.net) hosted on Local ISP (Hetzner (DE))"
     },
     {
       "id": "IT-L18-uco",
