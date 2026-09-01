@@ -1,5 +1,5 @@
 {
-  "n_purged": 505,
+  "n_purged": 506,
   "items": [
     {
       "id": "IT-C1-m_pi",
@@ -2316,7 +2316,7 @@
       "name": "Scuola Professionale per L'Agricoltura e L'Economia Domestica Salern Con Sede a Varna",
       "codice_ipa": "splalsav",
       "seed_domain": "fachschule-salern.it",
-      "claimed_domain": "gemeinde.vahrn.bz.it",
+      "claimed_domain": "comune.varna.bz.it",
       "reject_reason": "unrelated",
       "old_mx": "es1.gvcc.net",
       "old_provider": "regional-public",
@@ -4202,6 +4202,17 @@
       "old_mx": "mx.comune.pesche.is.it",
       "old_provider": "aruba",
       "old_reason": "MX (mx.comune.pesche.is.it) on AS31034 (Aruba.it (IT)) -> aruba (ASN-based override)"
+    },
+    {
+      "id": "IT-L36-casp",
+      "name": "Consorzio Acque di Scarico Pusteria",
+      "codice_ipa": "casp",
+      "seed_domain": "abwasserkonsortium-pustertal.bz.it",
+      "claimed_domain": "comune.sanlorenzodisebato.bz.it",
+      "reject_reason": "unrelated",
+      "old_mx": "es1.gvcc.net",
+      "old_provider": "regional-public",
+      "old_reason": "MX record (es1.gvcc.net, es2.gvcc.net) matches Italian regional public ICT"
     },
     {
       "id": "IT-L36-cassb",

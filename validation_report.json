@@ -1,5 +1,5 @@
 {
-  "total": 22906,
+  "total": 22879,
   "average_score": 80.7,
   "high_confidence_pct": 73.8,
   "quality_passed": false,
@@ -15644,7 +15644,7 @@
     "IT-C14-oddadal": {
       "name": "Ordine Dei Dottori Agronomi e Dei Dottori Forestali di Alessandria",
       "provider": "local-isp",
-      "domain": "conaf.it",
+      "domain": "ordinealessandria.conaf.it",
       "confidence": 80,
       "flags": [
         "spf_strict",
@@ -15879,13 +15879,13 @@
     },
     "IT-C14-oddafpo": {
       "name": "Ordine Dei Dottori Agronomi e Dei Dottori Forestali della Provincia di Oristano",
-      "provider": "unknown",
+      "provider": "local-isp",
       "domain": "ordineoristano.conaf.it",
-      "confidence": 15,
+      "confidence": 80,
       "flags": [
-        "no_mx",
-        "no_spf",
-        "provider_unknown"
+        "spf_strict",
+        "independent_mx_with_cloud_spf",
+        "provider_classified"
       ]
     },
     "IT-C14-oddafvi": {
@@ -27181,13 +27181,13 @@
     },
     "IT-COM-001113": {
       "name": "Comune di Germagnano",
-      "provider": "independent",
+      "provider": "unknown",
       "domain": "comune.germagnano.to.it",
-      "confidence": 80,
+      "confidence": 15,
       "flags": [
-        "spf_strict",
-        "independent_mx_with_cloud_spf",
-        "provider_classified"
+        "no_mx",
+        "no_spf",
+        "provider_unknown"
       ]
     },
     "IT-COM-001114": {
@@ -28648,12 +28648,11 @@
     },
     "IT-COM-001242": {
       "name": "Comune di San Germano Chisone",
-      "provider": "regional-public",
-      "domain": "comune.sangermanochisone.to.it",
-      "confidence": 90,
+      "provider": "independent",
+      "domain": "cert.comune.sangermanochisone.to.it",
+      "confidence": 50,
       "flags": [
-        "spf_strict",
-        "mx_spf_match",
+        "no_spf",
         "provider_classified"
       ]
     },
@@ -30838,13 +30837,13 @@
     },
     "IT-COM-003058": {
       "name": "Comune di Cureggio",
-      "provider": "unknown",
-      "domain": "comune.cureggio.no.it",
-      "confidence": 15,
+      "provider": "independent",
+      "domain": "cert.ruparpiemonte.it",
+      "confidence": 80,
       "flags": [
-        "no_mx",
-        "no_spf",
-        "provider_unknown"
+        "spf_strict",
+        "independent_mx_with_cloud_spf",
+        "provider_classified"
       ]
     },
     "IT-COM-003060": {
@@ -39348,10 +39347,11 @@
     "IT-COM-008046": {
       "name": "Comune di Pornassio",
       "provider": "aruba",
-      "domain": "pec.pornassio.org",
-      "confidence": 68,
+      "domain": "comune.pornassio.im.it",
+      "confidence": 78,
       "flags": [
         "spf_softfail",
+        "independent_mx_with_cloud_spf",
         "provider_classified"
       ]
     },
@@ -90456,13 +90456,12 @@
     },
     "IT-COM-066093": {
       "name": "Comune di Scanno",
-      "provider": "unknown",
+      "provider": "aruba",
       "domain": "comune.scanno.aq.it",
-      "confidence": 15,
+      "confidence": 68,
       "flags": [
-        "no_mx",
-        "no_spf",
-        "provider_unknown"
+        "spf_softfail",
+        "provider_classified"
       ]
     },
     "IT-COM-066094": {
@@ -108297,13 +108296,13 @@
     },
     "IT-COM-096050": {
       "name": "Comune di Pray",
-      "provider": "unknown",
+      "provider": "aruba",
       "domain": "comune.pray.bi.it",
-      "confidence": 15,
+      "confidence": 90,
       "flags": [
-        "no_mx",
-        "no_spf",
-        "provider_unknown"
+        "spf_strict",
+        "mx_spf_match",
+        "provider_classified"
       ]
     },
     "IT-COM-096053": {
@@ -131075,11 +131074,10 @@
     },
     "IT-L18-udcmc_": {
       "name": "Unione Dei Comuni Montani del Casentino",
-      "provider": "independent",
-      "domain": "postacert.toscana.it",
-      "confidence": 90,
+      "provider": "regional-public",
+      "domain": "uc.casentino.toscana.it",
+      "confidence": 85,
       "flags": [
-        "spf_strict",
         "mx_spf_match",
         "provider_classified"
       ]
@@ -135877,18 +135875,6 @@
         "provider_classified"
       ]
     },
-    "IT-L33-897QGW69": {
-      "name": "ISTITUTO DI ISTRUZIONE SUPERIORE \"ALBE STEINER\"",
-      "provider": "google",
-      "domain": "albesteiner.edu.it",
-      "confidence": 93,
-      "flags": [
-        "multiple_mx",
-        "spf_softfail",
-        "mx_spf_match",
-        "provider_classified"
-      ]
-    },
     "IT-L33-8KA77F34": {
       "name": "ISTITUTO D'ISTRUZIONE SUPERIORE \"JACI - DUILIO\"",
       "provider": "google",
@@ -139437,16 +139423,6 @@
         "provider_classified"
       ]
     },
-    "IT-L33-cds_063": {
-      "name": "Circolo Didattico - Saviano",
-      "provider": "local-isp",
-      "domain": "primocircolosaviano.it",
-      "confidence": 50,
-      "flags": [
-        "no_spf",
-        "provider_classified"
-      ]
-    },
     "IT-L33-cdsbs": {
       "name": "Circolo Didattico San Benedetto San Severo",
       "provider": "istruzione-miur-tenant",
@@ -141850,18 +141826,6 @@
         "multiple_mx",
         "spf_softfail",
         "mx_spf_match",
-        "provider_classified"
-      ]
-    },
-    "IT-L33-icaqm": {
-      "name": "Istituto Comprensivo Alba Quartiere Mussotto e Sx Tanaro",
-      "provider": "google",
-      "domain": "icmussottosinistratanaro.edu.it",
-      "confidence": 55,
-      "flags": [
-        "multiple_mx",
-        "spf_strict",
-        "mx_spf_mismatch",
         "provider_classified"
       ]
     },
@@ -146397,18 +146361,6 @@
         "multiple_mx",
         "spf_softfail",
         "mx_spf_mismatch",
-        "provider_classified"
-      ]
-    },
-    "IT-L33-ics_6": {
-      "name": "Istituto Comprensivo Statale 2 A.CICCONE",
-      "provider": "google",
-      "domain": "ic2ciccone.edu.it",
-      "confidence": 93,
-      "flags": [
-        "multiple_mx",
-        "spf_softfail",
-        "mx_spf_match",
         "provider_classified"
       ]
     },
@@ -153853,18 +153805,6 @@
         "autodiscover_confirms"
       ]
     },
-    "IT-L33-istsc_LUIS01400A": {
-      "name": "ISTITUTO SUPERIORE - DON LAZZERI - STAGI",
-      "provider": "google",
-      "domain": "iisdonlazzeristagi.edu.it",
-      "confidence": 93,
-      "flags": [
-        "multiple_mx",
-        "spf_softfail",
-        "mx_spf_match",
-        "provider_classified"
-      ]
-    },
     "IT-L33-istsc_LUIS016002": {
       "name": "ISTITUTO SUPERIORE - E.FERMI",
       "provider": "independent",
@@ -154651,18 +154591,6 @@
       "flags": [
         "multiple_mx",
         "no_spf",
-        "provider_classified"
-      ]
-    },
-    "IT-L33-istsc_TOIS04700R": {
-      "name": "ISTITUTO SUPERIORE - GALILEI - FERRARI",
-      "provider": "google",
-      "domain": "galileiferrari.it",
-      "confidence": 53,
-      "flags": [
-        "multiple_mx",
-        "spf_softfail",
-        "mx_spf_mismatch",
         "provider_classified"
       ]
     },
@@ -168862,17 +168790,6 @@
         "provider_classified"
       ]
     },
-    "IT-L33-istsc_cnic82400b": {
-      "name": "ISTITUTO COMPRENSIVO - 'SANTO STEFANO BELBO'",
-      "provider": "google",
-      "domain": "icsantostefanobelbo.edu.it",
-      "confidence": 55,
-      "flags": [
-        "multiple_mx",
-        "no_spf",
-        "provider_classified"
-      ]
-    },
     "IT-L33-istsc_cnic825007": {
       "name": "ISTITUTO COMPRENSIVO - CHERASCO - S. TARICCO",
       "provider": "google",
@@ -169540,13 +169457,12 @@
     },
     "IT-L33-istsc_coic811002": {
       "name": "ISTITUTO COMPRENSIVO - IC CAPIAGO INTIMIANO",
-      "provider": "istruzione-miur-tenant",
+      "provider": "google",
       "domain": "lnx.icsci.edu.it",
-      "confidence": 80,
+      "confidence": 88,
       "flags": [
-        "spf_strict",
+        "spf_softfail",
         "mx_spf_match",
-        "multi_provider_spf:brevo+microsoft+regional-public",
         "provider_classified"
       ]
     },
@@ -174975,18 +174891,6 @@
         "provider_classified"
       ]
     },
-    "IT-L33-istsc_fiic81000b": {
-      "name": "ISTITUTO COMPRENSIVO - CAPRAIA LIMITE",
-      "provider": "google",
-      "domain": "iccapraiaelimite.edu.it",
-      "confidence": 93,
-      "flags": [
-        "multiple_mx",
-        "spf_softfail",
-        "mx_spf_match",
-        "provider_classified"
-      ]
-    },
     "IT-L33-istsc_fiic811007": {
       "name": "ISTITUTO COMPRENSIVO - BACCIO DA MONTELUPO",
       "provider": "istruzione-miur-tenant",
@@ -175802,18 +175706,6 @@
         "mx_spf_match",
         "provider_classified",
         "autodiscover_confirms"
-      ]
-    },
-    "IT-L33-istsc_fipc04000n": {
-      "name": "LICEO CLASSICO - MICHELANGIOLO",
-      "provider": "google",
-      "domain": "liceomichelangiolo.it",
-      "confidence": 93,
-      "flags": [
-        "multiple_mx",
-        "spf_softfail",
-        "mx_spf_match",
-        "provider_classified"
       ]
     },
     "IT-L33-istsc_fipm02000l": {
@@ -178364,17 +178256,6 @@
         "autodiscover_confirms"
       ]
     },
-    "IT-L33-istsc_gric80900q": {
-      "name": "ISTITUTO COMPRENSIVO - IC CASTIGLIONE PESC. - O.ORSINI",
-      "provider": "google",
-      "domain": "scuolecastiglione.edu.it",
-      "confidence": 55,
-      "flags": [
-        "multiple_mx",
-        "no_spf",
-        "provider_classified"
-      ]
-    },
     "IT-L33-istsc_gric81100q": {
       "name": "ISTITUTO COMPRENSIVO - IC CASTELDELPIANO - O.VANNINI",
       "provider": "google",
@@ -178475,18 +178356,6 @@
         "spf_strict",
         "mx_spf_match",
         "multi_provider_spf:brevo+microsoft+regional-public",
-        "provider_classified"
-      ]
-    },
-    "IT-L33-istsc_gric82400t": {
-      "name": "ISTITUTO COMPRENSIVO - I.C. ' DON LORENZO MILANI'",
-      "provider": "google",
-      "domain": "scuolainlaguna.edu.it",
-      "confidence": 55,
-      "flags": [
-        "multiple_mx",
-        "spf_strict",
-        "mx_spf_mismatch",
         "provider_classified"
       ]
     },
@@ -182357,18 +182226,6 @@
         "provider_classified"
       ]
     },
-    "IT-L33-istsc_luic84200a": {
-      "name": "ISTITUTO COMPRENSIVO - MONTECARLO",
-      "provider": "microsoft",
-      "domain": "icmontecarlo.edu.it",
-      "confidence": 95,
-      "flags": [
-        "spf_strict",
-        "mx_spf_match",
-        "provider_classified",
-        "autodiscover_confirms"
-      ]
-    },
     "IT-L33-istsc_luic843006": {
       "name": "ISTITUTO COMPRENSIVO -  LUCCA QUINTO",
       "provider": "google",
@@ -182484,18 +182341,6 @@
         "multiple_mx",
         "no_spf",
         "provider_classified"
-      ]
-    },
-    "IT-L33-istsc_lupc010009": {
-      "name": "LICEO CLASSICO - 'G.CARDUCCI'",
-      "provider": "microsoft",
-      "domain": "liceo-carducci.edu.it",
-      "confidence": 95,
-      "flags": [
-        "spf_strict",
-        "mx_spf_match",
-        "provider_classified",
-        "autodiscover_confirms"
       ]
     },
     "IT-L33-istsc_lups01000c": {
@@ -189981,17 +189826,6 @@
         "provider_classified"
       ]
     },
-    "IT-L33-istsc_naee021004": {
-      "name": "DIREZIONE DIDATTICA - NA 21 - MAMELI ZUPPETTA",
-      "provider": "google",
-      "domain": "21mamelizuppetta.edu.it",
-      "confidence": 55,
-      "flags": [
-        "multiple_mx",
-        "no_spf",
-        "provider_classified"
-      ]
-    },
     "IT-L33-istsc_naee03000v": {
       "name": "DIREZIONE DIDATTICA - NA 30 - PARINI",
       "provider": "google",
@@ -191934,17 +191768,6 @@
         "provider_classified"
       ]
     },
-    "IT-L33-istsc_naic8d7006": {
-      "name": "ISTITUTO COMPRENSIVO - POZZUOLI IC - 5 ARTIACO",
-      "provider": "google",
-      "domain": "ic5artiaco.edu.it",
-      "confidence": 55,
-      "flags": [
-        "multiple_mx",
-        "no_spf",
-        "provider_classified"
-      ]
-    },
     "IT-L33-istsc_naic8da007": {
       "name": "IC 3 \"de Curtis - Ungaretti - Iovino\"",
       "provider": "independent",
@@ -192841,16 +192664,6 @@
         "provider_classified"
       ]
     },
-    "IT-L33-istsc_namm10100p": {
-      "name": "ISTITUTO SECONDARIO DI I GRADO - VERGA G.-NAPOLI-",
-      "provider": "local-isp",
-      "domain": "scuolamediaverganapoli.it",
-      "confidence": 50,
-      "flags": [
-        "no_spf",
-        "provider_classified"
-      ]
-    },
     "IT-L33-istsc_namm15100q": {
       "name": "ISTITUTO SECONDARIO DI I GRADO - S.M.S. G. CAPORALE ACERRA",
       "provider": "google",
@@ -193260,18 +193073,6 @@
         "multiple_mx",
         "no_spf",
         "provider_classified"
-      ]
-    },
-    "IT-L33-istsc_napm230005": {
-      "name": "ISTITUTO MAGISTRALE - IST.MAGIS.M. SERAO - POMIGLIANO D'ARCO",
-      "provider": "microsoft",
-      "domain": "liceoserao.edu.it",
-      "confidence": 95,
-      "flags": [
-        "spf_strict",
-        "mx_spf_match",
-        "provider_classified",
-        "autodiscover_confirms"
       ]
     },
     "IT-L33-istsc_naps02000q": {
@@ -194568,18 +194369,6 @@
       "domain": "istitutocomprensivocaria.edu.it",
       "confidence": 85,
       "flags": [
-        "mx_spf_match",
-        "provider_classified"
-      ]
-    },
-    "IT-L33-istsc_nuic87300v": {
-      "name": "ISTITUTO COMPRENSIVO - NUORO 1 - 'FERDINANDO PODDA'",
-      "provider": "google",
-      "domain": "ic1nuoro.edu.it",
-      "confidence": 93,
-      "flags": [
-        "multiple_mx",
-        "spf_softfail",
         "mx_spf_match",
         "provider_classified"
       ]
@@ -196662,18 +196451,6 @@
         "provider_classified"
       ]
     },
-    "IT-L33-istsc_pcee00200r": {
-      "name": "DIREZIONE DIDATTICA - CD SECONDO CIRCOLO",
-      "provider": "google",
-      "domain": "secondocircolopc.edu.it",
-      "confidence": 53,
-      "flags": [
-        "multiple_mx",
-        "spf_softfail",
-        "mx_spf_mismatch",
-        "provider_classified"
-      ]
-    },
     "IT-L33-istsc_pcee00300l": {
       "name": "DIREZIONE DIDATTICA - CD TERZO CIRCOLO",
       "provider": "google",
@@ -197036,7 +196813,7 @@
     "IT-L33-istsc_pcps02000t": {
       "name": "LICEO SCIENTIFICO - LS LORENZO RESPIGHI",
       "provider": "google",
-      "domain": "liceorespighi.edu.it",
+      "domain": "liceorespighi.it",
       "confidence": 93,
       "flags": [
         "multiple_mx",
@@ -198696,18 +198473,6 @@
       "flags": [
         "multiple_mx",
         "no_spf",
-        "provider_classified"
-      ]
-    },
-    "IT-L33-istsc_pgee03600q": {
-      "name": "DIREZIONE DIDATTICA - G.MATTEOTTI/PRIMO CIRC.GUBBIO",
-      "provider": "google",
-      "domain": "primocircologubbio.edu.it",
-      "confidence": 53,
-      "flags": [
-        "multiple_mx",
-        "spf_softfail",
-        "mx_spf_mismatch",
         "provider_classified"
       ]
     },
@@ -200704,18 +200469,6 @@
         "mx_spf_match",
         "provider_classified",
         "provider_via_gateway_spf"
-      ]
-    },
-    "IT-L33-istsc_pric805003": {
-      "name": "Istituto Comprensivo di Sissa Trecasali",
-      "provider": "google",
-      "domain": "icsissatrecasali.edu.it",
-      "confidence": 93,
-      "flags": [
-        "multiple_mx",
-        "spf_softfail",
-        "mx_spf_match",
-        "provider_classified"
       ]
     },
     "IT-L33-istsc_pric80600v": {
@@ -210996,18 +210749,6 @@
         "provider_classified"
       ]
     },
-    "IT-L33-istsc_rnic80200d": {
-      "name": "ISTITUTO COMPRENSIVO - IC MONDAINO",
-      "provider": "google",
-      "domain": "icmondaino.edu.it",
-      "confidence": 93,
-      "flags": [
-        "multiple_mx",
-        "spf_softfail",
-        "mx_spf_match",
-        "provider_classified"
-      ]
-    },
     "IT-L33-istsc_rnic803009": {
       "name": "ISTITUTO COMPRENSIVO - IC VERUCCHIO",
       "provider": "google",
@@ -211603,18 +211344,6 @@
         "provider_classified"
       ]
     },
-    "IT-L33-istsc_saee053002": {
-      "name": "DIREZIONE DIDATTICA - EBOLI I",
-      "provider": "google",
-      "domain": "primocircoloeboli.edu.it",
-      "confidence": 53,
-      "flags": [
-        "multiple_mx",
-        "spf_softfail",
-        "mx_spf_mismatch",
-        "provider_classified"
-      ]
-    },
     "IT-L33-istsc_saee074003": {
       "name": "DIREZIONE DIDATTICA - MERCATO SAN SEVERINO I",
       "provider": "local-isp",
@@ -211649,17 +211378,6 @@
         "spf_softfail",
         "mx_spf_match",
         "provider_classified"
-      ]
-    },
-    "IT-L33-istsc_saee158002": {
-      "name": "DIREZIONE DIDATTICA - SARNO II",
-      "provider": "independent",
-      "domain": "secondocircolosarno.edu.it",
-      "confidence": 85,
-      "flags": [
-        "mx_spf_match",
-        "provider_classified",
-        "provider_via_gateway_spf"
       ]
     },
     "IT-L33-istsc_saee16100t": {
@@ -212115,18 +211833,6 @@
       "flags": [
         "multiple_mx",
         "spf_softfail",
-        "provider_classified"
-      ]
-    },
-    "IT-L33-istsc_saic88900p": {
-      "name": "ISTITUTO COMPRENSIVO - IST.COMPR. EBOLI - MATTEO RIPA",
-      "provider": "local-isp",
-      "domain": "icmatteoripa.edu.it",
-      "confidence": 95,
-      "flags": [
-        "multiple_mx",
-        "spf_strict",
-        "mx_spf_match",
         "provider_classified"
       ]
     },
@@ -217722,17 +217428,6 @@
         "provider_classified"
       ]
     },
-    "IT-L33-istsc_tois029007": {
-      "name": "ISTRUZIONE SECONDARIA SUPERIORE - J. BECCARI",
-      "provider": "google",
-      "domain": "istitutobeccari.edu.it",
-      "confidence": 55,
-      "flags": [
-        "multiple_mx",
-        "no_spf",
-        "provider_classified"
-      ]
-    },
     "IT-L33-istsc_tois032003": {
       "name": "ISTRUZIONE SECONDARIA SUPERIORE - I.I.S.MAJORANA",
       "provider": "google",
@@ -222450,18 +222145,6 @@
       "name": "ISTITUTO TECNICO INDUSTRIALE - I.T.I.S 'RIVA' - SARONNO",
       "provider": "google",
       "domain": "itisriva.edu.it",
-      "confidence": 93,
-      "flags": [
-        "multiple_mx",
-        "spf_softfail",
-        "mx_spf_match",
-        "provider_classified"
-      ]
-    },
-    "IT-L33-istsc_vbee00200n": {
-      "name": "DIREZIONE DIDATTICA - CD 'DOMODOSSOLA I'",
-      "provider": "google",
-      "domain": "scuole-milani.edu.it",
       "confidence": 93,
       "flags": [
         "multiple_mx",
@@ -228902,7 +228585,7 @@
     "IT-L34-XQZEJ3XC": {
       "name": "arciconfraternita sant'angelo dei rossi",
       "provider": "aruba",
-      "domain": "arciconfraternitadeiross.altervista.org",
+      "domain": "arciconfraternitadeirossi.it",
       "confidence": 83,
       "flags": [
         "spf_softfail",
@@ -254132,11 +253815,11 @@
     },
     "IT-L47-csdpcm": {
       "name": "Commissario Straordinario D.P.C.M. del 21 Gennaio 2011",
-      "provider": "aruba",
-      "domain": "pec.regione.campania.it",
-      "confidence": 88,
+      "provider": "microsoft",
+      "domain": "mitigazione-rischioidrogeologico.regione.campania.it",
+      "confidence": 90,
       "flags": [
-        "spf_softfail",
+        "spf_strict",
         "mx_spf_match",
         "provider_classified"
       ]
@@ -262790,11 +262473,11 @@
     },
     "IT-SA-MH8PWLTO": {
       "name": "Fondazione POL.I.S.",
-      "provider": "aruba",
-      "domain": "pec.regione.campania.it",
-      "confidence": 88,
+      "provider": "microsoft",
+      "domain": "fondazionepolis.regione.campania.it",
+      "confidence": 90,
       "flags": [
-        "spf_softfail",
+        "spf_strict",
         "mx_spf_match",
         "provider_classified"
       ]

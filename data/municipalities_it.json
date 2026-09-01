@@ -180609,23 +180609,6 @@
     "domain_source": "sito_istituzionale"
   },
   {
-    "id": "IT-L33-897QGW69",
-    "name": "ISTITUTO DI ISTRUZIONE SUPERIORE \"ALBE STEINER\"",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "albesteiner.edu.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [
-      "istruzione.it"
-    ],
-    "ipa_codice_ipa": "897QGW69",
-    "ipa_codice_categoria": "L33",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "001272",
-    "domain_source": "sito_istituzionale"
-  },
-  {
     "id": "IT-L33-8KA77F34",
     "name": "ISTITUTO D'ISTRUZIONE SUPERIORE \"JACI - DUILIO\"",
     "country": "IT",
@@ -181737,23 +181720,6 @@
     "ipa_codice_categoria": "L33",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "074012",
-    "domain_source": "sito_istituzionale"
-  },
-  {
-    "id": "IT-L33-cds_063",
-    "name": "Circolo Didattico - Saviano",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "primocircolosaviano.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [
-      "istruzione.it"
-    ],
-    "ipa_codice_ipa": "cds_063",
-    "ipa_codice_categoria": "L33",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "063076",
     "domain_source": "sito_istituzionale"
   },
   {
@@ -186379,23 +186345,6 @@
     "ipa_codice_categoria": "L33",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "022009",
-    "domain_source": "sito_istituzionale"
-  },
-  {
-    "id": "IT-L33-icaqm",
-    "name": "Istituto Comprensivo Alba Quartiere Mussotto e Sx Tanaro",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "icmussottosinistratanaro.edu.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [
-      "istruzione.it"
-    ],
-    "ipa_codice_ipa": "icaqm",
-    "ipa_codice_categoria": "L33",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "004003",
     "domain_source": "sito_istituzionale"
   },
   {
@@ -193233,23 +193182,6 @@
     "ipa_codice_categoria": "L33",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "108027",
-    "domain_source": "sito_istituzionale"
-  },
-  {
-    "id": "IT-L33-ics_6",
-    "name": "Istituto Comprensivo Statale 2 A.CICCONE",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "ic2ciccone.edu.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [
-      "istruzione.it"
-    ],
-    "ipa_codice_ipa": "ics_6",
-    "ipa_codice_categoria": "L33",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "063076",
     "domain_source": "sito_istituzionale"
   },
   {
@@ -224364,23 +224296,6 @@
     "domain_source": "sito_istituzionale"
   },
   {
-    "id": "IT-L33-istsc_cnic82400b",
-    "name": "ISTITUTO COMPRENSIVO - 'SANTO STEFANO BELBO'",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "icsantostefanobelbo.edu.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [
-      "istruzione.it"
-    ],
-    "ipa_codice_ipa": "istsc_cnic82400b",
-    "ipa_codice_categoria": "L33",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "004213",
-    "domain_source": "sito_istituzionale"
-  },
-  {
     "id": "IT-L33-istsc_cnic825007",
     "name": "ISTITUTO COMPRENSIVO - CHERASCO - S. TARICCO",
     "country": "IT",
@@ -233624,23 +233539,6 @@
     "domain_source": "sito_istituzionale"
   },
   {
-    "id": "IT-L33-istsc_fiic81000b",
-    "name": "ISTITUTO COMPRENSIVO - CAPRAIA LIMITE",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "iccapraiaelimite.edu.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [
-      "istruzione.it"
-    ],
-    "ipa_codice_ipa": "istsc_fiic81000b",
-    "ipa_codice_categoria": "L33",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "048008",
-    "domain_source": "sito_istituzionale"
-  },
-  {
     "id": "IT-L33-istsc_fiic811007",
     "name": "ISTITUTO COMPRENSIVO - BACCIO DA MONTELUPO",
     "country": "IT",
@@ -234912,23 +234810,6 @@
       "istruzione.it"
     ],
     "ipa_codice_ipa": "istsc_fipc030003",
-    "ipa_codice_categoria": "L33",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "048017",
-    "domain_source": "sito_istituzionale"
-  },
-  {
-    "id": "IT-L33-istsc_fipc04000n",
-    "name": "LICEO CLASSICO - MICHELANGIOLO",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "liceomichelangiolo.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [
-      "istruzione.it"
-    ],
-    "ipa_codice_ipa": "istsc_fipc04000n",
     "ipa_codice_categoria": "L33",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "048017",
@@ -238732,23 +238613,6 @@
     "domain_source": "sito_istituzionale"
   },
   {
-    "id": "IT-L33-istsc_gric80900q",
-    "name": "ISTITUTO COMPRENSIVO - IC CASTIGLIONE PESC. - O.ORSINI",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "scuolecastiglione.edu.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [
-      "istruzione.it"
-    ],
-    "ipa_codice_ipa": "istsc_gric80900q",
-    "ipa_codice_categoria": "L33",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "053006",
-    "domain_source": "sito_istituzionale"
-  },
-  {
     "id": "IT-L33-istsc_gric81100q",
     "name": "ISTITUTO COMPRENSIVO - IC CASTELDELPIANO - O.VANNINI",
     "country": "IT",
@@ -238899,23 +238763,6 @@
     "ipa_codice_categoria": "L33",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "053022",
-    "domain_source": "sito_istituzionale"
-  },
-  {
-    "id": "IT-L33-istsc_gric82400t",
-    "name": "ISTITUTO COMPRENSIVO - I.C. ' DON LORENZO MILANI'",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "scuolainlaguna.edu.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [
-      "istruzione.it"
-    ],
-    "ipa_codice_ipa": "istsc_gric82400t",
-    "ipa_codice_categoria": "L33",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "053018",
     "domain_source": "sito_istituzionale"
   },
   {
@@ -244800,23 +244647,6 @@
     "domain_source": "sito_istituzionale"
   },
   {
-    "id": "IT-L33-istsc_luic84200a",
-    "name": "ISTITUTO COMPRENSIVO - MONTECARLO",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "icmontecarlo.edu.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [
-      "istruzione.it"
-    ],
-    "ipa_codice_ipa": "istsc_luic84200a",
-    "ipa_codice_categoria": "L33",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "046021",
-    "domain_source": "sito_istituzionale"
-  },
-  {
     "id": "IT-L33-istsc_luic843006",
     "name": "ISTITUTO COMPRENSIVO -  LUCCA QUINTO",
     "country": "IT",
@@ -245021,23 +244851,6 @@
     "domain_source": "sito_istituzionale"
   },
   {
-    "id": "IT-L33-istsc_LUIS01400A",
-    "name": "ISTITUTO SUPERIORE - DON LAZZERI - STAGI",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "iisdonlazzeristagi.edu.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [
-      "istruzione.it"
-    ],
-    "ipa_codice_ipa": "istsc_LUIS01400A",
-    "ipa_codice_categoria": "L33",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "046024",
-    "domain_source": "sito_istituzionale"
-  },
-  {
     "id": "IT-L33-istsc_LUIS016002",
     "name": "ISTITUTO SUPERIORE - E.FERMI",
     "country": "IT",
@@ -245052,23 +244865,6 @@
     "ipa_codice_categoria": "L33",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "046017",
-    "domain_source": "sito_istituzionale"
-  },
-  {
-    "id": "IT-L33-istsc_lupc010009",
-    "name": "LICEO CLASSICO - 'G.CARDUCCI'",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "liceo-carducci.edu.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [
-      "istruzione.it"
-    ],
-    "ipa_codice_ipa": "istsc_lupc010009",
-    "ipa_codice_categoria": "L33",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "046033",
     "domain_source": "sito_istituzionale"
   },
   {
@@ -256272,23 +256068,6 @@
     "domain_source": "sito_istituzionale"
   },
   {
-    "id": "IT-L33-istsc_naee021004",
-    "name": "DIREZIONE DIDATTICA - NA 21 - MAMELI ZUPPETTA",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "21mamelizuppetta.edu.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [
-      "istruzione.it"
-    ],
-    "ipa_codice_ipa": "istsc_naee021004",
-    "ipa_codice_categoria": "L33",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "063049",
-    "domain_source": "sito_istituzionale"
-  },
-  {
     "id": "IT-L33-istsc_naee03000v",
     "name": "DIREZIONE DIDATTICA - NA 30 - PARINI",
     "country": "IT",
@@ -259230,23 +259009,6 @@
     "domain_source": "sito_istituzionale"
   },
   {
-    "id": "IT-L33-istsc_naic8d7006",
-    "name": "ISTITUTO COMPRENSIVO - POZZUOLI IC - 5 ARTIACO",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "ic5artiaco.edu.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [
-      "istruzione.it"
-    ],
-    "ipa_codice_ipa": "istsc_naic8d7006",
-    "ipa_codice_categoria": "L33",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "063060",
-    "domain_source": "sito_istituzionale"
-  },
-  {
     "id": "IT-L33-istsc_naic8da007",
     "name": "IC 3 \"de Curtis - Ungaretti - Iovino\"",
     "country": "IT",
@@ -260639,23 +260401,6 @@
     "domain_source": "sito_istituzionale"
   },
   {
-    "id": "IT-L33-istsc_namm10100p",
-    "name": "ISTITUTO SECONDARIO DI I GRADO - VERGA G.-NAPOLI-",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "scuolamediaverganapoli.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [
-      "istruzione.it"
-    ],
-    "ipa_codice_ipa": "istsc_namm10100p",
-    "ipa_codice_categoria": "L33",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "063049",
-    "domain_source": "sito_istituzionale"
-  },
-  {
     "id": "IT-L33-istsc_namm15100q",
     "name": "ISTITUTO SECONDARIO DI I GRADO - S.M.S. G. CAPORALE ACERRA",
     "country": "IT",
@@ -261263,23 +261008,6 @@
     "ipa_codice_categoria": "L33",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "063049",
-    "domain_source": "sito_istituzionale"
-  },
-  {
-    "id": "IT-L33-istsc_napm230005",
-    "name": "ISTITUTO MAGISTRALE - IST.MAGIS.M. SERAO - POMIGLIANO D'ARCO",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "liceoserao.edu.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [
-      "istruzione.it"
-    ],
-    "ipa_codice_ipa": "istsc_napm230005",
-    "ipa_codice_categoria": "L33",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "063057",
     "domain_source": "sito_istituzionale"
   },
   {
@@ -263202,23 +262930,6 @@
     "ipa_codice_categoria": "L33",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "114023",
-    "domain_source": "sito_istituzionale"
-  },
-  {
-    "id": "IT-L33-istsc_nuic87300v",
-    "name": "ISTITUTO COMPRENSIVO - NUORO 1 - 'FERDINANDO PODDA'",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "ic1nuoro.edu.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [
-      "istruzione.it"
-    ],
-    "ipa_codice_ipa": "istsc_nuic87300v",
-    "ipa_codice_categoria": "L33",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "114027",
     "domain_source": "sito_istituzionale"
   },
   {
@@ -266336,23 +266047,6 @@
     "domain_source": "sito_istituzionale"
   },
   {
-    "id": "IT-L33-istsc_pcee00200r",
-    "name": "DIREZIONE DIDATTICA - CD SECONDO CIRCOLO",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "secondocircolopc.edu.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [
-      "istruzione.it"
-    ],
-    "ipa_codice_ipa": "istsc_pcee00200r",
-    "ipa_codice_categoria": "L33",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "033032",
-    "domain_source": "sito_istituzionale"
-  },
-  {
     "id": "IT-L33-istsc_pcee00300l",
     "name": "DIREZIONE DIDATTICA - CD TERZO CIRCOLO",
     "country": "IT",
@@ -269401,23 +269095,6 @@
     "domain_source": "sito_istituzionale"
   },
   {
-    "id": "IT-L33-istsc_pgee03600q",
-    "name": "DIREZIONE DIDATTICA - G.MATTEOTTI/PRIMO CIRC.GUBBIO",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "primocircologubbio.edu.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [
-      "istruzione.it"
-    ],
-    "ipa_codice_ipa": "istsc_pgee03600q",
-    "ipa_codice_categoria": "L33",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "054024",
-    "domain_source": "sito_istituzionale"
-  },
-  {
     "id": "IT-L33-istsc_pgee03700g",
     "name": "DIREZIONE DIDATTICA - A. MORO/SECONDO CIRC.GUBBIO",
     "country": "IT",
@@ -272375,23 +272052,6 @@
     "ipa_codice_categoria": "L33",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "034014",
-    "domain_source": "sito_istituzionale"
-  },
-  {
-    "id": "IT-L33-istsc_pric805003",
-    "name": "Istituto Comprensivo di Sissa Trecasali",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "icsissatrecasali.edu.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [
-      "istruzione.it"
-    ],
-    "ipa_codice_ipa": "istsc_pric805003",
-    "ipa_codice_categoria": "L33",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "034049",
     "domain_source": "sito_istituzionale"
   },
   {
@@ -287692,23 +287352,6 @@
     "domain_source": "sito_istituzionale"
   },
   {
-    "id": "IT-L33-istsc_rnic80200d",
-    "name": "ISTITUTO COMPRENSIVO - IC MONDAINO",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "icmondaino.edu.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [
-      "istruzione.it"
-    ],
-    "ipa_codice_ipa": "istsc_rnic80200d",
-    "ipa_codice_categoria": "L33",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "099006",
-    "domain_source": "sito_istituzionale"
-  },
-  {
     "id": "IT-L33-istsc_rnic803009",
     "name": "ISTITUTO COMPRENSIVO - IC VERUCCHIO",
     "country": "IT",
@@ -288591,23 +288234,6 @@
     "domain_source": "sito_istituzionale"
   },
   {
-    "id": "IT-L33-istsc_saee053002",
-    "name": "DIREZIONE DIDATTICA - EBOLI I",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "primocircoloeboli.edu.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [
-      "istruzione.it"
-    ],
-    "ipa_codice_ipa": "istsc_saee053002",
-    "ipa_codice_categoria": "L33",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "065050",
-    "domain_source": "sito_istituzionale"
-  },
-  {
     "id": "IT-L33-istsc_saee074003",
     "name": "DIREZIONE DIDATTICA - MERCATO SAN SEVERINO I",
     "country": "IT",
@@ -288656,23 +288282,6 @@
     "ipa_codice_categoria": "L33",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "065088",
-    "domain_source": "sito_istituzionale"
-  },
-  {
-    "id": "IT-L33-istsc_saee158002",
-    "name": "DIREZIONE DIDATTICA - SARNO II",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "secondocircolosarno.edu.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [
-      "istruzione.it"
-    ],
-    "ipa_codice_ipa": "istsc_saee158002",
-    "ipa_codice_categoria": "L33",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "065135",
     "domain_source": "sito_istituzionale"
   },
   {
@@ -289353,23 +288962,6 @@
     "ipa_codice_categoria": "L33",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "065003",
-    "domain_source": "sito_istituzionale"
-  },
-  {
-    "id": "IT-L33-istsc_saic88900p",
-    "name": "ISTITUTO COMPRENSIVO - IST.COMPR. EBOLI - MATTEO RIPA",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "icmatteoripa.edu.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [
-      "istruzione.it"
-    ],
-    "ipa_codice_ipa": "istsc_saic88900p",
-    "ipa_codice_categoria": "L33",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "065050",
     "domain_source": "sito_istituzionale"
   },
   {
@@ -298017,23 +297609,6 @@
     "domain_source": "sito_istituzionale"
   },
   {
-    "id": "IT-L33-istsc_tois029007",
-    "name": "ISTRUZIONE SECONDARIA SUPERIORE - J. BECCARI",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "istitutobeccari.edu.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [
-      "istruzione.it"
-    ],
-    "ipa_codice_ipa": "istsc_tois029007",
-    "ipa_codice_categoria": "L33",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "001272",
-    "domain_source": "sito_istituzionale"
-  },
-  {
     "id": "IT-L33-istsc_tois032003",
     "name": "ISTRUZIONE SECONDARIA SUPERIORE - I.I.S.MAJORANA",
     "country": "IT",
@@ -298218,23 +297793,6 @@
     "ipa_codice_categoria": "L33",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "001191",
-    "domain_source": "sito_istituzionale"
-  },
-  {
-    "id": "IT-L33-istsc_TOIS04700R",
-    "name": "ISTITUTO SUPERIORE - GALILEI - FERRARI",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "galileiferrari.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [
-      "istruzione.it"
-    ],
-    "ipa_codice_ipa": "istsc_TOIS04700R",
-    "ipa_codice_categoria": "L33",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "001272",
     "domain_source": "sito_istituzionale"
   },
   {
@@ -305033,23 +304591,6 @@
     "ipa_codice_categoria": "L33",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "012119",
-    "domain_source": "sito_istituzionale"
-  },
-  {
-    "id": "IT-L33-istsc_vbee00200n",
-    "name": "DIREZIONE DIDATTICA - CD 'DOMODOSSOLA I'",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "scuole-milani.edu.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [
-      "istruzione.it"
-    ],
-    "ipa_codice_ipa": "istsc_vbee00200n",
-    "ipa_codice_categoria": "L33",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "103028",
     "domain_source": "sito_istituzionale"
   },
   {
