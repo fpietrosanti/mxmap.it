@@ -1,5 +1,5 @@
 {
-  "total": 22879,
+  "total": 22877,
   "average_score": 80.7,
   "high_confidence_pct": 73.8,
   "quality_passed": false,
@@ -15644,7 +15644,7 @@
     "IT-C14-oddadal": {
       "name": "Ordine Dei Dottori Agronomi e Dei Dottori Forestali di Alessandria",
       "provider": "local-isp",
-      "domain": "ordinealessandria.conaf.it",
+      "domain": "conaf.it",
       "confidence": 80,
       "flags": [
         "spf_strict",
@@ -15879,13 +15879,13 @@
     },
     "IT-C14-oddafpo": {
       "name": "Ordine Dei Dottori Agronomi e Dei Dottori Forestali della Provincia di Oristano",
-      "provider": "local-isp",
+      "provider": "unknown",
       "domain": "ordineoristano.conaf.it",
-      "confidence": 80,
+      "confidence": 15,
       "flags": [
-        "spf_strict",
-        "independent_mx_with_cloud_spf",
-        "provider_classified"
+        "no_mx",
+        "no_spf",
+        "provider_unknown"
       ]
     },
     "IT-C14-oddafvi": {
@@ -30837,13 +30837,13 @@
     },
     "IT-COM-003058": {
       "name": "Comune di Cureggio",
-      "provider": "independent",
-      "domain": "cert.ruparpiemonte.it",
-      "confidence": 80,
+      "provider": "unknown",
+      "domain": "comune.cureggio.no.it",
+      "confidence": 15,
       "flags": [
-        "spf_strict",
-        "independent_mx_with_cloud_spf",
-        "provider_classified"
+        "no_mx",
+        "no_spf",
+        "provider_unknown"
       ]
     },
     "IT-COM-003060": {
@@ -39347,11 +39347,10 @@
     "IT-COM-008046": {
       "name": "Comune di Pornassio",
       "provider": "aruba",
-      "domain": "comune.pornassio.im.it",
-      "confidence": 78,
+      "domain": "pec.pornassio.org",
+      "confidence": 68,
       "flags": [
         "spf_softfail",
-        "independent_mx_with_cloud_spf",
         "provider_classified"
       ]
     },
@@ -74379,14 +74378,12 @@
     },
     "IT-COM-044002": {
       "name": "Comune di Acquaviva Picena",
-      "provider": "aruba",
-      "domain": "comuneacquavivapicena.it",
-      "confidence": 83,
+      "provider": "register-it",
+      "domain": "comune.acquavivapicena.ap.it",
+      "confidence": 68,
       "flags": [
         "spf_softfail",
-        "independent_mx_with_cloud_spf",
-        "provider_classified",
-        "autodiscover_confirms"
+        "provider_classified"
       ]
     },
     "IT-COM-044005": {
@@ -90456,12 +90453,13 @@
     },
     "IT-COM-066093": {
       "name": "Comune di Scanno",
-      "provider": "aruba",
+      "provider": "unknown",
       "domain": "comune.scanno.aq.it",
-      "confidence": 68,
+      "confidence": 15,
       "flags": [
-        "spf_softfail",
-        "provider_classified"
+        "no_mx",
+        "no_spf",
+        "provider_unknown"
       ]
     },
     "IT-COM-066094": {
@@ -131074,10 +131072,11 @@
     },
     "IT-L18-udcmc_": {
       "name": "Unione Dei Comuni Montani del Casentino",
-      "provider": "regional-public",
-      "domain": "uc.casentino.toscana.it",
-      "confidence": 85,
+      "provider": "independent",
+      "domain": "postacert.toscana.it",
+      "confidence": 90,
       "flags": [
+        "spf_strict",
         "mx_spf_match",
         "provider_classified"
       ]
@@ -135180,6 +135179,17 @@
         "provider_classified"
       ]
     },
+    "IT-L33-09Q0MK8F": {
+      "name": "ISTITUTO COMPRENSIVO 2",
+      "provider": "google",
+      "domain": "ic2piacenza.edu.it",
+      "confidence": 90,
+      "flags": [
+        "spf_strict",
+        "mx_spf_match",
+        "provider_classified"
+      ]
+    },
     "IT-L33-0DWK5DFK": {
       "name": "LICEO UMBERTO BOCCIONI",
       "provider": "google",
@@ -138586,6 +138596,16 @@
         "independent_mx_with_cloud_spf",
         "provider_classified",
         "autodiscover_confirms"
+      ]
+    },
+    "IT-L33-VL6YTUB2": {
+      "name": "IIS MARTINETTI -UBERTINI",
+      "provider": "google",
+      "domain": "iismartinettiubertini.edu.it",
+      "confidence": 68,
+      "flags": [
+        "spf_softfail",
+        "provider_classified"
       ]
     },
     "IT-L33-VSQRYLQZ": {
@@ -188812,18 +188832,6 @@
         "provider_classified"
       ]
     },
-    "IT-L33-istsc_moic832004": {
-      "name": "ISTITUTO COMPRENSIVO - I.C. FIORANO MODENESE 1^",
-      "provider": "google",
-      "domain": "icfiorano.edu.it",
-      "confidence": 93,
-      "flags": [
-        "multiple_mx",
-        "spf_softfail",
-        "mx_spf_match",
-        "provider_classified"
-      ]
-    },
     "IT-L33-istsc_moic83300x": {
       "name": "ISTITUTO COMPRENSIVO - I.C. FERRARI MARANELLO",
       "provider": "google",
@@ -189868,16 +189876,6 @@
       "flags": [
         "multiple_mx",
         "spf_softfail",
-        "provider_classified"
-      ]
-    },
-    "IT-L33-istsc_naee039009": {
-      "name": "39 CIRCOLO DIDATTICO LEOPARDI-DORIA",
-      "provider": "local-isp",
-      "domain": "scuolaleopardi.edu.it",
-      "confidence": 50,
-      "flags": [
-        "no_spf",
         "provider_classified"
       ]
     },
@@ -215703,7 +215701,7 @@
       ]
     },
     "IT-L33-istsc_teic81900x": {
-      "name": "ISTITUTO OMNICOMPRENSIVO ISOLA G. SASSO-GRUE CASTELLI",
+      "name": "ISTITUTO COMPRENSIVO ISOLA DEL GRAN SASSO - COLLEDARA ( TE)",
       "provider": "google",
       "domain": "icisolacolledara.it",
       "confidence": 93,
@@ -217253,18 +217251,6 @@
         "provider_classified"
       ]
     },
-    "IT-L33-istsc_tois00600e": {
-      "name": "ISTRUZIONE SECONDARIA SUPERIORE - C. UBERTINI",
-      "provider": "istruzione-miur-tenant",
-      "domain": "iisubertini.gov.it",
-      "confidence": 80,
-      "flags": [
-        "spf_strict",
-        "mx_spf_match",
-        "multi_provider_spf:brevo+microsoft+regional-public",
-        "provider_classified"
-      ]
-    },
     "IT-L33-istsc_tois00700a": {
       "name": "ISTRUZIONE SECONDARIA SUPERIORE - TOMMASO D'ORIA",
       "provider": "google",
@@ -217494,17 +217480,6 @@
         "independent_mx_with_cloud_spf",
         "provider_classified",
         "autodiscover_confirms"
-      ]
-    },
-    "IT-L33-istsc_tois03900t": {
-      "name": "ISTRUZIONE SECONDARIA SUPERIORE - P. MARTINETTI",
-      "provider": "google",
-      "domain": "iismartinetti.edu.it",
-      "confidence": 73,
-      "flags": [
-        "multiple_mx",
-        "spf_softfail",
-        "provider_classified"
       ]
     },
     "IT-L33-istsc_tois04100t": {
@@ -242516,13 +242491,13 @@
     },
     "IT-L37-afisp": {
       "name": "Azienda Feltrina per i Servizi alla Persona",
-      "provider": "unknown",
-      "domain": "aziendafeltrina-serviziallapersona.it",
-      "confidence": 15,
+      "provider": "microsoft",
+      "domain": "aziendafeltrina.it",
+      "confidence": 85,
       "flags": [
-        "no_mx",
-        "no_spf",
-        "provider_unknown"
+        "mx_spf_match",
+        "provider_classified",
+        "provider_via_gateway_spf"
       ]
     },
     "IT-L37-afmcg": {
@@ -253815,11 +253790,11 @@
     },
     "IT-L47-csdpcm": {
       "name": "Commissario Straordinario D.P.C.M. del 21 Gennaio 2011",
-      "provider": "microsoft",
-      "domain": "mitigazione-rischioidrogeologico.regione.campania.it",
-      "confidence": 90,
+      "provider": "aruba",
+      "domain": "pec.regione.campania.it",
+      "confidence": 88,
       "flags": [
-        "spf_strict",
+        "spf_softfail",
         "mx_spf_match",
         "provider_classified"
       ]
@@ -262473,11 +262448,11 @@
     },
     "IT-SA-MH8PWLTO": {
       "name": "Fondazione POL.I.S.",
-      "provider": "microsoft",
-      "domain": "fondazionepolis.regione.campania.it",
-      "confidence": 90,
+      "provider": "aruba",
+      "domain": "pec.regione.campania.it",
+      "confidence": 88,
       "flags": [
-        "spf_strict",
+        "spf_softfail",
         "mx_spf_match",
         "provider_classified"
       ]

@@ -3491,7 +3491,7 @@
     "country": "IT",
     "region": "Marche",
     "district": "Ascoli Piceno",
-    "domain": "comuneacquavivapicena.it",
+    "domain": "comune.acquavivapicena.ap.it",
     "osm_relation_id": 42236,
     "domain_fallbacks": [],
     "ipa_codice_ipa": "c_a047",
@@ -179586,6 +179586,21 @@
     "domain_source": "sito_istituzionale"
   },
   {
+    "id": "IT-L33-09Q0MK8F",
+    "name": "ISTITUTO COMPRENSIVO 2",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "ic2piacenza.edu.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "09Q0MK8F",
+    "ipa_codice_categoria": "L33",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "033032",
+    "domain_source": "sito_istituzionale"
+  },
+  {
     "id": "IT-L33-0DWK5DFK",
     "name": "LICEO UMBERTO BOCCIONI",
     "country": "IT",
@@ -254572,23 +254587,6 @@
     "domain_source": "sito_istituzionale"
   },
   {
-    "id": "IT-L33-istsc_moic832004",
-    "name": "ISTITUTO COMPRENSIVO - I.C. FIORANO MODENESE 1^",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "icfiorano.edu.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [
-      "istruzione.it"
-    ],
-    "ipa_codice_ipa": "istsc_moic832004",
-    "ipa_codice_categoria": "L33",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "036013",
-    "domain_source": "sito_istituzionale"
-  },
-  {
     "id": "IT-L33-istsc_moic83300x",
     "name": "ISTITUTO COMPRENSIVO - I.C. FERRARI MARANELLO",
     "country": "IT",
@@ -256130,23 +256128,6 @@
       "istruzione.it"
     ],
     "ipa_codice_ipa": "istsc_naee03800d",
-    "ipa_codice_categoria": "L33",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "063049",
-    "domain_source": "sito_istituzionale"
-  },
-  {
-    "id": "IT-L33-istsc_naee039009",
-    "name": "39 CIRCOLO DIDATTICO LEOPARDI-DORIA",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "scuolaleopardi.edu.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [
-      "istruzione.it"
-    ],
-    "ipa_codice_ipa": "istsc_naee039009",
     "ipa_codice_categoria": "L33",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "063049",
@@ -294855,7 +294836,7 @@
   },
   {
     "id": "IT-L33-istsc_teic81900x",
-    "name": "ISTITUTO OMNICOMPRENSIVO ISOLA G. SASSO-GRUE CASTELLI",
+    "name": "ISTITUTO COMPRENSIVO ISOLA DEL GRAN SASSO - COLLEDARA ( TE)",
     "country": "IT",
     "region": null,
     "district": null,
@@ -297355,23 +297336,6 @@
     "domain_source": "sito_istituzionale"
   },
   {
-    "id": "IT-L33-istsc_tois00600e",
-    "name": "ISTRUZIONE SECONDARIA SUPERIORE - C. UBERTINI",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "iisubertini.gov.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [
-      "istruzione.it"
-    ],
-    "ipa_codice_ipa": "istsc_tois00600e",
-    "ipa_codice_categoria": "L33",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "001047",
-    "domain_source": "sito_istituzionale"
-  },
-  {
     "id": "IT-L33-istsc_tois00700a",
     "name": "ISTRUZIONE SECONDARIA SUPERIORE - TOMMASO D'ORIA",
     "country": "IT",
@@ -297708,23 +297672,6 @@
     "ipa_codice_categoria": "L33",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "001191",
-    "domain_source": "sito_istituzionale"
-  },
-  {
-    "id": "IT-L33-istsc_tois03900t",
-    "name": "ISTRUZIONE SECONDARIA SUPERIORE - P. MARTINETTI",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "iismartinetti.edu.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [
-      "istruzione.it"
-    ],
-    "ipa_codice_ipa": "istsc_tois03900t",
-    "ipa_codice_categoria": "L33",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "001047",
     "domain_source": "sito_istituzionale"
   },
   {
@@ -316014,6 +315961,21 @@
     "domain_source": "sito_istituzionale"
   },
   {
+    "id": "IT-L33-VL6YTUB2",
+    "name": "IIS MARTINETTI -UBERTINI",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "iismartinettiubertini.edu.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "VL6YTUB2",
+    "ipa_codice_categoria": "L33",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "001047",
+    "domain_source": "sito_istituzionale"
+  },
+  {
     "id": "IT-L33-VSQRYLQZ",
     "name": "IC M.D.P. CAPOLUOGO - VESPUCCI",
     "country": "IT",
@@ -330059,7 +330021,7 @@
     "country": "IT",
     "region": null,
     "district": null,
-    "domain": "aziendafeltrina-serviziallapersona.it",
+    "domain": "aziendafeltrina.it",
     "osm_relation_id": null,
     "domain_fallbacks": [],
     "ipa_codice_ipa": "afisp",
