@@ -179850,6 +179850,21 @@
     "domain_source": "sito_istituzionale"
   },
   {
+    "id": "IT-L33-22GDHE59",
+    "name": "I.I.S. ALDROVANDI RUBBIANI",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "aldrovandirubbiani.edu.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "22GDHE59",
+    "ipa_codice_categoria": "L33",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "037006",
+    "domain_source": "sito_istituzionale"
+  },
+  {
     "id": "IT-L33-25BSWEKR",
     "name": "I.I.S.S LISIDE F.S CABRINI",
     "country": "IT",
@@ -179915,6 +179930,21 @@
     "ipa_codice_categoria": "L33",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "074010",
+    "domain_source": "sito_istituzionale"
+  },
+  {
+    "id": "IT-L33-2QP82DEV",
+    "name": "IC CANTE - S.ROCCO",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "scuolamediacante.edu.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "2QP82DEV",
+    "ipa_codice_categoria": "L33",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "063034",
     "domain_source": "sito_istituzionale"
   },
   {
@@ -184169,6 +184199,21 @@
     "domain_source": "sito_istituzionale"
   },
   {
+    "id": "IT-L33-CYKZ1OSY",
+    "name": "ISTITUTO COMPRENSIVO 4",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "ic4piacenza.edu.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "CYKZ1OSY",
+    "ipa_codice_categoria": "L33",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "033032",
+    "domain_source": "sito_istituzionale"
+  },
+  {
     "id": "IT-L33-D0KLAYIL",
     "name": "Istituto Comprensivo Statale Mondragone 1",
     "country": "IT",
@@ -184368,6 +184413,23 @@
     "ipa_codice_categoria": "L33",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "049007",
+    "domain_source": "sito_istituzionale"
+  },
+  {
+    "id": "IT-L33-DI1DTXPK",
+    "name": "I.C. \"ALTO VERBANO - CANNOBIO\"",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "icaltoverbanocannobio.edu.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [
+      "istruzione.it"
+    ],
+    "ipa_codice_ipa": "DI1DTXPK",
+    "ipa_codice_categoria": "L33",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "103033",
     "domain_source": "sito_istituzionale"
   },
   {
@@ -184706,6 +184768,21 @@
     "ipa_codice_categoria": "L33",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "034027",
+    "domain_source": "sito_istituzionale"
+  },
+  {
+    "id": "IT-L33-F1RKE7HD",
+    "name": "ISTITUTO ISTRUZIONE SUPERIORE F. DE CECCO",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "alberghierodececco.edu.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "F1RKE7HD",
+    "ipa_codice_categoria": "L33",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "068028",
     "domain_source": "sito_istituzionale"
   },
   {
@@ -185295,6 +185372,21 @@
     "ipa_codice_categoria": "L33",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "063027",
+    "domain_source": "sito_istituzionale"
+  },
+  {
+    "id": "IT-L33-HJ5M9AHL",
+    "name": "I.C. 3 CATULLO",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "ic3catullo.edu.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "HJ5M9AHL",
+    "ipa_codice_categoria": "L33",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "063057",
     "domain_source": "sito_istituzionale"
   },
   {
@@ -189896,23 +189988,6 @@
     "domain_source": "sito_istituzionale"
   },
   {
-    "id": "IT-L33-icicpg",
-    "name": "Istituto Comprensivo I.C. Porto Garibaldi",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "istitutocomprensivoportogaribaldi.edu.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [
-      "istruzione.it"
-    ],
-    "ipa_codice_ipa": "icicpg",
-    "ipa_codice_categoria": "L33",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "038006",
-    "domain_source": "sito_istituzionale"
-  },
-  {
     "id": "IT-L33-icicpt",
     "name": "Istituto Comprensivo I.C. Palazzeschi Torino",
     "country": "IT",
@@ -193503,23 +193578,6 @@
     "ipa_codice_categoria": "L33",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "065140",
-    "domain_source": "sito_istituzionale"
-  },
-  {
-    "id": "IT-L33-icscsna",
-    "name": "I.C. 4 Sulmona-catullo-salesiane",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "icsulmonacatullo.edu.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [
-      "istruzione.it"
-    ],
-    "ipa_codice_ipa": "icscsna",
-    "ipa_codice_categoria": "L33",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "063057",
     "domain_source": "sito_istituzionale"
   },
   {
@@ -224535,7 +224593,7 @@
   },
   {
     "id": "IT-L33-istsc_cnic840009",
-    "name": "ISTITUTO COMPRENSIVO - 'CERVASCA'",
+    "name": "ISTITUTO COMPRENSIVO CERVASCA - BERNEZZO \"D. GALIMBERTI\"",
     "country": "IT",
     "region": null,
     "district": null,
@@ -255521,23 +255579,6 @@
     "domain_source": "sito_istituzionale"
   },
   {
-    "id": "IT-L33-istsc_msps020002",
-    "name": "LICEO SCIENTIFICO - 'GUGLIELMO MARCONI'",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "lsmarconi.edu.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [
-      "istruzione.it"
-    ],
-    "ipa_codice_ipa": "istsc_msps020002",
-    "ipa_codice_categoria": "L33",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "045003",
-    "domain_source": "sito_istituzionale"
-  },
-  {
     "id": "IT-L33-istsc_msrh010005",
     "name": "Istituto Professionale di Stato Servizi per l'Enogastronomia e l'Ospitalita' Alberghiera",
     "country": "IT",
@@ -262553,23 +262594,6 @@
     "ipa_codice_categoria": "L33",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "114037",
-    "domain_source": "sito_istituzionale"
-  },
-  {
-    "id": "IT-L33-istsc_nuic82900r",
-    "name": "ISTITUTO COMPRENSIVO - ORGOSOLO",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "istitutocomprensivoorgosolo.edu.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [
-      "istruzione.it"
-    ],
-    "ipa_codice_ipa": "istsc_nuic82900r",
-    "ipa_codice_categoria": "L33",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "114035",
     "domain_source": "sito_istituzionale"
   },
   {
@@ -311892,23 +311916,6 @@
     "domain_source": "sito_istituzionale"
   },
   {
-    "id": "IT-L33-itslt",
-    "name": "Istituto Tecnico Scaruffi - Levi - Tricolore",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "scaruffilevitricolore.edu.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [
-      "istruzione.it"
-    ],
-    "ipa_codice_ipa": "itslt",
-    "ipa_codice_categoria": "L33",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "035033",
-    "domain_source": "sito_istituzionale"
-  },
-  {
     "id": "IT-L33-ITTB",
     "name": "ITT M. Buonarroti",
     "country": "IT",
@@ -312074,6 +312081,21 @@
     "ipa_codice_categoria": "L33",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "015146",
+    "domain_source": "sito_istituzionale"
+  },
+  {
+    "id": "IT-L33-J3MFVBSM",
+    "name": "ISTITUTO ISTRUZIONE SUPERIORE \"M. SERAO\"",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "liceoserao.edu.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "J3MFVBSM",
+    "ipa_codice_categoria": "L33",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "063057",
     "domain_source": "sito_istituzionale"
   },
   {
@@ -314988,6 +315010,21 @@
     "domain_source": "sito_istituzionale"
   },
   {
+    "id": "IT-L33-R79NF8V6",
+    "name": "ISTITUTO COMPRENSIVO 5 PIACENZA",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "ic5piacenza.edu.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "R79NF8V6",
+    "ipa_codice_categoria": "L33",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "033032",
+    "domain_source": "sito_istituzionale"
+  },
+  {
     "id": "IT-L33-RDLAYW1V",
     "name": "ISTITUTO COMPRENSIVO TODI - MASSA MARTANA",
     "country": "IT",
@@ -315404,6 +315441,21 @@
     "ipa_codice_categoria": "L33",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "075029",
+    "domain_source": "sito_istituzionale"
+  },
+  {
+    "id": "IT-L33-SR6XEJWO",
+    "name": "I.C. DON MILANI LEOPARDI",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "donmilanileopardimontessori.edu.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "SR6XEJWO",
+    "ipa_codice_categoria": "L33",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "063084",
     "domain_source": "sito_istituzionale"
   },
   {
@@ -316363,6 +316415,21 @@
     "domain_source": "sito_istituzionale"
   },
   {
+    "id": "IT-L33-XUX0ZJK5",
+    "name": "ISTITUTO COMPRENSIVO 6",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "ic6piacenza.edu.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "XUX0ZJK5",
+    "ipa_codice_categoria": "L33",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "033032",
+    "domain_source": "sito_istituzionale"
+  },
+  {
     "id": "IT-L33-Y46K4EUB",
     "name": "ISTITUTO COMPRENSIVO STATALE G.B. BASILE - DE FILIPPO",
     "country": "IT",
@@ -316694,6 +316761,21 @@
     "ipa_codice_categoria": "L33",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "085004",
+    "domain_source": "sito_istituzionale"
+  },
+  {
+    "id": "IT-L33-ZKLFWH6D",
+    "name": "ISTITUTO COMPRENSIVO SAURO MORELLI",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "ic2sauro-morelli.edu.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "ZKLFWH6D",
+    "ipa_codice_categoria": "L33",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "063084",
     "domain_source": "sito_istituzionale"
   },
   {
@@ -339714,6 +339796,21 @@
     "domain_source": "sito_istituzionale"
   },
   {
+    "id": "IT-L37-QXSJ8M2L",
+    "name": "AZIENDA SPECIALE COMUNALE \"CAPRAROLA SERVIZI\"",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "caprarolaservizi.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "QXSJ8M2L",
+    "ipa_codice_categoria": "L37",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "056015",
+    "domain_source": "sito_istituzionale"
+  },
+  {
     "id": "IT-L37-QYUU47Q3",
     "name": "Società Trasporti Pubblici Brindisi s.p.a",
     "country": "IT",
@@ -359140,21 +359237,6 @@
     "domain_source": "sito_istituzionale"
   },
   {
-    "id": "IT-SA-ISEMLJY8",
-    "name": "casa spa",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "casaspa.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [],
-    "ipa_codice_ipa": "ISEMLJY8",
-    "ipa_codice_categoria": "SA",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "048017",
-    "domain_source": "sito_istituzionale"
-  },
-  {
     "id": "IT-SA-ITNM0P9Z",
     "name": "SERVIZIO IDRICO INTEGRATO COMUNI ALTO MANTOVANO - S.I.C.A.M.  S.R.L.",
     "country": "IT",
@@ -360779,21 +360861,6 @@
     "ipa_codice_categoria": "SA",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "015007",
-    "domain_source": "sito_istituzionale"
-  },
-  {
-    "id": "IT-SA-QXSJ8M2L",
-    "name": "AZIENDA SPECIALE COMUNALE \"CAPRAROLA SERVIZI\"",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "caprarolaservizi.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [],
-    "ipa_codice_ipa": "QXSJ8M2L",
-    "ipa_codice_categoria": "SA",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "056015",
     "domain_source": "sito_istituzionale"
   },
   {
@@ -363835,6 +363902,21 @@
     "ipa_codice_categoria": "SAG",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "058091",
+    "domain_source": "sito_istituzionale"
+  },
+  {
+    "id": "IT-SAG-ISEMLJY8",
+    "name": "casa spa",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "casaspa.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "ISEMLJY8",
+    "ipa_codice_categoria": "SAG",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "048017",
     "domain_source": "sito_istituzionale"
   },
   {

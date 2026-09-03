@@ -1,5 +1,5 @@
 {
-  "n_purged": 505,
+  "n_purged": 506,
   "items": [
     {
       "id": "IT-C1-m_pi",
@@ -2527,9 +2527,9 @@
       "seed_domain": "arcipelagoponziano.it",
       "claimed_domain": "comune.ponza.lt.it",
       "reject_reason": "unrelated",
-      "old_mx": "m3-b.evnom.com",
+      "old_mx": "mcc.evnom.com",
       "old_provider": "seeweb",
-      "old_reason": "MX record (m3-b.evnom.com, smtp-avas.seeweb.it) matches Seeweb"
+      "old_reason": "MX record (mcc.evnom.com, smtp-avas.seeweb.it) matches Seeweb"
     },
     {
       "id": "IT-L12-cm_intem",
@@ -3443,6 +3443,17 @@
       "old_mx": "smtp1.invallee.it",
       "old_provider": "microsoft",
       "old_reason": "MX is invallee gateway; SPF+DKIM confirm microsoft"
+    },
+    {
+      "id": "IT-L33-HJ5M9AHL",
+      "name": "I.C. 3 CATULLO",
+      "codice_ipa": "hj5m9ahl",
+      "seed_domain": "ic3catullo.edu.it",
+      "claimed_domain": "comune.pomiglianodarco.na.it",
+      "reject_reason": "unrelated",
+      "old_mx": "mail-av.comune.pomiglianodarco.na.it",
+      "old_provider": "seeweb",
+      "old_reason": "MX record (mail-av.comune.pomiglianodarco.na.it, mail.comune.pomiglianodarco.na.it) matches Seeweb"
     },
     {
       "id": "IT-L33-HO3UNG48",
