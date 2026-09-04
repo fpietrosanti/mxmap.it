@@ -146753,9 +146753,11 @@
     "country": "IT",
     "region": null,
     "district": null,
-    "domain": "dottoricommercialistimantova.it",
+    "domain": "mantova.commercialisti.it",
     "osm_relation_id": null,
-    "domain_fallbacks": [],
+    "domain_fallbacks": [
+      "dottoricommercialistimantova.it"
+    ],
     "ipa_codice_ipa": "oddcd_1",
     "ipa_codice_categoria": "C14",
     "ipa_codice_istat": null,
@@ -180099,6 +180101,21 @@
     "domain_source": "sito_istituzionale"
   },
   {
+    "id": "IT-L33-48MUH68H",
+    "name": "Istituto di Istruzione superiore \"Beccari Steiner\"",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "beccaristeiner.edu.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "48MUH68H",
+    "ipa_codice_categoria": "L33",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "001272",
+    "domain_source": "sito_istituzionale"
+  },
+  {
     "id": "IT-L33-4EMXGJX3",
     "name": "IC DON P. UVA-BATTISTI-FERRARIS (COSMAI)",
     "country": "IT",
@@ -180549,6 +180566,21 @@
     "ipa_codice_categoria": "L33",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "073008",
+    "domain_source": "sito_istituzionale"
+  },
+  {
+    "id": "IT-L33-7DUP2M8Y",
+    "name": "ISTITUTO COMPRENSIVO GUBBIO 2",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "secondocircologubbio.edu.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "7DUP2M8Y",
+    "ipa_codice_categoria": "L33",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "054024",
     "domain_source": "sito_istituzionale"
   },
   {
@@ -185519,6 +185551,21 @@
     "ipa_codice_categoria": "L33",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "072004",
+    "domain_source": "sito_istituzionale"
+  },
+  {
+    "id": "IT-L33-HYL6XIP9",
+    "name": "LICEO SCIENTIFICO STATALE LEONARDO DA VINCI",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "liceodavincimaglie.edu.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "HYL6XIP9",
+    "ipa_codice_categoria": "L33",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "075039",
     "domain_source": "sito_istituzionale"
   },
   {
@@ -192526,23 +192573,6 @@
     "ipa_codice_categoria": "L33",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "063073",
-    "domain_source": "sito_istituzionale"
-  },
-  {
-    "id": "IT-L33-icpsna",
-    "name": "Istituto Comprensivo 3 Ponte - Siciliano",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "ictrepontesiciliano.edu.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [
-      "istruzione.it"
-    ],
-    "ipa_codice_ipa": "icpsna",
-    "ipa_codice_categoria": "L33",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "063057",
     "domain_source": "sito_istituzionale"
   },
   {
@@ -215229,11 +215259,11 @@
   },
   {
     "id": "IT-L33-istsc_boic83000e",
-    "name": "ISTITUTO COMPRENSIVO - I.C. DI PIANORO",
+    "name": "I.C. PIANORO - RASTIGNANO",
     "country": "IT",
     "region": null,
     "district": null,
-    "domain": "icpianoro.edu.it",
+    "domain": "icpianororastignano.edu.it",
     "osm_relation_id": null,
     "domain_fallbacks": [
       "istruzione.it"
@@ -256107,23 +256137,6 @@
     "domain_source": "sito_istituzionale"
   },
   {
-    "id": "IT-L33-istsc_naee03000v",
-    "name": "DIREZIONE DIDATTICA - NA 30 - PARINI",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "scuolaparinina.edu.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [
-      "istruzione.it"
-    ],
-    "ipa_codice_ipa": "istsc_naee03000v",
-    "ipa_codice_categoria": "L33",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "063049",
-    "domain_source": "sito_istituzionale"
-  },
-  {
     "id": "IT-L33-istsc_naee03300a",
     "name": "DIREZIONE DIDATTICA - NA 33 - RISORGIMENTO",
     "country": "IT",
@@ -266049,23 +266062,6 @@
     "ipa_codice_categoria": "L33",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "082053",
-    "domain_source": "sito_istituzionale"
-  },
-  {
-    "id": "IT-L33-istsc_pcee00300l",
-    "name": "DIREZIONE DIDATTICA - CD TERZO CIRCOLO",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "pcterzocircolo.edu.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [
-      "istruzione.it"
-    ],
-    "ipa_codice_ipa": "istsc_pcee00300l",
-    "ipa_codice_categoria": "L33",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "033032",
     "domain_source": "sito_istituzionale"
   },
   {
@@ -313994,6 +313990,21 @@
     "domain_source": "sito_istituzionale"
   },
   {
+    "id": "IT-L33-N17QML6E",
+    "name": "ISTITUTO COMPRENSIVO ARTIACO DE AMICIS DIAZ",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "artiacodeamicisdiaz.edu.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "N17QML6E",
+    "ipa_codice_categoria": "L33",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "063060",
+    "domain_source": "sito_istituzionale"
+  },
+  {
     "id": "IT-L33-N3SKA38L",
     "name": "Istituto Comprensivo \"S. Pio X - G. Bovio\"",
     "country": "IT",
@@ -314229,6 +314240,21 @@
     "ipa_codice_categoria": "L33",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "082053",
+    "domain_source": "sito_istituzionale"
+  },
+  {
+    "id": "IT-L33-NSN8A6IR",
+    "name": "I.C. 1 CAPOLUOGO DON MILANI QUARTO",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "ic1capoluogodonmilani.edu.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "NSN8A6IR",
+    "ipa_codice_categoria": "L33",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "063063",
     "domain_source": "sito_istituzionale"
   },
   {
@@ -315831,6 +315857,21 @@
     "domain_source": "sito_istituzionale"
   },
   {
+    "id": "IT-L33-UGF32P52",
+    "name": "ISTITUTO DI ISTRUZIONE SUPERIORE J. BAROZZI",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "iisbarozzi.edu.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "UGF32P52",
+    "ipa_codice_categoria": "L33",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "036023",
+    "domain_source": "sito_istituzionale"
+  },
+  {
     "id": "IT-L33-UKTOXGZB",
     "name": "ISTITUTO COMPRENSIVO LOMBARDO RADICE",
     "country": "IT",
@@ -316045,6 +316086,21 @@
     "domain_source": "sito_istituzionale"
   },
   {
+    "id": "IT-L33-VT5GWEFZ",
+    "name": "Istituto Comprensivo 3",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "ic3piacenza.edu.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "VT5GWEFZ",
+    "ipa_codice_categoria": "L33",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "033032",
+    "domain_source": "sito_istituzionale"
+  },
+  {
     "id": "IT-L33-VWLC4TXV",
     "name": "Istituto Comprensivo Giuseppe Mazzini",
     "country": "IT",
@@ -316210,6 +316266,21 @@
     "ipa_codice_categoria": "L33",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "078033",
+    "domain_source": "sito_istituzionale"
+  },
+  {
+    "id": "IT-L33-WQ86QJ06",
+    "name": "SCARUFFI LEVI TRICOLORE",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "scaruffilevitricolore.edu.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "WQ86QJ06",
+    "ipa_codice_categoria": "L33",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "035033",
     "domain_source": "sito_istituzionale"
   },
   {
