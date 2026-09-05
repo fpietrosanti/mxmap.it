@@ -180686,6 +180686,21 @@
     "domain_source": "sito_istituzionale"
   },
   {
+    "id": "IT-L33-8ATK48M4",
+    "name": "ISTITUTO COMPRENSIVO EBOLI I - MATTEO RIPA",
+    "country": "IT",
+    "region": null,
+    "district": null,
+    "domain": "iceboli1matteoripa.edu.it",
+    "osm_relation_id": null,
+    "domain_fallbacks": [],
+    "ipa_codice_ipa": "8ATK48M4",
+    "ipa_codice_categoria": "L33",
+    "ipa_codice_istat": null,
+    "ipa_codice_comune_istat": "065050",
+    "domain_source": "sito_istituzionale"
+  },
+  {
     "id": "IT-L33-8KA77F34",
     "name": "ISTITUTO D'ISTRUZIONE SUPERIORE \"JACI - DUILIO\"",
     "country": "IT",
@@ -217014,23 +217029,6 @@
     "domain_source": "sito_istituzionale"
   },
   {
-    "id": "IT-L33-istsc_brrh01000q",
-    "name": "ISTITUTO PROFESSIONALE PER I SERVIZI ALBERGHIERI E RISTORAZIONE - IPSSAR 'S. PERTINI' - BRINDISI",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "alberghierobrindisi.edu.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [
-      "istruzione.it"
-    ],
-    "ipa_codice_ipa": "istsc_brrh01000q",
-    "ipa_codice_categoria": "L33",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "074001",
-    "domain_source": "sito_istituzionale"
-  },
-  {
     "id": "IT-L33-istsc_brtd01000t",
     "name": "ISTITUTO TECNICO ECONOMICO STATALE \"GIOVANNI CALO'\"",
     "country": "IT",
@@ -246095,7 +246093,7 @@
   },
   {
     "id": "IT-L33-istsc_meic83000x",
-    "name": "ISTITUTO COMPRENSIVO - I. C. N. 2 'GIOVANNI PAOLO II'",
+    "name": "ISTITUTO COMRENSIVO STATALE \"GIOVANNI PAOLO II\"",
     "country": "IT",
     "region": null,
     "district": null,
@@ -258956,23 +258954,6 @@
     "ipa_codice_categoria": "L33",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "063049",
-    "domain_source": "sito_istituzionale"
-  },
-  {
-    "id": "IT-L33-istsc_naic8cz007",
-    "name": "ISTITUTO COMPRENSIVO DON LORENZO MILANI",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "donmilani.edu.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [
-      "istruzione.it"
-    ],
-    "ipa_codice_ipa": "istsc_naic8cz007",
-    "ipa_codice_categoria": "L33",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "063084",
     "domain_source": "sito_istituzionale"
   },
   {
@@ -304578,23 +304559,6 @@
     "domain_source": "sito_istituzionale"
   },
   {
-    "id": "IT-L33-istsc_vbic80300b",
-    "name": "ISTITUTO COMPRENSIVO - IC 'CARMINE'",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "icarminecannobio.edu.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [
-      "istruzione.it"
-    ],
-    "ipa_codice_ipa": "istsc_vbic80300b",
-    "ipa_codice_categoria": "L33",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "103017",
-    "domain_source": "sito_istituzionale"
-  },
-  {
     "id": "IT-L33-istsc_vbic804007",
     "name": "Istituto Comprensivo Andrea Testore",
     "country": "IT",
@@ -304745,23 +304709,6 @@
     "ipa_codice_categoria": "L33",
     "ipa_codice_istat": null,
     "ipa_codice_comune_istat": "103072",
-    "domain_source": "sito_istituzionale"
-  },
-  {
-    "id": "IT-L33-istsc_vbic81600d",
-    "name": "ISTITUTO COMPRENSIVO - IC ALTO VERBANO",
-    "country": "IT",
-    "region": null,
-    "district": null,
-    "domain": "icaltoverbano.edu.it",
-    "osm_relation_id": null,
-    "domain_fallbacks": [
-      "istruzione.it"
-    ],
-    "ipa_codice_ipa": "istsc_vbic81600d",
-    "ipa_codice_categoria": "L33",
-    "ipa_codice_istat": null,
-    "ipa_codice_comune_istat": "103033",
     "domain_source": "sito_istituzionale"
   },
   {
