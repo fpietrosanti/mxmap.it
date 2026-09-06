@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-09-05T09:03:09Z",
+  "generated_at": "2026-09-06T09:29:12Z",
   "run_id": null,
   "license": "CC BY-SA 4.0",
   "source": "https://github.com/mxmap-it/mxmap.it",
   "totals": {
     "n_entities": 22885,
-    "n_with_mx": 22257,
+    "n_with_mx": 22258,
     "coverage_pct": 97.26
   },
   "indices": {
     "isd": 51.2,
     "cloud_act_pct": 48.25,
-    "n_classified": 22257
+    "n_classified": 22258
   },
   "sovereignty": {
     "extra_eu": {
@@ -25,12 +25,12 @@
       "label": "Europeo (non italiano)"
     },
     "it": {
-      "count": 11396,
+      "count": 11397,
       "pct": 49.8,
       "label": "Italiano"
     },
     "unknown": {
-      "count": 628,
+      "count": 627,
       "pct": 2.7,
       "label": "Sconosciuto"
     }
@@ -56,7 +56,7 @@
     },
     {
       "name": "Infrastruttura autonoma",
-      "count": 3035,
+      "count": 3036,
       "pct": 13.3,
       "sovereignty": "it"
     },
@@ -68,7 +68,7 @@
     },
     {
       "name": "Sconosciuto",
-      "count": 628,
+      "count": 627,
       "pct": 2.7,
       "sovereignty": "unknown"
     },
@@ -143,7 +143,7 @@
     {
       "cluster": "Sanità",
       "n_entities": 234,
-      "usa_pct": 63.2,
+      "usa_pct": 62.8,
       "dominant_provider": "Microsoft 365"
     },
     {

@@ -309731,9 +309731,7 @@
     "district": null,
     "domain": "iis-silva-ricci.edu.it",
     "osm_relation_id": null,
-    "domain_fallbacks": [
-      "istruzione.it"
-    ],
+    "domain_fallbacks": [],
     "ipa_codice_ipa": "istsc_vris01400d",
     "ipa_codice_categoria": "L33",
     "ipa_codice_istat": null,

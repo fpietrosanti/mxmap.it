@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T09:03:10Z",
+  "generated_at": "2026-09-06T09:29:12Z",
   "run_id": null,
   "edition": "settembre 2026",
   "title": "Stato della sovranità digitale della posta elettronica della PA italiana",
@@ -13,8 +13,8 @@
       "findings": [
         "Il 48.25% delle PA usa provider extra-UE soggetti al CLOUD Act statunitense.",
         "I provider italiani restano la prima scelta (51.2%), ma frammentati.",
-        "Scarto tra controllo legale (51.2%) e collocazione tecnica dell'MX (domestico 45.92%): è esso stesso un segnale.",
-        "Settori più esposti al CLOUD Act: Istruzione 78.36% · Sanità 64.91% · Ricerca 56.72%.",
+        "Scarto tra controllo legale (51.2%) e collocazione tecnica dell'MX (domestico 45.93%): è esso stesso un segnale.",
+        "Settori più esposti al CLOUD Act: Istruzione 78.36% · Sanità 64.47% · Ricerca 56.72%.",
         "Divario territoriale: Molise guida la sovranità (ISD 73.44%), Veneto è la più esposta al CLOUD Act (60.87%)."
       ],
       "metrics": [
@@ -62,7 +62,7 @@
           "key": "it",
           "label": "Italiano",
           "pct": 49.8,
-          "count": 11396
+          "count": 11397
         },
         {
           "key": "eu_non_it",
@@ -80,7 +80,7 @@
           "key": "unknown",
           "label": "Sconosciuto",
           "pct": 2.7,
-          "count": 628
+          "count": 627
         }
       ],
       "top_providers": [
@@ -104,7 +104,7 @@
         },
         {
           "name": "Infrastruttura autonoma",
-          "count": 3035,
+          "count": 3036,
           "pct": 13.3,
           "sovereignty": "it"
         },
@@ -116,7 +116,7 @@
         },
         {
           "name": "Sconosciuto",
-          "count": 628,
+          "count": 627,
           "pct": 2.7,
           "sovereignty": "unknown"
         },
@@ -142,8 +142,8 @@
       "jurisdiction": [
         {
           "key": "domestic",
-          "count": 10509,
-          "pct": 45.92
+          "count": 10510,
+          "pct": 45.93
         },
         {
           "key": "foreign",
@@ -157,7 +157,7 @@
         },
         {
           "key": "unknown",
-          "count": 698,
+          "count": 697,
           "pct": 3.05
         }
       ],
@@ -180,8 +180,8 @@
         {
           "cluster": "Enti territoriali (Comuni, Province, Città metrop., Regioni)",
           "n_entities": 8005,
-          "usa_pct": 26.06,
-          "isd": 73.62
+          "usa_pct": 26.07,
+          "isd": 73.61
         },
         {
           "cluster": "Ordini professionali, Camere di commercio, ACI",
@@ -222,8 +222,8 @@
         {
           "cluster": "Sanità (ASL, Aziende ospedaliere)",
           "n_entities": 234,
-          "usa_pct": 64.91,
-          "isd": 35.09
+          "usa_pct": 64.47,
+          "isd": 35.53
         },
         {
           "cluster": "Previdenza e casse",
@@ -270,7 +270,7 @@
         },
         {
           "cluster": "Sanità (ASL, Aziende ospedaliere)",
-          "usa_pct": 64.91,
+          "usa_pct": 64.47,
           "n_entities": 234
         },
         {
@@ -302,8 +302,8 @@
         {
           "regione": "Piemonte",
           "n": 2267,
-          "isd": 66.43,
-          "usa_pct": 33.3
+          "isd": 66.44,
+          "usa_pct": 33.29
         },
         {
           "regione": "Abruzzo",
@@ -344,8 +344,8 @@
         {
           "regione": "Marche",
           "n": 688,
-          "isd": 55.98,
-          "usa_pct": 42.98
+          "isd": 56.13,
+          "usa_pct": 42.84
         },
         {
           "regione": "Campania",
@@ -374,8 +374,8 @@
         {
           "regione": "Toscana",
           "n": 1173,
-          "isd": 46.45,
-          "usa_pct": 52.95
+          "isd": 46.36,
+          "usa_pct": 53.03
         },
         {
           "regione": "Puglia",
